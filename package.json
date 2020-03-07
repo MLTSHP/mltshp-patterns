@@ -1,0 +1,25 @@
+{
+  "name": "mltshp-patterns",
+  "version": "1.0.0",
+  "description": "Pattern Library for MLTSHP Apps",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MLTSHP/mltshp-patterns.git"
+  },
+  "author": "Scott Vandehey",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/MLTSHP/mltshp-patterns/issues"
+  },
+  "homepage": "https://github.com/MLTSHP/mltshp-patterns#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@storybook/html": "^5.3.14",
+    "babel-loader": "^8.0.6"
+  }
+}
