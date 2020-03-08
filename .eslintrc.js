@@ -146,7 +146,7 @@ module.exports = {
         ],
       },
     ],
-    'prettier/prettier': ['warn'],
+    'prettier/prettier': ['error'],
     'react/jsx-filename-extension': [
       'warn',
       {

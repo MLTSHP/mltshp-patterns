@@ -1,6 +1,6 @@
-import { addons } from "@storybook/addons";
-import mltshpTheme from "./mltshpTheme";
+import { addons } from '@storybook/addons';
+import mltshpTheme from './mltshpTheme';
 
 addons.setConfig({
-  theme: mltshpTheme
+  theme: mltshpTheme,
 });
