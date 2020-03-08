@@ -1,0 +1,36 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+
+# Storybook Addon Backgrounds
+
+<Meta
+  title="Examples/Addons/Backgrounds"
+  parameters={{
+    backgrounds: [
+      { name: "pink", value: "pink" },
+      { name: "hotpink", value: "hotpink", default: true }
+    ]
+  }}
+/>
+
+## Story One
+
+<Preview>
+  <Story name="Story 1" height="100px">
+    {
+      '<span style="color: white">You should be able to switch backgrounds for this story</span>'
+    }
+  </Story>
+</Preview>
+
+## Story Two
+
+<Preview>
+  <Story name="Story 2" height="100px" parameters={{
+    backgrounds: [
+      { name: "red", value: "red" },
+      { name: "blue", value: "blue", default: true }
+    ]
+  }}>
+    {'<span style="color: white">This one too!</span>'}
+  </Story>
+</Preview>

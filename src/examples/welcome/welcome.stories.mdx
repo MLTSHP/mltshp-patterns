@@ -1,0 +1,13 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import welcomeMarkup from "./welcome.html";
+import "./welcome.scss";
+
+<Meta title="Examples/Welcome" />
+
+# Welcome
+
+<Preview>
+  <Story name="welcome" height="100px">
+    {() => welcomeMarkup}
+  </Story>
+</Preview>

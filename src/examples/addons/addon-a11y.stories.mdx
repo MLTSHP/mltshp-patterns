@@ -1,0 +1,53 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import { document, setTimeout } from "global";
+const text = "Testing the a11y addon";
+
+# Storybook Addon Accessibility
+
+<Meta title="Examples/Addons/a11y" />
+
+## Button with No Text
+
+<Preview>
+  <Story name="Default" height="100px">
+    {"<button></button>"}
+  </Story>
+</Preview>
+
+## Button with Text
+
+<Preview>
+  <Story name="Label" height="100px">
+    {`<button>${text}</button>`}
+  </Story>
+</Preview>
+
+## Disabled Button
+
+<Preview>
+  <Story name="Disabled" height="100px">
+    {`<button disabled>${text}</button>`}
+  </Story>
+</Preview>
+
+## Invalid Contrast
+
+<Preview>
+  <Story name="Invalid Contrast" height="100px">
+    {`<button style="color: black; background-color: brown;">${text}</button>`}
+  </Story>
+</Preview>
+
+## Delayed Render
+
+<Preview>
+  <Story name="Delayed Render" height="100px">
+    {() => {
+      const div = document.createElement("div");
+      setTimeout(() => {
+        div.innerHTML = `<button>This button has a delayed render of 1s</button>`;
+      }, 1000);
+      return div;
+    }}
+  </Story>
+</Preview>

@@ -1,0 +1,76 @@
+import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import { document } from "global";
+import {
+  array,
+  boolean,
+  button,
+  color,
+  date,
+  select,
+  withKnobs,
+  text,
+  number
+} from "@storybook/addon-knobs";
+import * as addonKnobsAll from "./addon-knobs-all.stories.js";
+const cachedContainer = document.createElement("p");
+
+# Storybook Addon Knobs
+
+<Meta title="Examples/Addons/Knobs" decorators={[withKnobs]} />
+
+## Simple
+
+<Preview>
+  <Story name="Simple" height="100px">
+    {() => {
+      const name = text("Name", "John Doe");
+      const age = number("Age", 44);
+      const content = `I am ${name} and I'm ${age} years old.`;
+      return `<div>${content}</div>`;
+    }}
+  </Story>
+</Preview>
+
+## DOM
+
+<Preview>
+  <Story name="DOM" height="100px">
+    {() => {
+      const name = text("Name", "John Doe");
+      const container = document.createElement("p");
+      container.textContent = name;
+      return container;
+    }}
+  </Story>
+</Preview>
+
+## CSS transitions
+
+<Preview>
+  <Story name="CSS transitions" height="100px">
+    {() => {
+      const name = text("Name", "John Doe");
+      const textColor = color("Text color", "orangered");
+      cachedContainer.textContent = name;
+      cachedContainer.style.transition = "color 0.5s ease-out";
+      cachedContainer.style.color = textColor;
+      return cachedContainer;
+    }}
+  </Story>
+</Preview>
+
+## All knobs
+
+<Preview>
+  <Story name="All knobs">{addonKnobsAll.Story4()};</Story>
+</Preview>
+
+## XSS safety
+
+<Preview>
+  <Story name="XSS safety" height="100px">
+    {() =>
+      text("Rendered string", "<img src=x onerror=\"alert('XSS Attack')\" >")
+    }
+  </Story>
+</Preview>
