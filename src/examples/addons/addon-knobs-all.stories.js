@@ -55,10 +55,7 @@ export const Story4 = () => {
   return `
     <div style="${style}">
       <h1>My name is ${name},</h1>
-      <h3>today is ${new Date(today).toLocaleDateString(
-        'en-US',
-        dateOptions
-      )}</h3>
+      <h3>today is ${new Date(today).toLocaleDateString('en-US', dateOptions)}</h3>
       <p>${stockMessage}</p>
       <p>Also, I have:</p>
       <ul>${items.map(item => `<li>${item}</li>`).join('')}</ul>

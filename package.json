@@ -31,17 +31,11 @@
     "@storybook/addon-knobs": "^5.3.14",
     "@storybook/addon-viewport": "^5.3.14",
     "@storybook/html": "^5.3.14",
+    "@storybook/linter-config": "^2.3.0",
     "@storybook/preset-scss": "^1.0.2",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
-    "eslint-plugin-react-hooks": "^2.5.0",
     "prettier": "^1.19.1",
     "sass": "^1.26.2",
     "sass-loader": "^8.0.2",
@@ -49,6 +43,7 @@
     "stylelint": "^13.2.0",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-spaceninja": "^7.0.0",
-    "stylelint-prettier": "^1.1.2"
+    "stylelint-prettier": "^1.1.2",
+    "typescript": "^3.8.3"
   }
 }
