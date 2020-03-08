@@ -15,7 +15,13 @@
   "scripts": {
     "storybook": "start-storybook -p 6006 -s static",
     "build-storybook": "build-storybook -s static",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "yarn lint",
+    "check-lint": "yarn check-lint:css && yarn check-lint:js",
+    "check-lint:css": "stylelint '**/*.scss'",
+    "check-lint:js": "eslint '**/*.js'",
+    "lint": "yarn lint:css && yarn lint:js",
+    "lint:css": "stylelint --fix '**/*.scss'",
+    "lint:js": "eslint --fix '**/*.js'"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
@@ -28,6 +34,14 @@
     "@storybook/preset-scss": "^1.0.2",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
     "prettier": "^1.19.1",
     "sass": "^1.26.2",
     "sass-loader": "^8.0.2",
