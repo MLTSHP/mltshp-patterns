@@ -13,8 +13,8 @@
     "url": "https://github.com/MLTSHP/mltshp-patterns/issues"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006 -s static",
+    "build-storybook": "build-storybook -s static",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
