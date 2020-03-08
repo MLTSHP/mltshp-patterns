@@ -1,0 +1,23 @@
+import { Meta, IconGallery, IconItem } from '@storybook/addon-docs/blocks';
+import { extname, relative } from 'path';
+// Import whole directory of icons together
+// @see https://webpack.js.org/guides/dependency-management/#context-module-api
+const iconDir = require.context('../assets/icons', true, /\.svg$/);
+console.log('ICON DIRECTORY', iconDir.keys());
+const iconElements = iconDir.keys().map(key => {
+  const Icon = iconDir(key).default;
+  // Retains subdirectory if we want to organize with those in the future
+  const name = relative('.', key).replace(extname(key), '');
+  console.log('ICON', name);
+  return (
+    <IconItem name={name}>
+      <Icon class="o-icon" />
+    </IconItem>
+  );
+});
+
+<Meta title="Icons" />
+
+# Icons
+
+<IconGallery>{iconElements}</IconGallery>

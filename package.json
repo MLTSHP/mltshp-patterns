@@ -33,6 +33,7 @@
     "@storybook/html": "^5.3.14",
     "@storybook/linter-config": "^2.3.0",
     "@storybook/preset-scss": "^1.0.2",
+    "@svgr/webpack": "^5.2.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
