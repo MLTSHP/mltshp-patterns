@@ -1,3 +1,23 @@
 module.exports = {
-  stories: ["../src/**/*.stories.[tj]s"]
+  stories: ["../src/**/*.stories.[tj]s"],
+  addons: [
+    // "@storybook/addon-a11y/register",
+    // "@storybook/addon-backgrounds/register",
+    // "@storybook/addon-docs",
+    // "@storybook/addon-knobs/register",
+    // "@storybook/addon-viewport/register",
+    {
+      name: "@storybook/preset-scss",
+      options: {
+        sassLoaderOptions: {
+          // Dart Sass performs much better than Node Sass
+          implementation: require("sass")
+          // sassOptions: {
+          //   // Import Theo design tokens as SCSS variables
+          //   importer: [require("./theo-importer")]
+          // }
+        }
+      }
+    }
+  ]
 };
