@@ -1,0 +1,128 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+import * as colorTokens from './colors.yml';
+console.log('COLOR TOKENS', colorTokens);
+
+<Meta title="Design Tokens/Colors" />
+
+# Colors
+
+## Primary Colors
+
+These are our core colors. Pink is our primary brand color and is used by many elements like buttons, links, backgrounds, and illustrations. Blue is used for secondary actions and less important items.
+
+<ColorPalette>
+  <ColorItem title="$primary-brand" colors={[colorTokens.primaryBrand]} />
+  <ColorItem
+    title="$primary-brand"
+    subtitle="Variations: Hover, Pastel Dark, Pastel Light"
+    colors={[
+      colorTokens.primaryBrandHover,
+      colorTokens.primaryBrandPastelDark,
+      colorTokens.primaryBrandPastelLight,
+    ]}
+  />
+  <ColorItem title="$secondary-brand" colors={[colorTokens.secondaryBrand]} />
+  <ColorItem
+    title="$secondary-brand"
+    subtitle="Variations: Hover, Pastel Dark, Pastel Light"
+    colors={[
+      colorTokens.secondaryBrandHover,
+      colorTokens.secondaryBrandPastelDark,
+      colorTokens.secondaryBrandPastelLight,
+    ]}
+  />
+</ColorPalette>
+
+## State Colors
+
+These colors should be mostly reserved for use as state indications, such as success and error messages
+
+<ColorPalette>
+  <ColorItem title="$success" colors={[colorTokens.success]} />
+  <ColorItem
+    title="$success"
+    subtitle="Variations: Hover, Pastel Dark, Pastel Light"
+    colors={[
+      colorTokens.successHover,
+      colorTokens.successPastelDark,
+      colorTokens.successPastelLight,
+    ]}
+  />
+  <ColorItem title="$warning" colors={[colorTokens.warning]} />
+  <ColorItem
+    title="$warning"
+    subtitle="Variations: Hover, Pastel Dark, Pastel Light"
+    colors={[
+      colorTokens.warningHover,
+      colorTokens.warningPastelDark,
+      colorTokens.warningPastelLight,
+    ]}
+  />
+  <ColorItem title="$danger" colors={[colorTokens.danger]} />
+  <ColorItem
+    title="$danger"
+    subtitle="Variations: Hover, Pastel Dark, Pastel Light"
+    colors={[
+      colorTokens.dangerHover,
+      colorTokens.dangerPastelDark,
+      colorTokens.dangerPastelLight,
+    ]}
+  />
+  <ColorItem
+    title="$edit"
+    subtitle="used to highlight editable items"
+    colors={[colorTokens.edit]}
+  />
+  <ColorItem title="$disabled" colors={[colorTokens.disabled]} />
+  <ColorItem
+    title="$disabled"
+    subtitle="Variations: Light, Pastel Dark, Pastel Light"
+    colors={[
+      colorTokens.disabledLight,
+      colorTokens.disabledPastelDark,
+      colorTokens.disabledPastelLight,
+    ]}
+  />
+</ColorPalette>
+
+## Text Colors
+
+We design and build with accessibility in mind. Color contrast for text should meet [WCAG standards](https://webaim.org/resources/contrastchecker/).
+
+<ColorPalette>
+  <ColorItem
+    title="$text-dark"
+    subtitle="Accessible on white and lightest gray."
+    colors={[colorTokens.textDark]}
+  />
+  <ColorItem
+    title="$text-light"
+    subtitle="Accessible on primary brand color."
+    colors={[colorTokens.textLight]}
+  />
+  <ColorItem
+    title="$text-light-emphasis"
+    subtitle="Accessible on primary brand color, useful for buttons and headings."
+    colors={[colorTokens.textLightEmphasis]}
+  />
+  <ColorItem
+    title="$text-link"
+    subtitle="Accessible on white and lighter-gray."
+    colors={[colorTokens.textLink]}
+  />
+  <ColorItem
+    title="$text-link-hover"
+    subtitle="Accessible on white and lighter-gray."
+    colors={[colorTokens.textLinkHover]}
+  />
+  <ColorItem
+    title="$text-link-primary"
+    subtitle="Accessible on white and lighter-gray."
+    colors={[colorTokens.textLinkPrimary]}
+  />
+  <ColorItem
+    title="$text-link-primary-hover"
+    subtitle="Accessible on white and lighter-gray."
+    colors={[colorTokens.textLinkPrimaryHover]}
+  />
+</ColorPalette>

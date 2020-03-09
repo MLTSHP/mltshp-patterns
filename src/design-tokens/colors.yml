@@ -1,0 +1,128 @@
+aliases:
+  pink: '#ff0080'
+  pink_hover: '#c06'
+  pink_pastel_dark: '#ff0080'
+  pink_pastel_light: '#ffcce8'
+  blue: '#00aeff'
+  blue_hover: '#008bcc'
+  blue_pastel_dark: '#00aeff'
+  blue_pastel_light: '#daf3ff'
+  green: '#09B896'
+  green_hover: '#079378'
+  green_pastel_dark: '#0caf8b'
+  green_pastel_light: '#b9ff8d'
+  orange: '#ff9600'
+  orange_hover: '#cc7800'
+  orange_pastel_dark: '#ff9600'
+  orange_pastel_light: '#ffe466'
+  red: '#f30'
+  red_hover: '#cc2900'
+  red_pastel_dark: '#ff1c1c'
+  red_pastel_light: '#ffd4d4'
+  gray: '#a1a1a1'
+  gray_light: '#e9e9e9'
+  gray_pastel_dark: '#8d8d87'
+  gray_pastel_light: '#cecec6'
+  yellow_transparent_65: 'rgba(252,255,0,0.66)'
+  black_transparent_85: 'rgba(0, 0, 0, 0.85)'
+  white_transparent_85: 'rgba(255, 255, 255, 0.85)'
+  white: '#fff'
+props:
+  primary_brand:
+    value: '{!pink}'
+    category: color
+  primary_brand_hover:
+    value: '{!pink_hover}'
+    category: color
+  primary_brand_pastel_light:
+    value: '{!pink_pastel_light}'
+    category: color
+  primary_brand_pastel_dark:
+    value: '{!pink_pastel_dark}'
+    category: color
+  secondary_brand:
+    value: '{!blue}'
+    category: color
+  secondary_brand_hover:
+    value: '{!blue_hover}'
+    category: color
+  secondary_brand_pastel_light:
+    value: '{!blue_pastel_light}'
+    category: color
+  secondary_brand_pastel_dark:
+    value: '{!blue_pastel_dark}'
+    category: color
+  success:
+    value: '{!green}'
+    category: color
+  success_hover:
+    value: '{!green_hover}'
+    category: color
+  success_pastel_light:
+    value: '{!green_pastel_light}'
+    category: color
+  success_pastel_dark:
+    value: '{!green_pastel_dark}'
+    category: color
+  warning:
+    value: '{!orange}'
+    category: color
+  warning_hover:
+    value: '{!orange_hover}'
+    category: color
+  warning_pastel_light:
+    value: '{!orange_pastel_light}'
+    category: color
+  warning_pastel_dark:
+    value: '{!orange_pastel_dark}'
+    category: color
+  danger:
+    value: '{!red}'
+    category: color
+  danger_hover:
+    value: '{!red_hover}'
+    category: color
+  danger_pastel_light:
+    value: '{!red_pastel_light}'
+    category: color
+  danger_pastel_dark:
+    value: '{!red_pastel_dark}'
+    category: color
+  disabled:
+    value: '{!gray}'
+    category: color
+  disabled_light:
+    value: '{!gray_light}'
+    category: color
+  disabled_pastel_light:
+    value: '{!gray_pastel_light}'
+    category: color
+  disabled_pastel_dark:
+    value: '{!gray_pastel_dark}'
+    category: color
+  edit:
+    value: '{!yellow_transparent_65}'
+    category: color
+  text_dark:
+    value: '{!black_transparent_85}'
+    category: text-color
+  text_light:
+    value: '{!white_transparent_85}'
+    category: text-color
+  text_light_emphasis:
+    value: '{!white}'
+    category: text-color
+  text_link:
+    value: '{!blue}'
+    category: text-color
+  text_link_hover:
+    value: '{!blue_hover}'
+    category: text-color
+  text_link_primary:
+    value: '{!pink}'
+    category: text-color
+  text_link_primary_hover:
+    value: '{!pink_hover}'
+    category: text-color
+global:
+  type: color
