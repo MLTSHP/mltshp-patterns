@@ -1,0 +1,63 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import headingsMarkup from './examples/headings.html';
+import fontFeaturesMarkup from './examples/font-features.html';
+import listsMarkup from './examples/lists.html';
+import tablesMarkup from './examples/tables.html';
+import preMarkup from './examples/preformatted.html';
+import blockquotesMarkup from './examples/blockquotes.html';
+import textSemanticsMarkup from './examples/text-semantics.html';
+
+<Meta title="Base/Typography" />
+
+# Content
+
+Below is just about everything you’ll need to style in the app.
+Check the source code to see the many embedded elements within paragraphs.
+
+## Headings
+
+<Preview>
+  <Story name="Headings">{() => headingsMarkup}</Story>
+</Preview>
+
+## Font Features
+
+We apply some font-features such as ligatures and kerning to headlines. Here's an example that should have it applied.
+
+Note that these features are not available in every font. In particular, our headlines use the system font stack, and these rules don't seem to have any affect on the Mac system font.
+
+<Preview>
+  <Story name="Font Features">{() => fontFeaturesMarkup}</Story>
+</Preview>
+
+## Text-Level Semantics
+
+<Preview>
+  <Story name="Text-Level Semantics">{() => textSemanticsMarkup}</Story>
+</Preview>
+
+## Lists
+
+<Preview>
+  <Story name="Lists">{() => listsMarkup}</Story>
+</Preview>
+
+## Tables
+
+<Preview>
+  <Story name="Tables">{() => tablesMarkup}</Story>
+</Preview>
+
+## Blockquotes
+
+<Preview>
+  <Story name="Blockquotes">{() => blockquotesMarkup}</Story>
+</Preview>
+
+## Preformatted
+
+Including, but not limited to code. Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. For example:
+
+<Preview>
+  <Story name="Preformatted">{() => preMarkup}</Story>
+</Preview>

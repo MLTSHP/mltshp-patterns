@@ -1,0 +1,72 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import elementsMarkup from './examples/elements.html';
+import defaultMarkup from './examples/default.html';
+import pastelMarkup from './examples/pastel.html';
+import shadowMarkup from './examples/shadow.html';
+import iconMarkup from './examples/icon.html';
+import paddedMarkup from './examples/padded.html';
+import largeMarkup from './examples/large.html';
+import smallMarkup from './examples/small.html';
+import tinyMarkup from './examples/tiny.html';
+
+<Meta title="Components/Buttons" />
+
+# Buttons
+
+## Elements
+
+<Preview>
+  <Story name="Elements">{() => elementsMarkup}</Story>
+</Preview>
+
+## Default
+
+<Preview>
+  <Story name="Default">{() => defaultMarkup}</Story>
+</Preview>
+
+## Pastel
+
+<Preview>
+  <Story name="Pastel">{() => pastelMarkup}</Story>
+</Preview>
+
+## Shadow
+
+<Preview>
+  <Story name="Shadow">{() => shadowMarkup}</Story>
+</Preview>
+
+## Icon-Only
+
+<Preview>
+  <Story name="Icon-Only">{() => iconMarkup}</Story>
+</Preview>
+
+## Padded
+
+<Preview>
+  <Story name="Padded">{() => paddedMarkup}</Story>
+</Preview>
+
+## Large
+
+<Preview>
+  <Story name="Large">{() => largeMarkup}</Story>
+</Preview>
+
+## Small
+
+Use with caution: these do not meet touch accessibility targets.
+
+<Preview>
+  <Story name="Small">{() => smallMarkup}</Story>
+</Preview>
+
+## Tiny
+
+Use with caution: these do not meet touch accessibility targets.
+
+<Preview>
+  <Story name="Tiny">{() => tinyMarkup}</Story>
+</Preview>

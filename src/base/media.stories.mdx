@@ -1,0 +1,30 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import imagesMarkup from './examples/images.html';
+import figuresMarkup from './examples/figures.html';
+import embedsMarkup from './examples/embeds.html';
+
+<Meta title="Base/Media" />
+
+# Media
+
+## Images
+
+Images are made responsive so that it scales with the parent element.
+
+<Preview>
+  <Story name="Images">{() => imagesMarkup}</Story>
+</Preview>
+
+## Figures
+
+<Preview>
+  <Story name="Figures">{() => figuresMarkup}</Story>
+</Preview>
+
+## Embeds
+
+Sometimes all you want to do is embed a little love from another location and set your post alive.
+
+<Preview>
+  <Story name="Embeds">{() => embedsMarkup}</Story>
+</Preview>
