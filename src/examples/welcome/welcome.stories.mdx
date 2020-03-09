@@ -1,8 +1,15 @@
-import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
-import welcomeMarkup from "./welcome.html";
-import "./welcome.scss";
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import welcomeMarkup from './welcome.html';
 
-<Meta title="Examples/Welcome" />
+<Meta
+  title="Examples/Welcome"
+  decorators={[
+    getStory => {
+      require('./welcome.scss');
+      return getStory();
+    },
+  ]}
+/>
 
 # Welcome
 
