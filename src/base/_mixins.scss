@@ -1,0 +1,9 @@
+//
+// Break Word
+// Used to prevent lengthy text strings from breaking layout
+//
+@mixin breakword() {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+}

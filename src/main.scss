@@ -1,0 +1,29 @@
+//
+// Welcome to MLTSHP!
+//
+// This stylesheet serves as a table of contents and includes smaller partials.
+// No code should ever live in this file!
+//
+// Learn more about our CSS Standards:
+// * https://cssguidelin.es/
+// * https://sass-guidelin.es/
+// * https://smacss.com/
+// * https://github.com/spaceninja/css-standards
+//
+// If you have questions, ask in the #technlogy Slack room.
+//
+
+//
+// INITIALIZATION
+// variables and mixins that everything else depends on
+//
+@use "base/mixins";
+@use 'base/vars';
+
+//
+// BASE
+// limited to native HTML elements and a few global classes
+//
+@use 'base/normalize';
+@use 'base/core';
+@use 'base/helpers';

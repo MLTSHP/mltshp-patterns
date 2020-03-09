@@ -1,22 +1,22 @@
 aliases:
   pink: '#ff0080'
-  pink_hover: '#c06'
+  pink_dark: '#c06'
   pink_pastel_dark: '#ff0080'
   pink_pastel_light: '#ffcce8'
   blue: '#00aeff'
-  blue_hover: '#008bcc'
+  blue_dark: '#008bcc'
   blue_pastel_dark: '#00aeff'
   blue_pastel_light: '#daf3ff'
   green: '#09B896'
-  green_hover: '#079378'
+  green_dark: '#079378'
   green_pastel_dark: '#0caf8b'
   green_pastel_light: '#b9ff8d'
   orange: '#ff9600'
-  orange_hover: '#cc7800'
+  orange_dark: '#cc7800'
   orange_pastel_dark: '#ff9600'
   orange_pastel_light: '#ffe466'
   red: '#f30'
-  red_hover: '#cc2900'
+  red_dark: '#cc2900'
   red_pastel_dark: '#ff1c1c'
   red_pastel_light: '#ffd4d4'
   gray: '#a1a1a1'
@@ -25,14 +25,18 @@ aliases:
   gray_pastel_light: '#cecec6'
   yellow_transparent_65: 'rgba(252,255,0,0.66)'
   black_transparent_85: 'rgba(0, 0, 0, 0.85)'
+  black_transparent_65: 'rgba(0, 0, 0, 0.65)'
   white_transparent_85: 'rgba(255, 255, 255, 0.85)'
+  white_transparent_65: 'rgba(255, 255, 255, 0.65)'
   white: '#fff'
+  black: '#000'
+  blue_dark_mode: '#263238'
 props:
   primary_brand:
     value: '{!pink}'
     category: color
-  primary_brand_hover:
-    value: '{!pink_hover}'
+  primary_brand_dark:
+    value: '{!pink_dark}'
     category: color
   primary_brand_pastel_light:
     value: '{!pink_pastel_light}'
@@ -43,8 +47,8 @@ props:
   secondary_brand:
     value: '{!blue}'
     category: color
-  secondary_brand_hover:
-    value: '{!blue_hover}'
+  secondary_brand_dark:
+    value: '{!blue_dark}'
     category: color
   secondary_brand_pastel_light:
     value: '{!blue_pastel_light}'
@@ -55,8 +59,8 @@ props:
   success:
     value: '{!green}'
     category: color
-  success_hover:
-    value: '{!green_hover}'
+  success_dark:
+    value: '{!green_dark}'
     category: color
   success_pastel_light:
     value: '{!green_pastel_light}'
@@ -67,8 +71,8 @@ props:
   warning:
     value: '{!orange}'
     category: color
-  warning_hover:
-    value: '{!orange_hover}'
+  warning_dark:
+    value: '{!orange_dark}'
     category: color
   warning_pastel_light:
     value: '{!orange_pastel_light}'
@@ -79,8 +83,8 @@ props:
   danger:
     value: '{!red}'
     category: color
-  danger_hover:
-    value: '{!red_hover}'
+  danger_dark:
+    value: '{!red_dark}'
     category: color
   danger_pastel_light:
     value: '{!red_pastel_light}'
@@ -103,8 +107,20 @@ props:
   edit:
     value: '{!yellow_transparent_65}'
     category: color
+  page_bg_dark:
+    value: '{!blue_dark_mode}'
+    category: color
+  page_bg_light:
+    value: '{!white}'
+    category: color
   text_dark:
     value: '{!black_transparent_85}'
+    category: text-color
+  text_dark_emphasis:
+    value: '{!black}'
+    category: text-color
+  text_dark_secondary:
+    value: '{!black_transparent_65}'
     category: text-color
   text_light:
     value: '{!white_transparent_85}'
@@ -112,17 +128,26 @@ props:
   text_light_emphasis:
     value: '{!white}'
     category: text-color
+  text_light_secondary:
+    value: '{!white_transparent_65}'
+    category: text-color
   text_link:
     value: '{!blue}'
     category: text-color
   text_link_hover:
-    value: '{!blue_hover}'
+    value: '{!blue_dark}'
     category: text-color
   text_link_primary:
     value: '{!pink}'
     category: text-color
   text_link_primary_hover:
-    value: '{!pink_hover}'
+    value: '{!pink_dark}'
+    category: text-color
+  text_link_danger:
+    value: '{!red}'
+    category: text-color
+  text_link_danger_hover:
+    value: '{!red_dark}'
     category: text-color
 global:
   type: color

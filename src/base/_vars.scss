@@ -1,0 +1,48 @@
+//
+// Variables
+// Note that many variables should live as design tokens instead
+//
+@use "../design-tokens/colors.yml";
+
+//
+// New and improved system font stack:
+//
+// see: https://markdotto.com/2018/02/07/github-system-fonts/
+//
+// stylelint-disable value-keyword-case, scss/dollar-variable-colon-newline-after
+$font-family-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+  Arial, sans-serif;
+$font-family-mono: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+
+:root {
+  --color-text-dark: #{colors.$text-dark};
+  --color-text-dark-em: #{colors.$text-dark-emphasis};
+  --color-text-dark-secondary: #{colors.$text-dark-secondary};
+  --color-text-light: #{colors.$text-light};
+  --color-text-light-em: #{colors.$text-light-emphasis};
+  --color-text-light-secondary: #{colors.$text-light-secondary};
+  --color-text-link-primary: #{colors.$primary-brand};
+  --color-text-link-primary-hover: #{colors.$primary-brand-dark};
+  --color-text-danger: #{colors.$danger};
+  --color-text-danger-hover: #{colors.$danger-dark};
+
+  // light mode
+  --color-page-bg: #{colors.$page_bg_light};
+  --color-page-text: #{colors.$text-dark};
+  --color-text-link: #{colors.$secondary-brand};
+  --color-text-link-hover: #{colors.$secondary-brand-dark};
+  --color-link-underline: #{rgba(colors.$secondary-brand, 0.33)};
+  --color-link-underline-hover: #{rgba(colors.$secondary-brand, 0.33)};
+  --font-weight-normal: normal;
+  --font-weight-bold: bold;
+  --letter-spacing: normal;
+
+  // dark mode
+  @media screen and (prefers-color-scheme: dark) {
+    --color-page-bg: #{colors.$page_bg_dark};
+    --color-page-text: #{colors.$text-light};
+    --font-weight-normal: 300;
+    --font-weight-bold: 600;
+    --letter-spacing: 0.025em;
+  }
+}
