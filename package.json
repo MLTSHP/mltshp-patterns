@@ -18,27 +18,33 @@
     "test": "yarn lint",
     "check-lint": "yarn check-lint:css && yarn check-lint:js",
     "check-lint:css": "stylelint '**/*.scss'",
-    "check-lint:js": "eslint '**/*.js'",
+    "check-lint:js": "eslint '**/*.{js,mdx}'",
     "lint": "yarn lint:css && yarn lint:js",
     "lint:css": "stylelint --fix '**/*.scss'",
-    "lint:js": "eslint --fix '**/*.js'"
+    "lint:js": "eslint --fix '**/*.{js,mdx}'"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
+    "@cloudfour/eslint-plugin": "7.0.0",
     "@storybook/addon-a11y": "^5.3.14",
     "@storybook/addon-backgrounds": "^5.3.14",
     "@storybook/addon-docs": "^5.3.14",
     "@storybook/addon-knobs": "^5.3.14",
     "@storybook/addon-viewport": "^5.3.14",
     "@storybook/html": "^5.3.14",
-    "@storybook/linter-config": "^2.3.0",
     "@storybook/preset-scss": "^1.0.2",
     "@svgr/webpack": "^5.2.0",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
     "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-mdx": "^1.6.8",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "7.19.0",
     "js-yaml": "^3.13.1",
     "prettier": "^1.19.1",
+    "remark-preset-lint-recommended": "3.0.3",
+    "remark-preset-prettier": "^0.4.0",
     "sass": "^1.26.2",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
@@ -46,7 +52,6 @@
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-spaceninja": "^7.0.0",
     "stylelint-prettier": "^1.1.2",
-    "theo": "^8.1.5",
-    "typescript": "^3.8.3"
+    "theo": "^8.1.5"
   }
 }

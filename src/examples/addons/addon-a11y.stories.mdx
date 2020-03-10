@@ -1,6 +1,7 @@
-import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
-import { document, setTimeout } from "global";
-const text = "Testing the a11y addon";
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+// eslint-disable-next-line @cloudfour/node/no-extraneous-import
+import { document, setTimeout } from 'global';
+const text = 'Testing the a11y addon';
 
 # Storybook Addon Accessibility
 
@@ -10,7 +11,7 @@ const text = "Testing the a11y addon";
 
 <Preview>
   <Story name="Default" height="100px">
-    {"<button></button>"}
+    {'<button></button>'}
   </Story>
 </Preview>
 
@@ -43,7 +44,7 @@ const text = "Testing the a11y addon";
 <Preview>
   <Story name="Delayed Render" height="100px">
     {() => {
-      const div = document.createElement("div");
+      const div = document.createElement('div');
       setTimeout(() => {
         div.innerHTML = `<button>This button has a delayed render of 1s</button>`;
       }, 1000);

@@ -1,6 +1,4 @@
-// this one is in a separate file because it was causing a nested JSX error
-
-// eslint-disable-next-line import/no-extraneous-dependencies
+// This one is in a separate file because it was causing a nested JSX error
 import {
   array,
   boolean,

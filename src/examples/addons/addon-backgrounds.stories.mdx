@@ -1,16 +1,18 @@
-import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
 
 # Storybook Addon Backgrounds
 
-<Meta
-  title="Examples/Addons/Backgrounds"
-  parameters={{
-    backgrounds: [
-      { name: "pink", value: "pink" },
-      { name: "hotpink", value: "hotpink", default: true }
-    ]
-  }}
-/>
+export const metaParameters = {
+  backgrounds: [
+    { name: 'pink', value: 'pink' },
+    { name: 'hotpink', value: 'hotpink', default: true },
+  ],
+};
+// Parameters has to be defined separately because of this prettier bug:
+// <https://github.com/prettier/prettier/issues/7731>
+// <https://mdxjs.com/getting-started#defining-variables-with-exports>
+
+<Meta title="Examples/Addons/Backgrounds" parameters={metaParameters} />
 
 ## Story One
 
@@ -24,13 +26,15 @@ import { Story, Preview, Meta } from "@storybook/addon-docs/blocks";
 
 ## Story Two
 
+export const storyParameters = {
+  backgrounds: [
+    { name: 'red', value: 'red' },
+    { name: 'blue', value: 'blue', default: true },
+  ],
+};
+
 <Preview>
-  <Story name="Story 2" height="100px" parameters={{
-    backgrounds: [
-      { name: "red", value: "red" },
-      { name: "blue", value: "blue", default: true }
-    ]
-  }}>
+  <Story name="Story 2" height="100px" parameters={storyParameters}>
     {'<span style="color: white">This one too!</span>'}
   </Story>
 </Preview>
