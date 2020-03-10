@@ -24,18 +24,35 @@ function theoImporter(url, prev, done) {
   const tokenPath = resolve(dirname(prev), url);
 
   // Asynchronously resolve file via Theo
-  theo
-    .convert({
-      transform: {
-        file: tokenPath,
-        type: 'web',
-      },
-      format: {
-        type: 'default.scss', // Variables will have `!default` appended
-      },
-    })
-    .then(scssString => {
-      done({ contents: scssString }); // Pass result to Sass
+  // convert to CSS custom properties
+  let customProps = theo.convert({
+    transform: {
+      file: tokenPath,
+      type: 'web',
+    },
+    format: {
+      type: 'custom-properties.css',
+    },
+  });
+
+  // Asynchronously resolve file via Theo
+  // convert to SCSS variables
+  let scssVars = theo.convert({
+    transform: {
+      file: tokenPath,
+      type: 'web',
+    },
+    format: {
+      type: 'default.scss', // Variables will have `!default` appended
+    },
+  });
+
+  Promise.all([scssVars, customProps])
+    // Pass results to Sass
+    .then(values => {
+      done({
+        contents: values.join(''),
+      });
     })
     .catch(({ message }) => {
       done(new Error(`Theo import of ${tokenPath} failed: ${message}`));

@@ -9,8 +9,8 @@ addDecorator(withA11y);
 
 // Set choosable backgrounds for stories
 const backgrounds = [
-  { name: 'light', value: colors.pageBgLight, default: true },
-  { name: 'dark', value: colors.pageBgDark },
+  { name: 'light', value: colors.colorPageBgLight, default: true },
+  { name: 'dark', value: colors.colorPageBgDark },
 ];
 
 addParameters({ backgrounds });

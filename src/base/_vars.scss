@@ -15,32 +15,20 @@ $font-family-system: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica,
 $font-family-mono: sfmono-regular, consolas, liberation mono, menlo, monospace;
 
 :root {
-  --color-text-dark: #{colors.$text-dark};
-  --color-text-dark-em: #{colors.$text-dark-emphasis};
-  --color-text-dark-secondary: #{colors.$text-dark-secondary};
-  --color-text-light: #{colors.$text-light};
-  --color-text-light-em: #{colors.$text-light-emphasis};
-  --color-text-light-secondary: #{colors.$text-light-secondary};
-  --color-text-link-primary: #{colors.$primary-brand};
-  --color-text-link-primary-hover: #{colors.$primary-brand-dark};
-  --color-text-danger: #{colors.$danger};
-  --color-text-danger-hover: #{colors.$danger-dark};
-
-  // light mode
-  --color-page-bg: #{colors.$page_bg_light};
-  --color-page-text: #{colors.$text-dark};
-  --color-text-link: #{colors.$secondary-brand};
-  --color-text-link-hover: #{colors.$secondary-brand-dark};
-  --color-link-underline: #{rgba(colors.$secondary-brand, 0.33)};
-  --color-link-underline-hover: #{rgba(colors.$secondary-brand, 0.33)};
+  --color-page-bg: var(--color-page-bg-light);
+  --color-page-text: var(--color-text-dark);
+  --color-text-link: var(--color-secondary-brand);
+  --color-text-link-hover: var(--color-secondary-brand-dark);
+  --color-link-underline: #{rgba(colors.$color-secondary-brand, 0.33)};
+  --color-link-underline-hover: #{rgba(colors.$color-secondary-brand, 0.33)};
   --font-weight-normal: normal;
   --font-weight-bold: bold;
   --letter-spacing: normal;
 
   // dark mode
   @media screen and (prefers-color-scheme: dark) {
-    --color-page-bg: #{colors.$page_bg_dark};
-    --color-page-text: #{colors.$text-light};
+    --color-page-bg: var(--color-page-bg-dark);
+    --color-page-text: var(--color-text-light);
     --font-weight-normal: 300;
     --font-weight-bold: 600;
     --letter-spacing: 0.025em;

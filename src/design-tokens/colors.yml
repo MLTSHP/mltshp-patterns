@@ -32,122 +32,124 @@ aliases:
   black: '#000'
   blue_dark_mode: '#263238'
 props:
-  primary_brand:
+  - name: color_primary_brand
     value: '{!pink}'
-    category: color
-  primary_brand_dark:
+    category: primary-color
+  - name: color_primary_brand_dark
     value: '{!pink_dark}'
-    category: color
-  primary_brand_pastel_light:
+    category: primary-color
+  - name: color_primary_brand_pastel_light
     value: '{!pink_pastel_light}'
-    category: color
-  primary_brand_pastel_dark:
+    category: primary-color
+  - name: color_primary_brand_pastel_dark
     value: '{!pink_pastel_dark}'
-    category: color
-  secondary_brand:
+    category: primary-color
+  - name: color_secondary_brand
     value: '{!blue}'
-    category: color
-  secondary_brand_dark:
+    category: primary-color
+  - name: color_secondary_brand_dark
     value: '{!blue_dark}'
-    category: color
-  secondary_brand_pastel_light:
+    category: primary-color
+  - name: color_secondary_brand_pastel_light
     value: '{!blue_pastel_light}'
-    category: color
-  secondary_brand_pastel_dark:
+    category: primary-color
+  - name: color_secondary_brand_pastel_dark
     value: '{!blue_pastel_dark}'
-    category: color
-  success:
+    category: primary-color
+  - name: color_success
     value: '{!green}'
-    category: color
-  success_dark:
+    category: status-color
+  - name: color_success_dark
     value: '{!green_dark}'
-    category: color
-  success_pastel_light:
+    category: status-color
+  - name: color_success_pastel_light
     value: '{!green_pastel_light}'
-    category: color
-  success_pastel_dark:
+    category: status-color
+  - name: color_success_pastel_dark
     value: '{!green_pastel_dark}'
-    category: color
-  warning:
+    category: status-color
+  - name: color_warning
     value: '{!orange}'
-    category: color
-  warning_dark:
+    category: status-color
+  - name: color_warning_dark
     value: '{!orange_dark}'
-    category: color
-  warning_pastel_light:
+    category: status-color
+  - name: color_warning_pastel_light
     value: '{!orange_pastel_light}'
-    category: color
-  warning_pastel_dark:
+    category: status-color
+  - name: color_warning_pastel_dark
     value: '{!orange_pastel_dark}'
-    category: color
-  danger:
+    category: status-color
+  - name: color_danger
     value: '{!red}'
-    category: color
-  danger_dark:
+    category: status-color
+  - name: color_danger_dark
     value: '{!red_dark}'
-    category: color
-  danger_pastel_light:
+    category: status-color
+  - name: color_danger_pastel_light
     value: '{!red_pastel_light}'
-    category: color
-  danger_pastel_dark:
+    category: status-color
+  - name: color_danger_pastel_dark
     value: '{!red_pastel_dark}'
-    category: color
-  disabled:
+    category: status-color
+  - name: color_disabled
     value: '{!gray}'
-    category: color
-  disabled_light:
+    category: status-color
+  - name: color_disabled_light
     value: '{!gray_light}'
-    category: color
-  disabled_pastel_light:
+    category: status-color
+  - name: color_disabled_pastel_light
     value: '{!gray_pastel_light}'
-    category: color
-  disabled_pastel_dark:
+    category: status-color
+  - name: color_disabled_pastel_dark
     value: '{!gray_pastel_dark}'
-    category: color
-  edit:
+    category: status-color
+  - name: color_edit
     value: '{!yellow_transparent_65}'
-    category: color
-  page_bg_dark:
+    category: status-color
+  - name: color_page_bg_dark
     value: '{!blue_dark_mode}'
     category: color
-  page_bg_light:
+  - name: color_page_bg_light
     value: '{!white}'
     category: color
-  text_dark:
+  - name: color_text_dark
     value: '{!black_transparent_85}'
     category: text-color
-  text_dark_emphasis:
+    comment: Accessible on white and lightest gray.
+  - name: color_text_dark_emphasis
     value: '{!black}'
     category: text-color
-  text_dark_secondary:
+  - name: color_text_dark_secondary
     value: '{!black_transparent_65}'
     category: text-color
-  text_light:
+  - name: color_text_light
     value: '{!white_transparent_85}'
     category: text-color
-  text_light_emphasis:
+  - name: color_text_light_emphasis
     value: '{!white}'
     category: text-color
-  text_light_secondary:
+  - name: color_text_light_secondary
     value: '{!white_transparent_65}'
     category: text-color
-  text_link:
+  - name: color_text_link
     value: '{!blue}'
     category: text-color
-  text_link_hover:
+  - name: color_text_link_hover
     value: '{!blue_dark}'
     category: text-color
-  text_link_primary:
+  - name: color_text_link_primary
     value: '{!pink}'
     category: text-color
-  text_link_primary_hover:
+  - name: color_text_link_primary_hover
     value: '{!pink_dark}'
     category: text-color
-  text_link_danger:
+  - name: color_text_link_danger
     value: '{!red}'
     category: text-color
-  text_link_danger_hover:
+  - name: color_text_link_danger_hover
     value: '{!red_dark}'
     category: text-color
 global:
   type: color
+  category: secondary-color
