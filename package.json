@@ -17,14 +17,14 @@
     "start-storybook": "start-storybook -p 6006 -s static",
     "build-storybook": "yarn theo-to-mdx && build-storybook -s static",
     "theo-to-mdx": "gulp theo-to-mdx",
-    "watch-preprocess": "gulp watch",
+    "watch-preprocess": "gulp watch-preprocess",
     "test": "yarn lint",
     "check-lint": "run-s check-lint:*",
     "check-lint:css": "stylelint '**/*.scss'",
-    "check-lint:js": "eslint '**/*.{js,mdx}'",
+    "check-lint:js": "eslint . --ext .js,.mdx",
     "lint": "run-s lint:*",
     "lint:css": "stylelint --fix '**/*.scss'",
-    "lint:js": "eslint --fix '**/*.{js,mdx}'"
+    "lint:js": "eslint . --fix --ext .js,.mdx"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
