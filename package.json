@@ -78,7 +78,7 @@
     "sass": "1.26.2",
     "sass-loader": "8.0.2",
     "style-loader": "1.1.3",
-    "stylelint": "13.2.0",
+    "stylelint": "13.3.0",
     "stylelint-config-prettier": "8.0.1",
     "stylelint-config-spaceninja": "7.0.0",
     "stylelint-prettier": "1.1.2",
