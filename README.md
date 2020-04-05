@@ -1,6 +1,8 @@
 # MLTSHP Patterns
 
-Pattern Library for MLTSHP Apps
+[![NPM version](http://img.shields.io/npm/v/mltshp-patterns.svg)](https://www.npmjs.org/package/mltshp-patterns) [![Build Status](https://github.com/MLTSHP/mltshp-patterns/workflows/CI/badge.svg)](https://github.com/MLTSHP/mltshp-patterns/actions?query=workflow%3ACI) [![Renovate Status](https://badges.renovateapi.com/github/MLTSHP/mltshp-patterns)](https://renovatebot.com/) [![Netlify Status](https://api.netlify.com/api/v1/badges/05495ee1-80f0-484c-b619-e34cc0d51a19/deploy-status)](https://app.netlify.com/sites/mltshp-patterns/deploys)
+
+> Pattern Library for MLTSHP Apps
 
 ## Getting Started
 
