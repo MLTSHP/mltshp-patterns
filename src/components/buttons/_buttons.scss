@@ -1,0 +1,237 @@
+@use '../../base/vars';
+
+//
+// Buttons
+//
+.btn,
+.label {
+  border: none;
+  border-radius: 0.5em;
+  color: var(--color-text-light-emphasis);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  height: 2.2em;
+  letter-spacing: 0.033em;
+  line-height: 2.2em;
+  padding: 0 0.88em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.5);
+  transition-duration: 0.2s;
+  transition-property: background-color, color;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.label {
+  cursor: default;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--color-text-light-emphasis);
+}
+
+.btn:focus {
+  outline: none; // this is safe because we've ensured good focus styles
+}
+
+// buttons with muted colors
+.btn-pastel,
+.label-pastel {
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  text-shadow: none;
+}
+
+// buttons with shadows
+.btn-shadow {
+  box-shadow: 0.22em 0.22em 0 rgba(0, 0, 0, 0.125);
+  margin-right: 0.22em;
+}
+
+// buttons with extra padding
+.btn-padded {
+  height: 2.6em;
+  line-height: 2.6em;
+  padding: 0 1.25em;
+}
+
+// button size variations
+.btn-large,
+.label-large {
+  font-size: 24px;
+  letter-spacing: 0.066em;
+}
+
+.btn-large.btn-pastel,
+.label-large.label-pastel {
+  letter-spacing: 0.033em;
+}
+
+.btn-small,
+.btn-tiny,
+.label-small,
+.label-tiny {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.btn-tiny,
+.label-tiny {
+  font-size: 10px;
+  padding: 0 0.66em;
+}
+
+.btn-small.btn-pastel,
+.btn-tiny.btn-pastel,
+.label-small.label-pastel,
+.label-tiny.label-pastel {
+  font-weight: 500;
+}
+
+// buttons that only contain an icon
+.btn-icon {
+  padding: 0;
+  width: 2.2em;
+}
+
+.btn-icon.btn-padded {
+  padding: 0;
+  width: 2.6em;
+}
+
+// Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+.btn-primary,
+.label-primary {
+  background-color: var(--color-primary-brand);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--color-primary-brand-dark);
+}
+
+.btn-primary.btn-pastel,
+.label-primary.label-pastel {
+  background-color: var(--color-primary-brand-pastel-light);
+  color: var(--color-primary-brand-pastel-dark);
+}
+
+.btn-primary.btn-pastel:hover,
+.btn-primary.btn-pastel:focus {
+  background-color: var(--color-primary-brand);
+  color: var(--color-text-light-emphasis);
+}
+
+// Secondary: De-emphasizes and identifies secondary actions in a set of buttons
+.btn-secondary,
+.label-secondary {
+  background-color: var(--color-secondary-brand);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: var(--color-secondary-brand-dark);
+}
+
+.btn-secondary.btn-pastel,
+.label-secondary.label-pastel {
+  background-color: var(--color-secondary-brand-pastel-light);
+  color: var(--color-secondary-brand-pastel-dark);
+}
+
+.btn-secondary.btn-pastel:hover,
+.btn-secondary.btn-pastel:focus {
+  background-color: var(--color-secondary-brand);
+  color: var(--color-text-light-emphasis);
+}
+
+// Success: Indicates a successful or positive action
+.btn-success,
+.label-success {
+  background-color: var(--color-success);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: var(--color-success-dark);
+}
+
+.btn-success.btn-pastel,
+.label-success.label-pastel {
+  background-color: var(--color-success-pastel-light);
+  color: var(--color-success-pastel-dark);
+}
+
+.btn-success.btn-pastel:hover,
+.btn-success.btn-pastel:focus {
+  background-color: var(--color-success);
+  color: var(--color-text-light-emphasis);
+}
+
+// Warning: Indicates caution should be taken with this action
+.btn-warning,
+.label-warning {
+  background-color: var(--color-warning);
+}
+
+.btn-warning:hover,
+.btn-warning:focus {
+  background-color: var(--color-warning-dark);
+}
+
+.btn-warning.btn-pastel,
+.label-warning.label-pastel {
+  background-color: var(--color-warning-pastel-light);
+  color: var(--color-warning-pastel-dark);
+}
+
+.btn-warning.btn-pastel:hover,
+.btn-warning.btn-pastel:focus {
+  background-color: var(--color-warning);
+  color: var(--color-text-light-emphasis);
+}
+
+// Danger: Indicates a dangerous or potentially negative action
+.btn-danger,
+.label-danger {
+  background-color: var(--color-danger);
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: var(--color-danger-dark);
+}
+
+.btn-danger.btn-pastel,
+.label-danger.label-pastel {
+  background-color: var(--color-danger-pastel-light);
+  color: var(--color-danger-pastel-dark);
+}
+
+.btn-danger.btn-pastel:hover,
+.btn-danger.btn-pastel:focus {
+  background-color: var(--color-danger);
+  color: var(--color-text-light-emphasis);
+}
+
+// Disabled: buttons that cannot be used
+.btn:disabled {
+  background-color: var(--color-disabled) !important;
+  color: var(--color-text-light) !important;
+  cursor: default;
+  text-shadow: none;
+}
+
+.btn.btn-pastel:disabled {
+  background-color: var(--color-disabled-pastel-light) !important;
+  color: var(--color-disabled-pastel-dark) !important;
+}
+
+.btn.btn-shadow:disabled {
+  box-shadow: none !important;
+}

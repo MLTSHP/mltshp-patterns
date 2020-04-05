@@ -5,10 +5,10 @@
 // No code should ever live in this file!
 //
 // Learn more about our CSS Standards:
+// * https://github.com/spaceninja/css-standards
 // * https://cssguidelin.es/
 // * https://sass-guidelin.es/
 // * https://smacss.com/
-// * https://github.com/spaceninja/css-standards
 //
 // If you have questions, ask in the #technlogy Slack room.
 //
@@ -27,3 +27,10 @@
 @use 'base/normalize';
 @use 'base/core';
 @use 'base/helpers';
+
+//
+// COMPONENTS
+// small & self-contained, not reliant on other files
+//
+@use "components/buttons/buttons";
+@use "components/forms/forms";
