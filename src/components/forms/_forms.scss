@@ -138,7 +138,6 @@
 }
 
 .fun-form .field .error::before {
-  // background: url('../../assets/balloons/error-tail.svg') no-repeat;
   bottom: calc(50% - 15px);
   content: '';
   display: block;
