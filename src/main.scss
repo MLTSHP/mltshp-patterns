@@ -18,7 +18,7 @@
 // vars will inject the design token custom properties into :root
 // normalize is a reset to make browsers render more consistently
 //
-@use '~normalize.css/normalize';
+@use 'init/normalize';
 @use 'init/vars';
 
 //

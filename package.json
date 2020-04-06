@@ -1,6 +1,6 @@
 {
   "name": "mltshp-patterns",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Scott Vandehey",
   "description": "Pattern Library for MLTSHP Apps",
   "homepage": "https://github.com/MLTSHP/mltshp-patterns#readme",
@@ -85,8 +85,5 @@
     "stylelint-prettier": "1.1.2",
     "theo": "8.1.5",
     "tiny-glob": "0.2.6"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
   }
 }
