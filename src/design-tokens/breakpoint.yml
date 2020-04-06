@@ -1,0 +1,21 @@
+imports:
+  - './_widths.yml'
+
+props:
+  - name: breakpoint_xs
+    value: '{!width_xs}'
+  - name: breakpoint_s
+    value: '{!width_s}'
+  - name: breakpoint_m
+    value: '{!width_m}'
+  - name: breakpoint_l
+    value: '{!width_l}'
+  - name: breakpoint_xl
+    value: '{!width_xl}'
+  - name: breakpoint_xxl
+    value: '{!width_xxl}'
+  - name: breakpoint_xxxl
+    value: '{!width_xxxl}'
+global:
+  type: relative
+  category: media-query

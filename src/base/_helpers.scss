@@ -1,16 +1,28 @@
-@use 'vars';
-@use 'mixins';
+@use '../init/mixins';
 
-/* ----------------------------------------------
-  Global Utilities
----------------------------------------------- */
+//
+// Global Utility Classes
+//
+// There shouldn't be much here, as we prefer component-specific classes.
+//
+
+// screenreaders only
+// https://cloudfour.com/thinks/see-no-evil-hidden-content-and-accessibility/
+.sr-only {
+  border: 0 !important;
+  clip: rect(0, 0, 0, 0) !important;
+  clip-path: polygon(0 0, 0 0, 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
 
 .clear {
   clear: both;
-}
-
-.code {
-  font-family: vars.$font-family-mono;
 }
 
 /* advertisements */
@@ -24,13 +36,23 @@
   margin: 80px 0 0 0;
 }
 
+.user-name {
+  @include mixins.breakword();
+}
+
+.error,
+.danger {
+  color: var(--color-danger);
+}
+
 .image-poster {
   float: left;
   padding-right: 10px;
 }
 
-.user-name {
-  @include mixins.breakword();
+.avatar--img {
+  max-width: none;
+  object-fit: cover;
 }
 
 /* ---------------------------------------------------------------------

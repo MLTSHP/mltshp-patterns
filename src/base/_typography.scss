@@ -1,0 +1,64 @@
+//
+// Typography
+//
+// Note: only typography for base HTML elements should live here.
+// Component-specific typography should live in the component's stylesheet.
+//
+html {
+  font-family: var(--font-family-system);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+// I don't love this style. Maintaining for now, but this should really be
+// a utility class for specific H1 elements to opt into.
+h1 {
+  font-size: 3rem;
+  letter-spacing: -1px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 3.75rem;
+  }
+}
+
+// we use a variable so bold can be lighter in dark mode
+b,
+strong,
+label,
+legend,
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+}
+
+pre,
+code,
+.code {
+  font-family: var(--font-family-mono);
+}
+
+pre {
+  overflow-x: auto;
+  width: 100%;
+}
+
+// used in api app pages
+table pre {
+  margin: 0;
+}

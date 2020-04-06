@@ -1,0 +1,21 @@
+.page {
+  padding: 0 0.5em;
+  position: relative;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.content-narrow p {
+  font-size: 1.625rem;
+  line-height: 2.5;
+  margin: 2em 0;
+}
+
+.content-narrow .extra-info p {
+  color: var(--color-text-dark-secondary);
+  font-size: 1rem;
+  line-height: 1.4;
+}

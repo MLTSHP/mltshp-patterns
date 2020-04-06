@@ -1,3 +1,24 @@
+// Need to reapply system font to form fields because iOS tries to force Helvetica
+input,
+textarea,
+select,
+button {
+  font-family: var(--font-family-system);
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+}
+
+textarea {
+  display: block;
+  height: 5em;
+  padding: 0.5em;
+  resize: vertical;
+  width: 100%;
+}
+
 /* ---------------------------------------------------------------------
   Fun Form Layout
 --------------------------------------------------------------------- */

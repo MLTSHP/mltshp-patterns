@@ -15,18 +15,20 @@
 
 //
 // INITIALIZATION
-// variables and mixins that everything else depends on
+// vars will inject the design token custom properties into :root
+// normalize is a reset to make browsers render more consistently
 //
-@use "base/mixins";
-@use 'base/vars';
+@use '~normalize.css/normalize';
+@use 'init/vars';
 
 //
 // BASE
 // limited to native HTML elements and a few global classes
 //
-@use 'base/normalize';
 @use 'base/core';
+@use 'base/media';
 @use 'base/helpers';
+@use 'base/typography';
 
 //
 // COMPONENTS

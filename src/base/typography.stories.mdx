@@ -1,6 +1,7 @@
 import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
 import headingsMarkup from './examples/headings.html';
 import fontFeaturesMarkup from './examples/font-features.html';
+import linkStylesMarkup from './examples/link-styles.html';
 import listsMarkup from './examples/lists.html';
 import tablesMarkup from './examples/tables.html';
 import preMarkup from './examples/preformatted.html';
@@ -17,7 +18,9 @@ Check the source code to see the many embedded elements within paragraphs.
 ## Headings
 
 <Preview>
-  <Story name="Headings">{() => headingsMarkup}</Story>
+  <Story name="Headings" height="225px">
+    {() => headingsMarkup}
+  </Story>
 </Preview>
 
 ## Font Features
@@ -30,31 +33,49 @@ In particular, our headlines use the system font stack,
 and these rules don't seem to have any affect on the Mac system font.
 
 <Preview>
-  <Story name="Font Features">{() => fontFeaturesMarkup}</Story>
+  <Story name="Font Features" height="300px">
+    {() => fontFeaturesMarkup}
+  </Story>
 </Preview>
 
 ## Text-Level Semantics
 
 <Preview>
-  <Story name="Text-Level Semantics">{() => textSemanticsMarkup}</Story>
+  <Story name="Text-Level Semantics" height="600px">
+    {() => textSemanticsMarkup}
+  </Story>
+</Preview>
+
+## Link Styles
+
+<Preview>
+  <Story name="Link Styles" height="100px">
+    {() => linkStylesMarkup}
+  </Story>
 </Preview>
 
 ## Lists
 
 <Preview>
-  <Story name="Lists">{() => listsMarkup}</Story>
+  <Story name="Lists" height="575px">
+    {() => listsMarkup}
+  </Story>
 </Preview>
 
 ## Tables
 
 <Preview>
-  <Story name="Tables">{() => tablesMarkup}</Story>
+  <Story name="Tables" height="150px">
+    {() => tablesMarkup}
+  </Story>
 </Preview>
 
 ## Blockquotes
 
 <Preview>
-  <Story name="Blockquotes">{() => blockquotesMarkup}</Story>
+  <Story name="Blockquotes" height="200px">
+    {() => blockquotesMarkup}
+  </Story>
 </Preview>
 
 ## Preformatted
@@ -62,5 +83,7 @@ and these rules don't seem to have any affect on the Mac system font.
 Including, but not limited to code. Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. For example:
 
 <Preview>
-  <Story name="Preformatted">{() => preMarkup}</Story>
+  <Story name="Preformatted" height="550px">
+    {() => preMarkup}
+  </Story>
 </Preview>

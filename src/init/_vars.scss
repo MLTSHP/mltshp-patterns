@@ -1,0 +1,46 @@
+//
+// Variables
+// Note that most variables should live as design tokens instead
+//
+@use "../design-tokens/breakpoint.yml";
+@use "../design-tokens/colors.yml";
+@use "../design-tokens/font.yml";
+@use "../design-tokens/motion.yml";
+@use "../design-tokens/opacity.yml";
+
+:root {
+  --color-text-link-underline: #{rgba(colors.$color-text-link, 0.33)};
+  --color-text-link-underline-hover: #{rgba(colors.$color-text-link-hover, 0.33)};
+  --color-text-link-primary-underline: #{rgba(
+      colors.$color-text-link-primary,
+      0.33
+    )};
+  --color-text-link-primary-underline-hover: #{rgba(
+      colors.$color-text-link-primary-hover,
+      0.33
+    )};
+  --color-text-link-danger-underline: #{rgba(
+      colors.$color-text-link-danger,
+      0.33
+    )};
+  --color-text-link-danger-underline-hover: #{rgba(
+      colors.$color-text-link-danger-hover,
+      0.33
+    )};
+
+  // light mode
+  --color-page-bg: var(--color-page-bg-light);
+  --color-page-text: var(--color-text-dark);
+  --font-weight-bold: bold;
+  --font-weight-normal: normal;
+  --letter-spacing: normal;
+
+  // dark mode
+  @media screen and (prefers-color-scheme: dark) {
+    --color-page-bg: var(--color-page-bg-dark);
+    --color-page-text: var(--color-text-light);
+    --font-weight-bold: 600;
+    --font-weight-normal: 300;
+    --letter-spacing: 0.025em;
+  }
+}

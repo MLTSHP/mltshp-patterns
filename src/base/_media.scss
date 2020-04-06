@@ -1,0 +1,44 @@
+//
+// Media Elements
+//
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+//
+// Responsive Embeds
+//
+// Set `style="--aspect-ratio: 0.5625"` on the container,
+// where `0.5625` is the embed's height divided by width.
+//
+// @see https://css-tricks.com/responsive-iframes/
+//
+.data-wrapper,
+[style*='--aspect-ratio'] {
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    padding-bottom: calc(100% * var(--aspect-ratio));
+  }
+
+  > :first-child {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+// legacy
+.data-wrapper::before {
+  padding-bottom: 56.25%;
+}

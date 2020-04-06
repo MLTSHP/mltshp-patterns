@@ -1,5 +1,3 @@
-@use 'vars';
-
 //
 // Core Styles for Native HTML Elements
 //
@@ -16,32 +14,6 @@ html,
 body {
   background-color: var(--color-page-bg);
   color: var(--color-page-text);
-  margin: 0;
-}
-
-// Need to reapply system font to form fields because iOS tries to force Helvetica
-html {
-  font-family: vars.$font-family-system;
-  font-size: 16px;
-}
-
-// Need to reapply system font to form fields because iOS tries to force Helvetica
-input,
-textarea,
-select,
-button {
-  font-family: vars.$font-family-system;
-  font-size: 1rem;
-}
-
-.page {
-  padding: 0 0.5em;
-  position: relative;
-}
-
-.wrapper {
-  margin: 0 auto;
-  max-width: 960px;
 }
 
 //
@@ -49,121 +21,44 @@ button {
 //
 a {
   color: var(--color-text-link);
-  text-decoration-color: var(--color-link-underline);
-  text-decoration-skip: ink;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
+  text-decoration-color: var(--color-text-link-underline);
+  transition: background-color var(--speed-quick) ease,
+    color var(--speed-quick) ease;
 
-a:hover,
-a:focus,
-a:active {
-  color: var(--color-text-link-hover);
-  text-decoration-color: var(--color-link-underline-hover);
-}
-
-.link--primary {
-  color: var(--color-text-link-primary);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.link--primary:hover,
-.link--primary:focus,
-.link--primary:active {
-  color: var(--color-text-link-primary-hover);
-}
-
-.link--danger {
-  color: var(--color-text-danger);
-}
-
-.link--danger:hover,
-.link--danger:focus,
-.link--danger:active {
-  color: var(--color-text-danger-hover);
-}
-
-/* ---------------------------------------------------------------------
-  Typography
---------------------------------------------------------------------- */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-h1,
-h2,
-h3 {
-  font-feature-settings: 'kern' 1, 'liga' 1, 'clig' 1, 'pnum' 1;
-  font-kerning: normal;
-  font-variant-ligatures: common-ligatures;
-  font-variant-numeric: proportional-nums;
-  text-rendering: optimizeLegibility;
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  letter-spacing: -1px;
-}
-
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 60px;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-link-hover);
+    text-decoration-color: var(--color-text-link-underline-hover);
   }
 }
 
-.content-narrow p {
-  font-size: 26px;
-  line-height: 40px;
-  margin: 30px 0;
+// Primary color link modifier
+// this really shouldn't exist, it should be component-specific
+.link--primary {
+  color: var(--color-text-link-primary);
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  text-decoration-color: var(--color-text-link-primary-underline);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-link-primary-hover);
+    text-decoration-color: var(--color-text-link-primary-underline-hover);
+  }
 }
 
-.content-narrow .extra-info p {
-  color: var(--color-text-dark-secondary);
-  font-size: 16px;
-  line-height: 22px;
-}
+// Danger color link modifier
+// use sparingly, and prefer danger buttons
+.link--danger {
+  color: var(--color-text-link-danger);
+  text-decoration-color: var(--color-text-link-danger-underline);
 
-pre {
-  overflow-x: auto;
-  width: 100%;
-}
-
-table pre {
-  margin: 0;
-}
-
-/* ---------------------------------------------------------------------
-  Media
---------------------------------------------------------------------- */
-img:not(.avatar--img),
-video {
-  height: auto;
-  max-width: 100%;
-}
-
-.avatar--img {
-  object-fit: cover;
-}
-
-iframe {
-  max-width: 100%;
-}
-
-.data-wrapper {
-  padding-top: 56.25%;
-  position: relative;
-}
-
-.data-wrapper > iframe {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-link-danger-hover);
+    text-decoration-color: var(--color-text-link-danger-underline-hover);
+  }
 }

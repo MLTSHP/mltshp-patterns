@@ -1,0 +1,8 @@
+props:
+  - name: font_size_base
+    value: '18px'
+  - name: font_size_input
+    value: '16px'
+global:
+  type: font
+  category: font-size

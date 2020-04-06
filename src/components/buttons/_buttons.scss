@@ -1,4 +1,9 @@
-@use '../../base/vars';
+button {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 //
 // Buttons

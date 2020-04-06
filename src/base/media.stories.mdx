@@ -12,13 +12,17 @@ import embedsMarkup from './examples/embeds.html';
 Images are made responsive so that it scales with the parent element.
 
 <Preview>
-  <Story name="Images">{() => imagesMarkup}</Story>
+  <Story name="Images" height="1200px">
+    {() => imagesMarkup}
+  </Story>
 </Preview>
 
 ## Figures
 
 <Preview>
-  <Story name="Figures">{() => figuresMarkup}</Story>
+  <Story name="Figures" height="850px">
+    {() => figuresMarkup}
+  </Story>
 </Preview>
 
 ## Embeds
@@ -26,5 +30,7 @@ Images are made responsive so that it scales with the parent element.
 Sometimes all you want to do is embed a little love from another location and set your post alive.
 
 <Preview>
-  <Story name="Embeds">{() => embedsMarkup}</Story>
+  <Story name="Embeds" height="650px">
+    {() => embedsMarkup}
+  </Story>
 </Preview>
