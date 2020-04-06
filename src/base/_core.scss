@@ -3,7 +3,6 @@
 //
 // This partial should only contain styles for the basic native HTML elements.
 //
-
 *,
 *::before,
 *::after {
@@ -16,9 +15,6 @@ body {
   color: var(--color-page-text);
 }
 
-//
-// Links
-//
 a {
   color: var(--color-text-link);
   text-decoration-color: var(--color-text-link-underline);
@@ -34,7 +30,7 @@ a {
 }
 
 // Primary color link modifier
-// this really shouldn't exist, it should be component-specific
+// This really shouldn't exist, it should be component-specific. -SV
 .link--primary {
   color: var(--color-text-link-primary);
   font-weight: var(--font-weight-bold);
@@ -50,7 +46,7 @@ a {
 }
 
 // Danger color link modifier
-// use sparingly, and prefer danger buttons
+// Use sparingly, and prefer danger buttons.
 .link--danger {
   color: var(--color-text-link-danger);
   text-decoration-color: var(--color-text-link-danger-underline);

@@ -22,8 +22,9 @@ h6 {
 }
 
 // I don't love this style. Maintaining for now, but this should really be
-// a utility class for specific H1 elements to opt into.
-h1 {
+// a utility class for specific H1 elements to opt into. -SV
+h1,
+.u-display {
   font-size: 3rem;
   letter-spacing: -1px;
 
@@ -32,7 +33,7 @@ h1 {
   }
 }
 
-// we use a variable so bold can be lighter in dark mode
+// Using a custom property so bold can be lighter weight in dark mode. See vars.
 b,
 strong,
 label,
@@ -56,9 +57,4 @@ code,
 pre {
   overflow-x: auto;
   width: 100%;
-}
-
-// used in api app pages
-table pre {
-  margin: 0;
 }

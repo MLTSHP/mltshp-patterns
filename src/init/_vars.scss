@@ -1,6 +1,10 @@
 //
 // Variables
-// Note that most variables should live as design tokens instead
+// Note that most variables should live as design tokens instead.
+// By importing all the design tokens here, they're added as custom properties
+// on :root. That means that with rare exceptions, no one should use Sass
+// variables. We prefer custom properties because we can more easily override
+// them for situations like dark mode (see below).
 //
 @use "../design-tokens/breakpoint.yml";
 @use "../design-tokens/colors.yml";
