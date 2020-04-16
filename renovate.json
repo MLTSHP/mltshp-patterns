@@ -1,6 +1,7 @@
 {
   "extends": [
     "config:base",
-    "reviewers": ["spaceninja"]
+    "reviewers": ["spaceninja"],
+    "schedule": ["every weekend"]
   ]
 }
