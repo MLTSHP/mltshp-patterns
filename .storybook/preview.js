@@ -2,7 +2,7 @@ import { addDecorator, addParameters } from '@storybook/html';
 import { withA11y } from '@storybook/addon-a11y';
 import * as colors from '../src/design-tokens/colors.yml';
 import * as breakpoints from '../src/design-tokens/breakpoint.yml';
-import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 // import "focus-visible";
 import './preview.scss';
 
@@ -32,7 +32,7 @@ addParameters({
   viewport: {
     viewports: {
       ...breakpointViewports,
-      ...MINIMAL_VIEWPORTS,
+      ...INITIAL_VIEWPORTS,
     },
   },
 });
