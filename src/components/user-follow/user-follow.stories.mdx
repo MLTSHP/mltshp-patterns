@@ -1,0 +1,27 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import userFollowMarkup from './examples/user-follow.html';
+import userFollowExtendedMarkup from './examples/user-follow-extended.html';
+
+<Meta title="Components/User Follow" />
+
+# User Follow
+
+## Compact
+
+Used on the "Find More Shakes" page.
+
+<Preview>
+  <Story name="Compact" height="60px">
+    {() => userFollowMarkup}
+  </Story>
+</Preview>
+
+## Extended
+
+Used on user shake pages.
+
+<Preview>
+  <Story name="Extended" height="200px">
+    {() => userFollowExtendedMarkup}
+  </Story>
+</Preview>

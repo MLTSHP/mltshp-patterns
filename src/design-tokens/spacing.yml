@@ -1,0 +1,6 @@
+props:
+  - name: spacing_default
+    value: 10px
+global:
+  type: spacing
+  category: spacing

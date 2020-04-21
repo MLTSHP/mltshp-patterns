@@ -11,6 +11,7 @@
 @use "../design-tokens/font.yml";
 @use "../design-tokens/motion.yml";
 @use "../design-tokens/opacity.yml";
+@use "../design-tokens/spacing.yml";
 
 :root {
   --color-text-link-underline: #{rgba(colors.$color-text-link, 0.33)};

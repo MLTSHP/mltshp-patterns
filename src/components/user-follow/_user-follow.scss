@@ -1,0 +1,85 @@
+@use '../../init/mixins';
+
+// ----------------------------------------------
+// UIMODULE: ShakeFollow
+// ----------------------------------------------
+
+.user-follow {
+  display: flex;
+
+  .icon {
+    flex: none;
+    margin-right: var(--spacing-default);
+  }
+
+  h4 {
+    @include mixins.breakword();
+    color: var(--color-text-dark);
+    font-size: 0.875rem;
+    margin-bottom: calc(var(--spacing-default) / 2);
+  }
+
+  h4 a {
+    color: var(--color-text-link-primary);
+    font-weight: bold;
+    padding-bottom: calc(var(--spacing-default) / 2);
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-text-link-primary-hover);
+    }
+  }
+
+  .follow {
+    flex: 1;
+  }
+}
+
+.user-follow-extended {
+  display: block;
+  margin: calc(var(--spacing-default) * 2) calc(var(--spacing-default) / 2);
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  .icon {
+    float: left;
+    margin-right: var(--spacing-default);
+  }
+
+  .details {
+    padding-bottom: var(--spacing-default);
+  }
+
+  h4 a {
+    font-size: 1.125rem;
+  }
+
+  .about {
+    @include mixins.breakword();
+    color: var(--color-text-dark);
+    display: block;
+    font-size: 0.875rem;
+    line-height: 1.3;
+    margin-bottom: var(--spacing-default);
+    white-space: pre-wrap;
+  }
+
+  .website a {
+    @include mixins.breakword();
+    color: var(--color-text-link-primary);
+    font-size: 0.8rem;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-text-link-primary-hover);
+    }
+  }
+}

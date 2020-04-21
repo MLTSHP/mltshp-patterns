@@ -4,36 +4,39 @@
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0),
-    #ffffff calc(100% - 6px),
-    #eeeeee
+    rgba(255, 255, 255, 0) calc(100% - 6px),
+    var(--color-gray-300)
   );
-  padding: 24px 30px 16px;
-}
+  padding: 1.5rem 1.875rem 1rem; // 24px 30px 16px
 
-.account-header .avatar {
-  display: flex;
-}
-
-.account-header .avatar-media {
-  flex: none;
-}
-
-.account-header .avatar img {
-  display: block;
-}
-
-.account-header h2 {
-  @include mixins.breakword();
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 50px;
-  padding-left: 24px;
-
-  @media screen and (min-width: 480px) {
-    font-size: 36px;
+  .avatar {
+    display: flex;
   }
 
-  @media screen and (min-width: 800px) {
-    font-size: 42px;
+  .avatar-media {
+    flex: none;
   }
+
+  .avatar img {
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+
+  h2 {
+    @include mixins.breakword();
+    font-size: 1.875rem; // 30px
+    font-weight: bold;
+    line-height: 50px; // to match height of avatar
+    padding-left: 1.5rem;
+
+    @media screen and (min-width: 480px) {
+      font-size: 2.25rem; // 36px
+    }
+
+    @media screen and (min-width: 800px) {
+      font-size: 2.625rem; // 42px
+    }
+  }
+
 }
