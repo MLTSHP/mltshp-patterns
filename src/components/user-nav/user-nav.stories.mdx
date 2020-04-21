@@ -1,0 +1,25 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import userNavLoggedInMarkup from './examples/user-nav-logged-in.html';
+import userNavLoggedOutMarkup from './examples/user-nav-logged-out.html';
+
+<Meta title="Components/User Navigation" />
+
+# User Navigation
+
+Used in the site header.
+
+## Logged In
+
+<Preview>
+  <Story name="Logged In" height="150px">
+    {() => userNavLoggedInMarkup}
+  </Story>
+</Preview>
+
+## Logged Out
+
+<Preview>
+  <Story name="Logged Out" height="50px">
+    {() => userNavLoggedOutMarkup}
+  </Story>
+</Preview>
