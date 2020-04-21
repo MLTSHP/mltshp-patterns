@@ -14,8 +14,6 @@ props:
     value: '{!width_xl}'
   - name: breakpoint_xxl
     value: '{!width_xxl}'
-  - name: breakpoint_xxxl
-    value: '{!width_xxxl}'
 global:
   type: relative
   category: media-query
