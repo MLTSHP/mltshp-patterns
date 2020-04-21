@@ -1,0 +1,18 @@
+@mixin darkmode() {
+  --color-page-bg: var(--color-page-bg-dark);
+  --color-page-text: var(--color-text-light);
+  --font-weight-bold: 600;
+  --font-weight-normal: 300;
+  --letter-spacing: 0.025em;
+}
+
+:root {
+  @media screen and (prefers-color-scheme: dark) {
+    @include darkmode();
+  }
+}
+
+// note this only really works on the `html` or `body` elements.
+.t-dark {
+  @include darkmode();
+}
