@@ -4,10 +4,10 @@ module.exports = {
   stories: ['../src/welcome.stories.mdx', '../src/**/*.stories.(js|mdx)'],
   addons: [
     '@storybook/addon-a11y/register',
-    '@storybook/addon-backgrounds/register',
     '@storybook/addon-docs',
     '@storybook/addon-knobs/register',
     '@storybook/addon-viewport/register',
+    'storybook-addon-themes'
   ],
   webpackFinal: async (config) => {
     // Remove default SVG processing from default config.

@@ -10,9 +10,9 @@ import './preview.scss';
 addDecorator(withA11y);
 
 // Set choosable backgrounds for stories
-const backgrounds = [
-  { name: 'light', value: colors.colorPageBgLight, default: true },
-  { name: 'dark', value: colors.colorPageBgDark },
+const themes = [
+  { name: 'Blue', class: 't-blue', color: colors.colorPageBgBlue },
+  { name: 'Dark', class: 't-dark', color: colors.colorPageBgDark },
 ];
 
 // Create viewports using widths defined in design tokens
@@ -28,7 +28,7 @@ const breakpointViewports = Object.keys(breakpoints).map((name) => {
 });
 
 addParameters({
-  backgrounds,
+  themes,
   viewport: {
     viewports: {
       ...breakpointViewports,

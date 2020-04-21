@@ -7,6 +7,7 @@ aliases:
   blue_dark: '#008bcc'
   blue_pastel_dark: '#00aeff'
   blue_pastel_light: '#daf3ff'
+  blue_pastel_very_light: '#dbfaff'
   green: '#09B896'
   green_dark: '#079378'
   green_pastel_dark: '#0caf8b'
@@ -122,6 +123,9 @@ props:
     category: color
   - name: color_page_bg_light
     value: '{!white}'
+    category: color
+  - name: color_page_bg_blue
+    value: '{!blue_pastel_very_light}'
     category: color
   - name: color_text_dark
     value: '{!black_transparent_85}'

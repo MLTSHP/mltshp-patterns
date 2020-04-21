@@ -49,3 +49,15 @@
     --letter-spacing: 0.025em;
   }
 }
+
+.t-dark {
+  --color-page-bg: var(--color-page-bg-dark);
+  --color-page-text: var(--color-text-light);
+  --font-weight-bold: 600;
+  --font-weight-normal: 300;
+  --letter-spacing: 0.025em;
+}
+
+.t-blue {
+  --color-page-bg: var(--color-page-bg-blue);
+}
