@@ -38,6 +38,12 @@
   margin: 80px 0 0 0;
 }
 
+.hide-on-small {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
+
 .user-name {
   @include mixins.breakword();
 }

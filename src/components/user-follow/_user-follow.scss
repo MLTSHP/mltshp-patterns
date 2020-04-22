@@ -12,13 +12,13 @@
     @include mixins.breakword();
     color: var(--color-text-dark);
     font-size: 0.875rem;
-    margin-bottom: calc(var(--spacing-default) / 2);
+    margin-bottom: var(--spacing-half);
   }
 
   h4 a {
     color: var(--color-text-link-primary);
     font-weight: bold;
-    padding-bottom: calc(var(--spacing-default) / 2);
+    padding-bottom: var(--spacing-half);
     text-decoration: none;
 
     &:hover,
@@ -36,7 +36,7 @@
 // Extended Modifier
 .user-follow-extended {
   display: block;
-  margin: calc(var(--spacing-default) * 2) calc(var(--spacing-default) / 2);
+  margin: var(--spacing-double) var(--spacing-half);
 
   .icon {
     float: left;

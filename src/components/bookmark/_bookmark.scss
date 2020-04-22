@@ -1,0 +1,86 @@
+$bookmark-offset: 3px;
+$bookmark-shadow-offset: 4px;
+
+.bookmark {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bookmark-flag {
+  background: var(--color-primary-brand);
+  color: var(--color-text-light-emphasis);
+  flex: none;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-top: $bookmark-offset * -1;
+  position: relative;
+  z-index: 2;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+  // makes the "fold" shape
+  &::before {
+    background: inherit;
+    border-radius: var(--spacing-half) 0 0 var(--spacing-half);
+    height: calc(100% + var(--spacing-half));
+    left: calc(var(--spacing-half) * -1);
+    padding-bottom: var(--spacing-half);
+    top: 0;
+    width: var(--spacing-half);
+  }
+
+  // makes the shadow for the "fold" shape
+  &::after {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: $bookmark-offset 0 0 $bookmark-offset;
+    bottom: $bookmark-shadow-offset * -1;
+    height: $bookmark-shadow-offset;
+    left: $bookmark-offset * -1;
+    width: $bookmark-offset;
+  }
+}
+
+.bookmark-flag--content {
+  display: block;
+  line-height: 1;
+  padding: 0.5em 1em;
+
+  // makes the pointed ribbon corners
+  // 1. this is less than the border width to avoid a gap due to pixel-rounding errors
+  &::after {
+    border: 1em solid var(--color-primary-brand);
+    border-right-color: transparent;
+    border-width: 1em 0.866em 1em 0;
+    content: '';
+    display: block;
+    position: absolute;
+    right: -0.833em; // 1
+    top: 0;
+  }
+}
+
+.jump-back {
+  flex: 1;
+  font-size: 0.6875rem;
+  margin-left: 0.75em;
+  padding: calc(0.5em - #{$bookmark-offset}) 0 0.5em 0.75em;
+  white-space: nowrap;
+
+  a {
+    color: var(--color-text-link-primary);
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-text-link-primary-hover);
+    }
+  }
+}

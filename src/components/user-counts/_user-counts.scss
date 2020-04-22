@@ -2,7 +2,7 @@
   background-color: var(--color-disabled-light);
   border-radius: var(--spacing-default);
   clear: both;
-  margin-bottom: calc(var(--spacing-default) * 2);
+  margin-bottom: var(--spacing-double);
   padding: calc(var(--spacing-default) * 1.5);
 
   ul {

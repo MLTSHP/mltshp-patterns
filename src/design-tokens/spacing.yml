@@ -1,6 +1,10 @@
 props:
+  - name: spacing_half
+    value: 5px
   - name: spacing_default
     value: 10px
+  - name: spacing_double
+    value: 20px
 global:
   type: spacing
   category: spacing

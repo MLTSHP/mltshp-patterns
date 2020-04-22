@@ -1,0 +1,25 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import whereYouWereMarkup from './examples/where-you-were.html';
+import youStartedHereMarkup from './examples/you-started-here.html';
+
+<Meta title="Components/Bookmark" />
+
+# Bookmark
+
+Note that the bookmark is intended to "pull" slightly outside the content well. These samples have some padding adding to keep it visible.
+
+## Where You Were
+
+<Preview>
+  <Story name="Where You Were" height="90px">
+    {() => whereYouWereMarkup}
+  </Story>
+</Preview>
+
+## You Started Here
+
+<Preview>
+  <Story name="You Started Here" height="90px">
+    {() => youStartedHereMarkup}
+  </Story>
+</Preview>
