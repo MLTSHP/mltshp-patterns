@@ -3,6 +3,8 @@ props:
     value: 5px
   - name: spacing_default
     value: 10px
+  - name: spacing_half_again
+    value: 15px
   - name: spacing_double
     value: 20px
   - name: spacing_triple

@@ -6,7 +6,7 @@
     color: var(--color-page-text);
     font-size: 1.125rem;
     font-weight: bold;
-    margin-bottom: calc(var(--spacing-default) * 1.5);
+    margin-bottom: var(--spacing-half-again);
     margin-top: var(--spacing-triple);
   }
 }
@@ -36,7 +36,7 @@
 }
 
 .conversation {
-  border-bottom: 1px dotted var(--color-gray-300);
+  border-bottom: 1px dotted var(--color-border-default);
   display: flex;
   margin-top: var(--spacing-triple);
 
@@ -65,7 +65,7 @@
 
   .sharedfile-title {
     @include mixins.breakword();
-    color: var(--color-page-text);
+    color: var(--color-page-text-emphasis);
     font-size: var(--spacing-triple);
     font-weight: bold;
     margin-bottom: var(--spacing-default);
@@ -91,7 +91,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: var(--spacing-triple);
-    margin-top: calc(var(--spacing-default) * 1.5);
+    margin-top: var(--spacing-half-again);
   }
 
   .post-a-comment,

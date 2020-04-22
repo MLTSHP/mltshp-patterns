@@ -1,0 +1,54 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import defaultMarkup from './examples/feature-default.html';
+import flippedMarkup from './examples/feature-flipped.html';
+import primaryMarkup from './examples/feature-primary.html';
+import finaleMarkup from './examples/feature-finale.html';
+import listMarkup from './examples/feature-list.html';
+
+<Meta title="Components/Features" />
+
+# Features
+
+Used on the logged-out version of the homepage to promote site features.
+
+Note the responsive layout for the features doesn't display quite right in the Docs view, so you may want to switch back to the Canvas view for this component.
+
+## Default
+
+<Preview>
+  <Story name="Default" height="200px">
+    {() => defaultMarkup}
+  </Story>
+</Preview>
+
+## Flipped
+
+<Preview>
+  <Story name="Flipped" height="200px">
+    {() => flippedMarkup}
+  </Story>
+</Preview>
+
+## Primary
+
+<Preview>
+  <Story name="Primary" height="200px">
+    {() => primaryMarkup}
+  </Story>
+</Preview>
+
+## Finale
+
+<Preview>
+  <Story name="Finale" height="200px">
+    {() => finaleMarkup}
+  </Story>
+</Preview>
+
+## Feature List
+
+<Preview>
+  <Story name="Feature List" height="700px">
+    {() => listMarkup}
+  </Story>
+</Preview>

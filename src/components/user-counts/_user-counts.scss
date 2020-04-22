@@ -1,9 +1,9 @@
 .user-counts {
-  background-color: var(--color-disabled-light);
+  background-color: var(--color-border-default);
   border-radius: var(--spacing-default);
   clear: both;
   margin-bottom: var(--spacing-double);
-  padding: calc(var(--spacing-default) * 1.5);
+  padding: var(--spacing-half-again);
 
   ul {
     display: flex;
@@ -36,7 +36,6 @@
   }
 
   .views {
-    color: var(--color-page-text);
     width: 95px; // magic number to give views more space than other cells
   }
 

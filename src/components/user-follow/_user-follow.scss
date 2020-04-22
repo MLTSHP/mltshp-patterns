@@ -10,7 +10,6 @@
 
   h4 {
     @include mixins.breakword();
-    color: var(--color-text-dark);
     font-size: 0.875rem;
     margin-bottom: var(--spacing-half);
   }
@@ -53,7 +52,6 @@
 
   .about {
     @include mixins.breakword();
-    color: var(--color-page-text);
     display: block;
     font-size: 0.875rem;
     line-height: 1.3;
