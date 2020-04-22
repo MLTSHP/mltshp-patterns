@@ -1,0 +1,51 @@
+.user-counts {
+  background-color: var(--color-disabled-light);
+  border-radius: var(--spacing-default);
+  clear: both;
+  margin-bottom: calc(var(--spacing-default) * 2);
+  padding: calc(var(--spacing-default) * 1.5);
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    background-color: var(--color-page-bg);
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: var(--spacing-default);
+    padding: var(--spacing-default) 0;
+    text-align: center;
+    width: 70px; // magic number that works in the sidebar
+
+    .num {
+      display: block;
+      font-size: 1.125rem;
+      font-weight: bold;
+    }
+
+    .label {
+      display: block;
+      font-size: 0.875rem;
+    }
+  }
+
+  .views {
+    color: var(--color-page-text);
+    width: 95px; // magic number to give views more space than other cells
+  }
+
+  .saves {
+    color: var(--color-warning);
+  }
+
+  .likes {
+    color: var(--color-danger);
+    margin-right: 0;
+  }
+}

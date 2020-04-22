@@ -1,0 +1,23 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import userCountsMarkup from './examples/user-counts.html';
+import userCountsNarrowMarkup from './examples/user-counts-narrow.html';
+
+<Meta title="Components/User Counts" />
+
+# User Counts
+
+<Preview>
+  <Story name="User Counts" height="100px">
+    {() => userCountsMarkup}
+  </Story>
+</Preview>
+
+## Narrow
+
+Though fully responsive, this component is typically displayed in the sidebar with a constrained width. Care should be taken, since very large numbers can appear in this component.
+
+<Preview>
+  <Story name="Narrow" height="100px">
+    {() => userCountsNarrowMarkup}
+  </Story>
+</Preview>
