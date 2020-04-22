@@ -11,16 +11,16 @@
 
   .avatar {
     display: flex;
+
+    img {
+      display: block;
+      height: 50px;
+      width: 50px;
+    }
   }
 
   .avatar-media {
     flex: none;
-  }
-
-  .avatar img {
-    display: block;
-    height: 50px;
-    width: 50px;
   }
 
   h2 {

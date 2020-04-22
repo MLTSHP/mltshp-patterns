@@ -1,9 +1,5 @@
 @use '../../init/mixins';
 
-// ----------------------------------------------
-// UIMODULE: ShakeFollow
-// ----------------------------------------------
-
 .user-follow {
   display: flex;
 
@@ -37,15 +33,10 @@
   }
 }
 
+// Extended Modifier
 .user-follow-extended {
   display: block;
   margin: calc(var(--spacing-default) * 2) calc(var(--spacing-default) / 2);
-
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
-  }
 
   .icon {
     float: left;
@@ -81,5 +72,11 @@
     &:active {
       color: var(--color-text-link-primary-hover);
     }
+  }
+
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
   }
 }
