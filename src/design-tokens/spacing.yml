@@ -5,6 +5,8 @@ props:
     value: 10px
   - name: spacing_double
     value: 20px
+  - name: spacing_triple
+    value: 30px
 global:
   type: spacing
   category: spacing
