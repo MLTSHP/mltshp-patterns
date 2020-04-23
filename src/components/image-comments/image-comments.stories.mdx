@@ -1,0 +1,25 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import imageCommentMarkup from './examples/image-comment.html';
+import imageCommentFormMarkup from './examples/image-comment-form.html';
+
+<Meta title="Components/Image Comments" />
+
+# Image Comments
+
+Used on the permalink area, as well as the Conversations area to render the comments.
+
+## Comment
+
+<Preview>
+  <Story name="Comment" height="100px">
+    {() => imageCommentMarkup}
+  </Story>
+</Preview>
+
+## Comment Form
+
+<Preview>
+  <Story name="Comment Form" height="300px">
+    {() => imageCommentFormMarkup}
+  </Story>
+</Preview>

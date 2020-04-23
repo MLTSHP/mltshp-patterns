@@ -1,6 +1,3 @@
-/* ---------------------------------------------------------------------
-  Feature List (used on logged-out homepage)
---------------------------------------------------------------------- */
 .feature-list {
   @media screen and (min-width: 480px) {
     display: flex;
@@ -16,9 +13,6 @@
   }
 }
 
-/* ---------------------------------------------------------------------
-  Features (used on logged-out homepage)
---------------------------------------------------------------------- */
 .feature {
   border-top: 1px dashed var(--color-border-default);
   margin: 0;

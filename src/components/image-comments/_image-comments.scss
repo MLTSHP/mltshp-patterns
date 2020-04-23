@@ -1,160 +1,166 @@
-/* ----------------------------------------------
-  IMAGE COMMENTS : .image-comments
-  Used on the permalink area, as well as the
-  Conversations area to render the comments.
----------------------------------------------- */
+@use '../../init/mixins';
 
 .image-comments {
   max-width: 100%;
   overflow: hidden;
-  padding-left: 40px;
-}
+  padding-left: calc(var(--spacing-default) * 4);
 
-.image-comments .comments {
-  clear: both;
-}
+  .comments {
+    clear: both;
+  }
 
-.image-comments .comment {
-  display: flex;
-}
+  .comment {
+    display: flex;
 
-.image-comments .comment + .comment {
-  margin-top: 20px;
-}
+    + .comment {
+      margin-top: var(--spacing-double);
+    }
 
-.image-comments .comment .avatar {
-  margin-right: 10px;
-  width: 48px;
-}
+    .avatar {
+      margin-right: var(--spacing-default);
+      width: 48px;
+    }
 
-.image-comments .comment .body {
-  color: #4b4b4b;
-  flex: 1;
-  font-size: 14px;
-  line-height: 18px;
-  overflow: hidden;
-}
+    .body {
+      flex: 1;
+      font-size: 0.875rem;
+      line-height: 1.3;
+      overflow: hidden;
 
-.image-comments .comment .meta {
-  align-items: flex-end;
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 12px;
-  padding-bottom: 10px;
-}
+      .where-from {
+        color: var(--color-page-text-secondary);
+        font-size: 0.825em;
+        padding-top: var(--spacing-default);
+      }
+    }
 
-.image-comments .comment .meta > * + * {
-  margin-left: 0.8em;
-}
+    .comment-body-text {
+      @include mixins.breakword();
+    }
 
-.image-comments .comment .meta .username {
-  font-size: 14px;
-  font-weight: bold;
-}
+    .meta {
+      align-items: flex-end;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0.825em;
+      padding-bottom: var(--spacing-default);
 
-.image-comments .comment .meta .pro-badge {
-  margin-left: 0.25em;
-}
+      > * + * {
+        margin-left: 0.825em;
+      }
 
-.image-comments .comment .meta .reply-to {
-  background: url('/static/images/icon-reply-arrow.svg') 0 0 no-repeat;
-  background-size: 12px 11px;
-  display: none;
-  padding-left: 15px;
-}
+      .username,
+      .user-name {
+        font-size: 0.875rem;
+        font-weight: var(--font-weight-bold);
+      }
 
-.image-comments .comment:hover .meta .reply-to {
-  display: inline;
-}
+      .pro-badge {
+        margin-left: 0.25em;
+      }
 
-.image-comments .comment:hover .meta form {
-  display: none;
-}
+      .reply-to {
+        background-image: svg-load('icons/reply.svg');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 12px 11px;
+        display: none;
+        padding-left: var(--spacing-half-again);
+      }
 
-.image-comments .comment .meta .delete {
-  background: url('/static/images/icon-delete-comment.svg') 0 0 no-repeat;
-  background-size: 13px 13px;
-  display: none;
-  padding-left: 16px;
-}
+      .delete {
+        background-image: svg-load('icons/delete-comment.svg');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 13px 13px;
+        display: none;
+        padding-left: var(--spacing-half-again);
+      }
 
-.image-comments .comment:hover .meta .delete {
-  display: inline;
-}
+      .created-at {
+        color: var(--color-page-text-secondary);
+      }
+    }
 
-.image-comments .comment .meta .created-at {
-  color: #7f7f7f;
-}
+    &:hover {
+      .meta {
+        .reply-to {
+          display: inline;
+        }
 
-.image-comments .comment .body .where-from {
-  color: #7f7f7f;
-  font-size: 12px;
-  padding-top: 10px;
-}
+        form {
+          display: none;
+        }
 
-.image-comments .comment .comment-body-text {
-  overflow-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
+        .delete {
+          display: inline;
+        }
+      }
+    }
+  }
 }
 
 .image-comment-form {
-  margin-top: 30px;
-  padding-left: 40px;
-}
+  margin-top: var(--spacing-triple);
+  padding-left: calc(var(--spacing-default) * 4);
 
-.image-comment-form header {
-  display: flex;
-}
-
-.image-comment-form .avatar {
-  flex: none;
-}
-
-.image-comment-form h3 {
-  background: transparent url('/static/images/comment-quip-left.svg') left top
-    no-repeat;
-  background-size: auto 45px;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 25px 20px;
-  display: block;
-  left: -10px;
-  position: relative;
-}
-
-.image-comment-form h3 span {
-  color: #fff600;
-  display: block;
-  font-size: 12px;
-  font-weight: bold;
-  height: 45px;
-  line-height: 45px;
-  padding-left: 35px;
-  padding-right: 20px;
-  white-space: nowrap;
-
-  @media screen and (min-width: 360px) {
-    font-size: 14px;
+  header {
+    display: flex;
   }
 
-  @media screen and (min-width: 480px) {
-    font-size: 16px;
+  .avatar {
+    flex: none;
   }
 
-  @media screen and (min-width: 820px) {
-    font-size: 18px;
+  h3 {
+    background-image: svg-load('balloons/comment-quip-left.svg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 48px; // match avatar height
+    border-bottom-right-radius: 15px; // magic number looks good with balloon background
+    border-top-right-radius: 25px 20px; // magic number looks good with balloon background
+    display: block;
+    left: calc(var(--spacing-default) * -1);
+    position: relative;
+
+    span {
+      color: var(--color-text-light-emphasis);
+      display: block;
+      font-size: 0.75rem;
+      font-weight: var(--font-weight-bold);
+      height: 48px; // match avatar height
+      line-height: 48px; // match avatar height
+      padding-left: 35px; // magic number to accomodate balloon stem
+      padding-right: var(--spacing-double);
+      text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.5); // copied from button
+      white-space: nowrap;
+
+      @media screen and (min-width: 360px) {
+        font-size: 0.875rem;
+      }
+
+      @media screen and (min-width: 480px) {
+        font-size: 1rem;
+      }
+
+      @media screen and (min-width: 820px) {
+        font-size: 1.125rem;
+      }
+    }
   }
-}
 
-.image-comment-form .field {
-  clear: both;
-  margin: 20px 0;
-  text-align: right;
-}
+  .field {
+    clear: both;
+    margin: var(--spacing-double) 0;
+    text-align: right;
+  }
 
-.image-comment-form textarea {
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  height: 130px;
-  padding: 5px;
+  textarea {
+    background-color: var(--color-page-bg);
+    border: 1px solid var(--color-border-default);
+    border-radius: 5px;
+    color: var(--color-page-text);
+    height: 8em;
+    padding: var(--spacing-half);
+  }
 }

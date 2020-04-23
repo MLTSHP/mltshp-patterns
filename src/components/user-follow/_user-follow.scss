@@ -16,7 +16,7 @@
 
   h4 a {
     color: var(--color-text-link-primary);
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     padding-bottom: var(--spacing-half);
     text-decoration: none;
 
