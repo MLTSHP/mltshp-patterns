@@ -1,0 +1,85 @@
+/* ----------------------------------------------
+  UIMODULE: ImageMedium
+
+  (.image-medium-list)
+    .image-medium
+      .user-and-title
+      .stats
+---------------------------------------------- */
+
+.image-medium {
+  margin-right: var(--spacing-half-again);
+  padding-bottom: var(--spacing-triple);
+
+  .user-and-title {
+    padding-top: var(--spacing-default);
+
+    a {
+      display: block;
+      float: left;
+      margin-right: var(--spacing-default);
+      width: 20px; // avatar size
+    }
+
+    .title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      overflow: hidden;
+    }
+  }
+
+  .stats {
+    clear: both;
+    color: var(--color-page-text-secondary);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: var(--spacing-default) 0 0;
+
+    // stylelint-disable selector-no-qualifying-type
+    li {
+      float: left;
+      font-size: 0.75em;
+      padding-right: var(--spacing-default);
+
+      &.saves {
+        background-image: svg-load('icons/save-tiny.svg');
+        background-position: 0 2px;
+        background-repeat: no-repeat;
+        background-size: 16px 11px;
+        color: var(--color-warning);
+        padding-left: var(--spacing-double);
+      }
+
+      &.likes {
+        background-image: svg-load('icons/like.svg');
+        background-position: 0 2px;
+        background-repeat: no-repeat;
+        background-size: 12px 9px;
+        color: var(--color-danger);
+        padding-left: var(--spacing-half-again);
+      }
+
+      &.comments a {
+        background-image: svg-load('icons/comment.svg');
+        background-position: 0 2px;
+        background-repeat: no-repeat;
+        background-size: 12px 9px;
+        color: var(--color-secondary-brand);
+        padding-left: var(--spacing-half-again);
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.image-medium-thumb {
+  a {
+    display: block;
+  }
+
+  img {
+    text-align: center;
+    vertical-align: middle;
+  }
+}
