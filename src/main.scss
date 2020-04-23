@@ -33,16 +33,16 @@
 @use 'themes/blue';
 
 //
-// COMPONENTS
+// LEGACY COMPONENTS
 // small & self-contained, not reliant on other files
 //
-@use "components/account-header/account-header";
-@use "components/bookmark/bookmark";
-@use "components/buttons/buttons";
-@use "components/conversations/conversations";
-@use "components/features/features";
-@use "components/forms/forms";
-@use "components/image-comments/image-comments";
-@use "components/user-counts/user-counts";
-@use "components/user-follow/user-follow";
-@use "components/user-nav/user-nav";
+@use "legacy/components/account-header/account-header";
+@use "legacy/components/bookmark/bookmark";
+@use "legacy/components/buttons/buttons";
+@use "legacy/components/conversations/conversations";
+@use "legacy/components/features/features";
+@use "legacy/components/forms/forms";
+@use "legacy/components/image-comments/image-comments";
+@use "legacy/components/user-counts/user-counts";
+@use "legacy/components/user-follow/user-follow";
+@use "legacy/components/user-nav/user-nav";
