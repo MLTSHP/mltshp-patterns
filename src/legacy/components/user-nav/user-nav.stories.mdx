@@ -3,6 +3,10 @@ import userNavLoggedInMarkup from './examples/user-nav-logged-in.html';
 import userNavLoggedOutMarkup from './examples/user-nav-logged-out.html';
 import confirmEmailMarkup from './examples/confirm-email.html';
 import maintenanceMarkup from './examples/maintenance.html';
+const themes = [
+  { name: 'Blue', class: 't-blue', color: '#dbfaff', default: true },
+  { name: 'Dark', class: 't-dark', color: '#263238' },
+];
 
 <Meta title="Legacy/Components/User Navigation" />
 
@@ -13,19 +17,7 @@ Used in the site header.
 ## Logged In
 
 <Preview>
-  <Story
-    name="Logged In"
-    height="150px"
-    parameters={{
-      themes: [
-        {
-          name: 'Blue',
-          class: 't-blue',
-          default: true,
-        },
-      ],
-    }}
-  >
+  <Story name="Logged In" height="150px" parameters={{ themes }}>
     {() => userNavLoggedInMarkup}
   </Story>
 </Preview>
@@ -33,19 +25,7 @@ Used in the site header.
 ## Logged Out
 
 <Preview>
-  <Story
-    name="Logged Out"
-    height="50px"
-    parameters={{
-      themes: [
-        {
-          name: 'Blue',
-          class: 't-blue',
-          default: true,
-        },
-      ],
-    }}
-  >
+  <Story name="Logged Out" height="50px" parameters={{ themes }}>
     {() => userNavLoggedOutMarkup}
   </Story>
 </Preview>
@@ -53,19 +33,7 @@ Used in the site header.
 ## Confirm Your Email
 
 <Preview>
-  <Story
-    name="Confirm Your Email"
-    height="50px"
-    parameters={{
-      themes: [
-        {
-          name: 'Blue',
-          class: 't-blue',
-          default: true,
-        },
-      ],
-    }}
-  >
+  <Story name="Confirm Your Email" height="50px" parameters={{ themes }}>
     {() => confirmEmailMarkup}
   </Story>
 </Preview>
@@ -73,19 +41,7 @@ Used in the site header.
 ## Maintenance Mode
 
 <Preview>
-  <Story
-    name="Maintenance Mode"
-    height="50px"
-    parameters={{
-      themes: [
-        {
-          name: 'Blue',
-          class: 't-blue',
-          default: true,
-        },
-      ],
-    }}
-  >
+  <Story name="Maintenance Mode" height="50px" parameters={{ themes }}>
     {() => maintenanceMarkup}
   </Story>
 </Preview>

@@ -1,6 +1,10 @@
 import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
 import loggedOutMarkup from './examples/logged-out.html';
 import loggedInMarkup from './examples/logged-in.html';
+const themes = [
+  { name: 'Blue', class: 't-blue', color: '#dbfaff', default: true },
+  { name: 'Dark', class: 't-dark', color: '#263238' },
+];
 
 <Meta title="Legacy/Components/Site Header" />
 
@@ -11,19 +15,7 @@ Note that the Site Header includes the Site Navigation, Choose a Shake, and User
 ## Logged Out
 
 <Preview>
-  <Story
-    name="Logged Out"
-    height="200px"
-    parameters={{
-      themes: [
-        {
-          name: 'Blue',
-          class: 't-blue',
-          default: true,
-        },
-      ],
-    }}
-  >
+  <Story name="Logged Out" height="200px" parameters={{ themes }}>
     {() => loggedOutMarkup}
   </Story>
 </Preview>
@@ -31,19 +23,7 @@ Note that the Site Header includes the Site Navigation, Choose a Shake, and User
 ## Logged In
 
 <Preview>
-  <Story
-    name="Logged In"
-    height="200px"
-    parameters={{
-      themes: [
-        {
-          name: 'Blue',
-          class: 't-blue',
-          default: true,
-        },
-      ],
-    }}
-  >
+  <Story name="Logged In" height="200px" parameters={{ themes }}>
     {() => loggedInMarkup}
   </Story>
 </Preview>
