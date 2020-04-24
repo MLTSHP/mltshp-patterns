@@ -17,6 +17,7 @@ body {
 }
 
 // workaround to stop storybook iframes from scrolling if components have margin
+// stylelint-disable-next-line selector-max-id
 #root {
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
