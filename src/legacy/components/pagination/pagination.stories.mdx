@@ -1,0 +1,27 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import defaultMarkup from './examples/default.html';
+import linearMarkup from './examples/linear.html';
+
+<Meta title="Legacy/Components/Pagination" />
+
+# Pagination
+
+## Default
+
+Used on Conversations, Followers, and Your Shake.
+
+<Preview>
+  <Story name="Default" height="150px">
+    {() => defaultMarkup}
+  </Story>
+</Preview>
+
+## Linear
+
+Used on other shakes.
+
+<Preview>
+  <Story name="Linear" height="100px">
+    {() => linearMarkup}
+  </Story>
+</Preview>

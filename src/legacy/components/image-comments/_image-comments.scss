@@ -3,7 +3,7 @@
 .image-comments {
   max-width: 100%;
   overflow: hidden;
-  padding-left: calc(var(--spacing-default) * 4);
+  padding-left: var(--spacing-quadruple);
 
   .comments {
     clear: both;
@@ -102,7 +102,7 @@
 
 .image-comment-form {
   margin-top: var(--spacing-triple);
-  padding-left: calc(var(--spacing-default) * 4);
+  padding-left: var(--spacing-quadruple);
 
   header {
     display: flex;

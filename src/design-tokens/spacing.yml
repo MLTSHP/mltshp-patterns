@@ -9,6 +9,8 @@ props:
     value: 20px
   - name: spacing_triple
     value: 30px
+  - name: spacing_quadruple
+    value: 40px
 global:
   type: spacing
   category: spacing

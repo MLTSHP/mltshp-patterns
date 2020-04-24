@@ -149,7 +149,7 @@
     padding-top: var(--spacing-half-again);
 
     @media screen and (min-width: 768px) {
-      padding-bottom: calc(var(--spacing-default) * 4);
+      padding-bottom: var(--spacing-quadruple);
       padding-top: calc(var(--spacing-default) * 6);
     }
 
