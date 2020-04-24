@@ -1,0 +1,47 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import loggedOutMarkup from './examples/logged-out.html';
+import loggedInMarkup from './examples/logged-in.html';
+import callOutMarkup from './examples/call-out.html';
+import expandedMarkup from './examples/expanded.html';
+
+<Meta title="Legacy/Components/Site Navigation" />
+
+# Site Navigation
+
+Note that the Site Navigation includes the Choose a Shake component.
+
+## Logged In
+
+<Preview>
+  <Story name="Logged In" height="200px">
+    {() => loggedInMarkup}
+  </Story>
+</Preview>
+
+## Expanded
+
+On small screens, the navigation is collapsed into a hamburger menu. This is what it looks like expanded.
+
+<Preview>
+  <Story name="Expanded" height="500px">
+    {() => expandedMarkup}
+  </Story>
+</Preview>
+
+## Logged Out
+
+<Preview>
+  <Story name="Logged Out" height="200px">
+    {() => loggedOutMarkup}
+  </Story>
+</Preview>
+
+## Logged Out With Call Out
+
+A "call out" is added when a logged-out user is on any page other than the homepage or the sign up page.
+
+<Preview>
+  <Story name="Logged Out With Call Out" height="200px">
+    {() => callOutMarkup}
+  </Story>
+</Preview>

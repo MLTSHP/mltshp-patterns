@@ -6,12 +6,24 @@ import loggedInMarkup from './examples/logged-in.html';
 
 # Site Header
 
-Note that the header includes the Site Navigation and User Navigation components.
+Note that the Site Header includes the Site Navigation, Choose a Shake, and User Navigation components.
 
 ## Logged Out
 
 <Preview>
-  <Story name="Logged Out" height="200px">
+  <Story
+    name="Logged Out"
+    height="200px"
+    parameters={{
+      themes: [
+        {
+          name: 'Blue',
+          class: 't-blue',
+          default: true,
+        },
+      ],
+    }}
+  >
     {() => loggedOutMarkup}
   </Story>
 </Preview>
@@ -19,7 +31,19 @@ Note that the header includes the Site Navigation and User Navigation components
 ## Logged In
 
 <Preview>
-  <Story name="Logged In" height="200px">
+  <Story
+    name="Logged In"
+    height="200px"
+    parameters={{
+      themes: [
+        {
+          name: 'Blue',
+          class: 't-blue',
+          default: true,
+        },
+      ],
+    }}
+  >
     {() => loggedInMarkup}
   </Story>
 </Preview>
