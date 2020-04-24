@@ -27,7 +27,7 @@ $bookmark-shadow-offset: 4px;
   // makes the "fold" shape
   &::before {
     background: inherit;
-    border-radius: var(--spacing-half) 0 0 var(--spacing-half);
+    border-radius: var(--border-radius-default) 0 0 var(--border-radius-default);
     height: calc(100% + var(--spacing-half));
     left: calc(var(--spacing-half) * -1);
     padding-bottom: var(--spacing-half);
@@ -37,7 +37,7 @@ $bookmark-shadow-offset: 4px;
 
   // makes the shadow for the "fold" shape
   &::after {
-    background: rgba(0, 0, 0, 0.35);
+    background: var(--color-black-transparent-300);
     border-radius: $bookmark-offset 0 0 $bookmark-offset;
     bottom: $bookmark-shadow-offset * -1;
     height: $bookmark-shadow-offset;

@@ -1,0 +1,72 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import newPostPanelMarkup from './examples/new-post-panel.html';
+import withShakesMarkup from './examples/with-shakes.html';
+import withShakesOpenMarkup from './examples/with-shakes-open.html';
+import saveVideoMarkup from './examples/save-video.html';
+import saveVideoConfirmationMarkup from './examples/save-video-confirmation.html';
+import emailUnconfirmedMarkup from './examples/email-unconfirmed.html';
+import overUploadLimitMarkup from './examples/over-upload-limit.html';
+
+<Meta title="Legacy/Components/New Post Panel" />
+
+# New Post Panel
+
+Used on the permalink area, as well as the Conversations area to render the comments.
+
+## Default
+
+<Preview>
+  <Story name="Default" height="300px">
+    {() => newPostPanelMarkup}
+  </Story>
+</Preview>
+
+## With Shakes
+
+<Preview>
+  <Story name="With Shakes" height="300px">
+    {() => withShakesMarkup}
+  </Story>
+</Preview>
+
+## With Shakes Open
+
+<Preview>
+  <Story name="With Shakes Open" height="400px">
+    {() => withShakesOpenMarkup}
+  </Story>
+</Preview>
+
+## Save Video
+
+<Preview>
+  <Story name="Save Video" height="300px">
+    {() => saveVideoMarkup}
+  </Story>
+</Preview>
+
+## Confirm Video
+
+<Preview>
+  <Story name="Confirm Video" height="600px">
+    {() => saveVideoConfirmationMarkup}
+  </Story>
+</Preview>
+
+## Email Unconfirmed
+
+<Preview>
+  <Story name="Email Unconfirmed" height="300px">
+    {() => emailUnconfirmedMarkup}
+  </Story>
+</Preview>
+
+## Over Upload Limit
+
+Note there does not appear to be a way to reach this view, since the "New Post" button is hidden if you're over the upload limit.
+
+<Preview>
+  <Story name="Over Upload Limit" height="550px">
+    {() => overUploadLimitMarkup}
+  </Story>
+</Preview>

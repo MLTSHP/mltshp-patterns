@@ -6,6 +6,7 @@
 // variables. We prefer custom properties because we can more easily override
 // them for situations like dark mode (see below).
 //
+@use "../design-tokens/border-radius.yml";
 @use "../design-tokens/breakpoint.yml";
 @use "../design-tokens/colors.yml";
 @use "../design-tokens/font.yml";

@@ -132,7 +132,7 @@
       line-height: 48px; // match avatar height
       padding-left: 35px; // magic number to accomodate balloon stem
       padding-right: var(--spacing-double);
-      text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.5); // copied from button
+      text-shadow: 0.05em 0.05em 0.05em var(--color-black-transparent-500); // copied from button
       white-space: nowrap;
 
       @media screen and (min-width: 360px) {
@@ -158,7 +158,7 @@
   textarea {
     background-color: var(--color-page-bg);
     border: 1px solid var(--color-border-default);
-    border-radius: 5px;
+    border-radius: var(--border-radius-default);
     color: var(--color-page-text);
     height: 8em;
     padding: var(--spacing-half);

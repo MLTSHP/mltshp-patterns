@@ -1,0 +1,177 @@
+@use '../../../init/mixins';
+
+.new-post-panel {
+  background-color: var(--color-page-bg);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: var(--spacing-default) var(--spacing-default) 0
+    var(--color-black-transparent-200);
+  display: none;
+  left: var(--spacing-triple);
+  margin: 0 auto;
+  max-width: 560px; // magic number
+  padding: var(--spacing-half-again);
+  position: fixed;
+  right: var(--spacing-triple);
+  top: calc(var(--spacing-default) * -1); // to avoid the shadow being cut off
+  z-index: 999;
+
+  @media screen and (min-width: 768px) {
+    padding: calc(var(--spacing-default) * 5);
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+    margin-bottom: var(--spacing-default);
+    position: relative;
+
+    a {
+      color: var(--color-text-link-primary);
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--color-text-link-primary-hover);
+      }
+    }
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.2;
+    margin: var(--spacing-double) 0;
+    padding: 0 var(--spacing-half);
+  }
+
+  // overlay on top of h2 text
+  .upload-image-input {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .save-video-form {
+    display: flex;
+
+    .field-input {
+      flex: 1;
+    }
+
+    .btn {
+      flex: none;
+      margin-left: var(--spacing-default);
+    }
+  }
+
+  .post-video-form {
+    margin-top: var(--spacing-double);
+  }
+
+  .shake-selector {
+    position: relative;
+
+    h3 {
+      a {
+        color: var(--color-page-text);
+        display: block;
+        text-decoration: none;
+
+        .green {
+          @include mixins.breakword();
+          color: var(--color-success);
+        }
+
+        &:hover,
+        &:focus {
+          .green {
+            color: var(--color-success-pastel-dark);
+          }
+        }
+      }
+    }
+
+    ul {
+      background-color: var(--color-success-pastel-light);
+      border-radius: var(--border-radius-large);
+      box-shadow: var(--spacing-half) var(--spacing-half) 0
+        var(--color-black-transparent-200);
+      display: none;
+      left: var(--spacing-triple);
+      list-style: none;
+      margin: 0;
+      max-height: 66vh; // arbitrary, just smaller than viewport
+      overflow: auto;
+      padding: var(--spacing-default) 0 var(--spacing-half) 0;
+      position: absolute;
+      top: calc(1.17rem * 1.4); // h3 font-size * line-height
+      width: 200px; // magic number
+      z-index: 2;
+
+      li {
+        a {
+          @include mixins.breakword();
+          color: var(--color-success-pastel-dark);
+          display: block;
+          font-size: 0.875rem;
+          font-weight: var(--font-weight-bold);
+          padding: var(--spacing-half) var(--spacing-half-again);
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            color: var(--color-text-dark);
+          }
+        }
+      }
+    }
+  }
+}
+
+.new-post-panel--inner {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  > * {
+    flex: 1 1 0;
+    min-width: 0;
+    padding-bottom: var(--spacing-half-again);
+    padding-top: var(--spacing-half-again);
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: calc(var(--spacing-default) * 4);
+      padding-top: calc(var(--spacing-default) * 6);
+    }
+
+    &:first-child {
+      border-bottom: 1px dashed var(--color-border-default);
+
+      @media screen and (min-width: 768px) {
+        border-bottom: 0;
+        border-right: 1px dashed var(--color-border-default);
+        padding-right: var(--spacing-double);
+      }
+    }
+
+    &:last-child {
+      @media screen and (min-width: 768px) {
+        padding-left: var(--spacing-double);
+      }
+    }
+
+    &:first-child:last-child {
+      border: 0;
+      padding: 0;
+    }
+  }
+}

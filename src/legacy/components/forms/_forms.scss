@@ -96,7 +96,7 @@ textarea {
   // stylelint-enable
   background: #f2fdff;
   border: 1px solid #e4eff1;
-  border-radius: 10px;
+  border-radius: var(--border-radius-large);
   border-width: 4px 1px 1px 4px;
   display: block;
   font-size: 18px;

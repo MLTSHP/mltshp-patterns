@@ -23,7 +23,7 @@ button {
   padding: 0 0.88em;
   text-align: center;
   text-decoration: none;
-  text-shadow: 0.05em 0.05em 0.05em rgba(0, 0, 0, 0.5);
+  text-shadow: 0.05em 0.05em 0.05em var(--color-black-transparent-500);
   transition-duration: 0.2s;
   transition-property: background-color, color;
   user-select: none;
@@ -54,7 +54,7 @@ button {
 
 // buttons with shadows
 .btn-shadow {
-  box-shadow: 0.22em 0.22em 0 rgba(0, 0, 0, 0.125);
+  box-shadow: 0.22em 0.22em 0 var(--color-black-transparent-100);
   margin-right: 0.22em;
 }
 
