@@ -3,16 +3,16 @@
   font-size: 0.75em;
   padding: 2.5em;
   text-align: center;
-}
 
-.site-footer p {
-  margin: 0;
-}
+  p {
+    margin: 0;
 
-.site-footer p + p {
-  margin-top: 0.5em;
-}
+    + p {
+      margin-top: 0.5em;
+    }
+  }
 
-.site-footer a {
-  white-space: nowrap;
+  a {
+    white-space: nowrap;
+  }
 }
