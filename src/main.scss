@@ -39,6 +39,7 @@
 @use "legacy/components/account-header/account-header";
 @use "legacy/components/bookmark/bookmark";
 @use "legacy/components/buttons/buttons";
+@use "legacy/components/choose-a-shake/choose-a-shake";
 @use "legacy/components/conversations/conversations";
 @use "legacy/components/features/features";
 @use "legacy/components/forms/forms";
@@ -48,6 +49,7 @@
 @use "legacy/components/pagination/pagination";
 @use "legacy/components/site-footer/site-footer";
 @use "legacy/components/site-header/site-header";
+@use "legacy/components/site-nav/site-nav";
 @use "legacy/components/user-counts/user-counts";
 @use "legacy/components/user-follow/user-follow";
 @use "legacy/components/user-nav/user-nav";

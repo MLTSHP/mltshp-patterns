@@ -1,0 +1,109 @@
+/* ---------------------------------------------------------------------
+  Choose A Shake Dropdown
+--------------------------------------------------------------------- */
+.choose-a-shake {
+  position: relative;
+  text-align: left;
+  z-index: 3;
+}
+
+.choose-a-shake--toggle {
+  width: 100%;
+}
+
+.choose-a-shake.is-expanded .choose-a-shake--toggle {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 5px 5px 0 #e5e5e5;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background: var(--color-success-pastel-light);
+    color: var(--color-success-pastel-dark);
+  }
+}
+
+.choose-a-shake.is-expanded .choose-a-shake--toggle .caret {
+  transform: rotate(180deg);
+}
+
+.choose-a-shake--dropdown {
+  background-color: var(--color-success-pastel-light);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 5px 5px 0 #e5e5e5;
+  display: none;
+  max-width: 400px;
+  padding: 1px 10px 10px 10px;
+  position: absolute;
+  right: 0;
+  top: calc(100% - 0.22em);
+}
+
+@media screen and (min-width: 768px) {
+  .choose-a-shake--dropdown {
+    border-top-left-radius: 0;
+    border-top-right-radius: 10px;
+    left: 0;
+    right: auto;
+  }
+}
+
+.choose-a-shake.is-expanded .choose-a-shake--dropdown {
+  display: block;
+}
+
+.choose-a-shake ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.choose-a-shake--dropdown ul li a {
+  overflow: hidden;
+  padding: 10px 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// stylelint-disable selector-no-qualifying-type
+.choose-a-shake--dropdown ul.top-shakes li a {
+  background-color: #ffffff;
+  border-radius: 10px;
+  color: var(--color-primary-brand);
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.choose-a-shake--dropdown ul.top-shakes li a:hover {
+  background-color: #fffbd9;
+}
+
+.choose-a-shake--dropdown ul.group-shakes {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.choose-a-shake--dropdown ul.group-shakes li a {
+  border-radius: 10px;
+  color: var(--color-primary-brand);
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.choose-a-shake--dropdown ul.group-shakes li a:hover {
+  background-color: #fffbd9;
+}
+
+.choose-a-shake--dropdown .add-a-shake {
+  display: block;
+  float: right;
+  margin-top: 10px;
+}
