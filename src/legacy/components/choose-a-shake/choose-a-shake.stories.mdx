@@ -1,0 +1,23 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import collapsedMarkup from './examples/collapsed.html';
+import expandedMarkup from './examples/expanded.html';
+
+<Meta title="Legacy/Components/Choose a Shake" />
+
+# Choose a Shake
+
+## Collapsed
+
+<Preview>
+  <Story name="Collapsed" height="100px">
+    {() => collapsedMarkup}
+  </Story>
+</Preview>
+
+## Expanded
+
+<Preview>
+  <Story name="Expanded" height="450px">
+    {() => expandedMarkup}
+  </Story>
+</Preview>

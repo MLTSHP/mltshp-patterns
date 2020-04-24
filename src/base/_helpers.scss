@@ -75,10 +75,10 @@
   top: -0.1em;
   transform-origin: center 40%;
   transition: transform 0.25s ease;
-}
 
-.is-active .caret {
-  transform: rotate(180deg);
+  .is-active & {
+    transform: rotate(180deg);
+  }
 }
 
 /* ---------------------------------------------------------------------

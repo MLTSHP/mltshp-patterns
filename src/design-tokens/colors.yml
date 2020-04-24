@@ -24,6 +24,7 @@ aliases:
   gray_light: '#e9e9e9'
   gray_pastel_dark: '#8d8d87'
   gray_pastel_light: '#cecec6'
+  yellow_pastel_light: '#fffbd9'
   yellow_transparent_600: 'rgba(252, 255, 0, 0.66)'
   black_transparent: 'rgba(0, 0, 0, 0)'
   black_transparent_100: 'rgba(0, 0, 0, 0.125)'
@@ -123,6 +124,9 @@ props:
     category: status-color
   - name: color_edit
     value: '{!yellow_transparent_600}'
+    category: status-color
+  - name: color_highlight
+    value: '{!yellow_pastel_light}'
     category: status-color
   - name: color_page_bg_dark
     value: '{!blue_dark_mode}'
