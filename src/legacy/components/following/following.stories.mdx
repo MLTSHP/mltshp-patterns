@@ -1,0 +1,23 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import followingMarkup from './examples/following.html';
+import membersMarkup from './examples/members.html';
+
+<Meta title="Legacy/Components/Following" />
+
+# Following
+
+## Following
+
+<Preview>
+  <Story name="Following" height="200px">
+    {() => followingMarkup}
+  </Story>
+</Preview>
+
+## Members
+
+<Preview>
+  <Story name="Members" height="200px">
+    {() => membersMarkup}
+  </Story>
+</Preview>
