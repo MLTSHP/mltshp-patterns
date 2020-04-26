@@ -48,7 +48,9 @@
 @use "legacy/components/image-medium/image-medium";
 @use "legacy/components/images/images";
 @use "legacy/components/new-post-panel/new-post-panel";
+@use "legacy/components/new-users/new-users";
 @use "legacy/components/pagination/pagination";
+@use "legacy/components/shake-list/shake-list";
 @use "legacy/components/sidebar/sidebar";
 @use "legacy/components/site-footer/site-footer";
 @use "legacy/components/site-header/site-header";
@@ -56,3 +58,11 @@
 @use "legacy/components/user-counts/user-counts";
 @use "legacy/components/user-follow/user-follow";
 @use "legacy/components/user-nav/user-nav";
+
+//
+// AREAS
+// page-specific styles
+//
+// TODO: should be refactored into smaller self-contained components
+//
+@use "legacy/areas/admin/admin";

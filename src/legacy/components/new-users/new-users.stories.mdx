@@ -1,0 +1,14 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import newUsersMarkup from './examples/new-users.html';
+
+<Meta title="Legacy/Components/New Users" />
+
+# New Users
+
+List of new users. Found in the admin area.
+
+<Preview>
+  <Story name="New Users" height="900px">
+    {() => newUsersMarkup}
+  </Story>
+</Preview>

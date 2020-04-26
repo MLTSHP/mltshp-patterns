@@ -1,0 +1,53 @@
+@use '../../../init/mixins';
+
+.new-members {
+  border-top: 1px dashed var(--color-border-default);
+  list-style: none;
+  margin: var(--spacing-triple) 0 0;
+  padding: var(--spacing-triple) 0 0;
+
+  > li {
+    border-bottom: 1px dashed var(--color-border-default);
+    clear: both;
+    margin-bottom: var(--spacing-triple);
+    padding-bottom: var(--spacing-triple);
+
+    .avatar {
+      float: left;
+      margin-right: var(--spacing-default);
+    }
+
+    h4 {
+      @include mixins.breakword();
+      font-size: 1.125rem;
+      font-weight: var(--font-weight-bold);
+      padding-bottom: var(--spacing-half);
+
+      a {
+        color: var(--color-text-link-primary);
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: var(--color-text-link-primary-hover);
+        }
+      }
+    }
+
+    p {
+      @include mixins.breakword();
+      font-size: 0.875rem;
+    }
+  }
+
+  .image-medium {
+    margin-left: calc(var(--spacing-default) * 6);
+    padding-bottom: 0;
+    padding-top: var(--spacing-default);
+
+    .user-and-title > a {
+      display: none;
+    }
+  }
+}

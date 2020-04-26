@@ -5,7 +5,6 @@
   font-weight: var(--font-weight-bold);
   margin: var(--spacing-quadruple);
   padding: var(--spacing-default);
-  text-align: center;
 
   a,
   .current {
@@ -19,20 +18,38 @@
   }
 
   .previous-link {
-    display: block;
-    float: left;
+    flex-basis: 50%;
+
+    @media screen and (min-width: 480px) {
+      flex-basis: auto;
+      margin-right: auto;
+    }
   }
 
   .next-link {
-    display: block;
-    float: right;
+    flex-basis: 50%;
+    text-align: right;
+
+    @media screen and (min-width: 480px) {
+      flex-basis: auto;
+      margin-left: auto;
+      order: 1;
+    }
   }
 }
 
 .pagination-inner {
+  align-items: center;
   background-color: var(--color-page-bg);
   border-radius: var(--border-radius-large);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: var(--spacing-default);
+
+  @media screen and (min-width: 480px) {
+    flex-wrap: none;
+  }
 }
 
 .linear-navigation {
