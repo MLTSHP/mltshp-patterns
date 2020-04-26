@@ -1,0 +1,50 @@
+@use '../buttons/buttons';
+
+.promotions {
+  list-style: none;
+  margin: var(--spacing-default) 0;
+  padding: 0;
+
+  li {
+    float: left;
+    margin-bottom: var(--spacing-default);
+    margin-right: var(--spacing-default);
+    overflow: visible;
+    position: relative;
+
+    &:hover {
+      .promotion-avatar {
+        border-color: var(--color-primary-brand);
+      }
+      .promotion-name {
+        display: block;
+      }
+    }
+  }
+
+  .promotion-avatar {
+    border: 4px solid transparent;
+    border-radius: var(--border-radius-large);
+    overflow: hidden;
+    transition: all 0.75s ease 0s;
+
+    img {
+      display: block;
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  .promotion-name {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-shadow;
+    bottom: -3.5em;
+    display: none;
+    font-size: 0.875rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
