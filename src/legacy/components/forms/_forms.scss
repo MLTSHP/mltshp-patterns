@@ -195,3 +195,26 @@ textarea {
 .fun-form-stacked .field-submit {
   padding-left: 0;
 }
+
+/* ---------------------------------------------------------------------
+  Field with Prefix
+  TODO: this should be abstracted into a reusable class
+--------------------------------------------------------------------- */
+// stylelint-disable selector-max-id
+#create-shake-name-field,
+.field-prefix {
+  .fun-form-stacked & {
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      flex-basis: 100%;
+    }
+  }
+
+  .name-prefix {
+    color: var(--color-page-text-secondary);
+    font-size: 1.125rem;
+    margin-right: 0.5em;
+  }
+}
