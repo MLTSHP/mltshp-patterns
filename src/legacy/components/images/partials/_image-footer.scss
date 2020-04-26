@@ -1,0 +1,92 @@
+.image-content-footer {
+  color: var(--color-page-text-secondary);
+  font-size: 0.75rem;
+  padding-top: var(--spacing-half);
+
+  .originally-posted-by {
+    clear: left;
+    padding-bottom: var(--spacing-half);
+
+    .avatar--link {
+      text-decoration: none;
+    }
+  }
+
+  .inline-meta {
+    display: flex;
+    float: left;
+
+    > * {
+      flex: none;
+    }
+  }
+
+  .created-at {
+    padding-top: var(--spacing-half);
+
+    a {
+      color: var(--color-page-text-secondary);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: var(--color-page-text);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .stats {
+    list-style: none;
+    margin: 0 0 0 var(--spacing-default);
+    padding: 0;
+
+    li {
+      float: left;
+      padding-right: var(--spacing-half);
+    }
+
+    a {
+      background-position: var(--spacing-half) 0.5em;
+      background-repeat: no-repeat;
+      background-size: 1em 1em;
+      border-top-left-radius: var(--border-radius-default);
+      border-top-right-radius: var(--border-radius-default);
+      display: block;
+      float: left;
+      padding: var(--spacing-half);
+      padding-bottom: var(--spacing-default);
+      padding-left: calc(var(--spacing-default) + 1em);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        background-color: var(--color-page-bg-secondary);
+      }
+    }
+
+    .views {
+      padding-top: var(--spacing-half);
+    }
+
+    .saves a {
+      background-image: svg-load('icons/save-tiny.svg');
+      background-size: 1.33em 1em;
+      color: var(--color-warning);
+      padding-left: calc(var(--spacing-default) + 1.33em);
+    }
+
+    .likes a {
+      background-image: svg-load('icons/like.svg');
+      color: var(--color-danger);
+    }
+
+    .comments a {
+      background-image: svg-load('icons/comment.svg');
+    }
+
+    .selected a {
+      background-color: var(--color-page-bg-secondary);
+    }
+  }
+}

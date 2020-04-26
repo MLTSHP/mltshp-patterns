@@ -1,0 +1,153 @@
+@use '../../../../init/mixins';
+
+.image-content {
+  .inline-details {
+    background-color: var(--color-page-bg-secondary);
+    border-radius: var(--border-radius-default);
+    clear: both;
+    min-height: 34px; // magic number
+    padding: var(--spacing-default);
+
+    .user-saves-likes {
+      background-color: var(--color-page-bg);
+      min-height: 20px; // magic number
+      padding: var(--spacing-default);
+
+      a {
+        align-items: center;
+        color: var(--color-text-link-primary);
+        display: inline-flex;
+        font-weight: var(--font-weight-bold);
+        margin-right: var(--spacing-default);
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: var(--color-text-link-primary-hover);
+        }
+      }
+
+      img {
+        margin-right: var(--spacing-half);
+      }
+    }
+
+    .comment {
+      background-color: var(--color-page-bg);
+      border-radius: var(--border-radius-default);
+      display: flex;
+      margin-bottom: var(--spacing-default);
+      padding: var(--spacing-default);
+
+      .avatar {
+        flex: none;
+      }
+
+      .comment-body {
+        flex: 1;
+        overflow: hidden;
+        padding-left: var(--spacing-default);
+      }
+
+      .comment-body-text {
+        @include mixins.breakword();
+        clear: both;
+        color: var(--color-page-text);
+        padding-top: 0.25em;
+      }
+
+      .meta {
+        align-items: flex-end;
+        display: flex;
+        flex-wrap: wrap;
+
+        > * + * {
+          margin-left: 0.8em;
+        }
+      }
+
+      .delete-form {
+        display: none;
+      }
+
+      .meta .username {
+        font-weight: var(--font-weight-bold);
+      }
+
+      .meta .pro-badge {
+        margin-left: 0.25em;
+      }
+
+      .created-at {
+        margin-left: var(--spacing-default);
+        padding-top: 0;
+      }
+
+      .reply-to {
+        background-image: svg-load('icons/reply.svg');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 12px 11px;
+        display: none;
+        padding-left: var(--spacing-half-again);
+      }
+
+      .delete {
+        background-image: svg-load('icons/delete-comment.svg');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 13px 13px;
+        color: var(--color-text-link-danger);
+        display: none;
+        padding-left: var(--spacing-half-again);
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: var(--color-text-link-danger-hover);
+        }
+      }
+
+      &:hover .reply-to,
+      &:hover .delete {
+        display: block;
+      }
+    }
+
+    .show-more-comments {
+      display: block;
+      font-weight: var(--font-weight-bold);
+      padding: var(--spacing-default) 0;
+      text-align: right;
+      text-decoration: none;
+    }
+
+    .post-comment-inline {
+      textarea {
+        background-color: var(--color-page-bg);
+        border: 1px solid var(--color-border-default);
+        border-radius: var(--border-radius-default);
+        color: var(--color-page-text-disabled);
+        height: 2em;
+        padding: var(--spacing-half);
+      }
+
+      .button {
+        display: none;
+        padding-top: var(--spacing-half);
+      }
+
+      &.post-comment-inline-expanded {
+        textarea {
+          color: var(--color-page-text);
+          min-height: 100px;
+        }
+
+        .button {
+          display: block;
+        }
+      }
+    }
+  }
+}

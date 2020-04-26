@@ -1,0 +1,11 @@
+//
+// This file was getting a bit out of control, so I broke it into partials
+// dedicated to a part of the image component
+//
+@use 'partials/image-title';
+@use 'partials/image-content';
+@use 'partials/image-nsfw';
+@use 'partials/image-description';
+@use 'partials/image-interactions';
+@use 'partials/image-footer';
+@use 'partials/image-comments';

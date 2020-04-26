@@ -34,6 +34,10 @@ aliases:
   black_transparent_600: 'rgba(0, 0, 0, 0.65)'
   black_transparent_800: 'rgba(0, 0, 0, 0.85)'
   white_transparent: 'rgba(255, 255, 255, 0)'
+  white_transparent_100: 'rgba(255, 255, 255, 0.125)'
+  white_transparent_200: 'rgba(255, 255, 255, 0.25)'
+  white_transparent_300: 'rgba(255, 255, 255, 0.35)'
+  white_transparent_500: 'rgba(255, 255, 255, 0.5)'
   white_transparent_600: 'rgba(255, 255, 255, 0.65)'
   white_transparent_800: 'rgba(255, 255, 255, 0.85)'
   white: '#fff'
@@ -227,6 +231,18 @@ props:
     category: transparent-color
   - name: color_white_transparent
     value: '{!white_transparent}'
+    category: transparent-color
+  - name: color_white_transparent_100
+    value: '{!white_transparent_100}'
+    category: transparent-color
+  - name: color_white_transparent_200
+    value: '{!white_transparent_200}'
+    category: transparent-color
+  - name: color_white_transparent_300
+    value: '{!white_transparent_300}'
+    category: transparent-color
+  - name: color_white_transparent_500
+    value: '{!white_transparent_500}'
     category: transparent-color
   - name: color_white_transparent_600
     value: '{!white_transparent_600}'

@@ -1,0 +1,62 @@
+@use '../../../../init/mixins';
+
+.image-content {
+  .description {
+    color: var(--color-page-text-secondary);
+    font-size: 0.875rem;
+    overflow: hidden;
+    padding-bottom: var(--spacing-default);
+  }
+
+  .the-description {
+    @include mixins.breakword();
+
+    &.the-description-blank {
+      color: var(--color-disabled);
+      font-style: italic;
+    }
+
+    a {
+      color: var(--color-text-link-primary);
+      text-decoration-color: var(--color-text-link-primary-underline);
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--color-text-link-primary-hover);
+        text-decoration-color: var(--color-text-link-primary-underline-hover);
+      }
+    }
+  }
+
+  /* Inline Editing Description */
+  .description-edit .the-description:hover,
+  .the-description-hover {
+    background-color: var(--color-edit);
+  }
+
+  .description-edit-form {
+    display: none;
+
+    textarea {
+      background-color: var(--color-page-bg);
+      border: 1px solid var(--color-border-default);
+      border-radius: var(--border-radius-default);
+      color: var(--color-page-text);
+      min-height: 100px;
+      padding: var(--spacing-half);
+    }
+
+    .buttons {
+      display: flex;
+      padding: var(--spacing-default) 0;
+    }
+
+    .or {
+      color: var(--color-page-text-secondary);
+      display: block;
+      padding: var(--spacing-half) var(--spacing-default)
+        var(--spacing-half-again) var(--spacing-default);
+    }
+  }
+}

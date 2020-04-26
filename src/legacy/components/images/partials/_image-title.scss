@@ -1,0 +1,107 @@
+@use '../../../../init/mixins';
+@use '../../buttons/buttons';
+
+.image-title {
+  max-width: 100%;
+  padding: var(--spacing-half-again) var(--spacing-half-again) 0;
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    padding: var(--spacing-quadruple) var(--spacing-quadruple) 0;
+  }
+
+  h1,
+  h3 {
+    @include mixins.breakword();
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.875rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-double);
+  }
+
+  .remove-from-shake {
+    height: 21px;
+    position: absolute;
+    right: var(--spacing-default);
+    top: var(--spacing-default);
+    width: 21px;
+
+    @media screen and (min-width: 768px) {
+      top: calc(
+        var(--spacing-quadruple) + var(--spacing-half)
+      ); // padding + 5px
+    }
+  }
+}
+
+.image-edit-title:hover,
+.image-edit-title-hover {
+  background-color: var(--color-edit);
+}
+
+.image-edit-title-form {
+  display: none;
+  flex-direction: column;
+
+  @media screen and (min-width: 480px) {
+    flex-direction: row;
+  }
+
+  &.is-active {
+    display: flex;
+  }
+
+  .title-input {
+    background-color: var(--color-page-bg);
+    border: 1px solid var(--color-border-default);
+    border-radius: var(--border-radius-default);
+    color: var(--color-page-text);
+    flex: 1;
+    font-size: 3rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-default);
+    max-width: 100%;
+    min-width: 0;
+
+    @media screen and (min-width: 480px) {
+      margin-bottom: 0;
+    }
+
+    .image-content-list & {
+      font-size: 1.875rem;
+      min-width: 250px;
+      padding: 0.0666em;
+    }
+  }
+
+  .buttons {
+    align-items: center;
+    display: flex;
+    padding-left: var(--spacing-default);
+  }
+
+  .or {
+    color: var(--color-page-text-secondary);
+    display: block;
+    padding: 0 var(--spacing-default);
+  }
+
+  //
+  // List View Overrides
+  // 1. Spacing is handled differently on the permalink page
+  // 2. We only want the small button treatment on list pages
+  //
+  .image-content-list & {
+    margin-bottom: var(--spacing-double); // 1
+
+    .btn {
+      @extend .btn-small; // 2
+    }
+  }
+}

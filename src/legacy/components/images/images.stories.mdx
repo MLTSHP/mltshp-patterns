@@ -1,0 +1,106 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import listMarkup from './examples/list.html';
+import commentsMarkup from './examples/comments.html';
+import commentingMarkup from './examples/commenting.html';
+import savesMarkup from './examples/saves.html';
+import likesMarkup from './examples/likes.html';
+import listSaveShakeMarkup from './examples/list-save-shake.html';
+import listLikedSavedMarkup from './examples/list-liked-saved.html';
+import repostMarkup from './examples/repost.html';
+import editableMarkup from './examples/editable.html';
+import editingMarkup from './examples/editing.html';
+import nsfwMarkup from './examples/nsfw.html';
+
+<Meta title="Legacy/Components/Image" />
+
+# Image
+
+Although this component is shared with the Permalink page, there are few differences. The user avatar is not shown by the title, the title uses an `h1` instead of an `h3`, and the comments are removed (in favor of a different comment component). You can see this on the Permalink page.
+
+## List View
+
+<Preview>
+  <Story name="List View" height="800px">
+    {() => listMarkup}
+  </Story>
+</Preview>
+
+## Saves Open
+
+<Preview>
+  <Story name="Saves Open" height="850px">
+    {() => savesMarkup}
+  </Story>
+</Preview>
+
+## Likes Open
+
+<Preview>
+  <Story name="Likes Open" height="900px">
+    {() => likesMarkup}
+  </Story>
+</Preview>
+
+## Comments Open
+
+<Preview>
+  <Story name="Comments Open" height="900px">
+    {() => commentsMarkup}
+  </Story>
+</Preview>
+
+## Commenting
+
+<Preview>
+  <Story name="Commenting" height="1000px">
+    {() => commentingMarkup}
+  </Story>
+</Preview>
+
+## Save Shake
+
+<Preview>
+  <Story name="Save Shake" height="900px">
+    {() => listSaveShakeMarkup}
+  </Story>
+</Preview>
+
+## Liked & Saved
+
+<Preview>
+  <Story name="Liked & Saved" height="900px">
+    {() => listLikedSavedMarkup}
+  </Story>
+</Preview>
+
+## Repost
+
+<Preview>
+  <Story name="Repost" height="900px">
+    {() => repostMarkup}
+  </Story>
+</Preview>
+
+## Editable
+
+<Preview>
+  <Story name="Editable" height="900px">
+    {() => editableMarkup}
+  </Story>
+</Preview>
+
+## Editing
+
+<Preview>
+  <Story name="Editing" height="1000px">
+    {() => editingMarkup}
+  </Story>
+</Preview>
+
+## NSFW
+
+<Preview>
+  <Story name="NSFW" height="1200px">
+    {() => nsfwMarkup}
+  </Story>
+</Preview>
