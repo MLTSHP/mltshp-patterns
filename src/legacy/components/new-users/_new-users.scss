@@ -20,7 +20,6 @@
     h4 {
       @include mixins.breakword();
       font-size: 1.125rem;
-      font-weight: var(--font-weight-bold);
       padding-bottom: var(--spacing-half);
 
       a {

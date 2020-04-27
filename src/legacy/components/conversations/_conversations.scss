@@ -5,7 +5,6 @@
   .sidebar h3 {
     color: var(--color-page-text);
     font-size: 1.125rem;
-    font-weight: var(--font-weight-bold);
     margin-bottom: var(--spacing-half-again);
     margin-top: var(--spacing-triple);
   }
@@ -66,8 +65,7 @@
   .sharedfile-title {
     @include mixins.breakword();
     color: var(--color-page-text-emphasis);
-    font-size: var(--spacing-triple);
-    font-weight: var(--font-weight-bold);
+    font-size: 1.875rem;
     margin-bottom: var(--spacing-default);
     overflow: hidden;
   }

@@ -68,7 +68,7 @@
   color: var(--color-page-text-secondary);
   display: none;
   font-size: 0.875rem;
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
   max-width: 18em;
   padding-right: var(--spacing-default);
   padding-top: 3px;

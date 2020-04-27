@@ -6,7 +6,6 @@
   h3 {
     color: var(--color-page-text);
     font-size: 0.875rem;
-    font-weight: var(--font-weight-bold);
     padding-bottom: var(--spacing-default);
     padding-left: var(--spacing-half-again);
     padding-right: var(--spacing-half-again);
@@ -20,7 +19,7 @@
 
     span {
       color: var(--color-page-text-secondary);
-      font-weight: normal;
+      font-weight: var(--font-weight-normal);
     }
   }
 }
