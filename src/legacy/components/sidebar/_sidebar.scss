@@ -1,21 +1,16 @@
+@use '../../../base/core';
+
 .sidebar-flag-nsfw {
   clear: both;
   margin-top: var(--spacing-triple);
 
   .flag-nsfw-button,
   .unflag-nsfw-button {
+    @extend .link--danger;
     background-color: transparent;
     border: none;
-    color: var(--color-text-link-danger);
+    cursor: pointer;
     font-size: 0.75rem;
-    text-decoration: underline;
-    text-decoration-color: var(--color-text-link-danger-underline);
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-text-link-danger-hover);
-      text-decoration-color: var(--color-text-link-danger-underline-hover);
-    }
+    text-decoration-line: underline;
   }
 }

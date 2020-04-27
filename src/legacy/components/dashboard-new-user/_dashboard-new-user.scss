@@ -1,3 +1,5 @@
+@use '../../../base/core';
+
 .dashboard-new-user {
   padding: var(--spacing-double) var(--spacing-triple);
 
@@ -28,15 +30,9 @@
   }
 
   a {
-    color: var(--color-text-link-primary);
-    text-decoration-color: var(--color-text-link-primary-underline);
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-text-link-primary-hover);
-      text-decoration-color: var(--color-text-link-primary-underline-hover);
-    }
+    @extend .link--primary;
+    font-weight: inherit;
+    text-decoration-line: underline;
   }
 
   .two-columns {

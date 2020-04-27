@@ -1,3 +1,4 @@
+@use '../../../base/core';
 @use '../../../init/mixins';
 
 .new-members {
@@ -23,14 +24,7 @@
       padding-bottom: var(--spacing-half);
 
       a {
-        color: var(--color-text-link-primary);
-        text-decoration: none;
-
-        &:hover,
-        &:focus,
-        &:active {
-          color: var(--color-text-link-primary-hover);
-        }
+        @extend .link--primary;
       }
     }
 

@@ -1,3 +1,4 @@
+@use '../../../base/core';
 @use '../../../init/mixins';
 
 .new-post-panel {
@@ -27,14 +28,7 @@
     position: relative;
 
     a {
-      color: var(--color-text-link-primary);
-      text-decoration: none;
-
-      &:hover,
-      &:focus,
-      &:active {
-        color: var(--color-text-link-primary-hover);
-      }
+      @extend .link--primary;
     }
   }
 

@@ -1,3 +1,5 @@
+@use '../../../base/core';
+
 $bookmark-offset: 3px;
 $bookmark-shadow-offset: 4px;
 
@@ -73,14 +75,6 @@ $bookmark-shadow-offset: 4px;
   white-space: nowrap;
 
   a {
-    color: var(--color-text-link-primary);
-    font-weight: var(--font-weight-bold);
-    text-decoration: none;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-text-link-primary-hover);
-    }
+    @extend .link--primary;
   }
 }

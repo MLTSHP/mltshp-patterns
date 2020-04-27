@@ -1,3 +1,5 @@
+@use '../../../base/core';
+
 .choose-a-shake {
   position: relative;
   text-align: left;
@@ -63,15 +65,13 @@
     padding: 0;
 
     li a {
+      @extend .link--primary;
       background-color: var(--color-page-bg);
       border-radius: var(--border-radius-large);
-      color: var(--color-text-link-primary);
       display: block;
       font-size: 0.875rem;
-      font-weight: var(--font-weight-bold);
       overflow: hidden;
       padding: var(--spacing-default) var(--spacing-half-again);
-      text-decoration: none;
       text-overflow: ellipsis;
       white-space: nowrap;
 
@@ -79,7 +79,6 @@
       &:focus,
       &:active {
         background-color: var(--color-highlight);
-        color: var(--color-text-link-primary-hover);
       }
     }
 

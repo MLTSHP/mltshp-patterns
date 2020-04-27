@@ -1,3 +1,4 @@
+@use '../../../../base/core';
 @use '../../../../init/mixins';
 
 .image-content {
@@ -17,15 +18,9 @@
     }
 
     a {
-      color: var(--color-text-link-primary);
-      text-decoration-color: var(--color-text-link-primary-underline);
-
-      &:hover,
-      &:focus,
-      &:active {
-        color: var(--color-text-link-primary-hover);
-        text-decoration-color: var(--color-text-link-primary-underline-hover);
-      }
+      @extend .link--primary;
+      font-weight: inherit;
+      text-decoration-line: underline;
     }
   }
 

@@ -1,3 +1,4 @@
+@use '../../../../base/core';
 @use '../../../../init/mixins';
 
 .image-content {
@@ -14,18 +15,10 @@
       padding: var(--spacing-default);
 
       a {
+        @extend .link--primary;
         align-items: center;
-        color: var(--color-text-link-primary);
         display: inline-flex;
-        font-weight: var(--font-weight-bold);
         margin-right: var(--spacing-default);
-        text-decoration: none;
-
-        &:hover,
-        &:focus,
-        &:active {
-          color: var(--color-text-link-primary-hover);
-        }
       }
 
       img {
@@ -94,19 +87,13 @@
       }
 
       .delete {
+        @extend .link--danger;
         background-image: svg-load('icons/delete-comment.svg');
         background-position: 0 0;
         background-repeat: no-repeat;
         background-size: 13px 13px;
-        color: var(--color-text-link-danger);
         display: none;
         padding-left: var(--spacing-half-again);
-
-        &:hover,
-        &:focus,
-        &:active {
-          color: var(--color-text-link-danger-hover);
-        }
       }
 
       &:hover .reply-to,

@@ -38,7 +38,7 @@ a {
 }
 
 // Primary color link modifier
-// This really shouldn't exist, it should be component-specific. -SV
+// often used via @extend
 .link--primary {
   color: var(--color-text-link-primary);
   font-weight: var(--font-weight-bold);

@@ -1,3 +1,4 @@
+@use '../../../base/core';
 @use '../../../init/mixins';
 
 .user-follow {
@@ -15,15 +16,8 @@
   }
 
   h4 a {
-    color: var(--color-text-link-primary);
+    @extend .link--primary;
     padding-bottom: var(--spacing-half);
-    text-decoration: none;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-text-link-primary-hover);
-    }
   }
 
   .follow {
@@ -59,16 +53,10 @@
   }
 
   .website a {
+    @extend .link--primary;
     @include mixins.breakword();
-    color: var(--color-text-link-primary);
     font-size: 0.8rem;
-    text-decoration: none;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--color-text-link-primary-hover);
-    }
+    font-weight: inherit;
   }
 
   &::after {
