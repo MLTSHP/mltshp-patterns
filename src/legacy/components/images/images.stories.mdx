@@ -1,4 +1,5 @@
 import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import permalinkMarkup from './examples/permalink.html';
 import listMarkup from './examples/list.html';
 import commentsMarkup from './examples/comments.html';
 import commentingMarkup from './examples/commenting.html';
@@ -15,7 +16,24 @@ import nsfwMarkup from './examples/nsfw.html';
 
 # Image
 
-Although this component is shared with the Permalink page, there are few differences. The user avatar is not shown by the title, the title uses an `h1` instead of an `h3`, and the comments are removed (in favor of a different comment component). You can see this on the Permalink page.
+Although this component is shared between the Permalink page and Shakes (List View), there are few differences. On the Permalink page:
+
+- The title uses an `h1` instead of an `h3`
+- The user avatar is not shown by the title
+- The "remove from shake" button is not shown
+- The stats are not shown
+- The comments are not shown (in favor of the [Image Comments](/?path=/docs/legacy-components-image-comments--comment) component)
+- The bottom border is not shown
+
+Most of the examples here are shown in List View for ease of comparison.
+
+## Permalink
+
+<Preview>
+  <Story name="Permalink" height="800px">
+    {() => permalinkMarkup}
+  </Story>
+</Preview>
 
 ## List View
 

@@ -6,17 +6,21 @@ import saveVideoMarkup from './examples/save-video.html';
 import saveVideoConfirmationMarkup from './examples/save-video-confirmation.html';
 import emailUnconfirmedMarkup from './examples/email-unconfirmed.html';
 import overUploadLimitMarkup from './examples/over-upload-limit.html';
+const themes = [
+  { name: 'Blue', class: 't-blue', color: '#dbfaff', default: true },
+  { name: 'Dark', class: 't-dark', color: '#263238' },
+];
 
 <Meta title="Legacy/Components/New Post Panel" />
 
 # New Post Panel
 
-Used on the permalink area, as well as the Conversations area to render the comments.
+Overlay that can appear on any page.
 
 ## Default
 
 <Preview>
-  <Story name="Default" height="300px">
+  <Story name="Default" height="300px" parameters={{ themes }}>
     {() => newPostPanelMarkup}
   </Story>
 </Preview>
@@ -24,7 +28,7 @@ Used on the permalink area, as well as the Conversations area to render the comm
 ## With Shakes
 
 <Preview>
-  <Story name="With Shakes" height="300px">
+  <Story name="With Shakes" height="300px" parameters={{ themes }}>
     {() => withShakesMarkup}
   </Story>
 </Preview>
@@ -32,7 +36,7 @@ Used on the permalink area, as well as the Conversations area to render the comm
 ## With Shakes Open
 
 <Preview>
-  <Story name="With Shakes Open" height="400px">
+  <Story name="With Shakes Open" height="400px" parameters={{ themes }}>
     {() => withShakesOpenMarkup}
   </Story>
 </Preview>
@@ -40,7 +44,7 @@ Used on the permalink area, as well as the Conversations area to render the comm
 ## Save Video
 
 <Preview>
-  <Story name="Save Video" height="300px">
+  <Story name="Save Video" height="300px" parameters={{ themes }}>
     {() => saveVideoMarkup}
   </Story>
 </Preview>
@@ -48,7 +52,7 @@ Used on the permalink area, as well as the Conversations area to render the comm
 ## Confirm Video
 
 <Preview>
-  <Story name="Confirm Video" height="600px">
+  <Story name="Confirm Video" height="600px" parameters={{ themes }}>
     {() => saveVideoConfirmationMarkup}
   </Story>
 </Preview>
@@ -56,7 +60,7 @@ Used on the permalink area, as well as the Conversations area to render the comm
 ## Email Unconfirmed
 
 <Preview>
-  <Story name="Email Unconfirmed" height="300px">
+  <Story name="Email Unconfirmed" height="300px" parameters={{ themes }}>
     {() => emailUnconfirmedMarkup}
   </Story>
 </Preview>
@@ -66,7 +70,7 @@ Used on the permalink area, as well as the Conversations area to render the comm
 Note there does not appear to be a way to reach this view, since the "New Post" button is hidden if you're over the upload limit.
 
 <Preview>
-  <Story name="Over Upload Limit" height="550px">
+  <Story name="Over Upload Limit" height="550px" parameters={{ themes }}>
     {() => overUploadLimitMarkup}
   </Story>
 </Preview>
