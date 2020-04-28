@@ -8,6 +8,7 @@
   max-width: 960px;
 }
 
+// I hate this. We spend more time overriding it. Needs to be refactored away. -SV
 .content-narrow p {
   font-size: 1.625rem;
   line-height: 2.5;

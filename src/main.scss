@@ -33,6 +33,12 @@
 @use 'themes/blue';
 
 //
+// LAYOUT
+// page layout and non-component layout helpers
+//
+@use 'layout/page';
+
+//
 // LEGACY COMPONENTS
 // small & self-contained, not reliant on other files
 //
@@ -68,3 +74,4 @@
 // TODO: should be refactored into smaller self-contained components
 //
 @use "legacy/areas/admin/admin";
+@use "legacy/areas/faq/faq";

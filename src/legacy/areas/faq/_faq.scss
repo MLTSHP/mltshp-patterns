@@ -1,0 +1,23 @@
+@use '../../../base/core';
+
+.faq-page {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+    margin-top: var(--spacing-half-again);
+  }
+
+  // override `.content-narrow p`
+  p,
+  li {
+    font-size: 0.875rem;
+    line-height: 2;
+    margin-top: 5px;
+
+    a {
+      @extend .link--primary;
+    }
+  }
+}
