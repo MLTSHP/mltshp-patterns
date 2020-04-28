@@ -1,0 +1,23 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import signInMarkup from './examples/sign-in.html';
+import forgotPasswordMarkup from './examples/forgot-password.html';
+
+<Meta title="Legacy/Areas/Sign In" />
+
+# Sign In
+
+Special patterns and chunks of style for the Sign In page.
+
+<Preview>
+  <Story name="Sign In" height="300px">
+    {() => signInMarkup}
+  </Story>
+</Preview>
+
+## Forgot Password
+
+<Preview>
+  <Story name="Forgot Password" height="300px">
+    {() => forgotPasswordMarkup}
+  </Story>
+</Preview>
