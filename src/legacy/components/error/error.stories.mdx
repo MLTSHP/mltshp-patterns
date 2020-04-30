@@ -1,0 +1,25 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import errorMarkup from './examples/error.html';
+import errorLongMarkup from './examples/error-long.html';
+
+<Meta title="Legacy/Components/Error" />
+
+# Error
+
+Appears on Error pages.
+
+## Default
+
+<Preview>
+  <Story name="Default" height="350px">
+    {() => errorMarkup}
+  </Story>
+</Preview>
+
+## Long
+
+<Preview>
+  <Story name="Long" height="350px">
+    {() => errorLongMarkup}
+  </Story>
+</Preview>
