@@ -1,0 +1,42 @@
+// note that these styles are combined with developerdocs.css on the main site
+.api-accept,
+.api-decline {
+  float: left;
+  margin-right: var(--spacing-triple);
+  padding-bottom: var(--spacing-triple);
+}
+
+.content-developer {
+  padding: var(--spacing-half-again);
+
+  @media screen and (min-width: 768px) {
+    padding: var(--spacing-quadruple);
+  }
+
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-half-again);
+    margin-top: var(--spacing-half-again);
+  }
+
+  p {
+    line-height: 1.4;
+    margin-bottom: var(--spacing-default);
+    margin-top: var(--spacing-default);
+  }
+
+  dt {
+    big {
+      color: var(--color-page-text-secondary);
+      font-size: normal;
+    }
+
+    em {
+      color: var(--color-page-text-secondary);
+    }
+  }
+}

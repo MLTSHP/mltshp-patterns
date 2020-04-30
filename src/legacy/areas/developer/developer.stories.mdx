@@ -1,0 +1,25 @@
+import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import apiReferenceMarkup from './examples/api-reference.html';
+import apiAccessMarkup from './examples/api-access.html';
+
+<Meta title="Legacy/Areas/Developer" />
+
+# Developer
+
+Special patterns and chunks of style for the Developer pages.
+
+## API Reference
+
+<Preview>
+  <Story name="API Reference" height="1000px">
+    {() => apiReferenceMarkup}
+  </Story>
+</Preview>
+
+## API Access
+
+<Preview>
+  <Story name="API Access" height="1000px">
+    {() => apiAccessMarkup}
+  </Story>
+</Preview>
