@@ -8,7 +8,7 @@ const cssnano = require('cssnano');
 const rollup = require('rollup');
 const path = require('path');
 const multiEntry = require('@rollup/plugin-multi-entry');
-const nodeResolve = require('@rollup/plugin-node-resolve');
+const nodeResolve = require('@rollup/plugin-node-resolve').default;
 const { terser } = require('rollup-plugin-terser');
 
 sass.compiler = require('sass');
