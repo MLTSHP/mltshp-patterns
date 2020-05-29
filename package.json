@@ -76,7 +76,7 @@
     "require-dir": "1.2.0",
     "rollup": "2.11.2",
     "rollup-plugin-terser": "6.1.0",
-    "sass": "1.26.6",
+    "sass": "1.26.7",
     "sass-loader": "8.0.2",
     "storybook-addon-themes": "5.4.1",
     "style-loader": "1.2.1",
