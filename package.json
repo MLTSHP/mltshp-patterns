@@ -80,7 +80,7 @@
     "sass-loader": "8.0.2",
     "storybook-addon-themes": "5.4.1",
     "style-loader": "1.2.1",
-    "stylelint": "13.5.0",
+    "stylelint": "13.6.0",
     "stylelint-config-prettier": "8.0.1",
     "stylelint-config-spaceninja": "7.0.0",
     "stylelint-prettier": "1.1.2",
