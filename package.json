@@ -74,7 +74,7 @@
     "remark-preset-lint-recommended": "4.0.0",
     "remark-preset-prettier": "0.4.0",
     "require-dir": "1.2.0",
-    "rollup": "2.17.0",
+    "rollup": "2.17.1",
     "rollup-plugin-terser": "6.1.0",
     "sass": "1.26.8",
     "sass-loader": "8.0.2",
