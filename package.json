@@ -39,7 +39,7 @@
     "prepublishOnly": "yarn && yarn check-lint && yarn preprocess && yarn build"
   },
   "devDependencies": {
-    "@babel/core": "7.11.1",
+    "@babel/core": "7.11.4",
     "@cloudfour/eslint-plugin": "12.0.0",
     "@rollup/plugin-multi-entry": "4.0.0",
     "@rollup/plugin-node-resolve": "9.0.0",
