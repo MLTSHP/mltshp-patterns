@@ -1,4 +1,5 @@
 import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import { blueDefault as themes } from '../../../themes/storybook-themes';
 import newPostPanelMarkup from './examples/new-post-panel.html';
 import withShakesMarkup from './examples/with-shakes.html';
 import withShakesOpenMarkup from './examples/with-shakes-open.html';
@@ -6,12 +7,8 @@ import saveVideoMarkup from './examples/save-video.html';
 import saveVideoConfirmationMarkup from './examples/save-video-confirmation.html';
 import emailUnconfirmedMarkup from './examples/email-unconfirmed.html';
 import overUploadLimitMarkup from './examples/over-upload-limit.html';
-const themes = [
-  { name: 'Blue', class: 't-blue', color: '#dbfaff', default: true },
-  { name: 'Dark', class: 't-dark', color: '#263238' },
-];
 
-<Meta title="Legacy/Components/New Post Panel" />
+<Meta title="Legacy/Components/New Post Panel" parameters={{ themes }} />
 
 # New Post Panel
 
@@ -20,7 +17,7 @@ Overlay that can appear on any page.
 ## Default
 
 <Canvas>
-  <Story name="Default" height="300px" parameters={{ themes }}>
+  <Story name="Default" height="300px">
     {() => newPostPanelMarkup}
   </Story>
 </Canvas>
@@ -28,7 +25,7 @@ Overlay that can appear on any page.
 ## With Shakes
 
 <Canvas>
-  <Story name="With Shakes" height="300px" parameters={{ themes }}>
+  <Story name="With Shakes" height="300px">
     {() => withShakesMarkup}
   </Story>
 </Canvas>
@@ -36,7 +33,7 @@ Overlay that can appear on any page.
 ## With Shakes Open
 
 <Canvas>
-  <Story name="With Shakes Open" height="400px" parameters={{ themes }}>
+  <Story name="With Shakes Open" height="400px">
     {() => withShakesOpenMarkup}
   </Story>
 </Canvas>
@@ -44,7 +41,7 @@ Overlay that can appear on any page.
 ## Save Video
 
 <Canvas>
-  <Story name="Save Video" height="300px" parameters={{ themes }}>
+  <Story name="Save Video" height="300px">
     {() => saveVideoMarkup}
   </Story>
 </Canvas>
@@ -52,7 +49,7 @@ Overlay that can appear on any page.
 ## Confirm Video
 
 <Canvas>
-  <Story name="Confirm Video" height="600px" parameters={{ themes }}>
+  <Story name="Confirm Video" height="600px">
     {() => saveVideoConfirmationMarkup}
   </Story>
 </Canvas>
@@ -60,7 +57,7 @@ Overlay that can appear on any page.
 ## Email Unconfirmed
 
 <Canvas>
-  <Story name="Email Unconfirmed" height="300px" parameters={{ themes }}>
+  <Story name="Email Unconfirmed" height="300px">
     {() => emailUnconfirmedMarkup}
   </Story>
 </Canvas>
@@ -70,7 +67,7 @@ Overlay that can appear on any page.
 Note there does not appear to be a way to reach this view, since the "New Post" button is hidden if you're over the upload limit.
 
 <Canvas>
-  <Story name="Over Upload Limit" height="550px" parameters={{ themes }}>
+  <Story name="Over Upload Limit" height="550px">
     {() => overUploadLimitMarkup}
   </Story>
 </Canvas>

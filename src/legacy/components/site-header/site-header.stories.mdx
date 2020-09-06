@@ -1,12 +1,9 @@
 import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import { blueDefault as themes } from '../../../themes/storybook-themes';
 import loggedOutMarkup from './examples/logged-out.html';
 import loggedInMarkup from './examples/logged-in.html';
-const themes = [
-  { name: 'Blue', class: 't-blue', color: '#dbfaff', default: true },
-  { name: 'Dark', class: 't-dark', color: '#263238' },
-];
 
-<Meta title="Legacy/Components/Site Header" />
+<Meta title="Legacy/Components/Site Header" parameters={{ themes }} />
 
 # Site Header
 
@@ -15,7 +12,7 @@ Note that the Site Header contains the [Site Navigation](/?path=/docs/legacy-com
 ## Logged Out
 
 <Canvas>
-  <Story name="Logged Out" height="200px" parameters={{ themes }}>
+  <Story name="Logged Out" height="200px">
     {() => loggedOutMarkup}
   </Story>
 </Canvas>
@@ -23,7 +20,7 @@ Note that the Site Header contains the [Site Navigation](/?path=/docs/legacy-com
 ## Logged In
 
 <Canvas>
-  <Story name="Logged In" height="200px" parameters={{ themes }}>
+  <Story name="Logged In" height="200px">
     {() => loggedInMarkup}
   </Story>
 </Canvas>

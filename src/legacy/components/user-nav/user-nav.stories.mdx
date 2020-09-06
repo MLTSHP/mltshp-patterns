@@ -1,14 +1,11 @@
 import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import { blueDefault as themes } from '../../../themes/storybook-themes';
 import userNavLoggedInMarkup from './examples/user-nav-logged-in.html';
 import userNavLoggedOutMarkup from './examples/user-nav-logged-out.html';
 import confirmEmailMarkup from './examples/confirm-email.html';
 import maintenanceMarkup from './examples/maintenance.html';
-const themes = [
-  { name: 'Blue', class: 't-blue', color: '#dbfaff', default: true },
-  { name: 'Dark', class: 't-dark', color: '#263238' },
-];
 
-<Meta title="Legacy/Components/User Navigation" />
+<Meta title="Legacy/Components/User Navigation" parameters={{ themes }} />
 
 # User Navigation
 
@@ -17,7 +14,7 @@ Appears in the [Site Header](/?path=/docs/legacy-components-site-header--logged-
 ## Logged In
 
 <Canvas>
-  <Story name="Logged In" height="150px" parameters={{ themes }}>
+  <Story name="Logged In" height="150px">
     {() => userNavLoggedInMarkup}
   </Story>
 </Canvas>
@@ -25,7 +22,7 @@ Appears in the [Site Header](/?path=/docs/legacy-components-site-header--logged-
 ## Logged Out
 
 <Canvas>
-  <Story name="Logged Out" height="50px" parameters={{ themes }}>
+  <Story name="Logged Out" height="50px">
     {() => userNavLoggedOutMarkup}
   </Story>
 </Canvas>
@@ -33,7 +30,7 @@ Appears in the [Site Header](/?path=/docs/legacy-components-site-header--logged-
 ## Confirm Your Email
 
 <Canvas>
-  <Story name="Confirm Your Email" height="50px" parameters={{ themes }}>
+  <Story name="Confirm Your Email" height="50px">
     {() => confirmEmailMarkup}
   </Story>
 </Canvas>
@@ -41,7 +38,7 @@ Appears in the [Site Header](/?path=/docs/legacy-components-site-header--logged-
 ## Maintenance Mode
 
 <Canvas>
-  <Story name="Maintenance Mode" height="50px" parameters={{ themes }}>
+  <Story name="Maintenance Mode" height="50px">
     {() => maintenanceMarkup}
   </Story>
 </Canvas>
