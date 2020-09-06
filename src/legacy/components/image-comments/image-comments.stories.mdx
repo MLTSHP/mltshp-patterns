@@ -1,4 +1,4 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import imageCommentMarkup from './examples/image-comment.html';
 import imageCommentFormMarkup from './examples/image-comment-form.html';
 
@@ -12,16 +12,16 @@ Used on permalink pages, as well as the Conversations area to render the comment
 
 Note this is different from the [Image Comments Tab](/?path=/story/legacy-components-image--comments-open) that's shown in the list view for an image.
 
-<Preview>
+<Canvas>
   <Story name="Comment" height="100px">
     {() => imageCommentMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Comment Form
 
-<Preview>
+<Canvas>
   <Story name="Comment Form" height="300px">
     {() => imageCommentFormMarkup}
   </Story>
-</Preview>
+</Canvas>

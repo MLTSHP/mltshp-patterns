@@ -1,4 +1,4 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import followingMarkup from './examples/following.html';
 import membersMarkup from './examples/members.html';
 
@@ -10,16 +10,16 @@ Appears in the sidebar of any user or group shake.
 
 ## Following
 
-<Preview>
+<Canvas>
   <Story name="Following" height="200px">
     {() => followingMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Members
 
-<Preview>
+<Canvas>
   <Story name="Members" height="200px">
     {() => membersMarkup}
   </Story>
-</Preview>
+</Canvas>

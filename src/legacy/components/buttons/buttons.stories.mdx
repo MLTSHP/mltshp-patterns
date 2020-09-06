@@ -1,4 +1,4 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import elementsMarkup from './examples/elements.html';
 import defaultMarkup from './examples/default.html';
 import pastelMarkup from './examples/pastel.html';
@@ -15,76 +15,76 @@ import tinyMarkup from './examples/tiny.html';
 
 ## Elements
 
-<Preview>
+<Canvas>
   <Story name="Elements" height="50px">
     {() => elementsMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Default
 
-<Preview>
+<Canvas>
   <Story name="Default" height="50px">
     {() => defaultMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Pastel
 
-<Preview>
+<Canvas>
   <Story name="Pastel" height="50px">
     {() => pastelMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Shadow
 
-<Preview>
+<Canvas>
   <Story name="Shadow" height="50px">
     {() => shadowMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Icon-Only
 
-<Preview>
+<Canvas>
   <Story name="Icon-Only" height="50px">
     {() => iconMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Padded
 
-<Preview>
+<Canvas>
   <Story name="Padded" height="75px">
     {() => paddedMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Large
 
-<Preview>
+<Canvas>
   <Story name="Large" height="75px">
     {() => largeMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Small
 
 Use with caution: these do not meet touch accessibility targets.
 
-<Preview>
+<Canvas>
   <Story name="Small" height="50px">
     {() => smallMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Tiny
 
 Use with caution: these do not meet touch accessibility targets.
 
-<Preview>
+<Canvas>
   <Story name="Tiny" height="50px">
     {() => tinyMarkup}
   </Story>
-</Preview>
+</Canvas>

@@ -1,4 +1,4 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import userNavLoggedInMarkup from './examples/user-nav-logged-in.html';
 import userNavLoggedOutMarkup from './examples/user-nav-logged-out.html';
 import confirmEmailMarkup from './examples/confirm-email.html';
@@ -16,32 +16,32 @@ Appears in the [Site Header](/?path=/docs/legacy-components-site-header--logged-
 
 ## Logged In
 
-<Preview>
+<Canvas>
   <Story name="Logged In" height="150px" parameters={{ themes }}>
     {() => userNavLoggedInMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Logged Out
 
-<Preview>
+<Canvas>
   <Story name="Logged Out" height="50px" parameters={{ themes }}>
     {() => userNavLoggedOutMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Confirm Your Email
 
-<Preview>
+<Canvas>
   <Story name="Confirm Your Email" height="50px" parameters={{ themes }}>
     {() => confirmEmailMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Maintenance Mode
 
-<Preview>
+<Canvas>
   <Story name="Maintenance Mode" height="50px" parameters={{ themes }}>
     {() => maintenanceMarkup}
   </Story>
-</Preview>
+</Canvas>

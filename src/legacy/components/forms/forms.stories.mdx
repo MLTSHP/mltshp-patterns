@@ -1,4 +1,4 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import funFormMarkup from './examples/fun-form.html';
 import funFormStackedMarkup from './examples/fun-form-stacked.html';
 import funFormErrorsMarkup from './examples/fun-form-errors.html';
@@ -12,38 +12,38 @@ import formFieldsMarkup from './examples/form-fields.html';
 
 This is our default form style. Note that it expects to be used in a constrained width container.
 
-<Preview>
+<Canvas>
   <Story name="Fun Form" height="500px">
     {() => funFormMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Fun Form Stacked
 
 A vertically-stacked modifier for Fun Form. Useful for width-constrained areas like the sidebar.
 
-<Preview>
+<Canvas>
   <Story name="Fun Form Stacked" height="600px">
     {() => funFormStackedMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Fun Form Errors
 
 List of Errors that usually lives above the form.
 
-<Preview>
+<Canvas>
   <Story name="Fun Form Errors" height="100px">
     {() => funFormErrorsMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Form Fields
 
 Unstyled native form elements for reference.
 
-<Preview>
+<Canvas>
   <Story name="Form Fields" height="750px">
     {() => formFieldsMarkup}
   </Story>
-</Preview>
+</Canvas>

@@ -1,4 +1,4 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import codeOfConductMarkup from './examples/code-of-conduct.html';
 import announcementTOUMarkup from './examples/announcement-tou.html';
 import termsOfUseMarkup from './examples/terms-of-use.html';
@@ -11,24 +11,24 @@ Special patterns and chunks of style for the legal pages.
 
 ## Legal Announcement
 
-<Preview>
+<Canvas>
   <Story name="Legal Announcement" height="300px">
     {() => announcementTOUMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Code of conduct
 
-<Preview>
+<Canvas>
   <Story name="Code of Conduct" height="450px">
     {() => codeOfConductMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Terms of Use
 
-<Preview>
+<Canvas>
   <Story name="Terms of Use" height="250px">
     {() => termsOfUseMarkup}
   </Story>
-</Preview>
+</Canvas>

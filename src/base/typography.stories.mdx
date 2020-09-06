@@ -1,4 +1,4 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import headingsMarkup from './examples/headings.html';
 import fontFeaturesMarkup from './examples/font-features.html';
 import linkStylesMarkup from './examples/link-styles.html';
@@ -17,11 +17,11 @@ Check the source code to see the many embedded elements within paragraphs.
 
 ## Headings
 
-<Preview>
+<Canvas>
   <Story name="Headings" height="225px">
     {() => headingsMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Font Features
 
@@ -32,58 +32,58 @@ Note that these features are not available in every font.
 In particular, our headlines use the system font stack,
 and these rules don't seem to have any affect on the Mac system font.
 
-<Preview>
+<Canvas>
   <Story name="Font Features" height="300px">
     {() => fontFeaturesMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Text-Level Semantics
 
-<Preview>
+<Canvas>
   <Story name="Text-Level Semantics" height="600px">
     {() => textSemanticsMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Link Styles
 
-<Preview>
+<Canvas>
   <Story name="Link Styles" height="100px">
     {() => linkStylesMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Lists
 
-<Preview>
+<Canvas>
   <Story name="Lists" height="575px">
     {() => listsMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Tables
 
-<Preview>
+<Canvas>
   <Story name="Tables" height="150px">
     {() => tablesMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Blockquotes
 
-<Preview>
+<Canvas>
   <Story name="Blockquotes" height="200px">
     {() => blockquotesMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Preformatted
 
 Including, but not limited to code. Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. For example:
 
-<Preview>
+<Canvas>
   <Story name="Preformatted" height="550px">
     {() => preMarkup}
   </Story>
-</Preview>
+</Canvas>

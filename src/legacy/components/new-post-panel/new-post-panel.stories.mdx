@@ -1,4 +1,4 @@
-import { Story, Preview, Meta } from '@storybook/addon-docs/blocks';
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import newPostPanelMarkup from './examples/new-post-panel.html';
 import withShakesMarkup from './examples/with-shakes.html';
 import withShakesOpenMarkup from './examples/with-shakes-open.html';
@@ -19,58 +19,58 @@ Overlay that can appear on any page.
 
 ## Default
 
-<Preview>
+<Canvas>
   <Story name="Default" height="300px" parameters={{ themes }}>
     {() => newPostPanelMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## With Shakes
 
-<Preview>
+<Canvas>
   <Story name="With Shakes" height="300px" parameters={{ themes }}>
     {() => withShakesMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## With Shakes Open
 
-<Preview>
+<Canvas>
   <Story name="With Shakes Open" height="400px" parameters={{ themes }}>
     {() => withShakesOpenMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Save Video
 
-<Preview>
+<Canvas>
   <Story name="Save Video" height="300px" parameters={{ themes }}>
     {() => saveVideoMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Confirm Video
 
-<Preview>
+<Canvas>
   <Story name="Confirm Video" height="600px" parameters={{ themes }}>
     {() => saveVideoConfirmationMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Email Unconfirmed
 
-<Preview>
+<Canvas>
   <Story name="Email Unconfirmed" height="300px" parameters={{ themes }}>
     {() => emailUnconfirmedMarkup}
   </Story>
-</Preview>
+</Canvas>
 
 ## Over Upload Limit
 
 Note there does not appear to be a way to reach this view, since the "New Post" button is hidden if you're over the upload limit.
 
-<Preview>
+<Canvas>
   <Story name="Over Upload Limit" height="550px" parameters={{ themes }}>
     {() => overUploadLimitMarkup}
   </Story>
-</Preview>
+</Canvas>
