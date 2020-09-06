@@ -17,7 +17,7 @@ Overlay that can appear on any page.
 ## Default
 
 <Canvas>
-  <Story name="Default" height="300px">
+  <Story name="Default" height="300px" inline={false}>
     {() => newPostPanelMarkup}
   </Story>
 </Canvas>
@@ -25,7 +25,7 @@ Overlay that can appear on any page.
 ## With Shakes
 
 <Canvas>
-  <Story name="With Shakes" height="300px">
+  <Story name="With Shakes" height="300px" inline={false}>
     {() => withShakesMarkup}
   </Story>
 </Canvas>
@@ -33,7 +33,7 @@ Overlay that can appear on any page.
 ## With Shakes Open
 
 <Canvas>
-  <Story name="With Shakes Open" height="400px">
+  <Story name="With Shakes Open" height="400px" inline={false}>
     {() => withShakesOpenMarkup}
   </Story>
 </Canvas>
@@ -41,7 +41,7 @@ Overlay that can appear on any page.
 ## Save Video
 
 <Canvas>
-  <Story name="Save Video" height="300px">
+  <Story name="Save Video" height="300px" inline={false}>
     {() => saveVideoMarkup}
   </Story>
 </Canvas>
@@ -49,7 +49,7 @@ Overlay that can appear on any page.
 ## Confirm Video
 
 <Canvas>
-  <Story name="Confirm Video" height="600px">
+  <Story name="Confirm Video" height="600px" inline={false}>
     {() => saveVideoConfirmationMarkup}
   </Story>
 </Canvas>
@@ -57,7 +57,7 @@ Overlay that can appear on any page.
 ## Email Unconfirmed
 
 <Canvas>
-  <Story name="Email Unconfirmed" height="300px">
+  <Story name="Email Unconfirmed" height="300px" inline={false}>
     {() => emailUnconfirmedMarkup}
   </Story>
 </Canvas>
@@ -67,7 +67,7 @@ Overlay that can appear on any page.
 Note there does not appear to be a way to reach this view, since the "New Post" button is hidden if you're over the upload limit.
 
 <Canvas>
-  <Story name="Over Upload Limit" height="550px">
+  <Story name="Over Upload Limit" height="550px" inline={false}>
     {() => overUploadLimitMarkup}
   </Story>
 </Canvas>
