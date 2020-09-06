@@ -2,7 +2,7 @@ const { resolve } = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  stories: ['../src/welcome.stories.mdx', '../src/**/*.stories.(js|mdx)'],
+  stories: ['../src/welcome.stories.mdx', '../src/**/*.stories.@(js|mdx)'],
   addons: [
     '@storybook/addon-a11y/register',
     '@storybook/addon-docs',
