@@ -4,10 +4,13 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   stories: ['../src/welcome.stories.mdx', '../src/**/*.stories.@(js|mdx)'],
   addons: [
-    '@storybook/addon-a11y/register',
-    '@storybook/addon-docs',
-    '@storybook/addon-knobs/register',
-    '@storybook/addon-viewport/register',
+    {
+      name: '@storybook/addon-essentials',
+      options: {
+        backgrounds: false,
+      }
+    },
+    '@storybook/addon-a11y',
     'storybook-addon-themes',
   ],
   webpackFinal: async (config) => {
