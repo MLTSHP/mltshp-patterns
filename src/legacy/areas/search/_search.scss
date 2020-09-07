@@ -1,0 +1,21 @@
+/* ----------------------------------------------
+  Area: Search
+---------------------------------------------- */
+
+.content-search {
+  list-style: none;
+  margin-top: var(--spacing-default);
+  padding: var(--spacing-triple);
+
+  .search-empty-results {
+    margin-left: var(--spacing-double);
+  }
+}
+
+.sidebar-search-block {
+  margin-bottom: var(--spacing-double);
+
+  .field-help {
+    padding-left: 0;
+  }
+}
