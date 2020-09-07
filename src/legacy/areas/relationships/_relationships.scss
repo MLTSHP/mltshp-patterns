@@ -1,0 +1,33 @@
+/* ----------------------------------------------
+  Area: Account - Following/Followers
+---------------------------------------------- */
+
+.content-relationships {
+  .body {
+    .friend,
+    .shake {
+      border-bottom: 1px dashed var(--color-border-default);
+      padding: 0 var(--spacing-quadruple);
+    }
+
+    .user-follow-extended {
+      .website a {
+        color: var(--color-secondary-brand);
+      }
+    }
+  }
+  .user-info {
+    .avatar {
+      float: left;
+      margin-right: var(--spacing-half-again);
+      width: 100px;
+    }
+
+    .details h3 {
+      color: var(--color-page-text);
+      font-size: 1.125rem;
+      font-weight: var(--font-weight-bold);
+      padding-top: var(--spacing-half);
+    }
+  }
+}
