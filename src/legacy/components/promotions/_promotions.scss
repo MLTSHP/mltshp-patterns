@@ -1,4 +1,5 @@
 @use '../buttons/buttons';
+@use "../../../design-tokens/breakpoint.yml";
 
 .promotions {
   list-style: none;
@@ -46,5 +47,20 @@
     position: absolute;
     transform: translateX(-50%);
     z-index: 1;
+  }
+}
+
+/**
+ * Promo Sidebar Block
+ */
+
+.promo-block {
+  margin: var(--spacing-double) auto;
+  max-width: 100%;
+  text-align: center;
+  width: 285px; // width of the promo image
+
+  @media screen and (max-width: breakpoint.$breakpoint-xs) {
+    display: none;
   }
 }

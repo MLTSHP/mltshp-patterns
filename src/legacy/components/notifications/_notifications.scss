@@ -1,0 +1,187 @@
+@use '../../../base/core';
+@use '../../../init/mixins';
+
+/* ----------------------------------------------
+  Area: Dashboard
+---------------------------------------------- */
+
+/**
+ * Notification Block
+ */
+
+.notification-block {
+  background: var(--color-page-bg-secondary);
+  border-radius: var(--border-radius-large);
+  margin-bottom: var(--spacing-double);
+}
+
+.notification-block-link a {
+  display: block;
+  font-weight: var(--font-weight-bold);
+  padding: var(--spacing-half-again);
+  text-decoration: none;
+}
+
+.notification-block-hd {
+  cursor: pointer;
+  font-weight: var(--font-weight-bold);
+  padding: var(--spacing-half-again);
+}
+
+.notification-block-bd {
+  display: none;
+  padding: 0 var(--spacing-default) var(--spacing-default);
+
+  .notification {
+    @include mixins.breakword();
+    background-color: var(--color-page-bg);
+    border-radius: var(--border-radius-large);
+    color: var(--color-page-text);
+    font-size: 0.875rem;
+    padding: var(--spacing-default);
+    position: relative;
+
+    &::after {
+      clear: both;
+      content: '';
+      display: table;
+    }
+
+    + .notification {
+      margin-top: var(--spacing-default);
+    }
+
+    .notification-close {
+      outline: none;
+      position: absolute;
+      right: var(--spacing-half);
+      top: var(--spacing-half);
+    }
+
+    .thumb {
+      float: left;
+      padding-right: var(--spacing-default);
+      text-align: center;
+      width: 100px;
+    }
+
+    .context {
+      font-size: 0.75rem;
+      overflow: hidden;
+    }
+  }
+
+  .clear-all {
+    clear: both;
+    margin-top: var(--spacing-default);
+    text-align: right;
+  }
+}
+
+/**
+ * Notificiation Block Styles
+ */
+
+.notification-block-follow {
+  background-color: var(--color-bg-secondary-brand-pastel);
+  color: var(--color-primary-brand);
+}
+
+.notification-block-save {
+  background-color: var(--color-bg-warning-pastel);
+  color: #ff8400;
+}
+
+.notification-block-like {
+  background-color: var(--color-bg-danger-pastel);
+  color: var(--color-danger-pastel-dark);
+}
+
+.notification-block-comment {
+  background-color: var(--color-bg-secondary-brand-pastel);
+  color: var(--color-secondary-brand);
+}
+
+.notification-block-shakeinvitation {
+  background-color: var(--color-bg-success-pastel);
+  color: var(--color-success-pastel-dark);
+}
+
+.notification-block-invitation-request {
+  background-color: var(--color-bg-success-pastel);
+  color: var(--color-success-pastel-dark);
+}
+
+.notification-block-invitation-approved {
+  background-color: var(--color-bg-success-pastel);
+  color: var(--color-success-pastel-dark);
+}
+
+.notification-block-aggregate {
+  background-color: var(--color-bg-secondary-brand-pastel);
+  color: var(--color-primary-brand);
+}
+
+/* Notification block for new followers */
+
+.notification-block-follow .notification {
+  padding-right: var(--spacing-triple);
+}
+
+/* Shake Invitation Notifications */
+
+// stylelint-disable-next-line no-duplicate-selectors
+.notification-block-shakeinvitation {
+  .shake-thumb {
+    float: left;
+    margin-right: var(--spacing-default);
+    width: 48px;
+  }
+
+  h4 {
+    padding-top: var(--spacing-default);
+  }
+
+  .shake-context {
+    clear: both;
+    margin-top: var(--spacing-default);
+
+    a {
+      @extend .link--primary;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing-default);
+  }
+
+  .content-shake & {
+    margin-top: var(--spacing-double);
+  }
+}
+
+/* Shake Invitation Request Notifications */
+
+.notification-block-invitation-request .notification a {
+  @extend .link--primary;
+}
+
+.notification-block-invitation-request .notification-actions {
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--spacing-default);
+}
+
+/* Site Announcement Notifications */
+
+.notification-block-tou .notification-block-link a {
+  color: var(--color-page-text-emphasis);
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-link-hover);
+  }
+}

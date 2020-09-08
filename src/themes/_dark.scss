@@ -1,3 +1,5 @@
+@use "../design-tokens/colors.yml";
+
 @mixin darkmode() {
   --color-page-bg: var(--color-page-bg-dark);
   --color-page-bg-secondary: var(--color-gray-900);
@@ -8,6 +10,16 @@
   --font-weight-bold: 600;
   --font-weight-normal: 300;
   --letter-spacing: 0.025em;
+  --color-bg-primary-brand-pastel: var(--color-primary-brand-dark);
+  --color-bg-secondary-brand-pastel: var(--color-secondary-brand-dark);
+  --color-bg-success-pastel: var(--color-success-dark);
+  --color-bg-danger-pastel: var(--color-danger-dark);
+  --color-bg-warning-pastel: var(--color-warning-dark);
+  --color-bg-primary-brand-pastel: #{rgba(colors.$color-primary-brand, 0.1)};
+  --color-bg-secondary-brand-pastel: #{rgba(colors.$color-secondary-brand, 0.1)};
+  --color-bg-success-pastel: #{rgba(colors.$color-success, 0.1)};
+  --color-bg-danger-pastel: #{rgba(colors.$color-danger, 0.1)};
+  --color-bg-warning-pastel: #{rgba(colors.$color-warning, 0.1)};
 }
 
 :root {
