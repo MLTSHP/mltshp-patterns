@@ -1,0 +1,204 @@
+@use '../../../base/core';
+@use '../../../init/mixins';
+@use "../../components/page-header/_page-header";
+
+/* ----------------------------------------------
+  Area: Tools - Find Shakes
+---------------------------------------------- */
+
+.content-find-shakes {
+  .header {
+    @extend .account-header;
+  }
+
+  .body {
+    padding: var(--spacing-double);
+  }
+
+  .good-folk-block {
+    background-color: var(--color-bg-success-pastel);
+    border-radius: var(--border-radius-large);
+    padding: var(--spacing-half-again);
+
+    h3 {
+      color: var(--color-success-pastel-dark);
+      font-size: 1.125rem;
+      padding-left: var(--spacing-half);
+    }
+  }
+
+  .good-folk-block-content {
+    background-color: var(--color-page-bg);
+    border-radius: var(--border-radius-large);
+    color: var(--color-page-text);
+    margin-top: var(--spacing-default);
+    padding: var(--spacing-double);
+
+    p {
+      font-size: 0.875rem;
+      margin-top: 0;
+    }
+
+    .user-follow {
+      margin-top: var(--spacing-double);
+    }
+  }
+
+  .find-shakes-navigation {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      background: var(--color-page-bg-secondary);
+      flex: 1;
+      font-size: 1.125rem;
+
+      a {
+        display: block;
+        font-weight: var(--font-weight-bold);
+        padding: var(--spacing-double) var(--spacing-half);
+        text-align: center;
+        text-decoration: none;
+      }
+    }
+
+    .selected a {
+      background-color: var(--color-page-bg);
+      color: var(--color-page-text);
+    }
+  }
+
+  .featured-shakes {
+    margin-bottom: var(--spacing-double);
+
+    h3 {
+      font-size: 1.125rem;
+      margin: var(--spacing-double) var(--spacing-default);
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      border: 1px solid var(--color-border-default);
+      box-shadow: 1px 2px 1px var(--color-black-transparent-100);
+      margin-bottom: var(--spacing-default);
+      margin-right: var(--spacing-default);
+      padding: var(--spacing-default);
+      width: calc(170px + var(--spacing-default) * 2 + 2px);
+
+      img {
+        height: 170px;
+        width: 170px;
+      }
+
+      h4 {
+        font-size: 1.125rem;
+        line-height: 1.2;
+        margin: var(--spacing-default) 0 0;
+
+        a {
+          @extend .link--primary;
+        }
+      }
+
+      p {
+        @include mixins.clamp(3);
+        font-size: 0.75rem;
+        margin: var(--spacing-default) 0 0;
+      }
+    }
+  }
+
+  .shake-category {
+    border-bottom: 1px dashed var(--color-border-default);
+    clear: both;
+
+    .category-title {
+      font-size: 1.125rem;
+
+      a {
+        display: block;
+        padding: var(--spacing-half-again) var(--spacing-default);
+        text-decoration: none;
+      }
+    }
+
+    .shake-category-body {
+      display: none;
+      padding: 0 var(--spacing-default);
+    }
+
+    &.shake-category-selected {
+      .category-title a {
+        color: var(--color-page-text-secondary);
+      }
+
+      .shake-category-body {
+        display: block;
+      }
+    }
+  }
+
+  .shake-tips {
+    background: var(--color-page-bg-secondary);
+    clear: both;
+    color: var(--color-page-text);
+    font-size: 0.75rem;
+    margin: var(--spacing-triple) 0;
+    padding: var(--spacing-half-again);
+  }
+
+  .friend + .friend {
+    border-top: 1px dashed var(--color-border-default);
+  }
+
+  .user-follow-extended {
+    .website a {
+      color: var(--color-text-link);
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: var(--color-text-link-hover);
+      }
+    }
+  }
+
+  .body .loading {
+    color: var(--color-page-text-secondary);
+    font-size: 1.125rem;
+    margin: var(--spacing-quadruple) auto;
+    text-align: center;
+
+    img {
+      margin-right: var(--spacing-double);
+      position: relative;
+      top: var(--spacing-double);
+    }
+  }
+
+  .message {
+    color: var(--color-page-text-secondary);
+    font-size: 1.125rem;
+    margin: var(--spacing-quadruple) var(--spacing-triple);
+    text-align: center;
+  }
+
+  .intro {
+    border-bottom: 1px solid var(--color-border-default);
+    font-size: 0.875rem;
+    padding: var(--spacing-double) var(--spacing-half);
+  }
+
+  .refresh-friends {
+    margin: var(--spacing-triple) 0;
+  }
+}

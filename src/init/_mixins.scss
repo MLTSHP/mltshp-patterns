@@ -7,3 +7,12 @@
   word-break: break-word;
   word-wrap: break-word;
 }
+
+@mixin clamp($lines) {
+  // stylelint-disable property-no-vendor-prefix, value-no-vendor-prefix
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  overflow: hidden;
+  // stylelint-enable
+}

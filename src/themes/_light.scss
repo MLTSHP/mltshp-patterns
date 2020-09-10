@@ -1,5 +1,7 @@
-.t-blue {
-  --color-page-bg: var(--color-page-bg-blue);
+@use "../design-tokens/colors.yml";
+
+@mixin lightmode() {
+  --color-page-bg: var(--color-page-bg-light);
   --color-page-bg-secondary: var(--color-gray-100);
   --color-page-text: var(--color-text-dark);
   --color-page-text-emphasis: var(--color-text-dark-emphasis);
@@ -13,5 +15,15 @@
   --color-bg-success-pastel: #dfffcb;
   --color-bg-danger-pastel: var(--color-danger-pastel-light);
   --color-bg-warning-pastel: var(--color-highlight);
-  background-color: var(--color-page-bg);
+}
+
+:root {
+  @media screen and (prefers-color-scheme: light) {
+    @include lightmode();
+  }
+}
+
+// note this only really works on the `html` or `body` elements.
+.t-light {
+  @include lightmode();
 }
