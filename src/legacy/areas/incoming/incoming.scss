@@ -1,0 +1,68 @@
+@use "../../components/page-header/_page-header";
+
+/* ----------------------------------------------
+  Area: Incoming
+---------------------------------------------- */
+
+.content-incoming {
+  .tip-block {
+    background: var(--color-page-bg-secondary);
+    border-radius: var(--border-radius-large);
+    padding: var(--spacing-double);
+
+    h3 {
+      color: var(--color-primary-brand);
+      font-size: 1.3rem;
+      margin: 0 0 var(--spacing-half-again);
+    }
+
+    p {
+      color: var(--color-page-text-secondary);
+      font-size: 0.875rem;
+      margin: 0;
+    }
+  }
+}
+
+.incoming-header {
+  @extend .account-header;
+  cursor: pointer;
+  padding: var(--spacing-half-again) var(--spacing-double);
+
+  // TODO: update all media queries to design tokens
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &::before {
+    background: svg-load('illustrations/incoming-header.svg') center no-repeat;
+    background-size: 100%;
+    content: '';
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    padding-top: (87/300) * 100%; // aspect-ratio to scale with fluid width
+
+    @media screen and (min-width: 480px) {
+      margin: 0;
+      padding-top: 115px;
+      width: 395px;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: var(--spacing-half-again);
+    padding-left: 0;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 1.75rem;
+      margin-top: 0;
+      padding-left: var(--spacing-default);
+    }
+  }
+}
