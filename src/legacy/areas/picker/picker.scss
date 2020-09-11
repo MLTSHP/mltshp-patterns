@@ -1,0 +1,145 @@
+@use '../../../base/core';
+
+/* Styles for the /tools Picker */
+.tools-page {
+  margin: var(--spacing-default);
+
+  a {
+    color: var(--color-text-link-primary);
+    text-decoration-color: var(--color-text-link-primary-underline);
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-text-link-primary-hover);
+      text-decoration-color: var(--color-text-link-primary-underline-hover);
+    }
+  }
+
+  .header {
+    color: var(--color-page-text-secondary);
+    font-size: 0.75rem;
+    height: 55px;
+    margin: var(--spacing-half) var(--spacing-double);
+    position: relative;
+    text-align: right;
+
+    a {
+      @extend .link--primary;
+    }
+
+    img {
+      height: 49px;
+      left: 0;
+      position: absolute;
+      top: 3px;
+      width: 100px;
+    }
+  }
+
+  .content {
+    background: var(--color-page-bg);
+    border-radius: var(--border-radius-large);
+    padding: var(--spacing-double);
+  }
+
+  // wrapper for floated elements, so they don't drop on resize or other factors
+  .content-inner {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    > * {
+      min-width: 0; // https://github.com/philipwalton/flexbugs/issues/39
+
+      @media screen and (min-width: 768px) {
+        flex-basis: calc(50% - 10px);
+      }
+    }
+
+    > * + * {
+      margin-top: 20px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+
+    .full-width {
+      @media screen and (min-width: 768px) {
+        flex: 1;
+      }
+    }
+  }
+
+  /* Override fun-form for tools area */
+
+  .tools-fun-form {
+    margin-top: 0;
+
+    .tools-field-title .input-text {
+      font-weight: var(--font-weight-bold);
+    }
+  }
+
+  /* Success Page */
+
+  .tools-saved-it {
+    background: svg-load('illustrations/tools-saved-it.svg') 0 0 no-repeat;
+    background-size: contain;
+    font-size: 1.75rem;
+    padding-top: calc((133 / 320) * 100% + var(--spacing-double));
+
+    @media screen and (min-width: 768px) {
+      background-size: 320px 133px;
+      padding-top: 160px;
+    }
+  }
+
+  /* Sign-in page */
+
+  .content-sign-in {
+    margin-top: var(--spacing-double);
+
+    h1 {
+      color: var(--color-secondary-brand);
+      font-size: 1.5rem;
+      padding: var(--spacing-triple);
+    }
+  }
+
+  .tools-signin-logo {
+    margin-top: var(--spacing-default);
+    text-align: center;
+  }
+
+  .sign-in-fun-form {
+    margin-top: 0;
+    padding-bottom: var(--spacing-double);
+
+    @media screen and (min-width: 768px) {
+      label {
+        flex-basis: 120px;
+      }
+
+      .field-submit {
+        padding-left: 130px;
+      }
+    }
+  }
+
+  /* Unverified Email page */
+  /* Over Upload Limit page */
+
+  .email-unverified h2,
+  .over-upload-limit h2 {
+    color: var(--color-primary-brand);
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
