@@ -1,0 +1,126 @@
+<div class="content content-settings">
+  <div class="settings-header">
+    <h1>Your Settings</h1>
+    <div class="settings-navigation">
+      <ul>
+        <li class="selected"><a href="#">Account</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Connections</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="settings-body">
+    <div class="fun-form fun-form-stacked fun-form-settings">
+      <form>
+        <div class="field">
+          <label for="email">Email</label>
+          <div class="field-input more">
+            <input
+              type="text"
+              name="email"
+              class="input-text"
+              value="yourname@gmail.com"
+              autocomplete="email"
+            />
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-input field-input-checkbox">
+            <label>
+              <input type="checkbox" name="disable_notifications" value="1" />
+              Disable Email Notifications?
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-input field-input-checkbox">
+            <label>
+              <input type="checkbox" name="disable_autoplay" value="1" />
+              Disable Video Autoplay?
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-input field-input-checkbox">
+            <label>
+              <input type="checkbox" name="show_naked_people" value="1" />
+              Remove NSFW Filter?
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="field-input field-input-checkbox">
+            <label>
+              <input
+                type="checkbox"
+                name="show_stats"
+                value="1"
+                checked="checked"
+              />
+              Show Stats?
+            </label>
+          </div>
+        </div>
+        <div class="field field-submit">
+          <a class="btn btn-primary btn-shadow" href="#">Save This</a>
+        </div>
+      </form>
+    </div>
+    <div class="settings-subscription-sidebar">
+      <div class="migration-block">
+        <h3>MLKSHK Restore Status</h3>
+        <div class="migration-block-content">
+          <p>
+            Your MLKSHK posts are safe and sound and ready to be restored. Click
+            the button below to start restoring your content.
+          </p>
+          <a class="btn btn-primary btn-shadow" href="#">Let’s Go!</a>
+        </div>
+      </div>
+      <div class="member-status-block">
+        <h3>Membership Status</h3>
+        <div class="member-status-block-content">
+          <h4>Your Membership Plan: <a href="#">Single Scoop</a></h4>
+          <p>Your recent payment history:</p>
+          <ol class="transaction-list">
+            <li>
+              <span class="amount">USD 3.00</span>
+              charged on <span class="date">June 14, 2020</span>
+              👍
+            </li>
+            <li>
+              <span class="amount">USD 3.00</span>
+              charged on <span class="date">June 14, 2019</span>
+              👍
+            </li>
+            <li>
+              <span class="amount">USD 3.00</span>
+              charged on <span class="date">June 13, 2019</span>
+              (failed)
+            </li>
+          </ol>
+          <p></p>
+          <hr />
+          <p></p>
+          <p>
+            <strong>Current Payment Source</strong><br />
+            Card type: Visa<br />
+            Card ending in: 1234<br />
+            Expiration date: 6/1999
+          </p>
+          <button
+            id="update-card-details-btn"
+            class="btn btn-secondary btn-shadow"
+          >
+            Update Card Details
+          </button>
+          <form id="update-card-details-form"></form>
+          <p>
+            If you’d like to cancel your subscription
+            <a href="#">you can do so here</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
