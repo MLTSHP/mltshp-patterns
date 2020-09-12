@@ -1,0 +1,259 @@
+@use '../../../base/core';
+
+/* ----------------------------------------------
+  Area: Account Membership / Migration
+   - also used for payment thank you page.
+---------------------------------------------- */
+
+.content-membership {
+  padding: var(--spacing-half-again);
+
+  @media screen and (min-width: 768px) {
+    padding: var(--spacing-quadruple);
+  }
+
+  h1 {
+    line-height: 1;
+    text-shadow: 2px 4px 1px var(--color-black-transparent-100);
+  }
+
+  ul {
+    padding-left: 1em;
+  }
+
+  li + li {
+    margin-top: 1em;
+  }
+
+  .fine-print {
+    font-size: 0.75rem;
+  }
+
+  .subscribe-plan-quantity-wrapper {
+    color: var(--color-page-text-secondary);
+    font-size: 2rem;
+  }
+
+  .input-plan-quantity {
+    display: inline-block;
+    font-size: inherit;
+    font-weight: var(--font-weight-bold);
+    max-width: 150px;
+    width: auto;
+
+    &:invalid {
+      color: var(--color-danger);
+    }
+  }
+
+  .subscribe-plan-quantity-wrapper i {
+    color: var(--color-page-text-secondary);
+    font-size: 1.5rem;
+    font-style: normal;
+  }
+}
+
+.content-migrate {
+  background: svg-load('illustrations/burger-upgrade.svg') no-repeat;
+  background-position: bottom var(--spacing-half-again) center;
+  background-size: 366px 481px;
+  padding-bottom: 530px;
+
+  @media screen and (min-width: 768px) {
+    background-position: var(--spacing-quadruple) var(--spacing-quadruple);
+    min-height: calc(481px + var(--spacing-quadruple));
+    padding-bottom: 0;
+    padding-left: 430px;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin: var(--spacing-triple) 0;
+  }
+}
+
+.content-membership-thanks {
+  background: svg-load('illustrations/thankyou-dude.svg') no-repeat;
+  background-position: bottom var(--spacing-half-again) center;
+  background-size: 312px 410px;
+  padding-bottom: 450px;
+
+  @media screen and (min-width: 768px) {
+    background-position: var(--spacing-quadruple) var(--spacing-quadruple);
+    min-height: calc(410px + var(--spacing-quadruple));
+    padding-bottom: 0;
+    padding-left: 380px;
+  }
+
+  a {
+    @extend .link--primary;
+  }
+}
+
+.membership-header {
+  margin-bottom: var(--spacing-double);
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: var(--spacing-quadruple);
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-default);
+    margin-top: var(--spacing-double);
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+.membership-header--illustration {
+  display: none;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+    flex: none;
+    margin-right: var(--spacing-half-again);
+    width: 75px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: var(--spacing-quadruple);
+    width: 140px;
+  }
+}
+
+.membership-header--content {
+  @media screen and (min-width: 480px) {
+    flex: 1;
+  }
+}
+
+.membership-options {
+  > * {
+    margin: var(--spacing-double) 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+    > * {
+      margin: 0;
+    }
+
+    > * + * {
+      margin-left: var(--spacing-quadruple);
+    }
+  }
+}
+
+.membership-options--plan {
+  @media screen and (min-width: 768px) {
+    flex: 1;
+  }
+
+  .label {
+    margin-bottom: var(--spacing-half);
+  }
+
+  .btn {
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    margin-top: 0.25em;
+  }
+
+  ul {
+    margin-bottom: 2em;
+  }
+
+  .is-active-member & {
+    @media screen and (min-width: 768px) {
+      padding-top: var(--spacing-quadruple);
+
+      &.is-active-plan {
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.membership-options--plan-title {
+  color: var(--color-primary-brand);
+  text-transform: uppercase;
+}
+
+.membership-options--plan-tagline {
+  font-size: 1.25rem;
+}
+
+.membership-options--or {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+
+  &::before,
+  &::after {
+    background: var(--color-primary-brand);
+    content: '';
+    flex: 1;
+    height: 1px;
+
+    @media screen and (min-width: 768px) {
+      height: auto;
+      width: 1px;
+    }
+  }
+
+  &::before {
+    @media screen and (min-width: 768px) {
+      flex-basis: var(--spacing-triple);
+      flex-grow: 0;
+    }
+  }
+}
+
+.membership-options--or-bullet {
+  background-color: var(--color-primary-brand);
+  border-radius: 50%;
+  color: var(--color-text-light-emphasis);
+  display: flex;
+  font-size: 1.5rem;
+  height: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 3em;
+
+  span {
+    margin: auto;
+  }
+}
+
+.membership-footer {
+  margin-top: var(--spacing-half-again);
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-top: var(--spacing-quadruple);
+  }
+
+  p {
+    margin: 0;
+  }
+}
