@@ -10,6 +10,13 @@ import shakeInviteMemberResultsMarkup from './examples/shake-invite-member-resul
 import shakeActionsMarkup from './examples/shake-actions.html';
 import shakeEditorMarkup from './examples/shake-editor.html';
 import sidebarFlagNSFWMarkup from './examples/sidebar-flag-nsfw.html';
+import flagImageMarkup from './examples/flag-image.html';
+import deletePostMarkup from './examples/delete-post.html';
+import sidebarStatsMarkup from './examples/sidebar-stats.html';
+import metaDataMarkup from './examples/meta-data.html';
+import addToShakesMarkup from './examples/add-to-shakes.html';
+import inTheseShakesMarkup from './examples/in-these-shakes.html';
+import permalinkSocialMarkup from './examples/permalink-social.html';
 
 <Meta title="Legacy/Components/Sidebar" />
 
@@ -60,7 +67,7 @@ import sidebarFlagNSFWMarkup from './examples/sidebar-flag-nsfw.html';
 ## Shake Invite Member Results
 
 <Canvas>
-  <Story name="Shake Invite Member Results">
+  <Story name="Shake Invite Member Results" height="220px">
     {() => shakeInviteMemberResultsMarkup}
   </Story>
 </Canvas>
@@ -83,4 +90,60 @@ Appears in the sidebar of a user shake if logged in as an admin.
 
 <Canvas>
   <Story name="Flag NSFW">{() => sidebarFlagNSFWMarkup}</Story>
+</Canvas>
+
+## Flag Image
+
+Appears on the permalink page
+
+<Canvas>
+  <Story name="Flag Image">{() => flagImageMarkup}</Story>
+</Canvas>
+
+## Delete Post
+
+Appears on the permalink page
+
+<Canvas>
+  <Story name="Delete Post">{() => deletePostMarkup}</Story>
+</Canvas>
+
+## Sidebar Stats
+
+Appears on the permalink page
+
+<Canvas>
+  <Story name="Sidebar Stats">{() => sidebarStatsMarkup}</Story>
+</Canvas>
+
+## Meta Data
+
+Appears on the permalink page
+
+<Canvas>
+  <Story name="Meta Data">{() => metaDataMarkup}</Story>
+</Canvas>
+
+## Add to Shakes
+
+Appears on the permalink page
+
+<Canvas>
+  <Story name="Add to Shakes">{() => addToShakesMarkup}</Story>
+</Canvas>
+
+## In These Shakes
+
+Appears on the permalink page
+
+<Canvas>
+  <Story name="In These Shakes">{() => inTheseShakesMarkup}</Story>
+</Canvas>
+
+## Social Links
+
+Appears on the permalink page
+
+<Canvas>
+  <Story name="Social Links">{() => permalinkSocialMarkup}</Story>
 </Canvas>

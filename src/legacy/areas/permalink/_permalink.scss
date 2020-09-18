@@ -1,0 +1,97 @@
+/* ----------------------------------------------
+  Area: Permalink
+---------------------------------------------- */
+
+/**
+ * Legacy float-based layout
+ */
+.content-permalink {
+  padding: var(--spacing-half-again);
+
+  @media screen and (min-width: 768px) {
+    padding: var(--spacing-triple);
+  }
+
+  > * {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    + * {
+      margin-top: var(--spacing-half-again) !important;
+
+      @media screen and (min-width: 768px) {
+        margin-top: var(--spacing-triple) !important;
+      }
+    }
+  }
+
+  > .permalink-sidebar {
+    @media screen and (min-width: 768px) {
+      float: right;
+      width: 330px;
+    }
+  }
+
+  > .image-content,
+  > .image-comments,
+  > .image-comment-form {
+    @media screen and (min-width: 768px) {
+      float: left;
+      width: calc(100% - 360px);
+    }
+  }
+}
+
+/**
+ * Fancy new grid-based layout
+ */
+@supports (display: grid) {
+  @media screen and (min-width: 768px) {
+    .content-permalink {
+      display: grid;
+      grid-gap: var(--spacing-triple);
+      grid-template-areas:
+        'title title'
+        'image sidebar'
+        'comments sidebar'
+        'post-comment sidebar';
+      grid-template-columns: 1fr 330px;
+      grid-template-rows: repeat(3, min-content) 1fr;
+    }
+
+    .content-permalink > * {
+      margin: 0 !important;
+    }
+
+    .content-permalink::after {
+      content: none;
+    }
+
+    .content-permalink > .permalink-sidebar,
+    .content-permalink > .image-content,
+    .content-permalink > .image-comments,
+    .content-permalink > .image-comment-form {
+      width: auto;
+    }
+
+    .content-permalink > .image-title {
+      grid-area: title;
+    }
+    .content-permalink > .image-content {
+      grid-area: image;
+    }
+    .content-permalink > .permalink-sidebar {
+      grid-area: sidebar;
+    }
+    .content-permalink > .image-comments {
+      grid-area: comments;
+    }
+    .content-permalink > .image-comment-form {
+      grid-area: post-comment;
+    }
+  }
+}
+
+.permalink-sidebar {
+  position: relative;
+}

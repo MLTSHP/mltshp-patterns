@@ -382,16 +382,253 @@
  * Sidebar NSFW Flag
  */
 .sidebar-flag-nsfw {
-  clear: both;
   margin-top: var(--spacing-triple);
 
   .flag-nsfw-button,
   .unflag-nsfw-button {
-    @extend .link--danger;
-    background-color: transparent;
-    border: none;
+    @extend .btn;
+    @extend .btn-small;
+    @extend .btn-danger;
+    @extend .btn-pastel;
+  }
+}
+
+/**
+ * Sidebar Flag Image as NSFW
+ */
+
+.flag-image {
+  @extend .btn;
+  @extend .btn-small;
+  @extend .btn-warning;
+  @extend .btn-pastel;
+  background-image: svg-load('icons/flag.svg');
+  background-position: 0.5em center;
+  background-repeat: no-repeat;
+  background-size: 7px 9px;
+  margin-top: var(--spacing-triple);
+  padding-left: 1.5em;
+
+  &.flag-image-set {
+    color: var(--color-danger);
+  }
+}
+
+/**
+ * Delete Post
+ */
+
+.delete-post-text {
+  @extend .btn;
+  @extend .btn-small;
+  @extend .btn-danger;
+  @extend .btn-pastel;
+  margin-top: var(--spacing-triple);
+}
+
+/**
+ * Sidebar Stats
+ */
+
+.sidebar-stats {
+  background-color: var(--color-bg-secondary-brand-pastel);
+  border-radius: var(--border-radius-large);
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  margin-top: var(--spacing-triple);
+  padding: var(--spacing-default);
+
+  .tab {
+    display: block;
+    padding: var(--spacing-default);
+  }
+
+  .selected .tab {
+    background-color: var(--color-page-bg);
+    border-top-left-radius: var(--border-radius-large);
+    border-top-right-radius: var(--border-radius-large);
+  }
+
+  .enable-cursor {
     cursor: pointer;
+  }
+}
+
+.sidebar-stats-tabs {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.sidebar-stats-views {
+  color: var(--color-page-text-secondary);
+}
+
+.sidebar-stats-saves {
+  color: var(--color-warning);
+}
+
+.sidebar-stats-hearts {
+  color: var(--color-danger);
+}
+
+.sidebar-stats-content {
+  background-color: var(--color-page-bg);
+  border-bottom-left-radius: var(--border-radius-large);
+  border-bottom-right-radius: var(--border-radius-large);
+  display: none;
+  padding: var(--spacing-half-again);
+
+  .user-action {
+    align-items: center;
+    display: flex;
+
+    + .user-action {
+      margin-top: var(--spacing-default);
+    }
+  }
+
+  .icon {
+    height: 20px;
+    margin-right: var(--spacing-half);
+    width: 20px;
+
+    .avatar--img {
+      display: block;
+    }
+  }
+
+  .name {
+    @extend .link--primary;
+    @include mixins.breakword();
+  }
+
+  .date {
+    color: var(--color-page-text-secondary);
     font-size: 0.75rem;
-    text-decoration-line: underline;
+    font-weight: normal;
+    margin-left: var(--spacing-default);
+    white-space: nowrap;
+  }
+}
+
+/**
+ * Metadata
+ */
+
+.meta-data {
+  margin-top: var(--spacing-triple);
+
+  h4 {
+    color: var(--color-page-text-secondary);
+    font-size: 0.875rem;
+    padding-left: var(--spacing-half-again);
+  }
+
+  p {
+    background: var(--color-page-bg-secondary);
+    border-radius: var(--border-radius-default);
+    color: var(--color-page-text-secondary);
+    font-size: 0.75rem;
+    margin: var(--spacing-half) 0;
+    padding: var(--spacing-default) var(--spacing-half-again);
+  }
+}
+
+/**
+ * In These Shakes
+ */
+
+.shake-details-title {
+  color: var(--color-page-text-secondary);
+  font-size: 0.875rem;
+  margin-top: var(--spacing-triple);
+  margin-bottom: var(--spacing-half);
+  padding-left: var(--spacing-half-again);
+}
+
+.in-these-shakes {
+  background-color: var(--color-bg-success-pastel);
+  border-radius: var(--border-radius-large);
+  font-size: 0.875rem;
+  margin: 0 0 var(--spacing-triple) 0;
+  padding: var(--spacing-half-again);
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    align-items: center;
+    display: flex;
+    margin-bottom: var(--spacing-default);
+  }
+
+  a {
+    @extend .link--primary;
+    @include mixins.breakword();
+    flex: 1;
+  }
+
+  .input-checkbox {
+    flex: none;
+    margin-right: var(--spacing-default);
+  }
+
+  .delete-from-shakes-form {
+    flex: none;
+    margin-right: var(--spacing-default);
+  }
+}
+
+/**
+ * Permalink Social
+ */
+
+.permalink-social {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    flex: none;
+
+    + li {
+      margin-left: var(--spacing-default);
+    }
+  }
+
+  a {
+    display: block;
+
+    &:hover,
+    &:focus {
+      opacity: 0.66;
+    }
+  }
+
+  img {
+    display: block;
+  }
+
+  .tumblr a {
+    background-color: #001935;
+    display: flex;
+    height: 21px;
+    width: 21px;
+
+    img {
+      height: 12px;
+      margin: auto;
+      width: 9px;
+    }
   }
 }
