@@ -1,10 +1,19 @@
 module.exports = {
   extends: [
-    // TODO: stop using cloud four's config
-    'plugin:@cloudfour/recommended',
+    'eslint:recommended',
     'plugin:mdx/recommended',
     'plugin:prettier/recommended',
   ],
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    ecmaFeatures: { jsx: true },
+  },
   plugins: ['react'],
   settings: {
     node: {
