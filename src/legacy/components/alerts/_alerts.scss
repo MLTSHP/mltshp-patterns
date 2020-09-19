@@ -1,0 +1,56 @@
+@use '../../../base/core';
+
+.alert {
+  background: var(--color-page-bg-secondary);
+  font-size: 0.9rem;
+  line-height: 1.25;
+  padding: var(--spacing-half-again);
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+//
+// Alert with a Marquee
+//
+.alert--marquee {
+  padding: 0;
+
+  marquee {
+    padding: var(--spacing-half-again);
+  }
+}
+
+//
+// Warning Alert
+//
+.alert--warning {
+  background: var(--color-bg-warning-pastel);
+  color: var(--color-warning);
+}
+
+//
+// Danger Alert
+//
+.alert--danger {
+  background: var(--color-bg-danger-pastel);
+  color: var(--color-danger);
+
+  a {
+    @extend .link--danger;
+  }
+}
+
+//
+// Migration Reminder Alert
+//
+.migration-reminder {
+  @extend .alert;
+  @extend .alert--warning;
+  font-weight: var(--font-weight-bold);
+}

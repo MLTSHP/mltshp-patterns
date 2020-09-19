@@ -22,27 +22,34 @@
 @use 'init/vars';
 
 //
-// BASE
-// limited to native HTML elements and a few global classes
+// THEMES
+// a collection of custom properties that can be overridden to create
+// color schemes, like dark mode
 //
-@use 'base/core';
-@use 'base/media';
-@use 'base/helpers';
-@use 'base/typography';
 @use 'themes/light';
 @use 'themes/dark';
 @use 'themes/blue';
 
 //
+// BASE
+// limited to native HTML elements and a few global classes
+//
+@use 'base/core';
+@use 'base/media';
+@use 'base/typography';
+@use 'base/helpers';
+
+//
 // LAYOUT
 // page layout and non-component layout helpers
 //
-@use 'layout/page';
+@use 'legacy/layout/page';
 
 //
 // LEGACY COMPONENTS
 // small & self-contained, not reliant on other files
 //
+@use "legacy/components/alerts/alerts";
 @use "legacy/components/bookmark/bookmark";
 @use "legacy/components/buttons/buttons";
 @use "legacy/components/choose-a-shake/choose-a-shake";
@@ -72,7 +79,7 @@
 @use "legacy/components/user-nav/user-nav";
 
 //
-// AREAS
+// LEGACY AREAS
 // page-specific styles
 //
 // TODO: should be refactored into smaller self-contained components

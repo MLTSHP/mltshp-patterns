@@ -2,6 +2,10 @@
 @use '../../../base/core';
 @use '../buttons/buttons';
 
+// TODO: standardize comment styles
+// TODO: add CSS docblocks
+// TODO: add MDX story documentation
+
 /**
  * Following
  */
@@ -547,8 +551,8 @@
 .shake-details-title {
   color: var(--color-page-text-secondary);
   font-size: 0.875rem;
-  margin-top: var(--spacing-triple);
   margin-bottom: var(--spacing-half);
+  margin-top: var(--spacing-triple);
   padding-left: var(--spacing-half-again);
 }
 

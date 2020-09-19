@@ -1,0 +1,40 @@
+import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
+import alertMarkup from './examples/alert.html';
+import dangerMarkup from './examples/danger.html';
+import warningMarkup from './examples/warning.html';
+import marqueeMarkup from './examples/marquee.html';
+import reminderMarkup from './examples/reminder.html';
+
+<Meta title="Legacy/Components/Alerts" />
+
+# Alerts
+
+## Alert
+
+<Canvas>
+  <Story name="Alert">{() => alertMarkup}</Story>
+</Canvas>
+
+## Marquee
+
+<Canvas>
+  <Story name="Marquee">{() => marqueeMarkup}</Story>
+</Canvas>
+
+## Danger
+
+<Canvas>
+  <Story name="Danger">{() => dangerMarkup}</Story>
+</Canvas>
+
+## Warning
+
+<Canvas>
+  <Story name="Warning">{() => warningMarkup}</Story>
+</Canvas>
+
+## Reminder
+
+<Canvas>
+  <Story name="Reminder">{() => reminderMarkup}</Story>
+</Canvas>
