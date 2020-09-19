@@ -1,5 +1,10 @@
 @use "../design-tokens/colors.yml";
 
+//
+// Light Mode
+// This is the default theme for the site. Can also be applied via `.t-light` or
+// automatically via the `prefers-color-scheme` media query.
+//
 @mixin lightmode() {
   --color-page-bg: var(--color-page-bg-light);
   --color-page-bg-secondary: var(--color-gray-100);
@@ -12,7 +17,7 @@
   --letter-spacing: normal;
   --color-bg-primary-brand-pastel: var(--color-primary-brand-pastel-light);
   --color-bg-secondary-brand-pastel: var(--color-page-bg-blue);
-  --color-bg-success-pastel: #dfffcb;
+  --color-bg-success-pastel: #dfffcb; // TODO: make this a token
   --color-bg-danger-pastel: var(--color-danger-pastel-light);
   --color-bg-warning-pastel: var(--color-highlight);
 }

@@ -17,7 +17,7 @@ iframe {
 // Set `style="--aspect-ratio: 0.5625"` on the container,
 // where `0.5625` is the embed's height divided by width.
 //
-// @see https://css-tricks.com/responsive-iframes/
+// @see https://css-tricks.com/?p=293158
 //
 .data-wrapper,
 [style*='--aspect-ratio'] {
@@ -38,7 +38,8 @@ iframe {
   }
 }
 
-// legacy
+// legacy classname
+// TODO: add more useful utility classes like `.u-aspect-ratio--16x9`
 .data-wrapper::before {
   padding-bottom: 56.25%;
 }

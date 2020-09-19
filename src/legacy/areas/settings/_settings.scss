@@ -1,10 +1,9 @@
 @use '../../../base/core';
 @use "../../components/page-header/_page-header";
 
-/* ----------------------------------------------
-  Area: Settings
----------------------------------------------- */
-
+//
+// Area: Settings
+//
 .settings-header {
   @extend .account-header;
   align-items: center;
@@ -98,10 +97,9 @@
   }
 }
 
-/**
- * Account Page
- */
-
+//
+// Account Page
+//
 .settings-subscription-sidebar {
   h4 {
     border-bottom: 1px dashed var(--color-border-default);
@@ -166,10 +164,9 @@
   }
 }
 
-/**
- * Profile Page
- */
-
+//
+// Profile Page
+//
 .settings-body-content {
   .fun-form {
     margin-top: 0;
@@ -237,9 +234,9 @@
   }
 }
 
-/**
- * Connections Page
- */
+//
+// Connections Page
+//
 .settings-body-connections {
   display: block; // disable flex layout
 

@@ -1,5 +1,6 @@
 module.exports = {
   extends: [
+    // TODO: stop using cloud four's config
     'plugin:@cloudfour/recommended',
     'plugin:mdx/recommended',
     'plugin:prettier/recommended',

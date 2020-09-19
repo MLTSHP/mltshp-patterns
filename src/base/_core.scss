@@ -1,6 +1,5 @@
 //
 // Core Styles for Native HTML Elements
-//
 // This partial should only contain styles for the basic native HTML elements.
 //
 *,
@@ -19,6 +18,7 @@ body {
 }
 
 // workaround to stop storybook iframes from scrolling if components have margin
+// TODO: find a way to scope this to Storybook only, move to a Storybook stylesheet.
 /* stylelint-disable-next-line selector-max-id */
 #root {
   border-bottom: 1px solid transparent;
@@ -41,6 +41,7 @@ a {
 
 // Primary color link modifier
 // often used via @extend
+// TODO: replace with mixin
 .link--primary {
   color: var(--color-text-link-primary);
   font-weight: var(--font-weight-bold);

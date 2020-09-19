@@ -49,7 +49,7 @@
   }
 }
 
-/* stretch the last item in the nav */
+// stretch the last item in the nav
 .site-nav--upload,
 .site-nav--signup {
   @media screen and (min-width: 768px) {
@@ -63,7 +63,7 @@
   display: block;
 }
 
-/* sign up button call-out text */
+// sign up button call-out text
 .site-nav--signup .call-out {
   color: var(--color-page-text-secondary);
   display: none;

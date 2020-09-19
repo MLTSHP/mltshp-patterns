@@ -6,14 +6,14 @@ button {
 }
 
 //
-// Buttons
+// Buttons and Labels
+// The button styles can also be applied to non-interactive labels like tags
 //
 .btn,
 .label {
   border: none;
   border-radius: 0.5em;
   color: var(--color-text-light-emphasis);
-  cursor: pointer;
   display: inline-block;
   font-size: 18px;
   font-weight: 500;
@@ -31,20 +31,23 @@ button {
   white-space: nowrap;
 }
 
-.label {
-  cursor: default;
+.btn {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--color-text-light-emphasis);
+  }
+
+  &:focus {
+    outline: none; // this is safe because we've ensured good focus styles
+  }
 }
 
-.btn:hover,
-.btn:focus {
-  color: var(--color-text-light-emphasis);
-}
-
-.btn:focus {
-  outline: none; // this is safe because we've ensured good focus styles
-}
-
-// buttons with muted colors
+//
+// Pastel modifier
+// Buttons with muted colors
+//
 .btn-pastel,
 .label-pastel {
   font-weight: 600;
@@ -52,20 +55,28 @@ button {
   text-shadow: none;
 }
 
-// buttons with shadows
+//
+// Shadow modifier
+// Buttons with a drop shadow
+//
 .btn-shadow {
   box-shadow: 0.22em 0.22em 0 var(--color-black-transparent-100);
   margin-right: 0.22em;
 }
 
-// buttons with extra padding
+//
+// Padded modifier
+// Buttons with a little cushion for the pushin'
+//
 .btn-padded {
   height: 2.6em;
   line-height: 2.6em;
   padding: 0 1.25em;
 }
 
-// button size variations
+//
+// Size modifiers
+//
 .btn-large,
 .label-large {
   font-size: 24px;
@@ -98,7 +109,10 @@ button {
   font-weight: 500;
 }
 
-// buttons that only contain an icon
+//
+// Icon modifier
+// Buttons that only contain an icon
+//
 .btn-icon {
   padding: 0;
   width: 2.2em;
@@ -109,7 +123,10 @@ button {
   width: 2.6em;
 }
 
-// Primary: Provides extra visual weight and identifies the primary action in a set of buttons
+//
+// Primary modifier
+// Provides extra visual weight and identifies the primary action in a set of buttons
+//
 .btn-primary,
 .label-primary {
   background-color: var(--color-primary-brand);
@@ -132,7 +149,10 @@ button {
   color: var(--color-text-light-emphasis);
 }
 
-// Secondary: De-emphasizes and identifies secondary actions in a set of buttons
+//
+// Secondary modifier
+// De-emphasizes and identifies secondary actions in a set of buttons
+//
 .btn-secondary,
 .label-secondary {
   background-color: var(--color-secondary-brand);
@@ -155,7 +175,10 @@ button {
   color: var(--color-text-light-emphasis);
 }
 
-// Success: Indicates a successful or positive action
+//
+// Success modifier
+// Indicates a successful or positive action
+//
 .btn-success,
 .label-success {
   background-color: var(--color-success);
@@ -178,7 +201,10 @@ button {
   color: var(--color-text-light-emphasis);
 }
 
-// Warning: Indicates caution should be taken with this action
+//
+// Warning modifier
+// Indicates caution should be taken with this action
+//
 .btn-warning,
 .label-warning {
   background-color: var(--color-warning);
@@ -201,7 +227,10 @@ button {
   color: var(--color-text-light-emphasis);
 }
 
-// Danger: Indicates a dangerous or potentially negative action
+//
+// Danger modifier
+// Indicates a dangerous or potentially negative action
+//
 .btn-danger,
 .label-danger {
   background-color: var(--color-danger);
@@ -224,7 +253,10 @@ button {
   color: var(--color-text-light-emphasis);
 }
 
-// Disabled: buttons that cannot be used
+//
+// Disabled modifier
+// Buttons that cannot be used
+//
 .btn:disabled {
   background-color: var(--color-disabled) !important;
   color: var(--color-text-light) !important;

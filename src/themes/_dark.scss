@@ -1,5 +1,13 @@
 @use "../design-tokens/colors.yml";
 
+//
+// Dark Mode
+// A lovely dark mode theme. Can be applied via `.t-dark` or automatically
+// via the `prefers-color-scheme` media query.
+//
+// 1. Use a lighter font weight and increased letter-spacing
+//    @see https://css-tricks.com/?p=306566
+//
 @mixin darkmode() {
   --color-page-bg: var(--color-page-bg-dark);
   --color-page-bg-secondary: var(--color-gray-900);
@@ -7,9 +15,9 @@
   --color-page-text-emphasis: var(--color-text-light-emphasis);
   --color-page-text-secondary: var(--color-text-light-secondary);
   --color-border-default: var(--color-gray-700);
-  --font-weight-bold: 600;
-  --font-weight-normal: 300;
-  --letter-spacing: 0.025em;
+  --font-weight-bold: 600; // 1
+  --font-weight-normal: 300; // 1
+  --letter-spacing: 0.025em; // 1
   --color-bg-primary-brand-pastel: #{rgba(colors.$color-primary-brand, 0.1)};
   --color-bg-secondary-brand-pastel: #{rgba(colors.$color-secondary-brand, 0.1)};
   --color-bg-success-pastel: #{rgba(colors.$color-success, 0.1)};

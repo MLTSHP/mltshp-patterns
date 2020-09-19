@@ -1,6 +1,8 @@
 @use '../../../base/core';
 
-/* Styles for the /tools Picker */
+//
+// Styles for the /tools Picker
+//
 .tools-page {
   margin: var(--spacing-default);
 
@@ -77,8 +79,9 @@
     }
   }
 
-  /* Override fun-form for tools area */
-
+  //
+  // Override fun-form for tools area
+  //
   .tools-fun-form {
     margin-top: 0;
 
@@ -87,8 +90,9 @@
     }
   }
 
-  /* Success Page */
-
+  //
+  // Success Page
+  //
   .tools-saved-it {
     background: svg-load('illustrations/tools-saved-it.svg') 0 0 no-repeat;
     background-size: contain;
@@ -101,8 +105,9 @@
     }
   }
 
-  /* Sign-in page */
-
+  //
+  // Sign-in page
+  //
   .content-sign-in {
     margin-top: var(--spacing-double);
 
@@ -133,9 +138,10 @@
     }
   }
 
-  /* Unverified Email page,
-     Over Upload Limit page */
-
+  //
+  // Unverified Email page,
+  // Over Upload Limit page
+  //
   .email-unverified h2,
   .over-upload-limit h2 {
     color: var(--color-primary-brand);

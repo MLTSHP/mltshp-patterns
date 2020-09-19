@@ -1,6 +1,7 @@
 //
 // Break Word
 // Used to prevent lengthy text strings from breaking layout
+// @see https://css-tricks.com/?p=16145
 //
 @mixin breakword() {
   overflow-wrap: break-word;
@@ -8,6 +9,11 @@
   word-wrap: break-word;
 }
 
+//
+// Line Clamping
+// Truncates text at a specified number of lines
+// @see https://css-tricks.com/?p=270051
+//
 @mixin clamp($lines) {
   // stylelint-disable property-no-vendor-prefix, value-no-vendor-prefix
   -webkit-box-orient: vertical;

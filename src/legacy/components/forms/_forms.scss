@@ -21,14 +21,14 @@ textarea {
   width: 100%;
 }
 
-/* ---------------------------------------------------------------------
-  Fun Form Layout
---------------------------------------------------------------------- */
+//
+// Fun Form Layout
+//
 .fun-form {
   margin-top: 20px;
 }
 
-/* form row */
+// form row
 .fun-form .field {
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@ textarea {
   margin-top: 1em;
 }
 
-/* form field label */
+// form field label
 .fun-form label {
   display: block;
   flex: none;
@@ -48,12 +48,12 @@ textarea {
   margin-bottom: 5px;
 }
 
-/* form field wrapper */
+// form field wrapper
 .fun-form .field-input {
   flex: 1;
 }
 
-/* form rows that don't need flex layout */
+// form rows that don't need flex layout
 .fun-form .field-help,
 .fun-form .field-submit {
   display: block;
@@ -77,18 +77,18 @@ textarea {
     flex-basis: 100%;
   }
 
-  /* form rows that need indenting to match label */
+  // form rows that need indenting to match label
   .fun-form .field-help,
   .fun-form .field-submit {
     padding-left: 200px;
   }
 }
 
-/* ---------------------------------------------------------------------
-  Fun Form Field Styles
---------------------------------------------------------------------- */
+//
+// Fun Form Field Styles
+//
 
-/* text-y inputs */
+// text-y inputs
 .fun-form .input-text,
 .fun-form textarea {
   // stylelint-disable property-no-vendor-prefix
@@ -117,34 +117,34 @@ textarea {
   resize: none;
 }
 
-/* dropdowns */
+// dropdowns
 .fun-form select {
   width: 100%;
 }
 
-/* checkboxes & radio buttons */
+// checkboxes & radio buttons
 .fun-form [type='checkbox'],
 .fun-form [type='radio'] {
   margin-right: 0.5em;
 }
 
-/* help text */
+// help text
 .fun-form .field-help {
   color: #666666;
   margin-top: 0.5em;
 }
 
-/* ---------------------------------------------------------------------
-  Fun Form Errors
---------------------------------------------------------------------- */
+//
+// Fun Form Errors
+//
 
-/* List of Errors that usually lives at the top */
+// List of Errors that usually lives at the top
 .fun-form-errors {
   color: #cc0000;
   font-size: 18px;
 }
 
-/* error balloon */
+// error balloon
 .fun-form .field .error {
   background: #aaf3ff;
   border-radius: 33% 25px;
@@ -179,9 +179,9 @@ textarea {
   }
 }
 
-/* ---------------------------------------------------------------------
-  Stacked Fun Form Modifier
---------------------------------------------------------------------- */
+//
+// Stacked Fun Form Modifier
+//
 
 .fun-form-stacked .field {
   display: block;
@@ -198,11 +198,11 @@ textarea {
   padding-left: 0;
 }
 
-/* ---------------------------------------------------------------------
-  Field with Prefix
-  TODO: this should be abstracted into a reusable class
---------------------------------------------------------------------- */
-// stylelint-disable selector-max-id
+//
+// Field with Prefix
+// TODO: this should be abstracted into a reusable class
+//
+/* stylelint-disable selector-max-id */
 #create-shake-name-field,
 .field-prefix {
   .fun-form-stacked & {
@@ -220,3 +220,4 @@ textarea {
     margin-right: 0.5em;
   }
 }
+/* stylelint-enable */

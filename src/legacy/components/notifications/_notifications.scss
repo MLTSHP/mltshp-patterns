@@ -1,14 +1,9 @@
 @use '../../../base/core';
 @use '../../../init/mixins';
 
-/* ----------------------------------------------
-  Area: Dashboard
----------------------------------------------- */
-
-/**
- * Notification Block
- */
-
+//
+// Notification Block
+//
 .notification-block {
   background: var(--color-page-bg-secondary);
   border-radius: var(--border-radius-large);
@@ -78,10 +73,9 @@
   }
 }
 
-/**
- * Notificiation Block Styles
- */
-
+//
+// Notificiation Block Color Modifiers
+//
 .notification-block-follow {
   background-color: var(--color-bg-secondary-brand-pastel);
   color: var(--color-primary-brand);
@@ -122,15 +116,17 @@
   color: var(--color-primary-brand);
 }
 
-/* Notification block for new followers */
-
+//
+// Notification block for new followers
+//
 .notification-block-follow .notification {
   padding-right: var(--spacing-triple);
 }
 
-/* Shake Invitation Notifications */
-
-// stylelint-disable-next-line no-duplicate-selectors
+//
+// Shake Invitation Notifications
+//
+/* stylelint-disable-next-line no-duplicate-selectors */
 .notification-block-shakeinvitation {
   .shake-thumb {
     float: left;
@@ -162,8 +158,9 @@
   }
 }
 
-/* Shake Invitation Request Notifications */
-
+//
+// Shake Invitation Request Notifications
+//
 .notification-block-invitation-request .notification a {
   @extend .link--primary;
 }
@@ -175,8 +172,9 @@
   margin-top: var(--spacing-default);
 }
 
-/* Site Announcement Notifications */
-
+//
+// Site Announcement Notifications
+//
 .notification-block-tou .notification-block-link a {
   color: var(--color-page-text-emphasis);
 

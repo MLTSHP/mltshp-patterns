@@ -1,6 +1,7 @@
 @use '../../../init/mixins';
 
 // this is not ideal. we should not be overriding sidebar styles without a class. - SV
+// TODO: refactor this
 .content-conversations {
   .sidebar h3 {
     color: var(--color-page-text);

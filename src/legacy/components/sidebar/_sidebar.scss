@@ -2,14 +2,12 @@
 @use '../../../base/core';
 @use '../buttons/buttons';
 
-// TODO: standardize comment styles
 // TODO: add CSS docblocks
 // TODO: add MDX story documentation
 
-/**
- * Following
- */
-
+//
+// Following
+//
 .following-wrapper {
   margin: var(--spacing-double) 0;
 
@@ -73,10 +71,9 @@
   }
 }
 
-/**
- * Other Shakes
- */
-
+//
+// Other Shakes
+//
 .other-shakes-wrapper {
   margin-bottom: var(--spacing-double);
 
@@ -108,10 +105,9 @@
   }
 }
 
-/**
- * Find Shakes Block
- */
-
+//
+// Find Shakes Block
+//
 .find-shakes-block {
   background-color: var(--color-bg-secondary-brand-pastel);
   border-radius: var(--border-radius-large);
@@ -141,10 +137,9 @@
   }
 }
 
-/**
- * Upgrade Account Block
- */
-
+//
+// Upgrade Account Block
+//
 .upgrade-account-block {
   background-color: var(--color-bg-success-pastel);
   border-radius: var(--border-radius-large);
@@ -173,10 +168,9 @@
   }
 }
 
-/**
- * Cool Tools Block
- */
-
+//
+// Cool Tools Block
+//
 .cool-tools-block {
   background: var(--color-page-bg-secondary);
   border-radius: var(--border-radius-large);
@@ -239,10 +233,9 @@
   }
 }
 
-/**
- * Shake Invite Member Block
- */
-
+//
+// Shake Invite Member Block
+//
 .shake-invite-member-block {
   background-color: var(--color-primary-brand);
   border-radius: var(--border-radius-large);
@@ -324,10 +317,9 @@
   }
 }
 
-/**
- * Shake Sidebar Actions
- */
-
+//
+// Shake Sidebar Actions
+//
 .shake-sidebar-actions {
   display: flex;
   margin-bottom: var(--spacing-double);
@@ -348,10 +340,9 @@
   }
 }
 
-/**
- * Shake Editor
- */
-
+//
+// Shake Editor
+//
 .shake-sidebar-editor-block {
   align-items: center;
   background: var(--color-page-bg-secondary);
@@ -382,9 +373,9 @@
   }
 }
 
-/**
- * Sidebar NSFW Flag
- */
+//
+// Sidebar NSFW Flag
+//
 .sidebar-flag-nsfw {
   margin-top: var(--spacing-triple);
 
@@ -397,10 +388,9 @@
   }
 }
 
-/**
- * Sidebar Flag Image as NSFW
- */
-
+//
+// Sidebar Flag Image as NSFW
+//
 .flag-image {
   @extend .btn;
   @extend .btn-small;
@@ -418,10 +408,9 @@
   }
 }
 
-/**
- * Delete Post
- */
-
+//
+// Delete Post
+//
 .delete-post-text {
   @extend .btn;
   @extend .btn-small;
@@ -430,10 +419,9 @@
   margin-top: var(--spacing-triple);
 }
 
-/**
- * Sidebar Stats
- */
-
+//
+// Sidebar Stats
+//
 .sidebar-stats {
   background-color: var(--color-bg-secondary-brand-pastel);
   border-radius: var(--border-radius-large);
@@ -521,10 +509,9 @@
   }
 }
 
-/**
- * Metadata
- */
-
+//
+// Metadata
+//
 .meta-data {
   margin-top: var(--spacing-triple);
 
@@ -544,10 +531,9 @@
   }
 }
 
-/**
- * In These Shakes
- */
-
+//
+// In These Shakes
+//
 .shake-details-title {
   color: var(--color-page-text-secondary);
   font-size: 0.875rem;
@@ -592,10 +578,9 @@
   }
 }
 
-/**
- * Permalink Social
- */
-
+//
+// Permalink Social
+//
 .permalink-social {
   display: flex;
   list-style: none;

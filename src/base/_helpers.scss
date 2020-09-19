@@ -2,9 +2,7 @@
 
 //
 // Global Utility Classes
-//
 // There shouldn't be much here, as we prefer component-specific classes.
-//
 // TODO: refactor these, rename most to `u-whatever` convention
 //
 
@@ -27,7 +25,7 @@
   clear: both;
 }
 
-/* advertisements */
+// advertisements
 .adblockthis {
   margin-bottom: 20px;
   margin-left: 60px;
@@ -63,9 +61,6 @@
   object-fit: cover;
 }
 
-/* ---------------------------------------------------------------------
-  Carets
---------------------------------------------------------------------- */
 .caret {
   border: 0.5em solid transparent;
   border-top-color: currentColor;
@@ -81,9 +76,7 @@
   }
 }
 
-/* ---------------------------------------------------------------------
-  Styleguide
---------------------------------------------------------------------- */
+// Styleguide
 .panel--example {
   margin: 0.25em 0 1em;
 }

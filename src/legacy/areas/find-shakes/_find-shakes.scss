@@ -2,10 +2,9 @@
 @use '../../../init/mixins';
 @use "../../components/page-header/_page-header";
 
-/* ----------------------------------------------
-  Area: Tools - Find Shakes
----------------------------------------------- */
-
+//
+// Area: Tools - Find Shakes
+//
 .content-find-shakes {
   .header {
     @extend .account-header;
