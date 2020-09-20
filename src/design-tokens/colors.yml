@@ -12,6 +12,7 @@ aliases:
   green_dark: '#079378'
   green_pastel_dark: '#0caf8b'
   green_pastel_light: '#b9ff8d'
+  green_pastel_very_light: '#dfffcb'
   orange: '#ff9600'
   orange_dark: '#cc7800'
   orange_pastel_dark: '#ff9600'
@@ -83,6 +84,9 @@ props:
     category: status-color
   - name: color_success_dark
     value: '{!green_dark}'
+    category: status-color
+  - name: color_success_pastel_very_light
+    value: '{!green_pastel_very_light}'
     category: status-color
   - name: color_success_pastel_light
     value: '{!green_pastel_light}'

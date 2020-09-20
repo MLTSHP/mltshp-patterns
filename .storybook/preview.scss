@@ -1,10 +1,14 @@
 // Foundational styles
 @use "../src/index";
 
+//
 // Tweaks for story display can start here
 // All these overrides are necessary for Docs to inherit the dark mode theme
 // from Storybook. If storybook-dark-mode or docs theming ever gets smarter,
 // we can remove most of these.
+// @see https://github.com/hipstersmoothie/storybook-dark-mode/issues/70
+// @see https://github.com/storybookjs/storybook/issues/10523
+//
 .sbdocs.sbdocs-wrapper {
   background-color: var(--color-page-bg);
   color: var(--color-page-text);
