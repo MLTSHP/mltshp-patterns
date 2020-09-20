@@ -13312,7 +13312,7 @@ storybook-addon-themes@6.0.0:
     global "^4.4.0"
     memoizerific "^1.11.3"
 
-storybook-dark-mode@^1.0.3:
+storybook-dark-mode@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-1.0.3.tgz#8d58a874b6107ff1a7f29ebb0e6726b8036eee08"
   integrity sha512-mjHLrv/dwtqKmbOoQ2CMtGKDttWSnUybutujsIPxLcEC77EujjWiRBFv46LtXAZEyZLm8sGFUz0s6HJJfJ3tSw==
