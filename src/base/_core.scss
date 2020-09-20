@@ -17,14 +17,6 @@ body {
   min-height: 100vh; // This might be a bad idea, but it keeps the background in storybook
 }
 
-// workaround to stop storybook iframes from scrolling if components have margin
-// TODO: find a way to scope this to Storybook only, move to a Storybook stylesheet.
-/* stylelint-disable-next-line selector-max-id */
-#root {
-  border-bottom: 1px solid transparent;
-  border-top: 1px solid transparent;
-}
-
 a {
   color: var(--color-text-link);
   text-decoration-color: var(--color-text-link-underline);
