@@ -9,7 +9,7 @@ sass.compiler = require('sass');
 const outDir = 'dist';
 
 const buildSass = () => {
-  return src('./src/main.scss')
+  return src('./src/index.scss')
     .pipe(
       sass({
         importer: [
@@ -19,6 +19,7 @@ const buildSass = () => {
         ],
       }).on('error', sass.logError)
     )
+    .pipe(postcss())
     .pipe(rename({ basename: 'mltshp' }))
     .pipe(dest(outDir))
     .pipe(postcss([cssnano()]))

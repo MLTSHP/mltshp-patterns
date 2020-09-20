@@ -1,17 +1,13 @@
 @use '../../../init/mixins';
 
-// this is not ideal. we should not be overriding sidebar styles without a class. - SV
-// TODO: refactor this
-.content-conversations {
-  .sidebar h3 {
+.conversations-nav {
+  h3 {
     color: var(--color-page-text);
     font-size: 1.125rem;
     margin-bottom: var(--spacing-half-again);
     margin-top: var(--spacing-triple);
   }
-}
 
-.conversations-nav {
   ul {
     list-style: none;
     margin: 0;
