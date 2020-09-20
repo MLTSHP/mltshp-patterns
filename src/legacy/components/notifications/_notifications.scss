@@ -36,6 +36,7 @@
     padding: var(--spacing-default);
     position: relative;
 
+    // TODO: refactor away from float layout so we can remove the clearfix
     &::after {
       clear: both;
       content: '';

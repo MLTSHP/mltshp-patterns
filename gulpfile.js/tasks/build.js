@@ -4,13 +4,6 @@ const sass = require('gulp-sass');
 const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
-
-const rollup = require('rollup');
-const path = require('path');
-const multiEntry = require('@rollup/plugin-multi-entry');
-const nodeResolve = require('@rollup/plugin-node-resolve').default;
-const { terser } = require('rollup-plugin-terser');
-
 sass.compiler = require('sass');
 
 const outDir = 'dist';
@@ -26,37 +19,14 @@ const buildSass = () => {
         ],
       }).on('error', sass.logError)
     )
-    .pipe(rename({ basename: 'standalone' }))
+    .pipe(rename({ basename: 'mltshp' }))
     .pipe(dest(outDir))
     .pipe(postcss([cssnano()]))
     .pipe(rename({ extname: '.min.css' }))
     .pipe(dest(outDir));
 };
 
-const buildJS = async () => {
-  const pathName = 'mltshp-patterns';
-  const globalName = 'mltshpPatterns';
-  const bundle = await rollup.rollup({
-    input: 'src/{objects,components}/**/*.js',
-    plugins: [multiEntry(), nodeResolve()],
-  });
-  await Promise.all([
-    bundle.write({ format: 'esm', file: path.join(outDir, `${pathName}.mjs`) }),
-    bundle.write({
-      format: 'umd',
-      name: globalName,
-      file: path.join(outDir, `${pathName}.js`),
-    }),
-    bundle.write({
-      format: 'umd',
-      name: globalName,
-      file: path.join(outDir, `${pathName}.min.js`),
-      plugins: [terser()],
-    }),
-  ]);
-};
-
-const build = parallel(buildSass, buildJS);
+const build = parallel(buildSass);
 
 // Expose to Gulp
 module.exports = build;
