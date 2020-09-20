@@ -2,3 +2,115 @@
 @use "../src/index";
 
 // Tweaks for story display can start here
+// All these overrides are necessary for Docs to inherit the dark mode theme
+// from Storybook. If storybook-dark-mode or docs theming ever gets smarter,
+// we can remove most of these.
+.sbdocs.sbdocs-wrapper {
+  background-color: var(--color-page-bg);
+  color: var(--color-page-text);
+
+  .sbdocs-h1,
+  .sbdocs-h2,
+  .sbdocs-h3,
+  .sbdocs-h4,
+  .sbdocs-h5,
+  .sbdocs-h6,
+  .sbdocs-p,
+  .sbdocs-li,
+  .sbdocs-blockquote {
+    color: var(--color-page-text);
+  }
+
+  .sbdocs-p {
+    code {
+      background-color: var(--color-page-bg-secondary);
+      border-color: var(--color-border-default);
+      color: var(--color-page-text);
+    }
+  }
+
+  .sbdocs-h2,
+  .sbdocs-blockquote {
+    border-color: var(--color-border-default);
+  }
+
+  .sbdocs-a {
+    color: var(--color-text-link);
+    text-decoration-color: var(--color-text-link-underline);
+    transition: background-color var(--speed-quick) ease,
+      color var(--speed-quick) ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-text-link-hover);
+      text-decoration-color: var(--color-text-link-underline-hover);
+    }
+  }
+
+  .sbdocs-table {
+    tr {
+      background-color: var(--color-page-bg);
+
+      &:nth-of-type(2n) {
+        background-color: var(--color-page-bg-secondary);
+      }
+    }
+
+    th,
+    td {
+      border-color: var(--color-border-default);
+      color: var(--color-page-text);
+    }
+  }
+
+  .sbdocs-preview,
+  .docblock-source {
+    background-color: var(--color-page-bg);
+    border-color: var(--color-border-default);
+    color: var(--color-page-text);
+  }
+
+  // "show code" button
+  .css-11xgcgt,
+  .css-1imo1gr {
+    background-color: var(--color-page-bg);
+    border-color: var(--color-border-default);
+    color: var(--color-page-text);
+  }
+
+  .docblock-icongallery {
+    // icon
+    .css-15erloe {
+      background-color: var(--color-page-bg);
+      border-color: var(--color-border-default);
+    }
+
+    // label
+    .css-87agpt {
+      color: var(--color-page-text);
+    }
+  }
+
+  .docblock-colorpalette {
+    // headings
+    .css-syxe49 {
+      color: var(--color-page-text-secondary);
+    }
+
+    // label
+    .css-1cic1f4 {
+      color: var(--color-page-text);
+    }
+
+    // caption
+    .css-ku8wft {
+      color: var(--color-page-text-secondary);
+    }
+
+    // swatch
+    .css-16trhe4 {
+      border-color: var(--color-border-default);
+    }
+  }
+}
