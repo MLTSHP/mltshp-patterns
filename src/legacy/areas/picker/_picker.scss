@@ -1,4 +1,4 @@
-@use '../../../base/core';
+@use '../../../base/links';
 
 //
 // Styles for the /tools Picker
@@ -27,7 +27,8 @@
     text-align: right;
 
     a {
-      @extend .link--primary;
+      @include links.link--primary();
+      @include links.link--emphasized();
     }
 
     img {

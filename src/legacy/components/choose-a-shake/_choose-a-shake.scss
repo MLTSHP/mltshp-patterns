@@ -1,4 +1,4 @@
-@use '../../../base/core';
+@use '../../../base/links';
 
 .choose-a-shake {
   position: relative;
@@ -65,7 +65,8 @@
     padding: 0;
 
     li a {
-      @extend .link--primary;
+      @include links.link--primary();
+      @include links.link--emphasized();
       background-color: var(--color-page-bg);
       border-radius: var(--border-radius-large);
       display: block;

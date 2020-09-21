@@ -1,11 +1,11 @@
-@use '../../../base/core';
+@use '../../../base/links';
 @use "../../components/page-header/_page-header";
 
 //
 // Area: Settings
 //
 .settings-header {
-  @extend .account-header;
+  @include page-header.page-header();
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -54,7 +54,8 @@
   }
 
   a {
-    @extend .link--primary;
+    @include links.link--primary();
+    @include links.link--emphasized();
     border-top-left-radius: var(--border-radius-default);
     border-top-right-radius: var(--border-radius-default);
     display: block;

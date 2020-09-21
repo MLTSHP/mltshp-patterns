@@ -1,4 +1,4 @@
-@use '../../../base/core';
+@use '../../../base/links';
 @use '../../../init/mixins';
 
 //
@@ -144,7 +144,8 @@
     margin-top: var(--spacing-default);
 
     a {
-      @extend .link--primary;
+      @include links.link--primary();
+      @include links.link--emphasized();
     }
   }
 
@@ -163,7 +164,8 @@
 // Shake Invitation Request Notifications
 //
 .notification-block-invitation-request .notification a {
-  @extend .link--primary;
+  @include links.link--primary();
+  @include links.link--emphasized();
 }
 
 .notification-block-invitation-request .notification-actions {

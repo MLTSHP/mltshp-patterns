@@ -1,6 +1,6 @@
 @use '../../../init/mixins';
 
-.account-header {
+@mixin page-header() {
   background: linear-gradient(
     to bottom,
     var(--color-white-transparent),
@@ -37,4 +37,8 @@
       font-size: 2.625rem; // 42px
     }
   }
+}
+
+.account-header {
+  @include page-header();
 }

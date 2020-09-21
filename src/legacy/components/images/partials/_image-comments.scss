@@ -1,4 +1,4 @@
-@use '../../../../base/core';
+@use '../../../../base/links';
 @use '../../../../init/mixins';
 
 .image-content {
@@ -15,7 +15,8 @@
       padding: var(--spacing-default);
 
       a {
-        @extend .link--primary;
+        @include links.link--primary();
+        @include links.link--emphasized();
         align-items: center;
         display: inline-flex;
         margin-right: var(--spacing-default);
@@ -87,7 +88,7 @@
       }
 
       .delete {
-        @extend .link--danger;
+        @include links.link--danger();
         background-image: svg-load('icons/delete-comment.svg');
         background-position: 0 0;
         background-repeat: no-repeat;

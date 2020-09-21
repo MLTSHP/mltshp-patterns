@@ -1,4 +1,4 @@
-@use '../../../../base/core';
+@use '../../../../base/links';
 @use '../../../../init/mixins';
 
 .image-content {
@@ -18,9 +18,7 @@
     }
 
     a {
-      @extend .link--primary;
-      font-weight: inherit;
-      text-decoration-line: underline;
+      @include links.link--primary();
     }
   }
 

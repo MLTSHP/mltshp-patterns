@@ -1,0 +1,67 @@
+a {
+  color: var(--color-text-link);
+  text-decoration-color: var(--color-text-link-underline);
+  transition: background-color var(--speed-quick) ease,
+    color var(--speed-quick) ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-link-hover);
+    text-decoration-color: var(--color-text-link-underline-hover);
+  }
+}
+
+//
+// Emphasized Links
+//
+@mixin link--emphasized() {
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+//
+// Primary color link modifier
+//
+@mixin link--primary() {
+  color: var(--color-text-link-primary);
+  text-decoration-color: var(--color-text-link-primary-underline);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-link-primary-hover);
+    text-decoration-color: var(--color-text-link-primary-underline-hover);
+  }
+}
+
+.link--primary {
+  @include link--primary();
+  @include link--emphasized();
+}
+
+//
+// Danger color link modifier
+// Use sparingly, and prefer danger buttons.
+//
+@mixin link--danger() {
+  color: var(--color-text-link-danger);
+  text-decoration-color: var(--color-text-link-danger-underline);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-text-link-danger-hover);
+    text-decoration-color: var(--color-text-link-danger-underline-hover);
+  }
+}
+
+.link--danger {
+  @include link--danger();
+}

@@ -1,6 +1,6 @@
-@use '../../../base/core';
+@use '../../../base/links';
 
-.alert {
+@mixin alert() {
   background: var(--color-page-bg-secondary);
   font-size: 0.9rem;
   line-height: 1.25;
@@ -13,6 +13,10 @@
   a {
     font-weight: var(--font-weight-bold);
   }
+}
+
+.alert {
+  @include alert();
 }
 
 //
@@ -29,28 +33,36 @@
 //
 // Warning Alert
 //
-.alert--warning {
+@mixin alert--warning() {
   background: var(--color-bg-warning-pastel);
   color: var(--color-warning);
+}
+
+.alert--warning {
+  @include alert--warning();
 }
 
 //
 // Danger Alert
 //
-.alert--danger {
+@mixin alert--danger() {
   background: var(--color-bg-danger-pastel);
   color: var(--color-danger);
 
   a {
-    @extend .link--danger;
+    @include links.link--danger();
   }
+}
+
+.alert--danger {
+  @include alert--danger();
 }
 
 //
 // Migration Reminder Alert
 //
 .migration-reminder {
-  @extend .alert;
-  @extend .alert--warning;
+  @include alert();
+  @include alert--warning();
   font-weight: var(--font-weight-bold);
 }

@@ -24,7 +24,7 @@
 }
 
 .incoming-header {
-  @extend .account-header;
+  @include page-header.page-header();
   cursor: pointer;
   padding: var(--spacing-half-again) var(--spacing-double);
 

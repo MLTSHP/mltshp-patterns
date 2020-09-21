@@ -37,9 +37,9 @@
   }
 
   .promotion-name {
-    @extend .btn;
-    @extend .btn-primary;
-    @extend .btn-shadow;
+    @include buttons.button();
+    @include buttons.button--primary();
+    @include buttons.button--shadow();
     bottom: -3.5em;
     display: none;
     font-size: 0.875rem;

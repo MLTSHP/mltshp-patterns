@@ -7,10 +7,11 @@ button {
 
 //
 // Buttons and Labels
-// The button styles can also be applied to non-interactive labels like tags
+// The button styles can also be applied to non-interactive labels like tags.
+// Note we're defining these as mixins so they can be used elsewhere as needed.
 //
-.btn,
-.label {
+@mixin label() {
+  background-color: var(--color-gray-700);
   border: none;
   border-radius: 0.5em;
   color: var(--color-text-light-emphasis);
@@ -30,8 +31,12 @@ button {
   vertical-align: middle;
   white-space: nowrap;
 }
+.label {
+  @include label();
+}
 
-.btn {
+@mixin button() {
+  @include label();
   cursor: pointer;
 
   &:hover,
@@ -42,233 +47,366 @@ button {
   &:focus {
     outline: none; // this is safe because we've ensured good focus styles
   }
+
+  &:disabled {
+    background-color: var(--color-disabled) !important;
+    color: var(--color-text-light) !important;
+    cursor: default;
+    text-shadow: none;
+  }
+}
+.btn {
+  @include button();
 }
 
 //
 // Pastel modifier
 // Buttons with muted colors
 //
-.btn-pastel,
-.label-pastel {
+@mixin button--pastel() {
   font-weight: 600;
   letter-spacing: 0.015em;
   text-shadow: none;
+
+  &:disabled {
+    background-color: var(--color-disabled-pastel-light) !important;
+    color: var(--color-disabled-pastel-dark) !important;
+  }
+}
+.btn-pastel,
+.label-pastel {
+  @include button--pastel();
 }
 
 //
 // Shadow modifier
 // Buttons with a drop shadow
 //
-.btn-shadow {
+@mixin button--shadow() {
   box-shadow: 0.22em 0.22em 0 var(--color-black-transparent-100);
   margin-right: 0.22em;
+
+  &:disabled {
+    box-shadow: none !important;
+  }
+}
+.btn-shadow {
+  @include button--shadow();
 }
 
 //
 // Padded modifier
 // Buttons with a little cushion for the pushin'
 //
-.btn-padded {
+@mixin button--padded() {
   height: 2.6em;
   line-height: 2.6em;
   padding: 0 1.25em;
+}
+.btn-padded {
+  @include button--padded();
 }
 
 //
 // Size modifiers
 //
-.btn-large,
-.label-large {
+@mixin button--large() {
   font-size: 24px;
   letter-spacing: 0.066em;
 }
-
-.btn-large.btn-pastel,
-.label-large.label-pastel {
-  letter-spacing: 0.033em;
+.btn-large,
+.label-large {
+  @include button--large();
 }
 
-.btn-small,
-.btn-tiny,
-.label-small,
-.label-tiny {
+@mixin button--large-pastel() {
+  letter-spacing: 0.033em;
+}
+.btn-large.btn-pastel,
+.label-large.label-pastel {
+  @include button--large-pastel();
+}
+
+@mixin button--small() {
   font-size: 12px;
   font-weight: 400;
 }
-
-.btn-tiny,
-.label-tiny {
-  font-size: 10px;
-  padding: 0 0.66em;
+.btn-small,
+.label-small {
+  @include button--small();
 }
 
+@mixin button--tiny() {
+  font-size: 10px;
+  font-weight: 400;
+  padding: 0 0.66em;
+}
+.btn-tiny,
+.label-tiny {
+  @include button--tiny();
+}
+
+@mixin button--small-pastel() {
+  font-weight: 500;
+}
 .btn-small.btn-pastel,
 .btn-tiny.btn-pastel,
 .label-small.label-pastel,
 .label-tiny.label-pastel {
-  font-weight: 500;
+  @include button--small-pastel();
 }
 
 //
 // Icon modifier
 // Buttons that only contain an icon
 //
-.btn-icon {
+@mixin button--icon() {
   padding: 0;
   width: 2.2em;
 }
+.btn-icon {
+  @include button--icon();
+}
 
-.btn-icon.btn-padded {
+@mixin button--icon-padded() {
   padding: 0;
   width: 2.6em;
+}
+.btn-icon.btn-padded {
+  @include button--icon-padded();
 }
 
 //
 // Primary modifier
 // Provides extra visual weight and identifies the primary action in a set of buttons
 //
-.btn-primary,
-.label-primary {
+@mixin label--primary() {
   background-color: var(--color-primary-brand);
 }
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: var(--color-primary-brand-dark);
+.label-primary {
+  @include label--primary();
 }
 
-.btn-primary.btn-pastel,
-.label-primary.label-pastel {
+@mixin button--primary() {
+  @include label--primary();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary-brand-dark);
+  }
+}
+.btn-primary {
+  @include button--primary();
+}
+
+//
+// Primary Pastel modifier
+//
+@mixin label--primary-pastel() {
   background-color: var(--color-primary-brand-pastel-light);
   color: var(--color-primary-brand-pastel-dark);
 }
+.label-primary.label-pastel {
+  @include label--primary-pastel();
+}
 
-.btn-primary.btn-pastel:hover,
-.btn-primary.btn-pastel:focus {
-  background-color: var(--color-primary-brand);
-  color: var(--color-text-light-emphasis);
+@mixin button--primary-pastel() {
+  @include label--primary-pastel();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary-brand);
+    color: var(--color-text-light-emphasis);
+  }
+}
+.btn-primary.btn-pastel {
+  @include button--primary-pastel();
 }
 
 //
 // Secondary modifier
 // De-emphasizes and identifies secondary actions in a set of buttons
 //
-.btn-secondary,
-.label-secondary {
+@mixin label--secondary() {
   background-color: var(--color-secondary-brand);
 }
-
-.btn-secondary:hover,
-.btn-secondary:focus {
-  background-color: var(--color-secondary-brand-dark);
+.label-secondary {
+  @include label--secondary();
 }
 
-.btn-secondary.btn-pastel,
-.label-secondary.label-pastel {
+@mixin button--secondary() {
+  @include label--secondary();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-secondary-brand-dark);
+  }
+}
+.btn-secondary {
+  @include button--secondary();
+}
+
+//
+// Secondary Pastel modifier
+//
+@mixin label--secondary-pastel() {
   background-color: var(--color-secondary-brand-pastel-light);
   color: var(--color-secondary-brand-pastel-dark);
 }
+.label-secondary.label-pastel {
+  @include label--secondary-pastel();
+}
 
-.btn-secondary.btn-pastel:hover,
-.btn-secondary.btn-pastel:focus {
-  background-color: var(--color-secondary-brand);
-  color: var(--color-text-light-emphasis);
+@mixin button--secondary-pastel() {
+  @include label--secondary-pastel();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-secondary-brand);
+    color: var(--color-text-light-emphasis);
+  }
+}
+.btn-secondary.btn-pastel {
+  @include button--secondary-pastel();
 }
 
 //
 // Success modifier
 // Indicates a successful or positive action
 //
-.btn-success,
-.label-success {
+@mixin label--success() {
   background-color: var(--color-success);
 }
-
-.btn-success:hover,
-.btn-success:focus {
-  background-color: var(--color-success-dark);
+.label-success {
+  @include label--success();
 }
 
-.btn-success.btn-pastel,
-.label-success.label-pastel {
+@mixin button--success() {
+  @include label--success();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-success-dark);
+  }
+}
+.btn-success {
+  @include button--success();
+}
+
+//
+// Success Pastel modifier
+//
+@mixin label--success-pastel() {
   background-color: var(--color-success-pastel-light);
   color: var(--color-success-pastel-dark);
 }
+.label-success.label-pastel {
+  @include label--success-pastel();
+}
 
-.btn-success.btn-pastel:hover,
-.btn-success.btn-pastel:focus {
-  background-color: var(--color-success);
-  color: var(--color-text-light-emphasis);
+@mixin button--success-pastel() {
+  @include label--success-pastel();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-success);
+    color: var(--color-text-light-emphasis);
+  }
+}
+.btn-success.btn-pastel {
+  @include button--success-pastel();
 }
 
 //
 // Warning modifier
 // Indicates caution should be taken with this action
 //
-.btn-warning,
-.label-warning {
+@mixin label--warning() {
   background-color: var(--color-warning);
 }
-
-.btn-warning:hover,
-.btn-warning:focus {
-  background-color: var(--color-warning-dark);
+.label-warning {
+  @include label--warning();
 }
 
-.btn-warning.btn-pastel,
-.label-warning.label-pastel {
+@mixin button--warning() {
+  @include label--warning();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-warning-dark);
+  }
+}
+.btn-warning {
+  @include button--warning();
+}
+
+//
+// Warning Pastel modifier
+//
+@mixin label--warning-pastel() {
   background-color: var(--color-warning-pastel-light);
   color: var(--color-warning-pastel-dark);
 }
+.label-warning.label-pastel {
+  @include label--warning-pastel();
+}
 
-.btn-warning.btn-pastel:hover,
-.btn-warning.btn-pastel:focus {
-  background-color: var(--color-warning);
-  color: var(--color-text-light-emphasis);
+@mixin button--warning-pastel() {
+  @include label--warning-pastel();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-warning);
+    color: var(--color-text-light-emphasis);
+  }
+}
+.btn-warning.btn-pastel {
+  @include button--warning-pastel();
 }
 
 //
 // Danger modifier
 // Indicates a dangerous or potentially negative action
 //
-.btn-danger,
-.label-danger {
+@mixin label--danger() {
   background-color: var(--color-danger);
 }
-
-.btn-danger:hover,
-.btn-danger:focus {
-  background-color: var(--color-danger-dark);
+.label-danger {
+  @include label--danger();
 }
 
-.btn-danger.btn-pastel,
-.label-danger.label-pastel {
+@mixin button--danger() {
+  @include label--danger();
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-danger-dark);
+  }
+}
+.btn-danger {
+  @include button--danger();
+}
+
+//
+// Danger Pastel modifier
+//
+@mixin label--danger-pastel() {
   background-color: var(--color-danger-pastel-light);
   color: var(--color-danger-pastel-dark);
 }
-
-.btn-danger.btn-pastel:hover,
-.btn-danger.btn-pastel:focus {
-  background-color: var(--color-danger);
-  color: var(--color-text-light-emphasis);
+.label-danger.label-pastel {
+  @include label--danger-pastel();
 }
 
-//
-// Disabled modifier
-// Buttons that cannot be used
-//
-.btn:disabled {
-  background-color: var(--color-disabled) !important;
-  color: var(--color-text-light) !important;
-  cursor: default;
-  text-shadow: none;
-}
+@mixin button--danger-pastel() {
+  @include label--danger-pastel();
 
-.btn.btn-pastel:disabled {
-  background-color: var(--color-disabled-pastel-light) !important;
-  color: var(--color-disabled-pastel-dark) !important;
+  &:hover,
+  &:focus {
+    background-color: var(--color-danger);
+    color: var(--color-text-light-emphasis);
+  }
 }
-
-.btn.btn-shadow:disabled {
-  box-shadow: none !important;
+.btn-danger.btn-pastel {
+  @include button--danger-pastel();
 }

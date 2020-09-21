@@ -1,4 +1,4 @@
-@use '../../../base/core';
+@use '../../../base/links';
 @use '../../../init/mixins';
 
 .new-members {
@@ -24,7 +24,8 @@
       padding-bottom: var(--spacing-half);
 
       a {
-        @extend .link--primary;
+        @include links.link--primary();
+        @include links.link--emphasized();
       }
     }
 

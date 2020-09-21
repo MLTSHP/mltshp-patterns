@@ -1,5 +1,5 @@
 @use '../../../init/mixins';
-@use '../../../base/core';
+@use '../../../base/links';
 @use '../buttons/buttons';
 
 //
@@ -16,9 +16,9 @@
     padding-right: var(--spacing-half-again);
 
     a {
-      @extend .btn;
-      @extend .btn-secondary;
-      @extend .btn-small;
+      @include buttons.button();
+      @include buttons.button--secondary();
+      @include buttons.button--small();
       float: right;
     }
 
@@ -94,7 +94,8 @@
   }
 
   a {
-    @extend .link--primary;
+    @include links.link--primary();
+    @include links.link--emphasized();
     @include mixins.breakword();
     display: block;
     font-size: 0.875rem;
@@ -156,7 +157,8 @@
     margin-bottom: var(--spacing-half);
 
     a {
-      @extend .link--primary;
+      @include links.link--primary();
+      @include links.link--emphasized();
     }
   }
 
@@ -184,7 +186,8 @@
   }
 
   a {
-    @extend .link--primary;
+    @include links.link--primary();
+    @include links.link--emphasized();
     background-color: var(--color-page-bg);
     background-position: 5px 5px;
     background-repeat: no-repeat;
@@ -192,7 +195,6 @@
     border-radius: var(--border-radius-large);
     display: block;
     font-size: 0.75rem;
-    font-weight: var(--font-weight-bold);
     padding: var(--spacing-default);
     padding-bottom: var(--spacing-double);
     padding-left: 55px;
@@ -352,7 +354,8 @@
   padding: var(--spacing-half-again);
 
   a {
-    @extend .link--primary;
+    @include links.link--primary();
+    @include links.link--emphasized();
   }
 
   .editor-image {
@@ -378,10 +381,10 @@
 
   .flag-nsfw-button,
   .unflag-nsfw-button {
-    @extend .btn;
-    @extend .btn-small;
-    @extend .btn-danger;
-    @extend .btn-pastel;
+    @include buttons.button();
+    @include buttons.button--small();
+    @include buttons.button--pastel();
+    @include buttons.button--danger-pastel();
   }
 }
 
@@ -389,10 +392,10 @@
 // Sidebar Flag Image as NSFW
 //
 .flag-image {
-  @extend .btn;
-  @extend .btn-small;
-  @extend .btn-warning;
-  @extend .btn-pastel;
+  @include buttons.button();
+  @include buttons.button--small();
+  @include buttons.button--pastel();
+  @include buttons.button--warning-pastel();
   background-image: svg-load('icons/flag.svg');
   background-position: 0.5em center;
   background-repeat: no-repeat;
@@ -409,10 +412,10 @@
 // Delete Post
 //
 .delete-post-text {
-  @extend .btn;
-  @extend .btn-small;
-  @extend .btn-danger;
-  @extend .btn-pastel;
+  @include buttons.button();
+  @include buttons.button--small();
+  @include buttons.button--pastel();
+  @include buttons.button--danger-pastel();
   margin-top: var(--spacing-triple);
 }
 
@@ -493,7 +496,8 @@
   }
 
   .name {
-    @extend .link--primary;
+    @include links.link--primary();
+    @include links.link--emphasized();
     @include mixins.breakword();
   }
 
@@ -559,7 +563,8 @@
   }
 
   a {
-    @extend .link--primary;
+    @include links.link--primary();
+    @include links.link--emphasized();
     @include mixins.breakword();
     flex: 1;
   }
