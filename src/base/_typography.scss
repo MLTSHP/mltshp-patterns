@@ -21,9 +21,6 @@ h6 {
   margin: 0;
 }
 
-// I don't love this style. Maintaining for now, but this should really be
-// a utility class for specific H1 elements to opt into. -SV
-// TODO: refactor into a utility class
 h1,
 .u-display {
   font-size: 3rem;

@@ -67,7 +67,7 @@
     li a {
       @include links.link--primary();
       @include links.link--emphasized();
-      background-color: var(--color-page-bg);
+      background-color: var(--color-content-bg);
       border-radius: var(--border-radius-large);
       display: block;
       font-size: 0.875rem;
@@ -91,7 +91,7 @@
     }
 
     &.group-shakes {
-      background-color: var(--color-page-bg);
+      background-color: var(--color-content-bg);
       border-radius: var(--border-radius-large);
     }
   }

@@ -34,7 +34,7 @@
 
 .settings-navigation {
   ul {
-    background-color: var(--color-page-bg-secondary);
+    background-color: var(--color-content-bg-secondary);
     border-radius: var(--border-radius-large);
     display: flex;
     list-style: none;
@@ -65,7 +65,7 @@
   }
 
   .selected a {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
   }
 }
 
@@ -139,7 +139,7 @@
 
   .migration-block-content,
   .member-status-block-content {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border-radius: var(--border-radius-large);
     font-size: 0.875rem;
     margin-top: var(--spacing-default);
@@ -214,7 +214,7 @@
   }
 
   .info-block {
-    background-color: var(--color-page-bg-secondary);
+    background-color: var(--color-content-bg-secondary);
     border-radius: var(--border-radius-large);
     margin-top: var(--spacing-quadruple);
     padding: var(--spacing-half-again);

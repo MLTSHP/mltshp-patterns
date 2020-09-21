@@ -1,16 +1,21 @@
+// 1. Duplicating body background for Storybook previews.
 .page {
+  background-color: var(--color-page-bg); // 1
   padding: 0 0.5em;
   position: relative;
 }
 
+// 1. Contains child margins. Useful for Storybook previews.
 .wrapper {
+  display: flow-root; // 1
   margin: 0 auto;
   max-width: 960px;
 }
 
 .content {
-  background-color: var(--color-page-bg);
+  background-color: var(--color-content-bg);
   border-radius: var(--border-radius-large);
+  margin-bottom: var(--spacing-triple);
   margin-top: var(--spacing-half-again);
 
   // TODO: remove clearfix once we don't have so many float layouts
@@ -26,7 +31,7 @@
 //
 .content-narrow,
 .content-styleguide {
-  margin: var(--spacing-quadruple) auto 0;
+  margin: var(--spacing-quadruple) auto var(--spacing-triple);
   max-width: 700px;
   padding: var(--spacing-half-again);
 

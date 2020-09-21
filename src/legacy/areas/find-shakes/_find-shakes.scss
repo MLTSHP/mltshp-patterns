@@ -27,7 +27,7 @@
   }
 
   .good-folk-block-content {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border-radius: var(--border-radius-large);
     color: var(--color-page-text);
     margin-top: var(--spacing-default);
@@ -50,7 +50,7 @@
     padding: 0;
 
     li {
-      background: var(--color-page-bg-secondary);
+      background: var(--color-content-bg-secondary);
       flex: 1;
       font-size: 1.125rem;
 
@@ -64,7 +64,7 @@
     }
 
     .selected a {
-      background-color: var(--color-page-bg);
+      background-color: var(--color-content-bg);
       color: var(--color-page-text);
     }
   }
@@ -148,7 +148,7 @@
   }
 
   .shake-tips {
-    background: var(--color-page-bg-secondary);
+    background: var(--color-content-bg-secondary);
     clear: both;
     color: var(--color-page-text);
     font-size: 0.75rem;

@@ -10,7 +10,7 @@
 // @see https://github.com/storybookjs/storybook/issues/10523
 //
 .sbdocs.sbdocs-wrapper {
-  background-color: var(--color-page-bg);
+  background-color: var(--color-content-bg);
   color: var(--color-page-text);
 
   .sbdocs-h1,
@@ -27,7 +27,7 @@
 
   .sbdocs-p {
     code {
-      background-color: var(--color-page-bg-secondary);
+      background-color: var(--color-content-bg-secondary);
       border-color: var(--color-border-default);
       color: var(--color-page-text);
     }
@@ -54,10 +54,10 @@
 
   .sbdocs-table {
     tr {
-      background-color: var(--color-page-bg);
+      background-color: var(--color-content-bg);
 
       &:nth-of-type(2n) {
-        background-color: var(--color-page-bg-secondary);
+        background-color: var(--color-content-bg-secondary);
       }
     }
 
@@ -70,7 +70,7 @@
 
   .sbdocs-preview,
   .docblock-source {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border-color: var(--color-border-default);
     color: var(--color-page-text);
   }
@@ -78,7 +78,7 @@
   // "show code" button
   .css-11xgcgt,
   .css-1imo1gr {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border-color: var(--color-border-default);
     color: var(--color-page-text);
   }
@@ -86,7 +86,7 @@
   .docblock-icongallery {
     // icon
     .css-15erloe {
-      background-color: var(--color-page-bg);
+      background-color: var(--color-content-bg);
       border-color: var(--color-border-default);
     }
 
@@ -117,4 +117,8 @@
       border-color: var(--color-border-default);
     }
   }
+}
+
+.sb-show-main {
+  background-color: var(--color-content-bg);
 }

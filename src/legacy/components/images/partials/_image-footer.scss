@@ -61,7 +61,7 @@
 
       &:hover,
       &:focus {
-        background-color: var(--color-page-bg-secondary);
+        background-color: var(--color-content-bg-secondary);
       }
     }
 
@@ -86,7 +86,7 @@
     }
 
     .selected a {
-      background-color: var(--color-page-bg-secondary);
+      background-color: var(--color-content-bg-secondary);
     }
   }
 }

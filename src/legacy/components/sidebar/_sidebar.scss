@@ -30,7 +30,7 @@
 }
 
 .following {
-  background-color: var(--color-page-bg-secondary);
+  background-color: var(--color-content-bg-secondary);
   border-radius: var(--border-radius-large);
 
   ul {
@@ -119,7 +119,7 @@
 }
 
 .find-shakes-block-content {
-  background-color: var(--color-page-bg);
+  background-color: var(--color-content-bg);
   border-radius: var(--border-radius-large);
   font-size: 0.875rem;
   margin-top: var(--spacing-default);
@@ -146,7 +146,7 @@
 }
 
 .upgrade-account-block-content {
-  background-color: var(--color-page-bg);
+  background-color: var(--color-content-bg);
   border-radius: var(--border-radius-large);
   font-size: 0.875rem;
   margin-top: var(--spacing-half);
@@ -171,7 +171,7 @@
 // Cool Tools Block
 //
 .cool-tools-block {
-  background: var(--color-page-bg-secondary);
+  background: var(--color-content-bg-secondary);
   border-radius: var(--border-radius-large);
   padding: var(--spacing-double);
 
@@ -188,7 +188,7 @@
   a {
     @include links.link--primary();
     @include links.link--emphasized();
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     background-position: 5px 5px;
     background-repeat: no-repeat;
     background-size: 40px 45px;
@@ -257,7 +257,7 @@
   }
 
   .shake-input-wrapper {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border-radius: var(--border-radius-default);
     display: flex;
     padding: var(--spacing-half);
@@ -265,7 +265,7 @@
   }
 
   .input-text {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border: 0;
     border-radius: var(--border-radius-default);
     flex: 1;
@@ -277,7 +277,7 @@
   }
 
   .shake-results {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border: 1px solid var(--color-border-default);
     border-radius: var(--border-radius-default);
     box-shadow: var(--spacing-half) var(--spacing-half) 0
@@ -344,7 +344,7 @@
 //
 .shake-sidebar-editor-block {
   align-items: center;
-  background: var(--color-page-bg-secondary);
+  background: var(--color-content-bg-secondary);
   border-radius: var(--border-radius-large);
   clear: both;
   display: flex;
@@ -436,7 +436,7 @@
   }
 
   .selected .tab {
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border-top-left-radius: var(--border-radius-large);
     border-top-right-radius: var(--border-radius-large);
   }
@@ -470,7 +470,7 @@
 }
 
 .sidebar-stats-content {
-  background-color: var(--color-page-bg);
+  background-color: var(--color-content-bg);
   border-bottom-left-radius: var(--border-radius-large);
   border-bottom-right-radius: var(--border-radius-large);
   display: none;
@@ -523,7 +523,7 @@
   }
 
   p {
-    background: var(--color-page-bg-secondary);
+    background: var(--color-content-bg-secondary);
     border-radius: var(--border-radius-default);
     color: var(--color-page-text-secondary);
     font-size: 0.75rem;

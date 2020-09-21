@@ -5,7 +5,7 @@
 // Notification Block
 //
 .notification-block {
-  background: var(--color-page-bg-secondary);
+  background: var(--color-content-bg-secondary);
   border-radius: var(--border-radius-large);
   margin-bottom: var(--spacing-double);
 }
@@ -29,7 +29,7 @@
 
   .notification {
     @include mixins.breakword();
-    background-color: var(--color-page-bg);
+    background-color: var(--color-content-bg);
     border-radius: var(--border-radius-large);
     color: var(--color-page-text);
     font-size: 0.875rem;

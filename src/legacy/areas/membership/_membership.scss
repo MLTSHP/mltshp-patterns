@@ -53,8 +53,9 @@
 }
 
 .content-migrate {
-  background: svg-load('illustrations/burger-upgrade.svg') no-repeat;
+  background-image: svg-load('illustrations/burger-upgrade.svg');
   background-position: bottom var(--spacing-half-again) center;
+  background-repeat: no-repeat;
   background-size: 366px 481px;
   padding-bottom: 530px;
 
@@ -72,8 +73,9 @@
 }
 
 .content-membership-thanks {
-  background: svg-load('illustrations/thankyou-dude.svg') no-repeat;
+  background-image: svg-load('illustrations/thankyou-dude.svg');
   background-position: bottom var(--spacing-half-again) center;
+  background-repeat: no-repeat;
   background-size: 312px 410px;
   padding-bottom: 450px;
 

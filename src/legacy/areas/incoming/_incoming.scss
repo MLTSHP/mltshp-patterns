@@ -5,7 +5,7 @@
 //
 .content-incoming {
   .tip-block {
-    background: var(--color-page-bg-secondary);
+    background: var(--color-content-bg-secondary);
     border-radius: var(--border-radius-large);
     padding: var(--spacing-double);
 
@@ -27,6 +27,7 @@
   @include page-header.page-header();
   cursor: pointer;
   padding: var(--spacing-half-again) var(--spacing-double);
+  width: 100%;
 
   // TODO: update all media queries to design tokens
   @media screen and (min-width: 768px) {

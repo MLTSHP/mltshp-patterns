@@ -1,7 +1,7 @@
 @use '../../../base/links';
 
 @mixin alert() {
-  background: var(--color-page-bg-secondary);
+  background: var(--color-content-bg-secondary);
   font-size: 0.9rem;
   line-height: 1.25;
   padding: var(--spacing-half-again);

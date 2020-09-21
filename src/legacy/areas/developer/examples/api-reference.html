@@ -1,259 +1,270 @@
-<div class="content">
-  <div class="content-developer">
-    <div id="toc">
-      <ul>
-        <li>
-          <a class="reference internal" href="#">API Reference</a>
+<div class="page">
+  <div class="wrapper">
+    <div class="content">
+      <div class="content-developer">
+        <div id="toc">
           <ul>
             <li>
-              <a class="reference internal" href="#serializations"
-                >Serializations</a
-              >
-            </li>
-            <li>
-              <a class="reference internal" href="#resources">Resources</a>
+              <a class="reference internal" href="#">API Reference</a>
+              <ul>
+                <li>
+                  <a class="reference internal" href="#serializations"
+                    >Serializations</a
+                  >
+                </li>
+                <li>
+                  <a class="reference internal" href="#resources">Resources</a>
+                </li>
+              </ul>
             </li>
           </ul>
-        </li>
-      </ul>
-    </div>
-
-    <div class="section" id="api-reference">
-      <h1>
-        API Reference<a
-          class="headerlink"
-          href="#api-reference"
-          title="Permalink to this headline"
-          >¶</a
-        >
-      </h1>
-      <div class="section" id="serializations">
-        <h2>
-          Serializations<a
-            class="headerlink"
-            href="#serializations"
-            title="Permalink to this headline"
-            >¶</a
-          >
-        </h2>
-        <p>
-          Responses from the MLTSHP API are
-          <em class="mimetype">application/json</em> responses that represent
-          the various MLTSHP API objects. Those objects are:
-        </p>
-        <dl class="entity">
-          <dt id="entity-shake">
-            <strong>shake</strong
-            ><a
-              class="headerlink"
-              href="#entity-shake"
-              title="Permalink to this definition"
-              >¶</a
-            >
-          </dt>
-          <dd>
-            <p>
-              A shake is a stream of files posted to MLTSHP by users. Shakes can
-              be user shakes, which every user has one of, or group shakes that
-              can have multiple posters.
-            </p>
-            <table class="docutils field-list" frame="void" rules="none">
-              <colgroup>
-                <col class="field-name" />
-                <col class="field-body" />
-              </colgroup>
-              <tbody valign="top">
-                <tr class="field-odd field">
-                  <th class="field-name">Contents:</th>
-                  <td class="field-body">
-                    <ul class="first last simple">
-                      <li>
-                        <strong>id</strong> – the shake’s numeric shake ID as a
-                        number
-                      </li>
-                      <li>
-                        <strong>name</strong> – the display title of the shake
-                      </li>
-                      <li>
-                        <strong>owner</strong> – the
-                        <a class="reference internal" href="#entity-user"
-                          ><em class="xref std std-entity">user</em></a
-                        >
-                        who created the shake
-                      </li>
-                      <li>
-                        <strong>url</strong> – the URL of the shake on the
-                        MLTSHP site
-                      </li>
-                      <li>
-                        <strong>thumbnail_url</strong> – the URL of the shake’s
-                        thumbnail logo image
-                      </li>
-                      <li>
-                        <strong>description</strong> – the shake’s description
-                        displayed under its logo on its page (optional)
-                      </li>
-                      <li>
-                        <strong>type</strong> – the type of shake: either
-                        <code class="docutils literal notranslate"
-                          ><span class="pre">user</span></code
-                        >
-                        or
-                        <code class="docutils literal notranslate"
-                          ><span class="pre">group</span></code
-                        >
-                      </li>
-                      <li>
-                        <strong>created_at</strong> – the
-                        <a class="reference internal" href="#entity-timestamp"
-                          ><em class="xref std std-entity">time</em></a
-                        >
-                        when the shake was first created
-                      </li>
-                      <li>
-                        <strong>updated_at</strong> – the
-                        <a class="reference internal" href="#entity-timestamp"
-                          ><em class="xref std std-entity">time</em></a
-                        >
-                        when the shake was last updated
-                      </li>
-                    </ul>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </dd>
-        </dl>
-      </div>
-      <div class="section" id="api-reference">
-        <h1>
-          API Reference<a
-            class="headerlink"
-            href="#api-reference"
-            title="Permalink to this headline"
-            >¶</a
-          >
-        </h1>
-        <div class="section" id="serializations">
-          <h2>
-            Serializations<a
-              class="headerlink"
-              href="#serializations"
-              title="Permalink to this headline"
-              >¶</a
-            >
-          </h2>
-          <p>
-            Responses from the MLTSHP API are
-            <em class="mimetype">application/json</em> responses that represent
-            the various MLTSHP API objects. Those objects are:
-          </p>
         </div>
-        <div class="section" id="resources">
-          <h2>
-            Resources<a
+
+        <div class="section" id="api-reference">
+          <h1>
+            API Reference<a
               class="headerlink"
-              href="#resources"
+              href="#api-reference"
               title="Permalink to this headline"
               >¶</a
             >
-          </h2>
-          <p>The resources (URL endpoints) in the MLTSHP API are:</p>
-          <dl class="get">
-            <dt id="get--api-favorites">
-              <code class="descname">GET </code
-              ><code class="descname">/api/favorites</code
-              ><a
+          </h1>
+          <div class="section" id="serializations">
+            <h2>
+              Serializations<a
                 class="headerlink"
-                href="#get--api-favorites"
-                title="Permalink to this definition"
+                href="#serializations"
+                title="Permalink to this headline"
                 >¶</a
               >
-            </dt>
-            <dd>
+            </h2>
+            <p>
+              Responses from the MLTSHP API are
+              <em class="mimetype">application/json</em> responses that
+              represent the various MLTSHP API objects. Those objects are:
+            </p>
+            <dl class="entity">
+              <dt id="entity-shake">
+                <strong>shake</strong
+                ><a
+                  class="headerlink"
+                  href="#entity-shake"
+                  title="Permalink to this definition"
+                  >¶</a
+                >
+              </dt>
+              <dd>
+                <p>
+                  A shake is a stream of files posted to MLTSHP by users. Shakes
+                  can be user shakes, which every user has one of, or group
+                  shakes that can have multiple posters.
+                </p>
+                <table class="docutils field-list" frame="void" rules="none">
+                  <colgroup>
+                    <col class="field-name" />
+                    <col class="field-body" />
+                  </colgroup>
+                  <tbody valign="top">
+                    <tr class="field-odd field">
+                      <th class="field-name">Contents:</th>
+                      <td class="field-body">
+                        <ul class="first last simple">
+                          <li>
+                            <strong>id</strong> – the shake’s numeric shake ID
+                            as a number
+                          </li>
+                          <li>
+                            <strong>name</strong> – the display title of the
+                            shake
+                          </li>
+                          <li>
+                            <strong>owner</strong> – the
+                            <a class="reference internal" href="#entity-user"
+                              ><em class="xref std std-entity">user</em></a
+                            >
+                            who created the shake
+                          </li>
+                          <li>
+                            <strong>url</strong> – the URL of the shake on the
+                            MLTSHP site
+                          </li>
+                          <li>
+                            <strong>thumbnail_url</strong> – the URL of the
+                            shake’s thumbnail logo image
+                          </li>
+                          <li>
+                            <strong>description</strong> – the shake’s
+                            description displayed under its logo on its page
+                            (optional)
+                          </li>
+                          <li>
+                            <strong>type</strong> – the type of shake: either
+                            <code class="docutils literal notranslate"
+                              ><span class="pre">user</span></code
+                            >
+                            or
+                            <code class="docutils literal notranslate"
+                              ><span class="pre">group</span></code
+                            >
+                          </li>
+                          <li>
+                            <strong>created_at</strong> – the
+                            <a
+                              class="reference internal"
+                              href="#entity-timestamp"
+                              ><em class="xref std std-entity">time</em></a
+                            >
+                            when the shake was first created
+                          </li>
+                          <li>
+                            <strong>updated_at</strong> – the
+                            <a
+                              class="reference internal"
+                              href="#entity-timestamp"
+                              ><em class="xref std std-entity">time</em></a
+                            >
+                            when the shake was last updated
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </dd>
+            </dl>
+          </div>
+          <div class="section" id="api-reference">
+            <h1>
+              API Reference<a
+                class="headerlink"
+                href="#api-reference"
+                title="Permalink to this headline"
+                >¶</a
+              >
+            </h1>
+            <div class="section" id="serializations">
+              <h2>
+                Serializations<a
+                  class="headerlink"
+                  href="#serializations"
+                  title="Permalink to this headline"
+                  >¶</a
+                >
+              </h2>
               <p>
-                Returns the files the authorized user has “liked” most recently
-                (or as specified).
+                Responses from the MLTSHP API are
+                <em class="mimetype">application/json</em> responses that
+                represent the various MLTSHP API objects. Those objects are:
               </p>
-              <p>
-                Use the
-                <code class="samp docutils literal notranslate"
-                  ><span class="pre">before/</span
-                  ><em><span class="pre">beforekey</span></em></code
+            </div>
+            <div class="section" id="resources">
+              <h2>
+                Resources<a
+                  class="headerlink"
+                  href="#resources"
+                  title="Permalink to this headline"
+                  >¶</a
                 >
-                and
-                <code class="samp docutils literal notranslate"
-                  ><span class="pre">after/</span
-                  ><em><span class="pre">afterkey</span></em></code
-                >
-                variations to page through the user’s favorites. That is,
-                specify the last
-                <em class="xref std std-entity">pivot_id</em> as the key to the
-                <code class="samp docutils literal notranslate"
-                  ><span class="pre">before/</span
-                  ><em><span class="pre">beforekey</span></em></code
-                >
-                resource to get the page of files the user “liked” before the
-                current page.
-              </p>
-              <table class="docutils field-list" frame="void" rules="none">
-                <colgroup>
-                  <col class="field-name" />
-                  <col class="field-body" />
-                </colgroup>
-                <tbody valign="top">
-                  <tr class="field-odd field">
-                    <th class="field-name">Parameters:</th>
-                    <td class="field-body">
-                      <ul class="first simple">
-                        <li>
-                          <strong>beforekey</strong> – the
-                          <em class="xref std std-entity">pivot_id</em> of the
-                          file to show posts before
-                        </li>
-                        <li>
-                          <strong>afterkey</strong> – the
-                          <em class="xref std std-entity">pivot_id</em> of the
-                          file to show posts after
-                        </li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr class="field-even field">
-                    <th class="field-name">Status Codes:</th>
-                    <td class="field-body">
-                      <ul class="first last simple">
-                        <li>
-                          <a
-                            class="reference external"
-                            href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
-                            >200 OK</a
-                          >
-                          –
-                          <p>
-                            the response is the requested section of the user’s
-                            favorites as an object containing:
-                          </p>
-                          <ul>
+              </h2>
+              <p>The resources (URL endpoints) in the MLTSHP API are:</p>
+              <dl class="get">
+                <dt id="get--api-favorites">
+                  <code class="descname">GET </code
+                  ><code class="descname">/api/favorites</code
+                  ><a
+                    class="headerlink"
+                    href="#get--api-favorites"
+                    title="Permalink to this definition"
+                    >¶</a
+                  >
+                </dt>
+                <dd>
+                  <p>
+                    Returns the files the authorized user has “liked” most
+                    recently (or as specified).
+                  </p>
+                  <p>
+                    Use the
+                    <code class="samp docutils literal notranslate"
+                      ><span class="pre">before/</span
+                      ><em><span class="pre">beforekey</span></em></code
+                    >
+                    and
+                    <code class="samp docutils literal notranslate"
+                      ><span class="pre">after/</span
+                      ><em><span class="pre">afterkey</span></em></code
+                    >
+                    variations to page through the user’s favorites. That is,
+                    specify the last
+                    <em class="xref std std-entity">pivot_id</em> as the key to
+                    the
+                    <code class="samp docutils literal notranslate"
+                      ><span class="pre">before/</span
+                      ><em><span class="pre">beforekey</span></em></code
+                    >
+                    resource to get the page of files the user “liked” before
+                    the current page.
+                  </p>
+                  <table class="docutils field-list" frame="void" rules="none">
+                    <colgroup>
+                      <col class="field-name" />
+                      <col class="field-body" />
+                    </colgroup>
+                    <tbody valign="top">
+                      <tr class="field-odd field">
+                        <th class="field-name">Parameters:</th>
+                        <td class="field-body">
+                          <ul class="first simple">
                             <li>
-                              <strong>favorites</strong> – a list of
-                              <a
-                                class="reference internal"
-                                href="#entity-sharedfile"
-                                ><em class="xref std std-entity"
-                                  >sharedfiles</em
-                                ></a
-                              >
+                              <strong>beforekey</strong> – the
+                              <em class="xref std std-entity">pivot_id</em> of
+                              the file to show posts before
+                            </li>
+                            <li>
+                              <strong>afterkey</strong> – the
+                              <em class="xref std std-entity">pivot_id</em> of
+                              the file to show posts after
                             </li>
                           </ul>
-                        </li>
-                      </ul>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </dd>
-          </dl>
+                        </td>
+                      </tr>
+                      <tr class="field-even field">
+                        <th class="field-name">Status Codes:</th>
+                        <td class="field-body">
+                          <ul class="first last simple">
+                            <li>
+                              <a
+                                class="reference external"
+                                href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+                                >200 OK</a
+                              >
+                              –
+                              <p>
+                                the response is the requested section of the
+                                user’s favorites as an object containing:
+                              </p>
+                              <ul>
+                                <li>
+                                  <strong>favorites</strong> – a list of
+                                  <a
+                                    class="reference internal"
+                                    href="#entity-sharedfile"
+                                    ><em class="xref std std-entity"
+                                      >sharedfiles</em
+                                    ></a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </dd>
+              </dl>
+            </div>
+          </div>
         </div>
       </div>
     </div>

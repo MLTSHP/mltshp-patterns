@@ -1,8 +1,7 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
-import { darkDefault as themes } from './storybook-themes';
 import darkThemeMarkup from './examples/dark.html';
 
-<Meta title="Themes" parameters={{ themes }} />
+<Meta title="Themes" />
 
 # Themes
 
@@ -12,7 +11,7 @@ While selector depth is best kept to a minimum, it's permissible to style object
 
 ## Dark
 
-You can test dark mode by enabling the prefers-color-scheme:dark setting in your browser, or with the theme option.
+You can test dark mode by enabling dark mode on your computer, or with the theme option.
 
 <Canvas>
   <Story name="Dark">{() => darkThemeMarkup}</Story>

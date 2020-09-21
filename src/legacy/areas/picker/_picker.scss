@@ -4,7 +4,7 @@
 // Styles for the /tools Picker
 //
 .tools-page {
-  margin: var(--spacing-default);
+  background-color: var(--color-page-bg);
 
   a {
     color: var(--color-text-link-primary);
@@ -22,7 +22,8 @@
     color: var(--color-page-text-secondary);
     font-size: 0.75rem;
     height: 55px;
-    margin: var(--spacing-half) var(--spacing-double);
+    margin: 0 var(--spacing-double);
+    padding-top: var(--spacing-half);
     position: relative;
     text-align: right;
 
@@ -41,7 +42,7 @@
   }
 
   .content {
-    background: var(--color-page-bg);
+    background: var(--color-content-bg);
     border-radius: var(--border-radius-large);
     padding: var(--spacing-double);
   }

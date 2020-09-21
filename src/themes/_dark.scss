@@ -10,7 +10,8 @@
 //
 @mixin darkmode() {
   --color-page-bg: var(--color-page-bg-dark);
-  --color-page-bg-secondary: var(--color-gray-900);
+  --color-content-bg: var(--color-content-bg-dark);
+  --color-content-bg-secondary: var(--color-gray-900);
   --color-page-text: var(--color-text-light);
   --color-page-text-emphasis: var(--color-text-light-emphasis);
   --color-page-text-secondary: var(--color-text-light-secondary);

@@ -3,11 +3,9 @@
 //
 .content-search {
   list-style: none;
-  margin-top: var(--spacing-default);
-  padding: var(--spacing-triple);
 
   .search-empty-results {
-    margin-left: var(--spacing-double);
+    margin: var(--spacing-double);
   }
 }
 
