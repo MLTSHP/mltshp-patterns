@@ -38,8 +38,6 @@ iframe {
   }
 }
 
-// legacy classname
-// TODO: add more useful utility classes like `.u-aspect-ratio--16x9`
 .data-wrapper::before {
   padding-bottom: 56.25%;
 }
