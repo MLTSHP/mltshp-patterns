@@ -10,6 +10,11 @@
     padding: var(--spacing-quadruple) var(--spacing-quadruple) 0;
   }
 
+  .image-poster {
+    float: left;
+    padding-right: var(--spacing-default);
+  }
+
   h1,
   h3 {
     @include mixins.breakword();

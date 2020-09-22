@@ -3,7 +3,6 @@
 //
 // Global Utility Classes
 // There shouldn't be much here, as we prefer component-specific classes.
-// TODO: refactor these, rename most to `u-whatever` convention
 //
 
 // screenreaders only
@@ -25,25 +24,10 @@
   clear: both;
 }
 
-// advertisements
-.adblockthis {
-  margin-bottom: 20px;
-  margin-left: 60px;
-}
-
-.adblockthat {
-  clear: both;
-  margin: 80px 0 0 0;
-}
-
 .hide-on-small {
   @media screen and (max-width: 480px) {
     display: none;
   }
-}
-
-.user-name {
-  @include mixins.breakword();
 }
 
 .error,
@@ -51,9 +35,8 @@
   color: var(--color-danger);
 }
 
-.image-poster {
-  float: left;
-  padding-right: var(--spacing-default);
+.user-name {
+  @include mixins.breakword();
 }
 
 .avatar--img {
