@@ -13,7 +13,9 @@ import formFieldsMarkup from './examples/form-fields.html';
 This is our default form style. Note that it expects to be used in a constrained width container.
 
 <Canvas>
-  <Story name="Fun Form">{() => funFormMarkup}</Story>
+  <Story name="Fun Form" parameters={{ layout: 'fullscreen' }}>
+    {() => funFormMarkup}
+  </Story>
 </Canvas>
 
 ## Fun Form Stacked
@@ -21,7 +23,9 @@ This is our default form style. Note that it expects to be used in a constrained
 A vertically-stacked modifier for Fun Form. Useful for width-constrained areas like the sidebar.
 
 <Canvas>
-  <Story name="Fun Form Stacked">{() => funFormStackedMarkup}</Story>
+  <Story name="Fun Form Stacked" parameters={{ layout: 'fullscreen' }}>
+    {() => funFormStackedMarkup}
+  </Story>
 </Canvas>
 
 ## Fun Form Errors

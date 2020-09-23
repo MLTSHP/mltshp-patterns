@@ -6,7 +6,11 @@ textarea,
 select,
 button {
   font-family: var(--font-family-system);
-  font-size: 1rem;
+  font-size: 16px; // prevent iOS form zoom https://stackoverflow.com/a/20250001
+}
+
+select {
+  width: 100%;
 }
 
 label {
@@ -15,7 +19,7 @@ label {
 
 textarea {
   display: block;
-  height: 5em;
+  height: 8em;
   padding: 0.5em;
   resize: vertical;
   width: 100%;
@@ -25,199 +29,173 @@ textarea {
 // Fun Form Layout
 //
 .fun-form {
-  margin-top: 20px;
-}
+  margin-top: var(--spacing-double);
 
-// form row
-.fun-form .field {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
+  // form row
+  .field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
 
-.fun-form .field + .field {
-  margin-top: 1em;
-}
-
-// form field label
-.fun-form label {
-  display: block;
-  flex: none;
-  font-size: 18px;
-  font-weight: var(--font-weight-bold);
-  margin-bottom: 5px;
-}
-
-// form field wrapper
-.fun-form .field-input {
-  flex: 1;
-}
-
-// form rows that don't need flex layout
-.fun-form .field-help,
-.fun-form .field-submit {
-  display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .fun-form .field {
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
-  .fun-form label {
-    flex-basis: 190px;
-    margin-bottom: 0;
-    margin-right: 10px;
-    text-align: right;
+  .field + .field {
+    margin-top: var(--spacing-double);
   }
 
-  .fun-form .field-help {
-    flex-basis: 100%;
+  // form field label
+  label {
+    flex: none;
+    font-size: 1.125rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-half);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: 190px; // magic number, just looks right
+      margin-bottom: 0;
+      margin-right: var(--spacing-default);
+      text-align: right;
+    }
   }
 
-  // form rows that need indenting to match label
-  .fun-form .field-help,
-  .fun-form .field-submit {
-    padding-left: 200px;
+  // form field wrapper
+  .field-input {
+    flex: 1;
   }
-}
 
-//
-// Fun Form Field Styles
-//
+  // form rows that don't need flex layout
+  .field-help,
+  .field-submit {
+    display: block;
 
-// text-y inputs
-.fun-form .input-text,
-.fun-form textarea {
-  // stylelint-disable property-no-vendor-prefix
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  // stylelint-enable
-  background: #f2fdff;
-  border: 1px solid #e4eff1;
-  border-radius: var(--border-radius-large);
-  border-width: 4px 1px 1px 4px;
-  display: block;
-  font-size: 18px;
-  padding: 8px 10px;
-  width: 100%;
-}
+    // indent to match label
+    @media screen and (min-width: 768px) {
+      padding-left: 200px;
+    }
+  }
 
-.fun-form .input-text {
-  height: 42px;
-  padding-bottom: 0;
-  padding-top: 0;
-}
+  // help text
+  .field-help {
+    color: var(--color-page-text-secondary);
+    font-size: 0.875rem;
+    margin-top: var(--spacing-half);
 
-.fun-form textarea {
-  height: 135px;
-  resize: none;
-}
+    @media screen and (min-width: 768px) {
+      flex-basis: 100%; // don't wrap
+    }
+  }
 
-// dropdowns
-.fun-form select {
-  width: 100%;
-}
+  //
+  // Fun Form Field Styles
+  //
 
-// checkboxes & radio buttons
-.fun-form [type='checkbox'],
-.fun-form [type='radio'] {
-  margin-right: 0.5em;
-}
+  // text-y inputs
+  .input-text,
+  textarea {
+    appearance: none;
+    background: var(--color-form-bg);
+    border: 1px solid var(--color-border-form);
+    border-radius: var(--border-radius-large);
+    border-width: 4px 1px 1px 4px;
+    color: var(--color-page-text);
+    display: block;
+    font-size: 1.125rem;
+    padding: var(--spacing-default) var(--spacing-half-again);
+    width: 100%;
+  }
 
-// help text
-.fun-form .field-help {
-  color: #666666;
-  margin-top: 0.5em;
-}
+  // checkboxes & radio buttons
+  [type='checkbox'],
+  [type='radio'] {
+    margin-right: 0.5em;
+  }
 
-//
-// Fun Form Errors
-//
+  // field with prefix
+  .name-prefix {
+    color: var(--color-page-text-secondary);
+    margin-right: var(--spacing-half);
+  }
 
-// List of Errors that usually lives at the top
-.fun-form-errors {
-  color: #cc0000;
-  font-size: 18px;
-}
+  // error balloon
+  .error {
+    background: var(--color-form-error-bubble-bg);
+    border-radius: 33% 25px;
+    color: var(--color-form-error-bubble-text);
+    display: block;
+    font-size: 0.75rem;
+    padding: 1em 1.25em;
+    position: absolute;
+    right: calc(var(--spacing-half-again) * -1);
+    text-align: center;
+    top: 25%;
+    transform: translateY(-50%);
+    width: 115px;
+    z-index: 1;
 
-// error balloon
-.fun-form .field .error {
-  background: #aaf3ff;
-  border-radius: 33% 25px;
-  color: inherit;
-  display: block;
-  font-size: 12px;
-  padding: 1em 1.25em;
-  position: absolute;
-  right: -15px;
-  text-align: center;
-  top: 25%;
-  transform: translateY(-50%);
-  width: 115px;
-  z-index: 1;
-}
+    @media screen and (min-width: 960px) {
+      right: -160px;
+    }
 
-.fun-form .field .error::before {
-  background-image: svg-load('balloons/error-tail.svg');
-  background-repeat: no-repeat;
-  bottom: calc(50% - 15px);
-  content: '';
-  display: block;
-  height: 22px;
-  left: -48px;
-  position: absolute;
-  width: 52px;
-}
-
-@media screen and (min-width: 960px) {
-  .fun-form .field .error {
-    right: -160px;
+    &::before {
+      background: var(--color-form-error-bubble-bg);
+      bottom: calc(50% - 15px);
+      content: '';
+      display: block;
+      height: 22px;
+      left: -48px;
+      mask-image: svg-load('balloons/error-tail.svg');
+      position: absolute;
+      width: 52px;
+    }
   }
 }
 
 //
 // Stacked Fun Form Modifier
 //
+.fun-form-stacked {
+  .field {
+    display: block; // disable flex layout
+  }
 
-.fun-form-stacked .field {
-  display: block;
-}
+  label {
+    margin-bottom: var(--spacing-half);
+    margin-right: 0;
+    text-align: left;
+  }
 
-.fun-form-stacked label {
-  margin-bottom: 5px;
-  margin-right: 0;
-  text-align: left;
-}
+  .field-help,
+  .field-submit {
+    padding-left: 0;
+  }
 
-.fun-form-stacked .field-help,
-.fun-form-stacked .field-submit {
-  padding-left: 0;
-}
-
-//
-// Field with Prefix
-// TODO: this should be abstracted into a reusable class
-//
-/* stylelint-disable selector-max-id */
-#create-shake-name-field,
-.field-prefix {
-  .fun-form-stacked & {
-    display: flex;
-    flex-wrap: wrap;
+  // row with prefix
+  /* stylelint-disable selector-max-id */
+  #create-shake-name-field,
+  .field-prefix {
+    display: flex; // re-enable flex layout
 
     label {
-      flex-basis: 100%;
+      flex-basis: 100%; // keep the label stacked, but leave the prefix flexible
     }
   }
+  /* stylelint-enable */
 
-  .name-prefix {
-    color: var(--color-page-text-secondary);
-    font-size: 1.125rem;
-    margin-right: 0.5em;
+  .error {
+    top: 3em;
   }
 }
-/* stylelint-enable */
+
+//
+// Fun Form Errors
+// List of Errors that usually lives above the form
+//
+.fun-form-errors {
+  color: var(--color-danger);
+  font-size: 1.125rem;
+}

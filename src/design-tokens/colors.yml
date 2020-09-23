@@ -5,9 +5,12 @@ aliases:
   pink_pastel_light: '#ffcce8'
   blue: '#00aeff'
   blue_dark: '#008bcc'
+  blue_very_light: '#f2fdff'
   blue_pastel_dark: '#00aeff'
+  blue_pastel_medium: '#aaf3ff'
   blue_pastel_light: '#daf3ff'
   blue_pastel_very_light: '#dbfaff'
+  blue_gray_light: '#e4eff1'
   cyan_very_dark: '#13454c'
   green: '#09B896'
   green_dark: '#079378'
@@ -74,8 +77,14 @@ props:
   - name: color_secondary_brand_dark
     value: '{!blue_dark}'
     category: primary-color
+  - name: color_secondary_brand_very_light
+    value: '{!blue_very_light}'
+    category: primary-color
   - name: color_secondary_brand_pastel_light
     value: '{!blue_pastel_light}'
+    category: primary-color
+  - name: color_secondary_brand_pastel_medium
+    value: '{!blue_pastel_medium}'
     category: primary-color
   - name: color_secondary_brand_pastel_dark
     value: '{!blue_pastel_dark}'
@@ -186,6 +195,9 @@ props:
   - name: color_text_link_danger_hover
     value: '{!red_dark}'
     category: text-color
+  - name: color_blue_gray_light
+    value: '{!blue_gray_light}'
+    category: color
   - name: color_gray_050
     value: '{!gray_050}'
     category: gray-color
