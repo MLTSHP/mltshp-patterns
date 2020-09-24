@@ -29,7 +29,7 @@
 
   &.is-editable:hover .border,
   &.shake-image-hover .border {
-    border: 10px solid var(--color-edit);
+    border: 10px solid var(--color-status-edit);
     display: block;
     height: 100%;
     left: 0;
@@ -41,18 +41,18 @@
 
   .shake-image-placeholder {
     align-items: center;
-    background: var(--color-content-bg-secondary);
+    background: var(--color-background-content-secondary);
     border: 1px dashed var(--color-border-default);
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     max-width: 100%;
-    padding: var(--spacing-triple);
+    padding: var(--size-spacing-triple);
     text-align: center;
 
     strong {
-      color: var(--color-primary-brand);
+      color: var(--color-brand-primary);
       display: block;
     }
   }
@@ -67,19 +67,19 @@
   .title {
     @include mixins.breakword();
     font-size: 2.25rem;
-    margin: var(--spacing-half-again) 0 var(--spacing-default);
+    margin: var(--size-spacing-half-again) 0 var(--size-spacing-default);
   }
 
   &.is-editable .title:hover,
   .shake-edit-title-hover {
-    background-color: var(--color-edit);
+    background-color: var(--color-status-edit);
   }
 
   .shake-edit-title-input {
     border: 1px solid var(--color-border-default);
     font-size: 2.25rem;
-    font-weight: var(--font-weight-bold);
-    margin-top: var(--spacing-default);
+    font-weight: var(--number-font-weight-bold);
+    margin-top: var(--size-spacing-default);
     width: 100%;
   }
 
@@ -96,7 +96,7 @@
 
   &.is-editable .description:hover,
   .shake-edit-description-hover {
-    background-color: var(--color-edit);
+    background-color: var(--color-status-edit);
   }
 
   .shake-edit-description-input {
@@ -108,12 +108,12 @@
   .buttons {
     align-items: center;
     display: flex;
-    margin-bottom: var(--spacing-default);
-    margin-top: var(--spacing-half);
+    margin-bottom: var(--size-spacing-default);
+    margin-top: var(--size-spacing-half);
   }
 
   .or {
     color: var(--color-page-text-secondary);
-    padding: var(--spacing-half);
+    padding: var(--size-spacing-half);
   }
 }

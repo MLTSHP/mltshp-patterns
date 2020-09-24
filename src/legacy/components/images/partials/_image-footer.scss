@@ -1,11 +1,11 @@
 .image-content-footer {
   color: var(--color-page-text-secondary);
   font-size: 0.75rem;
-  padding-top: var(--spacing-half);
+  padding-top: var(--size-spacing-half);
 
   .originally-posted-by {
     clear: left;
-    padding-bottom: var(--spacing-half);
+    padding-bottom: var(--size-spacing-half);
 
     .avatar--link {
       text-decoration: none;
@@ -22,7 +22,7 @@
   }
 
   .created-at {
-    padding-top: var(--spacing-half);
+    padding-top: var(--size-spacing-half);
 
     a {
       color: var(--color-page-text-secondary);
@@ -38,47 +38,47 @@
 
   .stats {
     list-style: none;
-    margin: 0 0 0 var(--spacing-default);
+    margin: 0 0 0 var(--size-spacing-default);
     padding: 0;
 
     li {
       float: left;
-      padding-right: var(--spacing-half);
+      padding-right: var(--size-spacing-half);
     }
 
     a {
-      background-position: var(--spacing-half) 0.5em;
+      background-position: var(--size-spacing-half) 0.5em;
       background-repeat: no-repeat;
       background-size: 1em 1em;
-      border-top-left-radius: var(--border-radius-default);
-      border-top-right-radius: var(--border-radius-default);
+      border-top-left-radius: var(--size-border-radius-default);
+      border-top-right-radius: var(--size-border-radius-default);
       display: block;
       float: left;
-      padding: var(--spacing-half);
-      padding-bottom: var(--spacing-default);
-      padding-left: calc(var(--spacing-default) + 1em);
+      padding: var(--size-spacing-half);
+      padding-bottom: var(--size-spacing-default);
+      padding-left: calc(var(--size-spacing-default) + 1em);
       text-decoration: none;
 
       &:hover,
       &:focus {
-        background-color: var(--color-content-bg-secondary);
+        background-color: var(--color-background-content-secondary);
       }
     }
 
     .views {
-      padding-top: var(--spacing-half);
+      padding-top: var(--size-spacing-half);
     }
 
     .saves a {
       background-image: svg-load('icons/save-tiny.svg');
       background-size: 1.33em 1em;
-      color: var(--color-warning);
-      padding-left: calc(var(--spacing-default) + 1.33em);
+      color: var(--color-status-warning);
+      padding-left: calc(var(--size-spacing-default) + 1.33em);
     }
 
     .likes a {
       background-image: svg-load('icons/like.svg');
-      color: var(--color-danger);
+      color: var(--color-status-danger);
     }
 
     .comments a {
@@ -86,7 +86,7 @@
     }
 
     .selected a {
-      background-color: var(--color-content-bg-secondary);
+      background-color: var(--color-background-content-secondary);
     }
   }
 }

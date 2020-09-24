@@ -1,4 +1,4 @@
-@use "../design-tokens/colors.yml";
+@use "../compiled/scss/tokens"; // import tokens as SCSS variables
 
 //
 // Dark Mode
@@ -9,25 +9,25 @@
 //    @see https://css-tricks.com/?p=306566
 //
 @mixin darkmode() {
-  --color-page-bg: var(--color-page-bg-dark);
-  --color-content-bg: var(--color-content-bg-dark);
-  --color-content-bg-secondary: var(--color-gray-900);
+  --color-background-page: var(--color-background-page-dark);
+  --color-background-content: var(--color-background-content-dark);
+  --color-background-content-secondary: var(--color-base-gray-900);
   --color-page-text: var(--color-text-light);
   --color-page-text-emphasis: var(--color-text-light-emphasis);
   --color-page-text-secondary: var(--color-text-light-secondary);
-  --color-border-default: var(--color-gray-700);
-  --color-border-form: var(--color-gray-800);
-  --color-form-bg: var(--color-content-bg-secondary);
-  --color-form-error-bubble-bg: var(--color-gray-800);
-  --color-form-error-bubble-text: var(--color-danger);
-  --font-weight-bold: 600; // 1
-  --font-weight-normal: 300; // 1
+  --color-border-default: var(--color-base-gray-700);
+  --color-border-form: var(--color-base-gray-800);
+  --color-form-bg: var(--color-background-content-secondary);
+  --color-form-error-bubble-bg: var(--color-base-gray-800);
+  --color-form-error-bubble-text: var(--color-status-danger);
+  --number-font-weight-bold: 600; // 1
+  --number-font-weight-normal: 300; // 1
   --letter-spacing: 0.025em; // 1
-  --color-bg-primary-brand-pastel: #{rgba(colors.$color-primary-brand, 0.1)};
-  --color-bg-secondary-brand-pastel: #{rgba(colors.$color-secondary-brand, 0.1)};
-  --color-bg-success-pastel: #{rgba(colors.$color-success, 0.1)};
-  --color-bg-danger-pastel: #{rgba(colors.$color-danger, 0.1)};
-  --color-bg-warning-pastel: #{rgba(colors.$color-warning, 0.1)};
+  --color-bg-primary-brand-pastel: #{rgba(tokens.$color-brand-primary, 0.1)};
+  --color-bg-secondary-brand-pastel: #{rgba(tokens.$color-brand-secondary, 0.1)};
+  --color-bg-success-pastel: #{rgba(tokens.$color-status-success, 0.1)};
+  --color-bg-danger-pastel: #{rgba(tokens.$color-status-danger, 0.1)};
+  --color-bg-warning-pastel: #{rgba(tokens.$color-status-warning, 0.1)};
 }
 
 :root {

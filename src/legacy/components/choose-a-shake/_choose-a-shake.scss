@@ -12,14 +12,14 @@
   .choose-a-shake.is-expanded & {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    box-shadow: var(--spacing-half) var(--spacing-half) 0
-      var(--color-black-transparent-100);
+    box-shadow: var(--size-spacing-half) var(--size-spacing-half) 0
+      var(--color-base-black-transparent-100);
     outline: none;
 
     &:hover,
     &:focus {
-      background: var(--color-success-pastel-light);
-      color: var(--color-success-pastel-dark);
+      background: var(--color-status-success-pastel-light);
+      color: var(--color-status-success-pastel-dark);
     }
 
     .caret {
@@ -29,14 +29,14 @@
 }
 
 .choose-a-shake--dropdown {
-  background-color: var(--color-success-pastel-light);
-  border-radius: var(--border-radius-large);
+  background-color: var(--color-status-success-pastel-light);
+  border-radius: var(--size-border-radius-large);
   border-top-right-radius: 0;
-  box-shadow: var(--spacing-half) var(--spacing-half) 0
-    var(--color-black-transparent-100);
+  box-shadow: var(--size-spacing-half) var(--size-spacing-half) 0
+    var(--color-base-black-transparent-100);
   display: none;
   max-width: 400px;
-  padding: var(--spacing-default);
+  padding: var(--size-spacing-default);
   padding-top: 1px;
   position: absolute;
   right: 0;
@@ -44,7 +44,7 @@
 
   @media screen and (min-width: 768px) {
     border-top-left-radius: 0;
-    border-top-right-radius: var(--border-radius-large);
+    border-top-right-radius: var(--size-border-radius-large);
     left: 0;
     right: auto;
   }
@@ -56,7 +56,7 @@
   .add-a-shake {
     display: block;
     float: right;
-    margin-top: var(--spacing-default);
+    margin-top: var(--size-spacing-default);
   }
 
   ul {
@@ -67,32 +67,32 @@
     li a {
       @include links.link--primary();
       @include links.link--emphasized();
-      background-color: var(--color-content-bg);
-      border-radius: var(--border-radius-large);
+      background-color: var(--color-background-content);
+      border-radius: var(--size-border-radius-large);
       display: block;
       font-size: 0.875rem;
       overflow: hidden;
-      padding: var(--spacing-default) var(--spacing-half-again);
+      padding: var(--size-spacing-default) var(--size-spacing-half-again);
       text-overflow: ellipsis;
       white-space: nowrap;
 
       &:hover,
       &:focus,
       &:active {
-        background-color: var(--color-highlight);
+        background-color: var(--color-status-highlight);
       }
     }
 
     // stylelint-disable selector-no-qualifying-type
     &.top-shakes {
       li a {
-        margin: var(--spacing-default) 0;
+        margin: var(--size-spacing-default) 0;
       }
     }
 
     &.group-shakes {
-      background-color: var(--color-content-bg);
-      border-radius: var(--border-radius-large);
+      background-color: var(--color-background-content);
+      border-radius: var(--size-border-radius-large);
     }
   }
 }

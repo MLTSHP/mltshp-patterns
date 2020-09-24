@@ -1,20 +1,20 @@
 .image-medium {
-  margin-right: var(--spacing-half-again);
-  padding-bottom: var(--spacing-triple);
+  margin-right: var(--size-spacing-half-again);
+  padding-bottom: var(--size-spacing-triple);
 
   .user-and-title {
-    padding-top: var(--spacing-default);
+    padding-top: var(--size-spacing-default);
 
     a {
       display: block;
       float: left;
-      margin-right: var(--spacing-default);
+      margin-right: var(--size-spacing-default);
       width: 20px; // avatar size
     }
 
     .title {
       font-size: 1.25rem;
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--number-font-weight-bold);
       overflow: hidden;
     }
   }
@@ -25,21 +25,21 @@
     display: flex;
     list-style: none;
     margin: 0;
-    padding: var(--spacing-default) 0 0;
+    padding: var(--size-spacing-default) 0 0;
 
     // stylelint-disable selector-no-qualifying-type
     li {
       float: left;
       font-size: 0.75em;
-      padding-right: var(--spacing-default);
+      padding-right: var(--size-spacing-default);
 
       &.saves {
         background-image: svg-load('icons/save-tiny.svg');
         background-position: 0 2px;
         background-repeat: no-repeat;
         background-size: 16px 11px;
-        color: var(--color-warning);
-        padding-left: var(--spacing-double);
+        color: var(--color-status-warning);
+        padding-left: var(--size-spacing-double);
       }
 
       &.likes {
@@ -47,8 +47,8 @@
         background-position: 0 2px;
         background-repeat: no-repeat;
         background-size: 12px 9px;
-        color: var(--color-danger);
-        padding-left: var(--spacing-half-again);
+        color: var(--color-status-danger);
+        padding-left: var(--size-spacing-half-again);
       }
 
       &.comments a {
@@ -56,8 +56,8 @@
         background-position: 0 2px;
         background-repeat: no-repeat;
         background-size: 12px 9px;
-        color: var(--color-secondary-brand);
-        padding-left: var(--spacing-half-again);
+        color: var(--color-brand-secondary);
+        padding-left: var(--size-spacing-half-again);
         text-decoration: none;
       }
     }

@@ -1,14 +1,14 @@
 .pagination {
   background-color: var(--color-bg-secondary-brand-pastel);
-  border-radius: var(--border-radius-large);
+  border-radius: var(--size-border-radius-large);
   font-size: 0.875rem;
-  font-weight: var(--font-weight-bold);
-  margin: var(--spacing-quadruple);
-  padding: var(--spacing-default);
+  font-weight: var(--number-font-weight-bold);
+  margin: var(--size-spacing-quadruple);
+  padding: var(--size-spacing-default);
 
   a,
   .current {
-    padding: 0 var(--spacing-half);
+    padding: 0 var(--size-spacing-half);
   }
 
   // stylelint-disable selector-no-qualifying-type
@@ -40,12 +40,12 @@
 
 .pagination-inner {
   align-items: center;
-  background-color: var(--color-content-bg);
-  border-radius: var(--border-radius-large);
+  background-color: var(--color-background-content);
+  border-radius: var(--size-border-radius-large);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: var(--spacing-default);
+  padding: var(--size-spacing-default);
 
   @media screen and (min-width: 480px) {
     flex-wrap: none;
@@ -55,7 +55,7 @@
 .linear-navigation {
   display: flex;
   justify-content: space-between;
-  padding: var(--spacing-triple) var(--spacing-quadruple);
+  padding: var(--size-spacing-triple) var(--size-spacing-quadruple);
 
   .newer a,
   .older a {

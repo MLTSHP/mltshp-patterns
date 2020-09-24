@@ -11,27 +11,27 @@
   }
 
   .body {
-    padding: var(--spacing-double);
+    padding: var(--size-spacing-double);
   }
 
   .good-folk-block {
     background-color: var(--color-bg-success-pastel);
-    border-radius: var(--border-radius-large);
-    padding: var(--spacing-half-again);
+    border-radius: var(--size-border-radius-large);
+    padding: var(--size-spacing-half-again);
 
     h3 {
-      color: var(--color-success-pastel-dark);
+      color: var(--color-status-success-pastel-dark);
       font-size: 1.125rem;
-      padding-left: var(--spacing-half);
+      padding-left: var(--size-spacing-half);
     }
   }
 
   .good-folk-block-content {
-    background-color: var(--color-content-bg);
-    border-radius: var(--border-radius-large);
+    background-color: var(--color-background-content);
+    border-radius: var(--size-border-radius-large);
     color: var(--color-page-text);
-    margin-top: var(--spacing-default);
-    padding: var(--spacing-double);
+    margin-top: var(--size-spacing-default);
+    padding: var(--size-spacing-double);
 
     p {
       font-size: 0.875rem;
@@ -39,7 +39,7 @@
     }
 
     .user-follow {
-      margin-top: var(--spacing-double);
+      margin-top: var(--size-spacing-double);
     }
   }
 
@@ -50,31 +50,31 @@
     padding: 0;
 
     li {
-      background: var(--color-content-bg-secondary);
+      background: var(--color-background-content-secondary);
       flex: 1;
       font-size: 1.125rem;
 
       a {
         display: block;
-        font-weight: var(--font-weight-bold);
-        padding: var(--spacing-double) var(--spacing-half);
+        font-weight: var(--number-font-weight-bold);
+        padding: var(--size-spacing-double) var(--size-spacing-half);
         text-align: center;
         text-decoration: none;
       }
     }
 
     .selected a {
-      background-color: var(--color-content-bg);
+      background-color: var(--color-background-content);
       color: var(--color-page-text);
     }
   }
 
   .featured-shakes {
-    margin-bottom: var(--spacing-double);
+    margin-bottom: var(--size-spacing-double);
 
     h3 {
       font-size: 1.125rem;
-      margin: var(--spacing-double) var(--spacing-default);
+      margin: var(--size-spacing-double) var(--size-spacing-default);
     }
 
     ul {
@@ -87,11 +87,11 @@
 
     li {
       border: 1px solid var(--color-border-default);
-      box-shadow: 1px 2px 1px var(--color-black-transparent-100);
-      margin-bottom: var(--spacing-default);
-      margin-right: var(--spacing-default);
-      padding: var(--spacing-default);
-      width: calc(170px + var(--spacing-default) * 2 + 2px);
+      box-shadow: 1px 2px 1px var(--color-base-black-transparent-100);
+      margin-bottom: var(--size-spacing-default);
+      margin-right: var(--size-spacing-default);
+      padding: var(--size-spacing-default);
+      width: calc(170px + var(--size-spacing-default) * 2 + 2px);
 
       img {
         height: 170px;
@@ -101,7 +101,7 @@
       h4 {
         font-size: 1.125rem;
         line-height: 1.2;
-        margin: var(--spacing-default) 0 0;
+        margin: var(--size-spacing-default) 0 0;
 
         a {
           @include links.link--primary();
@@ -112,7 +112,7 @@
       p {
         @include mixins.clamp(3);
         font-size: 0.75rem;
-        margin: var(--spacing-default) 0 0;
+        margin: var(--size-spacing-default) 0 0;
       }
     }
   }
@@ -126,14 +126,14 @@
 
       a {
         display: block;
-        padding: var(--spacing-half-again) var(--spacing-default);
+        padding: var(--size-spacing-half-again) var(--size-spacing-default);
         text-decoration: none;
       }
     }
 
     .shake-category-body {
       display: none;
-      padding: 0 var(--spacing-default);
+      padding: 0 var(--size-spacing-default);
     }
 
     &.shake-category-selected {
@@ -148,12 +148,12 @@
   }
 
   .shake-tips {
-    background: var(--color-content-bg-secondary);
+    background: var(--color-background-content-secondary);
     clear: both;
     color: var(--color-page-text);
     font-size: 0.75rem;
-    margin: var(--spacing-triple) 0;
-    padding: var(--spacing-half-again);
+    margin: var(--size-spacing-triple) 0;
+    padding: var(--size-spacing-half-again);
   }
 
   .friend + .friend {
@@ -175,30 +175,30 @@
   .body .loading {
     color: var(--color-page-text-secondary);
     font-size: 1.125rem;
-    margin: var(--spacing-quadruple) auto;
+    margin: var(--size-spacing-quadruple) auto;
     text-align: center;
 
     img {
-      margin-right: var(--spacing-double);
+      margin-right: var(--size-spacing-double);
       position: relative;
-      top: var(--spacing-double);
+      top: var(--size-spacing-double);
     }
   }
 
   .message {
     color: var(--color-page-text-secondary);
     font-size: 1.125rem;
-    margin: var(--spacing-quadruple) var(--spacing-triple);
+    margin: var(--size-spacing-quadruple) var(--size-spacing-triple);
     text-align: center;
   }
 
   .intro {
     border-bottom: 1px solid var(--color-border-default);
     font-size: 0.875rem;
-    padding: var(--spacing-double) var(--spacing-half);
+    padding: var(--size-spacing-double) var(--size-spacing-half);
   }
 
   .refresh-friends {
-    margin: var(--spacing-triple) 0;
+    margin: var(--size-spacing-triple) 0;
   }
 }

@@ -1,0 +1,12 @@
+{
+  "size": {
+    "spacing": {
+      "half": { "value": "5px" },
+      "default": { "value": "10px" },
+      "half_again": { "value": "15px" },
+      "double": { "value": "20px" },
+      "triple": { "value": "30px" },
+      "quadruple": { "value": "40px" }
+    }
+  }
+}

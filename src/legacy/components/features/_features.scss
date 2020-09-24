@@ -16,7 +16,7 @@
 .feature {
   border-top: 1px dashed var(--color-border-default);
   margin: 0;
-  padding: var(--spacing-half-again);
+  padding: var(--size-spacing-half-again);
   position: relative;
 
   @media screen and (min-width: 480px) {
@@ -26,14 +26,14 @@
 
   @media screen and (min-width: 768px) {
     flex-basis: 25%;
-    padding: calc(var(--spacing-default) * 2.5);
+    padding: calc(var(--size-spacing-default) * 2.5);
   }
 
   @media screen and (min-width: 960px) {
     display: flex;
     flex-basis: 50%;
     flex-direction: row-reverse;
-    padding: calc(var(--spacing-default) * 3.5);
+    padding: calc(var(--size-spacing-default) * 3.5);
   }
 
   &:first-child {
@@ -53,14 +53,14 @@
   }
 
   > * + * {
-    margin-top: var(--spacing-half-again);
+    margin-top: var(--size-spacing-half-again);
 
     @media screen and (min-width: 768px) {
-      margin-top: calc(var(--spacing-default) * 2.5);
+      margin-top: calc(var(--size-spacing-default) * 2.5);
     }
 
     @media screen and (min-width: 960px) {
-      margin-right: var(--spacing-double);
+      margin-right: var(--size-spacing-double);
       margin-top: 0;
     }
   }
@@ -80,7 +80,7 @@
 
 .feature--image-media {
   border: 1px solid var(--color-border-default);
-  box-shadow: 3px 3px 0 var(--color-black-transparent-100);
+  box-shadow: 3px 3px 0 var(--color-base-black-transparent-100);
   display: block;
   margin: 0 auto;
 }
@@ -100,7 +100,7 @@
   color: var(--color-page-text);
   font-size: 0.875rem;
   line-height: 1.25;
-  margin: var(--spacing-default) 0 0;
+  margin: var(--size-spacing-default) 0 0;
 
   p {
     margin: 0;
@@ -183,7 +183,7 @@
 
   > * + * {
     @media screen and (min-width: 960px) {
-      margin-left: var(--spacing-double);
+      margin-left: var(--size-spacing-double);
       margin-right: 0;
     }
   }

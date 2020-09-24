@@ -6,19 +6,19 @@
 
   .icon {
     flex: none;
-    margin-right: var(--spacing-default);
+    margin-right: var(--size-spacing-default);
   }
 
   h4 {
     @include mixins.breakword();
     font-size: 0.875rem;
-    margin-bottom: var(--spacing-half);
+    margin-bottom: var(--size-spacing-half);
   }
 
   h4 a {
     @include links.link--primary();
     @include links.link--emphasized();
-    padding-bottom: var(--spacing-half);
+    padding-bottom: var(--size-spacing-half);
   }
 
   .follow {
@@ -29,15 +29,15 @@
 // Extended Modifier
 .user-follow-extended {
   display: block;
-  margin: var(--spacing-double) var(--spacing-half);
+  margin: var(--size-spacing-double) var(--size-spacing-half);
 
   .icon {
     float: left;
-    margin-right: var(--spacing-default);
+    margin-right: var(--size-spacing-default);
   }
 
   .details {
-    padding-bottom: var(--spacing-default);
+    padding-bottom: var(--size-spacing-default);
   }
 
   h4 a {
@@ -49,7 +49,7 @@
     display: block;
     font-size: 0.875rem;
     line-height: 1.3;
-    margin-bottom: var(--spacing-default);
+    margin-bottom: var(--size-spacing-default);
     white-space: pre-wrap;
   }
 

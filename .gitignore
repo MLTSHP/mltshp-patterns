@@ -7,6 +7,7 @@ storybook-static
 
 # Auto-generated design token stories
 /src/design-tokens/generated
+/src/compiled
 
 # Dependencies
 node_modules

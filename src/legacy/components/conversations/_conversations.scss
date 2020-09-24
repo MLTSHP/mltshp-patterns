@@ -4,8 +4,8 @@
   h3 {
     color: var(--color-page-text);
     font-size: 1.125rem;
-    margin-bottom: var(--spacing-half-again);
-    margin-top: var(--spacing-triple);
+    margin-bottom: var(--size-spacing-half-again);
+    margin-top: var(--size-spacing-triple);
   }
 
   ul {
@@ -15,18 +15,18 @@
   }
 
   li {
-    margin: var(--spacing-half) 0;
+    margin: var(--size-spacing-half) 0;
 
     // stylelint-disable selector-no-qualifying-type
     &.selected a {
-      color: var(--color-disabled);
+      color: var(--color-status-disabled);
     }
   }
 
   a {
-    color: var(--color-primary-brand);
+    color: var(--color-brand-primary);
     font-size: 0.875rem;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--number-font-weight-bold);
     text-decoration: none;
   }
 }
@@ -34,28 +34,28 @@
 .conversation {
   border-bottom: 1px dotted var(--color-border-default);
   display: flex;
-  margin-top: var(--spacing-triple);
+  margin-top: var(--size-spacing-triple);
 
   .mentions & {
-    padding-left: var(--spacing-triple);
-    padding-right: var(--spacing-default);
+    padding-left: var(--size-spacing-triple);
+    padding-right: var(--size-spacing-default);
   }
 
   .thumb {
     flex: none;
-    margin-left: var(--spacing-default);
+    margin-left: var(--size-spacing-default);
     width: 50px;
 
     @media screen and (min-width: 480px) {
-      margin-left: var(--spacing-triple);
+      margin-left: var(--size-spacing-triple);
       width: 100px;
     }
   }
 
   .details-wrapper {
     flex: 1;
-    margin-left: var(--spacing-default);
-    margin-right: var(--spacing-default);
+    margin-left: var(--size-spacing-default);
+    margin-right: var(--size-spacing-default);
     min-width: 0;
   }
 
@@ -63,7 +63,7 @@
     @include mixins.breakword();
     color: var(--color-page-text-emphasis);
     font-size: 1.875rem;
-    margin-bottom: var(--spacing-default);
+    margin-bottom: var(--size-spacing-default);
     overflow: hidden;
   }
 
@@ -85,13 +85,13 @@
   .conversation-meta {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: var(--spacing-triple);
-    margin-top: var(--spacing-half-again);
+    margin-bottom: var(--size-spacing-triple);
+    margin-top: var(--size-spacing-half-again);
   }
 
   .post-a-comment,
   .mute-this-conversation {
-    margin: var(--spacing-half) 1em 0 0;
+    margin: var(--size-spacing-half) 1em 0 0;
   }
 
   .mute-this-conversation-form {

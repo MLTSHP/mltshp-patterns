@@ -3,8 +3,8 @@
 @mixin page-header() {
   background: linear-gradient(
     to bottom,
-    var(--color-white-transparent),
-    var(--color-white-transparent) calc(100% - 6px),
+    var(--color-base-white-transparent),
+    var(--color-base-white-transparent) calc(100% - 6px),
     var(--color-border-default)
   );
   padding: 1.5rem 1.875rem 1rem; // 24px 30px 16px

@@ -1,15 +1,16 @@
-import * as breakpoints from '../src/design-tokens/breakpoint.yml';
+import breakpointTokens from '../src/compiled/js/breakpoints';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { themes } from '../src/themes/storybook-themes';
 import { mltshpThemeLight, mltshpThemeDark } from './mltshpTheme';
 import './preview.scss';
+const breakpoints = breakpointTokens.size.breakpoint;
 
 // Create viewports using widths defined in design tokens
-const breakpointViewports = Object.keys(breakpoints).map((name) => {
+const breakpointViewports = Object.keys(breakpoints).map((key) => {
   return {
-    name: `Breakpoint ${name.toUpperCase().substring(10)}`,
+    name: breakpoints[key].name,
     styles: {
-      width: breakpoints[name],
+      width: breakpoints[key].value,
       height: '100%',
     },
     type: 'other',

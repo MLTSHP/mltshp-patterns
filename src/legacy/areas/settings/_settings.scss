@@ -18,13 +18,13 @@
   > * {
     @media screen and (min-width: 768px) {
       flex: 1;
-      max-width: calc(50% - var(--spacing-double));
+      max-width: calc(50% - var(--size-spacing-double));
     }
   }
 
   h1 {
     font-size: 3rem;
-    margin-bottom: var(--spacing-half-again);
+    margin-bottom: var(--size-spacing-half-again);
 
     @media screen and (min-width: 768px) {
       margin-bottom: 0;
@@ -34,38 +34,38 @@
 
 .settings-navigation {
   ul {
-    background-color: var(--color-content-bg-secondary);
-    border-radius: var(--border-radius-large);
+    background-color: var(--color-background-content-secondary);
+    border-radius: var(--size-border-radius-large);
     display: flex;
     list-style: none;
     margin: 0;
-    padding: var(--spacing-half-again);
+    padding: var(--size-spacing-half-again);
     padding-bottom: 0;
 
     @media screen and (min-width: 480px) {
-      padding-left: var(--spacing-double);
+      padding-left: var(--size-spacing-double);
     }
   }
 
   li + li {
     @media screen and (min-width: 480px) {
-      margin-left: var(--spacing-half-again);
+      margin-left: var(--size-spacing-half-again);
     }
   }
 
   a {
     @include links.link--primary();
     @include links.link--emphasized();
-    border-top-left-radius: var(--border-radius-default);
-    border-top-right-radius: var(--border-radius-default);
+    border-top-left-radius: var(--size-border-radius-default);
+    border-top-right-radius: var(--size-border-radius-default);
     display: block;
     font-size: 0.875rem;
-    padding: var(--spacing-default);
-    padding-bottom: var(--spacing-half-again);
+    padding: var(--size-spacing-default);
+    padding-bottom: var(--size-spacing-half-again);
   }
 
   .selected a {
-    background-color: var(--color-content-bg);
+    background-color: var(--color-background-content);
   }
 }
 
@@ -73,11 +73,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: var(--spacing-half-again);
+  padding: var(--size-spacing-half-again);
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
-    padding: var(--spacing-quadruple);
+    padding: var(--size-spacing-quadruple);
   }
 
   > * {
@@ -85,12 +85,12 @@
 
     @media screen and (min-width: 768px) {
       flex: 1;
-      max-width: calc(50% - var(--spacing-double));
+      max-width: calc(50% - var(--size-spacing-double));
     }
   }
 
   > * + * {
-    margin-top: var(--spacing-triple);
+    margin-top: var(--size-spacing-triple);
 
     @media screen and (min-width: 768px) {
       margin-top: 0;
@@ -105,18 +105,18 @@
   h4 {
     border-bottom: 1px dashed var(--color-border-default);
     font-size: 1.125rem;
-    margin-bottom: var(--spacing-default);
+    margin-bottom: var(--size-spacing-default);
     padding-bottom: 0.25em;
   }
 
   .migration-block,
   .member-status-block {
     background-color: var(--color-bg-success-pastel);
-    border-radius: var(--border-radius-large);
-    padding: var(--spacing-half-again);
+    border-radius: var(--size-border-radius-large);
+    padding: var(--size-spacing-half-again);
 
     h3 {
-      color: var(--color-success-pastel-dark);
+      color: var(--color-status-success-pastel-dark);
     }
 
     &:first-child {
@@ -130,38 +130,38 @@
 
   .migration-block {
     background-color: var(--color-bg-secondary-brand-pastel);
-    margin-bottom: var(--spacing-double);
+    margin-bottom: var(--size-spacing-double);
 
     h3 {
-      color: var(--color-secondary-brand);
+      color: var(--color-brand-secondary);
     }
   }
 
   .migration-block-content,
   .member-status-block-content {
-    background-color: var(--color-content-bg);
-    border-radius: var(--border-radius-large);
+    background-color: var(--color-background-content);
+    border-radius: var(--size-border-radius-large);
     font-size: 0.875rem;
-    margin-top: var(--spacing-default);
-    padding: var(--spacing-double);
+    margin-top: var(--size-spacing-default);
+    padding: var(--size-spacing-double);
   }
 
   .transaction-list {
     li {
-      margin-bottom: var(--spacing-default);
+      margin-bottom: var(--size-spacing-default);
 
       .id {
         color: var(--color-page-text-secondary);
       }
 
       .amount {
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--number-font-weight-bold);
       }
     }
   }
 
   p {
-    margin: var(--spacing-double) 0;
+    margin: var(--size-spacing-double) 0;
   }
 }
 
@@ -190,21 +190,21 @@
 
   .profile-photo-meta {
     flex: 1;
-    padding-top: var(--spacing-default);
+    padding-top: var(--size-spacing-default);
 
     @media screen and (min-width: 480px) {
-      margin-left: var(--spacing-default);
-      padding-top: var(--spacing-half);
+      margin-left: var(--size-spacing-default);
+      padding-top: var(--size-spacing-half);
     }
 
     h3 {
       font-size: 1.125rem;
-      margin-bottom: var(--spacing-double);
+      margin-bottom: var(--size-spacing-double);
     }
 
     h4 {
       font-size: 0.875rem;
-      margin-bottom: var(--spacing-default);
+      margin-bottom: var(--size-spacing-default);
     }
 
     .settings-photo-upload {
@@ -214,18 +214,18 @@
   }
 
   .info-block {
-    background-color: var(--color-content-bg-secondary);
-    border-radius: var(--border-radius-large);
-    margin-top: var(--spacing-quadruple);
-    padding: var(--spacing-half-again);
+    background-color: var(--color-background-content-secondary);
+    border-radius: var(--size-border-radius-large);
+    margin-top: var(--size-spacing-quadruple);
+    padding: var(--size-spacing-half-again);
 
     @media screen and (min-width: 480px) {
-      padding: var(--spacing-double);
+      padding: var(--size-spacing-double);
     }
 
     h3 {
       font-size: 1rem;
-      margin-bottom: var(--spacing-default);
+      margin-bottom: var(--size-spacing-default);
     }
 
     p {
@@ -251,20 +251,20 @@
 
   .apps {
     list-style: none;
-    margin: var(--spacing-triple) 0;
+    margin: var(--size-spacing-triple) 0;
     padding: 0;
 
     li {
-      margin-bottom: var(--spacing-double);
+      margin-bottom: var(--size-spacing-double);
     }
 
     h4 {
       color: var(--color-page-text-secondary);
       font-size: 1.125rem;
-      margin-bottom: var(--spacing-half);
+      margin-bottom: var(--size-spacing-half);
 
       .title {
-        color: var(--color-primary-brand);
+        color: var(--color-brand-primary);
       }
 
       .by {
@@ -278,7 +278,7 @@
 
     p {
       font-size: 0.875rem;
-      margin-bottom: var(--spacing-half);
+      margin-bottom: var(--size-spacing-half);
     }
 
     .disconnect {

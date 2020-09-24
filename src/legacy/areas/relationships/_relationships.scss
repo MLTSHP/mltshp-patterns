@@ -6,27 +6,27 @@
     .friend,
     .shake {
       border-bottom: 1px dashed var(--color-border-default);
-      padding: 0 var(--spacing-quadruple);
+      padding: 0 var(--size-spacing-quadruple);
     }
 
     .user-follow-extended {
       .website a {
-        color: var(--color-secondary-brand);
+        color: var(--color-brand-secondary);
       }
     }
   }
   .user-info {
     .avatar {
       float: left;
-      margin-right: var(--spacing-half-again);
+      margin-right: var(--size-spacing-half-again);
       width: 100px;
     }
 
     .details h3 {
       color: var(--color-page-text);
       font-size: 1.125rem;
-      font-weight: var(--font-weight-bold);
-      padding-top: var(--spacing-half);
+      font-weight: var(--number-font-weight-bold);
+      padding-top: var(--size-spacing-half);
     }
   }
 }

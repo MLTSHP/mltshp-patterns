@@ -1,0 +1,63 @@
+{
+  "color": {
+    "status": {
+      "success": {
+        "value": "{color.base.green.value}"
+      },
+      "success_dark": {
+        "value": "{color.base.green_dark.value}"
+      },
+      "success_pastel_very_light": {
+        "value": "{color.base.green_pastel_very_light.value}"
+      },
+      "success_pastel_light": {
+        "value": "{color.base.green_pastel_light.value}"
+      },
+      "success_pastel_dark": {
+        "value": "{color.base.green_pastel_dark.value}"
+      },
+      "warning": {
+        "value": "{color.base.orange.value}"
+      },
+      "warning_dark": {
+        "value": "{color.base.orange_dark.value}"
+      },
+      "warning_pastel_light": {
+        "value": "{color.base.orange_pastel_light.value}"
+      },
+      "warning_pastel_dark": {
+        "value": "{color.base.orange_pastel_dark.value}"
+      },
+      "danger": {
+        "value": "{color.base.red.value}"
+      },
+      "danger_dark": {
+        "value": "{color.base.red_dark.value}"
+      },
+      "danger_pastel_light": {
+        "value": "{color.base.red_pastel_light.value}"
+      },
+      "danger_pastel_dark": {
+        "value": "{color.base.red_pastel_dark.value}"
+      },
+      "disabled": {
+        "value": "{color.base.gray.value}"
+      },
+      "disabled_light": {
+        "value": "{color.base.gray_light.value}"
+      },
+      "disabled_pastel_light": {
+        "value": "{color.base.gray_pastel_light.value}"
+      },
+      "disabled_pastel_dark": {
+        "value": "{color.base.gray_pastel_dark.value}"
+      },
+      "edit": {
+        "value": "{color.base.yellow_transparent_600.value}"
+      },
+      "highlight": {
+        "value": "{color.base.yellow_pastel_light.value}"
+      }
+    }
+  }
+}

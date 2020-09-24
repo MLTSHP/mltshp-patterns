@@ -10,7 +10,7 @@
 // @see https://github.com/storybookjs/storybook/issues/10523
 //
 .sbdocs.sbdocs-wrapper {
-  background-color: var(--color-content-bg);
+  background-color: var(--color-background-content);
   color: var(--color-page-text);
 
   .sbdocs-h1,
@@ -27,7 +27,7 @@
 
   .sbdocs-p {
     code {
-      background-color: var(--color-content-bg-secondary);
+      background-color: var(--color-background-content-secondary);
       border-color: var(--color-border-default);
       color: var(--color-page-text);
     }
@@ -41,8 +41,8 @@
   .sbdocs-a {
     color: var(--color-text-link);
     text-decoration-color: var(--color-text-link-underline);
-    transition: background-color var(--speed-quick) ease,
-      color var(--speed-quick) ease;
+    transition: background-color var(--time-speed-quick) ease,
+      color var(--time-speed-quick) ease;
 
     &:hover,
     &:focus,
@@ -54,10 +54,10 @@
 
   .sbdocs-table {
     tr {
-      background-color: var(--color-content-bg);
+      background-color: var(--color-background-content);
 
       &:nth-of-type(2n) {
-        background-color: var(--color-content-bg-secondary);
+        background-color: var(--color-background-content-secondary);
       }
     }
 
@@ -70,7 +70,7 @@
 
   .sbdocs-preview,
   .docblock-source {
-    background-color: var(--color-content-bg);
+    background-color: var(--color-background-content);
     border-color: var(--color-border-default);
     color: var(--color-page-text);
   }
@@ -78,7 +78,7 @@
   // "show code" button
   .css-11xgcgt,
   .css-1imo1gr {
-    background-color: var(--color-content-bg);
+    background-color: var(--color-background-content);
     border-color: var(--color-border-default);
     color: var(--color-page-text);
   }
@@ -86,7 +86,7 @@
   .docblock-icongallery {
     // icon
     .css-15erloe {
-      background-color: var(--color-content-bg);
+      background-color: var(--color-background-content);
       border-color: var(--color-border-default);
     }
 
@@ -120,5 +120,5 @@
 }
 
 .sb-show-main {
-  background-color: var(--color-content-bg);
+  background-color: var(--color-background-content);
 }

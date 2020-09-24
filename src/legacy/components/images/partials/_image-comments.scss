@@ -3,36 +3,36 @@
 
 .image-content {
   .inline-details {
-    background-color: var(--color-content-bg-secondary);
-    border-radius: var(--border-radius-default);
+    background-color: var(--color-background-content-secondary);
+    border-radius: var(--size-border-radius-default);
     clear: both;
     min-height: 34px; // magic number
-    padding: var(--spacing-default);
+    padding: var(--size-spacing-default);
 
     .user-saves-likes {
-      background-color: var(--color-content-bg);
+      background-color: var(--color-background-content);
       min-height: 20px; // magic number
-      padding: var(--spacing-default);
+      padding: var(--size-spacing-default);
 
       a {
         @include links.link--primary();
         @include links.link--emphasized();
         align-items: center;
         display: inline-flex;
-        margin-right: var(--spacing-default);
+        margin-right: var(--size-spacing-default);
       }
 
       img {
-        margin-right: var(--spacing-half);
+        margin-right: var(--size-spacing-half);
       }
     }
 
     .comment {
-      background-color: var(--color-content-bg);
-      border-radius: var(--border-radius-default);
+      background-color: var(--color-background-content);
+      border-radius: var(--size-border-radius-default);
       display: flex;
-      margin-bottom: var(--spacing-default);
-      padding: var(--spacing-default);
+      margin-bottom: var(--size-spacing-default);
+      padding: var(--size-spacing-default);
 
       .avatar {
         flex: none;
@@ -41,7 +41,7 @@
       .comment-body {
         flex: 1;
         overflow: hidden;
-        padding-left: var(--spacing-default);
+        padding-left: var(--size-spacing-default);
       }
 
       .comment-body-text {
@@ -66,7 +66,7 @@
       }
 
       .meta .username {
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--number-font-weight-bold);
       }
 
       .meta .pro-badge {
@@ -74,7 +74,7 @@
       }
 
       .created-at {
-        margin-left: var(--spacing-default);
+        margin-left: var(--size-spacing-default);
         padding-top: 0;
       }
 
@@ -84,7 +84,7 @@
         background-repeat: no-repeat;
         background-size: 12px 11px;
         display: none;
-        padding-left: var(--spacing-half-again);
+        padding-left: var(--size-spacing-half-again);
       }
 
       .delete {
@@ -94,7 +94,7 @@
         background-repeat: no-repeat;
         background-size: 13px 13px;
         display: none;
-        padding-left: var(--spacing-half-again);
+        padding-left: var(--size-spacing-half-again);
       }
 
       &:hover .reply-to,
@@ -105,25 +105,25 @@
 
     .show-more-comments {
       display: block;
-      font-weight: var(--font-weight-bold);
-      padding: var(--spacing-default) 0;
+      font-weight: var(--number-font-weight-bold);
+      padding: var(--size-spacing-default) 0;
       text-align: right;
       text-decoration: none;
     }
 
     .post-comment-inline {
       textarea {
-        background-color: var(--color-content-bg);
+        background-color: var(--color-background-content);
         border: 1px solid var(--color-border-default);
-        border-radius: var(--border-radius-default);
+        border-radius: var(--size-border-radius-default);
         color: var(--color-page-text-disabled);
         height: 2em;
-        padding: var(--spacing-half);
+        padding: var(--size-spacing-half);
       }
 
       .button {
         display: none;
-        padding-top: var(--spacing-half);
+        padding-top: var(--size-spacing-half);
       }
 
       &.post-comment-inline-expanded {

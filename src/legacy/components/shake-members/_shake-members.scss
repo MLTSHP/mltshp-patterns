@@ -3,18 +3,18 @@
 .shake-members {
   list-style: none;
   margin: 0;
-  padding: var(--spacing-triple);
+  padding: var(--size-spacing-triple);
 
   li {
     border-bottom: 1px dashed var(--color-border-default);
     display: flex;
-    margin-bottom: var(--spacing-triple);
-    padding-bottom: var(--spacing-triple);
+    margin-bottom: var(--size-spacing-triple);
+    padding-bottom: var(--size-spacing-triple);
   }
 
   .member--img {
     flex: none;
-    margin-right: var(--spacing-default);
+    margin-right: var(--size-spacing-default);
   }
 
   .details {
@@ -23,7 +23,7 @@
 
   h4 {
     font-size: 1.125rem;
-    padding-bottom: var(--spacing-half);
+    padding-bottom: var(--size-spacing-half);
 
     a {
       @include links.link--primary();
@@ -38,6 +38,6 @@
 
   .website {
     display: block;
-    margin-top: var(--spacing-half);
+    margin-top: var(--size-spacing-half);
   }
 }

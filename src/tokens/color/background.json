@@ -1,0 +1,18 @@
+{
+  "color": {
+    "background": {
+      "content_dark": {
+        "value": "{color.base.blue_dark_mode.value}"
+      },
+      "content_light": {
+        "value": "{color.base.white.value}"
+      },
+      "page_light": {
+        "value": "{color.base.blue_pastel_very_light.value}"
+      },
+      "page_dark": {
+        "value": "{color.base.cyan_very_dark.value}"
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
 .image-comments {
   max-width: 100%;
   overflow: hidden;
-  padding-left: var(--spacing-quadruple);
+  padding-left: var(--size-spacing-quadruple);
 
   .comments {
     clear: both;
@@ -13,11 +13,11 @@
     display: flex;
 
     + .comment {
-      margin-top: var(--spacing-double);
+      margin-top: var(--size-spacing-double);
     }
 
     .avatar {
-      margin-right: var(--spacing-default);
+      margin-right: var(--size-spacing-default);
       width: 48px;
     }
 
@@ -30,7 +30,7 @@
       .where-from {
         color: var(--color-page-text-secondary);
         font-size: 0.825em;
-        padding-top: var(--spacing-default);
+        padding-top: var(--size-spacing-default);
       }
     }
 
@@ -43,7 +43,7 @@
       display: flex;
       flex-wrap: wrap;
       font-size: 0.825em;
-      padding-bottom: var(--spacing-default);
+      padding-bottom: var(--size-spacing-default);
 
       > * + * {
         margin-left: 0.825em;
@@ -52,7 +52,7 @@
       .username,
       .user-name {
         font-size: 0.875rem;
-        font-weight: var(--font-weight-bold);
+        font-weight: var(--number-font-weight-bold);
       }
 
       .pro-badge {
@@ -65,7 +65,7 @@
         background-repeat: no-repeat;
         background-size: 12px 11px;
         display: none;
-        padding-left: var(--spacing-half-again);
+        padding-left: var(--size-spacing-half-again);
       }
 
       .delete {
@@ -74,7 +74,7 @@
         background-repeat: no-repeat;
         background-size: 13px 13px;
         display: none;
-        padding-left: var(--spacing-half-again);
+        padding-left: var(--size-spacing-half-again);
       }
 
       .created-at {
@@ -101,8 +101,8 @@
 }
 
 .image-comment-form {
-  margin-top: var(--spacing-triple);
-  padding-left: var(--spacing-quadruple);
+  margin-top: var(--size-spacing-triple);
+  padding-left: var(--size-spacing-quadruple);
 
   header {
     display: flex;
@@ -120,7 +120,7 @@
     border-bottom-right-radius: 15px; // magic number looks good with balloon background
     border-top-right-radius: 25px 20px; // magic number looks good with balloon background
     display: block;
-    left: calc(var(--spacing-default) * -1);
+    left: calc(var(--size-spacing-default) * -1);
     position: relative;
 
     span {
@@ -130,8 +130,8 @@
       height: 48px; // match avatar height
       line-height: 48px; // match avatar height
       padding-left: 35px; // magic number to accomodate balloon stem
-      padding-right: var(--spacing-double);
-      text-shadow: 0.05em 0.05em 0.05em var(--color-black-transparent-500); // copied from button
+      padding-right: var(--size-spacing-double);
+      text-shadow: 0.05em 0.05em 0.05em var(--color-base-black-transparent-500); // copied from button
       white-space: nowrap;
 
       @media screen and (min-width: 360px) {
@@ -150,16 +150,16 @@
 
   .field {
     clear: both;
-    margin: var(--spacing-double) 0;
+    margin: var(--size-spacing-double) 0;
     text-align: right;
   }
 
   textarea {
-    background-color: var(--color-content-bg);
+    background-color: var(--color-background-content);
     border: 1px solid var(--color-border-default);
-    border-radius: var(--border-radius-default);
+    border-radius: var(--size-border-radius-default);
     color: var(--color-page-text);
     height: 8em;
-    padding: var(--spacing-half);
+    padding: var(--size-spacing-half);
   }
 }

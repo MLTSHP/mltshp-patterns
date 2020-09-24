@@ -1,8 +1,0 @@
-props:
-  - name: border_radius_default
-    value: 5px
-  - name: border_radius_large
-    value: 10px
-global:
-  type: border-radius
-  category: border-radius

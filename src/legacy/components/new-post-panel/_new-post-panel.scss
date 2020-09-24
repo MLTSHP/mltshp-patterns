@@ -2,29 +2,31 @@
 @use '../../../init/mixins';
 
 .new-post-panel {
-  background-color: var(--color-content-bg);
+  background-color: var(--color-background-content);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  box-shadow: var(--spacing-default) var(--spacing-default) 0
-    var(--color-black-transparent-200);
+  box-shadow: var(--size-spacing-default) var(--size-spacing-default) 0
+    var(--color-base-black-transparent-200);
   display: none;
-  left: var(--spacing-triple);
+  left: var(--size-spacing-triple);
   margin: 0 auto;
   max-width: 560px; // magic number
-  padding: var(--spacing-half-again);
+  padding: var(--size-spacing-half-again);
   position: fixed;
-  right: var(--spacing-triple);
-  top: calc(var(--spacing-default) * -1); // to avoid the shadow being cut off
+  right: var(--size-spacing-triple);
+  top: calc(
+    var(--size-spacing-default) * -1
+  ); // to avoid the shadow being cut off
   z-index: 999;
 
   @media screen and (min-width: 768px) {
-    padding: calc(var(--spacing-default) * 5);
+    padding: calc(var(--size-spacing-default) * 5);
   }
 
   h2 {
     font-size: 1.75rem;
     line-height: 1.2;
-    margin-bottom: var(--spacing-default);
+    margin-bottom: var(--size-spacing-default);
     position: relative;
 
     a {
@@ -36,8 +38,8 @@
   p {
     font-size: 0.875rem;
     line-height: 1.2;
-    margin: var(--spacing-double) 0;
-    padding: 0 var(--spacing-half);
+    margin: var(--size-spacing-double) 0;
+    padding: 0 var(--size-spacing-half);
   }
 
   // overlay on top of h2 text
@@ -60,12 +62,12 @@
 
     .btn {
       flex: none;
-      margin-left: var(--spacing-default);
+      margin-left: var(--size-spacing-default);
     }
   }
 
   .post-video-form {
-    margin-top: var(--spacing-double);
+    margin-top: var(--size-spacing-double);
   }
 
   .shake-selector {
@@ -79,30 +81,30 @@
 
         .green {
           @include mixins.breakword();
-          color: var(--color-success);
+          color: var(--color-status-success);
         }
 
         &:hover,
         &:focus {
           .green {
-            color: var(--color-success-pastel-dark);
+            color: var(--color-status-success-pastel-dark);
           }
         }
       }
     }
 
     ul {
-      background-color: var(--color-success-pastel-light);
-      border-radius: var(--border-radius-large);
-      box-shadow: var(--spacing-half) var(--spacing-half) 0
-        var(--color-black-transparent-200);
+      background-color: var(--color-status-success-pastel-light);
+      border-radius: var(--size-border-radius-large);
+      box-shadow: var(--size-spacing-half) var(--size-spacing-half) 0
+        var(--color-base-black-transparent-200);
       display: none;
-      left: var(--spacing-triple);
+      left: var(--size-spacing-triple);
       list-style: none;
       margin: 0;
       max-height: 66vh; // arbitrary, just smaller than viewport
       overflow: auto;
-      padding: var(--spacing-default) 0 var(--spacing-half) 0;
+      padding: var(--size-spacing-default) 0 var(--size-spacing-half) 0;
       position: absolute;
       top: calc(1.17rem * 1.4); // h3 font-size * line-height
       width: 200px; // magic number
@@ -111,11 +113,11 @@
       li {
         a {
           @include mixins.breakword();
-          color: var(--color-success-pastel-dark);
+          color: var(--color-status-success-pastel-dark);
           display: block;
           font-size: 0.875rem;
-          font-weight: var(--font-weight-bold);
-          padding: var(--spacing-half) var(--spacing-half-again);
+          font-weight: var(--number-font-weight-bold);
+          padding: var(--size-spacing-half) var(--size-spacing-half-again);
           text-decoration: none;
 
           &:hover,
@@ -139,12 +141,12 @@
   > * {
     flex: 1 1 0;
     min-width: 0;
-    padding-bottom: var(--spacing-half-again);
-    padding-top: var(--spacing-half-again);
+    padding-bottom: var(--size-spacing-half-again);
+    padding-top: var(--size-spacing-half-again);
 
     @media screen and (min-width: 768px) {
-      padding-bottom: var(--spacing-quadruple);
-      padding-top: calc(var(--spacing-default) * 6);
+      padding-bottom: var(--size-spacing-quadruple);
+      padding-top: calc(var(--size-spacing-default) * 6);
     }
 
     &:first-child {
@@ -153,13 +155,13 @@
       @media screen and (min-width: 768px) {
         border-bottom: 0;
         border-right: 1px dashed var(--color-border-default);
-        padding-right: var(--spacing-double);
+        padding-right: var(--size-spacing-double);
       }
     }
 
     &:last-child {
       @media screen and (min-width: 768px) {
-        padding-left: var(--spacing-double);
+        padding-left: var(--size-spacing-double);
       }
     }
 

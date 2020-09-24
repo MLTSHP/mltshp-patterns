@@ -1,0 +1,36 @@
+{
+  "color": {
+    "brand": {
+      "primary": {
+        "value": "{color.base.pink.value}"
+      },
+      "primary_dark": {
+        "value": "{color.base.pink_dark.value}"
+      },
+      "primary_pastel_light": {
+        "value": "{color.base.pink_pastel_light.value}"
+      },
+      "primary_pastel_dark": {
+        "value": "{color.base.pink_pastel_dark.value}"
+      },
+      "secondary": {
+        "value": "{color.base.blue.value}"
+      },
+      "secondary_dark": {
+        "value": "{color.base.blue_dark.value}"
+      },
+      "secondary_very_light": {
+        "value": "{color.base.blue_very_light.value}"
+      },
+      "secondary_pastel_light": {
+        "value": "{color.base.blue_pastel_light.value}"
+      },
+      "secondary_pastel_medium": {
+        "value": "{color.base.blue_pastel_medium.value}"
+      },
+      "secondary_pastel_dark": {
+        "value": "{color.base.blue_pastel_dark.value}"
+      }
+    }
+  }
+}

@@ -1,8 +1,6 @@
-import * as colors from '../design-tokens/colors.yml';
-
 export const themes = [
-  { name: 'Light', class: 't-light', color: colors.colorPageBgLight },
-  { name: 'Dark', class: 't-dark', color: colors.colorPageBgDark },
+  { name: 'Light', class: 't-light', color: 'white' },
+  { name: 'Dark', class: 't-dark', color: 'black' },
 ];
 
 export const darkDefault = themes.map((theme) => {

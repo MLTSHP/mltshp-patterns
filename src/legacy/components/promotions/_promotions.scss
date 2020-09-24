@@ -1,21 +1,21 @@
 @use '../buttons/buttons';
-@use "../../../design-tokens/breakpoint.yml";
+@use "../../../compiled/scss/tokens";
 
 .promotions {
   list-style: none;
-  margin: var(--spacing-default) 0;
+  margin: var(--size-spacing-default) 0;
   padding: 0;
 
   li {
     float: left;
-    margin-bottom: var(--spacing-default);
-    margin-right: var(--spacing-default);
+    margin-bottom: var(--size-spacing-default);
+    margin-right: var(--size-spacing-default);
     overflow: visible;
     position: relative;
 
     &:hover {
       .promotion-avatar {
-        border-color: var(--color-primary-brand);
+        border-color: var(--color-brand-primary);
       }
       .promotion-name {
         display: block;
@@ -25,7 +25,7 @@
 
   .promotion-avatar {
     border: 4px solid transparent;
-    border-radius: var(--border-radius-large);
+    border-radius: var(--size-border-radius-large);
     overflow: hidden;
     transition: all 0.75s ease 0s;
 
@@ -54,12 +54,12 @@
 // Promo Sidebar Block
 //
 .promo-block {
-  margin: var(--spacing-double) auto;
+  margin: var(--size-spacing-double) auto;
   max-width: 100%;
   text-align: center;
   width: 285px; // width of the promo image
 
-  @media screen and (max-width: breakpoint.$breakpoint-xs) {
+  @media screen and (max-width: tokens.$size-breakpoint-xs) {
     display: none;
   }
 }

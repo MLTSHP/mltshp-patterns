@@ -1,12 +1,12 @@
 .image-content {
   clear: both;
   max-width: 100%;
-  padding: var(--spacing-half-again);
+  padding: var(--size-spacing-half-again);
   position: relative;
 
   @media screen and (min-width: 768px) {
-    padding: var(--spacing-half-again) var(--spacing-quadruple)
-      var(--spacing-quadruple);
+    padding: var(--size-spacing-half-again) var(--size-spacing-quadruple)
+      var(--size-spacing-quadruple);
   }
 
   // stylelint-disable selector-no-qualifying-type
@@ -19,10 +19,10 @@
   .image-content-list & {
     border-bottom: 1px dashed var(--color-border-default);
     float: none;
-    padding: 0 var(--spacing-half-again) var(--spacing-half-again);
+    padding: 0 var(--size-spacing-half-again) var(--size-spacing-half-again);
 
     @media screen and (min-width: 768px) {
-      padding: 0 var(--spacing-quadruple) var(--spacing-quadruple);
+      padding: 0 var(--size-spacing-quadruple) var(--size-spacing-quadruple);
     }
   }
 }

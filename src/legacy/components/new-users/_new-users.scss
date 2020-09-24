@@ -4,24 +4,24 @@
 .new-members {
   border-top: 1px dashed var(--color-border-default);
   list-style: none;
-  margin: var(--spacing-triple) 0 0;
-  padding: var(--spacing-triple) 0 0;
+  margin: var(--size-spacing-triple) 0 0;
+  padding: var(--size-spacing-triple) 0 0;
 
   > li {
     border-bottom: 1px dashed var(--color-border-default);
     clear: both;
-    margin-bottom: var(--spacing-triple);
-    padding-bottom: var(--spacing-triple);
+    margin-bottom: var(--size-spacing-triple);
+    padding-bottom: var(--size-spacing-triple);
 
     .avatar {
       float: left;
-      margin-right: var(--spacing-default);
+      margin-right: var(--size-spacing-default);
     }
 
     h4 {
       @include mixins.breakword();
       font-size: 1.125rem;
-      padding-bottom: var(--spacing-half);
+      padding-bottom: var(--size-spacing-half);
 
       a {
         @include links.link--primary();
@@ -36,9 +36,9 @@
   }
 
   .image-medium {
-    margin-left: calc(var(--spacing-default) * 6);
+    margin-left: calc(var(--size-spacing-default) * 6);
     padding-bottom: 0;
-    padding-top: var(--spacing-default);
+    padding-top: var(--size-spacing-default);
 
     .user-and-title > a {
       display: none;

@@ -1,17 +1,17 @@
 @use '../../../base/links';
 
 @mixin alert() {
-  background: var(--color-content-bg-secondary);
+  background: var(--color-background-content-secondary);
   font-size: 0.9rem;
   line-height: 1.25;
-  padding: var(--spacing-half-again);
+  padding: var(--size-spacing-half-again);
 
   p {
     margin: 0;
   }
 
   a {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--number-font-weight-bold);
   }
 }
 
@@ -26,7 +26,7 @@
   padding: 0;
 
   marquee {
-    padding: var(--spacing-half-again);
+    padding: var(--size-spacing-half-again);
   }
 }
 
@@ -35,7 +35,7 @@
 //
 @mixin alert--warning() {
   background: var(--color-bg-warning-pastel);
-  color: var(--color-warning);
+  color: var(--color-status-warning);
 }
 
 .alert--warning {
@@ -47,7 +47,7 @@
 //
 @mixin alert--danger() {
   background: var(--color-bg-danger-pastel);
-  color: var(--color-danger);
+  color: var(--color-status-danger);
 
   a {
     @include links.link--danger();
@@ -64,5 +64,5 @@
 .migration-reminder {
   @include alert();
   @include alert--warning();
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--number-font-weight-bold);
 }

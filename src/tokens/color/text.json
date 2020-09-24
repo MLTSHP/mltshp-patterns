@@ -1,0 +1,43 @@
+{
+  "color": {
+    "text": {
+      "dark": {
+        "value": "{color.base.black_transparent_800.value}",
+        "comment": "Accessible on white and lightest gray."
+      },
+      "dark_emphasis": {
+        "value": "{color.base.black.value}"
+      },
+      "dark_secondary": {
+        "value": "{color.base.black_transparent_600.value}"
+      },
+      "light": {
+        "value": "{color.base.white_transparent_800.value}"
+      },
+      "light_emphasis": {
+        "value": "{color.base.white.value}"
+      },
+      "light_secondary": {
+        "value": "{color.base.white_transparent_600.value}"
+      },
+      "link": {
+        "value": "{color.base.blue.value}"
+      },
+      "link_hover": {
+        "value": "{color.base.blue_dark.value}"
+      },
+      "link_primary": {
+        "value": "{color.base.pink.value}"
+      },
+      "link_primary_hover": {
+        "value": "{color.base.pink_dark.value}"
+      },
+      "link_danger": {
+        "value": "{color.base.red.value}"
+      },
+      "link_danger_hover": {
+        "value": "{color.base.red_dark.value}"
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@ textarea,
 select,
 button {
   font-family: var(--font-family-system);
-  font-size: 16px; // prevent iOS form zoom https://stackoverflow.com/a/20250001
+  font-size: var(--size-font-input); // prevent iOS form zoom
 }
 
 select {
@@ -29,7 +29,7 @@ textarea {
 // Fun Form Layout
 //
 .fun-form {
-  margin-top: var(--spacing-double);
+  margin-top: var(--size-spacing-double);
 
   // form row
   .field {
@@ -45,20 +45,20 @@ textarea {
   }
 
   .field + .field {
-    margin-top: var(--spacing-double);
+    margin-top: var(--size-spacing-double);
   }
 
   // form field label
   label {
     flex: none;
     font-size: 1.125rem;
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--spacing-half);
+    font-weight: var(--number-font-weight-bold);
+    margin-bottom: var(--size-spacing-half);
 
     @media screen and (min-width: 768px) {
       flex-basis: 190px; // magic number, just looks right
       margin-bottom: 0;
-      margin-right: var(--spacing-default);
+      margin-right: var(--size-spacing-default);
       text-align: right;
     }
   }
@@ -83,7 +83,7 @@ textarea {
   .field-help {
     color: var(--color-page-text-secondary);
     font-size: 0.875rem;
-    margin-top: var(--spacing-half);
+    margin-top: var(--size-spacing-half);
 
     @media screen and (min-width: 768px) {
       flex-basis: 100%; // don't wrap
@@ -100,12 +100,12 @@ textarea {
     appearance: none;
     background: var(--color-form-bg);
     border: 1px solid var(--color-border-form);
-    border-radius: var(--border-radius-large);
+    border-radius: var(--size-border-radius-large);
     border-width: 4px 1px 1px 4px;
     color: var(--color-page-text);
     display: block;
     font-size: 1.125rem;
-    padding: var(--spacing-default) var(--spacing-half-again);
+    padding: var(--size-spacing-default) var(--size-spacing-half-again);
     width: 100%;
   }
 
@@ -118,7 +118,7 @@ textarea {
   // field with prefix
   .name-prefix {
     color: var(--color-page-text-secondary);
-    margin-right: var(--spacing-half);
+    margin-right: var(--size-spacing-half);
   }
 
   // error balloon
@@ -130,7 +130,7 @@ textarea {
     font-size: 0.75rem;
     padding: 1em 1.25em;
     position: absolute;
-    right: calc(var(--spacing-half-again) * -1);
+    right: calc(var(--size-spacing-half-again) * -1);
     text-align: center;
     top: 25%;
     transform: translateY(-50%);
@@ -164,7 +164,7 @@ textarea {
   }
 
   label {
-    margin-bottom: var(--spacing-half);
+    margin-bottom: var(--size-spacing-half);
     margin-right: 0;
     text-align: left;
   }
@@ -196,6 +196,6 @@ textarea {
 // List of Errors that usually lives above the form
 //
 .fun-form-errors {
-  color: var(--color-danger);
+  color: var(--color-status-danger);
   font-size: 1.125rem;
 }

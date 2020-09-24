@@ -1,0 +1,12 @@
+{
+  "size": {
+    "breakpoint": {
+      "xs": { "value": "320px" },
+      "sm": { "value": "375px" },
+      "md": { "value": "480px" },
+      "lg": { "value": "768px" },
+      "xl": { "value": "960px" },
+      "xxl": { "value": "1440px" }
+    }
+  }
+}

@@ -5,14 +5,14 @@
 //
 .content-incoming {
   .tip-block {
-    background: var(--color-content-bg-secondary);
-    border-radius: var(--border-radius-large);
-    padding: var(--spacing-double);
+    background: var(--color-background-content-secondary);
+    border-radius: var(--size-border-radius-large);
+    padding: var(--size-spacing-double);
 
     h3 {
-      color: var(--color-primary-brand);
+      color: var(--color-brand-primary);
       font-size: 1.3rem;
-      margin: 0 0 var(--spacing-half-again);
+      margin: 0 0 var(--size-spacing-half-again);
     }
 
     p {
@@ -26,7 +26,7 @@
 .incoming-header {
   @include page-header.page-header();
   cursor: pointer;
-  padding: var(--spacing-half-again) var(--spacing-double);
+  padding: var(--size-spacing-half-again) var(--size-spacing-double);
   width: 100%;
 
   // TODO: update all media queries to design tokens
@@ -55,14 +55,14 @@
   h2 {
     font-size: 1.5rem;
     line-height: 1.2;
-    margin-top: var(--spacing-half-again);
+    margin-top: var(--size-spacing-half-again);
     padding-left: 0;
     text-align: center;
 
     @media screen and (min-width: 768px) {
       font-size: 1.75rem;
       margin-top: 0;
-      padding-left: var(--spacing-default);
+      padding-left: var(--size-spacing-default);
     }
   }
 }

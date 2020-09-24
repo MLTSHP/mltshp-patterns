@@ -4,7 +4,7 @@
 // Styles for the /tools Picker
 //
 .tools-page {
-  background-color: var(--color-page-bg);
+  background-color: var(--color-background-page);
 
   a {
     color: var(--color-text-link-primary);
@@ -22,8 +22,8 @@
     color: var(--color-page-text-secondary);
     font-size: 0.75rem;
     height: 55px;
-    margin: 0 var(--spacing-double);
-    padding-top: var(--spacing-half);
+    margin: 0 var(--size-spacing-double);
+    padding-top: var(--size-spacing-half);
     position: relative;
     text-align: right;
 
@@ -42,9 +42,9 @@
   }
 
   .content {
-    background: var(--color-content-bg);
-    border-radius: var(--border-radius-large);
-    padding: var(--spacing-double);
+    background: var(--color-background-content);
+    border-radius: var(--size-border-radius-large);
+    padding: var(--size-spacing-double);
   }
 
   // wrapper for floated elements, so they don't drop on resize or other factors
@@ -88,7 +88,7 @@
     margin-top: 0;
 
     .tools-field-title .input-text {
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--number-font-weight-bold);
     }
   }
 
@@ -99,7 +99,7 @@
     background: svg-load('illustrations/tools-saved-it.svg') 0 0 no-repeat;
     background-size: contain;
     font-size: 1.75rem;
-    padding-top: calc((133 / 320) * 100% + var(--spacing-double));
+    padding-top: calc((133 / 320) * 100% + var(--size-spacing-double));
 
     @media screen and (min-width: 768px) {
       background-size: 320px 133px;
@@ -111,23 +111,23 @@
   // Sign-in page
   //
   .content-sign-in {
-    margin-top: var(--spacing-double);
+    margin-top: var(--size-spacing-double);
 
     h1 {
-      color: var(--color-secondary-brand);
+      color: var(--color-brand-secondary);
       font-size: 1.5rem;
-      padding: var(--spacing-triple);
+      padding: var(--size-spacing-triple);
     }
   }
 
   .tools-signin-logo {
-    margin-top: var(--spacing-default);
+    margin-top: var(--size-spacing-default);
     text-align: center;
   }
 
   .sign-in-fun-form {
     margin-top: 0;
-    padding-bottom: var(--spacing-double);
+    padding-bottom: var(--size-spacing-double);
 
     @media screen and (min-width: 768px) {
       label {
@@ -146,7 +146,7 @@
   //
   .email-unverified h2,
   .over-upload-limit h2 {
-    color: var(--color-primary-brand);
+    color: var(--color-brand-primary);
     font-size: 1.5rem;
     text-align: center;
   }

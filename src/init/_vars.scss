@@ -6,31 +6,26 @@
 // variables. We prefer custom properties because we can more easily override
 // them for situations like dark mode (see below).
 //
-@use "../design-tokens/border-radius.yml";
-@use "../design-tokens/breakpoint.yml";
-@use "../design-tokens/colors.yml";
-@use "../design-tokens/font.yml";
-@use "../design-tokens/motion.yml";
-@use "../design-tokens/opacity.yml";
-@use "../design-tokens/spacing.yml";
+@use "../compiled/scss/tokens"; // import tokens as SCSS variables
+@use "../compiled/css/tokens" as props; // import tokens as CSS custom properties
 
 :root {
-  --color-text-link-underline: #{rgba(colors.$color-text-link, 0.33)};
-  --color-text-link-underline-hover: #{rgba(colors.$color-text-link-hover, 0.33)};
+  --color-text-link-underline: #{rgba(tokens.$color-text-link, 0.33)};
+  --color-text-link-underline-hover: #{rgba(tokens.$color-text-link-hover, 0.33)};
   --color-text-link-primary-underline: #{rgba(
-      colors.$color-text-link-primary,
+      tokens.$color-text-link-primary,
       0.33
     )};
   --color-text-link-primary-underline-hover: #{rgba(
-      colors.$color-text-link-primary-hover,
+      tokens.$color-text-link-primary-hover,
       0.33
     )};
   --color-text-link-danger-underline: #{rgba(
-      colors.$color-text-link-danger,
+      tokens.$color-text-link-danger,
       0.33
     )};
   --color-text-link-danger-underline-hover: #{rgba(
-      colors.$color-text-link-danger-hover,
+      tokens.$color-text-link-danger-hover,
       0.33
     )};
 }

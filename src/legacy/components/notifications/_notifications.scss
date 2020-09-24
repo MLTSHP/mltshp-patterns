@@ -5,35 +5,35 @@
 // Notification Block
 //
 .notification-block {
-  background: var(--color-content-bg-secondary);
-  border-radius: var(--border-radius-large);
-  margin-bottom: var(--spacing-double);
+  background: var(--color-background-content-secondary);
+  border-radius: var(--size-border-radius-large);
+  margin-bottom: var(--size-spacing-double);
 }
 
 .notification-block-link a {
   display: block;
-  font-weight: var(--font-weight-bold);
-  padding: var(--spacing-half-again);
+  font-weight: var(--number-font-weight-bold);
+  padding: var(--size-spacing-half-again);
   text-decoration: none;
 }
 
 .notification-block-hd {
   cursor: pointer;
-  font-weight: var(--font-weight-bold);
-  padding: var(--spacing-half-again);
+  font-weight: var(--number-font-weight-bold);
+  padding: var(--size-spacing-half-again);
 }
 
 .notification-block-bd {
   display: none;
-  padding: 0 var(--spacing-default) var(--spacing-default);
+  padding: 0 var(--size-spacing-default) var(--size-spacing-default);
 
   .notification {
     @include mixins.breakword();
-    background-color: var(--color-content-bg);
-    border-radius: var(--border-radius-large);
+    background-color: var(--color-background-content);
+    border-radius: var(--size-border-radius-large);
     color: var(--color-page-text);
     font-size: 0.875rem;
-    padding: var(--spacing-default);
+    padding: var(--size-spacing-default);
     position: relative;
 
     // TODO: refactor away from float layout so we can remove the clearfix
@@ -44,19 +44,19 @@
     }
 
     + .notification {
-      margin-top: var(--spacing-default);
+      margin-top: var(--size-spacing-default);
     }
 
     .notification-close {
       outline: none;
       position: absolute;
-      right: var(--spacing-half);
-      top: var(--spacing-half);
+      right: var(--size-spacing-half);
+      top: var(--size-spacing-half);
     }
 
     .thumb {
       float: left;
-      padding-right: var(--spacing-default);
+      padding-right: var(--size-spacing-default);
       text-align: center;
       width: 100px;
     }
@@ -69,7 +69,7 @@
 
   .clear-all {
     clear: both;
-    margin-top: var(--spacing-default);
+    margin-top: var(--size-spacing-default);
     text-align: right;
   }
 }
@@ -79,49 +79,49 @@
 //
 .notification-block-follow {
   background-color: var(--color-bg-secondary-brand-pastel);
-  color: var(--color-primary-brand);
+  color: var(--color-brand-primary);
 }
 
 .notification-block-save {
   background-color: var(--color-bg-warning-pastel);
-  color: var(--color-warning-pastel-dark);
+  color: var(--color-status-warning-pastel-dark);
 }
 
 .notification-block-like {
   background-color: var(--color-bg-danger-pastel);
-  color: var(--color-danger-pastel-dark);
+  color: var(--color-status-danger-pastel-dark);
 }
 
 .notification-block-comment {
   background-color: var(--color-bg-secondary-brand-pastel);
-  color: var(--color-secondary-brand);
+  color: var(--color-brand-secondary);
 }
 
 .notification-block-shakeinvitation {
   background-color: var(--color-bg-success-pastel);
-  color: var(--color-success-pastel-dark);
+  color: var(--color-status-success-pastel-dark);
 }
 
 .notification-block-invitation-request {
   background-color: var(--color-bg-success-pastel);
-  color: var(--color-success-pastel-dark);
+  color: var(--color-status-success-pastel-dark);
 }
 
 .notification-block-invitation-approved {
   background-color: var(--color-bg-success-pastel);
-  color: var(--color-success-pastel-dark);
+  color: var(--color-status-success-pastel-dark);
 }
 
 .notification-block-aggregate {
   background-color: var(--color-bg-secondary-brand-pastel);
-  color: var(--color-primary-brand);
+  color: var(--color-brand-primary);
 }
 
 //
 // Notification block for new followers
 //
 .notification-block-follow .notification {
-  padding-right: var(--spacing-triple);
+  padding-right: var(--size-spacing-triple);
 }
 
 //
@@ -131,17 +131,17 @@
 .notification-block-shakeinvitation {
   .shake-thumb {
     float: left;
-    margin-right: var(--spacing-default);
+    margin-right: var(--size-spacing-default);
     width: 48px;
   }
 
   h4 {
-    padding-top: var(--spacing-default);
+    padding-top: var(--size-spacing-default);
   }
 
   .shake-context {
     clear: both;
-    margin-top: var(--spacing-default);
+    margin-top: var(--size-spacing-default);
 
     a {
       @include links.link--primary();
@@ -152,11 +152,11 @@
   .buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: var(--spacing-default);
+    margin-top: var(--size-spacing-default);
   }
 
   .content-shake & {
-    margin-top: var(--spacing-double);
+    margin-top: var(--size-spacing-double);
   }
 }
 
@@ -172,7 +172,7 @@
   clear: both;
   display: flex;
   justify-content: space-between;
-  margin-top: var(--spacing-default);
+  margin-top: var(--size-spacing-default);
 }
 
 //

@@ -6,14 +6,14 @@
     color: var(--color-page-text-secondary);
     font-size: 0.875rem;
     overflow: hidden;
-    padding-bottom: var(--spacing-default);
+    padding-bottom: var(--size-spacing-default);
   }
 
   .the-description {
     @include mixins.breakword();
 
     &.the-description-blank {
-      color: var(--color-disabled);
+      color: var(--color-status-disabled);
       font-style: italic;
     }
 
@@ -25,31 +25,31 @@
   // Inline Editing Description
   .description-edit .the-description:hover,
   .the-description-hover {
-    background-color: var(--color-edit);
+    background-color: var(--color-status-edit);
   }
 
   .description-edit-form {
     display: none;
 
     textarea {
-      background-color: var(--color-content-bg);
+      background-color: var(--color-background-content);
       border: 1px solid var(--color-border-default);
-      border-radius: var(--border-radius-default);
+      border-radius: var(--size-border-radius-default);
       color: var(--color-page-text);
       min-height: 100px;
-      padding: var(--spacing-half);
+      padding: var(--size-spacing-half);
     }
 
     .buttons {
       display: flex;
-      padding: var(--spacing-default) 0;
+      padding: var(--size-spacing-default) 0;
     }
 
     .or {
       color: var(--color-page-text-secondary);
       display: block;
-      padding: var(--spacing-half) var(--spacing-default)
-        var(--spacing-half-again) var(--spacing-default);
+      padding: var(--size-spacing-half) var(--size-spacing-default)
+        var(--size-spacing-half-again) var(--size-spacing-default);
     }
   }
 }

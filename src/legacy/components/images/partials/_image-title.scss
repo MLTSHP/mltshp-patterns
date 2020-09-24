@@ -3,16 +3,16 @@
 
 .image-title {
   max-width: 100%;
-  padding: var(--spacing-half-again) var(--spacing-half-again) 0;
+  padding: var(--size-spacing-half-again) var(--size-spacing-half-again) 0;
   position: relative;
 
   @media screen and (min-width: 768px) {
-    padding: var(--spacing-quadruple) var(--spacing-quadruple) 0;
+    padding: var(--size-spacing-quadruple) var(--size-spacing-quadruple) 0;
   }
 
   .image-poster {
     float: left;
-    padding-right: var(--spacing-default);
+    padding-right: var(--size-spacing-default);
   }
 
   h1,
@@ -26,19 +26,19 @@
 
   h3 {
     font-size: 1.875rem;
-    margin-bottom: var(--spacing-double);
+    margin-bottom: var(--size-spacing-double);
   }
 
   .remove-from-shake {
     height: 21px;
     position: absolute;
-    right: var(--spacing-default);
-    top: var(--spacing-default);
+    right: var(--size-spacing-default);
+    top: var(--size-spacing-default);
     width: 21px;
 
     @media screen and (min-width: 768px) {
       top: calc(
-        var(--spacing-quadruple) + var(--spacing-half)
+        var(--size-spacing-quadruple) + var(--size-spacing-half)
       ); // padding + 5px
     }
   }
@@ -46,7 +46,7 @@
 
 .image-edit-title:hover,
 .image-edit-title-hover {
-  background-color: var(--color-edit);
+  background-color: var(--color-status-edit);
 }
 
 .image-edit-title-form {
@@ -62,14 +62,14 @@
   }
 
   .title-input {
-    background-color: var(--color-content-bg);
+    background-color: var(--color-background-content);
     border: 1px solid var(--color-border-default);
-    border-radius: var(--border-radius-default);
+    border-radius: var(--size-border-radius-default);
     color: var(--color-page-text);
     flex: 1;
     font-size: 3rem;
-    font-weight: var(--font-weight-bold);
-    margin-bottom: var(--spacing-default);
+    font-weight: var(--number-font-weight-bold);
+    margin-bottom: var(--size-spacing-default);
     max-width: 100%;
     min-width: 0;
 
@@ -87,13 +87,13 @@
   .buttons {
     align-items: center;
     display: flex;
-    padding-left: var(--spacing-default);
+    padding-left: var(--size-spacing-default);
   }
 
   .or {
     color: var(--color-page-text-secondary);
     display: block;
-    padding: 0 var(--spacing-default);
+    padding: 0 var(--size-spacing-default);
   }
 
   //
@@ -102,7 +102,7 @@
   // 2. We only want the small button treatment on list pages
   //
   .image-content-list & {
-    margin-bottom: var(--spacing-double); // 1
+    margin-bottom: var(--size-spacing-double); // 1
 
     .btn {
       @include buttons.button--small(); // 2

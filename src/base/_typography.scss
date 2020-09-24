@@ -6,8 +6,8 @@
 //
 html {
   font-family: var(--font-family-system);
-  font-size: var(--font-size-base);
-  font-weight: var(--font-weight-normal);
+  font-size: var(--size-font-base);
+  font-weight: var(--number-font-weight-normal);
   letter-spacing: var(--letter-spacing);
   line-height: 1.4;
 }
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--number-font-weight-bold);
 }
 
 pre,

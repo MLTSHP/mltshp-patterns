@@ -1,30 +1,28 @@
-@use "../design-tokens/colors.yml";
-
 //
 // Light Mode
 // This is the default theme for the site. Can also be applied via `.t-light` or
 // automatically via the `prefers-color-scheme` media query.
 //
 @mixin lightmode() {
-  --color-page-bg: var(--color-page-bg-light);
-  --color-content-bg: var(--color-content-bg-light);
-  --color-content-bg-secondary: var(--color-gray-100);
+  --color-background-page: var(--color-background-page-light);
+  --color-background-content: var(--color-background-content-light);
+  --color-background-content-secondary: var(--color-base-gray-100);
   --color-page-text: var(--color-text-dark);
   --color-page-text-emphasis: var(--color-text-dark-emphasis);
   --color-page-text-secondary: var(--color-text-dark-secondary);
-  --color-border-default: var(--color-gray-300);
-  --color-border-form: var(--color-blue-gray-light);
-  --color-form-bg: var(--color-secondary-brand-very-light);
-  --color-form-error-bubble-bg: var(--color-secondary-brand-pastel-medium);
+  --color-border-default: var(--color-base-gray-300);
+  --color-border-form: var(--color-base-blue-gray-light);
+  --color-form-bg: var(--color-brand-secondary-very-light);
+  --color-form-error-bubble-bg: var(--color-brand-secondary-pastel-medium);
   --color-form-error-bubble-text: var(--color-page-text);
-  --font-weight-bold: bold;
-  --font-weight-normal: normal;
+  --number-font-weight-bold: bold;
+  --number-font-weight-normal: normal;
   --letter-spacing: normal;
-  --color-bg-primary-brand-pastel: var(--color-primary-brand-pastel-light);
-  --color-bg-secondary-brand-pastel: var(--color-page-bg-light);
-  --color-bg-success-pastel: var(--color-success-pastel-very-light);
-  --color-bg-danger-pastel: var(--color-danger-pastel-light);
-  --color-bg-warning-pastel: var(--color-highlight);
+  --color-bg-primary-brand-pastel: var(--color-brand-primary-pastel-light);
+  --color-bg-secondary-brand-pastel: var(--color-background-page-light);
+  --color-bg-success-pastel: var(--color-status-success-pastel-very-light);
+  --color-bg-danger-pastel: var(--color-status-danger-pastel-light);
+  --color-bg-warning-pastel: var(--color-status-highlight);
 }
 
 :root {

@@ -1,6 +1,6 @@
 // 1. Duplicating body background for Storybook previews.
 .page {
-  background-color: var(--color-page-bg); // 1
+  background-color: var(--color-background-page); // 1
   padding: 0 0.5em;
   position: relative;
 }
@@ -13,10 +13,10 @@
 }
 
 .content {
-  background-color: var(--color-content-bg);
-  border-radius: var(--border-radius-large);
-  margin-bottom: var(--spacing-triple);
-  margin-top: var(--spacing-half-again);
+  background-color: var(--color-background-content);
+  border-radius: var(--size-border-radius-large);
+  margin-bottom: var(--size-spacing-triple);
+  margin-top: var(--size-spacing-half-again);
 
   // TODO: remove clearfix once we don't have so many float layouts
   &::after {
@@ -31,12 +31,12 @@
 //
 .content-narrow,
 .content-styleguide {
-  margin: var(--spacing-quadruple) auto var(--spacing-triple);
+  margin: var(--size-spacing-quadruple) auto var(--size-spacing-triple);
   max-width: 700px;
-  padding: var(--spacing-half-again);
+  padding: var(--size-spacing-half-again);
 
   @media screen and (min-width: 768px) {
-    padding: var(--spacing-quadruple);
+    padding: var(--size-spacing-quadruple);
   }
 
   // I hate this. We spend more time overriding it. Needs to be refactored away. -SV
@@ -84,18 +84,18 @@
   .sidebar {
     background: linear-gradient(
       to top,
-      var(--color-white-transparent),
-      var(--color-white-transparent) calc(100% - 6px),
+      var(--color-base-white-transparent),
+      var(--color-base-white-transparent) calc(100% - 6px),
       var(--color-border-default)
     );
     order: 2;
-    padding: var(--spacing-double);
+    padding: var(--size-spacing-double);
 
     @media screen and (min-width: 768px) {
       background: linear-gradient(
         to right,
-        var(--color-white-transparent),
-        var(--color-white-transparent) calc(100% - 6px),
+        var(--color-base-white-transparent),
+        var(--color-base-white-transparent) calc(100% - 6px),
         var(--color-border-default)
       );
       flex: 0 0 325px;
@@ -112,8 +112,8 @@
     @media screen and (min-width: 768px) {
       background: linear-gradient(
         to left,
-        var(--color-white-transparent),
-        var(--color-white-transparent) calc(100% - 6px),
+        var(--color-base-white-transparent),
+        var(--color-base-white-transparent) calc(100% - 6px),
         var(--color-border-default)
       );
       order: 2;
