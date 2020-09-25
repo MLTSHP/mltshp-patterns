@@ -21,13 +21,13 @@
     "!.gitignore"
   ],
   "scripts": {
-    "storybook": "yarn preprocess && run-p watch-preprocess start-storybook",
+    "storybook": "yarn build:tokens && run-p watch:tokens start-storybook",
     "start-storybook": "start-storybook -p 6006 -s static",
-    "build-storybook": "yarn preprocess && build-storybook -s static",
-    "preprocess": "gulp theo-to-mdx",
-    "watch-preprocess": "gulp watch-preprocess",
+    "build-storybook": "yarn build:tokens && build-storybook -s static",
     "build": "gulp build",
-    "build:tokens": "node ./build-tokens.js",
+    "build:sass": "gulp build-sass",
+    "build:tokens": "gulp build-tokens",
+    "watch:tokens": "gulp watch-tokens",
     "test": "yarn lint",
     "check-lint": "run-s check-lint:*",
     "check-lint:css": "stylelint '**/*.scss'",
@@ -35,7 +35,7 @@
     "lint": "run-s lint:*",
     "lint:css": "stylelint --fix '**/*.scss'",
     "lint:js": "eslint . --fix --ext .js,.mdx",
-    "prepublishOnly": "yarn && yarn check-lint && yarn preprocess && yarn build"
+    "prepublishOnly": "yarn && yarn check-lint && yarn build"
   },
   "devDependencies": {
     "@babel/core": "7.11.6",
@@ -55,9 +55,7 @@
     "gulp-prettier": "3.0.0",
     "gulp-rename": "2.0.0",
     "gulp-sass": "4.1.0",
-    "gulp-theo": "2.0.1",
-    "js-yaml": "3.14.0",
-    "lodash": "4.17.20",
+    "gulp-shell": "^0.8.0",
     "mini-css-extract-plugin": "0.11.2",
     "npm-run-all": "4.1.5",
     "postcss-inline-svg": "4.1.0",
@@ -76,7 +74,6 @@
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-spaceninja": "7.0.0",
     "stylelint-prettier": "1.1.2",
-    "theo": "8.1.5",
     "tiny-glob": "0.2.6"
   },
   "dependencies": {}

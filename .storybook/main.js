@@ -9,8 +9,8 @@ module.exports = {
       options: {
         actions: false,
         backgrounds: false,
-        controls: false
-      }
+        controls: false,
+      },
     },
     '@storybook/addon-a11y',
     'storybook-addon-themes',
@@ -70,11 +70,7 @@ module.exports = {
               implementation: require('sass'),
               sourceMap: true,
               sassOptions: {
-                importer: [
-                  require('../glob-sass-importer'),
-                  // Import Theo design tokens as SCSS variables
-                  require('../.theo/sass-importer'),
-                ],
+                importer: [require('../glob-sass-importer')],
               },
             },
           },
@@ -84,11 +80,6 @@ module.exports = {
         // Optimize and process SVGs as React elements for use in documentation
         test: /\.svg$/,
         use: '@svgr/webpack',
-      },
-      {
-        // Import Theo design tokens as JS objects
-        test: /\.ya?ml$/,
-        use: resolve(__dirname, '../.theo/webpack-loader.js'),
       }
     );
 
