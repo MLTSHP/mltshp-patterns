@@ -1,3 +1,4 @@
+@use "../../../compiled/scss/tokens";
 @use '../../../init/mixins';
 
 @mixin page-header() {
@@ -29,11 +30,11 @@
     line-height: 50px; // to match height of avatar
     padding-left: 1.5rem;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       font-size: 2.25rem; // 36px
     }
 
-    @media screen and (min-width: 800px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       font-size: 2.625rem; // 42px
     }
   }

@@ -1,3 +1,5 @@
+@use "../../../compiled/scss/tokens";
+
 .pagination {
   background-color: var(--color-bg-secondary-brand-pastel);
   border-radius: var(--size-border-radius-large);
@@ -20,7 +22,7 @@
   .previous-link {
     flex-basis: 50%;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       flex-basis: auto;
       margin-right: auto;
     }
@@ -30,7 +32,7 @@
     flex-basis: 50%;
     text-align: right;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       flex-basis: auto;
       margin-left: auto;
       order: 1;
@@ -47,7 +49,7 @@
   justify-content: center;
   padding: var(--size-spacing-default);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: tokens.$size-breakpoint-md) {
     flex-wrap: none;
   }
 }

@@ -1,3 +1,4 @@
+@use "../../../compiled/scss/tokens";
 @use '../../../base/links';
 
 //
@@ -7,7 +8,7 @@
 .content-membership {
   padding: var(--size-spacing-half-again);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     padding: var(--size-spacing-quadruple);
   }
 
@@ -59,7 +60,7 @@
   background-size: 366px 481px;
   padding-bottom: 530px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     background-position: var(--size-spacing-quadruple)
       var(--size-spacing-quadruple);
     min-height: calc(481px + var(--size-spacing-quadruple));
@@ -80,7 +81,7 @@
   background-size: 312px 410px;
   padding-bottom: 450px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     background-position: var(--size-spacing-quadruple)
       var(--size-spacing-quadruple);
     min-height: calc(410px + var(--size-spacing-quadruple));
@@ -97,11 +98,11 @@
 .membership-header {
   margin-bottom: var(--size-spacing-double);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: tokens.$size-breakpoint-md) {
     display: flex;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     margin-bottom: var(--size-spacing-quadruple);
   }
 
@@ -121,21 +122,21 @@
 .membership-header--illustration {
   display: none;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: tokens.$size-breakpoint-md) {
     display: block;
     flex: none;
     margin-right: var(--size-spacing-half-again);
     width: 75px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     margin-right: var(--size-spacing-quadruple);
     width: 140px;
   }
 }
 
 .membership-header--content {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: tokens.$size-breakpoint-md) {
     flex: 1;
   }
 }
@@ -145,7 +146,7 @@
     margin: var(--size-spacing-double) 0;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     display: flex;
 
     > * {
@@ -159,7 +160,7 @@
 }
 
 .membership-options--plan {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     flex: 1;
   }
 
@@ -184,7 +185,7 @@
   }
 
   .is-active-member & {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       padding-top: var(--size-spacing-quadruple);
 
       &.is-active-plan {
@@ -208,7 +209,7 @@
   display: flex;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     flex-direction: column;
   }
 
@@ -219,14 +220,14 @@
     flex: 1;
     height: 1px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       height: auto;
       width: 1px;
     }
   }
 
   &::before {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       flex-basis: var(--size-spacing-triple);
       flex-grow: 0;
     }
@@ -253,7 +254,7 @@
   margin-top: var(--size-spacing-half-again);
   text-align: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     margin-top: var(--size-spacing-quadruple);
   }
 

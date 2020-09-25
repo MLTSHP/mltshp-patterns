@@ -1,3 +1,5 @@
+@use "../../../compiled/scss/tokens";
+
 //
 // Area: Permalink
 //
@@ -8,7 +10,7 @@
 .content-permalink {
   padding: var(--size-spacing-half-again);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     padding: var(--size-spacing-triple);
   }
 
@@ -19,14 +21,14 @@
     + * {
       margin-top: var(--size-spacing-half-again) !important;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: tokens.$size-breakpoint-lg) {
         margin-top: var(--size-spacing-triple) !important;
       }
     }
   }
 
   > .permalink-sidebar {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       float: right;
       width: 330px;
     }
@@ -35,7 +37,7 @@
   > .image-content,
   > .image-comments,
   > .image-comment-form {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       float: left;
       width: calc(100% - 360px);
     }
@@ -46,7 +48,7 @@
 // Fancy new grid-based layout
 //
 @supports (display: grid) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     .content-permalink {
       display: grid;
       grid-gap: var(--size-spacing-triple);

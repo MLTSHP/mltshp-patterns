@@ -1,3 +1,4 @@
+@use "../../../compiled/scss/tokens";
 @use '../../../base/links';
 @use "../../components/page-header/_page-header";
 
@@ -11,12 +12,12 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     flex-direction: row;
   }
 
   > * {
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       flex: 1;
       max-width: calc(50% - var(--size-spacing-double));
     }
@@ -26,7 +27,7 @@
     font-size: 3rem;
     margin-bottom: var(--size-spacing-half-again);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       margin-bottom: 0;
     }
   }
@@ -42,13 +43,13 @@
     padding: var(--size-spacing-half-again);
     padding-bottom: 0;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       padding-left: var(--size-spacing-double);
     }
   }
 
   li + li {
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       margin-left: var(--size-spacing-half-again);
     }
   }
@@ -75,7 +76,7 @@
   justify-content: space-between;
   padding: var(--size-spacing-half-again);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     flex-direction: row;
     padding: var(--size-spacing-quadruple);
   }
@@ -83,7 +84,7 @@
   > * {
     margin: 0;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       flex: 1;
       max-width: calc(50% - var(--size-spacing-double));
     }
@@ -92,7 +93,7 @@
   > * + * {
     margin-top: var(--size-spacing-triple);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       margin-top: 0;
     }
   }
@@ -179,7 +180,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       flex-direction: row;
     }
   }
@@ -192,7 +193,7 @@
     flex: 1;
     padding-top: var(--size-spacing-default);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       margin-left: var(--size-spacing-default);
       padding-top: var(--size-spacing-half);
     }
@@ -219,7 +220,7 @@
     margin-top: var(--size-spacing-quadruple);
     padding: var(--size-spacing-half-again);
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       padding: var(--size-spacing-double);
     }
 

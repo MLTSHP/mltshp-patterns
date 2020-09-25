@@ -1,3 +1,4 @@
+@use "../../../compiled/scss/tokens";
 @use '../../../base/links';
 
 .dashboard-new-user {
@@ -41,7 +42,7 @@
       margin-right: var(--size-spacing-double);
       margin-top: var(--size-spacing-default);
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: tokens.$size-breakpoint-lg) {
         flex-basis: 130px; // image size
         margin-left: var(--size-spacing-double);
         margin-right: var(--size-spacing-quadruple);

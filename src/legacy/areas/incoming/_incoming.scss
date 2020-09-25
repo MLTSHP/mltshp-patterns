@@ -1,3 +1,4 @@
+@use "../../../compiled/scss/tokens";
 @use "../../components/page-header/_page-header";
 
 //
@@ -30,7 +31,7 @@
   width: 100%;
 
   // TODO: update all media queries to design tokens
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -45,7 +46,7 @@
     max-width: 100%;
     padding-top: (87/300) * 100%; // aspect-ratio to scale with fluid width
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       margin: 0;
       padding-top: 115px;
       width: 395px;
@@ -59,7 +60,7 @@
     padding-left: 0;
     text-align: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       font-size: 1.75rem;
       margin-top: 0;
       padding-left: var(--size-spacing-default);

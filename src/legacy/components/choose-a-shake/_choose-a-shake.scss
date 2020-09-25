@@ -1,3 +1,4 @@
+@use "../../../compiled/scss/tokens";
 @use '../../../base/links';
 
 .choose-a-shake {
@@ -42,7 +43,7 @@
   right: 0;
   top: calc(100% - 0.22em);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     border-top-left-radius: 0;
     border-top-right-radius: var(--size-border-radius-large);
     left: 0;

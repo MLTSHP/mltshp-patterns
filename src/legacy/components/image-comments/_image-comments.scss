@@ -1,3 +1,4 @@
+@use "../../../compiled/scss/tokens";
 @use '../../../init/mixins';
 
 .image-comments {
@@ -134,15 +135,15 @@
       text-shadow: 0.05em 0.05em 0.05em var(--color-base-black-transparent-500); // copied from button
       white-space: nowrap;
 
-      @media screen and (min-width: 360px) {
+      @media screen and (min-width: tokens.$size-breakpoint-sm) {
         font-size: 0.875rem;
       }
 
-      @media screen and (min-width: 480px) {
+      @media screen and (min-width: tokens.$size-breakpoint-md) {
         font-size: 1rem;
       }
 
-      @media screen and (min-width: 820px) {
+      @media screen and (min-width: tokens.$size-breakpoint-lg) {
         font-size: 1.125rem;
       }
     }

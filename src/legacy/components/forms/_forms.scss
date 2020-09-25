@@ -1,4 +1,4 @@
-// TODO dark styles, fix layout bugs
+@use "../../../compiled/scss/tokens";
 
 // Need to reapply system font to form fields because iOS tries to force Helvetica
 input,
@@ -37,7 +37,7 @@ textarea {
     flex-direction: column;
     position: relative;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       align-items: center;
       flex-direction: row;
       flex-wrap: wrap;
@@ -55,7 +55,7 @@ textarea {
     font-weight: var(--number-font-weight-bold);
     margin-bottom: var(--size-spacing-half);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       flex-basis: 190px; // magic number, just looks right
       margin-bottom: 0;
       margin-right: var(--size-spacing-default);
@@ -74,7 +74,7 @@ textarea {
     display: block;
 
     // indent to match label
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       padding-left: 200px;
     }
   }
@@ -85,7 +85,7 @@ textarea {
     font-size: 0.875rem;
     margin-top: var(--size-spacing-half);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       flex-basis: 100%; // don't wrap
     }
   }
@@ -137,7 +137,7 @@ textarea {
     width: 115px;
     z-index: 1;
 
-    @media screen and (min-width: 960px) {
+    @media screen and (min-width: tokens.$size-breakpoint-xl) {
       right: -160px;
     }
 

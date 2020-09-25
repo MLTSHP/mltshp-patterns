@@ -1,3 +1,4 @@
+@use "../../../../compiled/scss/tokens";
 @use '../../../../init/mixins';
 @use '../../buttons/buttons';
 
@@ -6,7 +7,7 @@
   padding: var(--size-spacing-half-again) var(--size-spacing-half-again) 0;
   position: relative;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: tokens.$size-breakpoint-lg) {
     padding: var(--size-spacing-quadruple) var(--size-spacing-quadruple) 0;
   }
 
@@ -36,7 +37,7 @@
     top: var(--size-spacing-default);
     width: 21px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       top: calc(
         var(--size-spacing-quadruple) + var(--size-spacing-half)
       ); // padding + 5px
@@ -53,7 +54,7 @@
   display: none;
   flex-direction: column;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: tokens.$size-breakpoint-md) {
     flex-direction: row;
   }
 
@@ -73,7 +74,7 @@
     max-width: 100%;
     min-width: 0;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: tokens.$size-breakpoint-md) {
       margin-bottom: 0;
     }
 

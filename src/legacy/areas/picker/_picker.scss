@@ -1,3 +1,4 @@
+@use "../../../compiled/scss/tokens";
 @use '../../../base/links';
 
 //
@@ -53,7 +54,7 @@
     flex-direction: column;
     margin: 0 auto;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       flex-direction: row;
       justify-content: space-between;
     }
@@ -61,7 +62,7 @@
     > * {
       min-width: 0; // https://github.com/philipwalton/flexbugs/issues/39
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: tokens.$size-breakpoint-lg) {
         flex-basis: calc(50% - 10px);
       }
     }
@@ -69,13 +70,13 @@
     > * + * {
       margin-top: 20px;
 
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: tokens.$size-breakpoint-lg) {
         margin-top: 0;
       }
     }
 
     .full-width {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: tokens.$size-breakpoint-lg) {
         flex: 1;
       }
     }
@@ -101,7 +102,7 @@
     font-size: 1.75rem;
     padding-top: calc((133 / 320) * 100% + var(--size-spacing-double));
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       background-size: 320px 133px;
       padding-top: 160px;
     }
@@ -129,7 +130,7 @@
     margin-top: 0;
     padding-bottom: var(--size-spacing-double);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: tokens.$size-breakpoint-lg) {
       label {
         flex-basis: 120px;
       }
