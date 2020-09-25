@@ -60,7 +60,6 @@
     font-size: 0.8rem;
   }
 
-  // TODO: refactor away from float layout so we can remove the clearfix
   &::after {
     clear: both;
     content: '';

@@ -20,7 +20,6 @@
   margin-bottom: var(--size-spacing-triple);
   margin-top: var(--size-spacing-half-again);
 
-  // TODO: remove clearfix once we don't have so many float layouts
   &::after {
     clear: both;
     content: '';
@@ -41,7 +40,7 @@
     padding: var(--size-spacing-quadruple);
   }
 
-  // I hate this. We spend more time overriding it. Needs to be refactored away. -SV
+  // I hate this. We spend more time overriding it. -SV
   p {
     font-size: 1.625rem; // 26px
     line-height: 2.5;

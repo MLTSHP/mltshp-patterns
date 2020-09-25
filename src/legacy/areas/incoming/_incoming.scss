@@ -30,7 +30,6 @@
   padding: var(--size-spacing-half-again) var(--size-spacing-double);
   width: 100%;
 
-  // TODO: update all media queries to design tokens
   @media screen and (min-width: tokens.$size-breakpoint-lg) {
     align-items: center;
     display: flex;
