@@ -9,6 +9,15 @@
   margin-right: 1em;
   margin-top: 1em;
   width: 211px;
+
+  a {
+    display: block;
+
+    &:focus {
+      box-shadow: none;
+      opacity: 0.75;
+    }
+  }
 }
 
 .site-branding--logo {

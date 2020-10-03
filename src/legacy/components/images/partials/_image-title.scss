@@ -14,6 +14,10 @@
   .image-poster {
     float: left;
     padding-right: var(--size-spacing-default);
+
+    a {
+      display: block;
+    }
   }
 
   h1,

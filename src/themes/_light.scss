@@ -1,3 +1,5 @@
+@use "../compiled/scss/tokens"; // import tokens as SCSS variables
+
 //
 // Light Mode
 // This is the default theme for the site. Can also be applied via `.t-light` or
@@ -12,6 +14,7 @@
   --color-page-text-secondary: var(--color-text-dark-secondary);
   --color-border-default: var(--color-base-gray-300);
   --color-border-form: var(--color-base-blue-gray-light);
+  --color-border-focus-ring: #{rgba(tokens.$color-brand-secondary, 0.25)};
   --color-form-bg: var(--color-brand-secondary-very-light);
   --color-form-error-bubble-bg: var(--color-brand-secondary-pastel-medium);
   --color-form-error-bubble-text: var(--color-page-text);

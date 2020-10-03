@@ -13,9 +13,13 @@
     margin-bottom: var(--size-spacing-triple);
     padding-bottom: var(--size-spacing-triple);
 
-    .avatar {
+    > a {
+      display: block;
       float: left;
       margin-right: var(--size-spacing-default);
+    }
+
+    .avatar {
     }
 
     h4 {

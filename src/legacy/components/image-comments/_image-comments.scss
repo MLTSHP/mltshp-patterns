@@ -20,6 +20,10 @@
     .avatar {
       margin-right: var(--size-spacing-default);
       width: 48px;
+
+      a {
+        display: block;
+      }
     }
 
     .body {

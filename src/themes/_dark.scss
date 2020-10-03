@@ -17,6 +17,7 @@
   --color-page-text-secondary: var(--color-text-light-secondary);
   --color-border-default: var(--color-base-gray-700);
   --color-border-form: var(--color-base-gray-800);
+  --color-border-focus-ring: #{rgba(tokens.$color-brand-secondary, 0.4)};
   --color-form-bg: var(--color-background-content-secondary);
   --color-form-error-bubble-bg: var(--color-base-gray-800);
   --color-form-error-bubble-text: var(--color-status-danger);

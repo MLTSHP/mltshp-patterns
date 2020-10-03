@@ -1,14 +1,16 @@
 .image-content-footer {
   color: var(--color-page-text-secondary);
   font-size: 0.75rem;
-  padding-top: var(--size-spacing-half);
+  padding-top: var(--size-spacing-default);
 
   .originally-posted-by {
     clear: left;
     padding-bottom: var(--size-spacing-half);
 
     .avatar--link {
+      display: inline-block;
       text-decoration: none;
+      vertical-align: middle;
     }
   }
 

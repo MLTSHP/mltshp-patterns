@@ -11,6 +11,13 @@
       var(--size-spacing-quadruple);
   }
 
+  .the-image {
+    a,
+    img {
+      display: block;
+    }
+  }
+
   // stylelint-disable selector-no-qualifying-type
   img.unsized {
     height: auto;
