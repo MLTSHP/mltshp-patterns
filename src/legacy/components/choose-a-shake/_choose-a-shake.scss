@@ -66,7 +66,6 @@
     padding: 0;
 
     li a {
-      @include links.link--primary();
       @include links.link--emphasized();
       background-color: var(--color-background-choose-shake-link);
       border-radius: var(--size-border-radius-large);
@@ -83,6 +82,7 @@
       &:active {
         background-color: var(--color-background-choose-shake-link-hover);
         color: var(--color-text-choose-shake-link-hover);
+        text-decoration: none;
       }
     }
 
