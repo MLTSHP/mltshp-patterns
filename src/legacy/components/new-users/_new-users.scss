@@ -19,9 +19,6 @@
       margin-right: var(--size-spacing-default);
     }
 
-    .avatar {
-    }
-
     h4 {
       @include mixins.breakword();
       font-size: 1.125rem;

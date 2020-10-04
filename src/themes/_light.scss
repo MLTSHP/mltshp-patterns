@@ -5,6 +5,7 @@
 // This is the default theme for the site. Can also be applied via `.t-light` or
 // automatically via the `prefers-color-scheme` media query.
 //
+
 /* prettier-ignore */
 @mixin lightmode() {
   --color-background-page: var(--color-background-page-light);

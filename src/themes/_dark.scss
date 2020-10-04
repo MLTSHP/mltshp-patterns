@@ -8,6 +8,7 @@
 // 1. Use a lighter font weight and increased letter-spacing
 //    @see https://css-tricks.com/?p=306566
 //
+
 /* prettier-ignore */
 @mixin darkmode() {
   --color-background-page: var(--color-background-page-dark);
