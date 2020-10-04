@@ -19,8 +19,8 @@
 
     &:hover,
     &:focus {
-      background: var(--color-status-success-pastel-light);
-      color: var(--color-status-success-pastel-dark);
+      background-color: var(--color-background-button-success-pastel);
+      color: var(--color-text-button-success-pastel);
     }
 
     .caret {
@@ -30,7 +30,7 @@
 }
 
 .choose-a-shake--dropdown {
-  background-color: var(--color-status-success-pastel-light);
+  background-color: var(--color-background-button-success-pastel);
   border-radius: var(--size-border-radius-large);
   border-top-right-radius: 0;
   box-shadow: var(--size-spacing-half) var(--size-spacing-half) 0
@@ -68,8 +68,9 @@
     li a {
       @include links.link--primary();
       @include links.link--emphasized();
-      background-color: var(--color-background-content);
+      background-color: var(--color-background-choose-shake-link);
       border-radius: var(--size-border-radius-large);
+      color: var(--color-text-choose-shake-link);
       display: block;
       font-size: 0.875rem;
       overflow: hidden;
@@ -80,7 +81,8 @@
       &:hover,
       &:focus,
       &:active {
-        background-color: var(--color-status-highlight);
+        background-color: var(--color-background-choose-shake-link-hover);
+        color: var(--color-text-choose-shake-link-hover);
       }
     }
 
@@ -92,7 +94,7 @@
     }
 
     &.group-shakes {
-      background-color: var(--color-background-content);
+      background-color: var(--color-background-choose-shake-link);
       border-radius: var(--size-border-radius-large);
     }
   }

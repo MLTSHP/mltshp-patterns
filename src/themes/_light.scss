@@ -5,6 +5,7 @@
 // This is the default theme for the site. Can also be applied via `.t-light` or
 // automatically via the `prefers-color-scheme` media query.
 //
+/* prettier-ignore */
 @mixin lightmode() {
   --color-background-page: var(--color-background-page-light);
   --color-background-content: var(--color-background-content-light);
@@ -26,6 +27,54 @@
   --color-bg-success-pastel: var(--color-status-success-pastel-very-light);
   --color-bg-danger-pastel: var(--color-status-danger-pastel-light);
   --color-bg-warning-pastel: var(--color-status-highlight);
+
+  // BUTTONS
+
+  // primary
+  --color-background-button-primary: var(--color-brand-primary);
+  --color-background-button-primary-hover: var(--color-brand-primary-dark);
+  --color-background-button-primary-pastel: var(--color-brand-primary-pastel-light);
+  --color-background-button-primary-pastel-hover: var(--color-brand-primary);
+  --color-text-button-primary-pastel: var(--color-brand-primary-pastel-dark);
+  --color-text-button-primary-pastel-hover: var(--color-text-light-emphasis);
+
+  // secondary
+  --color-background-button-secondary: var(--color-brand-secondary);
+  --color-background-button-secondary-hover: var(--color-brand-secondary-dark);
+  --color-background-button-secondary-pastel: var(--color-brand-secondary-pastel-light);
+  --color-background-button-secondary-pastel-hover: var(--color-brand-secondary);
+  --color-text-button-secondary-pastel: var(--color-brand-secondary-pastel-dark);
+  --color-text-button-secondary-pastel-hover: var(--color-text-light-emphasis);
+
+  // success
+  --color-background-button-success: var(--color-status-success);
+  --color-background-button-success-hover: var(--color-status-success-dark);
+  --color-background-button-success-pastel: var(--color-status-success-pastel-light);
+  --color-background-button-success-pastel-hover: var(--color-status-success);
+  --color-text-button-success-pastel: var(--color-status-success-pastel-dark);
+  --color-text-button-success-pastel-hover: var(--color-text-light-emphasis);
+
+  // warning
+  --color-background-button-warning: var(--color-status-warning);
+  --color-background-button-warning-hover: var(--color-status-warning-dark);
+  --color-background-button-warning-pastel: var(--color-status-warning-pastel-light);
+  --color-background-button-warning-pastel-hover: var(--color-status-warning);
+  --color-text-button-warning-pastel: var(--color-status-warning-pastel-dark);
+  --color-text-button-warning-pastel-hover: var(--color-text-light-emphasis);
+
+  // danger
+  --color-background-button-danger: var(--color-status-danger);
+  --color-background-button-danger-hover: var(--color-status-danger-dark);
+  --color-background-button-danger-pastel: var(--color-status-danger-pastel-light);
+  --color-background-button-danger-pastel-hover: var(--color-status-danger);
+  --color-text-button-danger-pastel: var(--color-status-danger-pastel-dark);
+  --color-text-button-danger-pastel-hover: var(--color-text-light-emphasis);
+
+  // CHOOSE SHAKE LINKS
+  --color-background-choose-shake-link: var(--color-background-content);
+  --color-background-choose-shake-link-hover: var(--color-status-highlight);
+  --color-text-choose-shake-link: var(--color-text-link-primary);
+  --color-text-choose-shake-link-hover: var(--color-text-link-primary-hover);
 }
 
 :root {

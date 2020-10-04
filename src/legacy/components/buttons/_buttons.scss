@@ -25,7 +25,7 @@ button {
   text-align: center;
   text-decoration: none;
   text-shadow: 0.05em 0.05em 0.05em var(--color-base-black-transparent-500);
-  transition-duration: 0.2s;
+  transition-duration: var(--time-speed-quick);
   transition-property: background-color, color;
   user-select: none;
   vertical-align: middle;
@@ -181,7 +181,7 @@ button {
 // Provides extra visual weight and identifies the primary action in a set of buttons
 //
 @mixin label--primary() {
-  background-color: var(--color-brand-primary);
+  background-color: var(--color-background-button-primary);
 }
 .label-primary {
   @include label--primary();
@@ -192,7 +192,7 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-brand-primary-dark);
+    background-color: var(--color-background-button-primary-hover);
   }
 }
 .btn-primary {
@@ -203,8 +203,8 @@ button {
 // Primary Pastel modifier
 //
 @mixin label--primary-pastel() {
-  background-color: var(--color-brand-primary-pastel-light);
-  color: var(--color-brand-primary-pastel-dark);
+  background-color: var(--color-background-button-primary-pastel);
+  color: var(--color-text-button-primary-pastel);
 }
 .label-primary.label-pastel {
   @include label--primary-pastel();
@@ -215,8 +215,8 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-brand-primary);
-    color: var(--color-text-light-emphasis);
+    background-color: var(--color-background-button-primary-pastel-hover);
+    color: var(--color-text-button-primary-pastel-hover);
   }
 }
 .btn-primary.btn-pastel {
@@ -228,7 +228,7 @@ button {
 // De-emphasizes and identifies secondary actions in a set of buttons
 //
 @mixin label--secondary() {
-  background-color: var(--color-brand-secondary);
+  background-color: var(--color-background-button-secondary);
 }
 .label-secondary {
   @include label--secondary();
@@ -239,7 +239,7 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-brand-secondary-dark);
+    background-color: var(--color-background-button-secondary-hover);
   }
 }
 .btn-secondary {
@@ -250,8 +250,8 @@ button {
 // Secondary Pastel modifier
 //
 @mixin label--secondary-pastel() {
-  background-color: var(--color-brand-secondary-pastel-light);
-  color: var(--color-brand-secondary-pastel-dark);
+  background-color: var(--color-background-button-secondary-pastel);
+  color: var(--color-text-button-secondary-pastel);
 }
 .label-secondary.label-pastel {
   @include label--secondary-pastel();
@@ -262,8 +262,8 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-brand-secondary);
-    color: var(--color-text-light-emphasis);
+    background-color: var(--color-background-button-secondary-pastel-hover);
+    color: var(--color-text-button-secondary-pastel-hover);
   }
 }
 .btn-secondary.btn-pastel {
@@ -275,7 +275,7 @@ button {
 // Indicates a successful or positive action
 //
 @mixin label--success() {
-  background-color: var(--color-status-success);
+  background-color: var(--color-background-button-success);
 }
 .label-success {
   @include label--success();
@@ -286,7 +286,7 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-status-success-dark);
+    background-color: var(--color-background-button-success-hover);
   }
 }
 .btn-success {
@@ -297,8 +297,8 @@ button {
 // Success Pastel modifier
 //
 @mixin label--success-pastel() {
-  background-color: var(--color-status-success-pastel-light);
-  color: var(--color-status-success-pastel-dark);
+  background-color: var(--color-background-button-success-pastel);
+  color: var(--color-text-button-success-pastel);
 }
 .label-success.label-pastel {
   @include label--success-pastel();
@@ -309,8 +309,8 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-status-success);
-    color: var(--color-text-light-emphasis);
+    background-color: var(--color-background-button-success-pastel-hover);
+    color: var(--color-text-button-success-pastel-hover);
   }
 }
 .btn-success.btn-pastel {
@@ -322,7 +322,7 @@ button {
 // Indicates caution should be taken with this action
 //
 @mixin label--warning() {
-  background-color: var(--color-status-warning);
+  background-color: var(--color-background-button-warning);
 }
 .label-warning {
   @include label--warning();
@@ -333,7 +333,7 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-status-warning-dark);
+    background-color: var(--color-background-button-warning-hover);
   }
 }
 .btn-warning {
@@ -344,8 +344,8 @@ button {
 // Warning Pastel modifier
 //
 @mixin label--warning-pastel() {
-  background-color: var(--color-status-warning-pastel-light);
-  color: var(--color-status-warning-pastel-dark);
+  background-color: var(--color-background-button-warning-pastel);
+  color: var(--color-text-button-warning-pastel);
 }
 .label-warning.label-pastel {
   @include label--warning-pastel();
@@ -356,8 +356,8 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-status-warning);
-    color: var(--color-text-light-emphasis);
+    background-color: var(--color-background-button-warning-pastel-hover);
+    color: var(--color-text-button-warning-pastel-hover);
   }
 }
 .btn-warning.btn-pastel {
@@ -369,7 +369,7 @@ button {
 // Indicates a dangerous or potentially negative action
 //
 @mixin label--danger() {
-  background-color: var(--color-status-danger);
+  background-color: var(--color-background-button-danger);
 }
 .label-danger {
   @include label--danger();
@@ -380,7 +380,7 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-status-danger-dark);
+    background-color: var(--color-background-button-danger-hover);
   }
 }
 .btn-danger {
@@ -391,8 +391,8 @@ button {
 // Danger Pastel modifier
 //
 @mixin label--danger-pastel() {
-  background-color: var(--color-status-danger-pastel-light);
-  color: var(--color-status-danger-pastel-dark);
+  background-color: var(--color-background-button-danger-pastel);
+  color: var(--color-text-button-danger-pastel);
 }
 .label-danger.label-pastel {
   @include label--danger-pastel();
@@ -403,8 +403,8 @@ button {
 
   &:hover,
   &:focus {
-    background-color: var(--color-status-danger);
-    color: var(--color-text-light-emphasis);
+    background-color: var(--color-background-button-danger-pastel-hover);
+    color: var(--color-text-button-danger-pastel-hover);
   }
 }
 .btn-danger.btn-pastel {

@@ -8,6 +8,7 @@
 // 1. Use a lighter font weight and increased letter-spacing
 //    @see https://css-tricks.com/?p=306566
 //
+/* prettier-ignore */
 @mixin darkmode() {
   --color-background-page: var(--color-background-page-dark);
   --color-background-content: var(--color-background-content-dark);
@@ -29,6 +30,54 @@
   --color-bg-success-pastel: #{rgba(tokens.$color-status-success, 0.1)};
   --color-bg-danger-pastel: #{rgba(tokens.$color-status-danger, 0.1)};
   --color-bg-warning-pastel: #{rgba(tokens.$color-status-warning, 0.1)};
+
+  // BUTTONS
+
+  // primary
+  --color-background-button-primary: var(--color-brand-primary-dark);
+  --color-background-button-primary-hover: var(--color-brand-primary);
+  --color-background-button-primary-pastel: var(--color-brand-primary-pastel-dark);
+  --color-background-button-primary-pastel-hover: var(--color-brand-primary-pastel-light);
+  --color-text-button-primary-pastel: var(--color-text-light-emphasis);
+  --color-text-button-primary-pastel-hover: var(--color-brand-primary-pastel-dark);
+
+  // secondary
+  --color-background-button-secondary: var(--color-brand-secondary-dark);
+  --color-background-button-secondary-hover: var(--color-brand-secondary);
+  --color-background-button-secondary-pastel: var(--color-brand-secondary-pastel-dark);
+  --color-background-button-secondary-pastel-hover: var(--color-brand-secondary-pastel-light);
+  --color-text-button-secondary-pastel: var(--color-text-light-emphasis);
+  --color-text-button-secondary-pastel-hover: var(--color-brand-secondary-pastel-dark);
+
+  // success
+  --color-background-button-success: var(--color-status-success-dark);
+  --color-background-button-success-hover: var(--color-status-success);
+  --color-background-button-success-pastel: var(--color-status-success-pastel-dark);
+  --color-background-button-success-pastel-hover: var(--color-status-success-pastel-light);
+  --color-text-button-success-pastel: var(--color-text-light-emphasis);
+  --color-text-button-success-pastel-hover: var(--color-status-success-pastel-dark);
+
+  // warning
+  --color-background-button-warning: var(--color-status-warning-dark);
+  --color-background-button-warning-hover: var(--color-status-warning);
+  --color-background-button-warning-pastel: var(--color-status-warning-pastel-dark);
+  --color-background-button-warning-pastel-hover: var(--color-status-warning-pastel-light);
+  --color-text-button-warning-pastel: var(--color-text-light-emphasis);
+  --color-text-button-warning-pastel-hover: var(--color-status-warning-pastel-dark);
+
+  // danger
+  --color-background-button-danger: var(--color-status-danger-dark);
+  --color-background-button-danger-hover: var(--color-status-danger);
+  --color-background-button-danger-pastel: var(--color-status-danger-pastel-dark);
+  --color-background-button-danger-pastel-hover: var(--color-status-danger-pastel-light);
+  --color-text-button-danger-pastel: var(--color-text-light-emphasis);
+  --color-text-button-danger-pastel-hover: var(--color-status-danger-pastel-dark);
+
+  // CHOOSE SHAKE LINKS
+  --color-background-choose-shake-link: var(--color-background-button-success);
+  --color-background-choose-shake-link-hover: var(--color-background-button-success-pastel-hover);
+  --color-text-choose-shake-link: var(--color-text-light-emphasis);
+  --color-text-choose-shake-link-hover: var(--color-text-button-success-pastel-hover);
 }
 
 :root {
