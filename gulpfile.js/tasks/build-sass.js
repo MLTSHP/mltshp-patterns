@@ -7,14 +7,13 @@ sass.compiler = require('sass');
 const outDir = 'dist';
 
 module.exports = function buildSass() {
-  return src('./src/index.scss')
+  return src('./src/*.scss')
     .pipe(
       sass({
         importer: [require('../../glob-sass-importer')],
       }).on('error', sass.logError)
     )
     .pipe(postcss())
-    .pipe(rename({ basename: 'mltshp' }))
     .pipe(dest(outDir))
     .pipe(postcss([cssnano()]))
     .pipe(rename({ extname: '.min.css' }))
