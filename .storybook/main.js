@@ -1,5 +1,4 @@
 const { resolve } = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   stories: ['../src/welcome.stories.mdx', '../src/**/*.stories.@(js|mdx)'],
@@ -41,11 +40,7 @@ module.exports = {
         test: /\.s[ca]ss$/,
         use: [
           {
-            // @see https://github.com/webpack-contrib/style-loader/issues/303#issuecomment-581168870
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              hmr: isDev,
-            },
+            loader: 'style-loader',
           },
           {
             loader: 'css-loader',
@@ -82,8 +77,6 @@ module.exports = {
         use: '@svgr/webpack',
       }
     );
-
-    config.plugins.push(new MiniCssExtractPlugin());
 
     return config;
   },
