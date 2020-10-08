@@ -64,7 +64,7 @@
     "remark-preset-lint-recommended": "4.0.1",
     "remark-preset-prettier": "0.4.0",
     "require-dir": "1.2.0",
-    "sass": "1.26.11",
+    "sass": "1.27.0",
     "sass-loader": "10.0.2",
     "storybook-addon-themes": "6.0.0",
     "storybook-dark-mode": "1.0.3",
