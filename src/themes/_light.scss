@@ -79,9 +79,7 @@
 }
 
 :root {
-  @media screen and (prefers-color-scheme: light) {
-    @include lightmode();
-  }
+  @include lightmode();
 }
 
 // note this only really works on the `html` or `body` elements.
