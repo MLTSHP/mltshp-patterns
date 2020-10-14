@@ -187,6 +187,11 @@
 
   .profile-photo-media {
     flex: none;
+
+    .avatar--img {
+      height: var(--size-avatar-large);
+      width: var(--size-avatar-large);
+    }
   }
 
   .profile-photo-meta {

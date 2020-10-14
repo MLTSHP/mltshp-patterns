@@ -12,6 +12,11 @@
       text-decoration: none;
       vertical-align: middle;
     }
+
+    .avatar--img {
+      height: var(--size-avatar-tiny);
+      width: var(--size-avatar-tiny);
+    }
   }
 
   .inline-meta {

@@ -42,8 +42,10 @@
 
 .avatar--img {
   display: block;
+  height: var(--size-avatar-default);
   max-width: none;
   object-fit: cover;
+  width: var(--size-avatar-default);
 }
 
 .caret {

@@ -19,7 +19,11 @@
     .avatar {
       float: left;
       margin-right: var(--size-spacing-half-again);
-      width: 100px;
+    }
+
+    .avatar--img {
+      height: var(--size-avatar-large);
+      width: var(--size-avatar-large);
     }
 
     .details h3 {

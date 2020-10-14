@@ -11,7 +11,7 @@
 
     .user-saves-likes {
       background-color: var(--color-background-content);
-      min-height: 20px; // magic number
+      min-height: var(--size-avatar-tiny);
       padding: var(--size-spacing-default);
 
       a {
@@ -24,6 +24,11 @@
 
       img {
         margin-right: var(--size-spacing-half);
+      }
+
+      .avatar--img {
+        height: var(--size-avatar-tiny);
+        width: var(--size-avatar-tiny);
       }
     }
 
@@ -40,6 +45,11 @@
         a {
           display: block;
         }
+      }
+
+      .avatar--img {
+        height: var(--size-avatar-small);
+        width: var(--size-avatar-small);
       }
 
       .comment-body {

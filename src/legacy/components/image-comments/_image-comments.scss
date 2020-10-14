@@ -19,7 +19,7 @@
 
     .avatar {
       margin-right: var(--size-spacing-default);
-      width: 48px;
+      width: var(--size-avatar-default);
 
       a {
         display: block;
@@ -115,15 +115,13 @@
 
   .avatar {
     flex: none;
-    height: 48px;
-    width: 48px;
   }
 
   h3 {
     background-image: svg-load('balloons/comment-quip-left.svg');
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: auto 48px; // match avatar height
+    background-size: auto var(--size-avatar-default); // match avatar height
     border-bottom-right-radius: 15px; // magic number looks good with balloon background
     border-top-right-radius: 25px 20px; // magic number looks good with balloon background
     display: block;
@@ -134,8 +132,8 @@
       color: var(--color-text-light-emphasis);
       display: block;
       font-size: 0.75rem;
-      height: 48px; // match avatar height
-      line-height: 48px; // match avatar height
+      height: var(--size-avatar-default); // match avatar height
+      line-height: var(--size-avatar-default); // match avatar height
       padding-left: 35px; // magic number to accomodate balloon stem
       padding-right: var(--size-spacing-double);
       text-shadow: 0.05em 0.05em 0.05em var(--color-base-black-transparent-500); // copied from button

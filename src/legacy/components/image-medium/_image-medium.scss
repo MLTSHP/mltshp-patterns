@@ -9,7 +9,11 @@
       display: block;
       float: left;
       margin-right: var(--size-spacing-default);
-      width: 20px; // avatar size
+    }
+
+    .avatar--img {
+      height: var(--size-avatar-tiny);
+      width: var(--size-avatar-tiny);
     }
 
     .title {

@@ -1,0 +1,10 @@
+{
+  "size": {
+    "avatar": {
+      "tiny": { "value": "20px" },
+      "small": { "value": "30px" },
+      "default": { "value": "48px" },
+      "large": { "value": "100px" }
+    }
+  }
+}

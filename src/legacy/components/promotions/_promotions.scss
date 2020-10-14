@@ -31,8 +31,8 @@
 
     img {
       display: block;
-      height: 100px;
-      width: 100px;
+      height: var(--size-avatar-large);
+      width: var(--size-avatar-large);
     }
   }
 

@@ -46,11 +46,8 @@
       margin-bottom: var(--size-spacing-half);
       margin-right: var(--size-spacing-half);
 
-      a,
-      img {
+      a {
         display: block;
-        height: 48px;
-        width: 48px;
       }
     }
   }
@@ -307,7 +304,9 @@
 
       img {
         flex: none;
+        height: var(--size-avatar-tiny);
         margin-right: var(--size-spacing-half);
+        width: var(--size-avatar-tiny);
       }
 
       span {
@@ -364,7 +363,7 @@
 
     .avatar--img {
       display: block;
-      width: 48px;
+      width: var(--size-avatar-default);
     }
   }
 
@@ -487,12 +486,12 @@
   }
 
   .icon {
-    height: 20px;
     margin-right: var(--size-spacing-half);
-    width: 20px;
 
     .avatar--img {
       display: block;
+      height: var(--size-avatar-tiny);
+      width: var(--size-avatar-tiny);
     }
   }
 

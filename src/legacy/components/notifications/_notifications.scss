@@ -57,7 +57,7 @@
       float: left;
       padding-right: var(--size-spacing-default);
       text-align: center;
-      width: 100px;
+      width: var(--size-avatar-large);
     }
 
     .context {
@@ -131,7 +131,7 @@
   .shake-thumb {
     float: left;
     margin-right: var(--size-spacing-default);
-    width: 48px;
+    width: var(--size-avatar-default);
 
     a {
       display: block;
