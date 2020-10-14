@@ -54,7 +54,7 @@ Only admins need to worry about these step.
 
 ### to npm
 
-1. `git checkout master`
+1. `git checkout main`
 1. `git pull`
 1. Make sure you have a clean working tree (`git status` should show no changes)
 1. `yarn install --frozen-lockfile`
