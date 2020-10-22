@@ -13,9 +13,8 @@
   a {
     display: block;
 
-    &:focus {
+    &:focus:not(:focus-visible) {
       box-shadow: none;
-      opacity: 0.75;
     }
   }
 }
