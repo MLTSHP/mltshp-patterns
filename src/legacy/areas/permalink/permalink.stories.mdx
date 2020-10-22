@@ -1,5 +1,6 @@
 import { Story, Canvas, Meta } from '@storybook/addon-docs/blocks';
 import permalinkMarkup from './examples/permalink.html';
+import lengthyMarkup from './examples/lengthy.html';
 
 <Meta title="Legacy/Areas/Permalink" parameters={{ layout: 'fullscreen' }} />
 
@@ -9,4 +10,10 @@ Composition example of a Permalink page
 
 <Canvas>
   <Story name="Permalink">{() => permalinkMarkup}</Story>
+</Canvas>
+
+# Lengthy Content
+
+<Canvas>
+  <Story name="Lengthy Content">{() => lengthyMarkup}</Story>
 </Canvas>
