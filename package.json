@@ -43,7 +43,7 @@
     "@storybook/addon-a11y": "6.0.28",
     "@storybook/addon-essentials": "6.0.28",
     "@storybook/html": "6.0.28",
-    "@svgr/webpack": "5.4.0",
+    "@svgr/webpack": "5.5.0",
     "babel-loader": "8.2.1",
     "chokidar-cli": "2.1.0",
     "css-loader": "5.0.1",
