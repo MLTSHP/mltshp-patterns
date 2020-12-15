@@ -68,7 +68,7 @@
     "sass": "1.30.0",
     "sass-loader": "10.1.0",
     "storybook-addon-themes": "6.0.1",
-    "storybook-dark-mode": "1.0.3",
+    "storybook-dark-mode": "1.0.4",
     "style-dictionary": "2.10.2",
     "style-loader": "2.0.0",
     "stylelint": "13.8.0",
