@@ -12531,10 +12531,10 @@ storybook-addon-themes@6.0.1:
     global "^4.4.0"
     memoizerific "^1.11.3"
 
-storybook-dark-mode@1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-1.0.4.tgz#848e5ee6c5dd6180d15c533380c8b35579ec4975"
-  integrity sha512-4ZQh6scu/WlUycAMNbkNyF/9fN2bI/sJvNdPZoBa1b2X1UtsgzUeHRCGWcLsTpoiaPgPE/+eT077PuYHm5sYLQ==
+storybook-dark-mode@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/storybook-dark-mode/-/storybook-dark-mode-1.0.6.tgz#053ed5d6e6363322d306e8021050c6daa3cc0694"
+  integrity sha512-gj4hzrXKHOG76qKAUDIf7ltzf/i0x/wi3XIRRSvxvCqfuDCiWWt3wW4tnb8P0Kxm+Z+8DGC8g78noC19fZnQ7g==
   dependencies:
     fast-deep-equal "^3.0.0"
     memoizerific "^1.11.3"
