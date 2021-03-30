@@ -40,9 +40,9 @@
   },
   "devDependencies": {
     "@babel/core": "7.13.14",
-    "@storybook/addon-a11y": "6.1.21",
-    "@storybook/addon-essentials": "6.1.21",
-    "@storybook/html": "6.1.21",
+    "@storybook/addon-a11y": "6.2.0",
+    "@storybook/addon-essentials": "6.2.0",
+    "@storybook/html": "6.2.0",
     "@svgr/webpack": "5.5.0",
     "babel-loader": "8.2.2",
     "chokidar-cli": "2.1.0",
