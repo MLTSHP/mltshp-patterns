@@ -48,7 +48,7 @@
     "chokidar-cli": "2.1.0",
     "css-loader": "5.2.5",
     "cssnano": "5.0.4",
-    "eslint": "7.26.0",
+    "eslint": "7.27.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-mdx": "1.13.0",
     "eslint-plugin-prettier": "3.4.0",
