@@ -13080,10 +13080,10 @@ remark-preset-lint-recommended@5.0.0:
     remark-lint-no-unused-definitions "^2.0.0"
     remark-lint-ordered-list-marker-style "^2.0.0"
 
-remark-preset-prettier@0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/remark-preset-prettier/-/remark-preset-prettier-0.4.1.tgz#9b55d2a71d16931eeea365724b5b1a09c9a0f6ef"
-  integrity sha512-m+yzI9LN/dkVq/HUYR3aEAjvDBO4hZMwgq245RBYUzSKXZPboMTlxBTgBuK7Tcw5CKJphjoL31slQQcDu1KGZQ==
+remark-preset-prettier@0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/remark-preset-prettier/-/remark-preset-prettier-0.5.0.tgz#3c48df02d3f2a3d53654c513baeb59e9b128210c"
+  integrity sha512-VoBUaEepHeWjV5K51SpsAbQnQmoXukOgBDgHTltM5ljCi4olZ44PQ7G1kK1q02/oy9lxTq3Vhr1Bm+Z/6fACag==
 
 remark-slug@^6.0.0:
   version "6.0.0"
