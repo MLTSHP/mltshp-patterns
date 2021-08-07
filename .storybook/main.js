@@ -2,6 +2,9 @@ const { resolve } = require('path');
 
 module.exports = {
   stories: ['../src/welcome.stories.mdx', '../src/**/*.stories.@(js|mdx)'],
+  core: {
+    builder: "webpack5",
+  },
   addons: [
     {
       name: '@storybook/addon-essentials',
