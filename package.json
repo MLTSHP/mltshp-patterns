@@ -46,7 +46,7 @@
     "@svgr/webpack": "5.5.0",
     "babel-loader": "8.2.2",
     "chokidar-cli": "2.1.0",
-    "css-loader": "5.2.7",
+    "css-loader": "6.2.0",
     "cssnano": "5.0.7",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
