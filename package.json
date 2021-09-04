@@ -39,7 +39,7 @@
     "prepublishOnly": "yarn && yarn check-lint && yarn build"
   },
   "devDependencies": {
-    "@babel/core": "7.15.4",
+    "@babel/core": "7.15.5",
     "@storybook/addon-a11y": "6.3.8",
     "@storybook/addon-essentials": "6.3.8",
     "@storybook/builder-webpack5": "6.4.0-alpha.33",
