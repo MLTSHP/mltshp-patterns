@@ -50,34 +50,34 @@
 // LEGACY COMPONENTS
 // small & self-contained, not reliant on other files
 //
-@use "legacy/components/alerts/alerts";
-@use "legacy/components/bookmark/bookmark";
-@use "legacy/components/buttons/buttons";
-@use "legacy/components/choose-a-shake/choose-a-shake";
-@use "legacy/components/conversations/conversations";
-@use "legacy/components/error/error";
-@use "legacy/components/features/features";
-@use "legacy/components/forms/forms";
-@use "legacy/components/image-comments/image-comments";
-@use "legacy/components/image-medium/image-medium";
-@use "legacy/components/images/images";
-@use "legacy/components/new-post-panel/new-post-panel";
-@use "legacy/components/new-user-dashboard/new-user-dashboard";
-@use "legacy/components/new-users/new-users";
-@use "legacy/components/notifications/notifications";
-@use "legacy/components/page-header/page-header";
-@use "legacy/components/pagination/pagination";
-@use "legacy/components/promotions/promotions";
-@use "legacy/components/shake-details/shake-details";
-@use "legacy/components/shake-list/shake-list";
-@use "legacy/components/shake-members/shake-members";
-@use "legacy/components/sidebar/sidebar";
-@use "legacy/components/site-footer/site-footer";
-@use "legacy/components/site-header/site-header";
-@use "legacy/components/site-nav/site-nav";
-@use "legacy/components/user-counts/user-counts";
-@use "legacy/components/user-follow/user-follow";
-@use "legacy/components/user-nav/user-nav";
+@use 'legacy/components/alerts/alerts';
+@use 'legacy/components/bookmark/bookmark';
+@use 'legacy/components/buttons/buttons';
+@use 'legacy/components/choose-a-shake/choose-a-shake';
+@use 'legacy/components/conversations/conversations';
+@use 'legacy/components/error/error';
+@use 'legacy/components/features/features';
+@use 'legacy/components/forms/forms';
+@use 'legacy/components/image-comments/image-comments';
+@use 'legacy/components/image-medium/image-medium';
+@use 'legacy/components/images/images';
+@use 'legacy/components/new-post-panel/new-post-panel';
+@use 'legacy/components/new-user-dashboard/new-user-dashboard';
+@use 'legacy/components/new-users/new-users';
+@use 'legacy/components/notifications/notifications';
+@use 'legacy/components/page-header/page-header';
+@use 'legacy/components/pagination/pagination';
+@use 'legacy/components/promotions/promotions';
+@use 'legacy/components/shake-details/shake-details';
+@use 'legacy/components/shake-list/shake-list';
+@use 'legacy/components/shake-members/shake-members';
+@use 'legacy/components/sidebar/sidebar';
+@use 'legacy/components/site-footer/site-footer';
+@use 'legacy/components/site-header/site-header';
+@use 'legacy/components/site-nav/site-nav';
+@use 'legacy/components/user-counts/user-counts';
+@use 'legacy/components/user-follow/user-follow';
+@use 'legacy/components/user-nav/user-nav';
 
 //
 // LEGACY AREAS
@@ -85,17 +85,17 @@
 //
 // TODO: should be refactored into smaller self-contained components
 //
-@use "legacy/areas/admin/admin";
-@use "legacy/areas/developer/developer";
-@use "legacy/areas/faq/faq";
-@use "legacy/areas/find-shakes/find-shakes";
-@use "legacy/areas/incoming/incoming";
-@use "legacy/areas/legal/legal";
-@use "legacy/areas/membership/membership";
-@use "legacy/areas/permalink/permalink";
-@use "legacy/areas/picker/picker";
-@use "legacy/areas/relationships/relationships";
-@use "legacy/areas/search/search";
-@use "legacy/areas/settings/settings";
-@use "legacy/areas/sign-in/sign-in";
-@use "legacy/areas/twitter-how-to/twitter-how-to";
+@use 'legacy/areas/admin/admin';
+@use 'legacy/areas/developer/developer';
+@use 'legacy/areas/faq/faq';
+@use 'legacy/areas/find-shakes/find-shakes';
+@use 'legacy/areas/incoming/incoming';
+@use 'legacy/areas/legal/legal';
+@use 'legacy/areas/membership/membership';
+@use 'legacy/areas/permalink/permalink';
+@use 'legacy/areas/picker/picker';
+@use 'legacy/areas/relationships/relationships';
+@use 'legacy/areas/search/search';
+@use 'legacy/areas/settings/settings';
+@use 'legacy/areas/sign-in/sign-in';
+@use 'legacy/areas/twitter-how-to/twitter-how-to';

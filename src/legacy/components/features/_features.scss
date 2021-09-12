@@ -1,4 +1,4 @@
-@use "../../../compiled/scss/tokens";
+@use '../../../compiled/scss/tokens';
 
 .feature-list {
   @media screen and (min-width: tokens.$size-breakpoint-md) {
