@@ -11,6 +11,3 @@
   # not necessary for projects consuming this library, so that would be silly.
   NODE_ENV = "development"
   
-  # Ignore Renovate PRs
-  # @see https://www.netlify.com/blog/2020/04/27/ignore-unnecessary-builds-to-optimize-your-build-times/
-  ignore = "git log -1 --pretty=%B | grep bot@renovateapp.com"
