@@ -1,4 +1,5 @@
 {
   "extends": ["config:base", ":automergeMinor"],
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "commitBody": "[skip netlify]"
 }
