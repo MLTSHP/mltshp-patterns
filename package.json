@@ -73,7 +73,7 @@
     "storybook-addon-themes": "6.1.0",
     "storybook-dark-mode": "1.0.8",
     "style-dictionary": "3.0.3",
-    "style-loader": "3.3.0",
+    "style-loader": "3.3.1",
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-spaceninja": "7.0.0",
