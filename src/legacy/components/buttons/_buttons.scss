@@ -32,6 +32,7 @@ button {
   vertical-align: middle;
   white-space: nowrap;
 }
+
 .label {
   @include label;
 }
@@ -58,6 +59,7 @@ button {
     text-shadow: none;
   }
 }
+
 .btn {
   @include button;
 }
@@ -76,6 +78,7 @@ button {
     color: var(--color-status-disabled-pastel-dark) !important;
   }
 }
+
 .btn-pastel,
 .label-pastel {
   @include button-pastel;
@@ -93,6 +96,7 @@ button {
     box-shadow: none !important;
   }
 }
+
 .btn-shadow {
   @include button-shadow;
 }
@@ -106,6 +110,7 @@ button {
   line-height: 2.6em;
   padding: 0 1.25em;
 }
+
 .btn-padded {
   @include button-padded;
 }
@@ -117,6 +122,7 @@ button {
   font-size: 24px;
   letter-spacing: 0.066em;
 }
+
 .btn-large,
 .label-large {
   @include button-large;
@@ -125,6 +131,7 @@ button {
 @mixin button-large-pastel() {
   letter-spacing: 0.033em;
 }
+
 .btn-large.btn-pastel,
 .label-large.label-pastel {
   @include button-large-pastel;
@@ -134,6 +141,7 @@ button {
   font-size: 12px;
   font-weight: 400;
 }
+
 .btn-small,
 .label-small {
   @include button-small;
@@ -144,6 +152,7 @@ button {
   font-weight: 400;
   padding: 0 0.66em;
 }
+
 .btn-tiny,
 .label-tiny {
   @include button-tiny;
@@ -152,6 +161,7 @@ button {
 @mixin button-small-pastel() {
   font-weight: 500;
 }
+
 .btn-small.btn-pastel,
 .btn-tiny.btn-pastel,
 .label-small.label-pastel,
@@ -167,6 +177,7 @@ button {
   padding: 0;
   width: 2.2em;
 }
+
 .btn-icon {
   @include button-icon;
 }
@@ -175,6 +186,7 @@ button {
   padding: 0;
   width: 2.6em;
 }
+
 .btn-icon.btn-padded {
   @include button-icon-padded;
 }
@@ -186,6 +198,7 @@ button {
 @mixin label-primary() {
   background-color: var(--color-background-button-primary);
 }
+
 .label-primary {
   @include label-primary;
 }
@@ -198,6 +211,7 @@ button {
     background-color: var(--color-background-button-primary-hover);
   }
 }
+
 .btn-primary {
   @include button-primary;
 }
@@ -209,6 +223,7 @@ button {
   background-color: var(--color-background-button-primary-pastel);
   color: var(--color-text-button-primary-pastel);
 }
+
 .label-primary.label-pastel {
   @include label-primary-pastel;
 }
@@ -222,6 +237,7 @@ button {
     color: var(--color-text-button-primary-pastel-hover);
   }
 }
+
 .btn-primary.btn-pastel {
   @include button-primary-pastel;
 }
@@ -233,6 +249,7 @@ button {
 @mixin label-secondary() {
   background-color: var(--color-background-button-secondary);
 }
+
 .label-secondary {
   @include label-secondary;
 }
@@ -245,6 +262,7 @@ button {
     background-color: var(--color-background-button-secondary-hover);
   }
 }
+
 .btn-secondary {
   @include button-secondary;
 }
@@ -256,6 +274,7 @@ button {
   background-color: var(--color-background-button-secondary-pastel);
   color: var(--color-text-button-secondary-pastel);
 }
+
 .label-secondary.label-pastel {
   @include label-secondary-pastel;
 }
@@ -269,6 +288,7 @@ button {
     color: var(--color-text-button-secondary-pastel-hover);
   }
 }
+
 .btn-secondary.btn-pastel {
   @include button-secondary-pastel;
 }
@@ -280,6 +300,7 @@ button {
 @mixin label-success() {
   background-color: var(--color-background-button-success);
 }
+
 .label-success {
   @include label-success;
 }
@@ -292,6 +313,7 @@ button {
     background-color: var(--color-background-button-success-hover);
   }
 }
+
 .btn-success {
   @include button-success;
 }
@@ -303,6 +325,7 @@ button {
   background-color: var(--color-background-button-success-pastel);
   color: var(--color-text-button-success-pastel);
 }
+
 .label-success.label-pastel {
   @include label-success-pastel;
 }
@@ -316,6 +339,7 @@ button {
     color: var(--color-text-button-success-pastel-hover);
   }
 }
+
 .btn-success.btn-pastel {
   @include button-success-pastel;
 }
@@ -327,6 +351,7 @@ button {
 @mixin label-warning() {
   background-color: var(--color-background-button-warning);
 }
+
 .label-warning {
   @include label-warning;
 }
@@ -339,6 +364,7 @@ button {
     background-color: var(--color-background-button-warning-hover);
   }
 }
+
 .btn-warning {
   @include button-warning;
 }
@@ -350,6 +376,7 @@ button {
   background-color: var(--color-background-button-warning-pastel);
   color: var(--color-text-button-warning-pastel);
 }
+
 .label-warning.label-pastel {
   @include label-warning-pastel;
 }
@@ -363,6 +390,7 @@ button {
     color: var(--color-text-button-warning-pastel-hover);
   }
 }
+
 .btn-warning.btn-pastel {
   @include button-warning-pastel;
 }
@@ -374,6 +402,7 @@ button {
 @mixin label-danger() {
   background-color: var(--color-background-button-danger);
 }
+
 .label-danger {
   @include label-danger;
 }
@@ -386,6 +415,7 @@ button {
     background-color: var(--color-background-button-danger-hover);
   }
 }
+
 .btn-danger {
   @include button-danger;
 }
@@ -397,6 +427,7 @@ button {
   background-color: var(--color-background-button-danger-pastel);
   color: var(--color-text-button-danger-pastel);
 }
+
 .label-danger.label-pastel {
   @include label-danger-pastel;
 }
@@ -410,6 +441,7 @@ button {
     color: var(--color-text-button-danger-pastel-hover);
   }
 }
+
 .btn-danger.btn-pastel {
   @include button-danger-pastel;
 }

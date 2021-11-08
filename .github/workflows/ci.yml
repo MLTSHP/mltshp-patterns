@@ -19,7 +19,7 @@ jobs:
       - name: Install Dependencies
         run: yarn --frozen-lockfile
       - name: Run Lint
-        run: yarn check-lint
+        run: yarn lint:check
 
   build:
     runs-on: ubuntu-latest

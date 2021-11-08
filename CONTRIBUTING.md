@@ -39,7 +39,7 @@ Need help with how Storybook docs work? Check out the [Storybook Docs guide](htt
 We run Stylelint against Sass files, Remark against Markdown files, and ESLint against JS files.
 
 ```bash
-yarn check-lint
+yarn lint:check
 ```
 
 Linting will be run automatically against any pull requests.
@@ -58,7 +58,7 @@ Only admins need to worry about these step.
 1. `git pull`
 1. Make sure you have a clean working tree (`git status` should show no changes)
 1. `yarn install --frozen-lockfile`
-1. `yarn check-lint`
+1. `yarn lint:check`
 1. `npm version`
 1. `npm publish` - This will automatically install and compile everything, run linting, and publish
 1. `git push && git push --tags`
