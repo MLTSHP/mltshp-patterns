@@ -26,8 +26,8 @@
     padding-bottom: var(--size-spacing-half);
 
     a {
-      @include links.link--primary();
-      @include links.link--emphasized();
+      @include links.link-primary;
+      @include links.link-emphasized;
     }
   }
 

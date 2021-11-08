@@ -28,7 +28,7 @@
   padding: 0 var(--size-spacing-default) var(--size-spacing-default);
 
   .notification {
-    @include mixins.breakword();
+    @include mixins.breakword;
     background-color: var(--color-background-content);
     border-radius: var(--size-border-radius-large);
     color: var(--color-page-text);
@@ -147,8 +147,8 @@
     margin-top: var(--size-spacing-default);
 
     a {
-      @include links.link--primary();
-      @include links.link--emphasized();
+      @include links.link-primary;
+      @include links.link-emphasized;
     }
   }
 
@@ -167,8 +167,8 @@
 // Shake Invitation Request Notifications
 //
 .notification-block-invitation-request .notification a {
-  @include links.link--primary();
-  @include links.link--emphasized();
+  @include links.link-primary;
+  @include links.link-emphasized;
 }
 
 .notification-block-invitation-request .notification-actions {

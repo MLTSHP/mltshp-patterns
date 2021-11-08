@@ -20,18 +20,18 @@
     }
 
     h4 {
-      @include mixins.breakword();
+      @include mixins.breakword;
       font-size: 1.125rem;
       padding-bottom: var(--size-spacing-half);
 
       a {
-        @include links.link--primary();
-        @include links.link--emphasized();
+        @include links.link-primary;
+        @include links.link-emphasized;
       }
     }
 
     p {
-      @include mixins.breakword();
+      @include mixins.breakword;
       font-size: 0.875rem;
     }
   }

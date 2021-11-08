@@ -22,7 +22,7 @@
 
   h1,
   h3 {
-    @include mixins.breakword();
+    @include mixins.breakword;
   }
 
   h1 {
@@ -50,6 +50,7 @@
 }
 
 .image-edit-title:hover,
+.image-edit-title:focus,
 .image-edit-title-hover {
   background-color: var(--color-status-edit);
 }
@@ -110,7 +111,7 @@
     margin-bottom: var(--size-spacing-double); // 1
 
     .btn {
-      @include buttons.button--small(); // 2
+      @include buttons.button-small; // 2
     }
   }
 }

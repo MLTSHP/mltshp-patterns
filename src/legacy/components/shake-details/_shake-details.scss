@@ -16,7 +16,7 @@
     cursor: pointer;
     height: 100%;
     left: 0;
-    opacity: 0;
+    opacity: 0%;
     position: absolute;
     top: 0;
     width: 100%;
@@ -28,6 +28,7 @@
   }
 
   &.is-editable:hover .border,
+  &.is-editable:focus .border,
   &.shake-image-hover .border {
     border: 10px solid var(--color-status-edit);
     display: block;
@@ -65,12 +66,13 @@
   }
 
   .title {
-    @include mixins.breakword();
+    @include mixins.breakword;
     font-size: 2.25rem;
     margin: var(--size-spacing-half-again) 0 var(--size-spacing-default);
   }
 
   &.is-editable .title:hover,
+  &.is-editable .title:focus,
   .shake-edit-title-hover {
     background-color: var(--color-status-edit);
   }
@@ -84,7 +86,7 @@
   }
 
   .description {
-    @include mixins.breakword();
+    @include mixins.breakword;
     font-size: 0.875rem;
     white-space: pre-wrap;
 
@@ -95,6 +97,7 @@
   }
 
   &.is-editable .description:hover,
+  &.is-editable .description:focus,
   .shake-edit-description-hover {
     background-color: var(--color-status-edit);
   }

@@ -16,13 +16,13 @@
 }
 
 .alert {
-  @include alert();
+  @include alert;
 }
 
 //
 // Alert with a Marquee
 //
-.alert--marquee {
+.alert-marquee {
   padding: 0;
 
   marquee {
@@ -33,36 +33,36 @@
 //
 // Warning Alert
 //
-@mixin alert--warning() {
+@mixin alert-warning() {
   background: var(--color-bg-warning-pastel);
   color: var(--color-status-warning);
 }
 
-.alert--warning {
-  @include alert--warning();
+.alert-warning {
+  @include alert-warning;
 }
 
 //
 // Danger Alert
 //
-@mixin alert--danger() {
+@mixin alert-danger() {
   background: var(--color-bg-danger-pastel);
   color: var(--color-status-danger);
 
   a {
-    @include links.link--danger();
+    @include links.link-danger;
   }
 }
 
-.alert--danger {
-  @include alert--danger();
+.alert-danger {
+  @include alert-danger;
 }
 
 //
 // Migration Reminder Alert
 //
 .migration-reminder {
-  @include alert();
-  @include alert--warning();
+  @include alert;
+  @include alert-warning;
   font-weight: var(--number-font-weight-bold);
 }

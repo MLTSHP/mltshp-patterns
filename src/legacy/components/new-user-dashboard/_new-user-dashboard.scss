@@ -31,7 +31,7 @@
   }
 
   a {
-    @include links.link--primary();
+    @include links.link-primary;
   }
 
   .two-columns {

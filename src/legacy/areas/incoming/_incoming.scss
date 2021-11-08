@@ -25,7 +25,7 @@
 }
 
 .incoming-header {
-  @include page-header.page-header();
+  @include page-header.page-header;
   cursor: pointer;
   padding: var(--size-spacing-half-again) var(--size-spacing-double);
   width: 100%;
@@ -43,7 +43,7 @@
     display: block;
     margin: auto;
     max-width: 100%;
-    padding-top: (87/300) * 100%; // aspect-ratio to scale with fluid width
+    padding-top: (87 / 300) * 100%; // aspect-ratio to scale with fluid width
 
     @media screen and (min-width: tokens.$size-breakpoint-md) {
       margin: 0;

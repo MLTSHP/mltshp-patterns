@@ -37,7 +37,7 @@
 }
 
 .user-name {
-  @include mixins.breakword();
+  @include mixins.breakword;
 }
 
 .avatar--img {
@@ -57,6 +57,10 @@
   top: -0.1em;
   transform-origin: center 40%;
   transition: transform 0.25s ease;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 
   .is-active & {
     transform: rotate(180deg);

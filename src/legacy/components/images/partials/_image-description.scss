@@ -10,7 +10,7 @@
   }
 
   .the-description {
-    @include mixins.breakword();
+    @include mixins.breakword;
 
     &.the-description-blank {
       color: var(--color-status-disabled);
@@ -18,12 +18,13 @@
     }
 
     a {
-      @include links.link--primary();
+      @include links.link-primary;
     }
   }
 
   // Inline Editing Description
   .description-edit .the-description:hover,
+  .description-edit .the-description:focus,
   .the-description-hover {
     background-color: var(--color-status-edit);
   }

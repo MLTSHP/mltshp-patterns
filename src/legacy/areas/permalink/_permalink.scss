@@ -58,6 +58,7 @@
         'comments sidebar'
         'post-comment sidebar';
       grid-template-columns: 1fr 330px;
+      // stylelint-disable-next-line declaration-block-no-redundant-longhand-properties
       grid-template-rows: repeat(3, min-content) 1fr;
     }
 

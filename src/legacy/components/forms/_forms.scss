@@ -39,8 +39,7 @@ textarea {
 
     @media screen and (min-width: tokens.$size-breakpoint-lg) {
       align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
+      flex-flow: row wrap;
     }
   }
 

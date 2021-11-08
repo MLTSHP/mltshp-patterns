@@ -14,9 +14,11 @@
   .like-button {
     line-height: 1;
 
+    // stylelint-disable a11y/no-outline-none
     &:focus {
       outline: none;
     }
+    // stylelint-enable
 
     .btn--content {
       align-items: center;
@@ -102,7 +104,7 @@
 
       &:hover,
       &:focus {
-        opacity: 0.66;
+        opacity: 66%;
       }
 
       &::before {
@@ -130,6 +132,10 @@
       margin: 1em auto;
       transform: translateZ(0);
       width: 50px;
+
+      @media screen and (prefers-reduced-motion: reduce) {
+        animation: none;
+      }
     }
   }
 }

@@ -23,5 +23,5 @@
 .shake-view-description,
 .shake-view-featured,
 .shake-list--description {
-  @include mixins.breakword();
+  @include mixins.breakword;
 }

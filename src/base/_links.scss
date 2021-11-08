@@ -1,8 +1,14 @@
 a {
   color: var(--color-text-link);
   text-decoration-color: var(--color-text-link-underline);
+  // stylelint-disable plugin/no-low-performance-animation-properties
   transition: background-color var(--time-speed-quick) ease,
     color var(--time-speed-quick) ease;
+  // stylelint-enable
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
 
   &:hover,
   &:focus,
@@ -15,7 +21,7 @@ a {
 //
 // Emphasized Links
 //
-@mixin link--emphasized() {
+@mixin link-emphasized() {
   font-weight: var(--number-font-weight-bold);
   text-decoration: none;
 
@@ -29,7 +35,7 @@ a {
 //
 // Primary color link modifier
 //
-@mixin link--primary() {
+@mixin link-primary() {
   color: var(--color-text-link-primary);
   text-decoration-color: var(--color-text-link-primary-underline);
 
@@ -42,15 +48,15 @@ a {
 }
 
 .link--primary {
-  @include link--primary();
-  @include link--emphasized();
+  @include link-primary;
+  @include link-emphasized;
 }
 
 //
 // Danger color link modifier
 // Use sparingly, and prefer danger buttons.
 //
-@mixin link--danger() {
+@mixin link-danger() {
   color: var(--color-text-link-danger);
   text-decoration-color: var(--color-text-link-danger-underline);
 
@@ -63,5 +69,5 @@ a {
 }
 
 .link--danger {
-  @include link--danger();
+  @include link-danger;
 }
