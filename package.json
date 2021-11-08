@@ -76,7 +76,7 @@
     "style-loader": "3.3.1",
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
-    "stylelint-config-spaceninja": "7.0.0",
+    "stylelint-config-spaceninja": "9.0.1",
     "stylelint-prettier": "1.2.0",
     "tiny-glob": "0.2.9"
   }
