@@ -38,7 +38,7 @@
     "lint:css:check": "stylelint '**/*.scss'",
     "lint:prettier": "prettier --write .",
     "lint:prettier:check": "prettier --check .",
-    "prepublishOnly": "yarn && yarn check-lint && yarn build"
+    "prepublishOnly": "yarn && yarn lint:check && yarn build"
   },
   "devDependencies": {
     "@babel/core": "7.16.0",
