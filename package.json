@@ -30,12 +30,14 @@
     "watch": "run-s watch:*",
     "watch:tokens": "chokidar  \"src/tokens/**/*.+(js|json)\" -c \"npm run build:tokens\"",
     "test": "yarn lint",
-    "check-lint": "run-s check-lint:*",
-    "check-lint:css": "stylelint '**/*.scss'",
-    "check-lint:js": "eslint . --ext .js,.mdx",
-    "lint": "run-s lint:*",
+    "lint": "run-s lint:js lint:css lint:prettier",
+    "lint:check": "run-s lint:*:check",
+    "lint:js": "eslint --fix . --ext .js,.mdx",
+    "lint:js:check": "eslint . --ext .js,.mdx",
     "lint:css": "stylelint --fix '**/*.scss'",
-    "lint:js": "eslint . --fix --ext .js,.mdx",
+    "lint:css:check": "stylelint '**/*.scss'",
+    "lint:prettier": "prettier --write .",
+    "lint:prettier:check": "prettier --check .",
     "prepublishOnly": "yarn && yarn check-lint && yarn build"
   },
   "devDependencies": {
@@ -77,7 +79,6 @@
     "stylelint": "14.0.1",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-spaceninja": "9.0.1",
-    "stylelint-prettier": "1.2.0",
     "tiny-glob": "0.2.9"
   }
 }

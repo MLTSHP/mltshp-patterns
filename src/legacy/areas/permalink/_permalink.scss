@@ -80,15 +80,19 @@
     .content-permalink > .image-title {
       grid-area: title;
     }
+
     .content-permalink > .image-content {
       grid-area: image;
     }
+
     .content-permalink > .permalink-sidebar {
       grid-area: sidebar;
     }
+
     .content-permalink > .image-comments {
       grid-area: comments;
     }
+
     .content-permalink > .image-comment-form {
       grid-area: post-comment;
     }
