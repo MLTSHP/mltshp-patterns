@@ -26,17 +26,18 @@ button {
   text-decoration: none;
   text-shadow: 0.05em 0.05em 0.05em var(--color-base-black-transparent-500);
   transition-duration: var(--time-speed-quick);
+  // stylelint-disable-next-line plugin/no-low-performance-animation-properties
   transition-property: background-color, color;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 }
 .label {
-  @include label();
+  @include label;
 }
 
 @mixin button() {
-  @include label();
+  @include label;
   cursor: pointer;
 
   &:hover,
@@ -44,9 +45,11 @@ button {
     color: var(--color-text-light-emphasis);
   }
 
+  // stylelint-disable a11y/no-outline-none
   &:focus {
     outline: none; // this is safe because we've ensured good focus styles
   }
+  // stylelint-enable
 
   &:disabled {
     background-color: var(--color-status-disabled) !important;
@@ -56,14 +59,14 @@ button {
   }
 }
 .btn {
-  @include button();
+  @include button;
 }
 
 //
 // Pastel modifier
 // Buttons with muted colors
 //
-@mixin button--pastel() {
+@mixin button-pastel() {
   font-weight: 600;
   letter-spacing: 0.015em;
   text-shadow: none;
@@ -75,14 +78,14 @@ button {
 }
 .btn-pastel,
 .label-pastel {
-  @include button--pastel();
+  @include button-pastel;
 }
 
 //
 // Shadow modifier
 // Buttons with a drop shadow
 //
-@mixin button--shadow() {
+@mixin button-shadow() {
   box-shadow: 0.22em 0.22em 0 var(--color-base-black-transparent-100);
   margin-right: 0.22em;
 
@@ -91,104 +94,104 @@ button {
   }
 }
 .btn-shadow {
-  @include button--shadow();
+  @include button-shadow;
 }
 
 //
 // Padded modifier
 // Buttons with a little cushion for the pushin'
 //
-@mixin button--padded() {
+@mixin button-padded() {
   height: 2.6em;
   line-height: 2.6em;
   padding: 0 1.25em;
 }
 .btn-padded {
-  @include button--padded();
+  @include button-padded;
 }
 
 //
 // Size modifiers
 //
-@mixin button--large() {
+@mixin button-large() {
   font-size: 24px;
   letter-spacing: 0.066em;
 }
 .btn-large,
 .label-large {
-  @include button--large();
+  @include button-large;
 }
 
-@mixin button--large-pastel() {
+@mixin button-large-pastel() {
   letter-spacing: 0.033em;
 }
 .btn-large.btn-pastel,
 .label-large.label-pastel {
-  @include button--large-pastel();
+  @include button-large-pastel;
 }
 
-@mixin button--small() {
+@mixin button-small() {
   font-size: 12px;
   font-weight: 400;
 }
 .btn-small,
 .label-small {
-  @include button--small();
+  @include button-small;
 }
 
-@mixin button--tiny() {
+@mixin button-tiny() {
   font-size: 10px;
   font-weight: 400;
   padding: 0 0.66em;
 }
 .btn-tiny,
 .label-tiny {
-  @include button--tiny();
+  @include button-tiny;
 }
 
-@mixin button--small-pastel() {
+@mixin button-small-pastel() {
   font-weight: 500;
 }
 .btn-small.btn-pastel,
 .btn-tiny.btn-pastel,
 .label-small.label-pastel,
 .label-tiny.label-pastel {
-  @include button--small-pastel();
+  @include button-small-pastel;
 }
 
 //
 // Icon modifier
 // Buttons that only contain an icon
 //
-@mixin button--icon() {
+@mixin button-icon() {
   padding: 0;
   width: 2.2em;
 }
 .btn-icon {
-  @include button--icon();
+  @include button-icon;
 }
 
-@mixin button--icon-padded() {
+@mixin button-icon-padded() {
   padding: 0;
   width: 2.6em;
 }
 .btn-icon.btn-padded {
-  @include button--icon-padded();
+  @include button-icon-padded;
 }
 
 //
 // Primary modifier
 // Provides extra visual weight and identifies the primary action in a set of buttons
 //
-@mixin label--primary() {
+@mixin label-primary() {
   background-color: var(--color-background-button-primary);
 }
 .label-primary {
-  @include label--primary();
+  @include label-primary;
 }
 
-@mixin button--primary() {
-  @include label--primary();
+@mixin button-primary() {
+  @include label-primary;
 
   &:hover,
   &:focus {
@@ -196,22 +199,22 @@ button {
   }
 }
 .btn-primary {
-  @include button--primary();
+  @include button-primary;
 }
 
 //
 // Primary Pastel modifier
 //
-@mixin label--primary-pastel() {
+@mixin label-primary-pastel() {
   background-color: var(--color-background-button-primary-pastel);
   color: var(--color-text-button-primary-pastel);
 }
 .label-primary.label-pastel {
-  @include label--primary-pastel();
+  @include label-primary-pastel;
 }
 
-@mixin button--primary-pastel() {
-  @include label--primary-pastel();
+@mixin button-primary-pastel() {
+  @include label-primary-pastel;
 
   &:hover,
   &:focus {
@@ -220,22 +223,22 @@ button {
   }
 }
 .btn-primary.btn-pastel {
-  @include button--primary-pastel();
+  @include button-primary-pastel;
 }
 
 //
 // Secondary modifier
 // De-emphasizes and identifies secondary actions in a set of buttons
 //
-@mixin label--secondary() {
+@mixin label-secondary() {
   background-color: var(--color-background-button-secondary);
 }
 .label-secondary {
-  @include label--secondary();
+  @include label-secondary;
 }
 
-@mixin button--secondary() {
-  @include label--secondary();
+@mixin button-secondary() {
+  @include label-secondary;
 
   &:hover,
   &:focus {
@@ -243,22 +246,22 @@ button {
   }
 }
 .btn-secondary {
-  @include button--secondary();
+  @include button-secondary;
 }
 
 //
 // Secondary Pastel modifier
 //
-@mixin label--secondary-pastel() {
+@mixin label-secondary-pastel() {
   background-color: var(--color-background-button-secondary-pastel);
   color: var(--color-text-button-secondary-pastel);
 }
 .label-secondary.label-pastel {
-  @include label--secondary-pastel();
+  @include label-secondary-pastel;
 }
 
-@mixin button--secondary-pastel() {
-  @include label--secondary-pastel();
+@mixin button-secondary-pastel() {
+  @include label-secondary-pastel;
 
   &:hover,
   &:focus {
@@ -267,22 +270,22 @@ button {
   }
 }
 .btn-secondary.btn-pastel {
-  @include button--secondary-pastel();
+  @include button-secondary-pastel;
 }
 
 //
 // Success modifier
 // Indicates a successful or positive action
 //
-@mixin label--success() {
+@mixin label-success() {
   background-color: var(--color-background-button-success);
 }
 .label-success {
-  @include label--success();
+  @include label-success;
 }
 
-@mixin button--success() {
-  @include label--success();
+@mixin button-success() {
+  @include label-success;
 
   &:hover,
   &:focus {
@@ -290,22 +293,22 @@ button {
   }
 }
 .btn-success {
-  @include button--success();
+  @include button-success;
 }
 
 //
 // Success Pastel modifier
 //
-@mixin label--success-pastel() {
+@mixin label-success-pastel() {
   background-color: var(--color-background-button-success-pastel);
   color: var(--color-text-button-success-pastel);
 }
 .label-success.label-pastel {
-  @include label--success-pastel();
+  @include label-success-pastel;
 }
 
-@mixin button--success-pastel() {
-  @include label--success-pastel();
+@mixin button-success-pastel() {
+  @include label-success-pastel;
 
   &:hover,
   &:focus {
@@ -314,22 +317,22 @@ button {
   }
 }
 .btn-success.btn-pastel {
-  @include button--success-pastel();
+  @include button-success-pastel;
 }
 
 //
 // Warning modifier
 // Indicates caution should be taken with this action
 //
-@mixin label--warning() {
+@mixin label-warning() {
   background-color: var(--color-background-button-warning);
 }
 .label-warning {
-  @include label--warning();
+  @include label-warning;
 }
 
-@mixin button--warning() {
-  @include label--warning();
+@mixin button-warning() {
+  @include label-warning;
 
   &:hover,
   &:focus {
@@ -337,22 +340,22 @@ button {
   }
 }
 .btn-warning {
-  @include button--warning();
+  @include button-warning;
 }
 
 //
 // Warning Pastel modifier
 //
-@mixin label--warning-pastel() {
+@mixin label-warning-pastel() {
   background-color: var(--color-background-button-warning-pastel);
   color: var(--color-text-button-warning-pastel);
 }
 .label-warning.label-pastel {
-  @include label--warning-pastel();
+  @include label-warning-pastel;
 }
 
-@mixin button--warning-pastel() {
-  @include label--warning-pastel();
+@mixin button-warning-pastel() {
+  @include label-warning-pastel;
 
   &:hover,
   &:focus {
@@ -361,22 +364,22 @@ button {
   }
 }
 .btn-warning.btn-pastel {
-  @include button--warning-pastel();
+  @include button-warning-pastel;
 }
 
 //
 // Danger modifier
 // Indicates a dangerous or potentially negative action
 //
-@mixin label--danger() {
+@mixin label-danger() {
   background-color: var(--color-background-button-danger);
 }
 .label-danger {
-  @include label--danger();
+  @include label-danger;
 }
 
-@mixin button--danger() {
-  @include label--danger();
+@mixin button-danger() {
+  @include label-danger;
 
   &:hover,
   &:focus {
@@ -384,22 +387,22 @@ button {
   }
 }
 .btn-danger {
-  @include button--danger();
+  @include button-danger;
 }
 
 //
 // Danger Pastel modifier
 //
-@mixin label--danger-pastel() {
+@mixin label-danger-pastel() {
   background-color: var(--color-background-button-danger-pastel);
   color: var(--color-text-button-danger-pastel);
 }
 .label-danger.label-pastel {
-  @include label--danger-pastel();
+  @include label-danger-pastel;
 }
 
-@mixin button--danger-pastel() {
-  @include label--danger-pastel();
+@mixin button-danger-pastel() {
+  @include label-danger-pastel;
 
   &:hover,
   &:focus {
@@ -408,5 +411,5 @@ button {
   }
 }
 .btn-danger.btn-pastel {
-  @include button--danger-pastel();
+  @include button-danger-pastel;
 }

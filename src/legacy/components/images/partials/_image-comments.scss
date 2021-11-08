@@ -15,8 +15,8 @@
       padding: var(--size-spacing-default);
 
       a {
-        @include links.link--primary();
-        @include links.link--emphasized();
+        @include links.link-primary;
+        @include links.link-emphasized;
         align-items: center;
         display: inline-flex;
         margin-right: var(--size-spacing-default);
@@ -59,7 +59,7 @@
       }
 
       .comment-body-text {
-        @include mixins.breakword();
+        @include mixins.breakword;
         clear: both;
         color: var(--color-page-text);
         font-size: 0.875rem;
@@ -103,7 +103,7 @@
       }
 
       .delete {
-        @include links.link--danger();
+        @include links.link-danger;
         background-image: svg-load('icons/delete-comment.svg');
         background-position: 0 0;
         background-repeat: no-repeat;
@@ -113,7 +113,9 @@
       }
 
       &:hover .reply-to,
-      &:hover .delete {
+      &:hover .delete,
+      &:focus .reply-to,
+      &:focus .delete {
         display: block;
       }
     }

@@ -66,7 +66,7 @@
     padding: 0;
 
     li a {
-      @include links.link--emphasized();
+      @include links.link-emphasized;
       background-color: var(--color-background-choose-shake-link);
       border-radius: var(--size-border-radius-large);
       color: var(--color-text-choose-shake-link);

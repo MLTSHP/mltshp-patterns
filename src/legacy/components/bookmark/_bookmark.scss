@@ -76,7 +76,7 @@ $bookmark-shadow-offset: 4px;
   white-space: nowrap;
 
   a {
-    @include links.link--primary();
-    @include links.link--emphasized();
+    @include links.link-primary;
+    @include links.link-emphasized;
   }
 }

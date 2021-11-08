@@ -7,7 +7,7 @@
 //
 .content-find-shakes {
   .header {
-    @include page-header.page-header();
+    @include page-header.page-header;
   }
 
   .body {
@@ -104,8 +104,8 @@
         margin: var(--size-spacing-default) 0 0;
 
         a {
-          @include links.link--primary();
-          @include links.link--emphasized();
+          @include links.link-primary;
+          @include links.link-emphasized;
         }
       }
 

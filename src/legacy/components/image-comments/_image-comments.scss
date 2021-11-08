@@ -40,7 +40,7 @@
     }
 
     .comment-body-text {
-      @include mixins.breakword();
+      @include mixins.breakword;
     }
 
     .meta {
@@ -87,7 +87,8 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       .meta {
         .reply-to {
           display: inline;

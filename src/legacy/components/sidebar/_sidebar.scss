@@ -16,9 +16,9 @@
     padding-right: var(--size-spacing-half-again);
 
     a {
-      @include buttons.button();
-      @include buttons.button--secondary();
-      @include buttons.button--small();
+      @include buttons.button;
+      @include buttons.button-secondary;
+      @include buttons.button-small;
       float: right;
     }
 
@@ -73,7 +73,7 @@
   margin-bottom: var(--size-spacing-double);
 
   h3 {
-    @include mixins.breakword();
+    @include mixins.breakword;
     font-size: 0.875rem;
     padding-bottom: var(--size-spacing-default);
     padding-left: var(--size-spacing-half-again);
@@ -92,9 +92,9 @@
   }
 
   a {
-    @include links.link--primary();
-    @include links.link--emphasized();
-    @include mixins.breakword();
+    @include links.link-primary;
+    @include links.link-emphasized;
+    @include mixins.breakword;
     display: block;
     font-size: 0.875rem;
     padding: var(--size-spacing-half) 0;
@@ -155,8 +155,8 @@
     margin-bottom: var(--size-spacing-half);
 
     a {
-      @include links.link--primary();
-      @include links.link--emphasized();
+      @include links.link-primary;
+      @include links.link-emphasized;
     }
   }
 
@@ -184,8 +184,8 @@
   }
 
   a {
-    @include links.link--primary();
-    @include links.link--emphasized();
+    @include links.link-primary;
+    @include links.link-emphasized;
     background-color: var(--color-background-content);
     background-position: 5px 5px;
     background-repeat: no-repeat;
@@ -298,7 +298,8 @@
       font-weight: var(--number-font-weight-bold);
       padding: var(--size-spacing-half);
 
-      &:hover {
+      &:hover,
+      &:focus {
         background-color: var(--color-bg-success-pastel);
       }
 
@@ -354,8 +355,8 @@
   padding: var(--size-spacing-half-again);
 
   a {
-    @include links.link--primary();
-    @include links.link--emphasized();
+    @include links.link-primary;
+    @include links.link-emphasized;
   }
 
   .editor-image {
@@ -381,10 +382,10 @@
 
   .flag-nsfw-button,
   .unflag-nsfw-button {
-    @include buttons.button();
-    @include buttons.button--small();
-    @include buttons.button--pastel();
-    @include buttons.button--danger-pastel();
+    @include buttons.button;
+    @include buttons.button-small;
+    @include buttons.button-pastel;
+    @include buttons.button-danger-pastel;
   }
 }
 
@@ -392,10 +393,10 @@
 // Sidebar Flag Image as NSFW
 //
 .flag-image {
-  @include buttons.button();
-  @include buttons.button--small();
-  @include buttons.button--pastel();
-  @include buttons.button--warning-pastel();
+  @include buttons.button;
+  @include buttons.button-small;
+  @include buttons.button-pastel;
+  @include buttons.button-warning-pastel;
   background-image: svg-load('icons/flag.svg');
   background-position: 0.5em center;
   background-repeat: no-repeat;
@@ -412,10 +413,10 @@
 // Delete Post
 //
 .delete-post-text {
-  @include buttons.button();
-  @include buttons.button--small();
-  @include buttons.button--pastel();
-  @include buttons.button--danger-pastel();
+  @include buttons.button;
+  @include buttons.button-small;
+  @include buttons.button-pastel;
+  @include buttons.button-danger-pastel;
   margin-top: var(--size-spacing-triple);
 }
 
@@ -496,9 +497,9 @@
   }
 
   .name {
-    @include links.link--primary();
-    @include links.link--emphasized();
-    @include mixins.breakword();
+    @include links.link-primary;
+    @include links.link-emphasized;
+    @include mixins.breakword;
   }
 
   .date {
@@ -563,9 +564,9 @@
   }
 
   a {
-    @include links.link--primary();
-    @include links.link--emphasized();
-    @include mixins.breakword();
+    @include links.link-primary;
+    @include links.link-emphasized;
+    @include mixins.breakword;
     flex: 1;
   }
 
@@ -602,7 +603,7 @@
 
     &:hover,
     &:focus {
-      opacity: 0.66;
+      opacity: 66%;
     }
   }
 

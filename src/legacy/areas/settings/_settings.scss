@@ -6,7 +6,7 @@
 // Area: Settings
 //
 .settings-header {
-  @include page-header.page-header();
+  @include page-header.page-header;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -55,8 +55,8 @@
   }
 
   a {
-    @include links.link--primary();
-    @include links.link--emphasized();
+    @include links.link-primary;
+    @include links.link-emphasized;
     border-top-left-radius: var(--size-border-radius-default);
     border-top-right-radius: var(--size-border-radius-default);
     display: block;
