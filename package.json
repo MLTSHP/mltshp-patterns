@@ -76,7 +76,7 @@
     "storybook-dark-mode": "1.1.0",
     "style-dictionary": "3.7.0",
     "style-loader": "3.3.1",
-    "stylelint": "14.8.0",
+    "stylelint": "14.8.1",
     "stylelint-config-prettier": "9.0.3",
     "stylelint-config-spaceninja": "10.0.0",
     "tiny-glob": "0.2.9"
