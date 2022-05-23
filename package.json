@@ -71,7 +71,7 @@
     "remark-preset-prettier": "0.5.1",
     "require-dir": "1.2.0",
     "sass": "1.52.1",
-    "sass-loader": "12.6.0",
+    "sass-loader": "13.0.0",
     "storybook-addon-themes": "6.1.0",
     "storybook-dark-mode": "1.1.0",
     "style-dictionary": "3.7.0",
