@@ -51,7 +51,7 @@
     "babel-loader": "8.2.5",
     "chokidar-cli": "3.0.0",
     "css-loader": "6.7.1",
-    "cssnano": "5.1.9",
+    "cssnano": "5.1.10",
     "eslint": "8.16.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-mdx": "1.17.0",
