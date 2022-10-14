@@ -47,7 +47,7 @@
     "@storybook/builder-webpack5": "6.5.12",
     "@storybook/html": "6.5.12",
     "@storybook/manager-webpack5": "6.5.12",
-    "@svgr/webpack": "6.4.0",
+    "@svgr/webpack": "6.5.0",
     "babel-loader": "8.2.5",
     "chokidar-cli": "3.0.0",
     "css-loader": "6.7.1",
