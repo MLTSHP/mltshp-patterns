@@ -16,6 +16,7 @@ module.exports = {
     },
     '@storybook/addon-a11y',
     'storybook-addon-themes',
+    'storybook-dark-mode',
   ],
   webpackFinal: async (config) => {
     const isDev = config.mode === 'development';
