@@ -1,3 +1,18 @@
+# Build directories
+dist
+dist-ssr
+storybook-static
+.temp
+
+# Auto-generated design token files
+src/compiled
+
+# Dependencies
+node_modules
+
+# Local configurations
+*.local
+
 # Logs
 logs
 *.log
@@ -6,14 +21,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
-dist
-dist-ssr
-storybook-static
-src/compiled
-.temp
-*.local
 
 # Editor directories and files
 .vscode/*
