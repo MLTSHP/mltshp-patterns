@@ -6,10 +6,16 @@ export default {
   tags: ['autodocs'],
 };
 
+/**
+ * Used on Conversations, Followers, and User Shakes.
+ */
 export const Default = {
   render: () => defaultMarkup,
 };
 
+/**
+ * Used on all other shakes and search results.
+ */
 export const Linear = {
   render: () => linearMarkup,
 };

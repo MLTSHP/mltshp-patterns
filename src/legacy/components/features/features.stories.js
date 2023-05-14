@@ -4,6 +4,9 @@ import primaryMarkup from './examples/feature-primary.html?raw';
 import finaleMarkup from './examples/feature-finale.html?raw';
 import listMarkup from './examples/feature-list.html?raw';
 
+/**
+ * Used on the logged-out version of the homepage to promote site features.
+ */
 export default {
   title: 'Legacy/Components/Features',
   tags: ['autodocs'],

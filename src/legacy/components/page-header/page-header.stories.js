@@ -5,6 +5,9 @@ export default {
   tags: ['autodocs'],
 };
 
+/**
+ * Appears at the top of most pages.
+ */
 export const PageHeader = {
   render: () => accountHeaderMarkup,
 };

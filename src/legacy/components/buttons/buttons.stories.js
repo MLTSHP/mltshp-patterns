@@ -41,10 +41,16 @@ export const Large = {
   render: () => largeMarkup,
 };
 
+/**
+ * Use with caution: these do not meet touch accessibility targets.
+ */
 export const Small = {
   render: () => smallMarkup,
 };
 
+/**
+ * Use with caution: these do not meet touch accessibility targets.
+ */
 export const Tiny = {
   render: () => tinyMarkup,
 };

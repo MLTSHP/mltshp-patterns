@@ -52,7 +52,13 @@ export const ShakeInviteMember = {
 
 export const ShakeInviteMemberResults = {
   render: () => shakeInviteMemberResultsMarkup,
-  height: '220px',
+  parameters: {
+    docs: {
+      story: {
+        height: '220px',
+      },
+    },
+  },
 };
 
 export const ShakeActions = {
@@ -63,35 +69,59 @@ export const ShakeEditor = {
   render: () => shakeEditorMarkup,
 };
 
+/**
+ * Appears in the sidebar of a user shake if logged in as an admin.
+ */
 export const FlagNsfw = {
   render: () => sidebarFlagNSFWMarkup,
   name: 'Flag NSFW',
 };
 
+/**
+ * Appears on the permalink page
+ */
 export const FlagImage = {
   render: () => flagImageMarkup,
 };
 
+/**
+ * Appears on the permalink page
+ */
 export const DeletePost = {
   render: () => deletePostMarkup,
 };
 
+/**
+ * Appears on the permalink page
+ */
 export const SidebarStats = {
   render: () => sidebarStatsMarkup,
 };
 
+/**
+ * Appears on the permalink page
+ */
 export const MetaData = {
   render: () => metaDataMarkup,
 };
 
+/**
+ * Appears on the permalink page
+ */
 export const AddToShakes = {
   render: () => addToShakesMarkup,
 };
 
+/**
+ * Appears on the permalink page
+ */
 export const InTheseShakes = {
   render: () => inTheseShakesMarkup,
 };
 
+/**
+ * Appears on the permalink page
+ */
 export const SocialLinks = {
   render: () => permalinkSocialMarkup,
 };

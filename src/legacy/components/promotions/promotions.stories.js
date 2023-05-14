@@ -6,10 +6,25 @@ export default {
   tags: ['autodocs'],
 };
 
+/**
+ * Made for the Create Account Page.
+ */
 export const Promotions = {
   render: () => defaultMarkup,
+  name: 'Mini Promos',
+  parameters: {
+    docs: {
+      story: {
+        height: '175px',
+      },
+    },
+  },
 };
 
+/**
+ * Appears in the sidebar, hidden on small screens.
+ */
 export const Promo = {
   render: () => promoMarkup,
+  name: 'Sidebar Promo',
 };

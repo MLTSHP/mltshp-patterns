@@ -1,6 +1,10 @@
 import collapsedMarkup from './examples/collapsed.html?raw';
 import expandedMarkup from './examples/expanded.html?raw';
 
+/**
+ * Appears in the
+ * [Site Navigation](/docs/legacy-components-site-navigation--docs).
+ */
 export default {
   title: 'Legacy/Components/Choose a Shake',
   tags: ['autodocs'],
@@ -12,5 +16,11 @@ export const Collapsed = {
 
 export const Expanded = {
   render: () => expandedMarkup,
-  height: '460px',
+  parameters: {
+    docs: {
+      story: {
+        height: '460px',
+      },
+    },
+  },
 };

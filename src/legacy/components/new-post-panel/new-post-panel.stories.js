@@ -6,49 +6,72 @@ import saveVideoConfirmationMarkup from './examples/save-video-confirmation.html
 import emailUnconfirmedMarkup from './examples/email-unconfirmed.html?raw';
 import overUploadLimitMarkup from './examples/over-upload-limit.html?raw';
 
+/**
+ * Overlay that can appear on any page.
+ */
 export default {
   title: 'Legacy/Components/New Post Panel',
   tags: ['autodocs'],
+  parameters: {
+    layout: 'fullscreen',
+    docs: {
+      story: {
+        inline: false,
+        height: '320px',
+      },
+    },
+  },
 };
 
 export const Default = {
   render: () => newPostPanelMarkup,
-  height: '300px',
-  inline: false,
 };
 
 export const WithShakes = {
   render: () => withShakesMarkup,
-  height: '300px',
-  inline: false,
 };
 
 export const WithShakesOpen = {
   render: () => withShakesOpenMarkup,
-  height: '400px',
-  inline: false,
+  parameters: {
+    docs: {
+      story: {
+        height: '420px',
+      },
+    },
+  },
 };
 
 export const SaveVideo = {
   render: () => saveVideoMarkup,
-  height: '300px',
-  inline: false,
 };
 
 export const ConfirmVideo = {
   render: () => saveVideoConfirmationMarkup,
-  height: '600px',
-  inline: false,
+  parameters: {
+    docs: {
+      story: {
+        height: '620px',
+      },
+    },
+  },
 };
 
 export const EmailUnconfirmed = {
   render: () => emailUnconfirmedMarkup,
-  height: '300px',
-  inline: false,
 };
 
+/**
+ * Note there does not appear to be a way to reach this view,
+ * since the "New Post" button is hidden if you're over the upload limit.
+ */
 export const OverUploadLimit = {
   render: () => overUploadLimitMarkup,
-  height: '550px',
-  inline: false,
+  parameters: {
+    docs: {
+      story: {
+        height: '500px',
+      },
+    },
+  },
 };
