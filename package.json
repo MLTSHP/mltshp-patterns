@@ -24,7 +24,7 @@
   "scripts": {
     "start": "yarn storybook",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "yarn build:tokens && storybook build",
     "build": "run-s build:*",
     "build:tokens": "node ./build-tokens.cjs",
     "build:scss": "sass --no-source-map src:.temp",
