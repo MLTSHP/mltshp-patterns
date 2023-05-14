@@ -43,7 +43,9 @@
     display: block;
     margin: auto;
     max-width: 100%;
-    padding-top: (87 / 300) * 100%; // aspect-ratio to scale with fluid width
+    padding-top: calc(
+      (87 / 300) * 100%
+    ); // aspect-ratio to scale with fluid width
 
     @media screen and (min-width: tokens.$size-breakpoint-md) {
       margin: 0;

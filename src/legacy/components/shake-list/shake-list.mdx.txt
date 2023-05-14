@@ -1,0 +1,13 @@
+import { Story, Canvas, Meta } from '@storybook/blocks';
+import shakeListMarkup from './examples/shake-list.html';
+import * as ShakeListStories from './shake-list.stories';
+
+<Meta of={ShakeListStories} />
+
+# Shake List
+
+Appears in the admin area.
+
+<Canvas>
+  <Story of={ShakeListStories.ShakeList} />
+</Canvas>

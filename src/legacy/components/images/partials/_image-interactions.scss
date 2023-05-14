@@ -113,6 +113,7 @@
         left: calc(var(--size-spacing-half-again) * -1);
         position: absolute;
         right: calc(var(--size-spacing-half-again) * -1);
+        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
         top: calc(var(--size-spacing-double) * -1);
       }
     }

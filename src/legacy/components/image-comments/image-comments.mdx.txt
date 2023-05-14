@@ -1,0 +1,24 @@
+import { Story, Canvas, Meta } from '@storybook/blocks';
+import imageCommentMarkup from './examples/image-comment.html';
+import imageCommentFormMarkup from './examples/image-comment-form.html';
+import * as ImageCommentsStories from './image-comments.stories';
+
+<Meta of={ImageCommentsStories} />
+
+# Image Comments
+
+Used on permalink pages, as well as the Conversations area to render the comments.
+
+## Comment
+
+Note this is different from the [Image Comments Tab](/?path=/story/legacy-components-image--comments-open) that's shown in the list view for an image.
+
+<Canvas>
+  <Story of={ImageCommentsStories.Comment} />
+</Canvas>
+
+## Comment Form
+
+<Canvas>
+  <Story of={ImageCommentsStories.CommentForm} />
+</Canvas>

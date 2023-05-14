@@ -1,0 +1,148 @@
+import { Story, Canvas, Meta } from '@storybook/blocks';
+import followingMarkup from './examples/following.html';
+import membersMarkup from './examples/members.html';
+import otherShakesMarkup from './examples/other-shakes.html';
+import findShakesMarkup from './examples/find-shakes.html';
+import upgradeAccountMarkup from './examples/upgrade-account.html';
+import coolToolsMarkup from './examples/cool-tools.html';
+import shakeInviteMemberMarkup from './examples/shake-invite-member.html';
+import shakeInviteMemberResultsMarkup from './examples/shake-invite-member-results.html';
+import shakeActionsMarkup from './examples/shake-actions.html';
+import shakeEditorMarkup from './examples/shake-editor.html';
+import sidebarFlagNSFWMarkup from './examples/sidebar-flag-nsfw.html';
+import flagImageMarkup from './examples/flag-image.html';
+import deletePostMarkup from './examples/delete-post.html';
+import sidebarStatsMarkup from './examples/sidebar-stats.html';
+import metaDataMarkup from './examples/meta-data.html';
+import addToShakesMarkup from './examples/add-to-shakes.html';
+import inTheseShakesMarkup from './examples/in-these-shakes.html';
+import permalinkSocialMarkup from './examples/permalink-social.html';
+import * as SidebarStories from './sidebar.stories';
+
+<Meta of={SidebarStories} />
+
+# Sidebar
+
+## Following
+
+<Canvas>
+  <Story of={SidebarStories.Following} />
+</Canvas>
+
+## Members
+
+<Canvas>
+  <Story of={SidebarStories.Members} />
+</Canvas>
+
+## Other Shakes
+
+<Canvas>
+  <Story of={SidebarStories.OtherShakes} />
+</Canvas>
+
+## Find Shakes
+
+<Canvas>
+  <Story of={SidebarStories.FindShakes} />
+</Canvas>
+
+## Upgrade Account
+
+<Canvas>
+  <Story of={SidebarStories.UpgradeAccount} />
+</Canvas>
+
+## Cool Tools
+
+<Canvas>
+  <Story of={SidebarStories.CoolTools} />
+</Canvas>
+
+## Shake Invite Member
+
+<Canvas>
+  <Story of={SidebarStories.ShakeInviteMember} />
+</Canvas>
+
+## Shake Invite Member Results
+
+<Canvas>
+  <Story of={SidebarStories.ShakeInviteMemberResults} />
+</Canvas>
+
+## Shake Actions
+
+<Canvas>
+  <Story of={SidebarStories.ShakeActions} />
+</Canvas>
+
+## Shake Editor
+
+<Canvas>
+  <Story of={SidebarStories.ShakeEditor} />
+</Canvas>
+
+## Flag NSFW
+
+Appears in the sidebar of a user shake if logged in as an admin.
+
+<Canvas>
+  <Story of={SidebarStories.FlagNsfw} />
+</Canvas>
+
+## Flag Image
+
+Appears on the permalink page
+
+<Canvas>
+  <Story of={SidebarStories.FlagImage} />
+</Canvas>
+
+## Delete Post
+
+Appears on the permalink page
+
+<Canvas>
+  <Story of={SidebarStories.DeletePost} />
+</Canvas>
+
+## Sidebar Stats
+
+Appears on the permalink page
+
+<Canvas>
+  <Story of={SidebarStories.SidebarStats} />
+</Canvas>
+
+## Meta Data
+
+Appears on the permalink page
+
+<Canvas>
+  <Story of={SidebarStories.MetaData} />
+</Canvas>
+
+## Add to Shakes
+
+Appears on the permalink page
+
+<Canvas>
+  <Story of={SidebarStories.AddToShakes} />
+</Canvas>
+
+## In These Shakes
+
+Appears on the permalink page
+
+<Canvas>
+  <Story of={SidebarStories.InTheseShakes} />
+</Canvas>
+
+## Social Links
+
+Appears on the permalink page
+
+<Canvas>
+  <Story of={SidebarStories.SocialLinks} />
+</Canvas>

@@ -1,35 +1,30 @@
-import breakpointTokens from '../src/compiled/js/breakpoints';
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
-import { themes } from '../src/themes/storybook-themes';
-import { mltshpThemeLight, mltshpThemeDark } from './mltshpTheme';
-import './preview.scss';
-const breakpoints = breakpointTokens.size.breakpoint;
+/** @type { import('@storybook/html').Preview } */
+import AutoDocsTemplate from './AutoDocsTemplate.mdx';
+import { mltshpThemeDark, mltshpThemeLight } from './mltshpTheme';
+import '../src/main.scss';
 
-// Create viewports using widths defined in design tokens
-const breakpointViewports = Object.keys(breakpoints).map((key) => {
-  return {
-    name: breakpoints[key].name,
-    styles: {
-      width: breakpoints[key].value,
-      height: '100%',
+const preview = {
+  parameters: {
+    // @see https://storybook.js.org/docs/html/writing-docs/autodocs
+    docs: {
+      page: AutoDocsTemplate,
     },
-    type: 'other',
-  };
-});
-
-export const parameters = {
-  themes,
-  viewport: {
-    viewports: {
-      ...breakpointViewports,
-      ...INITIAL_VIEWPORTS,
+    // @see https://storybook.js.org/addons/storybook-dark-mode
+    darkMode: {
+      dark: { ...mltshpThemeDark },
+      light: { ...mltshpThemeLight },
+      darkClass: 't-dark',
+      lightClass: 't-light',
+      stylePreview: true,
     },
-  },
-  darkMode: {
-    dark: { ...mltshpThemeDark },
-    light: { ...mltshpThemeLight },
-    darkClass: 't-dark',
-    lightClass: 't-light',
-    stylePreview: true,
+    // @see https://storybook.js.org/addons/storybook-addon-themes
+    themes: {
+      list: [
+        { name: 'Light', class: 't-light', color: 'white' },
+        { name: 'Dark', class: 't-dark', color: 'black' },
+      ],
+    },
   },
 };
+
+export default preview;

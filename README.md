@@ -23,3 +23,12 @@ npm install mltshp-patterns
 ```
 yarn add mltshp-patterns
 ```
+
+## TODO
+
+- [ ] Finish converting from `.stories.mdx`
+- [ ] Add icon stories
+- [ ] Add color stories
+- [ ] Update preview styles to use theme variables to support dark mode
+- [ ] Review and update README and CONTRIBUTING
+- [ ] Review and update CSS Guidelines

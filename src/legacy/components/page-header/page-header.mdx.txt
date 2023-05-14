@@ -1,0 +1,13 @@
+import { Story, Canvas, Meta } from '@storybook/blocks';
+import accountHeaderMarkup from './examples/account-header.html';
+import * as PageHeaderStories from './page-header.stories';
+
+<Meta of={PageHeaderStories} />
+
+# Page Header
+
+Appears at the top of most pages.
+
+<Canvas>
+  <Story of={PageHeaderStories.PageHeader} />
+</Canvas>

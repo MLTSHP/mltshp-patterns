@@ -1,0 +1,34 @@
+import { Story, Canvas, Meta } from '@storybook/blocks';
+import defaultMarkup from './examples/default.html';
+import editableMarkup from './examples/editable.html';
+import editingMarkup from './examples/editing.html';
+import emptyMarkup from './examples/empty.html';
+import * as ShakeDetailsStories from './shake-details.stories';
+
+<Meta of={ShakeDetailsStories} />
+
+# Shake Details
+
+## Default
+
+<Canvas>
+  <Story of={ShakeDetailsStories.Default} />
+</Canvas>
+
+## Editable
+
+<Canvas>
+  <Story of={ShakeDetailsStories.Editable} />
+</Canvas>
+
+## Editing
+
+<Canvas>
+  <Story of={ShakeDetailsStories.Editing} />
+</Canvas>
+
+## Empty
+
+<Canvas>
+  <Story of={ShakeDetailsStories.Empty} />
+</Canvas>

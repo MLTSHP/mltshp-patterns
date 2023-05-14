@@ -1,0 +1,26 @@
+import { Story, Canvas, Meta } from '@storybook/blocks';
+import whereYouWereMarkup from './examples/where-you-were.html';
+import youStartedHereMarkup from './examples/you-started-here.html';
+import * as BookmarkStories from './bookmark.stories';
+
+<Meta of={BookmarkStories} />
+
+# Bookmark
+
+Appears on shake pages, tracking the user's reading progress.
+
+Note that the bookmark is intended to "pull" slightly outside the content well. These samples have some padding adding to keep it visible.
+
+## Default
+
+<Canvas>
+  <Story of={BookmarkStories.Default} />
+</Canvas>
+
+## Jump Link
+
+The bookmark can include an optional jump link to let the user return to the original position.
+
+<Canvas>
+  <Story of={BookmarkStories.JumpLink} />
+</Canvas>

@@ -1,0 +1,11 @@
+import { Story, Canvas, Meta } from '@storybook/blocks';
+import membersMarkup from './examples/members.html';
+import * as ShakeMembersStories from './shake-members.stories';
+
+<Meta of={ShakeMembersStories} />
+
+# Shake Members
+
+<Canvas>
+  <Story of={ShakeMembersStories.ShakeMembers} />
+</Canvas>

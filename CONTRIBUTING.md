@@ -32,7 +32,7 @@ We're using Storybook as a means to preview, test, and develop UI components in 
 
 #### How do Storybook Stories Work?
 
-Need help with how Storybook docs work? Check out the [Storybook Docs guide](https://storybook.js.org/docs/react/writing-docs/mdx).
+Need help with how Storybook docs work? Check out the [Storybook Docs guide](https://storybook.js.org/docs/html/writing-docs/introduction).
 
 ## Linting
 
