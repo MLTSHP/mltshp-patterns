@@ -10,7 +10,6 @@ const config = {
         controls: false,
       },
     },
-    '@storybook/addon-links',
     '@storybook/addon-a11y',
     'storybook-addon-themes',
     'storybook-dark-mode',
