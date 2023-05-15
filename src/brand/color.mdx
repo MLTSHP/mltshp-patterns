@@ -1,9 +1,7 @@
 import { Meta, Title, ColorPalette, ColorItem } from '@storybook/blocks';
 import tokens from '../compiled/js/tokens.json';
 export const generateColorPalette = (props) => {
-  const propsArray = Object.values(props);
-  console.log('PROPS', props);
-  return propsArray.map((prop) => (
+  return Object.values(props).map((prop) => (
     <ColorItem
       key={prop.name}
       title={`--${prop.name}`}
