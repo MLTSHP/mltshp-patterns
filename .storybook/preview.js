@@ -1,6 +1,7 @@
 /** @type { import('@storybook/html').Preview } */
 import AutoDocsTemplate from './AutoDocsTemplate.mdx';
 import { mltshpThemeDark, mltshpThemeLight } from './mltshpTheme';
+import './preview.scss';
 import '../src/main.scss';
 
 const preview = {

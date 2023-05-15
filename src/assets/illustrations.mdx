@@ -9,7 +9,12 @@ export const illustrations = import.meta.glob('./illustrations/*.svg', {
 export const generateElements = (illustrations) => {
   return Object.entries(illustrations).map(([path, mod]) => {
     const name = path.split('/').pop().split('.').shift();
-    return <mod.ReactComponent key={name} />;
+    return (
+      <figure key={name}>
+        <mod.ReactComponent />
+        <figcaption>{name}</figcaption>
+      </figure>
+    );
   });
 };
 
@@ -17,4 +22,4 @@ export const generateElements = (illustrations) => {
 
 <Title>Illustrations</Title>
 
-{generateElements(illustrations)}
+<div className="sb-gallery">{generateElements(illustrations)}</div>

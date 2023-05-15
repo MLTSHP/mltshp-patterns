@@ -27,7 +27,7 @@ yarn add mltshp-patterns
 ## TODO
 
 - [x] Finish converting from `.stories.mdx`
-- [ ] Add icon stories
+- [x] Add icon stories
 - [ ] Add color stories
 - [ ] Fix broken images
 - [ ] Update preview styles to use theme variables to support dark mode
