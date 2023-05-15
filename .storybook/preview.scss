@@ -1,3 +1,5 @@
+/* stylelint-disable a11y/media-prefers-reduced-motion */
+/* stylelint-disable plugin/no-low-performance-animation-properties */
 .sb-gallery {
   display: grid;
   gap: 1em;
@@ -15,4 +17,135 @@
     margin-top: 0.5em;
     text-align: center;
   }
+}
+
+//
+// Tweaks for story display can start here
+// All these overrides are necessary for Docs to inherit the dark mode theme
+// from Storybook. If storybook-dark-mode or docs theming ever gets smarter,
+// we can remove most of these.
+// @see https://github.com/hipstersmoothie/storybook-dark-mode/issues/70
+// @see https://github.com/storybookjs/storybook/issues/10523
+//
+.sbdocs.sbdocs-wrapper {
+  background-color: var(--color-background-content);
+  color: var(--color-page-text);
+
+  $selectors: h1, h2, h3, h4, h5, h6, p, li, th, td;
+
+  // This goofy nested where & not selector is to reduce specificity
+  .sbdocs-content {
+    :where(
+        :where(#{$selectors}):not(
+            .sb-anchor,
+            .sb-unstyled,
+            .sb-unstyled :where(#{$selectors})
+          )
+      ) {
+      color: var(--color-page-text);
+    }
+
+    :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)) code {
+      background-color: var(--color-background-content-secondary);
+      border-color: var(--color-border-default);
+      color: var(--color-page-text);
+    }
+  }
+
+  .sbdocs-title {
+    color: var(--color-page-text);
+  }
+
+  .css-17wqrc3 {
+    color: var(--color-page-text-secondary);
+  }
+
+  .sbdocs-a {
+    color: var(--color-text-link);
+    text-decoration-color: var(--color-text-link-underline);
+    transition: background-color var(--time-speed-quick) ease,
+      color var(--time-speed-quick) ease;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--color-text-link-hover);
+      text-decoration-color: var(--color-text-link-underline-hover);
+    }
+  }
+
+  .sbdocs-table {
+    tr {
+      background-color: var(--color-background-content);
+
+      &:nth-of-type(2n) {
+        background-color: var(--color-background-content-secondary);
+      }
+    }
+
+    th,
+    td {
+      border-color: var(--color-border-default);
+      color: var(--color-page-text);
+    }
+  }
+
+  .sbdocs-preview,
+  .docblock-source {
+    background-color: var(--color-background-content);
+    border-color: var(--color-border-default);
+    color: var(--color-page-text);
+  }
+
+  // "show code" button
+  .css-11xgcgt,
+  .css-1fdphfk {
+    background-color: var(--color-background-content);
+    border-color: var(--color-border-default);
+    color: var(--color-page-text);
+  }
+
+  .docblock-icongallery {
+    // icon
+    .css-1pae8pd {
+      background-color: var(--color-background-content);
+      border-color: var(--color-border-default);
+    }
+
+    // label
+    .css-7woigg {
+      color: var(--color-page-text);
+    }
+  }
+
+  .docblock-colorpalette {
+    // headings
+    .css-cgg8c7 {
+      color: var(--color-page-text-secondary);
+    }
+
+    // label
+    .css-a5y6l8 {
+      color: var(--color-page-text);
+    }
+
+    // comment
+    .css-5j8njo {
+      color: var(--color-page-text-secondary);
+    }
+
+    // caption
+    .css-rs8390 {
+      color: var(--color-page-text-secondary);
+    }
+
+    // swatch
+    .css-1njl3fa {
+      border-color: var(--color-border-default);
+    }
+  }
+}
+
+.sb-show-main {
+  background-color: var(--color-background-content);
 }

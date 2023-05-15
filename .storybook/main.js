@@ -1,6 +1,10 @@
 /** @type { import('@storybook/html-vite').StorybookConfig } */
 const config = {
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: [
+    '../src/introduction.mdx', // list first so it's the initial page
+    '../src/**/*.mdx',
+    '../src/**/*.stories.@(js|jsx|ts|tsx)',
+  ],
   addons: [
     {
       name: '@storybook/addon-essentials',

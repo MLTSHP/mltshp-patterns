@@ -30,7 +30,7 @@ yarn add mltshp-patterns
 - [x] Add icon stories
 - [x] Add color stories
 - [x] Fix broken images
-- [ ] Update preview styles to use theme variables to support dark mode
+- [x] Update preview styles to use theme variables to support dark mode
   - [ ] iframe display:block (see New Post Panel)
 - [ ] Run diff on CSS output
 - [ ] Review and update README and CONTRIBUTING
