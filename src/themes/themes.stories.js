@@ -10,7 +10,7 @@ import darkThemeMarkup from './examples/dark.html?raw';
  * a whole new pattern and modifier (instead of just a themed variation).
  */
 export default {
-  title: 'Themes',
+  title: 'Brand/Themes',
   tags: ['autodocs'],
 };
 
