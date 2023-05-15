@@ -26,11 +26,12 @@ yarn add mltshp-patterns
 
 ## TODO
 
-- [ ] Finish converting from `.stories.mdx`
+- [x] Finish converting from `.stories.mdx`
 - [ ] Add icon stories
 - [ ] Add color stories
 - [ ] Fix broken images
 - [ ] Update preview styles to use theme variables to support dark mode
   - [ ] iframe display:block (see New Post Panel)
+- [ ] Run diff on CSS output
 - [ ] Review and update README and CONTRIBUTING
 - [ ] Review and update CSS Guidelines

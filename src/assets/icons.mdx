@@ -1,0 +1,22 @@
+import { Meta, IconGallery, IconItem } from '@storybook/blocks';
+// Load all icons
+// @see https://vitejs.dev/guide/features.html#glob-import
+export const icons = import.meta.glob('./icons/*.svg', { eager: true });
+// Generate Storybook Icon elements for each
+// @see https://storybook.js.org/docs/react/api/doc-block-icongallery
+export const generateElements = (icons) => {
+  return Object.entries(icons).map(([path, mod]) => {
+    const name = path.split('/').pop().split('.').shift();
+    return (
+      <IconItem name={name} key={name}>
+        <mod.ReactComponent />
+      </IconItem>
+    );
+  });
+};
+
+<Meta title="Assets/Icons" />
+
+# Icons
+
+<IconGallery>{generateElements(icons)}</IconGallery>
