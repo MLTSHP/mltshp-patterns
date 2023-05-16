@@ -1,5 +1,27 @@
-// Foundational styles
-@use '../src/main';
+/* stylelint-disable a11y/media-prefers-reduced-motion */
+/* stylelint-disable plugin/no-low-performance-animation-properties */
+.sb-gallery {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+  figure {
+    margin: 0;
+  }
+
+  svg {
+    aspect-ratio: 1;
+    border: 1px solid var(--color-border-default);
+    border-radius: 4px;
+    box-shadow: var(--color-border-default) 0 1px 3px 0;
+    padding: 0.5em;
+  }
+
+  figcaption {
+    margin-top: 0.25em;
+    text-align: center;
+  }
+}
 
 //
 // Tweaks for story display can start here
@@ -13,29 +35,33 @@
   background-color: var(--color-background-content);
   color: var(--color-page-text);
 
-  .sbdocs-h1,
-  .sbdocs-h2,
-  .sbdocs-h3,
-  .sbdocs-h4,
-  .sbdocs-h5,
-  .sbdocs-h6,
-  .sbdocs-p,
-  .sbdocs-li,
-  .sbdocs-blockquote {
-    color: var(--color-page-text);
-  }
+  $selectors: h1, h2, h3, h4, h5, h6, p, li, th, td;
 
-  .sbdocs-p {
-    code {
+  // This goofy nested where & not selector is to reduce specificity
+  .sbdocs-content {
+    :where(
+        :where(#{$selectors}):not(
+            .sb-anchor,
+            .sb-unstyled,
+            .sb-unstyled :where(#{$selectors})
+          )
+      ) {
+      color: var(--color-page-text);
+    }
+
+    :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)) code {
       background-color: var(--color-background-content-secondary);
       border-color: var(--color-border-default);
       color: var(--color-page-text);
     }
   }
 
-  .sbdocs-h2,
-  .sbdocs-blockquote {
-    border-color: var(--color-border-default);
+  .sbdocs-title {
+    color: var(--color-page-text);
+  }
+
+  .css-17wqrc3 {
+    color: var(--color-page-text-secondary);
   }
 
   .sbdocs-a {
@@ -77,7 +103,7 @@
 
   // "show code" button
   .css-11xgcgt,
-  .css-1imo1gr {
+  .css-1fdphfk {
     background-color: var(--color-background-content);
     border-color: var(--color-border-default);
     color: var(--color-page-text);
@@ -85,38 +111,47 @@
 
   .docblock-icongallery {
     // icon
-    .css-15erloe {
+    .css-1pae8pd {
       background-color: var(--color-background-content);
       border-color: var(--color-border-default);
     }
 
     // label
-    .css-87agpt {
+    .css-7woigg {
       color: var(--color-page-text);
     }
   }
 
   .docblock-colorpalette {
     // headings
-    .css-syxe49 {
+    .css-cgg8c7 {
       color: var(--color-page-text-secondary);
     }
 
     // label
-    .css-1cic1f4 {
+    .css-a5y6l8 {
       color: var(--color-page-text);
     }
 
+    // comment
+    .css-5j8njo {
+      color: var(--color-page-text-secondary);
+    }
+
     // caption
-    .css-ku8wft {
+    .css-rs8390 {
       color: var(--color-page-text-secondary);
     }
 
     // swatch
-    .css-16trhe4 {
+    .css-1njl3fa {
       border-color: var(--color-border-default);
     }
   }
+}
+
+iframe[src^='iframe.html'] {
+  display: block;
 }
 
 .sb-show-main {

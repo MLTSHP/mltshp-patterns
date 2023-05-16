@@ -1,0 +1,25 @@
+import { Meta, Title } from '@storybook/blocks';
+// Load all icons
+// @see https://vitejs.dev/guide/features.html#glob-import
+export const illustrations = import.meta.glob('../assets/illustrations/*.svg', {
+  eager: true,
+});
+// Generate Storybook Icon elements for each
+// @see https://storybook.js.org/docs/react/api/doc-block-icongallery
+export const generateElements = (illustrations) => {
+  return Object.entries(illustrations).map(([path, mod]) => {
+    const name = path.split('/').pop().split('.').shift();
+    return (
+      <figure key={name}>
+        <mod.ReactComponent />
+        <figcaption>{name}</figcaption>
+      </figure>
+    );
+  });
+};
+
+<Meta title="Brand/Illustrations" />
+
+<Title>Illustrations</Title>
+
+<div className="sb-gallery">{generateElements(illustrations)}</div>

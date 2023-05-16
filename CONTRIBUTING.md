@@ -6,7 +6,9 @@ So you want to contribute to MLTSHP… Congratulations! Here's what you'll need 
 
 ## Getting Started
 
-1. Clone this repo to a new directory.
+We use the "[fork and pull](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models)" model, which means you'll need to start by [forking our repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository), then make some changes, and then [submit a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) back to the main repo.
+
+1. Fork [this repo](https://github.com/MLTSHP/mltshp-patterns/).
 1. Run `yarn` to install dependencies.
 1. Run `yarn storybook` to start a local instance of Storybook, our preview site.
 
@@ -14,35 +16,27 @@ Any changes you make should automatically be reflected in the preview site.
 
 ## About
 
-This project uses Style Dictionary for design tokens, and Storybook to preview the components.
+The output of this project is CSS patterns and components. We generate that CSS using Sass and PostCSS.
 
-### About Style Dictionary
+The CSS depends on JSON tokens, which are converted into CSS custom properties and Sass variables using a tool called [Style Dictionary](https://amzn.github.io/style-dictionary/).
 
-[Style Dictionary](https://amzn.github.io/style-dictionary/) is a build system that allows you to define styles once, in a way for any platform or language to consume. A single place to create and edit your styles, and a single command exports these rules to all the places you need them - iOS, Android, CSS, JS, HTML, sketch files, style documentation, or anything you can think of.
+And finally, we use [Storybook](https://storybook.js.org/) to preview, test, and develop our CSS components in isolation without worrying about app specific dependencies and requirements.
 
-#### Design Tokens
+#### What PostCSS Plugins do We Use?
 
-Design tokens are stored in JSON files in the `src/tokens/` directory. The build process will automatically translate the tokens to the formats we're consuming, such as CSS custom properties.
+Our PostCSS setup is minimal. We're running [postcss-inline-svg](https://www.npmjs.com/package/postcss-inline-svg) to convert SVGs in the CSS into inline code, and we're running [cssnano](https://cssnano.co/) to minify the final output.
 
-### About Storybook
+#### How do Design Tokens Work?
 
-[Storybook](https://storybook.js.org/) is an open source tool for developing UI components in isolation for web components. It makes building stunning UIs organized and efficient. With it, you can visualize different states of your UI components and develop them interactively.
-
-We're using Storybook as a means to preview, test, and develop UI components in isolation without worrying about app specific dependencies and requirements.
+[Design tokens](https://amzn.github.io/style-dictionary/#/tokens) are stored in JSON files in the `src/tokens/` directory. The build process will automatically translate the tokens to the formats we're consuming, such as CSS custom properties.
 
 #### How do Storybook Stories Work?
 
-Need help with how Storybook docs work? Check out the [Storybook Docs guide](https://storybook.js.org/docs/react/writing-docs/mdx).
+Need help with how Storybook works? Check out the [Storybook Docs](https://storybook.js.org/docs/react/get-started/why-storybook).
 
-## Linting
+#### Linting
 
-We run Stylelint against Sass files, Remark against Markdown files, and ESLint against JS files.
-
-```bash
-yarn lint:check
-```
-
-Linting will be run automatically against any pull requests.
+We run Stylelint against Sass files, ESLint against JS files, and Prettier against all files. Linting will be run automatically against any pull requests.
 
 ## Submitting a Pull Request
 
@@ -63,7 +57,7 @@ Only admins need to worry about these step.
 1. `npm publish` - This will automatically install and compile everything, run linting, and publish
 1. `git push && git push --tags`
 
-## to MLTSHP.com
+### to MLTSHP.com
 
 1. `yarn build`
 1. Copy the minified CSS files from the `dist` folder to the `static/css` folder in the MLTSHP repo.

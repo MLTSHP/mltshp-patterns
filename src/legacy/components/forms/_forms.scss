@@ -147,6 +147,8 @@ textarea {
       display: block;
       height: 22px;
       left: -48px;
+      /* stylelint-disable-next-line property-no-vendor-prefix */
+      -webkit-mask-image: svg-load('balloons/error-tail.svg');
       mask-image: svg-load('balloons/error-tail.svg');
       position: absolute;
       width: 52px;

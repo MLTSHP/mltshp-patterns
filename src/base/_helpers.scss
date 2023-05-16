@@ -9,16 +9,19 @@
 // screenreaders only
 // https://cloudfour.com/thinks/see-no-evil-hidden-content-and-accessibility/
 .sr-only {
-  border: 0 !important;
-  clip: rect(0, 0, 0, 0) !important;
-  clip-path: polygon(0 0, 0 0, 0 0) !important;
-  height: 1px !important;
-  margin: -1px !important;
-  overflow: hidden !important;
-  padding: 0 !important;
-  position: absolute !important;
-  white-space: nowrap !important;
-  width: 1px !important;
+  border: 0;
+  clip: rect(0 0 0 0);
+  // stylelint-disable
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  // stylelint-enable
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .clear {

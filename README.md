@@ -12,7 +12,7 @@ Contributions are welcome! Please see the [Contributing Guide](CONTRIBUTING.md).
 
 Pull in MLTSHP's pattern library files into nearly any project with a package manager.
 
-The package includes both the compiled code and the source files. So you can either include the compiled CSS, or load the source files directly. If you use the source files, you'll need to compile them yourself, using Sass and Autoprefixer.
+The package includes both the compiled code and the source files. So you can either include the compiled CSS, or load the source files directly. If you use the source files, you'll need to compile them yourself, using Sass and [postcss-inline-svg](https://www.npmjs.com/package/postcss-inline-svg).
 
 Install in your Node.js powered apps using [npm](https://www.npmjs.com/package/mltshp-patterns) or [yarn](https://classic.yarnpkg.com/en/package/mltshp-patterns):
 
