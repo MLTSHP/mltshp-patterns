@@ -11,10 +11,14 @@
 
   svg {
     aspect-ratio: 1;
+    border: 1px solid var(--color-border-default);
+    border-radius: 4px;
+    box-shadow: var(--color-border-default) 0 1px 3px 0;
+    padding: 0.5em;
   }
 
   figcaption {
-    margin-top: 0.5em;
+    margin-top: 0.25em;
     text-align: center;
   }
 }
@@ -144,6 +148,10 @@
       border-color: var(--color-border-default);
     }
   }
+}
+
+iframe[src^='iframe.html'] {
+  display: block;
 }
 
 .sb-show-main {
