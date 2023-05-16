@@ -32,6 +32,6 @@ yarn add mltshp-patterns
 - [x] Fix broken images
 - [x] Update preview styles to use theme variables to support dark mode
   - [x] iframe display:block (see New Post Panel)
-- [ ] Run diff on CSS output
+- [x] Run diff on CSS output
 - [ ] Review and update README and CONTRIBUTING
 - [ ] Review and update CSS Guidelines
