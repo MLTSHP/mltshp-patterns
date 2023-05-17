@@ -1,5 +1,6 @@
 {
   "extends": ["config:base", ":automergeMinor"],
   "dependencyDashboard": true,
-  "commitMessageSuffix": "[skip netlify]"
+  "commitMessageSuffix": "[skip netlify]",
+  "rangeStrategy": "pin"
 }
