@@ -43,10 +43,10 @@
     "prepublishOnly": "yarn && yarn test && yarn build"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "7.0.17",
-    "@storybook/addon-essentials": "7.0.17",
-    "@storybook/blocks": "7.0.17",
-    "@storybook/html-vite": "7.0.17",
+    "@storybook/addon-a11y": "7.0.18",
+    "@storybook/addon-essentials": "7.0.18",
+    "@storybook/blocks": "7.0.18",
+    "@storybook/html-vite": "7.0.18",
     "@storybook/testing-library": "0.1.0",
     "cssnano": "6.0.1",
     "eslint": "8.41.0",
@@ -62,7 +62,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "1.62.1",
-    "storybook": "7.0.17",
+    "storybook": "7.0.18",
     "storybook-addon-themes": "6.1.0",
     "storybook-dark-mode": "3.0.0",
     "style-dictionary": "3.8.0",
