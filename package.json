@@ -61,7 +61,7 @@
     "prettier": "2.8.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "1.63.3",
+    "sass": "1.63.4",
     "storybook": "7.0.20",
     "storybook-addon-themes": "6.1.0",
     "storybook-dark-mode": "3.0.0",
