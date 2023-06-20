@@ -47,7 +47,7 @@
     "@storybook/addon-essentials": "7.0.22",
     "@storybook/blocks": "7.0.22",
     "@storybook/html-vite": "7.0.22",
-    "@storybook/testing-library": "0.1.0",
+    "@storybook/testing-library": "0.2.0",
     "cssnano": "6.0.1",
     "eslint": "8.43.0",
     "eslint-config-prettier": "8.8.0",
