@@ -7,14 +7,24 @@
     font-size: 0.875rem;
     overflow: hidden;
     padding-bottom: var(--size-spacing-default);
-  }
 
-  .the-alt-text {
-    @include mixins.breakword;
+    .the-alt-text {
+      @include mixins.breakword;
+    }
 
-    &.the-alt-text-blank {
+    &.alt-text--blank .the-alt-text {
       color: var(--color-status-disabled);
       font-style: italic;
+    }
+
+    &.alt-text--blank .alt-text-toggle,
+    &.alt-text--editing .alt-text-toggle {
+      display: none;
+    }
+
+    &.alt-text--hidden .the-alt-text,
+    &.alt-text--editing .the-alt-text {
+      display: none;
     }
   }
 
@@ -25,8 +35,16 @@
     background-color: var(--color-status-edit);
   }
 
+  .alt-text--editing .alt-text-edit-form {
+    display: block;
+  }
+
   .alt-text-edit-form {
     display: none;
+
+    h3 {
+      margin-bottom: 5px;
+    }
 
     textarea {
       background-color: var(--color-background-content);
@@ -48,5 +66,9 @@
       padding: var(--size-spacing-half) var(--size-spacing-default)
         var(--size-spacing-half-again) var(--size-spacing-default);
     }
+  }
+
+  .alt-text-toggle {
+    cursor: pointer;
   }
 }
