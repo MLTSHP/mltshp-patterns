@@ -1,0 +1,52 @@
+@use '../../../../base/links';
+@use '../../../../init/mixins';
+
+.image-content {
+  .alt-text {
+    color: var(--color-page-text);
+    font-size: 0.875rem;
+    overflow: hidden;
+    padding-bottom: var(--size-spacing-default);
+  }
+
+  .the-alt-text {
+    @include mixins.breakword;
+
+    &.the-alt-text-blank {
+      color: var(--color-status-disabled);
+      font-style: italic;
+    }
+  }
+
+  // Inline Editing Alt Text
+  .alt-text-edit .the-alt-text:hover,
+  .alt-text-edit .the-alt-text:focus,
+  .the-alt-text-hover {
+    background-color: var(--color-status-edit);
+  }
+
+  .alt-text-edit-form {
+    display: none;
+
+    textarea {
+      background-color: var(--color-background-content);
+      border: 1px solid var(--color-border-default);
+      border-radius: var(--size-border-radius-default);
+      color: var(--color-page-text);
+      min-height: 100px;
+      padding: var(--size-spacing-half);
+    }
+
+    .buttons {
+      display: flex;
+      padding: var(--size-spacing-default) 0;
+    }
+
+    .or {
+      color: var(--color-page-text-secondary);
+      display: block;
+      padding: var(--size-spacing-half) var(--size-spacing-default)
+        var(--size-spacing-half-again) var(--size-spacing-default);
+    }
+  }
+}
