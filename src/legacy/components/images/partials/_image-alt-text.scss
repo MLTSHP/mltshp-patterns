@@ -2,38 +2,53 @@
 @use '../../../../init/mixins';
 
 .image-content {
-  .description {
+  .alt-text {
     color: var(--color-page-text);
     font-size: 0.875rem;
     overflow: hidden;
     padding-bottom: var(--size-spacing-default);
-  }
 
-  .the-description {
-    @include mixins.breakword;
+    .the-alt-text {
+      @include mixins.breakword;
 
-    &.the-description-blank {
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    &.alt-text--blank .the-alt-text {
       color: var(--color-status-disabled);
       font-style: italic;
     }
 
-    a {
-      @include links.link-primary;
+    &.alt-text--blank .alt-text-toggle,
+    &.alt-text--editing .alt-text-toggle {
+      display: none;
+    }
+
+    &.alt-text--hidden .the-alt-text,
+    &.alt-text--editing .the-alt-text {
+      display: none;
     }
   }
 
-  // Inline Editing Description
-  .description-edit .the-description:hover,
-  .description-edit .the-description:focus,
-  .the-description-hover {
+  // Inline Editing Alt Text
+  // stylelint-disable a11y/selector-pseudo-class-focus
+  .alt-text-edit .the-alt-text:hover,
+  .the-alt-text-hover {
     background-color: var(--color-status-edit);
   }
+  // stylelint-enable a11y/selector-pseudo-class-focus
 
-  .description-edit-form {
+  .alt-text--editing .alt-text-edit-form {
+    display: block;
+  }
+
+  .alt-text-edit-form {
     display: none;
 
-    h3 {
-      margin-bottom: 5px;
+    .alt-text-learn {
+      margin-top: 5px;
     }
 
     textarea {
@@ -56,5 +71,9 @@
       padding: var(--size-spacing-half) var(--size-spacing-default)
         var(--size-spacing-half-again) var(--size-spacing-default);
     }
+  }
+
+  .alt-text-toggle {
+    cursor: pointer;
   }
 }
