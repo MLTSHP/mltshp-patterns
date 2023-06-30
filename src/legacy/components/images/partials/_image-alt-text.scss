@@ -33,6 +33,7 @@
   }
 
   // Inline Editing Alt Text
+  // stylelint-disable-next-line a11y/selector-pseudo-class-focus this element is not focusable
   .alt-text-edit .the-alt-text:hover,
   .the-alt-text-hover {
     background-color: var(--color-status-edit);
