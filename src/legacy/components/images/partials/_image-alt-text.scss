@@ -33,11 +33,12 @@
   }
 
   // Inline Editing Alt Text
-  // stylelint-disable-next-line a11y/selector-pseudo-class-focus
+  // stylelint-disable a11y/selector-pseudo-class-focus
   .alt-text-edit .the-alt-text:hover,
   .the-alt-text-hover {
     background-color: var(--color-status-edit);
   }
+  // stylelint-enable a11y/selector-pseudo-class-focus
 
   .alt-text--editing .alt-text-edit-form {
     display: block;
