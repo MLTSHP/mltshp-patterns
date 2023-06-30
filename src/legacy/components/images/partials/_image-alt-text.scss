@@ -10,6 +10,10 @@
 
     .the-alt-text {
       @include mixins.breakword;
+
+      &:focus {
+        box-shadow: none;
+      }
     }
 
     &.alt-text--blank .the-alt-text {
@@ -30,7 +34,6 @@
 
   // Inline Editing Alt Text
   .alt-text-edit .the-alt-text:hover,
-  .alt-text-edit .the-alt-text:focus,
   .the-alt-text-hover {
     background-color: var(--color-status-edit);
   }
