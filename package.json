@@ -29,7 +29,7 @@
     "build:tokens": "node ./build-tokens.cjs",
     "build:scss": "sass --no-source-map src:.temp",
     "build:postcss": "postcss .temp/*.css -d dist",
-    "build:min": "postcss .temp/*.css -u cssnano -d dist --ext .min.css --no-map",
+    "build:min": "postcss dist/*.css -u cssnano -d dist --ext .min.css --no-map",
     "svgo": "svgo -r -f ./src/assets",
     "test": "yarn lint:check",
     "lint": "run-s lint:js lint:css lint:prettier",
