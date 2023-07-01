@@ -1,4 +1,5 @@
 import permalinkMarkup from './examples/permalink.html?raw';
+import altTextMarkup from './examples/alt-text.html?raw';
 import listMarkup from './examples/list.html?raw';
 import commentsMarkup from './examples/comments.html?raw';
 import commentingMarkup from './examples/commenting.html?raw';
@@ -33,6 +34,10 @@ export default {
 
 export const Permalink = {
   render: () => permalinkMarkup,
+};
+
+export const AltText = {
+  render: () => altTextMarkup,
 };
 
 export const ListView = {

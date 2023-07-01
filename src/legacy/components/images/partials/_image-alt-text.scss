@@ -10,6 +10,10 @@
 
     .the-alt-text {
       @include mixins.breakword;
+      background: var(--color-background-content-secondary);
+      color: var(--color-page-text-secondary);
+      margin-top: var(--size-spacing-half);
+      padding: var(--size-spacing-default) var(--size-spacing-half-again);
 
       &:focus {
         box-shadow: none;
