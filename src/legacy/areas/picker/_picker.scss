@@ -91,6 +91,59 @@
     .tools-field-title .input-text {
       font-weight: var(--number-font-weight-bold);
     }
+
+    .field + .field {
+      margin-top: 0;
+    }
+
+    .field-textarea {
+      height: 0;
+      overflow: hidden;
+
+      &.field-textarea--selected {
+        height: auto;
+      }
+    }
+
+    .textarea-navigation {
+      ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: var(--size-spacing-half-again);
+        padding-bottom: 0;
+
+        @media screen and (min-width: tokens.$size-breakpoint-md) {
+          padding-left: var(--size-spacing-double);
+        }
+      }
+
+      li + li {
+        @media screen and (min-width: tokens.$size-breakpoint-md) {
+          margin-left: var(--size-spacing-half-again);
+        }
+      }
+
+      .tab {
+        border-top-left-radius: var(--size-border-radius-default);
+        border-top-right-radius: var(--size-border-radius-default);
+        display: block;
+        font-size: 0.875rem;
+        padding: var(--size-spacing-default);
+        cursor: pointer;
+      }
+
+      @media (hover) {
+        .tab:hover {
+          background-color: var(--color-form-bg);
+        }
+      }
+
+      .selected .tab {
+        font-weight: bold;
+        background-color: var(--color-border-form);
+      }
+    }
   }
 
   //
