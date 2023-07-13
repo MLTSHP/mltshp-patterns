@@ -127,21 +127,22 @@
       .tab {
         border-top-left-radius: var(--size-border-radius-default);
         border-top-right-radius: var(--size-border-radius-default);
+        cursor: pointer;
         display: block;
         font-size: 0.875rem;
         padding: var(--size-spacing-default);
-        cursor: pointer;
       }
 
       @media (hover) {
-        .tab:hover {
+        .tab:hover,
+        .tab:focus {
           background-color: var(--color-form-bg);
         }
       }
 
       .selected .tab {
-        font-weight: bold;
         background-color: var(--color-border-form);
+        font-weight: bold;
       }
     }
   }
