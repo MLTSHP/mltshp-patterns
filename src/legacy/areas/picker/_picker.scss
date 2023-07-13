@@ -133,11 +133,9 @@
         padding: var(--size-spacing-default);
       }
 
-      @media (hover) {
-        .tab:hover,
-        .tab:focus {
-          background-color: var(--color-form-bg);
-        }
+      .tab:hover,
+      .tab:focus {
+        background-color: var(--color-form-bg);
       }
 
       .selected .tab {
