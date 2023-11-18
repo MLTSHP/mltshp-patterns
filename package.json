@@ -69,7 +69,7 @@
     "stylelint": "15.11.0",
     "stylelint-config-prettier": "9.0.5",
     "stylelint-config-spaceninja": "14.0.0",
-    "svgo": "3.0.3",
+    "svgo": "3.0.4",
     "vite": "4.5.0",
     "vite-plugin-svgr": "4.2.0"
   }
