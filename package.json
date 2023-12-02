@@ -50,7 +50,7 @@
     "@storybook/testing-library": "0.2.2",
     "cssnano": "6.0.1",
     "eslint": "8.55.0",
-    "eslint-config-prettier": "9.0.0",
+    "eslint-config-prettier": "9.1.0",
     "eslint-plugin-mdx": "2.2.0",
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-storybook": "0.6.15",
