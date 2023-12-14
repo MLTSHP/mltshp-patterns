@@ -48,7 +48,7 @@
     "@storybook/blocks": "7.0.27",
     "@storybook/html-vite": "7.0.27",
     "@storybook/testing-library": "0.2.2",
-    "cssnano": "6.0.1",
+    "cssnano": "6.0.2",
     "eslint": "8.55.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-mdx": "2.2.0",
