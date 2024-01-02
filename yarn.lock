@@ -4671,10 +4671,10 @@ eslint-config-prettier@9.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-9.1.0.tgz#31af3d94578645966c082fcb71a5846d3c94867f"
   integrity sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==
 
-eslint-mdx@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-2.3.0.tgz#568603b72b1dab81b620bbc84ec9a89b34cba9a1"
-  integrity sha512-ji+iKVSjpzsCzMrHNm6xRDMar1iH4OpxROAE2RtCeEFdg4pRv6/anwFD76HIOaaQY+3wD1dfk8/VQ5faPB+VHw==
+eslint-mdx@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-2.3.1.tgz#ea1eeee83117cc5db09da6a68da6d481f4a98c32"
+  integrity sha512-BZ2GqIybz3KmcGY0EwJLzmaESnS2sCrQDu3EV6cwPG8UnYlq1k6OmbK8rQHagil+CXOzGkW2jr+Z0BSIobVoQA==
   dependencies:
     acorn "^8.10.0"
     acorn-jsx "^5.3.2"
@@ -4698,12 +4698,12 @@ eslint-plugin-markdown@^3.0.1:
   dependencies:
     mdast-util-from-markdown "^0.8.5"
 
-eslint-plugin-mdx@2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-2.3.0.tgz#45cd3114000e36abda65ac3f307d122579ca9340"
-  integrity sha512-S48QlfeV/yfaeX6L/vemh1oGBx+CMG66cceoUtxGmdFTf4hbr9bRKZ25FKKrhzpDX0QLY474mWo86NAogp+rFw==
+eslint-plugin-mdx@2.3.1:
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-2.3.1.tgz#58eee85b8956341fb778bce4e76da1da70d8fc97"
+  integrity sha512-nUrL40TWl/lGAqK7B6xu+/Lhf5BRwAwpiQFgQl+GXzN8V7vZb55J3O0+g4FdHEUJz7gB3U0PlsuvyX9BgxBcgw==
   dependencies:
-    eslint-mdx "^2.3.0"
+    eslint-mdx "^2.3.1"
     eslint-plugin-markdown "^3.0.1"
     remark-mdx "^2.3.0"
     remark-parse "^10.0.2"
