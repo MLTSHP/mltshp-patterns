@@ -19,11 +19,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-          cache: 'yarn'
+          cache: 'npm'
       - name: Install Dependencies
-        run: yarn --frozen-lockfile
+        run: npm ci
       - name: Run Lint
-        run: yarn lint:check
+        run: npm run lint:check
 
   build:
     runs-on: ubuntu-latest
@@ -33,8 +33,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-          cache: 'yarn'
+          cache: 'npm'
       - name: Install Dependencies
-        run: yarn --frozen-lockfile
+        run: npm ci
       - name: Run Build
-        run: yarn build
+        run: npm build

@@ -4,10 +4,10 @@
   publish = "storybook-static"
 
   # Default Storybook static build command
-  command = "yarn build-storybook"
+  command = "npm run build-storybook"
 
   # Without this, Storybook's necessary devDependencies may not install. We
   # could move those to full dependencies, but most of those dependencies are
   # not necessary for projects consuming this library, so that would be silly.
   NODE_ENV = "development"
-  
+

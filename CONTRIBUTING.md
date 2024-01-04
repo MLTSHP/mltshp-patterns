@@ -9,8 +9,8 @@ So you want to contribute to MLTSHP… Congratulations! Here's what you'll need 
 We use the "[fork and pull](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/about-collaborative-development-models)" model, which means you'll need to start by [forking our repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository), then make some changes, and then [submit a pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork) back to the main repo.
 
 1. Fork [this repo](https://github.com/MLTSHP/mltshp-patterns/).
-1. Run `yarn` to install dependencies.
-1. Run `yarn storybook` to start a local instance of Storybook, our preview site.
+1. Run `npm ci` to install dependencies.
+1. Run `npm run storybook` to start a local instance of Storybook, our preview site.
 
 Any changes you make should automatically be reflected in the preview site.
 
@@ -51,14 +51,14 @@ Only admins need to worry about these step.
 1. `git checkout main`
 1. `git pull`
 1. Make sure you have a clean working tree (`git status` should show no changes)
-1. `yarn install --frozen-lockfile`
-1. `yarn lint:check`
+1. `npm ci`
+1. `npm run lint:check`
 1. `npm version`
 1. `npm publish` - This will automatically install and compile everything, run linting, and publish
 1. `git push && git push --tags`
 
 ### to MLTSHP.com
 
-1. `yarn build`
+1. `npm build`
 1. Copy the minified CSS files from the `dist` folder to the `static/css` folder in the MLTSHP repo.
 1. Open a new PR for the updated CSS files.
