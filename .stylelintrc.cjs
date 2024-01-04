@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['stylelint-config-spaceninja', 'stylelint-config-prettier'],
+  extends: ['stylelint-config-spaceninja'],
   rules: {
     // disabling due to many false positives
     'no-descending-specificity': null,
