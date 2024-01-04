@@ -59,6 +59,6 @@ Only admins need to worry about these step.
 
 ### to MLTSHP.com
 
-1. `npm build`
+1. `npm run build`
 1. Copy the minified CSS files from the `dist` folder to the `static/css` folder in the MLTSHP repo.
 1. Open a new PR for the updated CSS files.

@@ -40,7 +40,7 @@
     "lint:css:check": "stylelint '**/*.scss'",
     "lint:prettier": "prettier . --write",
     "lint:prettier:check": "prettier . --check",
-    "prepublishOnly": "npm ci && npm test && npm build"
+    "prepublishOnly": "npm ci && npm test && npm run build"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "7.6.7",
