@@ -22,16 +22,16 @@
     "!.gitignore"
   ],
   "scripts": {
-    "start": "yarn storybook",
-    "storybook": "yarn build:tokens && storybook dev -p 6006",
-    "build-storybook": "yarn build:tokens && storybook build",
+    "start": "npm run storybook",
+    "storybook": "npm run build:tokens && storybook dev -p 6006",
+    "build-storybook": "npm run build:tokens && storybook build",
     "build": "run-s build:*",
     "build:tokens": "node ./build-tokens.cjs",
     "build:scss": "sass --no-source-map src:.temp",
     "build:postcss": "postcss .temp/*.css -d dist",
     "build:min": "postcss dist/*.css -u cssnano -d dist --ext .min.css --no-map",
     "svgo": "svgo -r -f ./src/assets",
-    "test": "yarn lint:check",
+    "test": "npm run lint:check",
     "lint": "run-s lint:js lint:css lint:prettier",
     "lint:check": "run-s lint:*:check",
     "lint:js": "eslint --fix . --ext .js,.mdx",
@@ -40,7 +40,7 @@
     "lint:css:check": "stylelint '**/*.scss'",
     "lint:prettier": "prettier . --write",
     "lint:prettier:check": "prettier . --check",
-    "prepublishOnly": "yarn && yarn test && yarn build"
+    "prepublishOnly": "npm ci && npm test && npm run build"
   },
   "devDependencies": {
     "@storybook/addon-a11y": "7.6.7",
@@ -66,14 +66,13 @@
     "storybook-addon-themes": "6.1.0",
     "storybook-dark-mode": "3.0.3",
     "style-dictionary": "3.9.1",
-    "stylelint": "15.11.0",
-    "stylelint-config-prettier": "9.0.5",
-    "stylelint-config-spaceninja": "14.0.0",
+    "stylelint": "16.1.0",
+    "stylelint-config-spaceninja": "15.0.0",
     "svgo": "3.2.0",
     "vite": "5.0.10",
     "vite-plugin-svgr": "4.2.0"
   },
   "resolutions": {
-    "jackspeak": "2.1.1"
+    "jackspeak": "2.3.5"
   }
 }
