@@ -73,6 +73,6 @@
     "vite-plugin-svgr": "4.2.0"
   },
   "resolutions": {
-    "jackspeak": "2.3.6"
+    "jackspeak": "3.4.1"
   }
 }
