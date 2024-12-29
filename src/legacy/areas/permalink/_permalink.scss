@@ -47,7 +47,7 @@
 //
 // Fancy new grid-based layout
 //
-@supports (display: xxxxgrid) {
+@supports (display: grid) {
   @media screen and (min-width: tokens.$size-breakpoint-lg) {
     .content-permalink {
       display: grid;
