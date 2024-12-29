@@ -30,7 +30,7 @@
   > .permalink-sidebar {
     @media screen and (min-width: tokens.$size-breakpoint-lg) {
       float: right;
-      width: 330px;
+      width: 320px;
     }
   }
 
@@ -39,7 +39,7 @@
   > .image-comment-form {
     @media screen and (min-width: tokens.$size-breakpoint-lg) {
       float: left;
-      width: calc(100% - 360px);
+      width: calc(100% - 350px);
     }
   }
 }
@@ -57,7 +57,7 @@
         'image sidebar'
         'comments sidebar'
         'post-comment sidebar';
-      grid-template-columns: 1fr 330px;
+      grid-template-columns: 1fr 320px;
       // stylelint-disable-next-line declaration-block-no-redundant-longhand-properties
       grid-template-rows: repeat(3, min-content) 1fr;
     }
