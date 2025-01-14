@@ -41,12 +41,12 @@
   // This goofy nested where & not selector is to reduce specificity
   .sbdocs-content {
     :where(
-        :where(#{$selectors}):not(
-            .sb-anchor,
-            .sb-unstyled,
-            .sb-unstyled :where(#{$selectors})
-          )
-      ) {
+      :where(#{$selectors}):not(
+          .sb-anchor,
+          .sb-unstyled,
+          .sb-unstyled :where(#{$selectors})
+        )
+    ) {
       color: var(--color-page-text);
     }
 

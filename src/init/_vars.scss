@@ -11,7 +11,10 @@
 
 :root {
   --color-text-link-underline: #{rgba(tokens.$color-text-link, 0.33)};
-  --color-text-link-underline-hover: #{rgba(tokens.$color-text-link-hover, 0.33)};
+  --color-text-link-underline-hover: #{rgba(
+      tokens.$color-text-link-hover,
+      0.33
+    )};
   --color-text-link-primary-underline: #{rgba(
       tokens.$color-text-link-primary,
       0.33
