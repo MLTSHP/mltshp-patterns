@@ -1,6 +1,0 @@
-!.storybook
-dist
-storybook-static
-src/compiled
-.temp
-*.html
