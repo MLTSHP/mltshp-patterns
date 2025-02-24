@@ -27,15 +27,7 @@
       }
       lastScrollY = window.scrollY;
     };
-
-    let timeout;
-    const debouncedScrollHandler = () => {
-      if (timeout) {
-        clearTimeout(timeout);
-      }
-      timeout = setTimeout(scrollHandler, 50);
-    };
-    window.addEventListener('scroll', debouncedScrollHandler);
+    window.addEventListener('scroll', scrollHandler);
   });
 </script>
 
