@@ -5,11 +5,11 @@
     let lastScrollY = window.scrollY;
     const scrollHandler = () => {
       if (!siteHeader.classList.contains('docked')) {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 120) {
           siteHeader.classList.add('docked');
         }
       } else {
-        if (window.scrollY <= 100) {
+        if (window.scrollY <= 120) {
           siteHeader.classList.remove('docked', 'visible', 'hidden');
         }
       }
@@ -42,7 +42,11 @@
         /><span class="site-branding--icon" />
       </div>
       <nav id="site-nav" class="site-nav">
-        <button
+        <a
+          href="#notifications-anchor"
+          class="site-nav--notifications btn btn-danger btn-pastel"
+          >2</a
+        ><button
           type="button"
           class="site-nav--toggle btn btn-warning btn-pastel btn-icon"
         >
@@ -168,6 +172,8 @@
             </form>
           </div>
         </div>
+
+        <a id="notifications-anchor"></a>
         <div
           id="notification-block-invitation-request"
           class="notification-block notification-block-invitation-request"
