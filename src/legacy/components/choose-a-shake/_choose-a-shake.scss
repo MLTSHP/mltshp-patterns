@@ -36,7 +36,9 @@
   box-shadow: var(--size-spacing-half) var(--size-spacing-half) 0
     var(--color-base-black-transparent-100);
   display: none;
+  max-height: 80vh;
   max-width: 400px;
+  overflow-y: auto;
   padding: var(--size-spacing-default);
   padding-top: 1px;
   position: absolute;
