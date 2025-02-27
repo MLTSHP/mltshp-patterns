@@ -5,6 +5,10 @@
   background-color: var(--color-background-page); // 1
   padding: 0 0.5em;
   position: relative;
+
+  &:has(.site-header.docked) {
+    margin-top: 125px;
+  }
 }
 
 // 1. Contains child margins. Useful for Storybook previews.

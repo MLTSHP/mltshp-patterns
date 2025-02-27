@@ -1,5 +1,6 @@
 import loggedOutMarkup from './examples/logged-out.html?raw';
 import loggedInMarkup from './examples/logged-in.html?raw';
+import loggedInWithContentMarkup from './examples/logged-in-with-content.html?raw';
 
 /**
  * Note that the Site Header contains the
@@ -22,4 +23,8 @@ export const LoggedOut = {
 
 export const LoggedIn = {
   render: () => loggedInMarkup,
+};
+
+export const LoggedInWithContent = {
+  render: () => loggedInWithContentMarkup,
 };
