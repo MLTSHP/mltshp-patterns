@@ -82,9 +82,8 @@
 
     .site-branding--icon {
       background-image: svg-load('icons/mltshp-icon.svg');
-      display: inline-block;
-      height: 2.475em; // approximated this comparing to label mixin height
-      width: 2.475em;
+      height: 2em; // should match button height
+      width: 2em;
     }
 
     .site-branding--logo {
@@ -113,5 +112,19 @@
 
   .site-header.docked & {
     margin-top: 0;
+  }
+}
+
+.site-nav .btn {
+  .site-header.docked & {
+    font-size: 16px;
+    height: 2em;
+    line-height: 2em;
+  }
+
+  &.btn-icon {
+    .site-header.docked & {
+      width: 2em;
+    }
   }
 }
