@@ -260,6 +260,7 @@
     display: flex;
     padding: var(--size-spacing-half);
     position: relative;
+    z-index: 1;
   }
 
   .input-text {
