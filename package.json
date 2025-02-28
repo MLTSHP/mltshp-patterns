@@ -65,7 +65,7 @@
     "sass": "1.85.1",
     "storybook": "7.6.20",
     "storybook-addon-themes": "6.1.0",
-    "storybook-dark-mode": "3.0.3",
+    "storybook-dark-mode": "4.0.2",
     "style-dictionary": "3.9.2",
     "stylelint": "16.14.1",
     "stylelint-config-spaceninja": "15.0.0",
