@@ -26,9 +26,14 @@
 
 .incoming-header {
   @include page-header.page-header;
-  cursor: pointer;
-  padding: var(--size-spacing-half-again) var(--size-spacing-double);
-  width: 100%;
+
+  // @see https://sass-lang.com/documentation/breaking-changes/mixed-decls/
+  // stylelint-disable-next-line no-duplicate-selectors, scss/selector-no-redundant-nesting-selector
+  & {
+    cursor: pointer;
+    padding: var(--size-spacing-half-again) var(--size-spacing-double);
+    width: 100%;
+  }
 
   @media screen and (min-width: tokens.$size-breakpoint-lg) {
     align-items: center;
