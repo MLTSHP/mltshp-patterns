@@ -53,6 +53,7 @@ Only admins need to worry about these step.
 1. Make sure you have a clean working tree (`git status` should show no changes)
 1. `npm ci`
 1. `npm run lint:check`
+1. Update `CHANGELOG.md` with a summary of your changes
 1. `npm version`
 1. `npm publish` - This will automatically install and compile everything, run linting, and publish
 1. `git push && git push --tags`
