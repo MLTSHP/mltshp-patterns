@@ -7,10 +7,15 @@
 //
 .settings-header {
   @include page-header.page-header;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+  // @see https://sass-lang.com/documentation/breaking-changes/mixed-decls/
+  // stylelint-disable-next-line no-duplicate-selectors, scss/selector-no-redundant-nesting-selector
+  & {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   @media screen and (min-width: tokens.$size-breakpoint-lg) {
     flex-direction: row;
