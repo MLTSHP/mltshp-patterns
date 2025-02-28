@@ -7,10 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Shake Invite Form Stacking (#1326)
-- Shake Invite Form Dark Mode (#1325)
-- Firefox Shake Invite Button Layout (#1323)
-- Adjusting z-index for site header
+- Compact Peekaboo Header (#1331)
+- Bugfix: Shake Invite Form Stacking (#1326)
+- Bugfix: Shake Invite Form Dark Mode (#1325)
+- Bugfix: Firefox Shake Invite Button Layout (#1323)
+- Bugfix: Adjusting z-index for site header (#1321)
 
 ## [2.8.0] - 2025-02-27
 
