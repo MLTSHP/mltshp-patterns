@@ -28,6 +28,7 @@
     "build": "run-s build:*",
     "build:tokens": "node ./build-tokens.cjs",
     "build:scss": "sass --no-source-map src:.temp",
+    "build:clean": "npx rimraf dist/*.css",
     "build:postcss": "postcss .temp/*.css -d dist",
     "build:min": "postcss dist/*.css -u cssnano -d dist --ext .min.css --no-map",
     "svgo": "svgo -r -f ./src/assets",
