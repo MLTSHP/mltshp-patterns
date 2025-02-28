@@ -8,8 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 - Compact Peekaboo Header (#1331)
-    - Breaking change: You'll need to change `site-branding--icon` from a `<span>`
-      element to a `<div>` element.
+  - Breaking change: You'll need to change `site-branding--icon` from a `<span>`
+    element to a `<div>` element.
 - Bugfix: Shake Invite Form Stacking (#1326)
 - Bugfix: Shake Invite Form Dark Mode (#1325)
 - Bugfix: Firefox Shake Invite Button Layout (#1323)
