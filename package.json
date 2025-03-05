@@ -44,10 +44,10 @@
     "prepublishOnly": "npm ci && npm test && npm run build"
   },
   "devDependencies": {
-    "@storybook/addon-a11y": "7.6.20",
-    "@storybook/addon-essentials": "7.6.20",
-    "@storybook/blocks": "7.6.20",
-    "@storybook/html-vite": "7.6.20",
+    "@storybook/addon-a11y": "8.6.4",
+    "@storybook/addon-essentials": "8.6.4",
+    "@storybook/blocks": "8.6.4",
+    "@storybook/html-vite": "8.6.4",
     "@storybook/testing-library": "0.2.2",
     "cssnano": "7.0.6",
     "eslint": "9.21.0",
@@ -64,7 +64,7 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "sass": "1.85.1",
-    "storybook": "7.6.20",
+    "storybook": "8.6.4",
     "storybook-addon-themes": "6.1.0",
     "storybook-dark-mode": "3.0.3",
     "style-dictionary": "3.9.2",
