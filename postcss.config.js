@@ -1,6 +1,6 @@
 import postcssInlineSvg from 'postcss-inline-svg';
 
-module.exports = {
+export default {
 	plugins: [
 		postcssInlineSvg({
 			paths: ['./src/assets'],

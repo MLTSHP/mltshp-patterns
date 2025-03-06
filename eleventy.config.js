@@ -7,6 +7,9 @@ export default function (eleventyConfig) {
 
 	// Copy over asset files
 	eleventyConfig.addPassthroughCopy('src/assets');
+	eleventyConfig.addPassthroughCopy({
+		'src/assets/favicon.svg': 'favicon.svg',
+	});
 
 	// Watch built files and show all hosts in Terminal for mobile viewing
 	eleventyConfig.setServerOptions({
