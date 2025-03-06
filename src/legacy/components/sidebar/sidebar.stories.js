@@ -18,110 +18,110 @@ import inTheseShakesMarkup from './examples/in-these-shakes.html?raw';
 import permalinkSocialMarkup from './examples/permalink-social.html?raw';
 
 export default {
-  title: 'Legacy/Components/Sidebar',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Sidebar',
+	tags: ['autodocs'],
 };
 
 export const Following = {
-  render: () => followingMarkup,
+	render: () => followingMarkup,
 };
 
 export const Members = {
-  render: () => membersMarkup,
+	render: () => membersMarkup,
 };
 
 export const OtherShakes = {
-  render: () => otherShakesMarkup,
+	render: () => otherShakesMarkup,
 };
 
 export const FindShakes = {
-  render: () => findShakesMarkup,
+	render: () => findShakesMarkup,
 };
 
 export const UpgradeAccount = {
-  render: () => upgradeAccountMarkup,
+	render: () => upgradeAccountMarkup,
 };
 
 export const CoolTools = {
-  render: () => coolToolsMarkup,
+	render: () => coolToolsMarkup,
 };
 
 export const ShakeInviteMember = {
-  render: () => shakeInviteMemberMarkup,
+	render: () => shakeInviteMemberMarkup,
 };
 
 export const ShakeInviteMemberResults = {
-  render: () => shakeInviteMemberResultsMarkup,
-  parameters: {
-    docs: {
-      story: {
-        height: '220px',
-      },
-    },
-  },
+	render: () => shakeInviteMemberResultsMarkup,
+	parameters: {
+		docs: {
+			story: {
+				height: '220px',
+			},
+		},
+	},
 };
 
 export const ShakeActions = {
-  render: () => shakeActionsMarkup,
+	render: () => shakeActionsMarkup,
 };
 
 export const ShakeEditor = {
-  render: () => shakeEditorMarkup,
+	render: () => shakeEditorMarkup,
 };
 
 /**
  * Appears in the sidebar of a user shake if logged in as an admin.
  */
 export const FlagNsfw = {
-  render: () => sidebarFlagNSFWMarkup,
-  name: 'Flag NSFW',
+	render: () => sidebarFlagNSFWMarkup,
+	name: 'Flag NSFW',
 };
 
 /**
  * Appears on the permalink page
  */
 export const FlagImage = {
-  render: () => flagImageMarkup,
+	render: () => flagImageMarkup,
 };
 
 /**
  * Appears on the permalink page
  */
 export const DeletePost = {
-  render: () => deletePostMarkup,
+	render: () => deletePostMarkup,
 };
 
 /**
  * Appears on the permalink page
  */
 export const SidebarStats = {
-  render: () => sidebarStatsMarkup,
+	render: () => sidebarStatsMarkup,
 };
 
 /**
  * Appears on the permalink page
  */
 export const MetaData = {
-  render: () => metaDataMarkup,
+	render: () => metaDataMarkup,
 };
 
 /**
  * Appears on the permalink page
  */
 export const AddToShakes = {
-  render: () => addToShakesMarkup,
+	render: () => addToShakesMarkup,
 };
 
 /**
  * Appears on the permalink page
  */
 export const InTheseShakes = {
-  render: () => inTheseShakesMarkup,
+	render: () => inTheseShakesMarkup,
 };
 
 /**
  * Appears on the permalink page
  */
 export const SocialLinks = {
-  render: () => permalinkSocialMarkup,
+	render: () => permalinkSocialMarkup,
 };

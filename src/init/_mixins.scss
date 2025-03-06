@@ -4,9 +4,9 @@
 // @see https://css-tricks.com/?p=16145
 //
 @mixin breakword() {
-  overflow-wrap: break-word;
-  word-break: break-word;
-  word-wrap: break-word;
+	overflow-wrap: break-word;
+	word-break: break-word;
+	word-wrap: break-word;
 }
 
 //
@@ -15,10 +15,10 @@
 // @see https://css-tricks.com/?p=270051
 //
 @mixin clamp($lines) {
-  // stylelint-disable property-no-vendor-prefix, value-no-vendor-prefix
-  -webkit-box-orient: vertical;
-  display: -webkit-box;
-  -webkit-line-clamp: $lines;
-  overflow: hidden;
-  // stylelint-enable
+	// stylelint-disable property-no-vendor-prefix, value-no-vendor-prefix
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	-webkit-line-clamp: $lines;
+	overflow: hidden;
+	// stylelint-enable
 }

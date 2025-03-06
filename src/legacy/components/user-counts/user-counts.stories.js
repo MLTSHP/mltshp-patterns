@@ -2,15 +2,15 @@ import userCountsMarkup from './examples/user-counts.html?raw';
 import userCountsNarrowMarkup from './examples/user-counts-narrow.html?raw';
 
 export default {
-  title: 'Legacy/Components/User Counts',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/User Counts',
+	tags: ['autodocs'],
 };
 
 /**
  * Appears in the sidebar on User Shakes.
  */
 export const UserCounts = {
-  render: () => userCountsMarkup,
+	render: () => userCountsMarkup,
 };
 
 /**
@@ -19,5 +19,5 @@ export const UserCounts = {
  * appear in this component.
  */
 export const Narrow = {
-  render: () => userCountsNarrowMarkup,
+	render: () => userCountsNarrowMarkup,
 };

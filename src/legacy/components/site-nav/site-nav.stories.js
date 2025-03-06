@@ -10,12 +10,12 @@ import expandedMarkup from './examples/expanded.html?raw';
  * [Choose a Shake](/docs/legacy-components-choose-a-shake--docs) component.
  */
 export default {
-  title: 'Legacy/Components/Site Navigation',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Site Navigation',
+	tags: ['autodocs'],
 };
 
 export const LoggedIn = {
-  render: () => loggedInMarkup,
+	render: () => loggedInMarkup,
 };
 
 /**
@@ -23,16 +23,16 @@ export const LoggedIn = {
  * This is what it looks like expanded. (view on small screens)
  */
 export const Expanded = {
-  render: () => expandedMarkup,
-  parameters: {
-    viewport: {
-      defaultViewport: 'mobile1',
-    },
-  },
+	render: () => expandedMarkup,
+	parameters: {
+		viewport: {
+			defaultViewport: 'mobile1',
+		},
+	},
 };
 
 export const LoggedOut = {
-  render: () => loggedOutMarkup,
+	render: () => loggedOutMarkup,
 };
 
 /**
@@ -40,5 +40,5 @@ export const LoggedOut = {
  * homepage or the sign up page.
  */
 export const LoggedOutWithCallOut = {
-  render: () => callOutMarkup,
+	render: () => callOutMarkup,
 };

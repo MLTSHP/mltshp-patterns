@@ -6,21 +6,21 @@ import termsOfUseMarkup from './examples/terms-of-use.html?raw';
  * Special patterns and chunks of style for the legal pages.
  */
 export default {
-  title: 'Legacy/Areas/Legal',
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-  },
+	title: 'Legacy/Areas/Legal',
+	tags: ['autodocs'],
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const LegalAnnouncement = {
-  render: () => announcementTOUMarkup,
+	render: () => announcementTOUMarkup,
 };
 
 export const CodeOfConduct = {
-  render: () => codeOfConductMarkup,
+	render: () => codeOfConductMarkup,
 };
 
 export const TermsOfUse = {
-  render: () => termsOfUseMarkup,
+	render: () => termsOfUseMarkup,
 };

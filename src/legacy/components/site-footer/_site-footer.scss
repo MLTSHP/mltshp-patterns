@@ -1,18 +1,18 @@
 .site-footer {
-  color: var(--color-page-text-secondary);
-  font-size: 0.75em;
-  margin: var(--size-spacing-triple);
-  text-align: center;
+	color: var(--color-page-text-secondary);
+	font-size: 0.75em;
+	margin: var(--size-spacing-triple);
+	text-align: center;
 
-  p {
-    margin: 0;
+	p {
+		margin: 0;
 
-    + p {
-      margin-top: 0.5em;
-    }
-  }
+		+ p {
+			margin-top: 0.5em;
+		}
+	}
 
-  a {
-    white-space: nowrap;
-  }
+	a {
+		white-space: nowrap;
+	}
 }

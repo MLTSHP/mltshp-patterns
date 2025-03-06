@@ -4,8 +4,8 @@ import funFormErrorsMarkup from './examples/fun-form-errors.html?raw';
 import formFieldsMarkup from './examples/form-fields.html?raw';
 
 export default {
-  title: 'Legacy/Components/Forms',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Forms',
+	tags: ['autodocs'],
 };
 
 /**
@@ -13,10 +13,10 @@ export default {
  * Note that it expects to be used in a constrained width container.
  */
 export const FunForm = {
-  render: () => funFormMarkup,
-  parameters: {
-    layout: 'fullscreen',
-  },
+	render: () => funFormMarkup,
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 /**
@@ -24,22 +24,22 @@ export const FunForm = {
  * Useful for width-constrained areas like the sidebar.
  */
 export const FunFormStacked = {
-  render: () => funFormStackedMarkup,
-  parameters: {
-    layout: 'fullscreen',
-  },
+	render: () => funFormStackedMarkup,
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 /**
  * List of errors that usually lives above the form.
  */
 export const FunFormErrors = {
-  render: () => funFormErrorsMarkup,
+	render: () => funFormErrorsMarkup,
 };
 
 /**
  * Unstyled native form elements for reference.
  */
 export const FormFields = {
-  render: () => formFieldsMarkup,
+	render: () => formFieldsMarkup,
 };

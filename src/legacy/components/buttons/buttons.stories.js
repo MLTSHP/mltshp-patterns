@@ -9,48 +9,48 @@ import smallMarkup from './examples/small.html?raw';
 import tinyMarkup from './examples/tiny.html?raw';
 
 export default {
-  title: 'Legacy/Components/Buttons',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Buttons',
+	tags: ['autodocs'],
 };
 
 export const Elements = {
-  render: () => elementsMarkup,
+	render: () => elementsMarkup,
 };
 
 export const Default = {
-  render: () => defaultMarkup,
+	render: () => defaultMarkup,
 };
 
 export const Pastel = {
-  render: () => pastelMarkup,
+	render: () => pastelMarkup,
 };
 
 export const Shadow = {
-  render: () => shadowMarkup,
+	render: () => shadowMarkup,
 };
 
 export const IconOnly = {
-  render: () => iconMarkup,
+	render: () => iconMarkup,
 };
 
 export const Padded = {
-  render: () => paddedMarkup,
+	render: () => paddedMarkup,
 };
 
 export const Large = {
-  render: () => largeMarkup,
+	render: () => largeMarkup,
 };
 
 /**
  * Use with caution: these do not meet touch accessibility targets.
  */
 export const Small = {
-  render: () => smallMarkup,
+	render: () => smallMarkup,
 };
 
 /**
  * Use with caution: these do not meet touch accessibility targets.
  */
 export const Tiny = {
-  render: () => tinyMarkup,
+	render: () => tinyMarkup,
 };

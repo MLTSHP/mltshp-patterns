@@ -12,12 +12,12 @@ import textSemanticsMarkup from './examples/text-semantics.html?raw';
  * Check the source code to see the many embedded elements within paragraphs.
  */
 export default {
-  title: 'Base/Typography',
-  tags: ['autodocs'],
+	title: 'Base/Typography',
+	tags: ['autodocs'],
 };
 
 export const Headings = {
-  render: () => headingsMarkup,
+	render: () => headingsMarkup,
 };
 
 /**
@@ -29,27 +29,27 @@ export const Headings = {
  * and these rules don't seem to have any affect on the Mac system font.
  */
 export const FontFeatures = {
-  render: () => fontFeaturesMarkup,
+	render: () => fontFeaturesMarkup,
 };
 
 export const TextLevelSemantics = {
-  render: () => textSemanticsMarkup,
+	render: () => textSemanticsMarkup,
 };
 
 export const LinkStyles = {
-  render: () => linkStylesMarkup,
+	render: () => linkStylesMarkup,
 };
 
 export const Lists = {
-  render: () => listsMarkup,
+	render: () => listsMarkup,
 };
 
 export const Tables = {
-  render: () => tablesMarkup,
+	render: () => tablesMarkup,
 };
 
 export const Blockquotes = {
-  render: () => blockquotesMarkup,
+	render: () => blockquotesMarkup,
 };
 
 /**
@@ -59,5 +59,5 @@ export const Blockquotes = {
  * that may not have anything to do with code. For example:
  */
 export const Preformatted = {
-  render: () => preMarkup,
+	render: () => preMarkup,
 };

@@ -82,14 +82,14 @@
 }
 
 :root {
-  @media screen and (prefers-color-scheme: dark) {
-    @include darkmode;
-  }
+	@media screen and (prefers-color-scheme: dark) {
+		@include darkmode;
+	}
 }
 
 // note this only really works on the `html` or `body` elements.
 .t-dark {
-  @include darkmode;
-  background-color: var(--color-background-page);
-  color: var(--color-page-text);
+	@include darkmode;
+	background-color: var(--color-background-page);
+	color: var(--color-page-text);
 }

@@ -8,26 +8,26 @@ import listMarkup from './examples/feature-list.html?raw';
  * Used on the logged-out version of the homepage to promote site features.
  */
 export default {
-  title: 'Legacy/Components/Features',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Features',
+	tags: ['autodocs'],
 };
 
 export const Default = {
-  render: () => defaultMarkup,
+	render: () => defaultMarkup,
 };
 
 export const Flipped = {
-  render: () => flippedMarkup,
+	render: () => flippedMarkup,
 };
 
 export const Primary = {
-  render: () => primaryMarkup,
+	render: () => primaryMarkup,
 };
 
 export const Finale = {
-  render: () => finaleMarkup,
+	render: () => finaleMarkup,
 };
 
 export const FeatureList = {
-  render: () => listMarkup,
+	render: () => listMarkup,
 };

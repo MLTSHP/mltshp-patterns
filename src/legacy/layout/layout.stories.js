@@ -7,25 +7,25 @@ import sidebarReversedMarkup from './examples/sidebar-reversed.html?raw';
  * Special patterns and chunks of style for the admin area.
  */
 export default {
-  title: 'Legacy/Layouts',
-  tags: ['autodocs', 'legacy'],
-  parameters: {
-    layout: 'fullscreen',
-  },
+	title: 'Legacy/Layouts',
+	tags: ['autodocs', 'legacy'],
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const PageLayout = {
-  render: () => pageMarkup,
+	render: () => pageMarkup,
 };
 
 export const Narrow = {
-  render: () => narrowMarkup,
+	render: () => narrowMarkup,
 };
 
 export const Sidebar = {
-  render: () => sidebarMarkup,
+	render: () => sidebarMarkup,
 };
 
 export const SidebarReversed = {
-  render: () => sidebarReversedMarkup,
+	render: () => sidebarReversedMarkup,
 };

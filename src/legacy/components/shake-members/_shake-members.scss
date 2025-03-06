@@ -1,43 +1,43 @@
 @use '../../../base/links';
 
 .shake-members {
-  list-style: none;
-  margin: 0;
-  padding: var(--size-spacing-triple);
+	list-style: none;
+	margin: 0;
+	padding: var(--size-spacing-triple);
 
-  li {
-    border-bottom: 1px dashed var(--color-border-default);
-    display: flex;
-    margin-bottom: var(--size-spacing-triple);
-    padding-bottom: var(--size-spacing-triple);
-  }
+	li {
+		border-bottom: 1px dashed var(--color-border-default);
+		display: flex;
+		margin-bottom: var(--size-spacing-triple);
+		padding-bottom: var(--size-spacing-triple);
+	}
 
-  .member--img {
-    flex: none;
-    margin-right: var(--size-spacing-default);
-  }
+	.member--img {
+		flex: none;
+		margin-right: var(--size-spacing-default);
+	}
 
-  .details {
-    flex: 1;
-  }
+	.details {
+		flex: 1;
+	}
 
-  h4 {
-    font-size: 1.125rem;
-    padding-bottom: var(--size-spacing-half);
+	h4 {
+		font-size: 1.125rem;
+		padding-bottom: var(--size-spacing-half);
 
-    a {
-      @include links.link-primary;
-      @include links.link-emphasized;
-    }
-  }
+		a {
+			@include links.link-primary;
+			@include links.link-emphasized;
+		}
+	}
 
-  .about {
-    font-size: 0.875rem;
-    margin: 0;
-  }
+	.about {
+		font-size: 0.875rem;
+		margin: 0;
+	}
 
-  .website {
-    display: block;
-    margin-top: var(--size-spacing-half);
-  }
+	.website {
+		display: block;
+		margin-top: var(--size-spacing-half);
+	}
 }

@@ -1,37 +1,37 @@
 @use '../../../../compiled/scss/tokens';
 
 .image-content {
-  clear: both;
-  max-width: 100%;
-  padding: var(--size-spacing-half-again);
-  position: relative;
+	clear: both;
+	max-width: 100%;
+	padding: var(--size-spacing-half-again);
+	position: relative;
 
-  @media screen and (min-width: tokens.$size-breakpoint-lg) {
-    padding: var(--size-spacing-half-again) var(--size-spacing-quadruple)
-      var(--size-spacing-quadruple);
-  }
+	@media screen and (min-width: tokens.$size-breakpoint-lg) {
+		padding: var(--size-spacing-half-again) var(--size-spacing-quadruple)
+			var(--size-spacing-quadruple);
+	}
 
-  .the-image {
-    a,
-    img {
-      display: block;
-    }
-  }
+	.the-image {
+		a,
+		img {
+			display: block;
+		}
+	}
 
-  // stylelint-disable selector-no-qualifying-type
-  img.unsized {
-    height: auto;
-    max-width: 100%;
-  }
+	// stylelint-disable selector-no-qualifying-type
+	img.unsized {
+		height: auto;
+		max-width: 100%;
+	}
 
-  // list overrides
-  .image-content-list & {
-    border-bottom: 1px dashed var(--color-border-default);
-    float: none;
-    padding: 0 var(--size-spacing-half-again) var(--size-spacing-half-again);
+	// list overrides
+	.image-content-list & {
+		border-bottom: 1px dashed var(--color-border-default);
+		float: none;
+		padding: 0 var(--size-spacing-half-again) var(--size-spacing-half-again);
 
-    @media screen and (min-width: tokens.$size-breakpoint-lg) {
-      padding: 0 var(--size-spacing-quadruple) var(--size-spacing-quadruple);
-    }
-  }
+		@media screen and (min-width: tokens.$size-breakpoint-lg) {
+			padding: 0 var(--size-spacing-quadruple) var(--size-spacing-quadruple);
+		}
+	}
 }

@@ -5,17 +5,17 @@ import findPeopleMarkup from './examples/find-people.html?raw';
  * Special patterns and chunks of style for the find shakes area.
  */
 export default {
-  title: 'Legacy/Areas/Find Shakes',
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-  },
+	title: 'Legacy/Areas/Find Shakes',
+	tags: ['autodocs'],
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const FindShakes = {
-  render: () => findShakesMarkup,
+	render: () => findShakesMarkup,
 };
 
 export const FindPeople = {
-  render: () => findPeopleMarkup,
+	render: () => findPeopleMarkup,
 };

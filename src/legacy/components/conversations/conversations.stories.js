@@ -6,12 +6,12 @@ import mentionMarkup from './examples/mention.html?raw';
  * Components used on the Conversations page.
  */
 export default {
-  title: 'Legacy/Components/Conversations',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Conversations',
+	tags: ['autodocs'],
 };
 
 export const ConversationsNavigation = {
-  render: () => conversationsNavMarkup,
+	render: () => conversationsNavMarkup,
 };
 
 /**
@@ -21,7 +21,7 @@ export const ConversationsNavigation = {
  * This component handles the layout of the conversation overall.
  */
 export const Conversation = {
-  render: () => conversationMarkup,
+	render: () => conversationMarkup,
 };
 
 /**
@@ -31,5 +31,5 @@ export const Conversation = {
  * This component handles the layout of the conversation overall.
  */
 export const Mention = {
-  render: () => mentionMarkup,
+	render: () => mentionMarkup,
 };

@@ -2,36 +2,36 @@
 // Area: Account - Following/Followers
 //
 .content-relationships {
-  .body {
-    .friend,
-    .shake {
-      border-bottom: 1px dashed var(--color-border-default);
-      padding: 0 var(--size-spacing-quadruple);
-    }
+	.body {
+		.friend,
+		.shake {
+			border-bottom: 1px dashed var(--color-border-default);
+			padding: 0 var(--size-spacing-quadruple);
+		}
 
-    .user-follow-extended {
-      .website a {
-        color: var(--color-brand-secondary);
-      }
-    }
-  }
+		.user-follow-extended {
+			.website a {
+				color: var(--color-brand-secondary);
+			}
+		}
+	}
 
-  .user-info {
-    .avatar {
-      float: left;
-      margin-right: var(--size-spacing-half-again);
-    }
+	.user-info {
+		.avatar {
+			float: left;
+			margin-right: var(--size-spacing-half-again);
+		}
 
-    .avatar--img {
-      height: var(--size-avatar-large);
-      width: var(--size-avatar-large);
-    }
+		.avatar--img {
+			height: var(--size-avatar-large);
+			width: var(--size-avatar-large);
+		}
 
-    .details h3 {
-      color: var(--color-page-text);
-      font-size: 1.125rem;
-      font-weight: var(--number-font-weight-bold);
-      padding-top: var(--size-spacing-half);
-    }
-  }
+		.details h3 {
+			color: var(--color-page-text);
+			font-size: 1.125rem;
+			font-weight: var(--number-font-weight-bold);
+			padding-top: var(--size-spacing-half);
+		}
+	}
 }

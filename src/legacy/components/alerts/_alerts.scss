@@ -1,68 +1,68 @@
 @use '../../../base/links';
 
 @mixin alert() {
-  background: var(--color-background-content-secondary);
-  font-size: 0.9rem;
-  line-height: 1.25;
-  padding: var(--size-spacing-half-again);
+	background: var(--color-background-content-secondary);
+	font-size: 0.9rem;
+	line-height: 1.25;
+	padding: var(--size-spacing-half-again);
 
-  p {
-    margin: 0;
-  }
+	p {
+		margin: 0;
+	}
 
-  a {
-    font-weight: var(--number-font-weight-bold);
-  }
+	a {
+		font-weight: var(--number-font-weight-bold);
+	}
 }
 
 .alert {
-  @include alert;
+	@include alert;
 }
 
 //
 // Alert with a Marquee
 //
 .alert--marquee {
-  padding: 0;
+	padding: 0;
 
-  marquee {
-    padding: var(--size-spacing-half-again);
-  }
+	marquee {
+		padding: var(--size-spacing-half-again);
+	}
 }
 
 //
 // Warning Alert
 //
 @mixin alert-warning() {
-  background: var(--color-bg-warning-pastel);
-  color: var(--color-status-warning);
+	background: var(--color-bg-warning-pastel);
+	color: var(--color-status-warning);
 }
 
 .alert--warning {
-  @include alert-warning;
+	@include alert-warning;
 }
 
 //
 // Danger Alert
 //
 @mixin alert-danger() {
-  background: var(--color-bg-danger-pastel);
-  color: var(--color-status-danger);
+	background: var(--color-bg-danger-pastel);
+	color: var(--color-status-danger);
 
-  a {
-    @include links.link-danger;
-  }
+	a {
+		@include links.link-danger;
+	}
 }
 
 .alert--danger {
-  @include alert-danger;
+	@include alert-danger;
 }
 
 //
 // Migration Reminder Alert
 //
 .migration-reminder {
-  @include alert;
-  @include alert-warning;
-  font-weight: var(--number-font-weight-bold);
+	@include alert;
+	@include alert-warning;
+	font-weight: var(--number-font-weight-bold);
 }
