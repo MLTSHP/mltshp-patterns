@@ -6,7 +6,7 @@ export default [
 	js.configs.recommended,
 	eslintConfigPrettier,
 	{
-		ignores: ['dist/**', '**/*.temp', '**/*.html'],
+		ignores: ['dist/**/*', '**/*.temp', '**/*.html'],
 	},
 	{
 		files: ['**/*.js'],
