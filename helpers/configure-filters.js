@@ -1,9 +1,7 @@
 import getFileContents from './filters/get-file-contents.js';
-import prismHighlight from './filters/prism-highlight.js';
 
 const filters = {
 	getFileContents,
-	prismHighlight,
 };
 
 /**

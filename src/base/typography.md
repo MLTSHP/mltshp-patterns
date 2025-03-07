@@ -3,14 +3,15 @@ layout: base
 title: Typography
 ---
 
-Testing
+Testing!
 
 {{ '/src/base/examples/headings.html' | getFileContents }}
 
-<pre class="language-html"><code>
-{{ '/src/base/examples/headings.html' | getFileContents | prismHighlight : 'html' }}
-</code></pre>
+<details>
+<summary>Show code</summary>
 
-<pre class="language-html"><code>
-{{ '/src/base/examples/test.html' | getFileContents | prismHighlight : 'html' }}
-</code></pre>
+```html
+{{ '/src/base/examples/headings.html' | getFileContents }}
+```
+
+</details>
