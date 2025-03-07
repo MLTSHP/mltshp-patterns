@@ -1,4 +1,5 @@
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
+import { IdAttributePlugin } from '@11ty/eleventy';
 import { configureFilters } from './helpers/configure-filters.js';
 import { configureStaticFiles } from './helpers/configure-static-files.js';
 
@@ -16,6 +17,7 @@ export default function (eleventyConfig) {
 	configureFilters(eleventyConfig);
 
 	// Add plugins
+	eleventyConfig.addPlugin(IdAttributePlugin);
 	eleventyConfig.addPlugin(syntaxHighlight);
 
 	// Hot-reload when CSS changes and show all hosts in Terminal for mobile review.
