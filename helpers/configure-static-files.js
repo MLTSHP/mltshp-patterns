@@ -16,6 +16,10 @@ export const configureStaticFiles = (eleventyConfig) => {
 		'src/assets/favicon.svg': 'favicon.svg',
 	});
 
+	// Copy the styleguide to the root directory
+	eleventyConfig.addPassthroughCopy('src/styleguide.js');
+	eleventyConfig.addPassthroughCopy('src/scripts/**/*.js');
+
 	// Copy the entire assets directory
 	eleventyConfig.addPassthroughCopy('src/assets');
 };
