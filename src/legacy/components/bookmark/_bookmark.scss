@@ -7,64 +7,63 @@ $bookmark-shadow-offset: 4px;
   align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
-}
 
-.bookmark-flag {
-  background: var(--color-brand-primary);
-  color: var(--color-text-light-emphasis);
-  flex: none;
-  font-size: 0.75rem;
-  font-weight: var(--number-font-weight-bold);
-  margin-top: $bookmark-offset * -1;
-  position: relative;
-  z-index: 2;
+  &-flag {
+    background: var(--color-brand-primary);
+    color: var(--color-text-light-emphasis);
+    flex: none;
+    font-size: 0.75rem;
+    font-weight: var(--number-font-weight-bold);
+    margin-top: $bookmark-offset * -1;
+    position: relative;
+  
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+    }
+  
+    // makes the "fold" shape
+    &::before {
+      background: inherit;
+      border-radius: var(--size-border-radius-default) 0 0
+        var(--size-border-radius-default);
+      height: calc(100% + var(--size-spacing-half));
+      left: calc(var(--size-spacing-half) * -1);
+      padding-bottom: var(--size-spacing-half);
+      top: 0;
+      width: var(--size-spacing-half);
+    }
+  
+    // makes the shadow for the "fold" shape
+    &::after {
+      background: var(--color-base-black-transparent-300);
+      border-radius: $bookmark-offset 0 0 $bookmark-offset;
+      bottom: $bookmark-shadow-offset * -1;
+      height: $bookmark-shadow-offset;
+      left: $bookmark-offset * -1;
+      width: $bookmark-offset;
+    }
 
-  &::before,
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-  }
-
-  // makes the "fold" shape
-  &::before {
-    background: inherit;
-    border-radius: var(--size-border-radius-default) 0 0
-      var(--size-border-radius-default);
-    height: calc(100% + var(--size-spacing-half));
-    left: calc(var(--size-spacing-half) * -1);
-    padding-bottom: var(--size-spacing-half);
-    top: 0;
-    width: var(--size-spacing-half);
-  }
-
-  // makes the shadow for the "fold" shape
-  &::after {
-    background: var(--color-base-black-transparent-300);
-    border-radius: $bookmark-offset 0 0 $bookmark-offset;
-    bottom: $bookmark-shadow-offset * -1;
-    height: $bookmark-shadow-offset;
-    left: $bookmark-offset * -1;
-    width: $bookmark-offset;
-  }
-}
-
-.bookmark-flag--content {
-  display: block;
-  line-height: 1;
-  padding: 0.5em 1em;
-
-  // makes the pointed ribbon corners
-  // 1. this is less than the border width to avoid a gap due to pixel-rounding errors
-  &::after {
-    border: 1em solid var(--color-brand-primary);
-    border-right-color: transparent;
-    border-width: 1em 0.866em 1em 0;
-    content: '';
-    display: block;
-    position: absolute;
-    right: -0.833em; // 1
-    top: 0;
+    &--content {
+      display: block;
+      line-height: 1;
+      padding: 0.5em 1em;
+    
+      // makes the pointed ribbon corners
+      // 1. this is less than the border width to avoid a gap due to pixel-rounding errors
+      &::after {
+        border: 1em solid var(--color-brand-primary);
+        border-right-color: transparent;
+        border-width: 1em 0.866em 1em 0;
+        content: '';
+        display: block;
+        position: absolute;
+        right: -0.833em; // 1
+        top: 0;
+      }
+    }
   }
 }
 
