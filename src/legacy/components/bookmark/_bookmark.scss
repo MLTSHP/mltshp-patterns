@@ -28,7 +28,7 @@ $bookmark-shadow-offset: 4px;
     &::before {
       background: inherit;
       border-radius: var(--size-border-radius-default) 0 0
-        var(--size-border-radius-default);
+      var(--size-border-radius-default);
       height: calc(100% + var(--size-spacing-half));
       left: calc(var(--size-spacing-half) * -1);
       padding-bottom: var(--size-spacing-half);
