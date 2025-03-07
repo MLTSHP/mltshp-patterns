@@ -1,17 +1,20 @@
+import { configureFilters } from './helpers/configure-filters.js';
+import { configureStaticFiles } from './helpers/configure-static-files.js';
+
 export default function (eleventyConfig) {
 	// Ignore README files
 	eleventyConfig.ignores.add('**/README.md');
 
-	// TODO: Temporarily ignore HTML files
+	// Ignore HTML files (these are example code we manually include)
 	eleventyConfig.ignores.add('**/*.html');
 
-	// Copy over asset files
-	eleventyConfig.addPassthroughCopy('src/assets');
-	eleventyConfig.addPassthroughCopy({
-		'src/assets/favicon.svg': 'favicon.svg',
-	});
+	// Copy Static Files
+	configureStaticFiles(eleventyConfig);
 
-	// Watch built files and show all hosts in Terminal for mobile viewing
+	// Add Filters
+	configureFilters(eleventyConfig);
+
+	// Hot-reload when CSS changes and show all hosts in Terminal for mobile review.
 	eleventyConfig.setServerOptions({
 		watch: ['dist/**/*.css'],
 		showAllHosts: true,

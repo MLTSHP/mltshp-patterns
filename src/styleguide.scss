@@ -1,0 +1,40 @@
+/**
+ * Custom code theme for Prism highlighter
+ *
+ * @see https://prismjs.com/
+ */
+
+/* stylelint-disable-next-line selector-max-type */
+:is(code, pre)[class*='language-'] {
+	background: var(--color-background-content-secondary);
+	color: var(--color-page-text-secondary);
+}
+
+.token.comment,
+.token.punctuation {
+	color: var(--color-black-dark-secondary);
+}
+
+.token.keyword,
+.token.block,
+.token.tag {
+	color: var(--color-base-blue-dark);
+}
+
+.token.string,
+.token.attr-value {
+	color: var(--color-base-green-dark);
+}
+
+.token.function,
+.token.variable,
+.token.attr-name,
+.token.property {
+	color: var(--color-base-pink-dark);
+}
+
+.token.boolean,
+.token.number,
+.token.selector {
+	color: var(--color-base-orange-dark);
+}
