@@ -28,64 +28,64 @@ import nsfwMarkup from './examples/nsfw.html?raw';
  * Most of the examples here are shown in List View for ease of comparison.
  */
 export default {
-  title: 'Legacy/Components/Image',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Image',
+	tags: ['autodocs'],
 };
 
 export const Permalink = {
-  render: () => permalinkMarkup,
+	render: () => permalinkMarkup,
 };
 
 export const AltText = {
-  render: () => altTextMarkup,
+	render: () => altTextMarkup,
 };
 
 export const ListView = {
-  render: () => listMarkup,
+	render: () => listMarkup,
 };
 
 export const LengthyContent = {
-  render: () => lengthyMarkup,
+	render: () => lengthyMarkup,
 };
 
 export const SavesOpen = {
-  render: () => savesMarkup,
+	render: () => savesMarkup,
 };
 
 export const LikesOpen = {
-  render: () => likesMarkup,
+	render: () => likesMarkup,
 };
 
 export const CommentsOpen = {
-  render: () => commentsMarkup,
+	render: () => commentsMarkup,
 };
 
 export const Commenting = {
-  render: () => commentingMarkup,
+	render: () => commentingMarkup,
 };
 
 export const SaveShake = {
-  render: () => listSaveShakeMarkup,
+	render: () => listSaveShakeMarkup,
 };
 
 export const LikedSaved = {
-  render: () => listLikedSavedMarkup,
-  name: 'Liked & Saved',
+	render: () => listLikedSavedMarkup,
+	name: 'Liked & Saved',
 };
 
 export const Repost = {
-  render: () => repostMarkup,
+	render: () => repostMarkup,
 };
 
 export const Editable = {
-  render: () => editableMarkup,
+	render: () => editableMarkup,
 };
 
 export const Editing = {
-  render: () => editingMarkup,
+	render: () => editingMarkup,
 };
 
 export const Nsfw = {
-  render: () => nsfwMarkup,
-  name: 'NSFW',
+	render: () => nsfwMarkup,
+	name: 'NSFW',
 };

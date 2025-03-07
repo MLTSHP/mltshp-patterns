@@ -1,152 +1,152 @@
 .image-interactions {
-  align-items: center;
-  display: flex;
-  flex-direction: row-reverse;
-  float: right;
-  margin-bottom: 4px; // magic number to prevent layout gap below .inline-meta
+	align-items: center;
+	display: flex;
+	flex-direction: row-reverse;
+	float: right;
+	margin-bottom: 4px; // magic number to prevent layout gap below .inline-meta
 
-  .save-this {
-    margin-right: var(--size-spacing-half);
-    position: relative;
-  }
+	.save-this {
+		margin-right: var(--size-spacing-half);
+		position: relative;
+	}
 
-  .save-this-link,
-  .like-button {
-    line-height: 1;
+	.save-this-link,
+	.like-button {
+		line-height: 1;
 
-    // stylelint-disable a11y/no-outline-none
-    &:focus {
-      outline: none;
-    }
-    // stylelint-enable
+		// stylelint-disable a11y/no-outline-none
+		&:focus {
+			outline: none;
+		}
+		// stylelint-enable
 
-    .btn--content {
-      align-items: center;
-      display: flex;
-    }
+		.btn--content {
+			align-items: center;
+			display: flex;
+		}
 
-    .btn--icon {
-      height: 1.5em;
-      margin-right: 0.33em;
-    }
+		.btn--icon {
+			height: 1.5em;
+			margin-right: 0.33em;
+		}
 
-    .btn--caret {
-      font-size: 0.75em;
-      margin-left: 0.33em;
-      vertical-align: bottom;
-    }
-  }
+		.btn--caret {
+			font-size: 0.75em;
+			margin-left: 0.33em;
+			vertical-align: bottom;
+		}
+	}
 
-  .like-button,
-  .unlike-button {
-    display: none;
+	.like-button,
+	.unlike-button {
+		display: none;
 
-    &.is-active {
-      display: inline-block;
-    }
-  }
+		&.is-active {
+			display: inline-block;
+		}
+	}
 
-  .unlike-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
+	.unlike-button {
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0;
 
-    img {
-      display: block;
-    }
-  }
+		img {
+			display: block;
+		}
+	}
 
-  .save-this-shake-selector {
-    background-color: var(--color-status-warning);
-    border-radius: var(--size-border-radius-large);
-    min-height: 30px; // magic number
-    padding: var(--size-spacing-half) 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 170px; // magic number
-    z-index: 1;
+	.save-this-shake-selector {
+		background-color: var(--color-status-warning);
+		border-radius: var(--size-border-radius-large);
+		min-height: 30px; // magic number
+		padding: var(--size-spacing-half) 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 170px; // magic number
+		z-index: 1;
 
-    ul {
-      clear: both;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+		ul {
+			clear: both;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
 
-    a {
-      border-radius: var(--size-border-radius-default);
-      color: var(--color-text-light-emphasis);
-      display: block;
-      font-weight: 500;
-      margin: 0 var(--size-spacing-half);
-      overflow-wrap: break-word;
-      padding: var(--size-spacing-half) var(--size-spacing-half);
-      text-decoration: none;
-      text-shadow: 0.05em 0.05em 0.05em var(--color-base-black-transparent-500);
-      word-wrap: break-word;
+		a {
+			border-radius: var(--size-border-radius-default);
+			color: var(--color-text-light-emphasis);
+			display: block;
+			font-weight: 500;
+			margin: 0 var(--size-spacing-half);
+			overflow-wrap: break-word;
+			padding: var(--size-spacing-half) var(--size-spacing-half);
+			text-decoration: none;
+			text-shadow: 0.05em 0.05em 0.05em var(--color-base-black-transparent-500);
+			word-wrap: break-word;
 
-      &:hover,
-      &:focus {
-        background-color: var(--color-base-white-transparent-200);
-      }
-    }
+			&:hover,
+			&:focus {
+				background-color: var(--color-base-white-transparent-200);
+			}
+		}
 
-    .close {
-      color: var(--color-text-light-emphasis);
-      cursor: pointer;
-      display: block;
-      position: absolute;
-      right: var(--size-spacing-default);
-      top: var(--size-spacing-default);
-      transform: rotate(180deg);
+		.close {
+			color: var(--color-text-light-emphasis);
+			cursor: pointer;
+			display: block;
+			position: absolute;
+			right: var(--size-spacing-default);
+			top: var(--size-spacing-default);
+			transform: rotate(180deg);
 
-      &:hover,
-      &:focus {
-        opacity: 0.66;
-      }
+			&:hover,
+			&:focus {
+				opacity: 0.66;
+			}
 
-      &::before {
-        bottom: calc(var(--size-spacing-default) * -1);
-        content: '';
-        left: calc(var(--size-spacing-half-again) * -1);
-        position: absolute;
-        right: calc(var(--size-spacing-half-again) * -1);
-        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
-        top: calc(var(--size-spacing-double) * -1);
-      }
-    }
-  }
+			&::before {
+				bottom: calc(var(--size-spacing-default) * -1);
+				content: '';
+				left: calc(var(--size-spacing-half-again) * -1);
+				position: absolute;
+				right: calc(var(--size-spacing-half-again) * -1);
+				/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+				top: calc(var(--size-spacing-double) * -1);
+			}
+		}
+	}
 
-  .save-this-shake-selector-loading {
-    min-height: 100px;
+	.save-this-shake-selector-loading {
+		min-height: 100px;
 
-    &::after {
-      animation: load8 1.1s infinite linear;
-      border: 5px solid var(--color-base-white-transparent-200);
-      border-left-color: var(--color-base-white-transparent-800);
-      border-radius: 50%;
-      content: '';
-      display: block;
-      height: 50px;
-      margin: 1em auto;
-      transform: translateZ(0);
-      width: 50px;
+		&::after {
+			animation: load8 1.1s infinite linear;
+			border: 5px solid var(--color-base-white-transparent-200);
+			border-left-color: var(--color-base-white-transparent-800);
+			border-radius: 50%;
+			content: '';
+			display: block;
+			height: 50px;
+			margin: 1em auto;
+			transform: translateZ(0);
+			width: 50px;
 
-      @media screen and (prefers-reduced-motion: reduce) {
-        animation: none;
-      }
-    }
-  }
+			@media screen and (prefers-reduced-motion: reduce) {
+				animation: none;
+			}
+		}
+	}
 }
 
 @keyframes load8 {
-  0% {
-    transform: rotate(0deg);
-  }
+	0% {
+		transform: rotate(0deg);
+	}
 
-  100% {
-    transform: rotate(360deg);
-  }
+	100% {
+		transform: rotate(360deg);
+	}
 }

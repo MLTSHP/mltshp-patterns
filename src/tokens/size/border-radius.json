@@ -1,10 +1,10 @@
 {
-  "size": {
-    "border": {
-      "radius": {
-        "default": { "value": "5px" },
-        "large": { "value": "10px" }
-      }
-    }
-  }
+	"size": {
+		"border": {
+			"radius": {
+				"default": { "value": "5px" },
+				"large": { "value": "10px" }
+			}
+		}
+	}
 }

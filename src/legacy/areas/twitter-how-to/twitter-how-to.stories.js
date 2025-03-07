@@ -6,13 +6,13 @@ import twitterHowToMarkup from './examples/twitter-how-to.html?raw';
  * This page is a JS-driven carousel.
  */
 export default {
-  title: 'Legacy/Areas/Twitter Tutorial',
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-  },
+	title: 'Legacy/Areas/Twitter Tutorial',
+	tags: ['autodocs'],
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const TwitterTutorial = {
-  render: () => twitterHowToMarkup,
+	render: () => twitterHowToMarkup,
 };

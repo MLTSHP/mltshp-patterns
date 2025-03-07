@@ -2,45 +2,45 @@
 @use '../../../init/mixins';
 
 @mixin page-header() {
-  background: linear-gradient(
-    to bottom,
-    var(--color-base-white-transparent),
-    var(--color-base-white-transparent) calc(100% - 6px),
-    var(--color-border-default)
-  );
-  padding: 1.5rem 1.875rem 1rem; // 24px 30px 16px
-  width: 100%;
+	background: linear-gradient(
+		to bottom,
+		var(--color-base-white-transparent),
+		var(--color-base-white-transparent) calc(100% - 6px),
+		var(--color-border-default)
+	);
+	padding: 1.5rem 1.875rem 1rem; // 24px 30px 16px
+	width: 100%;
 
-  .avatar {
-    display: flex;
+	.avatar {
+		display: flex;
 
-    img {
-      display: block;
-      height: 50px;
-      width: 50px;
-    }
-  }
+		img {
+			display: block;
+			height: 50px;
+			width: 50px;
+		}
+	}
 
-  .avatar-media {
-    flex: none;
-  }
+	.avatar-media {
+		flex: none;
+	}
 
-  h2 {
-    @include mixins.breakword;
-    font-size: 1.875rem; // 30px
-    line-height: 50px; // to match height of avatar
-    padding-left: 1.5rem;
+	h2 {
+		@include mixins.breakword;
+		font-size: 1.875rem; // 30px
+		line-height: 50px; // to match height of avatar
+		padding-left: 1.5rem;
 
-    @media screen and (min-width: tokens.$size-breakpoint-md) {
-      font-size: 2.25rem; // 36px
-    }
+		@media screen and (min-width: tokens.$size-breakpoint-md) {
+			font-size: 2.25rem; // 36px
+		}
 
-    @media screen and (min-width: tokens.$size-breakpoint-lg) {
-      font-size: 2.625rem; // 42px
-    }
-  }
+		@media screen and (min-width: tokens.$size-breakpoint-lg) {
+			font-size: 2.625rem; // 42px
+		}
+	}
 }
 
 .account-header {
-  @include page-header;
+	@include page-header;
 }

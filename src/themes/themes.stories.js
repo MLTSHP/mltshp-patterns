@@ -10,13 +10,13 @@ import darkThemeMarkup from './examples/dark.html?raw';
  * a whole new pattern and modifier (instead of just a themed variation).
  */
 export default {
-  title: 'Brand/Themes',
-  tags: ['autodocs'],
+	title: 'Brand/Themes',
+	tags: ['autodocs'],
 };
 
 /**
  * You can test dark mode by enabling dark mode on your computer, or with the theme option.
  */
 export const Dark = {
-  render: () => darkThemeMarkup,
+	render: () => darkThemeMarkup,
 };

@@ -6,21 +6,21 @@ import expandedMarkup from './examples/expanded.html?raw';
  * [Site Navigation](/docs/legacy-components-site-navigation--docs).
  */
 export default {
-  title: 'Legacy/Components/Choose a Shake',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Choose a Shake',
+	tags: ['autodocs'],
 };
 
 export const Collapsed = {
-  render: () => collapsedMarkup,
+	render: () => collapsedMarkup,
 };
 
 export const Expanded = {
-  render: () => expandedMarkup,
-  parameters: {
-    docs: {
-      story: {
-        height: '460px',
-      },
-    },
-  },
+	render: () => expandedMarkup,
+	parameters: {
+		docs: {
+			story: {
+				height: '460px',
+			},
+		},
+	},
 };

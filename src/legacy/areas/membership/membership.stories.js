@@ -9,33 +9,33 @@ import cancelMarkup from './examples/cancel.html?raw';
  * Special patterns and chunks of style for the membership flow.
  */
 export default {
-  title: 'Legacy/Areas/Membership',
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-  },
+	title: 'Legacy/Areas/Membership',
+	tags: ['autodocs'],
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const Welcome = {
-  render: () => welcomeMarkup,
+	render: () => welcomeMarkup,
 };
 
 export const Membership = {
-  render: () => membershipMarkup,
+	render: () => membershipMarkup,
 };
 
 export const ThankYou = {
-  render: () => thankYouMarkup,
+	render: () => thankYouMarkup,
 };
 
 export const Migrate = {
-  render: () => migrateMarkup,
+	render: () => migrateMarkup,
 };
 
 export const MigrateComplete = {
-  render: () => migrateCompleteMarkup,
+	render: () => migrateCompleteMarkup,
 };
 
 export const Cancel = {
-  render: () => cancelMarkup,
+	render: () => cancelMarkup,
 };

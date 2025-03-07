@@ -1,50 +1,50 @@
 .user-counts {
-  background-color: var(--color-border-default);
-  border-radius: var(--size-border-radius-large);
-  clear: both;
-  margin-bottom: var(--size-spacing-double);
-  padding: var(--size-spacing-half-again);
+	background-color: var(--color-border-default);
+	border-radius: var(--size-border-radius-large);
+	clear: both;
+	margin-bottom: var(--size-spacing-double);
+	padding: var(--size-spacing-half-again);
 
-  ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+	ul {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-  li {
-    background-color: var(--color-background-content);
-    border-radius: var(--size-border-radius-default);
-    flex-grow: 1;
-    flex-shrink: 1;
-    margin-right: var(--size-spacing-default);
-    padding: var(--size-spacing-default) 0;
-    text-align: center;
-    width: 70px; // magic number that works in the sidebar
+	li {
+		background-color: var(--color-background-content);
+		border-radius: var(--size-border-radius-default);
+		flex-grow: 1;
+		flex-shrink: 1;
+		margin-right: var(--size-spacing-default);
+		padding: var(--size-spacing-default) 0;
+		text-align: center;
+		width: 70px; // magic number that works in the sidebar
 
-    .num {
-      display: block;
-      font-size: 1.125rem;
-      font-weight: var(--number-font-weight-bold);
-    }
+		.num {
+			display: block;
+			font-size: 1.125rem;
+			font-weight: var(--number-font-weight-bold);
+		}
 
-    .label {
-      display: block;
-      font-size: 0.875rem;
-    }
-  }
+		.label {
+			display: block;
+			font-size: 0.875rem;
+		}
+	}
 
-  .views {
-    width: 95px; // magic number to give views more space than other cells
-  }
+	.views {
+		width: 95px; // magic number to give views more space than other cells
+	}
 
-  .saves {
-    color: var(--color-status-warning);
-  }
+	.saves {
+		color: var(--color-status-warning);
+	}
 
-  .likes {
-    color: var(--color-status-danger);
-    margin-right: 0;
-  }
+	.likes {
+		color: var(--color-status-danger);
+		margin-right: 0;
+	}
 }

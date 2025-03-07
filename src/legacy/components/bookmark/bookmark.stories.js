@@ -8,12 +8,12 @@ import youStartedHereMarkup from './examples/you-started-here.html?raw';
  * These samples have some padding adding to keep it visible.
  */
 export default {
-  title: 'Legacy/Components/Bookmark',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Bookmark',
+	tags: ['autodocs'],
 };
 
 export const Default = {
-  render: () => whereYouWereMarkup,
+	render: () => whereYouWereMarkup,
 };
 
 /**
@@ -21,5 +21,5 @@ export const Default = {
  * to the original position.
  */
 export const JumpLink = {
-  render: () => youStartedHereMarkup,
+	render: () => youStartedHereMarkup,
 };

@@ -6,10 +6,10 @@ import newUsersMarkup from './examples/new-users.html?raw';
  * [Image Medium](/docs/legacy-components-image-medium--docs) component.
  */
 export default {
-  title: 'Legacy/Components/New Users',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/New Users',
+	tags: ['autodocs'],
 };
 
 export const NewUsers = {
-  render: () => newUsersMarkup,
+	render: () => newUsersMarkup,
 };

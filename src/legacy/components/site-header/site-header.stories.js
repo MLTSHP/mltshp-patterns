@@ -10,21 +10,21 @@ import loggedInWithContentMarkup from './examples/logged-in-with-content.html?ra
  * components. See those components for variations and states.
  */
 export default {
-  title: 'Legacy/Components/Site Header',
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-  },
+	title: 'Legacy/Components/Site Header',
+	tags: ['autodocs'],
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const LoggedOut = {
-  render: () => loggedOutMarkup,
+	render: () => loggedOutMarkup,
 };
 
 export const LoggedIn = {
-  render: () => loggedInMarkup,
+	render: () => loggedInMarkup,
 };
 
 export const LoggedInWithContent = {
-  render: () => loggedInWithContentMarkup,
+	render: () => loggedInWithContentMarkup,
 };

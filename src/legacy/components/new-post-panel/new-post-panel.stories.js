@@ -10,55 +10,55 @@ import overUploadLimitMarkup from './examples/over-upload-limit.html?raw';
  * Overlay that can appear on any page.
  */
 export default {
-  title: 'Legacy/Components/New Post Panel',
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-    docs: {
-      story: {
-        inline: false,
-        height: '320px',
-      },
-    },
-  },
+	title: 'Legacy/Components/New Post Panel',
+	tags: ['autodocs'],
+	parameters: {
+		layout: 'fullscreen',
+		docs: {
+			story: {
+				inline: false,
+				height: '320px',
+			},
+		},
+	},
 };
 
 export const Default = {
-  render: () => newPostPanelMarkup,
+	render: () => newPostPanelMarkup,
 };
 
 export const WithShakes = {
-  render: () => withShakesMarkup,
+	render: () => withShakesMarkup,
 };
 
 export const WithShakesOpen = {
-  render: () => withShakesOpenMarkup,
-  parameters: {
-    docs: {
-      story: {
-        height: '420px',
-      },
-    },
-  },
+	render: () => withShakesOpenMarkup,
+	parameters: {
+		docs: {
+			story: {
+				height: '420px',
+			},
+		},
+	},
 };
 
 export const SaveVideo = {
-  render: () => saveVideoMarkup,
+	render: () => saveVideoMarkup,
 };
 
 export const ConfirmVideo = {
-  render: () => saveVideoConfirmationMarkup,
-  parameters: {
-    docs: {
-      story: {
-        height: '620px',
-      },
-    },
-  },
+	render: () => saveVideoConfirmationMarkup,
+	parameters: {
+		docs: {
+			story: {
+				height: '620px',
+			},
+		},
+	},
 };
 
 export const EmailUnconfirmed = {
-  render: () => emailUnconfirmedMarkup,
+	render: () => emailUnconfirmedMarkup,
 };
 
 /**
@@ -66,12 +66,12 @@ export const EmailUnconfirmed = {
  * since the "New Post" button is hidden if you're over the upload limit.
  */
 export const OverUploadLimit = {
-  render: () => overUploadLimitMarkup,
-  parameters: {
-    docs: {
-      story: {
-        height: '500px',
-      },
-    },
-  },
+	render: () => overUploadLimitMarkup,
+	parameters: {
+		docs: {
+			story: {
+				height: '500px',
+			},
+		},
+	},
 };

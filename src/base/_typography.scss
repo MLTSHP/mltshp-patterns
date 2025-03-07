@@ -7,11 +7,11 @@
 // Component-specific typography should live in the component's stylesheet.
 //
 html {
-  font-family: var(--font-family-system);
-  font-size: var(--size-font-base);
-  font-weight: var(--number-font-weight-normal);
-  letter-spacing: var(--letter-spacing);
-  line-height: 1.3;
+	font-family: var(--font-family-system);
+	font-size: var(--size-font-base);
+	font-weight: var(--number-font-weight-normal);
+	letter-spacing: var(--letter-spacing);
+	line-height: 1.3;
 }
 
 h1,
@@ -20,18 +20,18 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.15;
-  margin: 0;
+	line-height: 1.15;
+	margin: 0;
 }
 
 h1,
 .u-display {
-  font-size: 3rem;
-  letter-spacing: -1px;
+	font-size: 3rem;
+	letter-spacing: -1px;
 
-  @media screen and (min-width: tokens.$size-breakpoint-lg) {
-    font-size: 3.75rem;
-  }
+	@media screen and (min-width: tokens.$size-breakpoint-lg) {
+		font-size: 3.75rem;
+	}
 }
 
 // Using a custom property so bold can be lighter weight in dark mode.
@@ -46,16 +46,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--number-font-weight-bold);
+	font-weight: var(--number-font-weight-bold);
 }
 
 pre,
 code,
 .code {
-  font-family: var(--font-family-mono);
+	font-family: var(--font-family-mono);
 }
 
 pre {
-  overflow-x: auto;
-  width: 100%;
+	overflow-x: auto;
+	width: 100%;
 }

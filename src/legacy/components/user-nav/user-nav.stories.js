@@ -7,30 +7,30 @@ import maintenanceMarkup from './examples/maintenance.html?raw';
  * Appears in the [Site Header](/docs/legacy-components-site-header--docs).
  */
 export default {
-  title: 'Legacy/Components/User Navigation',
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-    docs: {
-      story: {
-        height: '5em',
-      },
-    },
-  },
+	title: 'Legacy/Components/User Navigation',
+	tags: ['autodocs'],
+	parameters: {
+		layout: 'fullscreen',
+		docs: {
+			story: {
+				height: '5em',
+			},
+		},
+	},
 };
 
 export const LoggedIn = {
-  render: () => userNavLoggedInMarkup,
+	render: () => userNavLoggedInMarkup,
 };
 
 export const LoggedOut = {
-  render: () => userNavLoggedOutMarkup,
+	render: () => userNavLoggedOutMarkup,
 };
 
 export const ConfirmYourEmail = {
-  render: () => confirmEmailMarkup,
+	render: () => confirmEmailMarkup,
 };
 
 export const MaintenanceMode = {
-  render: () => maintenanceMarkup,
+	render: () => maintenanceMarkup,
 };

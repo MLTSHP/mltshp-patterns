@@ -9,68 +9,68 @@
 // screenreaders only
 // https://cloudfour.com/thinks/see-no-evil-hidden-content-and-accessibility/
 .sr-only {
-  border: 0;
-  clip: rect(0 0 0 0);
-  // stylelint-disable
-  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
-  // stylelint-enable
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	// stylelint-disable
+	clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+	-webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+	// stylelint-enable
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
 
 .clear {
-  clear: both;
+	clear: both;
 }
 
 .hide-on-small {
-  @media screen and (max-width: tokens.$size-breakpoint-md) {
-    display: none;
-  }
+	@media screen and (max-width: tokens.$size-breakpoint-md) {
+		display: none;
+	}
 }
 
 .error,
 .danger {
-  color: var(--color-status-danger);
+	color: var(--color-status-danger);
 }
 
 .user-name {
-  @include mixins.breakword;
+	@include mixins.breakword;
 }
 
 .avatar--img {
-  display: block;
-  height: var(--size-avatar-default);
-  max-width: none;
-  object-fit: cover;
-  width: var(--size-avatar-default);
+	display: block;
+	height: var(--size-avatar-default);
+	max-width: none;
+	object-fit: cover;
+	width: var(--size-avatar-default);
 }
 
 .caret {
-  border: 0.5em solid transparent;
-  border-top-color: currentcolor;
-  border-width: 0.5em 0.433em 0;
-  display: inline-block;
-  position: relative;
-  top: -0.1em;
-  transform-origin: center 40%;
-  transition: transform 0.25s ease;
+	border: 0.5em solid transparent;
+	border-top-color: currentcolor;
+	border-width: 0.5em 0.433em 0;
+	display: inline-block;
+	position: relative;
+	top: -0.1em;
+	transform-origin: center 40%;
+	transition: transform 0.25s ease;
 
-  @media screen and (prefers-reduced-motion: reduce) {
-    transition: none;
-  }
+	@media screen and (prefers-reduced-motion: reduce) {
+		transition: none;
+	}
 
-  .is-active & {
-    transform: rotate(180deg);
-  }
+	.is-active & {
+		transform: rotate(180deg);
+	}
 }
 
 // Styleguide
 .panel--example {
-  margin: 0.25em 0 1em;
+	margin: 0.25em 0 1em;
 }

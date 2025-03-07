@@ -5,26 +5,26 @@ import marqueeMarkup from './examples/marquee.html?raw';
 import reminderMarkup from './examples/reminder.html?raw';
 
 export default {
-  title: 'Legacy/Components/Alerts',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Alerts',
+	tags: ['autodocs'],
 };
 
 export const Alert = {
-  render: () => alertMarkup,
+	render: () => alertMarkup,
 };
 
 export const Marquee = {
-  render: () => marqueeMarkup,
+	render: () => marqueeMarkup,
 };
 
 export const Danger = {
-  render: () => dangerMarkup,
+	render: () => dangerMarkup,
 };
 
 export const Warning = {
-  render: () => warningMarkup,
+	render: () => warningMarkup,
 };
 
 export const Reminder = {
-  render: () => reminderMarkup,
+	render: () => reminderMarkup,
 };

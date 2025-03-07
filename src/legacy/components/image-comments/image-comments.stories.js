@@ -5,8 +5,8 @@ import imageCommentFormMarkup from './examples/image-comment-form.html?raw';
  * Used on permalink pages, as well as the Conversations area to render the comments.
  */
 export default {
-  title: 'Legacy/Components/Image Comments',
-  tags: ['autodocs'],
+	title: 'Legacy/Components/Image Comments',
+	tags: ['autodocs'],
 };
 
 /**
@@ -15,9 +15,9 @@ export default {
  * that's shown in the list view for an image.
  */
 export const Comment = {
-  render: () => imageCommentMarkup,
+	render: () => imageCommentMarkup,
 };
 
 export const CommentForm = {
-  render: () => imageCommentFormMarkup,
+	render: () => imageCommentFormMarkup,
 };

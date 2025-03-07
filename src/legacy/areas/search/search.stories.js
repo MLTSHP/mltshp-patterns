@@ -7,31 +7,31 @@ import sidebarSearchMarkup from './examples/sidebar-search.html?raw';
  * Special patterns and chunks of style for the Search page.
  */
 export default {
-  title: 'Legacy/Areas/Search',
-  tags: ['autodocs'],
+	title: 'Legacy/Areas/Search',
+	tags: ['autodocs'],
 };
 
 export const SearchPage = {
-  render: () => contentSearchMarkup,
-  parameters: {
-    layout: 'fullscreen',
-  },
+	render: () => contentSearchMarkup,
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const SearchResults = {
-  render: () => searchResultsMarkup,
-  parameters: {
-    layout: 'fullscreen',
-  },
+	render: () => searchResultsMarkup,
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const NoResults = {
-  render: () => noResultsMarkup,
-  parameters: {
-    layout: 'fullscreen',
-  },
+	render: () => noResultsMarkup,
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const SidebarSearch = {
-  render: () => sidebarSearchMarkup,
+	render: () => sidebarSearchMarkup,
 };

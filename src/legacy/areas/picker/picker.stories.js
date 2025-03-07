@@ -9,33 +9,33 @@ import pickerLimitMarkup from './examples/picker-limit.html?raw';
  * Special patterns and chunks of style for the picker popup window.
  */
 export default {
-  title: 'Legacy/Areas/Picker',
-  tags: ['autodocs'],
-  parameters: {
-    layout: 'fullscreen',
-  },
+	title: 'Legacy/Areas/Picker',
+	tags: ['autodocs'],
+	parameters: {
+		layout: 'fullscreen',
+	},
 };
 
 export const SignIn = {
-  render: () => signInMarkup,
+	render: () => signInMarkup,
 };
 
 export const Picker = {
-  render: () => pickerMarkup,
+	render: () => pickerMarkup,
 };
 
 export const PickerSuccess = {
-  render: () => pickerSuccessMarkup,
+	render: () => pickerSuccessMarkup,
 };
 
 export const PickerError = {
-  render: () => pickerErrorMarkup,
+	render: () => pickerErrorMarkup,
 };
 
 export const PickerEmailValidation = {
-  render: () => pickerEmailMarkup,
+	render: () => pickerEmailMarkup,
 };
 
 export const PickerUploadLimit = {
-  render: () => pickerLimitMarkup,
+	render: () => pickerLimitMarkup,
 };
