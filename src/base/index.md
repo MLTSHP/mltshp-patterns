@@ -1,11 +1,8 @@
----js
-{
-	layout: "base",
-	title: "Base",
-	eleventyNavigation: {
-		key: "Base",
-	}
-}
+---
+layout: base
+title: Base
+eleventyNavigation:
+  key: Base
 ---
 
 These are the base styles

@@ -1,12 +1,9 @@
----js
-{
-	layout: "base",
-	title: "Typography",
-	eleventyNavigation: {
-		key: "Typography",
-		parent: "Base"
-	}
-}
+---
+layout: base
+title: Typography
+eleventyNavigation:
+  key: Typography
+  parent: Base
 ---
 
 These are the typography styles!
