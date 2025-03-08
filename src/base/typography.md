@@ -1,9 +1,15 @@
----
-layout: base
-title: Typography
+---js
+{
+	layout: "base",
+	title: "Typography",
+	eleventyNavigation: {
+		key: "Typography",
+		parent: "Base"
+	}
+}
 ---
 
-Testing!
+These are the typography styles!
 
 {{ '/src/base/examples/headings.html' | getFileContents }}
 
