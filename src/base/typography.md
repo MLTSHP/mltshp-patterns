@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: page
 title: Typography
 eleventyNavigation:
   key: Typography

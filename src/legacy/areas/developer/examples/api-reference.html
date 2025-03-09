@@ -1,137 +1,121 @@
 <div class="page">
 	<div class="wrapper">
-		<div class="content">
-			<div class="content-developer">
-				<div id="toc">
-					<ul>
-						<li>
-							<a class="reference internal" href="#">API Reference</a>
-							<ul>
-								<li>
-									<a class="reference internal" href="#serializations"
-										>Serializations</a
-									>
-								</li>
-								<li>
-									<a class="reference internal" href="#resources">Resources</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-
-				<div class="section" id="api-reference">
-					<h1>
-						API Reference<a
-							class="headerlink"
-							href="#api-reference"
-							title="Permalink to this headline"
-							>¶</a
-						>
-					</h1>
-					<div class="section" id="serializations">
-						<h2>
-							Serializations<a
-								class="headerlink"
-								href="#serializations"
-								title="Permalink to this headline"
-								>¶</a
+		<header class="site-header">
+			<div class="site-branding">
+				<a href="/"
+					><img
+						class="site-branding--logo"
+						src="https://mltshp-cdn.com/static/images/logo-compact.svg?v=faab97b281b186250562f8984758d2d0f6a2f8d990b43b6616f5d53df26941926893e07fe85e7bc3868f8fd8014ebc248ab4c856fe5ed67f1f931f346bc9e4de"
+						alt="MLTSHP" />
+					<div class="site-branding--icon" aria-label="MLTSHP"></div
+				></a>
+			</div>
+			<nav id="site-nav" class="site-nav">
+				<button
+					type="button"
+					class="site-nav--toggle btn btn-warning btn-pastel btn-icon"
+				>
+					☰
+				</button>
+				<ul class="site-nav--list">
+					<li class="site-nav--item site-nav--shake-list">
+						<div id="choose-a-shake" class="choose-a-shake">
+							<button
+								type="button"
+								class="choose-a-shake--toggle btn btn-success btn-pastel"
 							>
-						</h2>
-						<p>
-							Responses from the MLTSHP API are
-							<em class="mimetype">application/json</em> responses that
-							represent the various MLTSHP API objects. Those objects are:
-						</p>
-						<dl class="entity">
-							<dt id="entity-shake">
-								<strong>shake</strong
-								><a
-									class="headerlink"
-									href="#entity-shake"
-									title="Permalink to this definition"
-									>¶</a
+								Shakes
+								<span class="caret"></span>
+							</button>
+							<div class="choose-a-shake--dropdown">
+								<ul class="top-shakes">
+									<li><a href="/friends">Friend Shake</a></li>
+									<li><a href="/user/spaceninja">Your Shake</a></li>
+									<li><a href="/user/spaceninja/likes">Your Favorites</a></li>
+									<li><a href="/popular">Popular</a></li>
+									<li><a href="/incoming">Incoming!!!</a></li>
+								</ul>
+
+								<ul class="group-shakes">
+									<li><a href="/barbarella">Barbarella</a></li>
+
+									<li><a href="/dune">dune</a></li>
+
+									<li><a href="/dnd">Dungeons and Dragons</a></li>
+
+									<li>
+										<a href="/long-names-like-Llanfairp"
+											>Shake for Long Names Like
+											Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch</a
+										>
+									</li>
+
+									<li>
+										<a href="/weloveamberandandre">SHKN BUT NOT BROKEN</a>
+									</li>
+
+									<li><a href="/api-testing">Testing</a></li>
+								</ul>
+
+								<a
+									class="add-a-shake btn btn-success btn-small"
+									href="/shake/create"
+									>+ Add a shake</a
 								>
-							</dt>
-							<dd>
-								<p>
-									A shake is a stream of files posted to MLTSHP by users. Shakes
-									can be user shakes, which every user has one of, or group
-									shakes that can have multiple posters.
-								</p>
-								<table class="docutils field-list" frame="void" rules="none">
-									<colgroup>
-										<col class="field-name" />
-										<col class="field-body" />
-									</colgroup>
-									<tbody valign="top">
-										<tr class="field-odd field">
-											<th class="field-name">Contents:</th>
-											<td class="field-body">
-												<ul class="first last simple">
-													<li>
-														<strong>id</strong> – the shake’s numeric shake ID
-														as a number
-													</li>
-													<li>
-														<strong>name</strong> – the display title of the
-														shake
-													</li>
-													<li>
-														<strong>owner</strong> – the
-														<a class="reference internal" href="#entity-user"
-															><em class="xref std std-entity">user</em></a
-														>
-														who created the shake
-													</li>
-													<li>
-														<strong>url</strong> – the URL of the shake on the
-														MLTSHP site
-													</li>
-													<li>
-														<strong>thumbnail_url</strong> – the URL of the
-														shake’s thumbnail logo image
-													</li>
-													<li>
-														<strong>description</strong> – the shake’s
-														description displayed under its logo on its page
-														(optional)
-													</li>
-													<li>
-														<strong>type</strong> – the type of shake: either
-														<code class="docutils literal notranslate"
-															><span class="pre">user</span></code
-														>
-														or
-														<code class="docutils literal notranslate"
-															><span class="pre">group</span></code
-														>
-													</li>
-													<li>
-														<strong>created_at</strong> – the
-														<a
-															class="reference internal"
-															href="#entity-timestamp"
-															><em class="xref std std-entity">time</em></a
-														>
-														when the shake was first created
-													</li>
-													<li>
-														<strong>updated_at</strong> – the
-														<a
-															class="reference internal"
-															href="#entity-timestamp"
-															><em class="xref std std-entity">time</em></a
-														>
-														when the shake was last updated
-													</li>
-												</ul>
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</dd>
-						</dl>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav--item site-nav--conversations">
+						<a class="btn btn-success btn-pastel" href="/conversations"
+							>Conversations</a
+						>
+					</li>
+					<li class="site-nav--item site-nav--search">
+						<a class="btn btn-success btn-pastel" href="/search">Search</a>
+					</li>
+
+					<li class="site-nav--item site-nav--upload">
+						<a id="new-post-button" class="btn btn-primary btn-shadow" href=""
+							>New Post</a
+						>
+					</li>
+				</ul>
+			</nav>
+			<nav class="user-nav">
+				<ul class="user-nav--list">
+					<li class="user-nav--item">
+						<a href="/account/settings" class="user-nav--link">settings</a>
+					</li>
+					<li class="user-nav--item">
+						<a href="/faq/" class="user-nav--link">faq</a>
+					</li>
+					<li class="user-nav--item">
+						<a href="/sign-out/" class="user-nav--link">sign out</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="site-main">
+			<div class="content">
+				<div class="content-developer">
+					<div id="toc">
+						<ul>
+							<li>
+								<a class="reference internal" href="#">API Reference</a>
+								<ul>
+									<li>
+										<a class="reference internal" href="#serializations"
+											>Serializations</a
+										>
+									</li>
+									<li>
+										<a class="reference internal" href="#resources"
+											>Resources</a
+										>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 					<div class="section" id="api-reference">
 						<h1>
@@ -156,6 +140,385 @@
 								<em class="mimetype">application/json</em> responses that
 								represent the various MLTSHP API objects. Those objects are:
 							</p>
+							<dl class="entity">
+								<dt id="entity-shake">
+									<strong>shake</strong
+									><a
+										class="headerlink"
+										href="#entity-shake"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										A shake is a stream of files posted to MLTSHP by users.
+										Shakes can be user shakes, which every user has one of, or
+										group shakes that can have multiple posters.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Contents:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<strong>id</strong> – the shake’s numeric shake ID
+															as a number
+														</li>
+														<li>
+															<strong>name</strong> – the display title of the
+															shake
+														</li>
+														<li>
+															<strong>owner</strong> – the
+															<a class="reference internal" href="#entity-user"
+																><em class="xref std std-entity">user</em></a
+															>
+															who created the shake
+														</li>
+														<li>
+															<strong>url</strong> – the URL of the shake on the
+															MLTSHP site
+														</li>
+														<li>
+															<strong>thumbnail_url</strong> – the URL of the
+															shake’s thumbnail logo image
+														</li>
+														<li>
+															<strong>description</strong> – the shake’s
+															description displayed under its logo on its page
+															(optional)
+														</li>
+														<li>
+															<strong>type</strong> – the type of shake: either
+															<code class="docutils literal notranslate"
+																><span class="pre">user</span></code
+															>
+															or
+															<code class="docutils literal notranslate"
+																><span class="pre">group</span></code
+															>
+														</li>
+														<li>
+															<strong>created_at</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-timestamp"
+																><em class="xref std std-entity">time</em></a
+															>
+															when the shake was first created
+														</li>
+														<li>
+															<strong>updated_at</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-timestamp"
+																><em class="xref std std-entity">time</em></a
+															>
+															when the shake was last updated
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="entity">
+								<dt id="entity-sharedfile">
+									<strong>sharedfile</strong
+									><a
+										class="headerlink"
+										href="#entity-sharedfile"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										A file that someone posted to a shake. A file can be either
+										an image or a link to a video.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Contents:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<strong>sharekey</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															of the shared file
+														</li>
+														<li>
+															<strong>name</strong> – the filename of the shared
+															file
+														</li>
+														<li>
+															<strong>user</strong> – the
+															<a class="reference internal" href="#entity-user"
+																><em class="xref std std-entity">user</em></a
+															>
+															who shared the file
+														</li>
+														<li>
+															<strong>title</strong> – the custom title the
+															poster gave the file (optional)
+														</li>
+														<li>
+															<strong>description</strong> – the caption
+															displayed under the file on its page (optional)
+														</li>
+														<li>
+															<strong>posted_at</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-timestamp"
+																><em class="xref std std-entity">time</em></a
+															>
+															the file was posted
+														</li>
+														<li>
+															<strong>permalink_page</strong> – the URL where
+															the file can be viewed on MLTSHP
+														</li>
+														<li>
+															<strong>width</strong> – the width of the file
+															(image or video embed) in pixels as a number
+														</li>
+														<li>
+															<strong>height</strong> – the height of the file
+															(image or video embed) in pixels as a number
+														</li>
+														<li>
+															<strong>views</strong> – the number of times the
+															image has been viewed
+														</li>
+														<li>
+															<strong>likes</strong> – the number of times the
+															image has been “liked” to someone’s favorites
+														</li>
+														<li>
+															<strong>saves</strong> – the number of times the
+															image has been saved to another shake
+														</li>
+														<li>
+															<strong>comments</strong> – the number of
+															<a
+																class="reference internal"
+																href="#entity-comment"
+																><em class="xref std std-entity"
+																	>comments</em
+																></a
+															>
+															on the file
+														</li>
+														<li>
+															<strong>nsfw</strong> – whether the file has been
+															marked NSFW, and so is hidden by default when
+															displayed on MLTSHP (<cite>true</cite> for
+															NSFW/hidden, <cite>false</cite> for SFW/visible)
+														</li>
+														<li>
+															<strong>original_image_url</strong> – if the file
+															is an image, the URL of the image on MLTSHP
+														</li>
+														<li>
+															<strong>url</strong> – if the file is
+															<em>not</em> an image, the original URL of the
+															shared item
+														</li>
+														<li>
+															<strong>pivot_id</strong> – a key that is used for
+															pagination. It varies based on the API method.
+														</li>
+														<li>
+															<strong>saved</strong> – flag indicating whether
+															authenticated user has already saved the
+															sharedfile
+														</li>
+														<li>
+															<strong>liked</strong> – flag indicating whether
+															authenticated user has already liked the
+															sharedfile
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="entity">
+								<dt id="entity-sharekey">
+									<strong>sharekey</strong
+									><a
+										class="headerlink"
+										href="#entity-sharekey"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										The alphanumeric ID of a
+										<a class="reference internal" href="#entity-sharedfile"
+											><em class="xref std std-entity">sharedfile</em></a
+										>, such as
+										<code class="docutils literal notranslate"
+											><span class="pre">GK4N</span></code
+										>. These are the codes in the permalink page (and image URL)
+										of files posted to MLTSHP.
+									</p>
+								</dd>
+							</dl>
+							<dl class="entity">
+								<dt id="entity-timestamp">
+									<strong>timestamp</strong
+									><a
+										class="headerlink"
+										href="#entity-timestamp"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Timestamps represent particular times when events occurred,
+										such as users posting files to shakes. Timestamps are always
+										represented in the MLTSHP API as ISO8601 timestamps in UTC
+										(where the timezone is
+										<code class="docutils literal notranslate"
+											><span class="pre">Z</span></code
+										>) with resolution to seconds (no microseconds).
+									</p>
+								</dd>
+							</dl>
+							<dl class="entity">
+								<dt id="entity-user">
+									<strong>user</strong
+									><a
+										class="headerlink"
+										href="#entity-user"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										A person with a MLTSHP account. Users own or manage shakes
+										and post files in them.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Contents:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<strong>id</strong> – the user’s numeric user ID
+															as a number
+														</li>
+														<li><strong>name</strong> – the user’s username</li>
+														<li>
+															<strong>profile_image_url</strong> – the URL to
+															the user’s profile picture
+														</li>
+														<li>
+															<strong>about</strong> – a brief text blurb about
+															the user. Only available when querying the user
+															resource.
+														</li>
+														<li>
+															<strong>website</strong> – the user’s URL. Only
+															available when querying the user resource.
+														</li>
+														<li>
+															<strong>shakes</strong> – the list of shakes that
+															belong to the user, including their main user
+															shake. Only available when querying the user
+															resource.
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="entity">
+								<dt id="entity-comment">
+									<strong>comment</strong
+									><a
+										class="headerlink"
+										href="#entity-comment"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										A traditional comment associated with a
+										<a class="reference internal" href="#entity-sharedfile"
+											><em class="xref std std-entity">sharedfile</em></a
+										>.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Contents:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<strong>body</strong> – the actual text body of
+															the comment
+														</li>
+														<li>
+															<strong>user</strong> – the
+															<a class="reference internal" href="#entity-user"
+																><em class="xref std std-entity">user</em></a
+															>
+															that posted the comment
+														</li>
+														<li>
+															<strong>posted_at</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-timestamp"
+																><em class="xref std std-entity">time</em></a
+															>
+															when the comment was posted
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
 						</div>
 						<div class="section" id="resources">
 							<h2>
@@ -174,6 +537,36 @@
 									><a
 										class="headerlink"
 										href="#get--api-favorites"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-favorites-before-(beforekey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/favorites/before/</code
+									><span class="sig-paren">(</span><em>beforekey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-favorites-before-(beforekey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-favorites-after-(afterkey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/favorites/after/</code
+									><span class="sig-paren">(</span><em>afterkey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-favorites-after-(afterkey)"
 										title="Permalink to this definition"
 										>¶</a
 									>
@@ -235,7 +628,7 @@
 														<li>
 															<a
 																class="reference external"
-																href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
 																>200 OK</a
 															>
 															–
@@ -263,10 +656,1681 @@
 									</table>
 								</dd>
 							</dl>
+							<dl class="get">
+								<dt id="get--api-friends">
+									<code class="descname">GET </code
+									><code class="descname">/api/friends</code
+									><a
+										class="headerlink"
+										href="#get--api-friends"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-friends-before-(beforekey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/friends/before/</code
+									><span class="sig-paren">(</span><em>beforekey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-friends-before-(beforekey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-friends-after-(afterkey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/friends/after/</code
+									><span class="sig-paren">(</span><em>afterkey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-friends-after-(afterkey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns the files posted most recently (or as specified) by
+										the users whom the authorized user follows.
+									</p>
+									<p>
+										Use the
+										<code class="samp docutils literal notranslate"
+											><span class="pre">before/</span
+											><em><span class="pre">beforekey</span></em></code
+										>
+										and
+										<code class="samp docutils literal notranslate"
+											><span class="pre">after/</span
+											><em><span class="pre">afterkey</span></em></code
+										>
+										variations to page through the user’s friend shake. That is,
+										to request the next page of a friend shake, specify the last
+										<em class="xref std std-entity">pivot_id</em> in the current
+										page as the key to a
+										<code class="samp docutils literal notranslate"
+											><span class="pre">/api/friends/before/</span
+											><em><span class="pre">beforekey</span></em></code
+										>
+										request.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>beforekey</strong> – the
+															<em class="xref std std-entity">pivot_id</em> of
+															the post to show posts before
+														</li>
+														<li>
+															<strong>afterkey</strong> – the
+															<em class="xref std std-entity">pivot_id</em> of
+															the post to show posts after
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															–
+															<p>
+																the response is the requested section of friend
+																shake as an object containing:
+															</p>
+															<ul>
+																<li>
+																	<strong>friend_shake</strong> – a list of
+																	<a
+																		class="reference internal"
+																		href="#entity-sharedfile"
+																		><em class="xref std std-entity"
+																			>sharedfiles</em
+																		></a
+																	>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-magicfiles">
+									<code class="descname">GET </code
+									><code class="descname">/api/magicfiles</code
+									><a
+										class="headerlink"
+										href="#get--api-magicfiles"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-magicfiles-before-(beforekey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/magicfiles/before/</code
+									><span class="sig-paren">(</span><em>beforekey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-magicfiles-before-(beforekey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-magicfiles-after-(afterkey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/magicfiles/after/</code
+									><span class="sig-paren">(</span><em>afterkey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-magicfiles-after-(afterkey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns the 10 most recent files accepted by the “magic”
+										file selection algorithm. Currently any files with 10 or
+										more likes are magic.
+									</p>
+									<p>
+										Use the
+										<code class="samp docutils literal notranslate"
+											><span class="pre">before/</span
+											><em><span class="pre">beforekey</span></em></code
+										>
+										and
+										<code class="samp docutils literal notranslate"
+											><span class="pre">after/</span
+											><em><span class="pre">afterkey</span></em></code
+										>
+										variations to page through the sharedfiles. That is, specify
+										the last <em class="xref std std-entity">pivot_id</em> as
+										the key to the
+										<code class="samp docutils literal notranslate"
+											><span class="pre">before/</span
+											><em><span class="pre">beforekey</span></em></code
+										>
+										resource to get the page of files saved before the current
+										page.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>beforekey</strong> – the
+															<em class="xref std std-entity">pivot_id</em> of
+															the file to show posts before
+														</li>
+														<li>
+															<strong>afterkey</strong> – the
+															<em class="xref std std-entity">pivot_id</em> of
+															the file to show posts after
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															–
+															<p>
+																the response is the latest magic files as an
+																object containing:
+															</p>
+															<ul>
+																<li>
+																	<strong>magicfiles</strong> – a list of
+																	<a
+																		class="reference internal"
+																		href="#entity-sharedfile"
+																		><em class="xref std std-entity"
+																			>sharedfiles</em
+																		></a
+																	>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-incoming">
+									<code class="descname">GET </code
+									><code class="descname">/api/incoming</code
+									><a
+										class="headerlink"
+										href="#get--api-incoming"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-incoming-before-(beforekey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/incoming/before/</code
+									><span class="sig-paren">(</span><em>beforekey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-incoming-before-(beforekey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-incoming-after-(afterkey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/incoming/after/</code
+									><span class="sig-paren">(</span><em>afterkey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-incoming-after-(afterkey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>Returns the 10 most recently posted sharedfiles.</p>
+									<p>
+										Use the
+										<code class="samp docutils literal notranslate"
+											><span class="pre">before/</span
+											><em><span class="pre">beforekey</span></em></code
+										>
+										and
+										<code class="samp docutils literal notranslate"
+											><span class="pre">after/</span
+											><em><span class="pre">afterkey</span></em></code
+										>
+										variations to page through the sharedfiles. That is, specify
+										the last <em class="xref std std-entity">pivot_id</em> as
+										the key to the
+										<code class="samp docutils literal notranslate"
+											><span class="pre">before/</span
+											><em><span class="pre">beforekey</span></em></code
+										>
+										resource to get the page of files saved before the current
+										page.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>beforekey</strong> – the
+															<em class="xref std std-entity">pivot_id</em> of
+															the file to show posts before
+														</li>
+														<li>
+															<strong>afterkey</strong> – the
+															<em class="xref std std-entity">pivot_id</em> of
+															the file to show posts after
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															–
+															<p>
+																the response is the latest files as an object
+																containing:
+															</p>
+															<ul>
+																<li>
+																	<strong>incoming</strong> – a list of
+																	<a
+																		class="reference internal"
+																		href="#entity-sharedfile"
+																		><em class="xref std std-entity"
+																			>sharedfiles</em
+																		></a
+																	>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-shakes-(id)">
+									<code class="descname">GET </code
+									><code class="descname">/api/shakes/</code
+									><span class="sig-paren">(</span><em>id</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-shakes-(id)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-shakes-(id)-before-(beforekey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/shakes/</code
+									><span class="sig-paren">(</span><em>id</em
+									><span class="sig-paren">)</span
+									><code class="descname">/before/</code
+									><span class="sig-paren">(</span><em>beforekey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-shakes-(id)-before-(beforekey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd></dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-shakes-(id)-after-(afterkey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/shakes/</code
+									><span class="sig-paren">(</span><em>id</em
+									><span class="sig-paren">)</span
+									><code class="descname">/after/</code
+									><span class="sig-paren">(</span><em>afterkey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-shakes-(id)-after-(afterkey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns the sharedfiles for the specified shake in reverse
+										chronological order.
+									</p>
+									<p>
+										Use the
+										<code class="samp docutils literal notranslate"
+											><span class="pre">before/</span
+											><em><span class="pre">beforekey</span></em></code
+										>
+										and
+										<code class="samp docutils literal notranslate"
+											><span class="pre">after/</span
+											><em><span class="pre">afterkey</span></em></code
+										>
+										variations to page through the sharefiles. That is, specify
+										the last <em class="xref std std-entity">pivot_id</em> as
+										the key to the
+										<code class="samp docutils literal notranslate"
+											><span class="pre">before/</span
+											><em><span class="pre">beforekey</span></em></code
+										>
+										resource to get the page of files saved before the current
+										page.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>beforekey</strong> – the
+															<em class="xref std std-entity">pivot_id</em> of
+															the file to show posts before
+														</li>
+														<li>
+															<strong>afterkey</strong> – the
+															<em class="xref std std-entity">pivot_id</em> of
+															the file to show posts after
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															–
+															<p>
+																the response is the requested section of shake’s
+																sharedfiles:
+															</p>
+															<ul>
+																<li>
+																	<strong>sharedfiles</strong> – a list of the
+																	<a
+																		class="reference internal"
+																		href="#entity-shake"
+																		><em class="xref std std-entity"
+																			>shake’s</em
+																		></a
+																	>
+																	<a
+																		class="reference internal"
+																		href="#entity-sharedfile"
+																		><em class="xref std std-entity"
+																			>sharedfiles</em
+																		></a
+																	>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2"
+																>401 Unauthorized</a
+															>
+															– authentication failed
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-shake_id-(int-shakeid)">
+									<code class="descname">GET </code
+									><code class="descname">/api/shake_id/</code
+									><span class="sig-paren">(</span
+									><em class="property">int: </em><em>shakeid</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-shake_id-(int-shakeid)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns information for the shake with the given numeric
+										shake ID.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>shakeid</strong> – the shake’s numeric ID
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the response is the requested
+															<a class="reference internal" href="#entity-shake"
+																><em class="xref std std-entity">shake</em></a
+															>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such shake with that ID
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-shake_name-(shakepathname)">
+									<code class="descname">GET </code
+									><code class="descname">/api/shake_name/</code
+									><span class="sig-paren">(</span><em>shakepathname</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-shake_name-(shakepathname)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns information for the shake with the given pathname.
+									</p>
+									<p>
+										Note that name in this case refers to the URL path to the
+										shake. e.g., for
+										<a
+											class="reference external"
+											href="https://mltshp.com/weloveamberandandre"
+											>https://mltshp.com/weloveamberandandre</a
+										>
+										the pathname is <cite>weloveamberandandre</cite>.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>shakepathname</strong> – the shake’s
+															pathname
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the response is the requested
+															<a class="reference internal" href="#entity-shake"
+																><em class="xref std std-entity">shake</em></a
+															>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such shake with that pathname
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-shake_user-(username)">
+									<code class="descname">GET </code
+									><code class="descname">/api/shake_user/</code
+									><span class="sig-paren">(</span><em>username</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-shake_user-(username)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns information for the shake belonging to the specified
+										user.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>username</strong> – the user’s username
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the response is the requested
+															<a class="reference internal" href="#entity-shake"
+																><em class="xref std std-entity">shake</em></a
+															>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such user with that name
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-shakes">
+									<code class="descname">GET </code
+									><code class="descname">/api/shakes</code
+									><a
+										class="headerlink"
+										href="#get--api-shakes"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>Returns the authorized user’s shakes.</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															–
+															<p>the response is an object containing:</p>
+															<ul>
+																<li>
+																	<strong>shakes</strong> – a list of the user’s
+																	<a
+																		class="reference internal"
+																		href="#entity-shake"
+																		><em class="xref std std-entity"
+																			>shakes</em
+																		></a
+																	>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.2"
+																>401 Unauthorized</a
+															>
+															– authentication failed
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-sharedfile-(sharekey)">
+									<code class="descname">GET </code
+									><code class="descname">/api/sharedfile/</code
+									><span class="sig-paren">(</span><em>sharekey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-sharedfile-(sharekey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns information for the file with the given share key.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>sharekey</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															of the file
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the response is a
+															<a
+																class="reference internal"
+																href="#entity-sharedfile"
+																><em class="xref std std-entity"
+																	>sharedfile</em
+																></a
+															>
+															for the requested file
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such file with that share key
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="post">
+								<dt id="post--api-sharedfile-(sharekey)">
+									<code class="descname">POST </code
+									><code class="descname">/api/sharedfile/</code
+									><span class="sig-paren">(</span><em>sharekey</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#post--api-sharedfile-(sharekey)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>Update sharedfile’s editable details.</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>sharekey</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															of the file
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name" colspan="2">Form Parameters:</th>
+											</tr>
+											<tr class="field-even field">
+												<td>&nbsp;</td>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>title</strong> – text for the image title
+															(optional)
+														</li>
+														<li>
+															<strong>description</strong> – text for the image
+															description (optional)
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-odd field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the response is a
+															<a
+																class="reference internal"
+																href="#entity-sharedfile"
+																><em class="xref std std-entity"
+																	>sharedfile</em
+																></a
+															>
+															for the requested file
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4"
+																>403 Forbidden</a
+															>
+															– the file could not be updated due to permission
+															issues
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such file with that share key
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="post">
+								<dt id="post--api-sharedfile-(sharekey)-like">
+									<code class="descname">POST </code
+									><code class="descname">/api/sharedfile/</code
+									><span class="sig-paren">(</span><em>sharekey</em
+									><span class="sig-paren">)</span
+									><code class="descname">/like</code
+									><a
+										class="headerlink"
+										href="#post--api-sharedfile-(sharekey)-like"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										“Likes” the file with the given sharekey as the authorized
+										user. The file is then available in the user’s favorites.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>sharekey</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															of the file to like
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the file was liked, and the response is the
+															liked
+															<a
+																class="reference internal"
+																href="#entity-sharedfile"
+																><em class="xref std std-entity"
+																	>sharedfile</em
+																></a
+															>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1"
+																>400 Bad Request</a
+															>
+															– the file could not be liked, probably because
+															the authorized user already liked it
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such file with that share key
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="post">
+								<dt id="post--api-sharedfile-(sharekey)-save">
+									<code class="descname">POST </code
+									><code class="descname">/api/sharedfile/</code
+									><span class="sig-paren">(</span><em>sharekey</em
+									><span class="sig-paren">)</span
+									><code class="descname">/save</code
+									><a
+										class="headerlink"
+										href="#post--api-sharedfile-(sharekey)-save"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										“Saves” the file with the given sharekey as the authorized
+										user. By default the file is saved to the user’s shake
+										unless the shake_id parameter is provided.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>sharekey</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															of the file to save
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name" colspan="2">Form Parameters:</th>
+											</tr>
+											<tr class="field-even field">
+												<td>&nbsp;</td>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>shake_id</strong> – the id of the
+															destination
+															<a class="reference internal" href="#entity-shake"
+																><em class="xref std std-entity">shake</em></a
+															>
+															the file should be saved to (optional)
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-odd field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the file was saved, and the response is the
+															saved
+															<a
+																class="reference internal"
+																href="#entity-sharedfile"
+																><em class="xref std std-entity"
+																	>sharedfile</em
+																></a
+															>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1"
+																>400 Bad Request</a
+															>
+															– the file could not be saved, probably because
+															the file belongs to the authenticated user
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.4"
+																>403 Forbidden</a
+															>
+															– the file could not be saved due to permission
+															issues
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such file with that share key or no such
+															shake
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-sharedfile-(sharekey)-comments">
+									<code class="descname">GET </code
+									><code class="descname">/api/sharedfile/</code
+									><span class="sig-paren">(</span><em>sharekey</em
+									><span class="sig-paren">)</span
+									><code class="descname">/comments</code
+									><a
+										class="headerlink"
+										href="#get--api-sharedfile-(sharekey)-comments"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns a list of
+										<a class="reference internal" href="#entity-comment"
+											><em class="xref std std-entity">comments</em></a
+										>
+										for the sharedfile with the given sharekey.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>sharekey</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															of the file
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such file with that
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															or no such shake
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															–
+															<p>an object containing:</p>
+															<ul>
+																<li>
+																	<strong>comments</strong> – a list of
+																	<a
+																		class="reference internal"
+																		href="#entity-comment"
+																		><em class="xref std std-entity"
+																			>comments</em
+																		></a
+																	>
+																</li>
+															</ul>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="post">
+								<dt id="post--api-sharedfile-(sharekey)-comments">
+									<code class="descname">POST </code
+									><code class="descname">/api/sharedfile/</code
+									><span class="sig-paren">(</span><em>sharekey</em
+									><span class="sig-paren">)</span
+									><code class="descname">/comments</code
+									><a
+										class="headerlink"
+										href="#post--api-sharedfile-(sharekey)-comments"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Posts a new
+										<a class="reference internal" href="#entity-comment"
+											><em class="xref std std-entity">comment</em></a
+										>
+										on behalf of the authenticated user to the
+										<a class="reference internal" href="#entity-sharedfile"
+											><em class="xref std std-entity">sharedfile</em></a
+										>
+										referenced with the given
+										<a class="reference internal" href="#entity-sharekey"
+											><em class="xref std std-entity">sharekey</em></a
+										>.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>sharekey</strong> – the
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															of the file
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name" colspan="2">Form Parameters:</th>
+											</tr>
+											<tr class="field-even field">
+												<td>&nbsp;</td>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>body</strong> – the text contents of the
+															<a
+																class="reference internal"
+																href="#entity-comment"
+																><em class="xref std std-entity">comment</em></a
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-odd field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such file with that
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															or no such shake
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1"
+																>400 Bad Request</a
+															>
+															– the comment could not be saved due to a missing
+															parameter or failed spam check
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the newly posted
+															<a
+																class="reference internal"
+																href="#entity-comment"
+																><em class="xref std std-entity">comment</em></a
+															>
+															object
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="post">
+								<dt id="post--api-upload">
+									<code class="descname">POST </code
+									><code class="descname">/api/upload</code
+									><a
+										class="headerlink"
+										href="#post--api-upload"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Adds the submitted image to a shake. Images should be
+										provided as
+										<em class="mimetype">multipart/form-data</em> request
+										bodies.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name" colspan="2">Form Parameters:</th>
+											</tr>
+											<tr class="field-odd field">
+												<td>&nbsp;</td>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>file</strong> – the file data of the image
+															to upload
+														</li>
+														<li>
+															<strong>shake_id</strong> – numeric ID of the
+															shake to post to (optional)
+														</li>
+														<li>
+															<strong>title</strong> – text for the image title
+															(optional)
+														</li>
+														<li>
+															<strong>description</strong> – text for the image
+															description (optional)
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.2"
+																>201 Created</a
+															>
+															– the image was posted to the shake, and the
+															response body is an abbreviated
+															<a
+																class="reference internal"
+																href="#entity-sharedfile"
+																><em class="xref std std-entity"
+																	>sharedfile</em
+																></a
+															>
+															representing it, containing only
+															<a
+																class="reference internal"
+																href="#entity-sharekey"
+																><em class="xref std std-entity"
+																	>sharekey</em
+																></a
+															>
+															and name
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.1"
+																>400 Bad Request</a
+															>
+															– the file could not be identified as an image
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-user">
+									<code class="descname">GET </code
+									><code class="descname">/api/user</code
+									><a
+										class="headerlink"
+										href="#get--api-user"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>Returns the authorized user.</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the response is the requested
+															<a class="reference internal" href="#entity-user"
+																><em class="xref std std-entity">user</em></a
+															>
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-user_id-(int-userid)">
+									<code class="descname">GET </code
+									><code class="descname">/api/user_id/</code
+									><span class="sig-paren">(</span
+									><em class="property">int: </em><em>userid</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-user_id-(int-userid)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>
+										Returns information for the user with the given numeric user
+										ID.
+									</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>userid</strong> (<em>int</em>) – the
+															user’s numeric ID
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the response is the requested
+															<a class="reference internal" href="#entity-user"
+																><em class="xref std std-entity">user</em></a
+															>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such user with that ID
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
+							<dl class="get">
+								<dt id="get--api-user_name-(username)">
+									<code class="descname">GET </code
+									><code class="descname">/api/user_name/</code
+									><span class="sig-paren">(</span><em>username</em
+									><span class="sig-paren">)</span
+									><a
+										class="headerlink"
+										href="#get--api-user_name-(username)"
+										title="Permalink to this definition"
+										>¶</a
+									>
+								</dt>
+								<dd>
+									<p>Returns the user with the given username.</p>
+									<table class="docutils field-list" frame="void" rules="none">
+										<colgroup>
+											<col class="field-name" />
+											<col class="field-body" />
+										</colgroup>
+										<tbody valign="top">
+											<tr class="field-odd field">
+												<th class="field-name">Parameters:</th>
+												<td class="field-body">
+													<ul class="first simple">
+														<li>
+															<strong>username</strong> – the user’s username
+														</li>
+													</ul>
+												</td>
+											</tr>
+											<tr class="field-even field">
+												<th class="field-name">Status Codes:</th>
+												<td class="field-body">
+													<ul class="first last simple">
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.1"
+																>200 OK</a
+															>
+															– the response is the requested
+															<a class="reference internal" href="#entity-user"
+																><em class="xref std std-entity">user</em></a
+															>
+														</li>
+														<li>
+															<a
+																class="reference external"
+																href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.4.5"
+																>404 Not Found</a
+															>
+															– no such user with that name
+														</li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</dd>
+							</dl>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
+		<footer class="site-footer">
+			<p>
+				Follow
+				<a
+					href="https://mefi.social/@best_of_mltshp"
+					target="_blank"
+					class="link--primary"
+					>@best_of_mltshp</a
+				>
+				on Mastodon
+			</p>
+			<p>
+				Are you a developer?
+				<a href="/developers" class="link--primary">Check out our API</a>.
+			</p>
+			<p>
+				©
+				<a href="https://mltshp.com/"
+					>MLTSHP, a Massachusetts Mutual Aid Society venture</a
+				>
+				All Rights Reserved<br />
+			</p>
+			<p>
+				&nbsp; <a href="/terms-of-use">Terms of Use</a> &nbsp;
+				<a href="/code-of-conduct">Code of Conduct</a> &nbsp;
+				<a href="mailto:hello@mltshp.com">Contact Us</a>
+			</p>
+			<p>
+				<a href="/user/mltshp">Follow The MLTSHP User!</a>
+			</p>
+		</footer>
 	</div>
 </div>

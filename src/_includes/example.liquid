@@ -1,6 +1,20 @@
-<div class="example">
+<div class="styleguide-example">
+
+{% if iframe %}
+
+{% assign url = html | remove_first: "/src" %}
+<iframe
+	src="{{ url }}"
+	class="styleguide-example__iframe {% unless fixedHeight %}js-resize-iframe{% endunless %}"
+  {% if fixedHeight %}height="{{fixedHeight}}"{% endif %}
+></iframe>
+<a href="{{ url }}" target="_blank">Open in new tab</a>
+
+{% else %}
 
 {{ html | getFileContents }}
+
+{% endif %}
 
 <details>
 <summary>Show code</summary>
@@ -13,11 +27,19 @@
 </div>
 
 <style>
-.example {
+.styleguide-example {
 	margin: 1em 0;
 	padding: 1em;
-	border: 1px solid #ddd;
+	border: 1px solid var(--color-border-default);
 	border-radius: 4px;
-	background-color: #f9f9f9;
+	background-color: var(--color-background-content-secondary);
+}
+
+.styleguide-example__iframe {
+  border: none;
+  display: block;
+  width: 100%;
+	resize: both;
+	overflow: scroll;
 }
 </style>
