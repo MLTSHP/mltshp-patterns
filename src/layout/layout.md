@@ -19,6 +19,13 @@ eleventyNavigation:
 	iframe: true
 %}
 
+## Full-Bleed
+
+{% include 'example',
+	html: '/src/layout/examples/full-bleed.html',
+	iframe: true
+%}
+
 ## Sidebar
 
 {% include 'example',

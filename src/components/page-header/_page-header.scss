@@ -41,6 +41,10 @@
 	}
 }
 
+.page-header {
+	@include page-header;
+}
+
 .account-header {
 	@include page-header;
 }

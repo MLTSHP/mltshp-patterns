@@ -8,40 +8,44 @@ scripts:
 ---
 
 <div class="page">
-	<div class="wrapper">
+	<div class="wrapper wrapper-full-bleed">
 		<header class="site-header">
 			<p>MLTSHP Pattern Library</p>
 		</header>
 
 		<main class="site-main">
-			<div class="content">
-				<div class="header"><h1 @text="title"></h1></div>
-				<div class="body" @raw="content"></div>
-				<nav>
-					<ul>
-						<li>
-							<a href="/" :aria-current="page.url === '/' ? 'page' : null"
-								>Home</a
-							>
-						</li>
-						<li webc:for="item of eleventyNavigation($data.collections.all)">
-							<a
-								:href="item.url"
-								@text="item.title"
-								:aria-current="page.url === item.url ? 'page' : null"
-							></a>
-							<ul webc:if="item.children">
-								<li webc:for="child of item.children">
-									<a
-										:href="child.url"
-										@text="child.title"
-										:aria-current="page.url === child.url ? 'page' : null"
-									></a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
+			<div class="content content-with-sidebar">
+				<div class="sidebar">
+					<nav>
+						<ul>
+							<li>
+								<a href="/" :aria-current="page.url === '/' ? 'page' : null"
+									>Home</a
+								>
+							</li>
+							<li webc:for="item of eleventyNavigation($data.collections.all)">
+								<a
+									:href="item.url"
+									@text="item.title"
+									:aria-current="page.url === item.url ? 'page' : null"
+								></a>
+								<ul webc:if="item.children">
+									<li webc:for="child of item.children">
+										<a
+											:href="child.url"
+											@text="child.title"
+											:aria-current="page.url === child.url ? 'page' : null"
+										></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="body">
+					<h1 @text="title"></h1>
+					<template webc:nokeep @raw="content"></template>
+				</div>
 			</div>
 		</main>
 
