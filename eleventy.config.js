@@ -3,6 +3,7 @@ import { IdAttributePlugin } from '@11ty/eleventy';
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import pluginWebc from '@11ty/eleventy-plugin-webc';
+import { configureCollections } from './helpers/configure-collections.js';
 import { configureFilters } from './helpers/configure-filters.js';
 import { configureGlobalData } from './helpers/configure-global-data.js';
 import { configureStaticFiles } from './helpers/configure-static-files.js';
@@ -13,6 +14,9 @@ export default function (eleventyConfig) {
 
 	// Copy Static Files
 	configureStaticFiles(eleventyConfig);
+
+	// Add Collections
+	configureCollections(eleventyConfig);
 
 	// Add Filters
 	configureFilters(eleventyConfig);

@@ -10,6 +10,13 @@ export default {
 				},
 			},
 		},
+		{
+			name: 'prefixIds',
+			params: {
+				delim: '',
+				prefix: () => crypto.randomUUID(),
+			},
+		},
 		'convertStyleToAttrs',
 		'removeDimensions',
 	],

@@ -28,25 +28,25 @@ scripts:
 						</ul>
 						<ul>
 							<nav-item
-								webc:for="item of eleventyNavigation($data.collections.brand)"
+								webc:for="item of eleventyNavigation($data.collections.sortedBrand)"
 								:item="item"
 							></nav-item>
 						</ul>
 						<ul>
 							<nav-item
-								webc:for="item of eleventyNavigation($data.collections.base)"
+								webc:for="item of eleventyNavigation($data.collections.sortedBase)"
 								:item="item"
 							></nav-item>
 						</ul>
 						<ul>
 							<nav-item
-								webc:for="item of eleventyNavigation($data.collections.components)"
+								webc:for="item of eleventyNavigation($data.collections.sortedComponents)"
 								:item="item"
 							></nav-item>
 						</ul>
 						<ul>
 							<nav-item
-								webc:for="item of eleventyNavigation($data.collections.areas)"
+								webc:for="item of eleventyNavigation($data.collections.sortedAreas)"
 								:item="item"
 							></nav-item>
 						</ul>
