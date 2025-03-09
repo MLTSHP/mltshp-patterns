@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Typography
+tags: base
 eleventyNavigation:
   key: Typography
   parent: Base

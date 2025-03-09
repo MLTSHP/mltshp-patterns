@@ -87,4 +87,6 @@
 // on the html element is not enough to override the default theme.
 .t-light.t-light {
 	@include lightmode;
+	background-color: var(--color-background-page);
+	color: var(--color-page-text);
 }

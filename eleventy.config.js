@@ -1,3 +1,4 @@
+import { EleventyRenderPlugin } from '@11ty/eleventy';
 import { IdAttributePlugin } from '@11ty/eleventy';
 import eleventyNavigationPlugin from '@11ty/eleventy-navigation';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
@@ -20,10 +21,13 @@ export default function (eleventyConfig) {
 	configureGlobalData(eleventyConfig);
 
 	// Add plugins
+	eleventyConfig.addPlugin(EleventyRenderPlugin);
 	eleventyConfig.addPlugin(IdAttributePlugin);
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(syntaxHighlight);
-	eleventyConfig.addPlugin(pluginWebc);
+	eleventyConfig.addPlugin(pluginWebc, {
+		components: 'src/_includes/components/**/*.webc',
+	});
 
 	// Hot-reload when CSS changes and show all hosts in Terminal for mobile review.
 	eleventyConfig.setServerOptions({

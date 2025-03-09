@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Media
+tags: base
 eleventyNavigation:
   key: Media
   parent: Base

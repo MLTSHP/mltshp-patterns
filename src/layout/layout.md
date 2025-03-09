@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Layout
+title: Layouts
+tags: base
 eleventyNavigation:
-  key: Layout
+  key: Layouts
+  parent: Base
 ---
 
 ## Page Layout

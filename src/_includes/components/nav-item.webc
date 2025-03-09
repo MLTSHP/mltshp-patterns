@@ -1,0 +1,16 @@
+<li>
+	<a
+		:href="item.url"
+		@text="item.title"
+		:aria-current="page.url === item.url ? 'page' : null"
+	></a>
+	<ul webc:if="item.children">
+		<li webc:for="child of item.children">
+			<a
+				:href="child.url"
+				@text="child.title"
+				:aria-current="page.url === child.url ? 'page' : null"
+			></a>
+		</li>
+	</ul>
+</li>

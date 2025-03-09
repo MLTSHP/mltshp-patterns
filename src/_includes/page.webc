@@ -15,35 +15,44 @@ scripts:
 
 		<main class="site-main">
 			<div class="content content-with-sidebar">
+				<div class="header page-header">
+					<h2 @text="title"></h2>
+				</div>
 				<div class="sidebar">
 					<nav>
 						<ul>
-							<li>
-								<a href="/" :aria-current="page.url === '/' ? 'page' : null"
-									>Home</a
-								>
-							</li>
-							<li webc:for="item of eleventyNavigation($data.collections.all)">
-								<a
-									:href="item.url"
-									@text="item.title"
-									:aria-current="page.url === item.url ? 'page' : null"
-								></a>
-								<ul webc:if="item.children">
-									<li webc:for="child of item.children">
-										<a
-											:href="child.url"
-											@text="child.title"
-											:aria-current="page.url === child.url ? 'page' : null"
-										></a>
-									</li>
-								</ul>
-							</li>
+							<nav-item
+								webc:for="item of eleventyNavigation($data.collections.docs)"
+								:item="item"
+							></nav-item>
+						</ul>
+						<ul>
+							<nav-item
+								webc:for="item of eleventyNavigation($data.collections.brand)"
+								:item="item"
+							></nav-item>
+						</ul>
+						<ul>
+							<nav-item
+								webc:for="item of eleventyNavigation($data.collections.base)"
+								:item="item"
+							></nav-item>
+						</ul>
+						<ul>
+							<nav-item
+								webc:for="item of eleventyNavigation($data.collections.components)"
+								:item="item"
+							></nav-item>
+						</ul>
+						<ul>
+							<nav-item
+								webc:for="item of eleventyNavigation($data.collections.areas)"
+								:item="item"
+							></nav-item>
 						</ul>
 					</nav>
 				</div>
-				<div class="body">
-					<h1 @text="title"></h1>
+				<div class="body" style="padding: var(--size-spacing-double)">
 					<template webc:nokeep @raw="content"></template>
 				</div>
 			</div>
