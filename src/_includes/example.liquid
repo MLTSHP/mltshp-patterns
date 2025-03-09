@@ -6,9 +6,21 @@
 <iframe
 	src="{{ url }}"
 	class="styleguide-example__iframe {% unless fixedHeight %}js-resize-iframe{% endunless %}"
-  {% if fixedHeight %}height="{{fixedHeight}}"{% endif %}
-></iframe>
+  {% if fixedHeight %}height="{{fixedHeight}}"{% endif %}></iframe>
 <a href="{{ url }}" target="_blank">Open in new tab</a>
+
+<div class="iframe-size-switcher js-iframe-size-switcher" hidden>
+	<fieldset>
+		<legend>Size</legend>
+		<button aria-pressed="false" data-size="xs">XS</button>
+		<button aria-pressed="false" data-size="sm">S</button>
+		<button aria-pressed="false" data-size="md">M</button>
+		<button aria-pressed="false" data-size="lg">L</button>
+		<button aria-pressed="false" data-size="xl">XL</button>
+		<button aria-pressed="false" data-size="xxl">XXL</button>
+		<button aria-pressed="false" data-size="">Reset</button>
+	</fieldset>
+</div>
 
 {% else %}
 
@@ -41,5 +53,9 @@
   width: 100%;
 	resize: both;
 	overflow: scroll;
+}
+
+button[aria-pressed="true"] {
+	font-weight: bold;
 }
 </style>

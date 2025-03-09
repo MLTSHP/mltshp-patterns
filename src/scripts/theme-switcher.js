@@ -5,9 +5,12 @@
  * and saves the selected theme to localStorage.
  *
  * @see https://bnijenhuis.nl/notes/user-friendly-dark-mode/
+ *
+ * NOTE: could this be better?
+ * @see https://chriskirknielsen.com/blog/my-under-engineered-way-to-avoid-a-flash-of-inaccurate-color-theme/
  */
 
-document.querySelector('.themes').removeAttribute('hidden');
+document.querySelector('.js-theme-switcher').removeAttribute('hidden');
 
 // get the selected theme from localStorage and fallback to system
 let theme = localStorage.getItem('theme')
@@ -16,11 +19,11 @@ let theme = localStorage.getItem('theme')
 
 // set selected button
 document
-	.querySelector('.themes button[data-theme="' + theme + '"]')
+	.querySelector('.js-theme-switcher button[data-theme="' + theme + '"]')
 	.setAttribute('aria-pressed', 'true');
 
 // get theme buttons
-let themeButtons = document.querySelectorAll('.themes button');
+let themeButtons = document.querySelectorAll('.js-theme-switcher button');
 
 // handle click on button
 themeButtons.forEach((themeButton) => {

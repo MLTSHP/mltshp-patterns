@@ -46,7 +46,7 @@ scripts:
 		</main>
 
 		<footer class="site-footer">
-			<div class="themes" hidden>
+			<div class="theme-switcher js-theme-switcher" hidden>
 				<fieldset>
 					<legend>Themes</legend>
 					<button aria-pressed="false" data-theme="system">
