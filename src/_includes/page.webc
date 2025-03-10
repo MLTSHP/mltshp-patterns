@@ -24,30 +24,35 @@ scripts:
 							<nav-item
 								webc:for="item of eleventyNavigation($data.collections.docs)"
 								:item="item"
+								:page-url="page.url"
 							></nav-item>
 						</ul>
 						<ul>
 							<nav-item
 								webc:for="item of eleventyNavigation($data.collections.sortedBrand)"
 								:item="item"
+								:page-url="page.url"
 							></nav-item>
 						</ul>
 						<ul>
 							<nav-item
 								webc:for="item of eleventyNavigation($data.collections.sortedBase)"
 								:item="item"
+								:page-url="page.url"
 							></nav-item>
 						</ul>
 						<ul>
 							<nav-item
 								webc:for="item of eleventyNavigation($data.collections.sortedComponents)"
 								:item="item"
+								:page-url="page.url"
 							></nav-item>
 						</ul>
 						<ul>
 							<nav-item
 								webc:for="item of eleventyNavigation($data.collections.sortedAreas)"
 								:item="item"
+								:page-url="page.url"
 							></nav-item>
 						</ul>
 					</nav>
