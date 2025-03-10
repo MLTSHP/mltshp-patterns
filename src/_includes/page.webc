@@ -1,5 +1,5 @@
 ---
-layout: Base
+layout: base
 stylesheets:
   - /styleguide.css
 scripts:
