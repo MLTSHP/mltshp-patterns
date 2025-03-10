@@ -16,6 +16,9 @@ export const configureStaticFiles = (eleventyConfig) => {
 		'src/assets/favicon.svg': 'favicon.svg',
 	});
 
+	// Copy the Netlify redirects file
+	eleventyConfig.addPassthroughCopy('_redirects');
+
 	// Copy the entire scripts directory
 	eleventyConfig.addPassthroughCopy('src/scripts/**/*.js');
 
