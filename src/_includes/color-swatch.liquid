@@ -2,7 +2,7 @@
 	@see https://til.jakelazaroff.com/css/swap-between-black-and-white-text-based-on-background-color/
 {% endcomment %}
 <div class="color-swatch" style="padding: 0.5em; background-color: {{ color.value }}; color: lch(from {{ color.value }} calc((49.44 - l) * infinity) 0 0);">
-	<span class="color-swatch__name">{{ color.name }}</span>
-	<span class="color-swatch__value"><code>--{{ color.value }}</code></span>
-	<span class="color-swatch__comment">{{ color.comment }}</span>
+	<span class="color-swatch__name"><code>--{{ color.name }}:</code></span>
+	<span class="color-swatch__value"><code>{{ color.value }}</code></span>
+	<small class="color-swatch__comment">{{ color.comment }}</small>
 </div>
