@@ -1,12 +1,17 @@
+---
+layout: base
+iframe: true
+---
+
 <div class="page">
 	<div class="wrapper">
 		<div class="content content-narrow">
 			<div class="fun-form fun-form-stacked">
 				<form>
 					<div class="field">
-						<label for="username">Username</label>
+						<label for="username-stacked">Username</label>
 						<div class="field-input">
-							<input id="username" class="input-text" type="text" />
+							<input id="username-stacked" class="input-text" type="text" />
 							<div class="error">
 								<span class="error-text">Here’s what an error looks like!</span>
 							</div>
@@ -17,13 +22,13 @@
 						</div>
 					</div>
 					<div class="field">
-						<label for="about">About You</label>
+						<label for="about-stacked">About You</label>
 						<div class="field-input">
-							<textarea id="about"></textarea>
+							<textarea id="about-stacked"></textarea>
 						</div>
 						<div class="field-help">255 characters max.</div>
 					</div>
-					<div id="create-shake-name-field" class="field">
+					<div class="field field-prefix">
 						<label>URL</label>
 						<span class="name-prefix">https://mltshp.com/</span>
 						<div class="field-input">
@@ -34,9 +39,9 @@
 						</div>
 					</div>
 					<div class="field">
-						<label for="favorite">Flavor</label>
+						<label for="favorite-stacked">Flavor</label>
 						<div class="field-input">
-							<select id="favorite">
+							<select id="favorite-stacked">
 								<option>--</option>
 								<option value="chocolate">Chocolate</option>
 								<option value="strawberry">Strawberry</option>
