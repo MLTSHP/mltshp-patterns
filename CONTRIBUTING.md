@@ -1,8 +1,12 @@
 # Contributing Guide
 
-<p align="center"><img alt="Captain America sitting on a backwards chair" src="https://res.cloudinary.com/cloudfour/image/upload/c_scale,f_auto,q_auto,w_800/v1580506044/america_obfr70.jpg" width="400" /></p>
+<div align="center">
+
+<img alt="Metal dude throwing horns" src="https://mltshp-cdn.com/static/images/invitation-dude.svg" width="400" />
 
 So you want to contribute to MLTSHP… Congratulations! Here's what you'll need to know.
+
+</div>
 
 ## Getting Started
 
