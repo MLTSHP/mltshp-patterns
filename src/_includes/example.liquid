@@ -5,8 +5,9 @@
 {% assign url = html | remove_first: "/src" %}
 <iframe
 	src="{{ url }}"
-	class="styleguide-example__iframe {% unless fixedHeight %}js-resize-iframe{% endunless %}"
-  {% if fixedHeight %}height="{{fixedHeight}}"{% endif %}></iframe>
+	class="styleguide-example__iframe js-resize-iframe"
+  {% if fixedHeight %}height="{{fixedHeight}}"{% endif %}
+	{% if fixedWidth %}style="width: {{fixedWidth}}px"{% endif %}></iframe>
 <a href="{{ url }}" target="_blank">Open in new tab</a>
 
 <div class="iframe-size-switcher js-iframe-size-switcher" hidden>

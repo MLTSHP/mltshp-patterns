@@ -31,22 +31,25 @@ const grow = (el) => {
 	}
 };
 
+const resizeIframe = (frame, direction, size) => {
+	if (frame.height && direction === 'height') return;
+
+	frame.style[direction] = size ? `${size}px` : '';
+
+	// After setting the height, grow until there's no scrollbar
+	if (direction === 'height' && isScrolling(frame)) {
+		grow(frame);
+	}
+
+	// After setting the width, update the height as well
+	if (direction === 'width') {
+		resizeAllIframes('height', frame.contentWindow.document.body.scrollHeight);
+	}
+};
+
 const resizeAllIframes = (direction, size) => {
 	for (const frame of previewFrames) {
-		frame.style[direction] = size ? `${size}px` : '';
-
-		// After setting the height, grow until there's no scrollbar
-		if (direction === 'height' && isScrolling(frame)) {
-			grow(frame);
-		}
-
-		// After setting the width, update the height as well
-		if (direction === 'width') {
-			resizeAllIframes(
-				'height',
-				frame.contentWindow.document.body.scrollHeight,
-			);
-		}
+		resizeIframe(frame, direction, size);
 	}
 };
 
@@ -77,7 +80,11 @@ let sizeButtons = [
 // Set all iframes to the height of the content when they load
 for (const frame of previewFrames) {
 	frame.onload = () => {
-		resizeAllIframes('height', frame.contentWindow.document.body.scrollHeight);
+		resizeIframe(
+			frame,
+			'height',
+			frame.contentWindow.document.body.scrollHeight,
+		);
 	};
 }
 
