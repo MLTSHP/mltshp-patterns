@@ -9,40 +9,20 @@ eleventyNavigation:
 
 ## Brand Colors
 
-{% for token in tokens.color.brand %}
-
-{% include 'color-swatch', color: token[1] %}
-
-{% endfor %}
+{% include 'color-palette', tokens: tokens.color.brand %}
 
 ## Background Colors
 
-{% for token in tokens.color.background %}
-
-{% include 'color-swatch', color: token[1] %}
-
-{% endfor %}
+{% include 'color-palette', tokens: tokens.color.background %}
 
 ## Text Colors
 
-{% for token in tokens.color.text %}
-
-{% include 'color-swatch', color: token[1] %}
-
-{% endfor %}
+{% include 'color-palette', tokens: tokens.color.text %}
 
 ## Status Colors
 
-{% for token in tokens.color.status %}
-
-{% include 'color-swatch', color: token[1] %}
-
-{% endfor %}
+{% include 'color-palette', tokens: tokens.color.status %}
 
 ## Base Colors
 
-{% for token in tokens.color.base %}
-
-{% include 'color-swatch', color: token[1] %}
-
-{% endfor %}
+{% include 'color-palette', tokens: tokens.color.base %}

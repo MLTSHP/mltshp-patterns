@@ -8,6 +8,10 @@
 	box-sizing: border-box;
 }
 
+:root {
+	color-scheme: light dark;
+}
+
 body {
 	background-color: var(--color-background-page);
 	color: var(--color-page-text);

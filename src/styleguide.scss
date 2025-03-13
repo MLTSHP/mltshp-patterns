@@ -2,6 +2,53 @@
 	font-weight: bold;
 }
 
+.color-palette {
+	margin-block: 1em 2em;
+}
+
+.color-swatch {
+	background:
+		linear-gradient(var(--color), var(--color)),
+		repeating-linear-gradient(
+			-45deg,
+			var(--color-border-default),
+			var(--color-border-default) 1px,
+			var(--color-background-content) 1px,
+			var(--color-background-content) 16px
+		);
+	border: 1px solid var(--color-border-default);
+	border-radius: 0.25em;
+	color: lch(from var(--color) calc((49.44 - l) * infinity) 0 0 / 100%);
+	margin: 0.25em;
+	padding: 0.5em;
+}
+
+.styleguide-example {
+	border: 1px solid var(--color-border-default);
+	border-radius: 4px;
+	margin: 1em 0;
+	padding: 1em;
+}
+
+.styleguide-example__preview {
+	display: flow-root; /* clearfix */
+}
+
+.styleguide-example__iframe {
+	border: none;
+	display: block;
+	overflow: scroll;
+	resize: both;
+	width: 100%;
+}
+
+.theme-switcher,
+.iframe-size-switcher {
+	button[aria-pressed='true'] {
+		font-weight: 700;
+	}
+}
+
 /**
  * MIT License
  * Copyright (c) 2018 Sarah Drasner

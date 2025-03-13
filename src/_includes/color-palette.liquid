@@ -1,0 +1,5 @@
+<div class="color-palette">
+{% for token in tokens %}
+{% include 'color-swatch', color: token[1] %}
+{% endfor %}
+</div>
