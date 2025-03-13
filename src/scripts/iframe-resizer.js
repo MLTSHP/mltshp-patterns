@@ -7,10 +7,33 @@ const breakpoints = {
 	xxl: 1440,
 };
 
+// Get all the iframes and size buttons for easy reference.
+let iframesLoaded = 0;
+const previewFrames = [...document.querySelectorAll('.js-resize-iframe')];
+let sizeButtons = [
+	...document.querySelectorAll('.js-iframe-size-switcher button'),
+];
+
+// Reveal all iframe size switchers
+document.querySelectorAll('.js-iframe-size-switcher').forEach((switcher) => {
+	switcher.removeAttribute('hidden');
+});
+
+/**
+ * Check if an element has a vertical scrollbar.
+ *
+ * @param {HTMLElement} el - The element to check
+ * @returns boolean
+ */
 const isScrolling = (el) => {
 	return el.contentWindow.document.body.scrollHeight > el.clientHeight;
 };
 
+/**
+ * Grow an element's height until it stops scrolling.
+ *
+ * @param {HTMLElement} el - The element to grow
+ */
 const grow = (el) => {
 	// Store initial height
 	let previousHeight = el.clientHeight;
@@ -31,6 +54,13 @@ const grow = (el) => {
 	}
 };
 
+/**
+ * Resize a given iframe in a specific direction.
+ *
+ * @param {HTMLIFrameElement} frame - The iframe to resize
+ * @param {string} direction - The direction to resize (width or height)
+ * @param {number} size - The size to set (in pixels)
+ */
 const resizeIframe = (frame, direction, size) => {
 	if (frame.height && direction === 'height') return;
 
@@ -43,16 +73,31 @@ const resizeIframe = (frame, direction, size) => {
 
 	// After setting the width, update the height as well
 	if (direction === 'width') {
-		resizeAllIframes('height', frame.contentWindow.document.body.scrollHeight);
+		resizeIframe(
+			frame,
+			'height',
+			frame.contentWindow.document.body.scrollHeight,
+		);
 	}
 };
 
+/**
+ * Resize all iframes in a specific direction.
+ *
+ * @param {string} direction - The direction to resize (width or height)
+ * @param {number} size - The size to set (in pixels)
+ */
 const resizeAllIframes = (direction, size) => {
 	for (const frame of previewFrames) {
 		resizeIframe(frame, direction, size);
 	}
 };
 
+/**
+ * Set all buttons of the given size to their "pressed" state.
+ *
+ * @param {string} size - The size to activate
+ */
 const activateButtons = (size) => {
 	for (const button of sizeButtons) {
 		// Check if the button's size matches the selected size
@@ -66,38 +111,43 @@ const activateButtons = (size) => {
 	}
 };
 
+/**
+ * When the size changes, resize all iframes and update the buttons.
+ *
+ * @param {string} size - The new size to apply
+ */
 const onSizeChange = (size) => {
 	resizeAllIframes('width', breakpoints[size]);
 	activateButtons(size);
 };
 
-// Get all iframes and size buttons
-const previewFrames = [...document.querySelectorAll('.js-resize-iframe')];
-let sizeButtons = [
-	...document.querySelectorAll('.js-iframe-size-switcher button'),
-];
-
-// Set all iframes to the height of the content when they load
+/**
+ * Add a load event listener to each iframe.
+ * When an iframe is loaded, resize it to its content height.
+ * Once all iframes are loaded, check localStorage for a saved size.
+ */
 for (const frame of previewFrames) {
 	frame.onload = () => {
+		iframesLoaded++;
 		resizeIframe(
 			frame,
 			'height',
 			frame.contentWindow.document.body.scrollHeight,
 		);
+
+		// Get the saved size from localStorage, and apply it
+		if (iframesLoaded === previewFrames.length) {
+			let savedSize = localStorage.getItem('size');
+			if (savedSize) onSizeChange(savedSize);
+		}
 	};
 }
 
-// Reveal all iframe size switchers
-document.querySelectorAll('.js-iframe-size-switcher').forEach((switcher) => {
-	switcher.removeAttribute('hidden');
-});
-
-// Get the saved size from localStorage, and apply it
-let savedSize = localStorage.getItem('size');
-if (savedSize) onSizeChange(savedSize);
-
-// Set a click handler on all size buttons
+/**
+ * Add a click handler on all size buttons.
+ * When a button is clicked, save the selected size to localStorage,
+ * update all iframes and buttons, and scroll the button into view if needed.
+ */
 sizeButtons.forEach((sizeButton) => {
 	sizeButton.addEventListener('click', () => {
 		// get the selected button's size
