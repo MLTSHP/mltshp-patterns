@@ -10,7 +10,26 @@ scripts:
 <div class="page">
 	<div class="wrapper wrapper-full-bleed">
 		<header class="site-header">
-			<p>MLTSHP Pattern Library</p>
+			<div class="site-branding">
+				<a href="/">
+					<img
+						class="site-branding--logo"
+						src="/assets/logo/logo.svg"
+						alt="MLTSHP"
+					/>
+				</a>
+			</div>
+			<nav class="site-nav">
+				<ul class="site-nav--list">
+					<li class="site-nav--item site-nav--upload">
+						<a
+							href="https://github.com/mltshp/mltshp-patterns/"
+							class="btn btn-primary btn-shadow"
+							>GitHub</a
+						>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 		<main class="site-main">
