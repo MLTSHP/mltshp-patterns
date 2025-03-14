@@ -17,7 +17,6 @@ $bookmark-shadow-offset: 4px;
 	font-weight: var(--number-font-weight-bold);
 	margin-top: $bookmark-offset * -1;
 	position: relative;
-	z-index: 2;
 
 	&::before,
 	&::after {
