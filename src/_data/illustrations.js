@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 
 const source = 'src/assets/illustrations';
+const urlPrefix = 'assets/illustrations';
 const illustrations = fs
 	.readdirSync(source)
 	.filter((illustration) => {
@@ -10,6 +11,7 @@ const illustrations = fs
 	.map((illustration) => {
 		return {
 			path: `/${source}/${illustration}`,
+			url: `/${urlPrefix}/${illustration}`,
 			name: illustration,
 		};
 	});

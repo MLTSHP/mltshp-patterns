@@ -4,5 +4,5 @@
 <div class="color-swatch" style="--color: {{ color.value }};">
 	<span class="color-swatch__name"><code>--{{ color.name }}:</code></span>
 	<span class="color-swatch__value"><code>{{ color.value }}</code></span>
-	<small class="color-swatch__comment">{{ color.comment }}</small>
+	{% if color.comment %}<small class="color-swatch__comment">{{ color.comment }}</small>{% endif %}
 </div>
