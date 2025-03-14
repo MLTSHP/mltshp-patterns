@@ -5,6 +5,7 @@ stylesheets:
 scripts:
   - /scripts/theme-switcher.js
   - /scripts/iframe-resizer.js
+  - /scripts/site-navigation.js
 ---
 
 <div class="page">
@@ -19,13 +20,49 @@ scripts:
 					/>
 				</a>
 			</div>
-			<nav class="site-nav">
+			<nav class="site-nav js-site-nav">
+				<button
+					type="button"
+					class="site-nav--toggle btn btn-warning btn-pastel btn-icon"
+				>
+					☰
+				</button>
 				<ul class="site-nav--list">
-					<li class="site-nav--item site-nav--upload">
+					<li class="site-nav--item">
+						<div class="choose-a-shake js-theme-switcher" hidden>
+							<button
+								type="button"
+								class="choose-a-shake--toggle btn btn-success btn-pastel"
+							>
+								Theme
+								<span class="caret"></span>
+							</button>
+							<div class="choose-a-shake--dropdown">
+								<fieldset class="choose-a-shake__fieldset">
+									<legend class="sr-only">Themes</legend>
+									<button aria-pressed="false" data-theme="light">
+										Light mode
+									</button>
+									<button aria-pressed="false" data-theme="dark">
+										Dark mode
+									</button>
+									<button aria-pressed="false" data-theme="system">
+										Match system
+									</button>
+								</fieldset>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav--item">
 						<a
 							href="https://github.com/mltshp/mltshp-patterns/"
-							class="btn btn-primary btn-shadow"
+							class="btn btn-success btn-pastel"
 							>GitHub</a
+						>
+					</li>
+					<li class="site-nav--item site-nav--download">
+						<a download href="/main.min.css" class="btn btn-primary btn-shadow"
+							>Download CSS</a
 						>
 					</li>
 				</ul>
@@ -82,17 +119,6 @@ scripts:
 			</div>
 		</main>
 
-		<footer class="site-footer">
-			<div class="theme-switcher js-theme-switcher" hidden>
-				<fieldset>
-					<legend>Themes</legend>
-					<button aria-pressed="false" data-theme="system">
-						System preference
-					</button>
-					<button aria-pressed="false" data-theme="light">Light mode</button>
-					<button aria-pressed="false" data-theme="dark">Dark mode</button>
-				</fieldset>
-			</div>
-		</footer>
+		<footer class="site-footer"></footer>
 	</div>
 </div>

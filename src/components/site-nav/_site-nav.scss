@@ -64,6 +64,7 @@
 }
 
 // stretch the last item in the nav
+.site-nav--download,
 .site-nav--upload,
 .site-nav--signup {
 	@media screen and (min-width: tokens.$size-breakpoint-lg) {

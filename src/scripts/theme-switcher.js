@@ -10,20 +10,25 @@
  * @see https://chriskirknielsen.com/blog/my-under-engineered-way-to-avoid-a-flash-of-inaccurate-color-theme/
  */
 
-document.querySelector('.js-theme-switcher').removeAttribute('hidden');
+const themeSwitcher = document.querySelector('.js-theme-switcher');
+themeSwitcher.removeAttribute('hidden');
 
 // get the selected theme from localStorage and fallback to system
-let theme = localStorage.getItem('theme')
-	? localStorage.getItem('theme')
-	: 'system';
+let theme = localStorage.getItem('theme') ?? 'system';
 
-// set selected button
-document
-	.querySelector('.js-theme-switcher button[data-theme="' + theme + '"]')
+// set button for matching theme to pressed
+themeSwitcher
+	.querySelector('button[data-theme="' + theme + '"]')
 	.setAttribute('aria-pressed', 'true');
 
+// add event listener to toggle the theme menu open or closed
+const toggleButton = themeSwitcher.querySelector('.choose-a-shake--toggle');
+toggleButton.addEventListener('click', () => {
+	themeSwitcher.classList.toggle('is-expanded');
+});
+
 // get theme buttons
-let themeButtons = document.querySelectorAll('.js-theme-switcher button');
+let themeButtons = themeSwitcher.querySelectorAll('button[data-theme]');
 
 // handle click on button
 themeButtons.forEach((themeButton) => {
