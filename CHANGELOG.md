@@ -66,3 +66,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [2.0.0] - 2020-09-29
 
 - Initial release
+- There was no v1 in this repo or package, because that was the MLKSHK styles.
