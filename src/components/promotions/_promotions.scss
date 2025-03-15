@@ -1,0 +1,72 @@
+@use '../../compiled/scss/tokens';
+@use '../buttons/buttons';
+
+.promotions {
+	list-style: none;
+	margin: var(--size-spacing-default) 0;
+	padding: 0;
+
+	li {
+		float: left;
+		margin-bottom: var(--size-spacing-default);
+		margin-right: var(--size-spacing-default);
+		overflow: visible;
+		position: relative;
+
+		&:hover,
+		&:focus {
+			.promotion-avatar {
+				border-color: var(--color-brand-primary);
+			}
+
+			.promotion-name {
+				display: block;
+			}
+		}
+	}
+
+	.promotion-avatar {
+		border: 4px solid transparent;
+		border-radius: var(--size-border-radius-large);
+		overflow: hidden;
+		// stylelint-disable-next-line plugin/no-low-performance-animation-properties
+		transition: all 0.75s ease 0s;
+
+		@media screen and (prefers-reduced-motion: reduce) {
+			transition: none;
+		}
+
+		img {
+			display: block;
+			height: var(--size-avatar-large);
+			width: var(--size-avatar-large);
+		}
+	}
+
+	.promotion-name {
+		@include buttons.button;
+		@include buttons.button-primary;
+		@include buttons.button-shadow;
+		bottom: -3.5em;
+		display: none;
+		font-size: 0.875rem;
+		left: 50%;
+		position: absolute;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+}
+
+//
+// Promo Sidebar Block
+//
+.promo-block {
+	margin: var(--size-spacing-double) auto;
+	max-width: 100%;
+	text-align: center;
+	width: 285px; // width of the promo image
+
+	@media screen and (max-width: tokens.$size-breakpoint-xs) {
+		display: none;
+	}
+}

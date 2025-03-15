@@ -1,0 +1,24 @@
+.error-uh-oh {
+	background-image: svg-load('illustrations/tools-uh-oh.svg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 282px 133px;
+	font-size: 2.25rem;
+	font-weight: var(--number-font-weight-bold);
+	padding-top: 160px;
+	text-align: center;
+}
+
+.error-p {
+	color: var(--color-page-text-secondary);
+	text-align: center;
+
+	&.error-p-long {
+		text-align: left;
+	}
+
+	.content-narrow & {
+		font-size: 1.125rem;
+		line-height: 1.4;
+	}
+}

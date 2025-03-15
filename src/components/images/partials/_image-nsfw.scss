@@ -1,0 +1,12 @@
+.nsfw-cover {
+	background-color: var(--color-base-gray-800);
+	color: var(--color-text-light-emphasis);
+	font-size: 0.875rem;
+	font-weight: 600;
+	padding: var(--size-spacing-quadruple) 0;
+	text-align: center;
+
+	p {
+		margin: var(--size-spacing-double) 0;
+	}
+}

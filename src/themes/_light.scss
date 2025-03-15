@@ -79,10 +79,18 @@
 }
 
 :root {
-  @include lightmode;
+	@include lightmode;
+}
+
+:root.t-light {
+	color-scheme: light;
 }
 
 // note this only really works on the `html` or `body` elements.
-.t-light {
-  @include lightmode;
+// Duplicate selector to increase specificity because otherwise a class
+// on the html element is not enough to override the default theme.
+.t-light.t-light {
+	@include lightmode;
+	background-color: var(--color-background-page);
+	color: var(--color-page-text);
 }

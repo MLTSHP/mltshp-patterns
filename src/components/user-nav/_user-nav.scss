@@ -1,0 +1,30 @@
+.user-nav {
+	background-color: var(--color-background-content);
+	border-bottom-left-radius: 1em;
+	font-size: 0.9rem;
+	padding: 0.75em 1.5em;
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	.site-header.docked & {
+		display: none;
+	}
+}
+
+.user-nav--list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user-nav--item + .user-nav--item {
+	margin-left: 1.5em;
+}
+
+.user-nav--link {
+	font-weight: var(--number-font-weight-bold);
+	text-decoration: none;
+	white-space: nowrap;
+}

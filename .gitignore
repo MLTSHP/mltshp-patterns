@@ -1,11 +1,6 @@
 # Build directories
 dist
-dist-ssr
-storybook-static
 .temp
-
-# Auto-generated design token files
-src/compiled
 
 # Dependencies
 node_modules

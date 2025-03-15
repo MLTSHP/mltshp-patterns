@@ -1,0 +1,11 @@
+@use 'styleguide/color-palette';
+@use 'styleguide/example';
+@use 'styleguide/image-grid';
+@use 'styleguide/nav-group';
+@use 'styleguide/prism';
+
+.iframe-size-switcher {
+	button[aria-pressed='true'] {
+		font-weight: 700;
+	}
+}

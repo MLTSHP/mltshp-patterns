@@ -1,0 +1,206 @@
+@use '../../compiled/scss/tokens';
+@use '../../base/links';
+
+//
+// Styles for the /tools Picker
+//
+.tools-page {
+	background-color: var(--color-background-page);
+
+	a {
+		color: var(--color-text-link-primary);
+		text-decoration-color: var(--color-text-link-primary-underline);
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: var(--color-text-link-primary-hover);
+			text-decoration-color: var(--color-text-link-primary-underline-hover);
+		}
+	}
+
+	.header {
+		color: var(--color-page-text-secondary);
+		font-size: 0.75rem;
+		height: 55px;
+		margin: 0 var(--size-spacing-double);
+		padding-top: var(--size-spacing-half);
+		position: relative;
+		text-align: right;
+
+		a {
+			@include links.link-primary;
+			@include links.link-emphasized;
+		}
+
+		img {
+			height: 49px;
+			left: 0;
+			position: absolute;
+			top: 3px;
+			width: 100px;
+		}
+	}
+
+	.content {
+		background: var(--color-background-content);
+		border-radius: var(--size-border-radius-large);
+		padding: var(--size-spacing-double);
+	}
+
+	// wrapper for floated elements, so they don't drop on resize or other factors
+	.content-inner {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+
+		@media screen and (min-width: tokens.$size-breakpoint-lg) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		> * {
+			min-width: 0; // https://github.com/philipwalton/flexbugs/issues/39
+
+			@media screen and (min-width: tokens.$size-breakpoint-lg) {
+				flex-basis: calc(50% - 10px);
+			}
+		}
+
+		> * + * {
+			margin-top: 20px;
+
+			@media screen and (min-width: tokens.$size-breakpoint-lg) {
+				margin-top: 0;
+			}
+		}
+
+		.full-width {
+			@media screen and (min-width: tokens.$size-breakpoint-lg) {
+				flex: 1;
+			}
+		}
+	}
+
+	//
+	// Override fun-form for tools area
+	//
+	.tools-fun-form {
+		margin-top: 0;
+
+		.tools-field-title .input-text {
+			font-weight: var(--number-font-weight-bold);
+		}
+
+		.field-textarea + .field-textarea {
+			margin-top: 0;
+		}
+
+		.field-textarea {
+			height: 0;
+			overflow: hidden;
+
+			&.field-textarea--selected {
+				height: auto;
+			}
+		}
+
+		.textarea-navigation {
+			ul {
+				display: flex;
+				list-style: none;
+				margin: 0;
+				padding: var(--size-spacing-half-again);
+				padding-bottom: 0;
+
+				@media screen and (min-width: tokens.$size-breakpoint-md) {
+					padding-left: var(--size-spacing-double);
+				}
+			}
+
+			li + li {
+				@media screen and (min-width: tokens.$size-breakpoint-md) {
+					margin-left: var(--size-spacing-half-again);
+				}
+			}
+
+			.tab {
+				border-top-left-radius: var(--size-border-radius-default);
+				border-top-right-radius: var(--size-border-radius-default);
+				cursor: pointer;
+				display: block;
+				font-size: 0.875rem;
+				padding: var(--size-spacing-default);
+			}
+
+			.tab:hover,
+			.tab:focus {
+				background-color: var(--color-form-bg);
+			}
+
+			.selected .tab {
+				background-color: var(--color-border-form);
+				font-weight: bold;
+			}
+		}
+	}
+
+	//
+	// Success Page
+	//
+	.tools-saved-it {
+		background: svg-load('illustrations/tools-saved-it.svg') 0 0 no-repeat;
+		background-size: contain;
+		font-size: 1.75rem;
+		padding-top: calc((133 / 320) * 100% + var(--size-spacing-double));
+
+		@media screen and (min-width: tokens.$size-breakpoint-lg) {
+			background-size: 320px 133px;
+			padding-top: 160px;
+		}
+	}
+
+	//
+	// Sign-in page
+	//
+	.content-sign-in {
+		margin-top: var(--size-spacing-double);
+
+		h1 {
+			color: var(--color-brand-secondary);
+			font-size: 1.5rem;
+			padding: var(--size-spacing-triple);
+		}
+	}
+
+	.tools-signin-logo {
+		margin-top: var(--size-spacing-default);
+		text-align: center;
+	}
+
+	.sign-in-fun-form {
+		margin-top: 0;
+		padding-bottom: var(--size-spacing-double);
+
+		@media screen and (min-width: tokens.$size-breakpoint-lg) {
+			label {
+				flex-basis: 120px;
+			}
+
+			.field-submit {
+				padding-left: 130px;
+			}
+		}
+	}
+
+	//
+	// Unverified Email page,
+	// Over Upload Limit page
+	//
+	.email-unverified h2,
+	.over-upload-limit h2 {
+		color: var(--color-brand-primary);
+		font-size: 1.5rem;
+		text-align: center;
+	}
+}
