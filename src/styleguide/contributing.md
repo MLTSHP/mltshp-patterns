@@ -2,6 +2,7 @@
 layout: page
 title: Contributing
 tags: docs
+permalink: /contributing/
 eleventyNavigation:
   key: Contributing
   parent: Docs

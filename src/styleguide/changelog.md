@@ -2,6 +2,7 @@
 layout: page
 title: Changelog
 tags: docs
+permalink: /changelog/
 eleventyNavigation:
   key: Changelog
   parent: Docs

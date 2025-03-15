@@ -2,6 +2,7 @@
 layout: page
 title: MLTSHP Pattern Library
 tags: docs
+permalink: /index.html
 eleventyNavigation:
   key: Introduction
   parent: Docs
