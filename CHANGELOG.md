@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Removed Storybook, replaced with a simpler homebrew Eleventy site for
+  documentation. (#1337)
+  - Breaking change: Removed "components", "areas", and "layouts" from the
+    "legacy" group. This was intended for a redesign that never came, and
+    is no longer helpful. For users who directly consume `main.css`, there
+    will be no impact, but if you were including the Sass partials directly,
+    you may need to update your code.
+
 ## [3.0.0] - 2025-02-28
 
 - Compact Peekaboo Header (#1331)
