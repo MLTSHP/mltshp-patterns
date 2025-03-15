@@ -11,8 +11,6 @@ Used on permalink pages, as well as the Conversations area to render the comment
 
 ## Comment
 
-<!-- TODO: use github-style alerts -->
-
 Note this is different from the
 [Image Comments Tab](/components/images#comments-open)
 that's shown in the list view for an image.
