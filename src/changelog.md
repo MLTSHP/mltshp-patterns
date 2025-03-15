@@ -4,6 +4,7 @@ title: Changelog
 tags: docs
 eleventyNavigation:
   key: Changelog
+  parent: Docs
   order: 2
 ---
 

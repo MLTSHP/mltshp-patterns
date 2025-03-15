@@ -1,3 +1,6 @@
+@use 'init/mixins';
+@use 'base/links';
+
 .sidebar nav [aria-current='page'] {
 	font-weight: bold;
 }
@@ -100,6 +103,56 @@
 .iframe-size-switcher {
 	button[aria-pressed='true'] {
 		font-weight: 700;
+	}
+}
+
+//
+// Other Shakes
+//
+.styleguide-nav-group,
+.styleguide-nav-group__subgroup {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.styleguide-nav-group__item {
+	margin-bottom: var(--size-spacing-double);
+}
+
+.styleguide-nav-group__title {
+	@include mixins.breakword;
+	color: var(--color-page-text);
+	display: block;
+	font-size: 0.875rem;
+	font-weight: var(--number-font-weight-bold);
+	padding-bottom: var(--size-spacing-half);
+	padding-left: var(--size-spacing-half-again);
+	text-decoration: none;
+}
+
+.styleguide-nav-group__subgroup {
+	background-color: var(--color-bg-success-pastel);
+	border-radius: var(--size-border-radius-large);
+	padding: var(--size-spacing-default);
+
+	a {
+		@include links.link-primary;
+		@include links.link-emphasized;
+		@include mixins.breakword;
+		border-radius: var(--size-border-radius-default);
+		display: block;
+		font-size: 0.875rem;
+		padding: var(--size-spacing-half);
+		/* stylelint-disable-next-line plugin/no-low-performance-animation-properties */
+		transition: background-color var(--time-speed-immediate) ease-in-out;
+
+		&:hover,
+		&:focus,
+		&[aria-current='page'] {
+			background: var(--color-background-content);
+			text-decoration: none;
+		}
 	}
 }
 
