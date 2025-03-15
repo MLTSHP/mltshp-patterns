@@ -80,7 +80,7 @@ scripts:
 						:page-url="page.url"
 					></styleguide-nav-group>
 				</div>
-				<div class="body" style="padding: var(--size-spacing-double)">
+				<div class="body styleguide-body">
 					<template webc:nokeep @raw="content"></template>
 				</div>
 			</div>
