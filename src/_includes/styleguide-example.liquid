@@ -1,13 +1,29 @@
+{% assign url = html | remove_first: "/src" %}
+
 <div class="styleguide-example">
 
 {% if iframe %}
 
-{% assign url = html | remove_first: "/src" %}
 <iframe
 	src="{{ url }}"
 	class="styleguide-example__iframe js-resize-iframe"
-  {% if fixedHeight %}height="{{fixedHeight}}"{% endif %}
-	{% if fixedWidth %}style="width: {{fixedWidth}}px"{% endif %}></iframe>
+	{%- if fixedHeight %}height="{{fixedHeight}}"{% endif -%}
+	{%- if fixedWidth %}style="width: {{fixedWidth}}px"{% endif -%}></iframe>
+
+{% else %}
+
+<div
+	class="styleguide-example__preview"
+	{% if fixedHeight %}style="height: {{fixedHeight}}px"{% endif %}>
+	{{- html | getFileContents -}}
+</div>
+
+{% endif %}
+
+<div class="styleguide-example__controls">
+
+{% if iframe %}
+
 <a href="{{ url }}" target="_blank">Open in new tab</a>
 
 <div class="iframe-size-switcher js-iframe-size-switcher" hidden>
@@ -23,16 +39,6 @@
 	</fieldset>
 </div>
 
-{% else %}
-
-<div
-	class="styleguide-example__preview"
-	{% if fixedHeight %}style="height: {{fixedHeight}}px"{% endif %}>
-
-{{ html | getFileContents }}
-
-</div>
-
 {% endif %}
 
 <details class="styleguide-example__code">
@@ -43,4 +49,7 @@
 ```
 
 </details>
-</div>
+
+</div><!-- /.styleguide-example__controls -->
+
+</div><!-- /.styleguide-example -->
