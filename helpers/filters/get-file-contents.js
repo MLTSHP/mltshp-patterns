@@ -11,11 +11,14 @@ import { readFileSync } from 'fs';
  * @returns string File contents
  */
 export default function getFileContents(filePath) {
+	const YAMLFrontMatter = /---\s*[\s\S]*?\s*---\s*/;
+
 	const relativeFilePath = `.` + filePath;
 	const fileContents = readFileSync(relativeFilePath, (err, data) => {
 		if (err) throw err;
 		return data;
 	});
 
-	return fileContents.toString('utf8');
+	// Return the markup without the YAML front matter
+	return fileContents.toString('utf8').replace(YAMLFrontMatter, '');
 }
