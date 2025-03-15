@@ -12,6 +12,6 @@ These patterns are shared on the Followers and Following pages.
 ## Followers Page
 
 {%
-	include 'example', html: '/src/areas/relationships/examples/followers.html',
+	include 'styleguide-example', html: '/src/areas/relationships/examples/followers.html',
 	iframe: true
 %}

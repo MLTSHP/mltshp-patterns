@@ -11,10 +11,10 @@ eleventyNavigation:
 
 Appears on the "Find More Shakes" page.
 
-{% include 'example', html: '/src/components/user-follow/examples/user-follow.html' %}
+{% include 'styleguide-example', html: '/src/components/user-follow/examples/user-follow.html' %}
 
 ## Extended
 
 Appears in the sidebar on User Shakes.
 
-{% include 'example', html: '/src/components/user-follow/examples/user-follow-extended.html' %}
+{% include 'styleguide-example', html: '/src/components/user-follow/examples/user-follow-extended.html' %}

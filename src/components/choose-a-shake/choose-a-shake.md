@@ -11,8 +11,8 @@ Appears in the [Site Navigation](/components/site-navigation).
 
 ## Collapsed
 
-{% include 'example', html: '/src/components/choose-a-shake/examples/collapsed.html' %}
+{% include 'styleguide-example', html: '/src/components/choose-a-shake/examples/collapsed.html' %}
 
 ## Expanded
 
-{% include 'example', html: '/src/components/choose-a-shake/examples/expanded.html', fixedHeight: 460 %}
+{% include 'styleguide-example', html: '/src/components/choose-a-shake/examples/expanded.html', fixedHeight: 460 %}

@@ -12,7 +12,7 @@ eleventyNavigation:
 Made for the Create Account Page.
 
 {%
-	include 'example',
+	include 'styleguide-example',
 	html: '/src/components/promotions/examples/promotions.html',
 	fixedHeight: 175
 %}
@@ -21,4 +21,4 @@ Made for the Create Account Page.
 
 Appears in the sidebar, hidden on small screens.
 
-{% include 'example', html: '/src/components/promotions/examples/promo.html' %}
+{% include 'styleguide-example', html: '/src/components/promotions/examples/promo.html' %}

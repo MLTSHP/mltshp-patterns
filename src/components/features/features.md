@@ -11,20 +11,20 @@ Used on the logged-out version of the homepage to promote site features.
 
 ## Default
 
-{% include 'example', html: '/src/components/features/examples/feature-default.html' %}
+{% include 'styleguide-example', html: '/src/components/features/examples/feature-default.html' %}
 
 ## Flipped
 
-{% include 'example', html: '/src/components/features/examples/feature-flipped.html' %}
+{% include 'styleguide-example', html: '/src/components/features/examples/feature-flipped.html' %}
 
 ## Primary
 
-{% include 'example', html: '/src/components/features/examples/feature-primary.html' %}
+{% include 'styleguide-example', html: '/src/components/features/examples/feature-primary.html' %}
 
 ## Finale
 
-{% include 'example', html: '/src/components/features/examples/feature-finale.html' %}
+{% include 'styleguide-example', html: '/src/components/features/examples/feature-finale.html' %}
 
 ## FeatureList
 
-{% include 'example', html: '/src/components/features/examples/feature-list.html' %}
+{% include 'styleguide-example', html: '/src/components/features/examples/feature-list.html' %}

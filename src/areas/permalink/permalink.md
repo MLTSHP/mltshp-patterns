@@ -12,13 +12,13 @@ Composition example of a Permalink page
 ## Permalink
 
 {%
-	include 'example', html: '/src/areas/permalink/examples/permalink.html',
+	include 'styleguide-example', html: '/src/areas/permalink/examples/permalink.html',
 	iframe: true
 %}
 
 ## Lengthy Content
 
 {%
-	include 'example', html: '/src/areas/permalink/examples/lengthy.html',
+	include 'styleguide-example', html: '/src/areas/permalink/examples/lengthy.html',
 	iframe: true
 %}

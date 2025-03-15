@@ -9,4 +9,4 @@ eleventyNavigation:
 
 ## Shake Members
 
-{% include 'example', html: '/src/components/shake-members/examples/members.html' %}
+{% include 'styleguide-example', html: '/src/components/shake-members/examples/members.html' %}

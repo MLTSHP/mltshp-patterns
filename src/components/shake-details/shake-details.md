@@ -9,16 +9,16 @@ eleventyNavigation:
 
 ## Default
 
-{% include 'example', html: '/src/components/shake-details/examples/default.html' %}
+{% include 'styleguide-example', html: '/src/components/shake-details/examples/default.html' %}
 
 ## Editable
 
-{% include 'example', html: '/src/components/shake-details/examples/editable.html' %}
+{% include 'styleguide-example', html: '/src/components/shake-details/examples/editable.html' %}
 
 ## Editing
 
-{% include 'example', html: '/src/components/shake-details/examples/editing.html' %}
+{% include 'styleguide-example', html: '/src/components/shake-details/examples/editing.html' %}
 
 ## Empty
 
-{% include 'example', html: '/src/components/shake-details/examples/empty.html' %}
+{% include 'styleguide-example', html: '/src/components/shake-details/examples/empty.html' %}

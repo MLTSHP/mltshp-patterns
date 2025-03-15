@@ -11,4 +11,4 @@ Appears on the homepage if the user has no shared files to view.
 
 ## Alert
 
-{% include 'example', html: '/src/components/new-user-dashboard/examples/dashboard-new-user.html' %}
+{% include 'styleguide-example', html: '/src/components/new-user-dashboard/examples/dashboard-new-user.html' %}

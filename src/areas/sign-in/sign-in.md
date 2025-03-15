@@ -11,8 +11,8 @@ Special patterns and chunks of style for the Sign In page.
 
 ## Sign In
 
-{% include 'example', html: '/src/areas/sign-in/examples/sign-in.html' %}
+{% include 'styleguide-example', html: '/src/areas/sign-in/examples/sign-in.html' %}
 
 ## Forgot Password
 
-{% include 'example', html: '/src/areas/sign-in/examples/forgot-password.html' %}
+{% include 'styleguide-example', html: '/src/areas/sign-in/examples/forgot-password.html' %}

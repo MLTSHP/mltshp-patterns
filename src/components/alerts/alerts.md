@@ -9,20 +9,20 @@ eleventyNavigation:
 
 ## Alert
 
-{% include 'example', html: '/src/components/alerts/examples/alert.html' %}
+{% include 'styleguide-example', html: '/src/components/alerts/examples/alert.html' %}
 
 ## Marquee
 
-{% include 'example', html: '/src/components/alerts/examples/marquee.html' %}
+{% include 'styleguide-example', html: '/src/components/alerts/examples/marquee.html' %}
 
 ## Danger
 
-{% include 'example', html: '/src/components/alerts/examples/danger.html' %}
+{% include 'styleguide-example', html: '/src/components/alerts/examples/danger.html' %}
 
 ## Warning
 
-{% include 'example', html: '/src/components/alerts/examples/warning.html' %}
+{% include 'styleguide-example', html: '/src/components/alerts/examples/warning.html' %}
 
 ## Reminder
 
-{% include 'example', html: '/src/components/alerts/examples/reminder.html' %}
+{% include 'styleguide-example', html: '/src/components/alerts/examples/reminder.html' %}

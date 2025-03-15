@@ -12,6 +12,6 @@ Special patterns and chunks of style for the FAQ page.
 ## FAQ
 
 {%
-	include 'example', html: '/src/areas/faq/examples/faq.html',
+	include 'styleguide-example', html: '/src/areas/faq/examples/faq.html',
 	iframe: true
 %}

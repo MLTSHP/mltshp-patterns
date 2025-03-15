@@ -22,56 +22,56 @@ Most of the examples here are shown in List View for ease of comparison.
 
 ## Permalink
 
-{% include 'example', html: '/src/components/images/examples/permalink.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/permalink.html' %}
 
 ## Alt Text
 
-{% include 'example', html: '/src/components/images/examples/alt-text.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/alt-text.html' %}
 
 ## List View
 
-{% include 'example', html: '/src/components/images/examples/list.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/list.html' %}
 
 ## Lengthy Content
 
-{% include 'example', html: '/src/components/images/examples/lengthy.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/lengthy.html' %}
 
 ## Saves Open
 
-{% include 'example', html: '/src/components/images/examples/saves.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/saves.html' %}
 
 ## Likes Open
 
-{% include 'example', html: '/src/components/images/examples/likes.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/likes.html' %}
 
 ## Comments Open
 
-{% include 'example', html: '/src/components/images/examples/comments.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/comments.html' %}
 
 ## Commenting
 
-{% include 'example', html: '/src/components/images/examples/commenting.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/commenting.html' %}
 
 ## Save Shake
 
-{% include 'example', html: '/src/components/images/examples/list-save-shake.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/list-save-shake.html' %}
 
 ## Liked & Saved
 
-{% include 'example', html: '/src/components/images/examples/list-liked-saved.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/list-liked-saved.html' %}
 
 ## Repost
 
-{% include 'example', html: '/src/components/images/examples/repost.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/repost.html' %}
 
 ## Editable
 
-{% include 'example', html: '/src/components/images/examples/editable.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/editable.html' %}
 
 ## Editing
 
-{% include 'example', html: '/src/components/images/examples/editing.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/editing.html' %}
 
 ## NSFW
 
-{% include 'example', html: '/src/components/images/examples/nsfw.html' %}
+{% include 'styleguide-example', html: '/src/components/images/examples/nsfw.html' %}

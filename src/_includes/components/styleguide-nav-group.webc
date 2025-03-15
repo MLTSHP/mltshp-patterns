@@ -7,7 +7,10 @@
 					class="styleguide-nav-group__subitem"
 					webc:for="child of item.children"
 				>
-					<nav-item :item="child" :page-url="pageUrl"></nav-item>
+					<styleguide-nav-item
+						:item="child"
+						:page-url="pageUrl"
+					></styleguide-nav-item>
 				</li>
 			</ul>
 		</li>

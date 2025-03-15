@@ -12,7 +12,7 @@ Overlay that can appear on any page.
 ## Default
 
 {%
-	include 'example', html: '/src/components/new-post-panel/examples/new-post-panel.html',
+	include 'styleguide-example', html: '/src/components/new-post-panel/examples/new-post-panel.html',
 	iframe: true,
 	fixedHeight: 320
 %}
@@ -20,7 +20,7 @@ Overlay that can appear on any page.
 ## With Shakes
 
 {%
-	include 'example', html: '/src/components/new-post-panel/examples/with-shakes.html',
+	include 'styleguide-example', html: '/src/components/new-post-panel/examples/with-shakes.html',
 	iframe: true,
 	fixedHeight: 320
 %}
@@ -28,7 +28,7 @@ Overlay that can appear on any page.
 ## With Shakes Open
 
 {%
-	include 'example', html: '/src/components/new-post-panel/examples/with-shakes-open.html',
+	include 'styleguide-example', html: '/src/components/new-post-panel/examples/with-shakes-open.html',
 	iframe: true,
 	fixedHeight: 420
 %}
@@ -36,7 +36,7 @@ Overlay that can appear on any page.
 ## Save Video
 
 {%
-	include 'example', html: '/src/components/new-post-panel/examples/save-video.html',
+	include 'styleguide-example', html: '/src/components/new-post-panel/examples/save-video.html',
 	iframe: true,
 	fixedHeight: 320
 %}
@@ -44,7 +44,7 @@ Overlay that can appear on any page.
 ## Confirm Video
 
 {%
-	include 'example', html: '/src/components/new-post-panel/examples/save-video-confirmation.html',
+	include 'styleguide-example', html: '/src/components/new-post-panel/examples/save-video-confirmation.html',
 	iframe: true,
 	fixedHeight: 620
 %}
@@ -52,7 +52,7 @@ Overlay that can appear on any page.
 ## Email Unconfirmed
 
 {%
-	include 'example', html: '/src/components/new-post-panel/examples/email-unconfirmed.html',
+	include 'styleguide-example', html: '/src/components/new-post-panel/examples/email-unconfirmed.html',
 	iframe: true,
 	fixedHeight: 320
 %}
@@ -63,7 +63,7 @@ Overlay that can appear on any page.
 since the "New Post" button is hidden if you're over the upload limit.
 
 {%
-	include 'example', html: '/src/components/new-post-panel/examples/over-upload-limit.html',
+	include 'styleguide-example', html: '/src/components/new-post-panel/examples/over-upload-limit.html',
 	iframe: true,
 		fixedHeight: 500
 %}

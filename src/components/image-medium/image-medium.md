@@ -11,4 +11,4 @@ Appears in the admin area.
 
 ## Image Medium
 
-{% include 'example', html: '/src/components/image-medium/examples/image-medium.html' %}
+{% include 'styleguide-example', html: '/src/components/image-medium/examples/image-medium.html' %}

@@ -12,7 +12,7 @@ Appears in the [Site Header](/components/site-header).
 ## Logged In
 
 {%
-	include 'example', html: '/src/components/user-nav/examples/user-nav-logged-in.html',
+	include 'styleguide-example', html: '/src/components/user-nav/examples/user-nav-logged-in.html',
 	iframe: true,
 	fixedHeight: 80
 %}
@@ -20,7 +20,7 @@ Appears in the [Site Header](/components/site-header).
 ## Logged Out
 
 {%
-	include 'example', html: '/src/components/user-nav/examples/user-nav-logged-out.html',
+	include 'styleguide-example', html: '/src/components/user-nav/examples/user-nav-logged-out.html',
 	iframe: true,
 	fixedHeight: 80
 %}
@@ -28,7 +28,7 @@ Appears in the [Site Header](/components/site-header).
 ## Confirm Your Email
 
 {%
-	include 'example', html: '/src/components/user-nav/examples/confirm-email.html',
+	include 'styleguide-example', html: '/src/components/user-nav/examples/confirm-email.html',
 	iframe: true,
 	fixedHeight: 80
 %}
@@ -36,7 +36,7 @@ Appears in the [Site Header](/components/site-header).
 ## Maintenance Mode
 
 {%
-	include 'example', html: '/src/components/user-nav/examples/maintenance.html',
+	include 'styleguide-example', html: '/src/components/user-nav/examples/maintenance.html',
 	iframe: true,
 	fixedHeight: 80
 %}

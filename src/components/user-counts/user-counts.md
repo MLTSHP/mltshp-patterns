@@ -11,7 +11,7 @@ eleventyNavigation:
 
 Appears in the sidebar on User Shakes.
 
-{% include 'example', html: '/src/components/user-counts/examples/user-counts.html' %}
+{% include 'styleguide-example', html: '/src/components/user-counts/examples/user-counts.html' %}
 
 ## Narrow
 
@@ -19,4 +19,4 @@ Though fully responsive, this component is typically displayed in the sidebar
 with a constrained width. Care should be taken, since very large numbers can
 appear in this component.
 
-{% include 'example', html: '/src/components/user-counts/examples/user-counts-narrow.html' %}
+{% include 'styleguide-example', html: '/src/components/user-counts/examples/user-counts-narrow.html' %}

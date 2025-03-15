@@ -11,10 +11,10 @@ eleventyNavigation:
 
 Used on Conversations, Followers, and User Shakes.
 
-{% include 'example', html: '/src/components/pagination/examples/default.html' %}
+{% include 'styleguide-example', html: '/src/components/pagination/examples/default.html' %}
 
 ## Linear
 
 Used on all other shakes and search results.
 
-{% include 'example', html: '/src/components/pagination/examples/linear.html' %}
+{% include 'styleguide-example', html: '/src/components/pagination/examples/linear.html' %}

@@ -9,35 +9,35 @@ eleventyNavigation:
 
 ## Page Layout
 
-{% include 'example',
+{% include 'styleguide-example',
 	html: '/src/layout/examples/page.html',
 	iframe: true
 %}
 
 ## Narrow
 
-{% include 'example',
+{% include 'styleguide-example',
 	html: '/src/layout/examples/narrow.html',
 	iframe: true
 %}
 
 ## Full-Bleed
 
-{% include 'example',
+{% include 'styleguide-example',
 	html: '/src/layout/examples/full-bleed.html',
 	iframe: true
 %}
 
 ## Sidebar
 
-{% include 'example',
+{% include 'styleguide-example',
 	html: '/src/layout/examples/sidebar.html',
 	iframe: true
 %}
 
 ## Sidebar Reversed
 
-{% include 'example',
+{% include 'styleguide-example',
 	html: '/src/layout/examples/sidebar-reversed.html',
 	iframe: true
 %}

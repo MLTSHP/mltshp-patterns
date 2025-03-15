@@ -75,10 +75,10 @@ scripts:
 					<h2 @text="title"></h2>
 				</div>
 				<div class="sidebar">
-					<nav-group
+					<styleguide-nav-group
 						:items="eleventyNavigation($data.collections.all)"
 						:page-url="page.url"
-					></nav-group>
+					></styleguide-nav-group>
 				</div>
 				<div class="body" style="padding: var(--size-spacing-double)">
 					<template webc:nokeep @raw="content"></template>

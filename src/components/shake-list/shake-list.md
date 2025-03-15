@@ -11,4 +11,4 @@ Appears in the admin area.
 
 ## Shake List
 
-{% include 'example', html: '/src/components/shake-list/examples/shake-list.html' %}
+{% include 'styleguide-example', html: '/src/components/shake-list/examples/shake-list.html' %}

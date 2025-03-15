@@ -13,4 +13,4 @@ Appears in the admin area. Contains the
 
 ## New Users
 
-{% include 'example', html: '/src/components/new-users/examples/new-users.html' %}
+{% include 'styleguide-example', html: '/src/components/new-users/examples/new-users.html' %}

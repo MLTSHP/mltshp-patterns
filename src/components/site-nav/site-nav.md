@@ -15,7 +15,7 @@ Note that the Site Navigation contains the
 ## Logged In
 
 {%
-	include 'example', html: '/src/components/site-nav/examples/logged-in.html',
+	include 'styleguide-example', html: '/src/components/site-nav/examples/logged-in.html',
 	iframe: true,
 	fixedHeight: 125
 %}
@@ -26,7 +26,7 @@ On small screens, the navigation is collapsed into a hamburger menu.
 This is what it looks like expanded. (view on small screens)
 
 {%
-	include 'example', html: '/src/components/site-nav/examples/expanded.html',
+	include 'styleguide-example', html: '/src/components/site-nav/examples/expanded.html',
 	iframe: true,
 	fixedHeight: 300,
 	fixedWidth: 320
@@ -35,7 +35,7 @@ This is what it looks like expanded. (view on small screens)
 ## Logged Out
 
 {%
-	include 'example', html: '/src/components/site-nav/examples/logged-out.html',
+	include 'styleguide-example', html: '/src/components/site-nav/examples/logged-out.html',
 	iframe: true,
 	fixedHeight: 125
 %}
@@ -46,7 +46,7 @@ A "call out" is added when a logged-out user is on any page other than the
 homepage or the sign up page.
 
 {%
-	include 'example', html: '/src/components/site-nav/examples/call-out.html',
+	include 'styleguide-example', html: '/src/components/site-nav/examples/call-out.html',
 	iframe: true,
 	fixedHeight: 125
 %}

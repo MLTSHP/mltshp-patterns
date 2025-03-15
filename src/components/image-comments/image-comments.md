@@ -17,8 +17,8 @@ Note this is different from the
 [Image Comments Tab](/components/images#comments-open)
 that's shown in the list view for an image.
 
-{% include 'example', html: '/src/components/image-comments/examples/image-comment.html' %}
+{% include 'styleguide-example', html: '/src/components/image-comments/examples/image-comment.html' %}
 
 ## Comment Form
 
-{% include 'example', html: '/src/components/image-comments/examples/image-comment-form.html' %}
+{% include 'styleguide-example', html: '/src/components/image-comments/examples/image-comment-form.html' %}

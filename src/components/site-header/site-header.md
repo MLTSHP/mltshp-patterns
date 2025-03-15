@@ -16,20 +16,20 @@ components. See those components for variations and states.
 ## Logged Out
 
 {%
-	include 'example', html: '/src/components/site-header/examples/logged-out.html',
+	include 'styleguide-example', html: '/src/components/site-header/examples/logged-out.html',
 	iframe: true
 %}
 
 ## Logged In
 
 {%
-	include 'example', html: '/src/components/site-header/examples/logged-in.html',
+	include 'styleguide-example', html: '/src/components/site-header/examples/logged-in.html',
 	iframe: true
 %}
 
 ## Logged In with Content
 
 {%
-	include 'example', html: '/src/components/site-header/examples/logged-in-with-content.html',
+	include 'styleguide-example', html: '/src/components/site-header/examples/logged-in-with-content.html',
 	iframe: true
 %}

@@ -14,6 +14,6 @@ This page is a JS-driven carousel.
 ## Twitter Tutorial
 
 {%
-	include 'example', html: '/src/areas/twitter-how-to/examples/twitter-how-to.html',
+	include 'styleguide-example', html: '/src/areas/twitter-how-to/examples/twitter-how-to.html',
 	iframe: true
 %}

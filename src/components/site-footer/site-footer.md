@@ -9,4 +9,4 @@ eleventyNavigation:
 
 ## Site Footer
 
-{% include 'example', html: '/src/components/site-footer/examples/site-footer.html' %}
+{% include 'styleguide-example', html: '/src/components/site-footer/examples/site-footer.html' %}

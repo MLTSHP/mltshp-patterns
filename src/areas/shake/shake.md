@@ -12,6 +12,6 @@ Composition example of a Shake page
 ## Shake
 
 {%
-	include 'example', html: '/src/areas/shake/examples/shake.html',
+	include 'styleguide-example', html: '/src/areas/shake/examples/shake.html',
 	iframe: true
 %}

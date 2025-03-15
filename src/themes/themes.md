@@ -17,10 +17,10 @@ a whole new pattern and modifier (instead of just a themed variation).
 
 ## Light Mode
 
-{% include 'example', html: '/src/themes/examples/light.html' %}
+{% include 'styleguide-example', html: '/src/themes/examples/light.html' %}
 
 ## Dark Mode
 
 You can test dark mode by enabling dark mode on your computer, or with the theme switcher in the header.
 
-{% include 'example', html: '/src/themes/examples/dark.html' %}
+{% include 'styleguide-example', html: '/src/themes/examples/dark.html' %}

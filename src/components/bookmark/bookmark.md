@@ -14,11 +14,11 @@ These samples have some padding adding to keep it visible.
 
 ## Default
 
-{% include 'example', html: '/src/components/bookmark/examples/where-you-were.html' %}
+{% include 'styleguide-example', html: '/src/components/bookmark/examples/where-you-were.html' %}
 
 The bookmark can include an optional jump link to let the user return
 to the original position.
 
 ## Jump Link
 
-{% include 'example', html: '/src/components/bookmark/examples/you-started-here.html' %}
+{% include 'styleguide-example', html: '/src/components/bookmark/examples/you-started-here.html' %}
