@@ -24,25 +24,27 @@
 
 {% if iframe %}
 
-<a href="{{ url }}" target="_blank">Open in new tab</a>
+<div class="styleguide-example__link">
+	<a href="{{ url }}" target="_blank" class="btn btn-small btn-secondary btn-pastel">Open in new tab</a>
+</div>
 
-<div class="iframe-size-switcher js-iframe-size-switcher" hidden>
+<div class="styleguide-example__iframe-size-switcher js-iframe-size-switcher" hidden>
 	<fieldset>
-		<legend>Size</legend>
-		<button aria-pressed="false" data-size="xs">XS</button>
-		<button aria-pressed="false" data-size="sm">S</button>
-		<button aria-pressed="false" data-size="md">M</button>
-		<button aria-pressed="false" data-size="lg">L</button>
-		<button aria-pressed="false" data-size="xl">XL</button>
-		<button aria-pressed="false" data-size="xxl">XXL</button>
-		<button aria-pressed="false" data-size="">Reset</button>
+		<legend class="sr-only">Size</legend>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="xs">XS</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="sm">S</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="md">M</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="lg">L</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="xl">XL</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="xxl">XXL</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="">Reset</button>
 	</fieldset>
 </div>
 
 {% endif %}
 
 <details class="styleguide-example__code">
-<summary class="btn btn-small btn-secondary">Show code</summary>
+<summary class="styleguide-example__code-toggle btn btn-small btn-secondary btn-pastel">Show code</summary>
 
 ```html
 {{ html | getFileContents }}

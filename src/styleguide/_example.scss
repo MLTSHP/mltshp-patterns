@@ -1,20 +1,40 @@
 .styleguide-example {
-	border: 1px solid var(--color-border-default);
-	border-radius: 4px;
 	margin: 1em 0;
-	padding: 1em;
 }
 
 .styleguide-example__preview {
+	border: 1px solid var(--color-border-default);
+	border-radius: 4px;
 	display: flow-root; /* clearfix */
+	padding: 1em;
 }
 
 .styleguide-example__iframe {
-	border: none;
+	border: 1px solid var(--color-border-default);
 	display: block;
 	overflow: scroll;
 	resize: both;
 	width: 100%;
+}
+
+.styleguide-example__controls {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.5em;
+}
+
+.styleguide-example__iframe-size-switcher {
+	fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.btn[aria-pressed='true'] {
+		background-color: var(--color-background-button-primary);
+		color: var(--color-text-light-emphasis);
+		font-weight: 700;
+	}
 }
 
 .styleguide-example__code pre {
