@@ -5,6 +5,7 @@ stylesheets:
 scripts:
   - /scripts/theme-switcher.js
   - /scripts/iframe-resizer.js
+  - /scripts/code-toggle.js
   - /scripts/site-navigation.js
 ---
 

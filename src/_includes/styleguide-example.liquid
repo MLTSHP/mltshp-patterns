@@ -43,14 +43,17 @@
 
 {% endif %}
 
-<details class="styleguide-example__code">
-<summary class="styleguide-example__code-toggle btn btn-small btn-secondary btn-pastel">Show code</summary>
+<div class="styleguide-example__code-toggle js-code-toggle" hidden>
+	<button class="btn btn-small btn-secondary btn-pastel">Show code</button>
+</div>
+
+<div class="styleguide-example__code">
 
 ```html
 {{ html | getFileContents }}
 ```
 
-</details>
+</div>
 
 </div><!-- /.styleguide-example__controls -->
 

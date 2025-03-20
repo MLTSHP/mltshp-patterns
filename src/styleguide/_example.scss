@@ -1,4 +1,5 @@
 .styleguide-example {
+	container-type: inline-size;
 	margin: 1em 0;
 }
 
@@ -18,16 +19,30 @@
 }
 
 .styleguide-example__controls {
-	display: flex;
-	justify-content: space-between;
+	display: grid;
+	gap: 0.25em;
+	grid-template-areas: 'switcher switcher' 'link toggle' 'code code';
+	grid-template-columns: 1fr 1fr;
 	margin-top: 0.5em;
+
+	@container (min-width: 525px) {
+		grid-template-areas: 'link switcher toggle' 'code code code';
+		grid-template-columns: auto 1fr auto;
+	}
+}
+
+.styleguide-example__link {
+	grid-area: link;
 }
 
 .styleguide-example__iframe-size-switcher {
+	grid-area: switcher;
+
 	fieldset {
 		border: none;
 		margin: 0;
 		padding: 0;
+		text-align: center;
 	}
 
 	.btn[aria-pressed='true'] {
@@ -37,6 +52,17 @@
 	}
 }
 
-.styleguide-example__code pre {
-	max-height: 20em;
+.styleguide-example__code-toggle {
+	grid-area: toggle;
+	text-align: right;
+}
+
+.styleguide-example__code {
+	grid-area: code;
+
+	pre {
+		border-radius: 4px;
+		margin: 0;
+		max-height: 20em;
+	}
 }
