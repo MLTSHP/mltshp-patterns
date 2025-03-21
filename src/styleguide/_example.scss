@@ -1,0 +1,68 @@
+.styleguide-example {
+	container-type: inline-size;
+	margin: 1em 0;
+}
+
+.styleguide-example__preview {
+	border: 1px solid var(--color-border-default);
+	border-radius: 4px;
+	display: flow-root; /* clearfix */
+	padding: 1em;
+}
+
+.styleguide-example__iframe {
+	border: 1px solid var(--color-border-default);
+	display: block;
+	overflow: scroll;
+	resize: both;
+	width: 100%;
+}
+
+.styleguide-example__controls {
+	display: grid;
+	gap: 0.25em;
+	grid-template-areas: 'switcher switcher' 'link toggle' 'code code';
+	grid-template-columns: 1fr 1fr;
+	margin-top: 0.5em;
+
+	@container (min-width: 525px) {
+		grid-template-areas: 'link switcher toggle' 'code code code';
+		grid-template-columns: auto 1fr auto;
+	}
+}
+
+.styleguide-example__link {
+	grid-area: link;
+}
+
+.styleguide-example__iframe-size-switcher {
+	grid-area: switcher;
+
+	fieldset {
+		border: none;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	.btn[aria-pressed='true'] {
+		background-color: var(--color-background-button-primary);
+		color: var(--color-text-light-emphasis);
+		font-weight: 700;
+	}
+}
+
+.styleguide-example__code-toggle {
+	grid-area: toggle;
+	text-align: right;
+}
+
+.styleguide-example__code {
+	grid-area: code;
+
+	pre {
+		border-radius: 4px;
+		margin: 0;
+		max-height: 20em;
+	}
+}

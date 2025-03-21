@@ -1,0 +1,60 @@
+{% assign url = html | remove_first: "/src" %}
+
+<div class="styleguide-example">
+
+{% if iframe %}
+
+<iframe
+	src="{{ url }}"
+	class="styleguide-example__iframe js-resize-iframe"
+	{%- if fixedHeight %}height="{{fixedHeight}}"{% endif -%}
+	{%- if fixedWidth %}style="width: {{fixedWidth}}px"{% endif -%}></iframe>
+
+{% else %}
+
+<div
+	class="styleguide-example__preview"
+	{% if fixedHeight %}style="height: {{fixedHeight}}px"{% endif %}>
+	{{- html | getFileContents -}}
+</div>
+
+{% endif %}
+
+<div class="styleguide-example__controls">
+
+{% if iframe %}
+
+<div class="styleguide-example__link">
+	<a href="{{ url }}" target="_blank" class="btn btn-small btn-secondary btn-pastel">Open in new tab</a>
+</div>
+
+<div class="styleguide-example__iframe-size-switcher js-iframe-size-switcher" hidden>
+	<fieldset>
+		<legend class="sr-only">Size</legend>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="xs">XS</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="sm">S</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="md">M</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="lg">L</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="xl">XL</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="xxl">XXL</button>
+		<button aria-pressed="false" class="btn btn-small btn-secondary btn-pastel" data-size="">Reset</button>
+	</fieldset>
+</div>
+
+{% endif %}
+
+<div class="styleguide-example__code-toggle js-code-toggle" hidden>
+	<button class="btn btn-small btn-secondary btn-pastel">Show code</button>
+</div>
+
+<div class="styleguide-example__code">
+
+```html
+{{ html | getFileContents }}
+```
+
+</div>
+
+</div><!-- /.styleguide-example__controls -->
+
+</div><!-- /.styleguide-example -->

@@ -1,0 +1,18 @@
+<nav>
+	<ul class="styleguide-nav-group">
+		<li class="styleguide-nav-group__item" webc:for="item of items">
+			<span class="styleguide-nav-group__title" @text="item.title"></span>
+			<ul class="styleguide-nav-group__subgroup" webc:if="item.children">
+				<li
+					class="styleguide-nav-group__subitem"
+					webc:for="child of item.children"
+				>
+					<styleguide-nav-item
+						:item="child"
+						:page-url="pageUrl"
+					></styleguide-nav-item>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</nav>

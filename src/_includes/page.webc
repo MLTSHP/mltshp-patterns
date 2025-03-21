@@ -1,0 +1,92 @@
+---
+layout: base
+stylesheets:
+  - /styleguide.css
+scripts:
+  - /scripts/theme-switcher.js
+  - /scripts/iframe-resizer.js
+  - /scripts/code-toggle.js
+  - /scripts/site-navigation.js
+---
+
+<div class="page">
+	<div class="wrapper wrapper-full-bleed">
+		<header class="site-header">
+			<div class="site-branding">
+				<a href="/">
+					<img
+						class="site-branding--logo"
+						src="/assets/logo/logo.svg"
+						alt="MLTSHP"
+					/>
+				</a>
+			</div>
+			<nav class="site-nav js-site-nav">
+				<button
+					type="button"
+					class="site-nav--toggle btn btn-warning btn-pastel btn-icon"
+				>
+					☰
+				</button>
+				<ul class="site-nav--list">
+					<li class="site-nav--item">
+						<div class="choose-a-shake js-theme-switcher" hidden>
+							<button
+								type="button"
+								class="choose-a-shake--toggle btn btn-success btn-pastel"
+							>
+								Theme
+								<span class="caret"></span>
+							</button>
+							<div class="choose-a-shake--dropdown">
+								<fieldset class="choose-a-shake__fieldset">
+									<legend class="sr-only">Themes</legend>
+									<button aria-pressed="false" data-theme="light">
+										Light mode
+									</button>
+									<button aria-pressed="false" data-theme="dark">
+										Dark mode
+									</button>
+									<button aria-pressed="false" data-theme="system">
+										Match system
+									</button>
+								</fieldset>
+							</div>
+						</div>
+					</li>
+					<li class="site-nav--item">
+						<a
+							href="https://github.com/mltshp/mltshp-patterns/"
+							class="btn btn-success btn-pastel"
+							>GitHub</a
+						>
+					</li>
+					<li class="site-nav--item site-nav--download">
+						<a download href="/main.min.css" class="btn btn-primary btn-shadow"
+							>Download CSS</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="site-main">
+			<div class="content content-with-sidebar">
+				<div class="header page-header">
+					<h2 @text="title"></h2>
+				</div>
+				<div class="sidebar">
+					<styleguide-nav-group
+						:items="eleventyNavigation($data.collections.all)"
+						:page-url="page.url"
+					></styleguide-nav-group>
+				</div>
+				<div class="body styleguide-body">
+					<template webc:nokeep @raw="content"></template>
+				</div>
+			</div>
+		</main>
+
+		<footer class="site-footer"></footer>
+	</div>
+</div>

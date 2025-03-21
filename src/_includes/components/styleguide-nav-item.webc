@@ -1,0 +1,6 @@
+<a
+	class="styleguide-nav-item"
+	:href="item.url"
+	@text="item.title"
+	:aria-current="pageUrl === item.url ? 'page' : null"
+></a>

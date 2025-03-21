@@ -1,0 +1,30 @@
+---
+stylesheets:
+  - /main.css
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title @text="title"></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script webc:keep src="/scripts/theme-class.js"></script>
+		<link
+			webc:for="sheet of stylesheets"
+			webc:keep
+			:href="sheet"
+			rel="stylesheet"
+		/>
+		<template webc:if="scripts" webc:nokeep>
+			<script
+				webc:for="script of scripts"
+				webc:keep
+				type="module"
+				:src="script"
+			></script>
+		</template>
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+	</head>
+	<body @raw="content"></body>
+</html>

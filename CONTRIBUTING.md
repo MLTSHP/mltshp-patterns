@@ -1,8 +1,12 @@
 # Contributing Guide
 
-<p align="center"><img alt="Captain America sitting on a backwards chair" src="https://res.cloudinary.com/cloudfour/image/upload/c_scale,f_auto,q_auto,w_800/v1580506044/america_obfr70.jpg" width="400" /></p>
+<div align="center">
+
+<img alt="Metal dude throwing horns" src="https://mltshp-cdn.com/static/images/invitation-dude.svg" width="400" />
 
 So you want to contribute to MLTSHP… Congratulations! Here's what you'll need to know.
+
+</div>
 
 ## Getting Started
 
@@ -18,21 +22,9 @@ Any changes you make should automatically be reflected in the preview site.
 
 The output of this project is CSS patterns and components. We generate that CSS using Sass and PostCSS.
 
-The CSS depends on JSON tokens, which are converted into CSS custom properties and Sass variables using a tool called [Style Dictionary](https://amzn.github.io/style-dictionary/).
-
-And finally, we use [Storybook](https://storybook.js.org/) to preview, test, and develop our CSS components in isolation without worrying about app specific dependencies and requirements.
-
 #### What PostCSS Plugins do We Use?
 
 Our PostCSS setup is minimal. We're running [postcss-inline-svg](https://www.npmjs.com/package/postcss-inline-svg) to convert SVGs in the CSS into inline code, and we're running [cssnano](https://cssnano.co/) to minify the final output.
-
-#### How do Design Tokens Work?
-
-[Design tokens](https://amzn.github.io/style-dictionary/#/tokens) are stored in JSON files in the `src/tokens/` directory. The build process will automatically translate the tokens to the formats we're consuming, such as CSS custom properties.
-
-#### How do Storybook Stories Work?
-
-Need help with how Storybook works? Check out the [Storybook Docs](https://storybook.js.org/docs/react/get-started/why-storybook).
 
 #### Linting
 

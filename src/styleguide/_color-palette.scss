@@ -1,0 +1,27 @@
+.styleguide-color-palette {
+	margin-block: 1em 2em;
+}
+
+/**
+ * 1. @see https://til.jakelazaroff.com/css/swap-between-black-and-white-text-based-on-background-color/
+ */
+.styleguide-color-swatch {
+	background:
+		linear-gradient(var(--color), var(--color)),
+		repeating-linear-gradient(
+			-45deg,
+			var(--color-border-default),
+			var(--color-border-default) 1px,
+			var(--color-background-content) 1px,
+			var(--color-background-content) 16px
+		);
+	border: 1px solid var(--color-border-default);
+	border-radius: 0.25em;
+	color: lch(from var(--color) calc((49.44 - l) * infinity) 0 0 / 100%); // 1
+	margin: 0.25em;
+	padding: 0.5em;
+}
+
+.styleguide-color-swatch__comment {
+	opacity: 0.8;
+}

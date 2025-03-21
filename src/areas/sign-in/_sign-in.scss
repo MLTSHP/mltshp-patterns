@@ -1,0 +1,14 @@
+// stylelint-disable-next-line selector-max-id
+#sign-in-form .field-submit {
+	text-align: right;
+}
+
+.forgot-password-field {
+	padding-top: var(--size-spacing-double);
+	text-align: right;
+}
+
+.password-manager-icon {
+	float: left;
+	padding-right: var(--size-spacing-double);
+}

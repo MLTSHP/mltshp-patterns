@@ -1,6 +1,5 @@
 {
-  "extends": ["config:base", ":automergeMinor"],
-  "dependencyDashboard": true,
-  "commitMessageSuffix": "[skip netlify]",
-  "rangeStrategy": "pin"
+	"extends": ["config:recommended", ":automergeMinor", ":pinVersions"],
+	"minimumReleaseAge": "3 days",
+	"commitMessageSuffix": "[skip netlify]"
 }

@@ -1,0 +1,5 @@
+<div class="styleguide-image-grid{% if hasIcons %} styleguide-image-grid--icons{% endif %}">
+	{%- for image in images %}
+		{%- include 'styleguide-image', image: image %}
+	{%- endfor %}
+</div>

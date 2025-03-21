@@ -10,25 +10,25 @@
 @use '../compiled/css/tokens' as props; // import tokens as CSS custom properties
 
 :root {
-  --color-text-link-underline: #{rgba(tokens.$color-text-link, 0.33)};
-  --color-text-link-underline-hover: #{rgba(
-      tokens.$color-text-link-hover,
-      0.33
-    )};
-  --color-text-link-primary-underline: #{rgba(
-      tokens.$color-text-link-primary,
-      0.33
-    )};
-  --color-text-link-primary-underline-hover: #{rgba(
-      tokens.$color-text-link-primary-hover,
-      0.33
-    )};
-  --color-text-link-danger-underline: #{rgba(
-      tokens.$color-text-link-danger,
-      0.33
-    )};
-  --color-text-link-danger-underline-hover: #{rgba(
-      tokens.$color-text-link-danger-hover,
-      0.33
-    )};
+	--color-text-link-underline: #{rgba(tokens.$color-text-link, 0.33)};
+	--color-text-link-underline-hover: #{rgba(
+			tokens.$color-text-link-hover,
+			0.33
+		)};
+	--color-text-link-primary-underline: #{rgba(
+			tokens.$color-text-link-primary,
+			0.33
+		)};
+	--color-text-link-primary-underline-hover: #{rgba(
+			tokens.$color-text-link-primary-hover,
+			0.33
+		)};
+	--color-text-link-danger-underline: #{rgba(
+			tokens.$color-text-link-danger,
+			0.33
+		)};
+	--color-text-link-danger-underline-hover: #{rgba(
+			tokens.$color-text-link-danger-hover,
+			0.33
+		)};
 }

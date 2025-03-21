@@ -1,0 +1,9 @@
+@use 'styleguide/color-palette';
+@use 'styleguide/example';
+@use 'styleguide/image-grid';
+@use 'styleguide/nav-group';
+@use 'styleguide/prism';
+
+.styleguide-body {
+	padding: var(--size-spacing-double);
+}
