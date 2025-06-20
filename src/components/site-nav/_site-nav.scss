@@ -87,6 +87,7 @@
 	max-width: 18em;
 	padding-right: var(--size-spacing-default);
 	padding-top: 3px;
+	text-wrap: auto;
 
 	@media screen and (min-width: tokens.$size-breakpoint-lg) {
 		display: block;
