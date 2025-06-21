@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [4.0.0] - 2025-06-21
 
 - Removed Storybook, replaced with a simpler homebrew Eleventy site for
   documentation. (#1337)
@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     is no longer helpful. For users who directly consume `main.css`, there
     will be no impact, but if you were including the Sass partials directly,
     you may need to update your code.
+- Bugfix: Callout text in Site Nav should wrap (#1333)
 
 ## [3.0.0] - 2025-02-28
 
