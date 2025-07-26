@@ -10,3 +10,48 @@
 @use 'partials/image-interactions';
 @use 'partials/image-footer';
 @use 'partials/image-comments';
+
+// Styles used by both image-content and image-comments to hide reply-to and
+// delete controls on comments by default. These controls become visible when
+// the user hovers over the parent comment, or the parent comment or the
+// reply-to or delete controls get focus (say, through the tab order).
+.image-content,
+.image-comments {
+	.comment {
+		// Styles common to both controls. Set opacity to 0 to hide in place by
+		// default, and add a little easing to fade in and out less jarringly.
+		.reply-to,
+		.delete {
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			opacity: 0;
+			padding-left: var(--size-spacing-half-again);
+			transition: opacity 0.2s ease;
+		}
+
+		// Control specific styles.
+		.reply-to {
+			background-image: svg-load('icons/reply.svg');
+			background-size: 12px 11px;
+		}
+
+		.delete {
+			background-image: svg-load('icons/delete-comment.svg');
+			background-size: 13px 13px;
+		}
+
+		// Make visible if containing comment receives focus ...
+		&:hover .reply-to,
+		&:hover .delete,
+		&:focus .reply-to,
+		&:focus .delete {
+			opacity: 1;
+		}
+
+		// ... or if control itself receives focus via tabbing.
+		.reply-to:focus,
+		.delete:focus {
+			opacity: 1;
+		}
+	}
+}
