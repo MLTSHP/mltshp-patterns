@@ -25,8 +25,8 @@
 			background-position: 0 0;
 			background-repeat: no-repeat;
 			opacity: 0;
-			transition: opacity 0.2s ease;
 			padding-left: var(--size-spacing-half-again);
+			transition: opacity 0.2s ease;
 		}
 
 		// Control specific styles.
@@ -34,6 +34,7 @@
 			background-image: svg-load('icons/reply.svg');
 			background-size: 12px 11px;
 		}
+
 		.delete {
 			background-image: svg-load('icons/delete-comment.svg');
 			background-size: 13px 13px;
