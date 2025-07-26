@@ -14,9 +14,11 @@ We use the "[fork and pull](https://docs.github.com/en/pull-requests/collaborati
 
 1. Fork [this repo](https://github.com/MLTSHP/mltshp-patterns/).
 1. Run `npm ci` to install dependencies.
-1. Run `npm run storybook` to start a local instance of Storybook, our preview site.
+1. Run `npm start` to start a local instance of our preview site.
 
 Any changes you make should automatically be reflected in the preview site.
+
+To test your changes in a your [local mltshp development ennvironment](https://github.com/MLTSHP/mltshp?tab=readme-ov-file#development-environment), run `npm run build` in mltshp-patterns and copy the resultant CSS files from `dist` to the `static/css` folder in your DE.
 
 ## About
 
