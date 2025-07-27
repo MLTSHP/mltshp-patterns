@@ -54,6 +54,13 @@
 				margin-left: 0.825em;
 			}
 
+			// Override margin applied to all meta children above. Otherwise the form
+			// can affect position of the delete control.
+			.delete-form {
+				margin: 0;
+				width: 0;
+			}
+
 			.username,
 			.user-name {
 				font-size: 0.875rem;
@@ -64,44 +71,12 @@
 				margin-left: 0.25em;
 			}
 
-			.reply-to {
-				background-image: svg-load('icons/reply.svg');
-				background-position: 0 0;
-				background-repeat: no-repeat;
-				background-size: 12px 11px;
-				display: none;
-				padding-left: var(--size-spacing-half-again);
-			}
-
-			.delete {
-				background-image: svg-load('icons/delete-comment.svg');
-				background-position: 0 0;
-				background-repeat: no-repeat;
-				background-size: 13px 13px;
-				display: none;
-				padding-left: var(--size-spacing-half-again);
-			}
-
 			.created-at {
 				color: var(--color-page-text-secondary);
 			}
-		}
 
-		&:hover,
-		&:focus {
-			.meta {
-				.reply-to {
-					display: inline;
-				}
-
-				form {
-					display: none;
-				}
-
-				.delete {
-					display: inline;
-				}
-			}
+			// reply-to and delete controls defined further up the tree to enable
+			// reuse.
 		}
 	}
 }
