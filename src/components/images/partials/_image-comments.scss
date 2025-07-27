@@ -93,31 +93,8 @@
 				padding-top: 0;
 			}
 
-			.reply-to {
-				background-image: svg-load('icons/reply.svg');
-				background-position: 0 0;
-				background-repeat: no-repeat;
-				background-size: 12px 11px;
-				display: none;
-				padding-left: var(--size-spacing-half-again);
-			}
-
-			.delete {
-				@include links.link-danger;
-				background-image: svg-load('icons/delete-comment.svg');
-				background-position: 0 0;
-				background-repeat: no-repeat;
-				background-size: 13px 13px;
-				display: none;
-				padding-left: var(--size-spacing-half-again);
-			}
-
-			&:hover .reply-to,
-			&:hover .delete,
-			&:focus .reply-to,
-			&:focus .delete {
-				display: block;
-			}
+			// reply-to and delete controls defined further up the tree to enable
+			// reuse.
 		}
 
 		.show-more-comments {
