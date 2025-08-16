@@ -39,19 +39,12 @@
 // Single-Column Layout
 //
 .content-narrow {
-	margin: var(--size-spacing-quadruple) auto var(--size-spacing-triple);
+	margin: var(--size-spacing-half-again) auto var(--size-spacing-triple);
 	max-width: 700px;
 	padding: var(--size-spacing-half-again);
 
 	@media screen and (min-width: tokens.$size-breakpoint-lg) {
 		padding: var(--size-spacing-quadruple);
-	}
-
-	// I hate this. We spend more time overriding it. -SV
-	p {
-		font-size: 1.625rem; // 26px
-		line-height: 2.5;
-		margin: 2em 0;
 	}
 
 	.extra-info p {

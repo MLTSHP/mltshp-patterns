@@ -62,14 +62,16 @@
 				@include mixins.breakword;
 				clear: both;
 				color: var(--color-page-text);
-				font-size: 0.875rem;
-				padding-top: 0.25em;
 			}
 
 			.meta {
 				align-items: flex-end;
 				display: flex;
 				flex-wrap: wrap;
+
+				font-size: 0.75rem;
+
+				margin-bottom: 0.4rem;
 
 				> * + * {
 					margin-left: 0.8em;
@@ -99,6 +101,7 @@
 
 		.show-more-comments {
 			display: block;
+			font-size: 0.75rem;
 			font-weight: var(--number-font-weight-bold);
 			padding: var(--size-spacing-default) 0;
 			text-align: right;
