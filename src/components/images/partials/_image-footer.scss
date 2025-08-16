@@ -1,6 +1,5 @@
 .image-content-footer {
 	color: var(--color-page-text-secondary);
-	font-size: 0.75rem;
 	padding-top: var(--size-spacing-default);
 
 	.originally-posted-by {
@@ -22,6 +21,7 @@
 	.inline-meta {
 		display: flex;
 		float: left;
+		font-size: 0.75rem;
 
 		> * {
 			flex: none;

@@ -81,7 +81,6 @@ textarea {
 	// help text
 	.field-help {
 		color: var(--color-page-text-secondary);
-		font-size: 0.875rem;
 		margin-top: var(--size-spacing-half);
 
 		@media screen and (min-width: tokens.$size-breakpoint-lg) {

@@ -1,6 +1,5 @@
 .site-footer {
 	color: var(--color-page-text-secondary);
-	font-size: 0.75em;
 	margin: var(--size-spacing-triple);
 	text-align: center;
 
@@ -10,9 +9,5 @@
 		+ p {
 			margin-top: 0.5em;
 		}
-	}
-
-	a {
-		white-space: nowrap;
 	}
 }

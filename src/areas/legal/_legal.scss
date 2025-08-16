@@ -1,5 +1,3 @@
-// These styles are mostly just overriding `.content-narrow p` rules.
-
 //
 // Code of Conduct Page
 //
@@ -14,12 +12,6 @@
 		margin-top: 1.4em;
 	}
 
-	p {
-		font-size: 1rem;
-		line-height: 1.4;
-		margin: 1em 0;
-	}
-
 	li {
 		margin-bottom: 0.4em;
 	}
@@ -29,12 +21,6 @@
 // Terms of Use Page
 //
 .terms-of-use {
-	p {
-		font-size: 1rem;
-		line-height: 1.4;
-		margin: 1em 0;
-	}
-
 	li {
 		font-size: 1rem;
 		list-style-type: lower-alpha;
@@ -49,10 +35,3 @@
 //
 // Terms of Use Announcement Page
 //
-.tou-notice-page {
-	p {
-		font-size: 1rem;
-		line-height: 1.4;
-		margin: 1em 0;
-	}
-}
