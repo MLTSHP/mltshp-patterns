@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added a tab order friendly hide and show mechanism for comment reply-to and
   delete controls (#1396)
+- Removed scaling down of paragraph text blocks in several areas to make prose text more readable (#1406)
 
 ## [4.0.0] - 2025-06-21
 
