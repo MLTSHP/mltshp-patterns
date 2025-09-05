@@ -24,10 +24,10 @@
 		width: 70px; // magic number that works in the sidebar
 
 		.num {
+			color: inherit;
 			display: block;
 			font-size: 1.125rem;
 			font-weight: var(--number-font-weight-bold);
-			color: inherit;
 			text-decoration-color: inherit;
 		}
 
