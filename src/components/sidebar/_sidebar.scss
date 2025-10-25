@@ -3,6 +3,51 @@
 @use '../buttons/buttons';
 
 //
+// Timehop
+//
+.timehop-block {
+	background-color: var(--color-bg-secondary-brand-pastel);
+	border-radius: var(--size-border-radius-large);
+	margin-bottom: var(--size-spacing-double);
+	padding: var(--size-spacing-half-again);
+
+	h3 {
+		color: var(--color-brand-secondary);
+		font-size: 1.25rem;
+		margin: 0 0 var(--size-spacing-half-again);
+	}
+
+	.thumb-grid {
+		display: grid;
+		gap: var(--size-spacing-half-again);
+		grid-template-columns: repeat(2, 1fr);
+
+		> div {
+			align-items: center;
+			background-color: var(--color-base-white);
+			border-radius: var(--size-border-radius-default);
+			display: flex;
+			flex-direction: column;
+			padding: var(--size-spacing-default);
+
+			h4 {
+				margin-bottom: var(--size-spacing-half-again);
+			}
+
+			> div {
+				align-content: center;
+				flex-grow: 1;
+
+				// Stop grid row from shrinking entirely should both cells be empty.
+				.placeholder {
+					min-height: 70px;
+				}
+			}
+		}
+	}
+}
+
+//
 // Following
 //
 .following-wrapper {

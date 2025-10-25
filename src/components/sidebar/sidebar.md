@@ -7,6 +7,10 @@ eleventyNavigation:
   parent: Components
 ---
 
+## Timehop
+
+{% include 'styleguide-example', html: '/src/components/sidebar/examples/timehop.html' %}
+
 ## Following
 
 {% include 'styleguide-example', html: '/src/components/sidebar/examples/following.html' %}
