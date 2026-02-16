@@ -24,19 +24,17 @@
 		width: 70px; // magic number that works in the sidebar
 
 		.num {
+			color: inherit;
 			display: block;
 			font-size: 1.125rem;
 			font-weight: var(--number-font-weight-bold);
+			text-decoration-color: inherit;
 		}
 
 		.label {
 			display: block;
 			font-size: 0.875rem;
 		}
-	}
-
-	.views {
-		width: 95px; // magic number to give views more space than other cells
 	}
 
 	.saves {
