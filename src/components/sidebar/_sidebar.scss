@@ -21,8 +21,8 @@
 		display: grid;
 		gap: var(--size-spacing-half-again);
 		grid-template-columns: repeat(2, 1fr);
-		padding: 0;
 		list-style-type: none;
+		padding: 0;
 
 		> li {
 			align-items: center;
