@@ -17,12 +17,14 @@
 		margin: 0 0 var(--size-spacing-half-again);
 	}
 
-	.thumb-grid {
+	.timehop-block__thumb-grid {
 		display: grid;
 		gap: var(--size-spacing-half-again);
 		grid-template-columns: repeat(2, 1fr);
+		padding: 0;
+		list-style-type: none;
 
-		> div {
+		> li {
 			align-items: center;
 			background-color: var(--color-background-page);
 			border-radius: var(--size-border-radius-default);
@@ -34,14 +36,14 @@
 				margin-bottom: var(--size-spacing-half-again);
 			}
 
-			> div {
+			a {
 				align-content: center;
 				flex-grow: 1;
+			}
 
-				// Stop grid row from shrinking entirely should both cells be empty.
-				.placeholder {
-					min-height: 70px;
-				}
+			// Stop grid row from shrinking entirely should both cells be empty.
+			.timehop-block__placeholder {
+				min-height: 70px;
 			}
 		}
 	}
