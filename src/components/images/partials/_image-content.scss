@@ -1,5 +1,19 @@
 @use '../../../compiled/scss/tokens';
 
+.image-content-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	> li:not(:last-child) {
+		border-bottom: 1px dashed var(--color-border-default);
+	}
+}
+
+.image-title {
+	margin-bottom: var(--size-spacing-default);
+}
+
 .image-content {
 	clear: both;
 	max-width: 100%;
@@ -26,7 +40,6 @@
 
 	// list overrides
 	.image-content-list & {
-		border-bottom: 1px dashed var(--color-border-default);
 		float: none;
 		padding: 0 var(--size-spacing-half-again) var(--size-spacing-half-again);
 
