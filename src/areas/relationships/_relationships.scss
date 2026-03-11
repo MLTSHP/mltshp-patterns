@@ -2,11 +2,17 @@
 // Area: Account - Following/Followers
 //
 .content-relationships {
-	.body {
-		.friend,
-		.shake {
-			border-bottom: 1px dashed var(--color-border-default);
+	.followers-list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		> li {
 			padding: 0 var(--size-spacing-quadruple);
+		}
+
+		> li:not(:last-child) {
+			border-bottom: 1px dashed var(--color-border-default);
 		}
 
 		.user-follow-extended {
