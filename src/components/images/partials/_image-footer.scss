@@ -1,6 +1,5 @@
-.image-content-footer {
+.shared-image {
 	color: var(--color-page-text-secondary);
-	padding-top: var(--size-spacing-default);
 
 	.originally-posted-by {
 		clear: left;
@@ -18,10 +17,19 @@
 		}
 	}
 
+	.image-meta-interactions {
+		display: flex;
+		flex-wrap: wrap-reverse; // Wrap interactions above inline meta on narrow screens
+		row-gap: var(
+			--size-spacing-half
+		); // Leave a gap between interactions and inline-meta when wrapped
+	}
+
 	.inline-meta {
 		display: flex;
 		float: left;
 		font-size: 0.75rem;
+		gap: var(--size-spacing-default);
 
 		> * {
 			flex: none;
@@ -48,14 +56,11 @@
 	}
 
 	.stats {
+		display: flex;
+		gap: var(--size-spacing-default);
 		list-style: none;
-		margin: 0 0 0 var(--size-spacing-default);
+		margin: 0;
 		padding: 0;
-
-		li {
-			float: left;
-			padding-right: var(--size-spacing-half);
-		}
 
 		a {
 			background-position: var(--size-spacing-half) 0.5em;

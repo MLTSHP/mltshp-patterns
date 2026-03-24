@@ -4,12 +4,7 @@
 
 .image-title {
 	max-width: 100%;
-	padding: var(--size-spacing-half-again) var(--size-spacing-half-again) 0;
 	position: relative;
-
-	@media screen and (min-width: tokens.$size-breakpoint-lg) {
-		padding: var(--size-spacing-quadruple) var(--size-spacing-quadruple) 0;
-	}
 
 	.image-poster {
 		float: left;
@@ -34,17 +29,9 @@
 	}
 
 	.remove-from-shake {
+		float: right;
 		height: 21px;
-		position: absolute;
-		right: var(--size-spacing-default);
-		top: var(--size-spacing-default);
 		width: 21px;
-
-		@media screen and (min-width: tokens.$size-breakpoint-lg) {
-			top: calc(
-				var(--size-spacing-quadruple) + var(--size-spacing-half)
-			); // padding + 5px
-		}
 	}
 }
 
@@ -80,12 +67,6 @@
 
 		@media screen and (min-width: tokens.$size-breakpoint-md) {
 			margin-bottom: 0;
-		}
-
-		.image-content-list & {
-			font-size: 1.875rem;
-			min-width: 250px;
-			padding: 0.0666em;
 		}
 	}
 
