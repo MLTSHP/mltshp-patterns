@@ -2,8 +2,8 @@
 	align-items: center;
 	display: flex;
 	flex-direction: row-reverse;
-	float: right;
-	margin-bottom: 4px; // magic number to prevent layout gap below .inline-meta
+	margin-left: auto; // Push right when wrapped
+	order: 2; // Show after inline meta when not wrapped
 
 	.save-this {
 		margin-right: var(--size-spacing-half);
