@@ -18,10 +18,10 @@
 
 	.image-meta-interactions {
 		display: flex;
-		flex-wrap: wrap-reverse; // Wrap interactions above inline meta on narrow screens
-		row-gap: var(
-			--size-spacing-half
-		); // Leave a gap between interactions and inline-meta when wrapped
+		// 1. Wrap interactions above inline meta on narrow screens
+		// 2. Leave a gap between interactions and inline-meta when wrapped
+		flex-wrap: wrap-reverse; // 1
+		row-gap: var(--size-spacing-half); // 2
 	}
 
 	.save-this-shake-selector {
