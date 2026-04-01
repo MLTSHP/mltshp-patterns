@@ -2,7 +2,7 @@
 @use '../../../init/mixins';
 @use '../../buttons/buttons';
 
-.image-title {
+.post__title {
 	max-width: 100%;
 	position: relative;
 
@@ -33,15 +33,14 @@
 		height: 21px;
 		width: 21px;
 	}
+
+	&--editable:hover,
+	&--editable:focus {
+		background-color: var(--color-status-edit);
+	}
 }
 
-.image-edit-title:hover,
-.image-edit-title:focus,
-.image-edit-title-hover {
-	background-color: var(--color-status-edit);
-}
-
-.image-edit-title-form {
+.post__title-editor {
 	display: none;
 	flex-direction: column;
 
@@ -59,11 +58,12 @@
 		border-radius: var(--size-border-radius-default);
 		color: var(--color-page-text);
 		flex: 1;
-		font-size: 3rem;
+		font-size: 1.875rem;
 		font-weight: var(--number-font-weight-bold);
 		margin-bottom: var(--size-spacing-default);
 		max-width: 100%;
-		min-width: 0;
+		min-width: 250px;
+		padding: 0.0666em;
 
 		@media screen and (min-width: tokens.$size-breakpoint-md) {
 			margin-bottom: 0;
@@ -73,25 +73,21 @@
 	.buttons {
 		align-items: center;
 		display: flex;
-		padding-left: var(--size-spacing-default);
+		gap: var(--size-spacing-half);
 	}
 
 	.or {
 		color: var(--color-page-text-secondary);
-		display: block;
-		padding: 0 var(--size-spacing-default);
 	}
+}
 
-	//
-	// List View Overrides
-	// 1. Spacing is handled differently on the permalink page
-	// 2. We only want the small button treatment on list pages
-	//
-	.image-content-list & {
-		margin-bottom: var(--size-spacing-double); // 1
+.post__title--editing {
+	// Hide the title ...
+	display: none;
 
-		.btn {
-			@include buttons.button-small; // 2
-		}
+	// ... and display the editor.
+	+ .post__title-editor {
+		display: flex;
+		gap: var(--size-spacing-default);
 	}
 }

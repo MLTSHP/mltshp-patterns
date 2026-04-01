@@ -577,11 +577,11 @@ iframe: true
 				<ul class="image-content-list">
 					<li>
 						<article
-							id="shared-file-ABC123"
-							class="shared-file"
-							aria-labelledby="shared-file-ABC123-title"
+							id="post-ABC123"
+							class="post"
+							aria-labelledby="post-ABC123-title"
 						>
-							<header class="image-title image-title-with-poster">
+							<header class="post__title">
 								<div class="image-poster">
 									<a href="#" title="Lord_John_Whorfin">
 										<img
@@ -593,87 +593,82 @@ iframe: true
 										/>
 									</a>
 								</div>
-								<h3 id="shared-file-ABC123-title">Fremen</h3>
-								<div class="clear"></div>
+								<h3 id="post-ABC123-title">Fremen</h3>
 							</header>
-							<div class="image-content">
+							<div class="post__content">
 								<div class="the-image">
 									<a href="#"
 										><img src="https://mltshp-cdn.com/r/1JPTU" alt="Fremen"
 									/></a>
 								</div>
-								<div class="image-content-footer">
-									<div class="description">
-										<div class="the-description">
-											Moebius concept art for Dune
-										</div>
-									</div>
-									<div class="image-interactions">
-										<div class="like-this">
-											<form>
-												<button
-													type="button"
-													class="like-button btn btn-danger btn-small is-active"
-												>
-													<div class="btn--content">
-														<img
-															class="btn--icon"
-															src="https://mltshp-cdn.com/static/images/like-this.svg?v=b6b5d63ca476cb55e67c21965345e8db"
-															alt=""
-														/>
-														<span class="btn--text">Like</span>
-													</div>
-												</button>
-												<button
-													type="button"
-													class="unlike-button"
-													title="Unlike This"
-													aria-label="Unlike This"
-												>
+								<div class="post__description">
+									Moebius concept art for Dune
+								</div>
+								<div class="post__originally-by">
+									originally
+									<a class="the-post" href="#">posted</a> by
+									<a class="avatar--link" href="#">
+										<img
+											class="avatar--img"
+											valign="bottom"
+											width="20"
+											height="20"
+											src="https://mltshp-cdn.com/s3/account/58282/profile.jpg"
+											alt=""
+										/>
+									</a>
+									<a class="user-name" href="#">stereoplex</a>
+								</div>
+							</div>
+							<div class="post__footer">
+								<div class="post__meta-interactions">
+									<div class="post__interactions">
+										<form class="like-this">
+											<button
+												type="button"
+												class="like-button btn btn-danger btn-small is-active"
+											>
+												<div class="btn--content">
 													<img
-														src="https://mltshp-cdn.com/static/images/liked-this.svg?v=e6f9810cfc8fa54a40073a3ddbaa90b5"
-														height="22"
-														width="25"
-														alt="Unlike This"
+														class="btn--icon"
+														src="https://mltshp-cdn.com/static/images/like-this.svg?v=b6b5d63ca476cb55e67c21965345e8db"
+														alt=""
 													/>
-												</button>
-											</form>
-										</div>
-										<div class="save-this">
-											<form>
-												<button
-													type="button"
-													class="save-this-link save-this-link-multiple btn btn-warning btn-small"
-												>
-													<div class="btn--content">
-														<img
-															class="btn--icon"
-															src="https://mltshp-cdn.com/static/images/save-this.svg?v=5a6b71f0af47daac6eb1c038668c4b9b"
-															alt=""
-														/>
-														<span class="btn--text">Save</span>
-														<span class="btn--caret">▼</span>
-													</div>
-												</button>
-											</form>
-										</div>
+													<span class="btn--text">Like</span>
+												</div>
+											</button>
+											<button
+												type="button"
+												class="unlike-button"
+												title="Unlike This"
+												aria-label="Unlike This"
+											>
+												<img
+													src="https://mltshp-cdn.com/static/images/liked-this.svg?v=e6f9810cfc8fa54a40073a3ddbaa90b5"
+													height="22"
+													width="25"
+													alt="Unlike This"
+												/>
+											</button>
+										</form>
+										<form class="save-this">
+											<button
+												type="button"
+												class="save-this-link save-this-link-multiple btn btn-warning btn-small"
+											>
+												<div class="btn--content">
+													<img
+														class="btn--icon"
+														src="https://mltshp-cdn.com/static/images/save-this.svg?v=5a6b71f0af47daac6eb1c038668c4b9b"
+														alt=""
+													/>
+													<span class="btn--text">Save</span>
+													<span class="btn--caret">▼</span>
+												</div>
+											</button>
+										</form>
 									</div>
-									<div class="originally-posted-by">
-										originally
-										<a class="the-post" href="#">posted</a> by
-										<a class="avatar--link" href="#">
-											<img
-												class="avatar--img"
-												valign="bottom"
-												width="20"
-												height="20"
-												src="https://mltshp-cdn.com/s3/account/58282/profile.jpg"
-												alt=""
-											/>
-										</a>
-										<a class="user-name" href="#">stereoplex</a>
-									</div>
-									<div class="inline-meta">
+									<div class="post__meta">
 										<span class="created-at">
 											<a href="#">
 												<time
@@ -683,7 +678,7 @@ iframe: true
 												>
 											</a>
 										</span>
-										<ul class="stats">
+										<ul class="post__meta-stats">
 											<li class="views">5 Views</li>
 											<li class="saves">
 												<a href="#">0</a>
@@ -694,46 +689,42 @@ iframe: true
 											<li class="comments"><a href="#">0</a></li>
 										</ul>
 									</div>
-									<div class="inline-details" style="display: none"></div>
-									<div class="clear"></div>
 								</div>
 							</div>
 						</article>
 					</li>
 					<li>
 						<article
-							id="shared-file-DEF456"
-							class="shared-file"
-							aria-labelledby="shared-file-DEF456-title"
+							id="post-DEF456"
+							class="post"
+							aria-labelledby="post-DEF456-title"
 						>
-							<header class="image-title image-title-with-poster">
-								<h3 class="image-edit-title" id="shared-file-DEF456-title">
-									dune 1984 bts
-								</h3>
-								<form
-									method="post"
-									class="image-edit-title-form"
-									action="/p/1JJ4N/quick-edit-title"
-								>
-									<input
-										type="text"
-										class="title-input"
-										name="title"
-										autocomplete="off"
-										value=""
-									/>
-									<div class="buttons">
-										<input
-											type="submit"
-											class="save btn btn-primary"
-											value="Save"
-										/>
-										<span class="or">or</span>
-										<a href="#" class="cancel btn btn-secondary">Cancel</a>
-									</div>
-								</form>
+							<header class="post__title post__title--editable">
+								<h3 id="post-DEF456-title">dune 1984 bts</h3>
 							</header>
-							<div class="image-content">
+							<form
+								method="post"
+								class="post__title-editor"
+								action="/p/1JJ4N/quick-edit-title"
+							>
+								<input
+									type="text"
+									class="title-input"
+									name="title"
+									autocomplete="off"
+									value=""
+								/>
+								<div class="buttons">
+									<input
+										type="submit"
+										class="save btn btn-primary"
+										value="Save"
+									/>
+									<span class="or">or</span>
+									<a href="#" class="cancel btn btn-secondary">Cancel</a>
+								</div>
+							</form>
+							<div class="post__content">
 								<div class="the-image">
 									<a href="#"
 										><img
@@ -741,57 +732,57 @@ iframe: true
 											alt="dune 1984 bts"
 									/></a>
 								</div>
-								<div class="image-content-footer">
-									<div class="description description-edit">
-										<div class="the-description">
-											source:
-											<a
-												href="#"
-												target="_blank"
-												rel="nofollow"
-												title="https://twitter.com/TheSpaceshipper/status/1294605495098122240/photo/1"
-												>https://twitter.com/TheSpace...</a
-											>
-										</div>
-										<form
-											method="post"
-											class="description-edit-form"
-											action="/p/1JJ4N/quick-edit-description"
+								<div class="post__description post__description--editable">
+									source:
+									<a
+										href="#"
+										target="_blank"
+										rel="nofollow"
+										title="https://twitter.com/TheSpaceshipper/status/1294605495098122240/photo/1"
+										>https://twitter.com/TheSpace...</a
+									>
+								</div>
+								<form
+									method="post"
+									class="post__description-editor"
+									action="/p/1JJ4N/quick-edit-description"
+								>
+									<textarea
+										name="description"
+										class="description-edit-textarea"
+									></textarea>
+									<div class="buttons">
+										<input
+											type="submit"
+											class="save btn btn-primary btn-small"
+											value="Save"
+										/>
+										<span class="or">or</span>
+										<a href="#" class="cancel btn btn-secondary btn-small"
+											>Cancel</a
 										>
-											<textarea
-												name="description"
-												class="description-edit-textarea"
-											></textarea>
-											<div class="buttons">
-												<input
-													type="submit"
-													class="save btn btn-primary btn-small"
-													value="Save"
-												/>
-												<span class="or">or</span>
-												<a href="#" class="cancel btn btn-secondary btn-small"
-													>Cancel</a
-												>
-											</div>
-										</form>
 									</div>
-									<div class="image-interactions"></div>
-									<div class="originally-posted-by">
-										originally
-										<a class="the-post" href="#">posted</a> by
-										<a class="avatar--link" href="#">
-											<img
-												class="avatar--img"
-												valign="bottom"
-												width="20"
-												height="20"
-												src="https://mltshp-cdn.com/s3/account/158/profile.jpg"
-												alt=""
-											/>
-										</a>
-										<a class="user-name" href="#">O_C</a>
-									</div>
-									<div class="inline-meta">
+								</form>
+								<div class="post__originally-by">
+									originally
+									<a class="the-post" href="#">posted</a> by
+									<a class="avatar--link" href="#">
+										<img
+											class="avatar--img"
+											valign="bottom"
+											width="20"
+											height="20"
+											src="https://mltshp-cdn.com/s3/account/158/profile.jpg"
+											alt=""
+										/>
+									</a>
+									<a class="user-name" href="#">O_C</a>
+								</div>
+							</div>
+							<div class="post__footer">
+								<div class="post__meta-interactions">
+									<div class="post__interactions"></div>
+									<div class="post__meta">
 										<span class="created-at">
 											<a href="#">
 												<time
@@ -801,7 +792,7 @@ iframe: true
 												>
 											</a>
 										</span>
-										<ul class="stats">
+										<ul class="post__meta-stats">
 											<li class="views">3 Views</li>
 											<li class="saves">
 												<a href="#">0</a>
@@ -809,120 +800,232 @@ iframe: true
 											<li class="likes">
 												<a href="#">0</a>
 											</li>
-											<li class="comments"><a href="#">0</a></li>
+											<li class="comments selected"><a href="#">3</a></li>
 										</ul>
 									</div>
-									<div class="inline-details" style="display: none"></div>
-									<div class="clear"></div>
 								</div>
+								<ul class="post__comments">
+									<li>
+										<article class="comment">
+											<div class="comment__avatar">
+												<a href="#">
+													<img
+														class="avatar--img"
+														src="https://mltshp-cdn.com/s3/account/54045/profile.jpg"
+														height="30"
+														width="30"
+													/>
+												</a>
+											</div>
+											<div class="comment__body">
+												<div class="comment__meta">
+													<a class="user-name username link--primary" href="#"
+														>tweedlydo</a
+													>
+													<a class="pro-badge" href="#">
+														<img
+															alt="pro"
+															src="https://mltshp-cdn.com/static/images/icon_plus.svg"
+															width="12"
+															height="12"
+															border="0"
+															valign="center"
+														/>
+													</a>
+													<span class="created-at">
+														<time
+															datetime="2020-04-15 03:29:59"
+															title="Wed, 15 Apr 2020 03:29:59 "
+															>1 week ago</time
+														>
+													</span>
+													<a class="reply-to" href="">Reply</a>
+												</div>
+												<div class="comment__text">
+													those are some righteous bazongas
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="comment">
+											<div class="comment__avatar">
+												<a href="#">
+													<img
+														class="avatar--img"
+														src="https://mltshp-cdn.com/s3/account/701/profile.jpg"
+														height="30"
+														width="30"
+													/>
+												</a>
+											</div>
+											<div class="comment__body">
+												<div class="comment__meta">
+													<a class="user-name username link--primary" href="#"
+														>docgonzo</a
+													>
+													<span class="created-at">
+														<time
+															datetime="2020-04-15 03:40:34"
+															title="Wed, 15 Apr 2020 03:40:34 "
+															>1 week ago</time
+														>
+													</span>
+													<a class="reply-to" href="">Reply</a>
+												</div>
+												<div class="comment__text">^ I played bass etc etc</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="comment">
+											<div class="comment__avatar">
+												<a href="#">
+													<img
+														class="avatar--img"
+														src="https://mltshp-cdn.com/s3/account/20275/profile.jpg"
+														height="30"
+														width="30"
+													/>
+												</a>
+											</div>
+											<div class="comment__body">
+												<div class="comment__meta">
+													<a class="user-name username link--primary" href="#"
+														>jonson</a
+													>
+													<a class="pro-badge" href="#">
+														<img
+															alt="pro"
+															src="https://mltshp-cdn.com/static/images/icon_plus.svg"
+															width="12"
+															height="12"
+															border="0"
+															valign="center"
+														/>
+													</a>
+													<span class="created-at">
+														<time
+															datetime="2020-04-15 04:02:28"
+															title="Wed, 15 Apr 2020 04:02:28 "
+															>1 week ago</time
+														>
+													</span>
+													<a class="reply-to" href="">Reply</a>
+												</div>
+												<div class="comment__text">
+													@tweedlydo more of an elbow man, meself.
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
 							</div>
 						</article>
 					</li>
 					<li>
 						<article
-							id="shared-file-GHI789"
-							class="shared-file"
-							aria-labelledby="shared-file-GHI789-title"
+							id="post-GHI789"
+							class="post"
+							aria-labelledby="post-GHI789-title"
 						>
-							<header class="image-title image-title-with-poster">
-								<h3 class="image-edit-title" id="shared-file-GHI789-title">
-									WAP
-								</h3>
-								<form
-									method="post"
-									class="image-edit-title-form"
-									action="/p/1JJ4M/quick-edit-title"
-								>
-									<input
-										type="text"
-										class="title-input"
-										name="title"
-										autocomplete="off"
-										value=""
-									/>
-									<div class="buttons">
-										<input
-											type="submit"
-											class="save btn btn-primary"
-											value="Save"
-										/>
-										<span class="or">or</span>
-										<a href="#" class="cancel btn btn-secondary">Cancel</a>
-									</div>
-								</form>
+							<header class="post__title post__title--editable">
+								<h3 id="post-GHI789-title">WAP</h3>
 							</header>
-							<div class="image-content">
+							<form
+								method="post"
+								class="post__title-editor"
+								action="/p/1JJ4M/quick-edit-title"
+							>
+								<input
+									type="text"
+									class="title-input"
+									name="title"
+									autocomplete="off"
+									value=""
+								/>
+								<div class="buttons">
+									<input
+										type="submit"
+										class="save btn btn-primary"
+										value="Save"
+									/>
+									<span class="or">or</span>
+									<a href="#" class="cancel btn btn-secondary">Cancel</a>
+								</div>
+							</form>
+							<div class="post__content">
 								<div class="the-image">
 									<a href="#"
 										><img src="https://mltshp-cdn.com/r/1JJ4M" alt="WAP"
 									/></a>
 								</div>
-								<div class="image-content-footer">
-									<div class="description description-edit">
-										<div class="the-description the-description-blank">
-											click here to edit description
-										</div>
-										<form
-											method="post"
-											class="description-edit-form"
-											action="/p/1JJ4M/quick-edit-description"
+								<div
+									class="post__description post__description--editable post__description--blank"
+								>
+									click here to edit description
+								</div>
+								<form
+									method="post"
+									class="post__description-editor"
+									action="/p/1JJ4M/quick-edit-description"
+								>
+									<textarea
+										name="description"
+										class="description-edit-textarea"
+									></textarea>
+									<div class="buttons">
+										<input
+											type="submit"
+											class="save btn btn-primary btn-small"
+											value="Save"
+										/>
+										<span class="or">or</span>
+										<a href="#" class="cancel btn btn-secondary btn-small"
+											>Cancel</a
 										>
-											<textarea
-												name="description"
-												class="description-edit-textarea"
-											></textarea>
-											<div class="buttons">
-												<input
-													type="submit"
-													class="save btn btn-primary btn-small"
-													value="Save"
-												/>
-												<span class="or">or</span>
-												<a href="#" class="cancel btn btn-secondary btn-small"
-													>Cancel</a
-												>
-											</div>
-										</form>
 									</div>
-									<div class="image-interactions"></div>
-									<div class="originally-posted-by">
-										originally
-										<a class="the-post" href="#">posted</a> by
-										<a class="avatar--link" href="#">
-											<img
-												class="avatar--img"
-												valign="bottom"
-												width="20"
-												height="20"
-												src="https://mltshp-cdn.com/s3/account/80/profile.jpg"
-												alt=""
-											/>
-										</a>
-										<a class="user-name" href="#">tonx</a>
+								</form>
+								<div class="post__originally-by">
+									originally
+									<a class="the-post" href="#">posted</a> by
+									<a class="avatar--link" href="#">
+										<img
+											class="avatar--img"
+											valign="bottom"
+											width="20"
+											height="20"
+											src="https://mltshp-cdn.com/s3/account/80/profile.jpg"
+											alt=""
+										/>
+									</a>
+									<a class="user-name" href="#">tonx</a>
+								</div>
+								<div class="post__footer">
+									<div class="post__meta-interactions">
+										<div class="post__interactions"></div>
+										<div class="post__meta">
+											<span class="created-at">
+												<a href="#">
+													<time
+														datetime="2020-08-17 16:16:50"
+														title="Mon, 17 Aug 2020 16:16:50 "
+														>3 weeks ago</time
+													>
+												</a>
+											</span>
+											<ul class="post__meta-stats">
+												<li class="views">16 Views</li>
+												<li class="saves">
+													<a href="#">0</a>
+												</li>
+												<li class="likes">
+													<a href="#">0</a>
+												</li>
+												<li class="comments"><a href="#">0</a></li>
+											</ul>
+										</div>
 									</div>
-									<div class="inline-meta">
-										<span class="created-at">
-											<a href="#">
-												<time
-													datetime="2020-08-17 16:16:50"
-													title="Mon, 17 Aug 2020 16:16:50 "
-													>3 weeks ago</time
-												>
-											</a>
-										</span>
-										<ul class="stats">
-											<li class="views">16 Views</li>
-											<li class="saves">
-												<a href="#">0</a>
-											</li>
-											<li class="likes">
-												<a href="#">0</a>
-											</li>
-											<li class="comments"><a href="#">0</a></li>
-										</ul>
-									</div>
-									<div class="inline-details" style="display: none"></div>
-									<div class="clear"></div>
 								</div>
 							</div>
 						</article>

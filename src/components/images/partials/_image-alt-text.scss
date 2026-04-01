@@ -1,83 +1,85 @@
 @use '../../../base/links';
 @use '../../../init/mixins';
 
-.image-content {
-	.alt-text {
-		color: var(--color-page-text);
-		font-size: 0.875rem;
-		overflow: hidden;
-		padding-bottom: var(--size-spacing-default);
+.post__alt-text {
+	background: var(--color-background-content-secondary);
+	color: var(--color-page-text-secondary);
+	font-size: 0.875rem;
+	overflow: hidden;
+	padding: var(--size-spacing-default) var(--size-spacing-half-again);
 
-		.the-alt-text {
-			@include mixins.breakword;
-			background: var(--color-background-content-secondary);
-			color: var(--color-page-text-secondary);
-			margin-top: var(--size-spacing-half);
-			padding: var(--size-spacing-default) var(--size-spacing-half-again);
+	@include mixins.breakword;
 
-			&:focus {
-				box-shadow: none;
-			}
-		}
+	&:focus {
+		box-shadow: none;
+	}
 
-		&.alt-text--blank .the-alt-text {
-			color: var(--color-status-disabled);
-			font-style: italic;
-		}
+	&--blank {
+		color: var(--color-status-disabled);
+		font-style: italic;
+	}
 
-		&.alt-text--blank .alt-text-toggle,
-		&.alt-text--editing .alt-text-toggle {
-			display: none;
-		}
+	&.alt-text--blank .alt-text-toggle,
+	&.alt-text--editing .alt-text-toggle {
+		display: none;
+	}
 
-		&.alt-text--hidden .the-alt-text,
-		&.alt-text--editing .the-alt-text {
-			display: none;
-		}
+	&.alt-text--hidden .the-alt-text,
+	&.alt-text--editing .the-alt-text {
+		display: none;
 	}
 
 	// Inline Editing Alt Text
-	// stylelint-disable a11y/selector-pseudo-class-focus
-	.alt-text-edit .the-alt-text:hover,
-	.the-alt-text-hover {
+	&--editable:hover,
+	&--editable:focus {
 		background-color: var(--color-status-edit);
 	}
-	// stylelint-enable a11y/selector-pseudo-class-focus
+}
 
-	.alt-text--editing .alt-text-edit-form {
-		display: block;
+.post__alt-text-toggle {
+	cursor: pointer;
+}
+
+.post__alt-text-editor {
+	display: none;
+
+	.alt-text-learn {
+		margin: 0;
 	}
 
-	.alt-text-edit-form {
-		display: none;
-
-		.alt-text-learn {
-			margin-top: 5px;
-		}
-
-		textarea {
-			background-color: var(--color-background-content);
-			border: 1px solid var(--color-border-default);
-			border-radius: var(--size-border-radius-default);
-			color: var(--color-page-text);
-			min-height: 100px;
-			padding: var(--size-spacing-half);
-		}
-
-		.buttons {
-			display: flex;
-			padding: var(--size-spacing-default) 0;
-		}
-
-		.or {
-			color: var(--color-page-text-secondary);
-			display: block;
-			padding: var(--size-spacing-half) var(--size-spacing-default)
-				var(--size-spacing-half-again) var(--size-spacing-default);
-		}
+	textarea {
+		background-color: var(--color-background-content);
+		border: 1px solid var(--color-border-default);
+		border-radius: var(--size-border-radius-default);
+		color: var(--color-page-text);
+		min-height: 100px;
+		padding: var(--size-spacing-half);
 	}
 
-	.alt-text-toggle {
-		cursor: pointer;
+	.buttons {
+		display: flex;
+		gap: var(--size-spacing-half);
+	}
+
+	.or {
+		color: var(--color-page-text-secondary);
+	}
+}
+
+.post__alt-text--editing .post__alt-text-editor {
+	// Show the editor if we are edit-ing.
+	display: block;
+}
+
+.post__alt-text--editing {
+	// Hide the alt-text ...
+	display: none;
+
+	// ... and display the editor.
+	+ .post__alt-text-editor {
+		display: flex;
+		flex-direction: column;
+		gap: var(--size-spacing-default);
+		margin-bottom: var(--size-spacing-triple);
 	}
 }

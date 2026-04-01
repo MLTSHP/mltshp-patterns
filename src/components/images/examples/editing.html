@@ -1,49 +1,55 @@
-<div class="image-content-list">
-	<div class="image-title image-title-with-poster">
-		<h3 class="image-edit-title" style="display: none">
-			Star Wars Zoom Backgrounds
-		</h3>
-		<form class="image-edit-title-form is-active">
-			<input
-				type="text"
-				class="title-input"
-				name="title"
-				autocomplete="off"
-				value="Star Wars Zoom Backgrounds"
-			/>
-			<div class="buttons">
-				<input type="submit" class="save btn btn-primary" value="Save" />
-				<span class="or">or</span>
-				<a href="" class="cancel btn btn-secondary">Cancel</a>
-			</div>
-		</form>
-	</div>
-	<div class="image-content">
-		<div class="the-image">
-			<a href="#"
-				><img
-					src="https://mltshp-cdn.com/r/1IGIU"
-					alt="Star Wars Zoom Backgrounds"
-			/></a>
-		</div>
-		<div class="image-content-footer">
-			<div class="alt-text alt-text-edit alt-text--blank alt-text--editing">
-				<div class="alt-text-toggle link link--primary">alt text</div>
-				<div class="the-alt-text" role="button">add some alt text</div>
+<ul class="image-content-list">
+	<li>
+		<article id="post-ABC123" class="post" aria-labelledby="post-ABC123-title">
+			<header
+				class="image-title image-title-with-poster post__title post__title--editing"
+			>
+				<h3 class="image-edit-title">Star Wars Zoom Backgrounds</h3>
+			</header>
+			<form class="image-edit-title-form is-active post__title-editor">
+				<input
+					type="text"
+					class="title-input"
+					name="title"
+					autocomplete="off"
+					value="Star Wars Zoom Backgrounds"
+				/>
+				<div class="buttons">
+					<input
+						type="submit"
+						class="save btn btn-primary btn-small"
+						value="Save"
+					/>
+					<span class="or">or</span>
+					<a href="" class="cancel btn btn-secondary btn-small">Cancel</a>
+				</div>
+			</form>
+			<div class="post__content">
+				<div class="the-image">
+					<a href="#"
+						><img
+							src="https://mltshp-cdn.com/r/1IGIU"
+							alt="Star Wars Zoom Backgrounds"
+					/></a>
+				</div>
+				<div class="post__alt-text post__alt-text--editing" role="button">
+					add some alt text
+				</div>
 				<form
 					method="post"
-					class="alt-text-edit-form"
+					class="post__alt-text-editor"
 					action="/p/1OWRQ/quick-edit-alt-text"
 				>
+					<h3>Edit alt text</h3>
 					<input
 						type="hidden"
 						name="_xsrf"
 						value="2|373c3cd0|287dcfa53f2ba090a42ed6c296c0da34|1687810733"
 					/>
-					<h3>Edit alt text</h3>
 					<p class="alt-text-learn">
 						Alt text describes images for blind and low-vision users, and helps
-						give context to everyone. <a href="/faq/#alt-text">Learn more</a>.
+						give context to everyone.
+						<a href="/faq/#alt-text">Learn more</a>.
 					</p>
 					<textarea
 						name="alt_text"
@@ -60,9 +66,7 @@
 						<a href="" class="cancel btn btn-secondary btn-small">Cancel</a>
 					</div>
 				</form>
-			</div>
-			<div class="description description-edit">
-				<div class="the-description" style="display: none">
+				<div class="post__description post__description--editing">
 					Star Wars is jumping on the Zoom background train. I’m looking forward
 					to showing how clean I’ve kept my office with this one.<br /><br />You
 					can find more at
@@ -74,7 +78,7 @@
 						>https://www.starwars.com/news...</a
 					>
 				</div>
-				<form class="description-edit-form" style="display: block">
+				<form class="post__description-editor">
 					<h3>Edit description</h3>
 					<textarea name="description" class="description-edit-textarea">
 Star Wars is jumping on the Zoom background train. I’m looking forward to showing how clean I’ve kept my office with this one.
@@ -92,80 +96,134 @@ You can find more at https://www.starwars.com/news/star-wars-backgrounds
 					</div>
 				</form>
 			</div>
-			<div class="inline-meta">
-				<span class="created-at">
-					<a href="#">
-						<time
-							datetime="2020-04-17 21:54:53"
-							title="Fri, 17 Apr 2020 21:54:53 "
-							>6 days ago</time
+			<div class="post__footer">
+				<div class="post__meta-interactions">
+					<div class="post__interactions">
+						<form class="like-this">
+							<button
+								type="button"
+								class="like-button btn btn-danger btn-small is-active"
+							>
+								<div class="btn--content">
+									<img
+										class="btn--icon"
+										src="https://mltshp-cdn.com/static/images/like-this.svg"
+										alt=""
+									/>
+									<span class="btn--text">Like</span>
+								</div>
+							</button>
+							<button
+								type="button"
+								class="unlike-button"
+								title="Unlike This"
+								aria-label="Unlike This"
+							>
+								<img
+									src="https://mltshp-cdn.com/static/images/liked-this.svg"
+									height="22"
+									width="25"
+									alt="Unlike This"
+								/>
+							</button>
+						</form>
+						<form class="save-this">
+							<button
+								type="button"
+								class="save-this-link save-this-link-multiple btn btn-warning btn-small"
+							>
+								<div class="btn--content">
+									<img
+										class="btn--icon"
+										src="https://mltshp-cdn.com/static/images/save-this.svg"
+										alt=""
+									/>
+									<span class="btn--text">Save</span>
+									<span class="btn--caret">▼</span>
+								</div>
+							</button>
+						</form>
+					</div>
+					<div class="post__meta">
+						<span class="created-at"
+							><a href="#"
+								><time datetime="2020-04-17 21:54:53">6 days ago</time></a
+							></span
 						>
-					</a>
-				</span>
-				<ul class="stats">
-					<li class="views">544 Views</li>
-					<li class="saves">
-						<a href="#">3</a>
+						<ul class="post__meta-stats">
+							<li class="views">544 Views</li>
+							<li class="saves">
+								<a href="#">3</a>
+							</li>
+							<li class="likes">
+								<a href="#">22</a>
+							</li>
+							<li class="comments selected">
+								<a href="#">1</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<ul class="post__comments">
+					<li>
+						<article class="comment">
+							<div class="comment__avatar">
+								<a href="#">
+									<img
+										src="https://mltshp-cdn.com/s3/account/417/profile.jpg"
+										height="30"
+										width="30"
+									/>
+								</a>
+							</div>
+							<div class="comment__body">
+								<div class="comment__meta">
+									<span>
+										<a class="user-name username link--primary" href="#"
+											>jessamyn</a
+										>
+										<a class="pro-badge" href="#">
+											<img
+												alt="pro"
+												src="https://mltshp-cdn.com/static/images/icon_plus.svg"
+												width="12"
+												height="12"
+												border="0"
+												valign="center"
+											/>
+										</a>
+									</span>
+									<span class="created-at">
+										<time
+											datetime="2020-04-19 17:37:45"
+											title="Sun, 19 Apr 2020 17:37:45 "
+											>5 days ago</time
+										>
+									</span>
+									<a class="reply-to" href="">Reply</a>
+									<form class="delete-form"></form>
+									<a href="" class="delete link--danger">Delete</a>
+								</div>
+								<div class="comment__text">
+									Always up for some more good backgrounds
+								</div>
+							</div>
+						</article>
 					</li>
-					<li class="likes">
-						<a href="#">22</a>
+					<li>
+						<form class="post__new-comment-form">
+							<textarea name="body">Write a comment…</textarea>
+							<div class="button">
+								<input
+									class="submit-comment-button btn btn-primary btn-small"
+									type="submit"
+									value="Post It!"
+								/>
+							</div>
+						</form>
 					</li>
-					<li class="comments selected"><a href="#">1</a></li>
 				</ul>
 			</div>
-			<div class="inline-details">
-				<div class="comment">
-					<div class="avatar">
-						<a href="#">
-							<img
-								class="avatar--img"
-								src="https://mltshp-cdn.com/s3/account/417/profile.jpg"
-								height="30"
-								width="30"
-							/>
-						</a>
-					</div>
-					<div class="comment-body">
-						<div class="meta">
-							<a class="user-name username link--primary" href="#">jessamyn</a>
-							<a class="pro-badge" href="#">
-								<img
-									alt="pro"
-									src="https://mltshp-cdn.com/static/images/icon_plus.svg"
-									width="12"
-									height="12"
-									border="0"
-									valign="center"
-								/>
-							</a>
-							<span class="created-at">
-								<time
-									datetime="2020-04-19 17:37:45"
-									title="Sun, 19 Apr 2020 17:37:45 "
-									>5 days ago</time
-								>
-							</span>
-							<a class="reply-to" href="">Reply</a>
-						</div>
-						<div class="comment-body-text">
-							Always up for some more good backgrounds
-						</div>
-					</div>
-				</div>
-				<div class="post-comment-inline">
-					<form class="post-comment-form">
-						<textarea name="body">Write a comment…</textarea>
-						<div class="button">
-							<input
-								class="submit-comment-button btn btn-primary btn-small"
-								type="submit"
-								value="Post It!"
-							/>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-</div>
+		</article>
+	</li>
+</ul>

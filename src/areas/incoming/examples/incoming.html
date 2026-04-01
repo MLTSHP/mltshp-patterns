@@ -47,11 +47,11 @@ iframe: true
 				<ul class="image-content-list meta hentry">
 					<li>
 						<article
-							id="shared-image-ABC123"
-							class="shared-image"
-							aria-labelledby="shared-image-ABC123-title"
+							id="post-ABC123"
+							class="post"
+							aria-labelledby="post-ABC123-title"
 						>
-							<header class="image-title image-title-with-poster">
+							<header class="post__title">
 								<div class="image-poster">
 									<a href="#" title="Vidiot">
 										<img
@@ -63,18 +63,18 @@ iframe: true
 										/>
 									</a>
 								</div>
-								<h3 id="shared-image-ABC123-title">
+								<h3 id="post-ABC123-title">
 									Beijing’s skyline taken from the Great Wall of China
 								</h3>
 							</header>
-							<div class="image-content">
+							<div class="post__content">
 								<a class="the-image" href="#"
 									><img
 										src="https://mltshp-cdn.com/r/1JPNB"
 										alt="Beijing's skyline taken from the Great Wall of China"
 								/></a>
 							</div>
-							<div class="description">
+							<div class="post__description">
 								source:
 								<a
 									href="#"
@@ -84,94 +84,213 @@ iframe: true
 									>https://twitter.com/vandille...</a
 								>
 							</div>
-							<div class="image-meta-interactions">
-								<div class="image-interactions">
-									<form class="like-this">
-										<button
-											type="button"
-											class="like-button btn btn-danger btn-small is-active"
-										>
-											<div class="btn--content">
-												<img
-													class="btn--icon"
-													src="https://mltshp-cdn.com/static/images/like-this.svg?v=b6b5d63ca476cb55e67c21965345e8db"
-													alt=""
-												/>
-												<span class="btn--text">Like</span>
-											</div>
-										</button>
-										<button
-											type="button"
-											class="unlike-button"
-											title="Unlike This"
-											aria-label="Unlike This"
-										>
-											<img
-												src="https://mltshp-cdn.com/static/images/liked-this.svg?v=e6f9810cfc8fa54a40073a3ddbaa90b5"
-												height="22"
-												width="25"
-												alt="Unlike This"
-											/>
-										</button>
-									</form>
-									<form class="save-this">
-										<button
-											type="button"
-											class="save-this-link save-this-link-multiple btn btn-warning btn-small"
-										>
-											<div class="btn--content">
-												<img
-													class="btn--icon"
-													src="https://mltshp-cdn.com/static/images/save-this.svg?v=5a6b71f0af47daac6eb1c038668c4b9b"
-													alt=""
-												/>
-												<span class="btn--text">Save</span>
-												<span class="btn--caret">▼</span>
-											</div>
-										</button>
-									</form>
-								</div>
-								<div class="inline-meta">
-									<span class="created-at">
-										<a href="#">
-											<time
-												datetime="2020-09-10 23:35:03"
-												title="Thu, 10 Sep 2020 23:35:03 "
-												>16 minutes ago</time
+							<div class="post__footer">
+								<div class="post__meta-interactions">
+									<div class="post__interactions">
+										<form class="like-this">
+											<button
+												type="button"
+												class="like-button btn btn-danger btn-small is-active"
 											>
-										</a>
-									</span>
-									<ul class="stats">
-										<li class="views">23 Views</li>
-										<li class="saves">
-											<a href="#">0</a>
-										</li>
-										<li class="likes">
-											<a href="#">4</a>
-										</li>
-										<li class="comments"><a href="#">0</a></li>
-									</ul>
+												<div class="btn--content">
+													<img
+														class="btn--icon"
+														src="https://mltshp-cdn.com/static/images/like-this.svg?v=b6b5d63ca476cb55e67c21965345e8db"
+														alt=""
+													/>
+													<span class="btn--text">Like</span>
+												</div>
+											</button>
+											<button
+												type="button"
+												class="unlike-button"
+												title="Unlike This"
+												aria-label="Unlike This"
+											>
+												<img
+													src="https://mltshp-cdn.com/static/images/liked-this.svg?v=e6f9810cfc8fa54a40073a3ddbaa90b5"
+													height="22"
+													width="25"
+													alt="Unlike This"
+												/>
+											</button>
+										</form>
+										<form class="save-this">
+											<button
+												type="button"
+												class="save-this-link save-this-link-multiple btn btn-warning btn-small"
+											>
+												<div class="btn--content">
+													<img
+														class="btn--icon"
+														src="https://mltshp-cdn.com/static/images/save-this.svg?v=5a6b71f0af47daac6eb1c038668c4b9b"
+														alt=""
+													/>
+													<span class="btn--text">Save</span>
+													<span class="btn--caret">▼</span>
+												</div>
+											</button>
+										</form>
+									</div>
+									<div class="post__meta">
+										<span class="created-at">
+											<a href="#">
+												<time
+													datetime="2020-09-10 23:35:03"
+													title="Thu, 10 Sep 2020 23:35:03 "
+													>16 minutes ago</time
+												>
+											</a>
+										</span>
+										<ul class="post__meta-stats">
+											<li class="views">23 Views</li>
+											<li class="saves">
+												<a href="#">0</a>
+											</li>
+											<li class="likes">
+												<a href="#">4</a>
+											</li>
+											<li class="comments"><a href="#">0</a></li>
+										</ul>
+									</div>
 								</div>
+								<ul class="post__comments">
+									<li>
+										<article class="comment">
+											<div class="comment__avatar">
+												<a href="#">
+													<img
+														class="avatar--img"
+														src="https://mltshp-cdn.com/s3/account/54045/profile.jpg"
+														height="30"
+														width="30"
+													/>
+												</a>
+											</div>
+											<div class="comment__body">
+												<div class="comment__meta">
+													<a class="user-name username link--primary" href="#"
+														>tweedlydo</a
+													>
+													<a class="pro-badge" href="#">
+														<img
+															alt="pro"
+															src="https://mltshp-cdn.com/static/images/icon_plus.svg"
+															width="12"
+															height="12"
+															border="0"
+															valign="center"
+														/>
+													</a>
+													<span class="created-at">
+														<time
+															datetime="2020-04-15 03:29:59"
+															title="Wed, 15 Apr 2020 03:29:59 "
+															>1 week ago</time
+														>
+													</span>
+													<a class="reply-to" href="">Reply</a>
+												</div>
+												<div class="comment__text">
+													those are some righteous bazongas
+												</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="comment">
+											<div class="comment__avatar">
+												<a href="#">
+													<img
+														class="avatar--img"
+														src="https://mltshp-cdn.com/s3/account/701/profile.jpg"
+														height="30"
+														width="30"
+													/>
+												</a>
+											</div>
+											<div class="comment__body">
+												<div class="comment__meta">
+													<a class="user-name username link--primary" href="#"
+														>docgonzo</a
+													>
+													<span class="created-at">
+														<time
+															datetime="2020-04-15 03:40:34"
+															title="Wed, 15 Apr 2020 03:40:34 "
+															>1 week ago</time
+														>
+													</span>
+													<a class="reply-to" href="">Reply</a>
+												</div>
+												<div class="comment__text">^ I played bass etc etc</div>
+											</div>
+										</article>
+									</li>
+									<li>
+										<article class="comment">
+											<div class="comment__avatar">
+												<a href="#">
+													<img
+														class="avatar--img"
+														src="https://mltshp-cdn.com/s3/account/20275/profile.jpg"
+														height="30"
+														width="30"
+													/>
+												</a>
+											</div>
+											<div class="comment__body">
+												<div class="comment__meta">
+													<a class="user-name username link--primary" href="#"
+														>jonson</a
+													>
+													<a class="pro-badge" href="#">
+														<img
+															alt="pro"
+															src="https://mltshp-cdn.com/static/images/icon_plus.svg"
+															width="12"
+															height="12"
+															border="0"
+															valign="center"
+														/>
+													</a>
+													<span class="created-at">
+														<time
+															datetime="2020-04-15 04:02:28"
+															title="Wed, 15 Apr 2020 04:02:28 "
+															>1 week ago</time
+														>
+													</span>
+													<a class="reply-to" href="">Reply</a>
+												</div>
+												<div class="comment__text">
+													@tweedlydo more of an elbow man, meself.
+												</div>
+											</div>
+										</article>
+									</li>
+								</ul>
 							</div>
-							<div class="inline-details" style="display: none"></div>
 						</article>
 					</li>
 					<li>
 						<article
-							id="shared-image-DEF456"
-							class="shared-image"
-							aria-labelledby="shared-image-DEF456-title"
+							id="post-ABC123"
+							class="post"
+							aria-labelledby="post-ABC123-title"
 						>
-							<header class="image-title image-title-with-poster">
-								<a class="image-poster" href="#" title="macmanx">
-									<img
-										class="avatar--img"
-										src="https://mltshp-cdn.com/s3/account/102505/profile.jpg"
-										width="48"
-										height="48"
-										alt=""
-									/>
-								</a>
+							<header class="post__title">
+								<div class="image-poster">
+									<a href="#" title="macmanx">
+										<img
+											class="avatar--img"
+											src="https://mltshp-cdn.com/s3/account/102505/profile.jpg"
+											width="48"
+											height="48"
+											alt=""
+										/>
+									</a>
+								</div>
 								<form class="remove-from-shake">
 									<button
 										title="Delete from shake"
@@ -180,18 +299,18 @@ iframe: true
 										✕
 									</button>
 								</form>
-								<h3 id="shared-image-DEF456-title">
-									Star Wars Zoom Backgrounds
-								</h3>
+								<h3 id="post-ABC123-title">Star Wars Zoom Backgrounds</h3>
 							</header>
-							<div class="image-content">
-								<a class="the-image" href="#"
-									><img
-										src="https://mltshp-cdn.com/r/1IGIU"
-										alt="Star Wars Zoom Backgrounds"
-								/></a>
+							<div class="post__content">
+								<div class="the-image">
+									<a href="#"
+										><img
+											src="https://mltshp-cdn.com/r/1IGIU"
+											alt="Star Wars Zoom Backgrounds"
+									/></a>
+								</div>
 							</div>
-							<div class="description">
+							<div class="post__description">
 								Star Wars is jumping on the Zoom background train. I’m looking
 								forward to showing how clean I’ve kept my office with this
 								one.<br /><br />You can find more at
@@ -203,127 +322,75 @@ iframe: true
 									>https://www.starwars.com/news...</a
 								>
 							</div>
-							<div class="image-meta-interactions">
-								<div class="image-interactions">
-									<form class="like-this">
-										<button
-											type="button"
-											class="like-button btn btn-danger btn-small is-active"
-										>
-											<div class="btn--content">
-												<img
-													class="btn--icon"
-													src="https://mltshp-cdn.com/static/images/like-this.svg"
-													alt=""
-												/>
-												<span class="btn--text">Like</span>
-											</div>
-										</button>
-										<button
-											type="button"
-											class="unlike-button"
-											title="Unlike This"
-											aria-label="Unlike This"
-										>
-											<img
-												src="https://mltshp-cdn.com/static/images/liked-this.svg"
-												height="22"
-												width="25"
-												alt="Unlike This"
-											/>
-										</button>
-									</form>
-									<form class="save-this">
-										<button
-											type="button"
-											class="save-this-link save-this-link-multiple btn btn-warning btn-small"
-										>
-											<div class="btn--content">
-												<img
-													class="btn--icon"
-													src="https://mltshp-cdn.com/static/images/save-this.svg"
-													alt=""
-												/>
-												<span class="btn--text">Save</span>
-												<span class="btn--caret">▼</span>
-											</div>
-										</button>
-									</form>
-								</div>
-								<div class="inline-meta">
-									<span class="created-at">
-										<a href="#">
-											<time
-												datetime="2020-04-17 21:54:53"
-												title="Fri, 17 Apr 2020 21:54:53 "
-												>6 days ago</time
+							<div class="post__footer">
+								<div class="post__meta-interactions">
+									<div class="post__interactions">
+										<form class="like-this">
+											<button
+												type="button"
+												class="like-button btn btn-danger btn-small is-active"
 											>
-										</a>
-									</span>
-									<ul class="stats">
-										<li class="views">544 Views</li>
-										<li class="saves">
-											<a href="#">3</a>
-										</li>
-										<li class="likes">
-											<a href="#">22</a>
-										</li>
-										<li class="comments"><a href="#">1</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="inline-details" style="display: none">
-								<div class="comment">
-									<div class="avatar">
-										<a href="#">
-											<img
-												class="avatar--img"
-												src="https://mltshp-cdn.com/s3/account/417/profile.jpg"
-												height="30"
-												width="30"
-											/>
-										</a>
-									</div>
-									<div class="comment-body">
-										<div class="meta">
-											<a class="user-name username link--primary" href="#"
-												>jessamyn</a
+												<div class="btn--content">
+													<img
+														class="btn--icon"
+														src="https://mltshp-cdn.com/static/images/like-this.svg"
+														alt=""
+													/>
+													<span class="btn--text">Like</span>
+												</div>
+											</button>
+											<button
+												type="button"
+												class="unlike-button"
+												title="Unlike This"
+												aria-label="Unlike This"
 											>
-											<a class="pro-badge" href="#">
 												<img
-													alt="pro"
-													src="https://mltshp-cdn.com/static/images/icon_plus.svg"
-													width="12"
-													height="12"
-													border="0"
-													valign="center"
+													src="https://mltshp-cdn.com/static/images/liked-this.svg"
+													height="22"
+													width="25"
+													alt="Unlike This"
 												/>
-											</a>
-											<span class="created-at">
-												<time
-													datetime="2020-04-19 17:37:45"
-													title="Sun, 19 Apr 2020 17:37:45 "
-													>5 days ago</time
-												>
-											</span>
-											<a class="reply-to" href="#">Reply</a>
-										</div>
-										<div class="comment-body-text">
-											Always up for some more good backgrounds
-										</div>
+											</button>
+										</form>
+										<form class="save-this">
+											<button
+												type="button"
+												class="save-this-link save-this-link-multiple btn btn-warning btn-small"
+											>
+												<div class="btn--content">
+													<img
+														class="btn--icon"
+														src="https://mltshp-cdn.com/static/images/save-this.svg"
+														alt=""
+													/>
+													<span class="btn--text">Save</span>
+													<span class="btn--caret">▼</span>
+												</div>
+											</button>
+										</form>
 									</div>
-								</div>
-								<div class="post-comment-inline">
-									<form>
-										<textarea name="body">Write a comment…</textarea>
-										<div class="button">
-											<input
-												class="submit-comment-button btn btn-primary btn-small"
-												type="submit"
-												value="Post It!"
-											/>
-										</div>
-									</form>
+									<div class="post__meta">
+										<span class="created-at"
+											><a href="#"
+												><time datetime="2020-04-17 21:54:53"
+													>6 days ago</time
+												></a
+											></span
+										>
+										<ul class="post__meta-stats">
+											<li class="views">544 Views</li>
+											<li class="saves">
+												<a href="#">3</a>
+											</li>
+											<li class="likes">
+												<a href="#">22</a>
+											</li>
+											<li class="comments">
+												<a href="#">1</a>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</article>

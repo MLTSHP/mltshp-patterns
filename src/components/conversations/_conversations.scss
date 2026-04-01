@@ -33,67 +33,86 @@
 }
 
 .conversation {
-	border-bottom: 1px dotted var(--color-border-default);
 	display: flex;
-	margin-top: var(--size-spacing-triple);
+	gap: var(--size-spacing-default);
+}
 
-	.mentions & {
-		padding-left: var(--size-spacing-triple);
-		padding-right: var(--size-spacing-default);
+.conversation__thumb {
+	flex: none;
+	width: 50px;
+
+	@media screen and (min-width: tokens.$size-breakpoint-md) {
+		width: 100px;
 	}
+}
 
-	.thumb {
-		flex: none;
-		margin-left: var(--size-spacing-default);
-		width: 50px;
+.conversation__body {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-spacing-half-again);
+}
 
-		@media screen and (min-width: tokens.$size-breakpoint-md) {
-			margin-left: var(--size-spacing-triple);
-			width: 100px;
-		}
+.conversation__title {
+	@include mixins.breakword;
+	color: var(--color-page-text-emphasis);
+	font-size: 1.875rem;
+	overflow: hidden;
+}
+
+.conversation__description {
+	@include mixins.breakword;
+	overflow: hidden;
+}
+
+.conversations,
+.conversation__comments,
+.mentions {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	// Mentions and conversations get all around padding when in a list.
+	li .mention,
+	li .conversation {
+		padding: var(--size-spacing-triple);
 	}
+}
 
-	.details-wrapper {
-		flex: 1;
-		margin-left: var(--size-spacing-default);
-		margin-right: var(--size-spacing-default);
-		min-width: 0;
+.conversation__comments {
+	// Comments only get top and bottom padding and only when they're nested
+	// inside a conversation.
+	li .comment,
+	li .image-comment-form {
+		padding: var(--size-spacing-default) 0;
 	}
+}
 
-	.sharedfile-title {
-		@include mixins.breakword;
-		color: var(--color-page-text-emphasis);
-		font-size: 1.875rem;
-		margin-bottom: var(--size-spacing-default);
-		overflow: hidden;
+.conversations,
+.mentions {
+	// Add a dashed border between items, but not after the last one.
+	> li:not(:last-child) {
+		border-bottom: 1px dashed var(--color-border-default);
 	}
+}
 
-	.sharedfile-description {
-		@include mixins.breakword;
-		overflow: hidden;
-	}
+.mention {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-spacing-half-again);
+}
 
-	.image-comments {
-		padding-left: 0;
+.conversion__interactions,
+.mention__meta-interactions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--size-spacing-default);
+	justify-content: space-between;
+}
 
-		.body {
-			@include mixins.breakword;
-		}
-	}
+.mention__meta {
+	color: var(--color-page-text-secondary);
+}
 
-	.conversation-meta {
-		display: flex;
-		flex-wrap: wrap;
-		margin-bottom: var(--size-spacing-triple);
-		margin-top: var(--size-spacing-half-again);
-	}
-
-	.post-a-comment,
-	.mute-this-conversation {
-		margin: var(--size-spacing-half) 1em 0 0;
-	}
-
-	.mute-this-conversation-form {
-		display: none;
-	}
+.conversion__interactions {
+	justify-content: flex-end;
 }
