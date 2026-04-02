@@ -65,9 +65,9 @@
 		flex-flow: row wrap;
 	}
 
-	// > * {
-	// 	min-width: 0; // https://github.com/philipwalton/flexbugs/issues/39
-	// }
+	> * {
+		min-width: 0; // https://github.com/philipwalton/flexbugs/issues/39
+	}
 
 	.header {
 		flex: 0 0 100%;

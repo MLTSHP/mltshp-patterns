@@ -14,11 +14,6 @@
 		box-shadow: none;
 	}
 
-	&--blank {
-		color: var(--color-status-disabled);
-		font-style: italic;
-	}
-
 	&.alt-text--blank .alt-text-toggle,
 	&.alt-text--editing .alt-text-toggle {
 		display: none;
@@ -28,12 +23,17 @@
 	&.alt-text--editing .the-alt-text {
 		display: none;
 	}
+}
 
-	// Inline Editing Alt Text
-	&--editable:hover,
-	&--editable:focus {
-		background-color: var(--color-status-edit);
-	}
+// Inline Editing Alt Text
+.post__alt-text--editable:hover,
+.post__alt-text--editable:focus {
+	background-color: var(--color-status-edit);
+}
+
+.post__alt-text--blank {
+	color: var(--color-status-disabled);
+	font-style: italic;
 }
 
 .post__alt-text-toggle {

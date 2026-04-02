@@ -49,6 +49,7 @@
 .conversation__body {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	gap: var(--size-spacing-half-again);
 }
 
@@ -99,20 +100,26 @@
 	display: flex;
 	flex-direction: column;
 	gap: var(--size-spacing-half-again);
+
+	.comment__body {
+		flex-grow: 1;
+	}
 }
 
-.conversion__interactions,
+.conversation__interactions,
 .mention__meta-interactions {
 	display: flex;
-	flex-wrap: wrap;
 	gap: var(--size-spacing-default);
+}
+
+.conversation__interactions {
+	justify-content: flex-end;
+}
+
+.mention__meta-interactions {
 	justify-content: space-between;
 }
 
 .mention__meta {
 	color: var(--color-page-text-secondary);
-}
-
-.conversion__interactions {
-	justify-content: flex-end;
 }

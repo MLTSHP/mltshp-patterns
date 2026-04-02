@@ -18,6 +18,7 @@
 
 	.image-meta-interactions {
 		display: flex;
+
 		// 1. Wrap interactions above inline meta on narrow screens
 		// 2. Leave a gap between interactions and inline-meta when wrapped
 		flex-wrap: wrap-reverse; // 1

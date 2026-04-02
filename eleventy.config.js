@@ -26,7 +26,7 @@ export default function (eleventyConfig) {
 
 	// Add plugins
 	eleventyConfig.addPlugin(EleventyRenderPlugin);
-	eleventyConfig.addPlugin(IdAttributePlugin, { checkDuplicates: false });
+	eleventyConfig.addPlugin(IdAttributePlugin);
 	eleventyConfig.addPlugin(eleventyNavigationPlugin);
 	eleventyConfig.addPlugin(syntaxHighlight);
 	eleventyConfig.addPlugin(pluginWebc, {

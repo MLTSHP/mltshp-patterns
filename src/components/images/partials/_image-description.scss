@@ -10,16 +10,16 @@
 	a {
 		@include links.link-primary;
 	}
+}
 
-	&--blank {
-		color: var(--color-status-disabled);
-		font-style: italic;
-	}
+.post__description--blank {
+	color: var(--color-status-disabled);
+	font-style: italic;
+}
 
-	&--editable:hover,
-	&--editable:focus {
-		background-color: var(--color-status-edit);
-	}
+.post__description--editable:hover,
+.post__description--editable:focus {
+	background-color: var(--color-status-edit);
 }
 
 .post__description-editor {
