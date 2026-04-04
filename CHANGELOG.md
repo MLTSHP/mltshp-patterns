@@ -85,7 +85,7 @@ Elected to BEM-ify post and comment components.
 - Move `<form class="image-edit-title-form" ` to be a sibling following `<header class="post__title" ` and rename to `<form class="post__title-editor" `
 - Move `<form class="alt-text-edit-form" ` to be a sibling following `<header class="post__alt-text" ` and rename to `<form class="post__alt-text-editor" `
 - Move `<form class="description-edit-form" ` to be a sibling following `<header class="post__description" ` and rename to `<form class="post__description-editor" `
-- Make use of post**description--editable, post**description--editing (and similar for title and alt-text) to control visibility of display and editor controls for each editable section
+- Make use of `post__description--editable`, `post__description--editing` (and similar for title and alt-text) to control visibility of display and editor controls for each editable section
 - Update javascript so all class based interactions work e.g. saving and cancelling alt text editing, displaying likes, saves, and comments, adding comments, showing additional comments
 
 ## [4.1.0] - 2025-08-22
