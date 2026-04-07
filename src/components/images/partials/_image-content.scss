@@ -1,15 +1,12 @@
 @use '../../../compiled/scss/tokens';
 
-.image-content {
+.post__content {
 	clear: both;
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-spacing-default);
 	max-width: 100%;
-	padding: var(--size-spacing-half-again);
 	position: relative;
-
-	@media screen and (min-width: tokens.$size-breakpoint-lg) {
-		padding: var(--size-spacing-half-again) var(--size-spacing-quadruple)
-			var(--size-spacing-quadruple);
-	}
 
 	.the-image {
 		a,
@@ -23,15 +20,12 @@
 		height: auto;
 		max-width: 100%;
 	}
+}
 
-	// list overrides
-	.image-content-list & {
-		border-bottom: 1px dashed var(--color-border-default);
-		float: none;
-		padding: 0 var(--size-spacing-half-again) var(--size-spacing-half-again);
-
-		@media screen and (min-width: tokens.$size-breakpoint-lg) {
-			padding: 0 var(--size-spacing-quadruple) var(--size-spacing-quadruple);
-		}
-	}
+// If neither description, alt-text, or originally-by present add a little extra
+// margin below the content. Otherwise looks too tight before the post meta.
+.post__content:not(
+	:has(.post__alt-text, .post__description, .post__originally-by)
+) {
+	margin-bottom: var(--size-spacing-default);
 }
