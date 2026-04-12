@@ -1,3 +1,6 @@
+@use '../../compiled/scss/tokens';
+@use '../buttons/buttons';
+
 //
 // This file was getting a bit out of control, so I broke it into partials
 // dedicated to a part of the image component
@@ -11,47 +14,77 @@
 @use 'partials/image-footer';
 @use 'partials/image-comments';
 
+// A list of images e.g. incoming or a shake.
+.image-content-list {
+	// Clobber bullet list defaults.
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	// Add a dashed border between items, but not after the last one.
+	> li:not(:last-child) {
+		border-bottom: 1px dashed var(--color-border-default);
+	}
+
+	// Add spacing around items.
+	> li {
+		padding: var(--size-spacing-half-again);
+
+		@media screen and (min-width: tokens.$size-breakpoint-lg) {
+			padding: var(--size-spacing-quadruple);
+		}
+	}
+}
+
+.post {
+	// This is the main container for the image component, and is used to scope
+	// styles that are shared between the image-content and image-comments
+	// components. It also serves as a hook for the image component's JavaScript
+	// to attach event listeners to.
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-spacing-default);
+}
+
 // Styles used by both image-content and image-comments to hide reply-to and
 // delete controls on comments by default. These controls become visible when
 // the user hovers over the parent comment, or the parent comment or the
 // reply-to or delete controls get focus (say, through the tab order).
-.image-content,
-.image-comments {
-	.comment {
-		// Styles common to both controls. Set opacity to 0 to hide in place by
-		// default, and add a little easing to fade in and out less jarringly.
-		.reply-to,
-		.delete {
-			background-position: 0 0;
-			background-repeat: no-repeat;
-			opacity: 0;
-			padding-left: var(--size-spacing-half-again);
-			transition: opacity 0.2s ease;
-		}
 
-		// Control specific styles.
-		.reply-to {
-			background-image: svg-load('icons/reply.svg');
-			background-size: 12px 11px;
-		}
+.comment {
+	// Styles common to both controls. Set opacity to 0 to hide in place by
+	// default, and add a little easing to fade in and out less jarringly.
+	.reply-to,
+	.delete {
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		opacity: 0;
+		padding-left: var(--size-spacing-half-again);
+		transition: opacity 0.2s ease;
+	}
 
-		.delete {
-			background-image: svg-load('icons/delete-comment.svg');
-			background-size: 13px 13px;
-		}
+	// Control specific styles.
+	.reply-to {
+		background-image: svg-load('icons/reply.svg');
+		background-size: 12px 11px;
+	}
 
-		// Make visible if containing comment receives focus ...
-		&:hover .reply-to,
-		&:hover .delete,
-		&:focus .reply-to,
-		&:focus .delete {
-			opacity: 1;
-		}
+	.delete {
+		background-image: svg-load('icons/delete-comment.svg');
+		background-size: 13px 13px;
+	}
 
-		// ... or if control itself receives focus via tabbing.
-		.reply-to:focus,
-		.delete:focus {
-			opacity: 1;
-		}
+	// Make visible if containing comment receives focus ...
+	&:hover .reply-to,
+	&:hover .delete,
+	&:focus .reply-to,
+	&:focus .delete {
+		opacity: 1;
+	}
+
+	// ... or if control itself receives focus via tabbing.
+	.reply-to:focus,
+	.delete:focus {
+		opacity: 1;
 	}
 }
