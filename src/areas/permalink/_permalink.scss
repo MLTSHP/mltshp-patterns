@@ -51,7 +51,7 @@
 	@media screen and (min-width: tokens.$size-breakpoint-lg) {
 		.content-permalink {
 			display: grid;
-			grid-gap: var(--size-spacing-triple);
+			gap: var(--size-spacing-triple);
 			grid-template-areas:
 				'title title'
 				'image sidebar'

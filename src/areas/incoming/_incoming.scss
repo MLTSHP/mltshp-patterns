@@ -27,7 +27,7 @@
 	@include page-header.page-header;
 
 	// @see https://sass-lang.com/documentation/breaking-changes/mixed-decls/
-	// stylelint-disable-next-line no-duplicate-selectors, scss/selector-no-redundant-nesting-selector
+	// stylelint-disable-next-line no-duplicate-selectors, scss/selector-no-redundant-nesting-selector, block-no-redundant-nested-style-rules
 	& {
 		cursor: pointer;
 		padding: var(--size-spacing-half-again) var(--size-spacing-double);
