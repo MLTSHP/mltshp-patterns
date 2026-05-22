@@ -9,7 +9,7 @@
 	@include page-header.page-header;
 
 	// @see https://sass-lang.com/documentation/breaking-changes/mixed-decls/
-	// stylelint-disable-next-line no-duplicate-selectors, scss/selector-no-redundant-nesting-selector
+	// stylelint-disable-next-line no-duplicate-selectors, scss/selector-no-redundant-nesting-selector, block-no-redundant-nested-style-rules
 	& {
 		align-items: center;
 		display: flex;

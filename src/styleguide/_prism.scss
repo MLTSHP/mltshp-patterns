@@ -13,12 +13,12 @@ pre[class*='language-'] {
 	font-size: 1em;
 	hyphens: none;
 	line-height: 1.5;
+	overflow-wrap: normal;
 	tab-size: 4;
 	text-align: left;
 	white-space: pre;
 	word-break: normal;
 	word-spacing: normal;
-	word-wrap: normal;
 }
 
 pre[class*='language-']::selection,
