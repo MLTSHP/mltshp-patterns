@@ -25,7 +25,7 @@
 
 		.post {
 			display: grid;
-			grid-gap: var(--size-spacing-triple);
+			gap: var(--size-spacing-triple);
 			grid-template-areas:
 				'title title'
 				'content sidebar'

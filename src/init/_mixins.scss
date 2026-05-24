@@ -4,9 +4,13 @@
 // @see https://css-tricks.com/?p=16145
 //
 @mixin breakword() {
+	// Stylelint wants us to use the modern rules only,
+	// but I don't have time to regression test right now. - SV
+	// stylelint-disable
 	overflow-wrap: break-word;
 	word-break: break-word;
-	word-wrap: break-word;
+	overflow-wrap: break-word;
+	// stylelint-enable
 }
 
 //

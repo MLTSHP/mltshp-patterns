@@ -10,8 +10,11 @@
 // https://cloudfour.com/thinks/see-no-evil-hidden-content-and-accessibility/
 .sr-only {
 	border: 0;
-	clip: rect(0 0 0 0);
+
+	// Stylelint wants to drop deprecated clip and vendor prefix,
+	// but I don't have time to regression test right now. - SV
 	// stylelint-disable
+	clip: rect(0 0 0 0);
 	clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
 	-webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
 	// stylelint-enable
