@@ -4,98 +4,61 @@
 // Area: Permalink
 //
 
-//
-// Legacy float-based layout
-//
 .content-permalink {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-spacing-triple);
 	padding: var(--size-spacing-half-again);
+
+	li + li .comment,
+	li + li .image-comment-form {
+		margin-top: var(--size-spacing-double);
+	}
+
+	.comment__avatar img {
+		height: var(--size-avatar-default);
+		width: var(--size-avatar-default);
+	}
 
 	@media screen and (min-width: tokens.$size-breakpoint-lg) {
 		padding: var(--size-spacing-triple);
-	}
 
-	> * {
-		margin: 0 !important;
-		padding: 0 !important;
-
-		+ * {
-			margin-top: var(--size-spacing-half-again) !important;
-
-			@media screen and (min-width: tokens.$size-breakpoint-lg) {
-				margin-top: var(--size-spacing-triple) !important;
-			}
-		}
-	}
-
-	> .permalink-sidebar {
-		@media screen and (min-width: tokens.$size-breakpoint-lg) {
-			float: right;
-			width: 320px;
-		}
-	}
-
-	> .image-content,
-	> .image-comments,
-	> .image-comment-form {
-		@media screen and (min-width: tokens.$size-breakpoint-lg) {
-			float: left;
-			width: calc(100% - 350px);
-		}
-	}
-}
-
-//
-// Fancy new grid-based layout
-//
-@supports (display: grid) {
-	@media screen and (min-width: tokens.$size-breakpoint-lg) {
-		.content-permalink {
+		.post {
 			display: grid;
 			grid-gap: var(--size-spacing-triple);
 			grid-template-areas:
 				'title title'
-				'image sidebar'
-				'comments sidebar'
-				'post-comment sidebar';
+				'content sidebar'
+				'footer sidebar';
 			grid-template-columns: 1fr 320px;
-			// stylelint-disable-next-line declaration-block-no-redundant-longhand-properties
-			grid-template-rows: repeat(3, min-content) 1fr;
-		}
 
-		.content-permalink > * {
-			margin: 0 !important;
-		}
+			.post__title {
+				grid-area: title;
+			}
 
-		.content-permalink::after {
-			content: none;
-		}
+			.post__content {
+				grid-area: content;
+			}
 
-		.content-permalink > .permalink-sidebar,
-		.content-permalink > .image-content,
-		.content-permalink > .image-comments,
-		.content-permalink > .image-comment-form {
-			width: auto;
+			.post__footer {
+				grid-area: footer;
+			}
 		}
+	}
 
-		.content-permalink > .image-title {
-			grid-area: title;
-		}
+	.permalink-sidebar {
+		grid-area: sidebar;
+		margin-bottom: var(--size-spacing-triple);
+	}
+}
 
-		.content-permalink > .image-content {
-			grid-area: image;
-		}
+@media screen and (min-width: tokens.$size-breakpoint-lg) {
+	.content-permalink > * {
+		margin: 0 !important;
+	}
 
-		.content-permalink > .permalink-sidebar {
-			grid-area: sidebar;
-		}
-
-		.content-permalink > .image-comments {
-			grid-area: comments;
-		}
-
-		.content-permalink > .image-comment-form {
-			grid-area: post-comment;
-		}
+	.content-permalink::after {
+		content: none;
 	}
 }
 

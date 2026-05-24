@@ -1,9 +1,77 @@
-.image-interactions {
-	align-items: center;
+.post__meta-interactions {
+	// Wrapper for meta and interaction components to allow flex wrapping and reordering on narrow screens.
+	display: flex;
+	flex-wrap: wrap-reverse; // Wrap interactions above inline meta on narrow screens
+	gap: var(--size-spacing-half) var(--size-spacing-default); // Leave a gap between interactions and inline-meta when wrapped
+}
+
+.post__meta {
+	display: flex;
+	float: left;
+	font-size: 0.75rem;
+	gap: var(--size-spacing-default);
+
+	> * {
+		flex: none;
+	}
+}
+
+.post__meta-stats {
+	display: flex;
+	gap: var(--size-spacing-half);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	a {
+		background-position: var(--size-spacing-half) 0.5em;
+		background-repeat: no-repeat;
+		background-size: 1em 1em;
+		border-top-left-radius: var(--size-border-radius-default);
+		border-top-right-radius: var(--size-border-radius-default);
+		display: block;
+		float: left;
+		padding: var(--size-spacing-half);
+		padding-bottom: var(--size-spacing-default);
+		padding-left: calc(var(--size-spacing-default) + 1em);
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			background-color: var(--color-background-content-secondary);
+		}
+	}
+
+	.views {
+		padding-top: var(--size-spacing-half);
+	}
+
+	.saves a {
+		background-image: svg-load('icons/save-tiny.svg');
+		background-size: 1.33em 1em;
+		color: var(--color-status-warning);
+		padding-left: calc(var(--size-spacing-default) + 1.33em);
+	}
+
+	.likes a {
+		background-image: svg-load('icons/like.svg');
+		color: var(--color-status-danger);
+	}
+
+	.comments a {
+		background-image: svg-load('icons/comment.svg');
+	}
+
+	.selected a {
+		background-color: var(--color-background-content-secondary);
+	}
+}
+
+.post__interactions {
 	display: flex;
 	flex-direction: row-reverse;
-	float: right;
-	margin-bottom: 4px; // magic number to prevent layout gap below .inline-meta
+	margin-left: auto; // Push right when wrapped
+	order: 2; // Show after inline meta when not wrapped
 
 	.save-this {
 		margin-right: var(--size-spacing-half);

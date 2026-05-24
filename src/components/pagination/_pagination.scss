@@ -1,12 +1,10 @@
 @use '../../compiled/scss/tokens';
 
 .pagination {
-	background-color: var(--color-bg-secondary-brand-pastel);
-	border-radius: var(--size-border-radius-large);
+	// Add border between self and end of list above.
+	border-top: 1px dashed var(--color-border-default);
 	font-size: 0.875rem;
 	font-weight: var(--number-font-weight-bold);
-	margin: var(--size-spacing-quadruple);
-	padding: var(--size-spacing-default);
 
 	a,
 	.current {
@@ -40,6 +38,13 @@
 	}
 }
 
+.pagination-outer {
+	background-color: var(--color-bg-secondary-brand-pastel);
+	border-radius: var(--size-border-radius-large);
+	margin: var(--size-spacing-quadruple);
+	padding: var(--size-spacing-default);
+}
+
 .pagination-inner {
 	align-items: center;
 	background-color: var(--color-background-content);
@@ -55,12 +60,23 @@
 }
 
 .linear-navigation {
+	// Add border between self and end of list above.
+	border-top: 1px dashed var(--color-border-default);
 	display: flex;
-	justify-content: space-between;
-	padding: var(--size-spacing-triple) var(--size-spacing-quadruple);
+	padding: var(--size-spacing-triple) var(--size-spacing-half-again);
 
-	.newer a,
-	.older a {
-		display: block;
+	// Line up timeline nav buttons with rest of page content.
+	@media screen and (min-width: tokens.$size-breakpoint-lg) {
+		padding: var(--size-spacing-triple) var(--size-spacing-quadruple);
+	}
+
+	// Push older and newer buttons to respective ends of their section on larger
+	// screens.
+	a.older {
+		margin-right: auto;
+	}
+
+	a.newer {
+		margin-left: auto;
 	}
 }

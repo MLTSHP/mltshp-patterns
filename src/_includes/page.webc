@@ -70,21 +70,19 @@ scripts:
 			</nav>
 		</header>
 
-		<main class="site-main">
-			<div class="content content-with-sidebar">
-				<div class="header page-header">
+			<main class="site-main content content-with-sidebar">
+				<header class="header page-header">
 					<h2 @text="title"></h2>
+				</header>
+				<div class="body styleguide-body">
+					<template webc:nokeep @raw="content"></template>
 				</div>
-				<div class="sidebar">
+				<aside class="sidebar">
 					<styleguide-nav-group
 						:items="eleventyNavigation($data.collections.all)"
 						:page-url="page.url"
 					></styleguide-nav-group>
-				</div>
-				<div class="body styleguide-body">
-					<template webc:nokeep @raw="content"></template>
-				</div>
-			</div>
+				</aside>
 		</main>
 
 		<footer class="site-footer"></footer>
