@@ -54,7 +54,7 @@
 		"cssnano": "8.0.2",
 		"eslint": "10.8.0",
 		"eslint-config-prettier": "10.1.8",
-		"globals": "17.7.0",
+		"globals": "17.8.0",
 		"npm-run-all2": "9.0.2",
 		"postcss": "8.5.23",
 		"postcss-cli": "11.0.1",
