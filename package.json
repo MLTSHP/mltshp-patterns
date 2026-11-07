@@ -61,7 +61,7 @@
 		"postcss-inline-svg": "6.0.0",
 		"prettier": "3.9.10",
 		"sass": "1.107.1",
-		"stylelint": "17.16.0",
+		"stylelint": "18.0.0",
 		"stylelint-config-spaceninja": "17.0.1",
 		"svgo": "4.1.0"
 	}
